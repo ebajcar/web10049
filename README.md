@@ -1,3 +1,4 @@
 # web10049 Readme
 
-[wiki](wiki/home)
+[wiki](wiki/Home)
+[page01](wiki/page01)
