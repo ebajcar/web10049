@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Selectors</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu+Mono'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs.min.css">
+<link rel="stylesheet" href="css/short_pages.css">  
+<link rel="stylesheet" href="css/bookmark.css">
+<!-- Fontawesome CSS -->
+<script src="https://kit.fontawesome.com/e511a6976b.js" crossorigin="anonymous"></script>
+<style>
+
+</style>
+</head>
+<body>
+<header><h1>CSS Rules: Selectors and Properties</h1></header>
+
+<main class="container">
+<div class="row">
+<!-- Table of contents -->	
+<aside class="col-4" style="height:400px;position:sticky;top: 130px">
+<h5 class="card-title">Table of Content</h5>
+<nav>		
+      <a href="#">Explore Selectors</a>
+      <a href="#page02">CSS Declarations</a>       
+      <a href="#page03">CSS3 Values and Units</a>
+      <a href="#page04">CSS Box model</a>
+      <a href="#page05">Shorthand properties</a>
+      <a href="#page06">CSS color and background properties</a>
+      <a href="#page07">CSS font and text properties</a>
+        <hr>
+  <a href="ch00_index.html"> Index</a>
+</nav>
+</aside> 
+<!-- Content -->
+<section class="col-8 container">
+
+	
+<!-- CSS Selectors -->
+<article id="page01">
+  <h4>Explore selectors</h4>
+	<p>Explore selectors, the different ways you can target (select) which element or elements you want to style, to change the values for some of the properties.</p>
+
+	<dl class="row">
+	  <dt class="col-sm-4">universal selector</dt><dd class="col-sm-5"><code>* {}</code></dd>
+	  <dt class="col-sm-4">type selector</dt><dd class="col-sm-5"><code>h1 {}</code></dd>
+	  <dt class="col-sm-4">group selectors</dt><dd class="col-sm-5"><code>h1, p, li, a {}</code></dd>	
+	  <dt class="col-sm-4">descendant selector</dt><dd class="col-sm-5"><code>article p {}</code></dd>	
+	  <dt class="col-sm-4">child selector</dt><dd class="col-sm-5"><code>article > p {}</code></dd>	
+	  <dt class="col-sm-4">adjacent sibling</dt><dd class="col-sm-5"><code>.agenda dt + dd {}</code></dd>	
+	  <dt class="col-sm-4">class selector</dt><dd class="col-sm-5"><code>.my-class {}</code></dd>	
+	  <dt class="col-sm-4">id selector</dt><dd class="col-sm-5"><code>#my-id {}</code></dd>	
+	  <dt class="col-sm-4">attribute selector</dt><dd class="col-sm-5"><code>[placeholder] {}</code></dd>	
+	</dl>
+	
+	<hr>
+	<h4>Invalid selectors</h4>
+	<p><a target="_blank" href="https://www.w3.org/TR/selectors-4/#invalid">
+		What happens with invalid selectors? Read on W3C.	 
+	</a></p>
+	
+	<p>In addition to invalid selectors, you could have selectors that cannot exist (validation error):</p>
+<pre class="language-css"><code>h1 h2 {} /* HTML validation error */
+a p () /* HTML validation error */
+ul > ol /* HTML validation error */</code></pre>
+
+	<h4>Avoid qualifying selectors</h4>
+<pre class="language-css"><code>div.nav { } /* AVOID */
+.nav { } /* Preferred */</code></pre>
+
+	<h4>Avoid !important</h4>
+<pre class="language-css"><code>p { margin: 0 !important; } /* AVOID */</code></pre>
+
+	<h4>Use shorthand properties</h4>
+<pre class="language-css"><code>body {
+  margin-top: 20px;  /* AVOID */
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+body {
+  margin: 20px 10px;  /* Preferred */
+}</code></pre>
+
+	<h4>Avoid IDs</h4>
+<pre class="language-css"><code>#header { } /* AVOID */
+.header { } /* Preferred */</code></pre>		
+	
+</article>	
+
+
+<!-- CSS Declarations  -->
+<article id="page02"> 
+	<h3>CSS Declarations</h3>
+  <p>Declarations are of the form "property-name: values". There are many properties and associated concepts, including:</p>
+	<ul>
+		<li>Specificity, inheritance, and the Cascade</li>
+		<li>Box model and margin collapse</li>
+		<li>The containing block</li>
+		<li>Stacking and block-formatting contexts</li>
+		<li>Initial, computed, used, and actual values</li>
+		<li>CSS shorthand properties</li>	
+	</ul>	
+ </article>	  
+
+<!-- CSS3 Values and Units Module  -->
+<article id="page03">
+	<h3>CSS3 Values and Units</h3>	
+	<p>This CSS module describes the common values and units that CSS properties accept and the syntax used for describing them in CSS property definitions.</p>	
+  
+  <figure>
+  <img src="images/property_values.png">
+  <figcaption><a href="https://www.w3.org/TR/css3-values/#value-examples" target="_blank">Property Value Examples</a> See 3. Textual Data Types, 4. Numeric Data Types, 5. Distance Units (relative and absolute lengths).</figcaption>
+  </figure>
+  
+  <figure>
+  <img src="images/property_values_relative.png">
+  <figcaption>Relative lengths</figcaption>
+  </figure>
+  
+  
+  <figure>
+  <img src="images/property_values_absolute.png">
+  <figcaption>Absolute lengths</figcaption>
+  </figure>
+  
+	<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3.org/TR/css3-values/">
+		Read more&mdash; W3C specifications		 
+	</a>
+  <ul>
+  <li>3.1.1. CSS-wide keywords: initial, inherit and unset</li>
+  <li>7.1. Colors: the &lt;color> type</li>
+  </ul>
+ 	<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3.org/TR/css-color-3/">
+		Read more&mdash; CSS Color Module Level 3		 
+	</a> 
+   <ul>
+  <li>Color properties: color, opacity</li>
+  <li>Color units: basic color keywords, numerical color values (RGB, RGBA, transparent, HSL, HSLA,...)</li>
+  </ul> 
+
+</article>
+ 
+
+<!-- CSS Box model -->
+<article id="page04">
+	<h3>CSS Box model</h3>	
+	<blockquote class="blockquote">
+		<p class="mb-0">All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</p>
+		<footer class="blockquote-footer">Read further  <cite title="www.w3schools.com/css/css_boxmodel.asp"><a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">w3schools.com</a></cite></footer>
+	</blockquote>
+  
+	<dl class="row">
+	  <dt class="col-sm-2">Content box</dt>
+	  <dd class="col-sm-10">The area where your content is displayed, which can be sized using properties like width and height. (box-sizing property?)</dd>
+	  <dt class="col-sm-2">Padding box</dt>
+	  <dd class="col-sm-10">The padding sits around the content as white space; its size can be controlled using padding and related properties.</dd>
+	  <dt class="col-sm-2">Border box</dt>
+	  <dd class="col-sm-10">The border box wraps the content and any padding. Its size and style can be controlled using border and related properties.</dd>	  
+	  <dt class="col-sm-2">Margin box</dt>
+	  <dd class="col-sm-10">The margin is the outermost layer, wrapping the content, padding and border as whitespace between this box and other elements. Its size can be controlled using margin and related properties.</dd>
+	</dl>
+	<h4>Containing Block</h4>
+	<blockquote class="blockquote">
+		<p class="mb-0">The position and size of an element's box(es) are sometimes calculated relative to a certain rectangle, called the containing block of the element. The containing block of an element is defined as &hellip;</p>
+		<footer class="blockquote-footer">Read further  <cite title="www.w3schools.com/php/php_string.asp"><a href="https://www.w3.org/TR/CSS22/visudet.html#containing-block-details" target="_blank">www.w3.org</a></cite></footer>
+	</blockquote>
+
+	<h4>Block formatting context</h4>
+	<blockquote class="blockquote">
+		<p class="mb-0">A block formatting context is a part of a visual CSS rendering of a web page. It's the region in which the layout of block boxes occurs and in which floats interact with other elements. A block formatting context is created by at least one of the following:</p>
+		<footer class="blockquote-footer">Read further  <cite title="developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context"><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context" target="_blank">developer.mozilla.org</a></cite></footer>
+	</blockquote>	
+
+	<h4>The stacking context</h4>
+	<blockquote class="blockquote">
+		<p class="mb-0">The stacking context is a three-dimensional conceptualization of HTML elements along an imaginary z-axis relative to the user, who is assumed to be facing the viewport or the webpage. HTML elements occupy this space in priority order based on element attributes.</p>
+		<footer class="blockquote-footer">Read further  <cite title="developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context" target="_blank">developer.mozilla.org</a></cite></footer>
+	</blockquote>	
+
+	<h4>Inline vs. block behaviour</h4> 
+	<p>The display property specifies the display behavior (the type of rendering box) of an element. In HTML, the default display property value is taken from the HTML specifications or from the browser and user default style sheet. Explore more&mdash; <a href="https://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">w3schools.com</a></p>
+
+	<dl class="row">
+	  <dt class="col-sm-2">inline</dt>
+	  <dd class="col-sm-10">Displays an element as an inline element (like &lt;span>). Any height and width properties will have no effect</dd>
+	  <dt class="col-sm-2">block</dt>
+	  <dd class="col-sm-10">Displays an element as a block element (like &lt;p>). It starts on a new line, and takes up the whole width</dd>	  
+	</dl>	
+	
+	<h3>Shorthand properties</h3>
+  
+	<p>Use the sequence <em>TRBL (TRouBLe, clockwise)</em> to specify values for the block sides; applies to properties <code>margin</code> and <code>padding</code>.</p>
+	<h6>property: top right bottom left;</h6> 
+	<h6>property: top right+left bottom;</h6> 
+	<h6>property: top+bottom right+left;</h6> 
+	<h6>property: all4same;</h6>
+  
+  
+	<p>Other important shorthand properties: <code>border</code>, <code>outline</code>, <code>font</code>, <code>background</code></p>
+  
+  
+  <figure>
+  <img src="images/shorthand_background.png">
+  <figcaption>BACKGROUND property: the background-position property can have a wide variety of values. Check the references for a more indepth explanation of the various combinations.</figcaption>
+  </figure>
+  
+  
+  <figure>
+  <img src="images/shorthand_font.png">
+  <figcaption>FONT property: Every element of the font shorthand has a default except the font-family which must be specified.</figcaption>
+  </figure>  
+
+  
+  <figure>
+  <img src="images/shorthand_border.png">
+  <figcaption>BORDER property:
+    <ul><li>Since the default border-style is none, omitting it will not render a border.</li><li>Border-width, border-style, and border-color are themselves shortcuts as they allow you to combine the four (top, right, bottom, and left) border statements into one. For example, border-width: 2px equals
+border-top-width:2px, border-right-width:2px, border-bottom-width:2px, border-left-width:2px.</li></ul></figcaption>
+  </figure>
+  
+<iframe  style="height:442px;width: 100%;" scrolling="no" title="CSS Font-Shorthand" src="https://codepen.io/ebajcar/embed/XRgBZE?height=442&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/ebajcar/pen/XRgBZE'>CSS Font-Shorthand</a> by Ellen Bajcar
+  (<a href='https://codepen.io/ebajcar'>@ebajcar</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<hr>
+</article>
+
+ 
+ 
+<!-- Properties: background, color -->
+<article id="page05">
+ 	<h3>CSS color and background properties</h3>	
+    
+	<p>Explore <code>color • background • background-color • background-image • background-origin • background-position • background-repeat • background-size</code></p>
+
+</article>	
+  
+<!-- Properties: Font, Text-->
+<article id="page06">	
+
+	<h4>Font properties</h4>
+	<p>Explore <code>font • font-family • font-size • font-style • font-variant • font-weight</code></p>
+  
+	<h4>Text properties</h4>	
+	<p>Explore <code>color • direction • letter-spacing • line-height • text-align • text-decoration • text-indent • text-shadow • text-transform • text-overflow • vertical-align • white-space • word-spacining</code></p>
+
+
+</article>
+
+
+
+
+</section>
+</div>
+</main>
+<!-- 
+  ** *******************************************
+  ** Footer
+  ** *******************************************
+-->	
+<footer>   
+    <div class="xsmall fa fa-copyright">
+        <em>This work is the intellectual property of Sheridan College. Any further copying 
+        and distribution outside of class must be within the copyright law. Posting to 
+        commercial sites for profit is prohibited.</em>
+    </div>   
+    <address style="text-align:center;">SYST10049 Web Development |&nbsp;Sheridan College</address> 					
+</footer> 
+    
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/htmlbars.min.js"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/xml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/markdown.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre code').forEach((block) => {
+    hljs.highlightBlock(block);
+  });
+});
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2017 The Bootstrap Authors
+ * Copyright 2014-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// See the Getting Started docs for more information:
+// https://getbootstrap.com/getting-started/#support-ie10-width
+
+(function () {
+  'use strict'
+
+  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement('style')
+    msViewportStyle.appendChild(
+      document.createTextNode(
+        '@-ms-viewport{width:auto!important}'
+      )
+    )
+    document.head.appendChild(msViewportStyle)
+  }
+
+}())    
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+</html>

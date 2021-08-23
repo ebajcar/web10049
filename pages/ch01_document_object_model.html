@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document Object Model (DOM)</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu+Mono'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs.min.css">
+<link rel="stylesheet" href="css/short_pages.css">  
+<link rel="stylesheet" href="css/bookmark.css">
+<!-- Fontawesome CSS -->
+<script src="https://kit.fontawesome.com/e511a6976b.js" crossorigin="anonymous"></script>
+<style>
+
+</style>
+</head>
+<body>
+<header><h1>Document Object Model (DOM)</h1></header>
+
+<main class="container">
+  <div class="row">
+    <!-- 1.1.  Table of contents -->	
+  <aside class="col-4" style="height:400px;position:sticky;top: 130px">
+	<h5 class="card-title">Table of Content</h5>
+	<nav>		
+      <a href="#"> What is Document Object Model?a</a>
+      <a href="#page02"> Thinking in Objects</a>
+      <a href="#page03"> The Document Objectc</a>
+      <a href="#page04"> DOM Nodes</a>
+      <a href="#page05"> DOM processing</a>
+      <a href="#page06"> CSS Object Model (CSSOM)</a>
+        <hr>
+  <a href="ch00_index.html"> Index</a>
+    </nav>
+  </aside>
+  
+  <section class="col-8 container">
+  
+    <h4 id="page01">What is Document Object Model?</h4>	
+    <p>The Document Object Model is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents. The document can be further processed and the results of that processing can be incorporated back into the presented page.</p>
+    <p>Elements in the DOM represent things &mdash; objects; that is, they have intrinsic meaning, also known as semantics. The HTMLElement interface holds the object's methods and attributes (properties).  </p>   
+    <footer class="blockquote-footer">Read further  <cite title="[ about DOM at WHATWG ]"><a href="https://dom.spec.whatwg.org/#trees" target="_blank"> about DOM at WHATWG</a></cite></footer>
+		
+    <hr>	
+	<h4 id="page02">Thinking in Objects</h4>
+    <p>The procedural paradigm focuses on designing methods. The object-oriented paradigm couples data and methods together into objects. Software design using the object-priented paradigm focuses on objects and operations on objects.</p>
+    <p>Objects are the fundamental building blocks of applications from an object-oriented perspective. An object is a self-contained component that contains properties and methods needed to make a certain type of data useful. An object’s properties are what it knows and its methods are what it can do.</p>
+    <p>An object represents an entity in the real world that can be distinctly identified. An object has a unique identity, state, and behaviour. The state of an object, also known as its properties or attributes, is represented by data fields with their current values. The behaviour of an object, also known as its actions, is defined by methods. To invoke a method on an object is to ask the object to perform an action. Reference your Java textbook.</p>
+    <p>To design classes, you need to explore the relationships among classes. The common relationships among classes are association, aggregation, composition, and inheritance Inheritance enables you to define a general class and extend it to more specialized classes, called subclass, child class, or extended class. The existing class is called a superclass, parent class, or base class. Inheritance is a powerful feature for reusing software.</p>
+   
+    <hr>	
+	<h4 id="page03">The Document Object</h4>  
+    <p>When an HTML document is loaded into a web browser, it becomes a document object. The document object is the root node of the HTML document and the "owner" of all other nodes.</p>
+    <p>The HTML DOM defines a standard way for accessing and manipulating HTML documents. It presents an HTML document as a <dfn>tree structure</dfn> or a <dfn>hierarchy</dfn>.</p>
+    <p>The DOM is a representation of the structure of our HTML page that you can interact with programmatically. An HTML document is a hierarchy of elements (objects). The browser produces an outline based on this hierarchy and displays it to the visitor (user). The browser constructs a DOM that can be used by the developer. The DOM's application programming interface (API) is exposed as objects with properties and methods, enabling you to write Javascript code to interact with HTML elements rendered to the page.</p>
+    <p>Our ability to manipulate and create web pages consistently across formats comes from the document object model API. This API defines the order and structure of document files as well as how the file is manipulated to create, edit, or remove contents.</p>
+    <footer class="blockquote-footer">Read further  <cite title="[ Introduction to the DOM at MDN]"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank"> Introduction to the DOM at MDN</a></cite></footer>   
+    
+    <hr>
+    <h4 id="page04">DOM Nodes</h4> 
+    <p>DOM is a collection of nodes arranged in a tree. All nodes are related to each other - a family tree of children, parents, siblings, grandparents, etc.  </p>   
+    <p>In the HTML DOM, everything is a node:</p>
+    <ul>
+        <li>The document itself is a document node.</li>
+        <li>All HTML elements are element nodes.</li>
+        <li>All HTML attributes are attribute nodes.</li>
+        <li>Text inside HTML elements are text nodes.</li>
+        <li>Comments are comment nodes.</li>
+    </ul>
+    <p>Each element in this tree has exactly one parent, with the exception of the root element, which has none.</p>    
+    <figure>
+      <img style="width:100%;height:390px;border:none;margin-bottom:1em;" 
+          src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/min_html_chart.png">	
+      <figcaption>Hierarchical representation of the minimal HTML5 document: a tree of elements encoded in the source document. </figcaption>
+    </figure>   
+    <p>Practice identifying the relationships in a DOM structure and representing web page structure in a hierarchy diagram.</p> 	
+    
+    <hr>
+    <h4 id="page05">DOM processing</h4>    
+    <figure>
+      <img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/full-process.png" alt="browser process" style="width:100%">	
+      <figcaption>DOM processing</figcaption>
+    </figure>   
+    <footer class="blockquote-footer">Read further  <cite title="[ Constructing the Object Model (Google)]"><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model" target="_blank"> Constructing the Object Model</a></cite></footer> 
+    
+    
+    <hr>
+    <h4 id="page06">CSS Object Model (CSSOM)</h4> 
+    <p>The CSSOM is a map of all CSS selectors and relevant properties for each selector in the form of a tree, with a root node, sibling, descendant, child, and other relationship. The CSSOM is very similar to the DOM. Both of them are part of the critical rendering path which is a series of steps that must happen to properly render a website.</p>
+	
+
+
+    
+  </section>
+  
+
+  </div>
+</main>
+<!-- 
+  ** *******************************************
+  ** Footer
+  ** *******************************************
+-->	
+<footer>   
+    <div class="xsmall fa fa-copyright">
+        <em>This work is the intellectual property of Sheridan College. Any further copying 
+        and distribution outside of class must be within the copyright law. Posting to 
+        commercial sites for profit is prohibited.</em>
+    </div>   
+    <address style="text-align:center;">SYST10049 Web Development |&nbsp;Sheridan College</address> 					
+</footer> 
+    
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/htmlbars.min.js"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/xml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/markdown.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre code').forEach((block) => {
+    hljs.highlightBlock(block);
+  });
+});
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2017 The Bootstrap Authors
+ * Copyright 2014-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// See the Getting Started docs for more information:
+// https://getbootstrap.com/getting-started/#support-ie10-width
+
+(function () {
+  'use strict'
+
+  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement('style')
+    msViewportStyle.appendChild(
+      document.createTextNode(
+        '@-ms-viewport{width:auto!important}'
+      )
+    )
+    document.head.appendChild(msViewportStyle)
+  }
+
+}())    
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+</html>

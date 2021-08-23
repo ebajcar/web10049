@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Layout techniques</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu+Mono'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs.min.css">
+<link rel="stylesheet" href="css/short_pages.css">  
+<link rel="stylesheet" href="css/bookmark.css">
+<!-- Fontawesome CSS -->
+<script src="https://kit.fontawesome.com/e511a6976b.js" crossorigin="anonymous"></script>
+<style>
+
+</style>
+</head>
+<body>
+<header><h1>Layouts and Frameworks</h1></header>
+
+<main class="container">
+<div class="row">
+<!-- Table of contents -->	
+<aside class="col-4" style="height:400px;position:sticky;top: 130px">
+<h5 class="card-title">Table of Content</h5>
+<nav>		
+      <a href="#">Frameworks and libraries</a>
+      <a href="#page02">HTML Layout techniques</a>
+      <a href="#page03">Styling lists</a>
+      <a href="#page04">Styling tables</a>   
+      <a href="#page05">CSS Flexbox layout</a>
+      <a href="#page06">CSS Grid layout</a>
+      <a href="#page07">Responsive design</a>
+        <hr>
+  <a href="ch00_index.html"> Index</a>
+</nav>
+</aside> 
+<!-- Content -->
+<section class="col-8 container">
+
+<article id="page01">
+    <h4>Frameworks and libraries</h4>
+	<ol>
+		<li><h5>Create own framework</h5>
+            <p>Start with no styles. Identify what CSS Rules you will need.  Generally, a custom-built framework can be smaller and cleaner, especially if you would use only 10 to 12 percent of an existing framework.</p>
+            <p>Start with well-formed and valid HTML5. Organize your CSS file (element) into sections. 1) imports and fonts first, 2) document layout, 3) specific areas, such as navigation, galleries, grids, buttons, ...</p>
+            <p>Practice building your own frameworks. It helps to select and determine when and how to use existing ones.</p>
+        </li>
+		<li><h5>Use existing libraries</h5>
+            <p>Check out some of the frameworks and libraries below. Some may require rudimentary skills for programming with Javascript. All require solid knowledge of HTML and CSS to use professionally.</p>
+        </li>
+		<li><h5>Combining multiple libraries</h5>
+            <p>The challenge of combining is to eliminate duplicates and minimize amount of code to include. <q>Less code gives better performance.</q></p>
+        
+        </li>
+	</ol>
+
+<hr>
+    <h5>Google Fonts</h5>
+    <p><a href="https://www.w3schools.com/howto/howto_google_fonts.asp" target="_blank"><i class="fa fa-bookmark" aria-hidden="true"></i> Tutorial on w3schools</a></p>
+
+     <figure class="fig-bookmark">
+      <a href="https://fonts.google.com/" target="_blank" class="bookmark source">
+      <div class="bookmark-info">
+        <div class="bookmark-text">
+          <div class="bookmark-title"><i class="fa fa-google" aria-hidden="true"></i> Google</div>
+          <div class="bookmark-description">Discover great typography and iconography.<br>Google Fonts makes it easy to bring personality and performance to your websites and products. Our robust catalog of open-source fonts and icons, makes it easy to integrate expressive type and icons seamlessly—no matter where you are in the world.</div>
+        </div>
+        <div class="bookmark-href"><img src="https://libapps-ca.s3.amazonaws.com/apps/common/favicon/favicon.ico" class="icon bookmark-icon"/>https://fonts.google.com/</div>
+      </div>
+      <img src="../images/google-fonts-with-genesis-1.png" class="bookmark-image"/></a>
+    </figure>
+
+  
+    <h5>CSS Icons</h5>
+    <P>
+      <a href="https://www.w3schools.com/css/css_icons.asp" target="_blank"><i class="fa fa-bookmark"></i> reference on w3schools</a>    
+    </p>
+    <figure>
+      <iframe style="height:430px" src="../examples/google_icons.html"></iframe>
+      <figcaption>Google icons example</figcaption>
+    </figure>
+    
+    
+    <h5>Font Awesome icon library</h5>   
+    <figure class="fig-bookmark">
+      <a href="https://fontawesome.com/" target="_blank" class="bookmark source">
+      <div class="bookmark-info">
+        <div class="bookmark-text">
+          <div class="bookmark-title"><i class="fa fa-font-awesome" aria-hidden="true"></i> Font Awesome</div>
+          <div class="bookmark-description">The next generation of the web’s favorite icon library + toolkit. Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit.</div>
+        </div>
+        <div class="bookmark-href"><img src="https://libapps-ca.s3.amazonaws.com/apps/common/favicon/favicon.ico" class="icon bookmark-icon"/>https://fontawesome.com/</div>
+      </div>
+      <img src="../images/awesomeIcons.png" class="bookmark-image"/></a>
+    </figure>    
+     
+    
+    <h5>W3.CSS framework</h5>
+     <figure class="fig-bookmark">
+      <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="bookmark source">
+      <div class="bookmark-info">
+        <div class="bookmark-text">
+          <div class="bookmark-title"><i class="fa fa-bookmark" aria-hidden="true"></i> W3.CSS</div>
+          <div class="bookmark-description">w3.CSS is a modern, responsive, mobile first CSS framework, standard CSS only (No jQuery or JavaScript library). A Quality Alternative to Bootstrap W3.CSS is Smaller, Faster and Easier to Use. </div>
+        </div>
+        <div class="bookmark-href"><img src="https://libapps-ca.s3.amazonaws.com/apps/common/favicon/favicon.ico" class="icon bookmark-icon"/>https://www.w3schools.com/w3css/default.asp</div>
+      </div>
+      <img src="../images/libraryCode.png" class="bookmark-image"/></a>
+    </figure>    
+    
+    <p>To use, include the stylesheet on your pages: (contains some 230 CSS rules, file size 23.1 KB)</p> 
+    <pre><code>&lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></code></pre>
+      
+    
+    <h5>Bootstrap CSS framework</h5>
+    <p><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" target="_blank"><i class="fa fa-bookmark" aria-hidden="true"></i> Tutorial on w3schools</a><br>                 
+    Bootstrap is a free and popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites. (the base file contains over 1000 CSS rules, file size 161 KB, plus themes and other libraries)</p>  
+    <!-- https://www.bootstrapcdn.com/ -->
+    
+    <h5>Hosted Libraries </h5>
+    <p>                
+    Make sure you are comfortable with native CSS and rudimentary Javascript before delving into libraries.</p>
+    
+    
+      <figure class="fig-bookmark">
+      <a href="https://developers.google.com/speed/libraries/" target="_blank" class="bookmark source">
+      <div class="bookmark-info">
+        <div class="bookmark-text">
+          <div class="bookmark-title"><i class="fa fa-google" aria-hidden="true"></i> Google Hosted Libraries</div>
+          <div class="bookmark-description">The Google Hosted Libraries is a stable, reliable, high-speed, globally available content distribution network for the most popular, open-source JavaScript libraries. Google works directly with the key stakeholders for each library effort and accepts the latest versions as they are released.</div>
+        </div>
+        <div class="bookmark-href"><img src="https://libapps-ca.s3.amazonaws.com/apps/common/favicon/favicon.ico" class="icon bookmark-icon"/>https://developers.google.com/speed/libraries/</div>
+      </div>
+      <img src="../images/libraryFramework.png" class="bookmark-image"/></a>
+    </figure>   
+    
+    
+    <h5>Google charts</h5>
+    <p><a href="https://developers.google.com/chart/" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> Guide at Google</a></p>
+    <figure>
+      <iframe style="height:430px" src="../examples/google_chart_pie10049.html"></iframe>
+      <figcaption>Example using Google charts. <a href="https://www.w3schools.com/howto/howto_google_charts.asp">tutorial on w3schools</a>   </figcaption>
+	</figure>			
+</article>
+
+<article id="page02">
+	<h4>HTML Layout Techniques</h4>
+	<p>There are different ways to create multi-column layouts. Each way has its pros and cons.</p>
+	<ul>
+		<li>HTML tables</li>
+		<li>CSS float property</li>
+		<li>CSS framework</li>
+		<li>CSS flexbox</li>
+		<li>CSS grid</li>
+	</ul>
+    
+      <figure class="fig-bookmark">
+      <a href="https://www.w3schools.com/css/css_website_layout.asp" target="_blank" class="bookmark source">
+      <div class="bookmark-info">
+        <div class="bookmark-text">
+          <div class="bookmark-title"><i class="fa fa-bookmark" aria-hidden="true"></i> w3schools</div>
+          <div class="bookmark-description">Website Layout: A website is often divided into headers, menus, content and a footer. There are tons of different layout designs to choose from. However, the structure above, is one of the most common, and we will take a closer look at it in this tutorial.</div>
+        </div>
+        <div class="bookmark-href"><img src="https://libapps-ca.s3.amazonaws.com/apps/common/favicon/favicon.ico" class="icon bookmark-icon"/>https://www.w3schools.com/css/css_website_layout.asp</div>
+      </div>
+      <img src="../images/web_layout.png" class="bookmark-image"/></a>
+      <figcaption>A typical website layout.</figcaption>
+    </figure>   
+    
+    
+	<br>	
+	<p>Regardless of the chosen technique, follow the sequence of steps:</p>
+	<ol>
+		<li>Start with well-formed and valid HTML5 code with appropriate comments.</li>
+		<li>Consider the general CSS rules first.</li>
+		<li>Apply the desired values for positioning of the content.</li>
+		<li>Use a technique (flexbox, grid,...) to layout the page.</li>
+		<li>Add finishing touches...</li>
+	</ol>
+	<a class="btn btn-outline-warning btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="http://bajcar.dev.fast.sheridanc.on.ca/course_syst10049_examples/design_layouts.html">
+		Explore: example	 
+	</a>	
+
+    
+</article>
+
+
+<article id="page03">
+	<h3>Styling lists </h3>	
+	<ul>
+		<li>The <code>list-style-type</code> <em>property</em> specifies the type of list item marker.</li>
+		<li>The <code>list-style-image</code> <em>property</em> specifies an image as the list item marker</li>
+		<li>The <code>list-style-position</code> <em>property</em> specifies the position of the list-item markers (bullet points).</li>
+		<li>The <code>list-style-type:none</code> <em>property</em> can also be used to remove the markers/bullets. Note that the list also has default margin and padding. To remove this, add<br> margin:0 and padding:0 to &lt;ul> or &lt;ol>:</li>
+		<li>The <code>list-style</code> <em>property</em> is a <strong>shorthand property</strong>. It is used to set all the list properties in one declaration:</li>
+		<li>We can also style lists with colors, to make them look a little more interesting.</li>
+		
+	</ul>
+		<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3schools.com/css/css_list.asp">
+		Explore the examples @w3schools	</a>   
+</article>
+
+<article id="page04">
+	<h3>Styling tables</h3>	
+	<ul>
+		<li>To specify table borders in CSS, use the <code>border</code> <em>property</em>.</li>
+		<li>The <code>border-collapse</code> <em>property</em> sets whether the table borders should be collapsed into a single border</li>
+		<li>Width and height of a table are defined by the <code>width</code> and <code>height</code> <em>properties</em>.</li>
+		<li>The <code>text-align</code> <em>property</em> sets the horizontal alignment (like left, right, or center) of the content in &lt;th> or &lt;td>.</li>
+		<li>The <code>vertical-align</code> <em>property</em> sets the vertical alignment (like top, bottom, or middle) of the content in &lt;th> or &lt;td>.</li>
+		<li>To control the space between the border and the content in a table, use the <code>padding</code> <em>property</em> on &lt;td> and &lt;th> elements.</li>
+		<li>Add the <code>border-bottom</code> <em>property</em> to &lt;th> and &lt;td> for horizontal dividers</li>
+		<li>Use the <code>:hover</code> <em>selector</em> on &lt;tr> to highlight table rows on mouse over</li>
+		<li>For zebra-striped tables, use the <code>nth-child()</code> <em>selector</em> and add a <code>background-color</code> <em>property</em> to all even (or odd) table rows</li>
+
+	</ul>
+		<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3schools.com/css/css_table.asp">
+		Explore the examples @w3schools	</a>    
+</article>
+
+<article id="page05">
+	<h3>CSS Flexbox layout</h3>	
+	<p>Before the Flexbox Layout module, there were four layout modes:</p>
+	<ol>
+		<li>Block, for sections in a webpage</li>
+		<li>Inline, for text</li>
+		<li>Table, for two-dimensional table data</li>
+		<li>Positioned, for explicit position of an element</li>
+	</ol>	
+	<p>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. To start using the Flexbox model, you need to first define a flex container. The flex container becomes flexible by setting the <code>display</code> <em>property</em> to flex.</p>
+	<p>The flex container properties are:<br>
+<code>flex-direction<br>
+&nbsp;flex-wrap<br>
+&nbsp;flex-flow<br>
+&nbsp;justify-content<br>
+&nbsp;align-items<br>
+&nbsp;align-content</code>
+</p>
+	<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3schools.com/css/css3_flexbox.asp">
+		Explore the examples @w3schools	 
+	</a>	     
+</article>
+
+
+<article id="page06">
+	<h3>CSS Grid Layout</h3>	
+	<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+	<dl class="row">
+	  <dt class="col-sm-3">Grid Elements</dt>
+	  <dd class="col-sm-9">A grid layout consists of a parent element, with one or more child elements.</dd>
+	  <dt class="col-sm-3">Display Property</dt>
+	  <dd class="col-sm-9">An HTML element becomes a grid container when its display property is set to grid or inline-grid</dd>
+	  <dt class="col-sm-3">Grid Columns</dt>
+	  <dd class="col-sm-9">The vertical lines of grid items are called columns.</dd>	  
+	  <dt class="col-sm-3">Grid Rows</dt>
+	  <dd class="col-sm-9">The horizontal lines of grid items are called rows.</dd>
+	  <dt class="col-sm-3">Grid Gaps</dt>
+	  <dd class="col-sm-9">The spaces between each column/row are called gaps.</dd>
+	  <dt class="col-sm-3">Grid Lines</dt>
+	  <dd class="col-sm-9">The lines between columns are called column lines.<br>The lines between rows are called row lines.</dd>	  
+	</dl>	
+	<p>To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid. Grid containers consist of grid items, placed inside columns and rows.</p>
+	<p>The grid property is a shorthand property for the following properties:<br>
+<code>grid-template-rows<br>
+&nbsp;grid-template-columns<br>
+&nbsp;grid-template-areas<br>
+&nbsp;grid-auto-rows<br>
+&nbsp;grid-auto-columns<br>
+&nbsp;grid-auto-flow</code>
+</p>
+
+	
+	<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3schools.com/css/css_grid.asp">
+		Explore the examples @w3schools	 
+	</a>     
+</article>
+
+<article id="page07">
+	<h3>Responsive design</h3>
+
+	<h5>At-rules</h5>	
+	
+  <details open>
+    <summary>| @import | <strong>@media</strong> | <del>@keyframes</del> | @font-face | @charset| </summary>
+    <p>At-rules are all different, but they have a basic structure in common. They start with an "@" symbol, followed by their name as a CSS keyword. Some at-rules are simple statements, with their name followed by more CSS values to specify their behavior, and finally ended by a semicolon. Others are blocks; they can have CSS values following their name, but they end with a {}-wrapped block, similar to a qualified rule. Even the contents of these blocks are specific to the given at-rule: sometimes they contain a sequence of declarations, like a qualified rule; other times, they may contain additional blocks, or at-rules, or other structures altogether.</p>
+    <footer class="blockquote-footer">Read further  <cite title="[ www.w3.org/standards/webdesign/htmlcss#whatcss ]"><a href="https://www.w3.org/TR/css-syntax-3/#syntax-description" target="_blank"> At-rules (W3C specification)	</a></cite></footer>  
+  </details>
+	
+
+  <hr>
+<h5> Media-specific style sheets: the @media rule</h5>
+<p>The <code>@media</code> at-rule begins with a media type and a list of optional media queries. Its block contains entire rules, which are only applied when the @media's conditions are fulfilled.
+</p>
+<pre class="language-css"><code>
+@media print {
+  body { font-size: 10pt }
+}
+</code></pre>
+
+<p>A media type is a broad category of user-agent devices on which a document may be displayed. The original set of media types were defined in HTML4, for the media attribute on &lt;link> elements.</p>
+
+<footer class="blockquote-footer">
+  Read further  <cite title="[ media types: all, print, speech, screen ]"><a href="https://www.w3.org/TR/mediaqueries-4/#media-type" target="_blank"> media types: all, print, speech, screen.</a></cite>
+</footer> 
+	<hr>
+
+<h5>The Viewport</h5>
+
+
+<p>The viewport is the user's visible area of a web page. HTML5 introduced a method to let web designers take control over the viewport, through the &lt;meta> tag. You should include the following &lt;meta> viewport element in all your web pages:</p>
+<pre class="language-html"><code>
+&lt;meta name="viewport"  
+      content="width=device-width,initial-scale=1.0">
+</code></pre>      
+
+<footer class="blockquote-footer">Read further  <cite title="[ https://www.w3schools.com/css/css_rwd_viewport.asp ]"><a href="https://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank"> https://www.w3schools.com/css/css_rwd_viewport.asp	</a></cite></footer>       
+</article>
+<!--
+https://www.quirksmode.org/mobile/viewports2.html
+https://www.quirksmode.org/mobile/viewports.html
+https://www.quirksmode.org/mobile/pix/viewport/desktop_mediaqueries.jpg
+
+https://www.quirksmode.org/blog/archives/2010/04/a_pixel_is_not.html
+
+Using the viewport meta tag to control layout on mobile browsers
+https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag
+
+
+    <h6>When to use Viewport</h6>
+    <p>You need to use the viewport meta if you are building a dedicated mobile site. Read the article <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag">Using the viewport meta tag to control layout on mobile browsers</a>.</p>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@viewport">The @viewport CSS at-rule</a> <del>will be a more flexible alternative for responsive web sites once the specifications pass the "Working Draft" status and browser compatibility issues are resolved.</del><ins>Deprecated
+This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible; see the compatibility table at the bottom of this page to guide your decision. Be aware that this feature may cease to work at any time.</ins></p>
+    <p> If you are coding a responsive website, all you need to write is <br>					
+    <samp>
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+    </samp>
+    </p>							
+    <p>Have a look at these two posts for more details: <a href="http://blog.javierusobiaga.com/stop-using-the-viewport-tag-until-you-know-ho">Stop using the viewport meta tag (until you know how to use it)</a> 
+    and <a href="http://www.zanetinewebdesign.com/stop-using-viewport-meta-tag-blindly/">Stop using viewport meta tag blindly.</a></p>
+-->
+<article id="page08">
+    
+</article>
+</section>
+</div>
+</main>
+<!-- 
+  ** *******************************************
+  ** Footer
+  ** *******************************************
+-->	
+<footer>   
+    <div class="xsmall fa fa-copyright">
+        <em>This work is the intellectual property of Sheridan College. Any further copying 
+        and distribution outside of class must be within the copyright law. Posting to 
+        commercial sites for profit is prohibited.</em>
+    </div>   
+    <address style="text-align:center;">SYST10049 Web Development |&nbsp;Sheridan College</address> 					
+</footer> 
+    
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/htmlbars.min.js"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/xml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/markdown.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre code').forEach((block) => {
+    hljs.highlightBlock(block);
+  });
+});
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2017 The Bootstrap Authors
+ * Copyright 2014-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// See the Getting Started docs for more information:
+// https://getbootstrap.com/getting-started/#support-ie10-width
+
+(function () {
+  'use strict'
+
+  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement('style')
+    msViewportStyle.appendChild(
+      document.createTextNode(
+        '@-ms-viewport{width:auto!important}'
+      )
+    )
+    document.head.appendChild(msViewportStyle)
+  }
+
+}())    
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+</html>

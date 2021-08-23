@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Akronim|Asap+Condensed|Barrio|Frijole|Luckiest+Guy|Princess+Sofia');
+:root {
+	--bgwhite: #fff;	
+	--fontcolor: #003767;
+    --sherblue: #003767;
+    --sherteal: #00b2ce;
+    --sherorange: #00CCCC;
+  --lightblue: #00b2ce;
+  --darkblue: #0081a1;
+  --darkgray: #333940;
+  --lightgray: #d5d5d5;    
+	--fontfam: 'Luckiest Guy', cursive;
+	--fontbody: 'Asap Condensed', sans-serif;
+	--fonttitle: 'Akronim', cursive;
+	--fontalt: 'Kaushan Script', cursive;  
+	--gap-sm: 2px;
+	--gap-md: 10px;
+	--gap-lg: 25px;
+ 
+  --body-bg-color: #a2a2a2;
+  --tiles-bg-color: rgba(255, 255, 255, 0.8);
+  --tiles-bg-color-hover: rgba(230, 230, 230, 0.8);;
+  --tiles-blue-bg-color: #4f62ff;
+  --tiles-red-bg-color: #d22f2f;
+  --cell-size: 105px;
+  --cell-spacing: 10px;
+  --title-height: 80px;
+  --reset-height: 105px;
+}
+
+
+
+body {
+  padding-top: 0.2em;
+  background: var(--bgwhite);
+}
+h2 { 
+  padding-top:20px; 
+  color: var(--bgwhite);
+  background-color: teal; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to top right, teal, teal, white, white, white, white); /* Standard syntax (must be last) */
+  }
+h3 { 
+  padding-top:20px; 
+  background-color:  var(--sherteal); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to top right, teal, white, white, white, white, white); /* Standard syntax (must be last) */
+  } 
+@media (max-width: 1200px) {
+  .container {
+    width: 70% !important;
+  }
+}
+.item {
+  box-sizing: border-box;
+  width: 100%;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+}
+code {
+  color: teal;
+  font-weight: bold;
+}
+nav > a {
+  display: block;
+}
+a {
+  color:   var(--sherteal);
+  font-weight: 500;
+}
+.secondary {
+  color: gray;
+  margin: 0;
+  padding: 0 0 0 40px;
+  font-size: 0.9em;
+  display: block;
+  font-weight: 500;
+}
+.sub-menu-item {
+  color: gray;
+  margin: 0;
+  padding: 0 0 0 62px;
+  font-size: 0.8em;
+  display: block;
+  font-weight: 400;
+}
+hr {
+	border: 0;
+  padding: 0 auto;
+  margin: 33px auto 6px;
+	height: 3px;
+	background-image: -webkit-linear-gradient(left, rgba(190,190,190,0), rgba(190,190,190,0.75), rgba(190,190,190,0)); 
+	background-image:    -moz-linear-gradient(left, rgba(190,190,190,0), rgba(190,190,190,0.75), rgba(190,190,190,0));
+	background-image:     -ms-linear-gradient(left, rgba(190,190,190,0), rgba(190,190,190,0.75), rgba(190,190,190,0));
+	background-image:      -o-linear-gradient(left, rgba(190,190,190,0), rgba(190,190,190,0.75), rgba(190,190,190,0));
+}
+
+
+
+/*
+added August 17, 2021
+*/
+header, body>footer {
+  background: var(--darkgray);
+  color:white;
+  height: 100px;
+  margin: auto;
+  padding-top:25px;
+  position: -webkit-sticky;
+  position:sticky;
+  text-align: center;
+  width: 100%;
+  z-index:200;
+}
+header {
+  top: 0;
+}
+footer {
+  bottom: 0;
+  
+}
+.blockquote-footer {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: right;
+}
+section:last-child {
+  margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+/*
+orignal continued
+*/
+
+article {
+  padding-top: 110px;    
+}
+article:first-child {
+    padding-top: 10px;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary:before {
+  content: "\2b9e"; /* the new icon  ≡\2714*/
+  color: gray;
+  margin-right: 5px;
+}
+details[open] summary:before {
+  content: "\2b9f"; /* the new icon  "∧› ⚊ ⋮ " */
+	color: lightgray;
+}
+body {
+  /* Set "figure-counter" to 0 */
+  counter-reset: figure-counter;
+}
+figcaption::before {
+  /* Increment "figure-counter" by 1 */
+  counter-increment: figure-counter;
+  content: "FIGURE " counter(figure-counter) ". ";
+  font-weight: bold;
+}
+/*
+main {
+  counter-reset: section 0;
+}
+h2 {
+  counter-reset: subsection 1;
+}
+h2::before {
+  counter-increment: section;
+  content: counter(section) ". "; 
+}
+h3::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " "; 
+}
+h3 {
+  counter-reset: subsubsection;
+}
+h4::before {
+  counter-increment: subsubsection;
+  content: counter(section) "." counter(subsection) "." counter(subsubsection) ". ";
+}
+*/
+figure {
+  max-width: 800px;
+  padding-left: 5px;
+  border: 3px solid;
+  border-image-source: linear-gradient(70deg, lightblue, white, white, white);
+  border-image-slice: 1;
+}
+.eeb-border-quote { border-left: 3px solid darkorange;padding-left:6px; }
+.col3 {column-count: 3}
+
+iframe {
+  width:100%;
+  height:124px;
+  border: none;
+  border-bottom:1px dotted lightblue;
+  border-top: 1px dotted lightblue;
+}
+abbr { cursor: help; }
+samp:before {
+  content: '<';
+}
+samp:after {
+  content: '>';
+}
+samp {
+  font-family: monospace;
+  color: teal;
+  font-size: 1.2em;
+}
+[data-ref-link] {
+  color: darkred;
+}

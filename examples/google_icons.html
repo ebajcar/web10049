@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Google Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+li {
+	list-style: none;
+}
+li > i {
+	color: red;
+}
+ul> li > ul > li > i {
+	color: indigo;
+}
+ul > li > ul > li > ul > li > i {
+	color: darkorange;
+}
+
+i {
+	vertical-align: sub;
+}
+.eeb-md {
+	font-size:24px;
+}
+.eeb-lg {
+	font-size:36px;
+}
+.eeb-xlg {
+	font-size:48px;
+}
+.eeb-red {
+	color:red;
+}
+</style>
+</head>
+<body>
+	<h1>Google Icons</h1>
+
+	<i class="material-icons">3d_rotation</i>
+	<i class="material-icons eeb-lg">3d_rotation</i>
+	<i class="material-icons eeb-xlg eeb-red">3d_rotation</i>
+
+	<p><button>Used on a button: <i class="material-icons">aspect_ratio</i></button></p>
+	<button class="eeb-md">Button <i class="material-icons">airplay</i></button>
+
+	<p>Unicode:</p>
+	<i class="material-icons">&#xe84d;</i>
+	
+	<ul>
+		<li><i class="material-icons">local_library</i> subject area 51
+			<ul>
+				<li><i class="material-icons">person</i> author F
+					<ul>
+						<li><i class="material-icons">library_books</i> Lorem Ipsum</li>
+						<li><i class="material-icons">library_books</i> Once Upon A Time</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+table, td, th {
+  
+  font-family: 'Kanit', sans-serif;
+  font-size:1em;
+}
+table {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+tr:first-child th {
+  border-bottom: 2px solid black;
+}
+td {
+  padding: 1px 5px;
+  border: 1px dotted lightgray;
+}
+td:first-child {
+  font-weight: bolder;
+}
+</style>
+</head>
+<body>		
+<table>
+  <tr>
+    <th>Protocol</th>
+	<th>What it does</th>
+	<th>Example</th>
+  </tr>
+  <tr>
+    <td>http</td>
+	<td>Accesses a remote file via HTTP</td>
+	<td>http://admin.com/index.html</td>
+  </tr>
+  <tr>
+    <td>https</td>
+	<td>Accesses a remote file via HTTP/SSL</td>
+	<td>https://admin.com/order.shtml</td>
+  </tr>
+  <tr>
+    <td>ftp</td>
+	<td>Accesses a remote file via FTP</td>
+	<td>ftp://ftp.xor.com/adduser.tar.gz</td>
+  </tr>
+  <tr>
+    <td>mailto</td>
+	<td>Sends email to a designated address</td>
+	<td>mailto:sa-book@admin.com</td>
+  </tr>
+  <tr>
+    <td>news</td>
+	<td>Accesses Usenet newgroups</td>
+	<td>news:alt.cooking</td>
+  </tr>
+  <tr>
+    <td>telnet</td>
+	<td>Logs in to a remote computer</td>
+	<td>telnet://spot.acme.com</td>
+  </tr>
+  <tr>
+    <td>ldap</td>
+	<td>Accesses LDAP directory services</td>
+	<td>ldap://ldap.bigfoot.com:389/cn=Herb</td>
+  </tr>
+  <tr>
+    <td>file</td>
+	<td>Accesses a local file (no Internet)</td>
+	<td>file://etc/syslog.conf</td>
+  </tr>
+</table>
+</body>
+</html> 
+  

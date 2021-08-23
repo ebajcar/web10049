@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Marking up semantic content</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu+Mono'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs.min.css">
+<link rel="stylesheet" href="css/short_pages.css">  
+<link rel="stylesheet" href="css/bookmark.css">
+<!-- Fontawesome CSS -->
+<script src="https://kit.fontawesome.com/e511a6976b.js" crossorigin="anonymous"></script>
+<style>
+
+</style>
+</head>
+<body>
+<header><h1>Marking up semantic content</h1></header>
+
+<main class="container">
+<div class="row">
+<!-- Table of contents -->	
+<aside class="col-4" style="height:400px;position:sticky;top: 130px">
+<h5 class="card-title">Table of Content</h5>
+<nav>		
+  <a href="#"> Non-semantic wrappers</a>
+  <a href="#page13"> Line breaks and horizontal rules</a>
+  <a href="#page14"> Page regions</a>
+  <a href="#page15"> Articles and sections</a>
+  <a href="#page16"> Figures and figure captions</a>
+  <a href="#page17"> Ordered, unordered, and description lists</a>
+  <a href="#page18"> Table data structures</a>
+  <hr>
+  <a href="ch00_index.html"> Index</a>
+</nav>
+</aside> 
+<!-- Content -->
+<section class="col-8 container">
+
+<article id="page12"> 
+ 	<h3>Non-semantic wrappers</h3>
+	<p>DIV, SPAN</p>    
+</article>
+
+
+<article id="page13"> 
+	<h3>Line breaks and horizontal rules</h3>
+  <p>BR, HR</p>
+</article>
+
+<article id="page14"> 
+    <h3>Page regions</h3>
+    <dl class="row">	  
+      <dt class="col-sm-3 text-info">element <samp>main</samp></dt>
+      <dd class="col-sm-9">  represents the main content of the body of a document or application. 	 
+      <ul>
+        <li>is not sectioning content and has no effect on the document outline.</li> 
+        <li>main content area of a document includes content that is unique to that document and excludes content that is repeated across a set of documents such as site navigation links, copyright information, site logos and banners and search forms (unless the document or application’s main function is that of a search form).</li> 
+        <li>must not be more than one visible main element in a document.</li> 
+        <li>authors must not include the main element as a descendant of an article, aside, footer, header or nav element.</li> 
+        <li>is not suitable for use to identify the main content areas of sub sections of a document or application.</li> 
+      </ul>
+      <footer class="blockquote-footer">Read further  
+        <cite title="[  ]">
+          <a href="https://www.w3.org/TR/html52/grouping-content.html#the-main-element" 
+            target="_blank"> about the main element at W3C☍</a>  
+          <!--a href=" " 
+            target="_blank"> ☍MDN</a-->          
+        </cite>
+      </footer> 
+      </dd>	    
+
+      <dt class="col-sm-3 text-info">element <samp>header</samp> </dt>
+      <dd class="col-sm-9"> usually contain Web page's/section's headers: logo, navigations, headers, search form, etc. <small style="word-break:keep-all"><a href="">☍MDN</a>&nbsp;&nbsp;<a href="">☍W3C</a></small></dd>	
+      
+      <dt class="col-sm-3 text-info">element <samp>footer</samp> </dt>
+      <dd class="col-sm-9"> typically contains information about its section: author, links to related documents, copyright info, etc. <small style="word-break:keep-all"><a href="">☍MDN</a>&nbsp;&nbsp;<a href="">☍W3C</a></small></dd>	 
+           
+      <dt class="col-sm-3 text-info">element <samp>aside</samp> </dt>
+      <dd class="col-sm-9"> represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content: pull quotes, sidebars, advertising, groups of nav elements, etc.  
+      <small style="word-break:keep-all"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">☍MDN</a>&nbsp;&nbsp;<a href="https://www.w3.org/TR/html52/sections.html#the-aside-element">☍W3C</a></small></dd>		        
+    </dl>	
+    <footer class="blockquote-footer">Read further  <cite title="[ about page regions at W3C ]"><a href="https://www.w3.org/WAI/tutorials/page-structure/regions/#complementary-content" target="_blank"> about page regions at W3C</a></cite></footer>
+    
+    <figure>
+<pre class="html"><code>
+&lt;!-- a typical layout using page regions -->
+&lt;header>
+  &lt;h1>Page Heading&lt;/h1>
+&lt;header>
+&lt;nav>
+  links will appear here
+&lt;nav>
+&lt;main>
+  &lt;p>Main content goes here.&lt;/p>
+&lt;main>
+&lt;footer>
+  &lt;!-- contact info goes here -->
+  &lt;address>Web Development &copy; Sheridan College&lt;/address>
+&lt;/footer></code></pre>
+    <iframe style="width:100%;height:160px;border:1px dotted blue;" srcdoc='
+    <header><h1>Page Heading</h1>
+    <nav>links will appear here</nav>
+    <main>Main content goes here</main>
+    <footer><address>Web Development &copy; Sheridan College</address></footer>
+    '></iframe>
+    <figcaption> A typical layout using page regions.</figcaption>
+    </figure>      
+</article>
+
+
+<article id="page15"> 
+    <h3>Articles and sections</h3>
+    <dl class="row">     
+      <dt class="col-sm-2 text-info">element <samp>article</samp></dt>
+      <dd class="col-sm-10"> represents a independent item section of content: news topic, forum post, newspaper article, blog entry, user-submitted comment, etc. <small style="word-break:keep-all"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">☍MDN</a>&nbsp;&nbsp;<a href="https://www.w3.org/TR/html52/sections.html#the-article-element">☍W3C</a></small></dd>		  
+      
+	  <dt class="col-sm-2 text-info">element <samp>section</samp></dt>
+      <dd class="col-sm-10">  represents a generic section of a document or application. 	 
+        <ul>
+          <li>It is a thematic grouping of content. Each section should be identified, typically by including a heading (h1-h6 element) as a child of the section element.</li>
+          <li>You are encouraged to use the &lt;article> element, instead, <em>when the content is complete, or self-contained, composition.</em></li> 
+          <li>The section element is not a generic container element. When an element is needed only for styling purposes or as a convenience for scripting, authors are encouraged to use the div element instead. A general rule is that the section element is appropriate only if the element’s contents would be listed explicitly in the document’s outline.</li>      
+        </ul>
+        <footer class="blockquote-footer">Read further  
+          <cite title="[  ]">
+            <a href="https://www.w3.org/TR/html52/sections.html#the-section-element" 
+              target="_blank"> about the section element at W3C☍</a>          
+          </cite>
+        </footer>     
+      </dd>		    
+    </dl>	<hr>
+    <figure>
+<pre class="html"><code>
+&lt;!-- a sample article layout -->
+&lt;article>
+  &lt;header>
+    &lt;h2>Article Heading&lt;/h2>
+    &lt;h5>Byline&lt;/h5>
+  &lt;/header>
+  &lt;section>
+    &lt;h3>Section 1 Subheading&lt;/h3>
+    &lt;p>Content...&lt;/p>
+  &lt;/section>
+  &lt;section>
+    &lt;h3>Section 2 Subheading&lt;/h3>
+    &lt;p>Content...&lt;/p>
+  &lt;/section>  
+    &hellip;
+  &lt;footer>
+    article footer
+  &lt;/footer>    
+&lt;/article></code></pre>
+    <iframe style="width:100%;height:160px;border:1px dotted blue;" srcdoc='
+<article>
+  <header>
+    <h2>Article Heading</h2>
+    <h5>Byline</h5>
+  </header>
+  <section>
+    <h3>Section 1 Subheading</h3>
+    <p>Content</p>
+  </section>
+  <section>
+    <h3>Section 2 Subheading</h3>
+    <p>Content</p>  
+  </section> 
+  &hellip;  
+  <footer>
+    article footer
+  </footer>    
+</article>
+    '></iframe>
+    <figcaption> A typical layout using page regions.</figcaption>
+    </figure>       
+</article>
+
+
+<article id="page16"> 
+    <h3>Figures and figure captions</h3>
+	<dl class="row">
+	  <dt class="col-sm-3 text-info">element <samp>figure</samp> </dt>
+	  <dd class="col-sm-9">represents some flow content, optionally with a caption, that is self-contained (like a complete sentence) and is typically referenced as a single unit from the main flow of the document.
+      <ul>
+        <li>can be used to annotate illustrations, diagrams, photos, code listings, etc.</li> 
+        <li>when a figure is referred to from the main content of the document by identifying it by its caption (e.g., by figure number), it enables such content to be easily moved away from that primary content, e.g., to the side of the page, to dedicated pages, or to an appendix, without affecting the flow of the document.</li> 
+      </ul>
+      <footer class="blockquote-footer">Read further  
+        <cite title="[ about the figure element at W3C☍ ]">
+          <a href="https://www.w3.org/TR/html52/grouping-content.html#the-figure-element" 
+            target="_blank"> about the figure element at W3C☍</a>  
+          <!-- a href=" " 
+            target="_blank"> ☍MDN</a-->          
+        </cite>
+      </footer> 
+	  </dd>	
+    
+	  <dt class="col-sm-3 text-info">element <samp>figcaption</samp></dt>
+	  <dd class="col-sm-9"> <p>represents a caption or legend for the rest of the contents of the figcaption element’s parent figure element, if any.</p></dd>
+	</dl>	
+    <footer class="blockquote-footer">Read further  <cite title="[ ]"><a href="" target="_blank"> </a></cite></footer>
+
+    <figure>
+<pre class="html"><code>
+&lt;!-- image in a figure with description -->
+&lt;p>Content before...&lt;/p>
+&lt;figure>
+    &lt;img src="semElements.gif" alt="page regions">
+&lt;figcaption>Figure XVI: description here&lt;/figcaption>
+&lt;/figure>
+&lt;p>Content after...&lt;/p></code></pre>
+    <iframe style="width:100%;height:280px;border:1px dotted blue;" srcdoc='
+<p>Content before...</p>
+<figure>
+    <img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/semElements.gif" alt="page regions" height="150">
+<figcaption>Figure XVI: description here</figcaption>
+</figure>
+<p>Content after...</p>
+    '></iframe>
+    <figcaption> A typical layout using page regions.</figcaption>
+    </figure>        
+</article>
+
+
+<article id="page17"> 
+  <h3>Ordered, unordered, and description lists</h3>
+	<dl  class="row">	
+	  <dt class="col-sm-2 text-info">element <samp>ol</samp></dt>
+	  <dd class="col-sm-10">The ol element represents a list of items, where the items have been intentionally ordered, such that changing the order would change the meaning of the document. The items of the list are the li element child nodes of the ol element, in tree order.
+      <ul>
+        <li>The <code>reversed</code> attribute is a boolean attribute. If present, it indicates that the list is a descending list (..., 3, 2, 1). If the attribute is omitted, the list is an ascending list (1, 2, 3, ...).</li>
+        <li>The <code>start</code> attribute, if present, must be a valid integer giving the ordinal value of the first list item.</li>
+        <li>The <code>type</code> attribute, can be used to specify the kind of marker to use in the list, in the cases where that matters. It must have a value that is a case-sensitive match for one of the characters <kbd>1</kbd> (decimal), <kbd>a</kbd> (lower-alpha),      <kbd>A</kbd> (upper-alpha), <kbd>i</kbd>  (lower-roman),  <kbd>I</kbd> (upper-roman). </li>
+      </ul>
+    </dd>	
+	  <dt class="col-sm-2 text-info">element <samp>ul</samp></dt>
+	  <dd class="col-sm-10">The ul element represents a list of items, where the order of the items is not important — that is, where changing the order would not materially change the meaning of the document. The items of the list are the li element child nodes of the ul element.</dd>	
+	  <dt class="col-sm-2 text-info">element <samp>li</samp></dt>
+	  <dd class="col-sm-10">The li element represents a list item. If its parent element is an ol, or ul, then the element is an item of the parent element’s list, as defined for those elements. Otherwise, the list item has no defined list-related relationship to any other li element.</dd> 
+	</dl>	
+  <footer class="blockquote-footer">Read further  <cite title="[ol, ul, li elements at W3C ]"><a href="https://www.w3.org/TR/html52/grouping-content.html#the-ol-element" target="_blank"> ol, ul, li elements at W3C</a></cite></footer>
+  <hr>
+  
+  <h5>Examples</h5>
+<figure>
+<pre class="html"><code>
+&lt;ol>
+  &lt;li>First item&lt;/li>
+  &lt;li>Second item&lt;/li>
+  &lt;li>Third item&lt;/li>
+&lt;/ol></code></pre>
+<iframe style="width:100%;height:100px;border:1px dotted blue;" srcdoc='
+  <ol>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ol>
+'></iframe>
+<figcaption> A simple ordered list with three items. Note defaults.</figcaption>
+</figure>  
+
+<figure>
+<pre class="html"><code>
+&lt;ul>
+  &lt;li>First item&lt;/li>
+  &lt;li>Second item&lt;/li>
+  &lt;li>Third item&lt;/li>
+&lt;/ul></code></pre>
+<iframe style="width:100%;height:100px;border:1px dotted blue;" srcdoc='
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ul>
+'></iframe>
+<figcaption> A simple unordered list with three items. Note defaults.</figcaption>
+</figure>
+
+<figure>
+<pre class="html"><code>
+&lt;figure>
+  &lt;figcaption>The top 10 movies of all time&lt;/figcaption>
+  &lt;ol reversed>
+    &lt;li>&lt;cite lang="sh">Црна мачка, бели мачор&lt;/cite>, 1998&lt;/li>
+    &lt;li>&lt;cite>A Bug’s Life&lt;/cite>, 1998&lt;/li>
+    &lt;li>&lt;cite>Toy Story&lt;/cite>, 1995&lt;/li>
+    &lt;li>&lt;cite>Monsters, Inc&lt;/cite>, 2001&lt;/li>
+    &lt;li>&lt;cite>Cars&lt;/cite>, 2006&lt;/li>
+    &lt;li>&lt;cite>Toy Story 2&lt;/cite>, 1999&lt;/li>
+    &lt;li>&lt;cite>Finding Nemo&lt;/cite>, 2003&lt;/li>
+    &lt;li>&lt;cite>The Incredibles&lt;/cite>, 2004&lt;/li>
+    &lt;li>&lt;cite>Ratatouille&lt;/cite>, 2007&lt;/li>
+  &lt;/ol>
+&lt;/figure></code></pre>
+<iframe style="width:100%;height:190px;border:1px dotted blue;" srcdoc='
+<figure>
+  <figcaption>The top 10 movies of all time</figcaption>
+  <ol reversed>
+    <li><cite lang="sh">Црна мачка, бели мачор</cite>, 1998</li>
+    <li><cite>A Bug’s Life</cite>, 1998</li>
+    <li><cite>Toy Story</cite>, 1995</li>
+    <li><cite>Monsters, Inc</cite>, 2001</li>
+    <li><cite>Cars</cite>, 2006</li>
+    <li><cite>Toy Story 2</cite>, 1999</li>
+    <li><cite>Finding Nemo</cite>, 2003</li>
+    <li><cite>The Incredibles</cite>, 2004</li>
+    <li><cite>Ratatouille</cite>, 2007</li>
+  </ol>
+</figure>
+'></iframe>
+<figcaption> Example from <cite><a  target="_blank" href="https://www.w3.org/TR/html52/grouping-content.html#the-li-element">W3C</a></cite> demonstrating a reversed ordered list, in a figure with figure caption, use of cite element and lang attribute.</figcaption>
+</figure>  
+ 
+  <h5>Description lists</h5>
+	<dl  class="row">	
+	  <dt class="col-sm-3 text-info">element <samp>dl</samp></dt>
+	  <dd class="col-sm-8">The dl element represents a description list of zero or more term-description groups. Each term-description group consists of one or more terms and one or more descriptions. Term-description groups may be names and definitions, questions and answers, categories and topics, or any other groups of term-description pairs.</dd>
+	  <dt class="col-sm-3 text-info">element <samp>dt</samp></dt>
+	  <dd class="col-sm-8">The dt element represents a term, part of a term-description group in a description list (dl element).</dd>
+	  <dt class="col-sm-3 text-info">element <samp>dd</samp></dt>
+	  <dd class="col-sm-8">The dd element represents a description, part of a term-description group in a description list (dl element).</dd>	  		  
+	</dl>	
+  
+
+<figure>
+<pre class="html"><code>
+&lt;dl>
+  &lt;dt>What is my favorite drink?&lt;/dt>
+  &lt;dd>Tea&lt;/dd>
+  &lt;dt>What is my favorite food?&lt;/dt>
+  &lt;dd>Sushi&lt;/dd>
+  &lt;dt>What is my favourite film?&lt;/dt>
+  &lt;dd>What a Wonderful Life&lt;/dd>
+&lt;/dl></code></pre>
+<iframe style="width:100%;height:140px;border:1px dotted blue;" srcdoc='
+<dl>
+  <dt>What is my favorite drink?</dt>
+  <dd>Tea</dd>
+  <dt>What is my favorite food?</dt>
+  <dd>Sushi</dd>
+  <dt>What is my favourite film?</dt>
+  <dd>What a Wonderful Life</dd>
+</dl>
+'></iframe>
+<figcaption> In this example the dt elements represent questions and the dd elements the answers. (from W3C) </figcaption>
+</figure>  
+  
+  <footer class="blockquote-footer">Read further  <cite title="[about dl, dt, dd on W3C. ]"><a href="https://www.w3.org/TR/html52/grouping-content.html#the-dl-element" target="_blank"> about dl, dt, dd on W3C.</a></cite></footer>     
+</article>
+
+
+<article id="page18"> 
+	<h3>Table data structures</h3>
+	
+	<h4>Simple data tables</h4>
+	<dl class="row">
+	  <dt class="col-sm-4 text-info">element <samp>table</samp> </dt>
+	  <dd class="col-sm-8">An HTML table is defined with the <samp>table</samp> tag.</dd>	  
+    
+	  <dt class="col-sm-4 text-info">element <samp>tr</samp>  </dt>
+	  <dd class="col-sm-8">Each table row is defined with the <samp>tr</samp> tag. </dd>	
+    
+	  <dt class="col-sm-4 text-info">element <samp>td</samp>  </dt>
+	  <dd class="col-sm-8">A table data cell is defined with the <samp>td</samp> tag.</dd>
+    
+	  <dt class="col-sm-4 text-info">element <samp>th</samp>  </dt>
+	  <dd class="col-sm-8">A table header is defined with the <samp>th</samp> tag. By default, table headings are bold and centered.</dd>	
+    
+	  <dt class="col-sm-4 text-info">attribute <code>colspan</code>  </dt>
+	  <dd class="col-sm-8">Cells that span many columns are created using the <code>colspan</code> attribute.</dd>	
+    
+	  <dt class="col-sm-4 text-info">attribute <code>rowspan</code>  </dt>
+	  <dd class="col-sm-8">Cells that span many rows are created using the <code>rowspan</code> attribute.</dd>	
+    
+	  <dt class="col-sm-4 text-info">attribute <code>border</code>  </dt>
+	  <dd class="col-sm-8">If you do not specify a border for the table, it will be displayed without borders. A border is set using the CSS border property. <em class="text-danger">Note that in some examples, the <code>border</code> attribute is used <strong>temporarily</strong>, to display borders without CSS.</em></dd>	
+    
+	  <dt class="col-sm-4 text-info">element <samp>caption</samp>  </dt>
+	  <dd class="col-sm-8">To add a caption to a table, use <samp>caption</samp> tag. It must be inserted <strong>immediately after</strong> the <samp>table</samp> tag.</dd>    
+	</dl>
+<figure>
+<pre class="html"><code>
+&lt;!-- border attribute temporary -->
+&lt;table border="1">	
+  &lt;tr>
+    &lt;td>A&lt;/td>
+    &lt;td>B&lt;/td>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>C&lt;/td>
+    &lt;td>D&lt;/td>
+  &lt;/tr> 
+&lt;/table></code></pre>
+<iframe style="width:100%;height:120px;border:1px dotted blue;" srcdoc='
+<table border="1">
+  <tr>
+    <td>A</td>
+	<td>B</td>
+  </tr>
+  <tr>
+    <td>C</td>
+	<td>D</td>
+  </tr>  
+</table>
+'></iframe>
+<figcaption> Example of a two-by-two table. Note the border attribute is included only during development to see the boraders of the table and the cells. Later will be replaced by styles.</figcaption>
+</figure>	
+<hr>	
+	
+<figure>
+<pre class="html"><code>
+&lt;!-- border attribute temporary -->
+&lt;table border="1">	
+  &lt;tr>
+    &lt;th>A&lt;/th>
+    &lt;th>B&lt;/th>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>C&lt;/td>
+    &lt;td>D&lt;/td>
+  &lt;/tr> 
+&lt;/table></code></pre>
+<iframe style="width:100%;height:120px;border:1px dotted blue;" srcdoc='
+<table border="1">
+  <tr>
+    <th>A</th>
+	<th>B</th>
+  </tr>
+  <tr>
+    <td>C</td>
+	<td>D</td>
+  </tr>  
+</table>
+'></iframe>
+<figcaption> Example of a two-by-two table. The cells in the first row have been replaced by table headings (th); bold by default.</figcaption>
+</figure>	
+<hr>		
+
+<figure>
+<pre class="html"><code>
+&lt;!-- border attribute temporary -->
+&lt;table border="1">	
+  &lt;tr>
+    &lt;td>A&lt;/td>
+    &lt;td>B&lt;/td>
+    &lt;td>C&lt;/td>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>D&lt;/td>
+    &lt;td>E&lt;/td>
+    &lt;td>F&lt;/td>
+  &lt;/tr> 
+  &lt;tr>
+    &lt;td>G&lt;/td>
+    &lt;td>H&lt;/td>
+    &lt;td>I&lt;/td>
+  &lt;/tr>   
+&lt;/table></code></pre>
+<iframe style="width:100%;height:120px;border:1px dotted blue;" srcdoc='
+<table border="1">
+  <tr>
+    <td>A</td>
+	<td>B</td>
+	<td>C</td>
+  </tr>
+  <tr>
+    <td>D</td>
+	<td>E</td>
+	<td>F</td>
+  </tr>  
+  <tr>
+    <td>G</td>
+	<td>H</td>
+	<td>I</td>
+  </tr>   
+</table>
+'></iframe>
+<figcaption> Example of a three-by-three table. </figcaption>
+</figure>	
+<hr>	
+
+<figure>
+<pre class="html"><code>
+&lt;!-- border attribute temporary -->
+&lt;table border="1">	
+  &lt;tr>
+    &lt;td colspan="2">A&lt;/td>
+    &lt;td rowspan="2">C&lt;/td>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td rowspan="2">D&lt;/td>
+    &lt;td>E&lt;/td>
+  &lt;/tr> 
+  &lt;tr>
+    &lt;td colspan="2">H&lt;/td>
+  &lt;/tr>   
+&lt;/table></code></pre>
+<iframe style="width:100%;height:120px;border:1px dotted blue;" srcdoc='
+<table border="1">
+  <tr>
+    <td colspan="2">A</td>
+	<td rowspan="2">C</td>
+  </tr>
+  <tr>
+    <td rowspan="2">D</td>
+	<td>E</td>
+  </tr>  
+  <tr>
+	<td colspan="2">H</td>
+  </tr>   
+</table>
+'></iframe>
+<figcaption> Example of a three-by-three table with row spans and column spans. Note the alignment of the content - horizontally right-justified and vertically centered.</figcaption>
+</figure>	
+<hr>	
+	
+	
+	<h4>Complex data tables</h4>	
+	<p><del>tbody, thead, tfoot, col, colgroup</del> - not covered in the condensed version.</p>
+	<section hidden>
+	<dl class="row">	  
+	  <dt class="col-sm-4 text-info">The &lt;tbody> element</dt>
+	  <dd class="col-sm-8"></dd>	
+	  <dt class="col-sm-4 text-info">The &lt;thead> element</dt>
+	  <dd class="col-sm-8"></dd>
+	  <dt class="col-sm-4 text-info">The &lt;tfoot> element</dt>
+	  <dd class="col-sm-8"></dd>
+	  <dt class="col-sm-4 text-info">The &lt;col> element</dt>
+	  <dd class="col-sm-8"></dd>
+	  <dt class="col-sm-4 text-info">The &lt;colgroup> element</dt>
+	  <dd class="col-sm-8"></dd>	  
+	</dl>
+<figure>
+<pre class="html"><code>
+&lt;!-- comment -->
+&lt;p>	
+&lt;/p></code></pre>
+<iframe style="width:100%;height:120px;border:1px dotted blue;" srcdoc='<p> </p>'></iframe>
+<figcaption> Example of nesting elements</figcaption>
+</figure>     
+</article>
+
+</section>
+</div>
+</main>
+<!-- 
+  ** *******************************************
+  ** Footer
+  ** *******************************************
+-->	
+<footer>   
+    <div class="xsmall fa fa-copyright">
+        <em>This work is the intellectual property of Sheridan College. Any further copying 
+        and distribution outside of class must be within the copyright law. Posting to 
+        commercial sites for profit is prohibited.</em>
+    </div>   
+    <address style="text-align:center;">SYST10049 Web Development |&nbsp;Sheridan College</address> 					
+</footer> 
+    
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/htmlbars.min.js"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/xml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/markdown.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre code').forEach((block) => {
+    hljs.highlightBlock(block);
+  });
+});
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2017 The Bootstrap Authors
+ * Copyright 2014-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// See the Getting Started docs for more information:
+// https://getbootstrap.com/getting-started/#support-ie10-width
+
+(function () {
+  'use strict'
+
+  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement('style')
+    msViewportStyle.appendChild(
+      document.createTextNode(
+        '@-ms-viewport{width:auto!important}'
+      )
+    )
+    document.head.appendChild(msViewportStyle)
+  }
+
+}())    
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+</html>

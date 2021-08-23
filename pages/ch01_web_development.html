@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Full Stack Web Development</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu+Mono'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs.min.css">
+<link rel="stylesheet" href="css/short_pages.css">  
+<link rel="stylesheet" href="css/bookmark.css">
+<!-- Fontawesome CSS -->
+<script src="https://kit.fontawesome.com/e511a6976b.js" crossorigin="anonymous"></script>
+<style>
+
+</style>
+</head>
+<body>
+<header><h1>Full Stack Web Development</h1></header>
+
+<main class="container">
+<div class="row">
+<!-- 1.1.  Table of contents -->	
+<aside class="col-4" style="height:400px;position:sticky;top: 130px">
+<h5 class="card-title">Table of Content</h5>
+<nav>		
+  <a href="#"> Web environment</a>
+  <a href="#page02"> Programming languages</a>
+  <a href="#page03"> Key technologies</a>
+  <a href="#page04"> How the web works</a>
+  <a href="#page05"> Data flow in a web C/S environment</a>
+  <a href="#page06"> User agents</a>
+  <a href="#page07"> Uniform Resource Locator (URL)</a>
+  <a href="#page08"> Web server</a>
+    <hr>
+  <a href="ch00_index.html"> Index</a>
+</nav>
+</aside>
+  
+<section class="col-8 container">
+  
+<article id="page01">
+    <h4>Web environment</h4>
+    <p>Web programming utilizes key technologies developed for the web client-server environment.</p>
+     <figure class="fig-bookmark">
+      <a href="http://www.evolutionoftheweb.com/" target="_blank" class="bookmark source">
+      <div class="bookmark-info">
+        <div class="bookmark-text">
+          <div class="bookmark-title">The Evolution of the Web</div>
+          <div class="bookmark-description">The web today is a growing universe of interlinked web pages and web apps, teeming with videos, photos, and interactive content. What the average user doesn't see is the interplay of web technologies and browsers that makes all this possible.</div>
+        </div>
+        <div class="bookmark-href"><img src="https://libapps-ca.s3.amazonaws.com/apps/common/favicon/favicon.ico" class="icon bookmark-icon"/>http://www.evolutionoftheweb.com/</div>
+      </div>
+      <img src="images/web_evolution.png" class="bookmark-image"/></a>
+    </figure> 
+    
+</article>
+
+<hr>
+<article id="page02"> 
+    <h4>Programming Languages</h4>
+      <p>Java, Python, Javascript, C++, PHP, Perl have been among the top ten most in-demand programming languages for the past five years, some for much longer.</p>
+     <figure class="fig-bookmark">
+      <a href="https://spectrum.ieee.org/static/interactive-the-top-programming-languages-2020" target="_blank" class="bookmark source">
+      <div class="bookmark-info">
+        <div class="bookmark-text">
+          <div class="bookmark-title">The Top Programming Languages</div>
+          <div class="bookmark-description">This interactive app ranks the popularity of dozens of programming languages. You can filter them by relevance, type, ranking,...&nbsp;&nbsp;<em>IEEE is the world's largest technical professional organization for the advancement of technology.</em></div>
+        </div>
+        <div class="bookmark-href"><img src="https://libapps-ca.s3.amazonaws.com/apps/common/favicon/favicon.ico" class="icon bookmark-icon"/>spectrum.ieee.org/static/interactive-the-top-programming-languages-2020</div>
+      </div>
+      <img src="images/top-10-programming-languages.jpg" class="bookmark-image"/></a>
+    </figure> 
+    
+</article>
+
+<hr>
+<article id="page03">   
+	<h4>Key technologies:</h4>
+	<ol>
+		<li><strong>HTML</strong> and <strong>CSS</strong> (user interface)</li>	
+		<li>Front-end languages (Javascript, EcmaScript, jquery)</li>	
+		<li>Back-end languages (node.js, ruby, python, java, PHP)</li>	
+		<li>Databases and web storage ( SQL, MySQL, sessions)</li>	
+		<li>HTTP and REST (request, response, communication)</li>	
+		<li>web application architecture (planning, design, integration)</li>
+		<li>Git (version control)</li>
+		<li>Basic algorithms and data structures (optimization and performance)</li>
+	</ol>
+  <p>Web development can be characterized as an ecosystem, a complex system of interrelationships among living and nonliving elements of the environment. These activities can be envisioned at three broad levels.</p> 
+  <ol>  
+    <li>The <strong>foundational components</strong>, such as networking and protocols, operate out-of-site and make everything work. </li>
+    <li>The <strong>middle level</strong>, includes technologies such as HTML, CSS, Javascript, and PHP, and constitutes web development. </li>
+    <li>The <strong>top level</strong> entails such topics as security threats, search algorithms and advanced programming design. </li>
+  </ol>
+  <p>Although we focus on part of the middle level, specifically on HTML and CSS technology, it is important to understand it in context of the whole system and relationships with the other levels.</p>
+  
+</article>
+
+<hr>
+<article id="page04"> 
+ 	<h3>How the web works</h3>
+	<p>The <dfn>World Wide Web (WWW)</dfn> is a vast sea of documents, web pages, that interconnect so that you can jump from one page to the next. It is a network of information resources. The Web relies on three mechanisms to make these resources readily available to the widest possible audience:</p>
+	<ol>
+		<li>A <strong>uniform naming scheme</strong> for locating resources on the Web, e.g., URL.</li> 
+		<li><strong>Protocols</strong> for access to named resources over the Web, e.g., HTTP. </li> 
+		<li><strong>Hypertext</strong> for easy navigation among resources, e.g., HTML.</li>  
+	</ol>
+    <footer class="blockquote-footer">Dig deeper 
+        <cite title="[ How does the Internet work? ]">
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank"> How does the Internet work?</a>
+        </cite>
+    </footer>   
+     
+</article>
+
+<hr>
+<article id="page05">    
+	<h4>Data flow in a web client/server environment</h4>		
+	<figure class="figure">	
+		<img class="figure-img img-fluid rounded" src="images/dataFlow.png">		
+		<figcaption class="figure-caption">Data flow. Front-end</figcaption>
+	</figure>		
+	<hr>
+      <figure class="fig-bookmark">
+      <a href="https://insights.stackoverflow.com/survey/2019#technology-_-how-technologies-are-connected" target="_blank" class="bookmark source">
+      <div class="bookmark-info">
+        <div class="bookmark-text">
+          <div class="bookmark-title">How technologies are connected</div>
+          <div class="bookmark-description">Technologies cluster together into related ecosystems that tend to be used by the same developers. This network graph demonstrates this by showing which technologies are most highly correlated with each other. </div>
+        </div>
+        <div class="bookmark-href"><img src="https://libapps-ca.s3.amazonaws.com/apps/common/favicon/favicon.ico" class="icon bookmark-icon"/>insights.stackoverflow.com/survey/2019#technology-_-how-technologies-are-connected</div>
+      </div>
+      <img src="images/tech_network-1.svg" class="bookmark-image"/></a>
+    </figure>  
+    
+    
+</article>
+
+<hr>
+<article id="page06">     
+	<h4>User agents</h4>
+	<p>A user agent is any software that retrieves and presents Web content for end users or is implemented using Web technologies. User agents include Web browsers, media players, and plug-ins that help in retrieving, rendering and interacting with Web content. The family of user agents also includes operating system shells, consumer electronics with Web-widgets, and stand-alone applications or embedded applications whose user interface is implemented as a combination of Web technologies.</p>	
+	<h5>Web browsers</h5>
+	<p>Web browsers understand HTML, CSS, and Javascript and render the web pages to the visitors. Web browsers, such as Netscape, Opera, and IE contact remote web servers and make requests on behalf of users. The documents can contain hyperlink points (links) to other documents, which may or may not live on the server that the user originally contacted.</p>
+	<figure>
+		<img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/browser_rendering.png" alt="browser process" style="width:90%;">
+		<figcaption>Browser process to render a web page.</figcaption>
+	</figure>	
+	<p hidden>Guideline 1.1 - Provide access to alternative content.
+	https://www.w3.org/WAI/UA/work/wiki/Browser_Compliance_Notes</p>
+	<!-- FIND LINK TO BROWSER SUPPORT ?????????????????? -->		
+	<h5>Search Engine Optimization (SEO)</h5>
+	<p title="https://developer.mozilla.org/en-US/docs/Glossary/SEO"> Search Engine Optimization (SEO) is the process of making a website more visible in search results. Search engines crawl the web, following links from page to page, and index the content found. Crawlers follow rules. If you follow those rules closely, you give the site the best chances of showing up among the first results, increasing traffic.</p>	      
+</article>
+
+<hr>
+<article id="page07"> 
+	<h4>Uniform Resource Locator (URL)</h4>
+	<p>HTML documents utilize URLs for specifying hypertext links. Every resource available on the Web — HTML document, image, video clip, program, etc. — has an address that may be encoded by a URL.</p>	
+	<p hidden>https://websitebuilders.com/how-to/web-at-a-glance/url-anatomy/#The_Components_of_a_URL</p>
+	<figure>
+    <img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/parts_of_url.png" alt="relative path sub-tree"  style="width:90%;">
+    <figcaption>Parts of an URL
+      <ul>
+        <li>protocol:  <code>http</code></li>
+        <li>domain:  <code>www.apache.org</code></li>
+        <li>path:  <code>foundation</code></li>
+        <li>file:  <code>FAQ.html</code></li>
+      </ul>
+    </figcaption>
+	</figure>		
+	<footer class="blockquote-footer">Read further 
+		<cite title="[ https://url.spec.whatwg.org/ ]">
+		<a href="https://url.spec.whatwg.org/" 
+			target="_blank"> URL (Living Standard — Last Updated 7 May 2020)</a> | <a href="https://url.spec.whatwg.org/#urls" target="_blank"> Examples</a>
+		</cite>
+	</footer>	     
+</article>   
+ 
+
+<hr>
+<article id="page08"> 
+    <h4>Web server</h4>	
+    <p>A web server is a system that is configured to answer HTTP requests. To convert a generic Linux system into a web hosting platform, you need to install a daemon that listens for connections on TCP port 80, accepts requests for documents, and transmits them to the requesting user.</p>
+    <figure>
+      <img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/web_process.png" alt="web process" style="width:100%;">
+      <figcaption>Full procces from the instance a user requests a web page to the content of the requested page rendering in the user's web browser window.</figcaption>
+    </figure>	
+    <footer class="blockquote-footer">Explore 
+      <cite title="[ The Evolution of the Web]">
+      <a href="http://www.evolutionoftheweb.com/" 
+        target="_blank"> The Evolution of the Web.</a>
+      </cite>
+    </footer>     
+</article> 
+
+
+<hr>
+<article id="page09"> 
+	<h4>Protocols</h4>
+	<figure>
+    <img  src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/protocols.png">
+        <figcaption>Common protocols</figcaption>
+    </figure>	
+
+	<figure>
+		<img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/tcp_family.png" alt="web process" style="width:80%;">
+		<figcaption>TCP/IP Protocol Suite</figcaption>
+	</figure>
+	
+	<p>Transmission Control Protocol (TCP) is one of the main protocols of the Internet protocol suite. It originated in the initial network implementation in which it complemented the Internet Protocol (IP). Therefore, the entire suite is commonly referred to as TCP/IP. </p>
+  
+	<footer class="blockquote-footer">Read further 
+		<cite title="[ https://www.wikiwand.com/en/Transmission_Control_Protocol ]">
+		<a href="https://www.wikiwand.com/en/Transmission_Control_Protocol" 
+			target="_blank"> Transmission Control Protocol (Wikiwand)</a>
+		</cite>
+	</footer>    
+
+
+	<h6>HyperText Transfer Protocol (HTTP)</h6> 
+	<p>HTTP behaves much like other client/server protocols used on the Internet, such as SMTP for email and FTP for file transfer. Web browsers contact remote web servers and make requests on behalf of users. HTTP is the underlying protocol used by the World Wide Web and this protocol defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands.</p>
+  
+	<footer class="blockquote-footer">Read further
+		<cite title="[ https://en.wikipedia.org/wiki/Hypertext_Transfer_Protoco. ]">
+		<a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" 
+			target="_blank"> about HTTP from Wikipedia.</a>
+		</cite>
+	</footer>  
+ 
+
+	<h6>Secure HTTP (HTTPS)</h6> 
+  <p>Many enhanced protocols provide everything from encryption to streaming video. These services are often managed by separate daemons, residing on the same physical server; HTTPS is handled by a daemon that understands the Secure Socket Layer (SSL) protocol and listens for requests on TCP port 443.</p>
+	<footer class="blockquote-footer">Read further
+		<cite title="[ https://en.wikipedia.org/wiki/HTTPS ]">
+		<a href="https://en.wikipedia.org/wiki/HTTPS" 
+			target="_blank"> about HTTPS from Wikipedia.</a>
+		</cite>
+	</footer>  
+
+  
+	<h6>File Transfer Protocol (FTP)</h6>
+  <p>FTP is a standard network protocol used for the transfer of computer files between a client and server on a computer network. It is built on a client-server model architecture using separate control and data connections between the client and the server. FTP users may authenticate themselves with a clear-text sign-in protocol, normally in the form of a username and password. For secure transmission that protects the username and password, and encrypts the content, FTP is often secured with SSL/TLS (FTPS) and Secure File Transfer Protocol(SFTP).</p>
+
+	<footer class="blockquote-footer">Read further about
+		<cite title="[ FileZilla is a free open source FTP solution. ]">
+		<a href="https://filezilla-project.org/" 
+			target="_blank"> FileZilla (a free open source FTP solution.)</a>
+		</cite>
+	</footer>       
+</article> 
+
+
+<hr>
+<article id="page10"> 
+     
+</article> 
+
+<hr>
+<article id="page11"> 
+     
+</article>  
+</section>
+</div>
+</main>
+<!-- 
+  ** *******************************************
+  ** Footer
+  ** *******************************************
+-->	
+<footer>   
+    <div class="xsmall fa fa-copyright">
+        <em>This work is the intellectual property of Sheridan College. Any further copying 
+        and distribution outside of class must be within the copyright law. Posting to 
+        commercial sites for profit is prohibited.</em>
+    </div>   
+    <address style="text-align:center;">SYST10049 Web Development |&nbsp;Sheridan College</address> 					
+</footer> 
+    
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/htmlbars.min.js"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/xml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/markdown.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre code').forEach((block) => {
+    hljs.highlightBlock(block);
+  });
+});
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2017 The Bootstrap Authors
+ * Copyright 2014-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// See the Getting Started docs for more information:
+// https://getbootstrap.com/getting-started/#support-ie10-width
+
+(function () {
+  'use strict'
+
+  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement('style')
+    msViewportStyle.appendChild(
+      document.createTextNode(
+        '@-ms-viewport{width:auto!important}'
+      )
+    )
+    document.head.appendChild(msViewportStyle)
+  }
+
+}())    
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+</html>

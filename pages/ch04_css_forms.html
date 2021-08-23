@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Styling and validating forms</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu+Mono'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs.min.css">
+<link rel="stylesheet" href="css/short_pages.css">  
+<link rel="stylesheet" href="css/bookmark.css">
+<!-- Fontawesome CSS -->
+<script src="https://kit.fontawesome.com/e511a6976b.js" crossorigin="anonymous"></script>
+<style>
+
+</style>
+</head>
+<body>
+<header><h1>Styling and validating forms</h1></header>
+
+<main class="container">
+<div class="row">
+<!-- Table of contents -->	
+<aside class="col-4" style="height:400px;position:sticky;top: 130px">
+<h5 class="card-title">Table of Content</h5>
+<nav>		
+  <a href="#"> Form validation and styling</a>
+  <a href="#page04"> Using HTML elements and attributes</a>
+  <a href="#page02"> Using Selectors and properties</a>
+  <a href="#page03"> Adding behaviour with Javascript</a>
+  <hr>
+  <a href="ch00_index.html"> Index</a>
+</nav>
+</aside> 
+<!-- Content -->
+<section class="col-8 container">
+
+
+<article id="page01">
+	<h4>Form validation and styling</h4>
+	<p>HTML5 makes available user interface elements that allow users to provide input. This ability to capture information from users is great, but you must make sure that user privacy and safety are protected as much as possible and that the website or web app cannot be exploited to disrupt the site's services. The objective is</p>
+	<ul>
+		<li>to choose the correct user input controls (HTML5 input types), and</li>
+		<li>to set the appropriate attributes on those controls to ensure that the data is validated.</li>
+	</ul>
+  <!--
+	<a class="btn btn-outline-danger btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://trello.com/c/REtVbsxf">
+		<strong>Review&mdash;</strong> Session 8: Marking up and validating form data (trello card)	 
+	</a>
+  -->
+	<br>
+	<p>Data validation is the process of ensuring that computer input is clean, correct, and useful. Most often, the purpose of data validation is to ensure correct input to a computer application.</p>
+
+	<h5>Server vs. Client</h5>
+	<p>Server side validation is performed by a web server, after input has been sent to the server. Client side validation is performed by a web browser, before input is sent to a web server.</p>
+
+	<p>HTML5 introduced a new HTML validation concept called constraint validation, which is based on:</p>
+	<dl class="row">
+	  <dt class="col-sm-3">HTML Input Attributes</dt>
+	  <dd class="col-sm-8"><code>disabled • max • min • pattern • required <br>&nbsp;type</code></dd>
+	  <dt class="col-sm-3">CSS Pseudo Selectors</dt>
+	  <dd class="col-sm-8"><code>:disabled • :disabled • :optional • :required <br>&nbsp;:valid</code></dd>
+	  <dt class="col-sm-3">DOM Properties validity</dt>
+	  <dd class="col-sm-8"><code>customError • patternMismatch • rangeOverflow <br>&nbsp;rangeUnderflow • stepMismatch • tooLong <br>&nbsp;typeMismatch • valueMissing • valid <br>&nbsp;validationMessage • willValidate</code></dd>
+	  <dt class="col-sm-3">DOM Methods</dt>
+	  <dd class="col-sm-8"><code>checkValidity()  • setCustomValidity()</code></dd>	  
+	</dl>
+    
+ </article>  
+
+
+
+<article id="page04">
+  <h4>Using HTML elements and attributes</h4>
+</article>
+
+ 
+<article id="page02">    
+	<h4>Using Selectors and properties</h4>
+	<p>Examples of attribute selectors and pseudo-classes:</p>
+<pre class="language-js"><code>/* input field that is text type, in focus and data is valid */
+input[type=text]:focus:valid {
+  outline: 2px #0f0 solid;
+}</code></pre>	
+<pre class="language-js"><code>/* label in the last section */
+section:last-child label {
+  display: block;
+  font-size: 1.3em;
+}</code></pre>
+
+	<a class="btn btn-outline-warning btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://github.com/ebajcar/summer2020-examples/blob/master/worksheets/worksheet_09/instructions_ws09.md">
+		Explore example on Worksheet 9	 
+	</a>
+</article>
+
+
+<article id="page03">
+  <h4>Adding behaviour with Javascript</h4>
+</article>
+
+
+
+</section>
+</div>
+</main>
+<!-- 
+  ** *******************************************
+  ** Footer
+  ** *******************************************
+-->	
+<footer>   
+    <div class="xsmall fa fa-copyright">
+        <em>This work is the intellectual property of Sheridan College. Any further copying 
+        and distribution outside of class must be within the copyright law. Posting to 
+        commercial sites for profit is prohibited.</em>
+    </div>   
+    <address style="text-align:center;">SYST10049 Web Development |&nbsp;Sheridan College</address> 					
+</footer> 
+    
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/htmlbars.min.js"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/xml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/markdown.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre code').forEach((block) => {
+    hljs.highlightBlock(block);
+  });
+});
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2017 The Bootstrap Authors
+ * Copyright 2014-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// See the Getting Started docs for more information:
+// https://getbootstrap.com/getting-started/#support-ie10-width
+
+(function () {
+  'use strict'
+
+  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement('style')
+    msViewportStyle.appendChild(
+      document.createTextNode(
+        '@-ms-viewport{width:auto!important}'
+      )
+    )
+    document.head.appendChild(msViewportStyle)
+  }
+
+}())    
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+</html>
