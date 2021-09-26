@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<!-- For longer annotations, the a element should be used, pointing to an element later in the document. The convention is that the contents of the link be a number in square brackets.
+
+In this example, a footnote in the dialogue links to a paragraph below the dialogue. The paragraph then reciprocally links back to the dialogue, allowing the user to return to the location of the footnote.
+
+ https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element -->
+
+<p> Announcer: Number 16: The <i>hand</i>.
+<p> Interviewer: Good evening. I have with me in the studio tonight
+Mr Norman St John Polevaulter, who for the past few years has been
+contradicting people. Mr Polevaulter, why <em>do</em> you
+contradict people?
+<p> Norman: I don't. <sup><a href="#fn1" id="r1">[1]</a></sup>
+<p> Interviewer: You told me you did!
+<hr>
+<section>
+ <p id="fn1"><a href="#r1">[1]</a> This is, naturally, a lie,
+ but paradoxically if it were true he could not say so without
+ contradicting the interviewer and thus making it false.</p>
+</section>
+</body>
+</html>

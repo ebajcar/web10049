@@ -57,6 +57,23 @@
   <p>BR, HR</p>
 </article>
 
+<article id="page13b"> 
+	<h3>Grouping content</h3>
+  <p>P, ADDDRESS, HR, PRE, BLOCKQUOTE OL, UL, LI, DL, DT, DD, FIGURE, FIGCAPTION, MAIN, DIV</p>
+       <figure class="fig-bookmark">
+      <a href="https://html.spec.whatwg.org/multipage/grouping-content.html#grouping-content" target="_blank" class="bookmark source">
+      <div class="bookmark-info">
+        <div class="bookmark-text">
+          <div class="bookmark-title">Grouping content</div>
+          <div class="bookmark-description">4.4.1 The p element 4.4.2 The address element 4.4.3 The hr element4.4.4 The pre element 4.4.5 The blockquote element 4.4.6 The ol element 4.4.7 The ul element 4.4.8 The li element 4.4.9 The dl element 4.4.10 The dt element 4.4.11 The dd element 4.4.12 The figure element 4.4.13 The figcaption element 4.4.14 The main element 4.4.15 The div element</div>
+        </div>
+        <div class="bookmark-href"><img src="https://libapps-ca.s3.amazonaws.com/apps/common/favicon/favicon.ico" class="icon bookmark-icon"/>https://html.spec.whatwg.org/multipage/grouping-content.html#grouping-content</div>
+      </div>
+      <img src="images/grouping_content.png" class="bookmark-image"/></a>
+    </figure> 
+</article>
+
+
 <article id="page14"> 
     <h3>Page regions</h3>
     <dl class="row">	  
@@ -351,11 +368,81 @@
   <dd>What a Wonderful Life</dd>
 </dl>
 '></iframe>
-<figcaption> In this example the dt elements represent questions and the dd elements the answers. (from W3C) </figcaption>
+<figcaption> In this example the DT elements represent questions and the DD elements the answers. (from W3C) </figcaption>
 </figure>  
   
-  <footer class="blockquote-footer">Read further  <cite title="[about dl, dt, dd on W3C. ]"><a href="https://www.w3.org/TR/html52/grouping-content.html#the-dl-element" target="_blank"> about dl, dt, dd on W3C.</a></cite></footer>     
+  <footer class="blockquote-footer">Read further  <cite title="[about dl, dt, dd on W3C. ]"><a href="https://www.w3.org/TR/html52/grouping-content.html#the-dl-element" target="_blank"> about dl, dt, dd on W3C.</a></cite></footer>   
+
+
+
+
+<figure>
+<pre class="html"><code>
+&lt;dl>
+  &lt;dt lang="en-us">&lt;dfn>Color&lt;/dfn>&lt;/dt>
+  &lt;dt lang="en-gb">&lt;dfn>Colour&lt;/dfn>&lt;/dt>
+  &lt;dd>A sensation which (in humans) derives from the ability of 
+  the fine structure of the eye to distinguish three differently 
+  filtered analyses of a view.&lt;/dd>
+&lt;/dl></code></pre>
+<iframe style="width:100%;height:140px;border:1px dotted blue;" srcdoc='
+<dl>
+  <dt lang="en-us"><dfn>Color</dfn></dt>
+  <dt lang="en-gb"><dfn>Colour</dfn></dt>
+  <dd>A sensation which (in humans) derives from the ability of the fine structure of the eye to distinguish three differently filtered analyses of a view.</dd>
+</dl>
+'></iframe>
+<figcaption> In this example the DFN element indicates that the DT element contains a defined term, the definition for which is represented by the DD element </figcaption>
+</figure> 
+
+
+
+
+<figure>
+<pre class="html"><code>
+&lt;p>Determine the victory points as follows (use the first matching case):&lt;/p>
+&lt;dl>
+  &lt;dt> If you have exactly five gold coins &lt;/dt>
+  &lt;dd> You get five victory points &lt;/dd>
+  &lt;dt> If you have one or more gold coins, and you have one or more silver coins &lt;/dt>
+  &lt;dd> You get two victory points &lt;/dd>
+  &lt;dt> If you have one or more silver coins &lt;/dt>
+  &lt;dd> You get one victory point &lt;/dd>
+  &lt;dt> Otherwise &lt;/dt>
+  &lt;dd> You get no victory points &lt;/dd>
+&lt;/dl></code></pre>
+<iframe style="width:100%;height:240px;border:1px dotted blue;" srcdoc='
+<p>Determine the victory points as follows (use the first matching case):</p>
+<dl>
+  <dt> If you have exactly five gold coins </dt>
+  <dd> You get five victory points </dd>
+  <dt> If you have one or more gold coins, and you have one or more silver coins </dt>
+  <dd> You get two victory points </dd>
+  <dt> If you have one or more silver coins </dt>
+  <dd> You get one victory point </dd>
+  <dt> Otherwise </dt>
+  <dd> You get no victory points </dd>
+</dl>
+'></iframe>
+<figcaption> In this example the DFN element indicates that the DT element contains a defined term, the definition for which is represented by the DD element </figcaption>
+</figure> 
+
+
+
+
+  
 </article>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <article id="page18"> 
