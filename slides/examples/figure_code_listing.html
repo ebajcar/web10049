@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Figure for code listing</title>
+<meta charset="utf-8">
+<meta name="author" content="Course Instructor">
+<meta name="description" content="example for course syst10049">
+</head>
+<body>
+<!--
+from https://html.spec.whatwg.org/multipage/grouping-content.html#the-figure-element
+
+A FIGURE element's contents are part of the surrounding flow. If the purpose of the page is to display the figure, for example a photograph on an image sharing site, the FIGURE and FIGCAPTION elements can be used to explicitly provide a caption for that figure. For content that is only tangentially related, or that serves a separate purpose than the surrounding flow, the aside element should be used (and can itself wrap a figure). For example, a pull quote that repeats content from an article would be more appropriate in an aside than in a figure, because it isn't part of the content, it's a repetition of the content for the purposes of enticing readers or highlighting key topics.
+This example shows the FIGURE element to mark up a code listing.
+-->
+<p>In 
+  <a href="#l4">listing 4</a> we see the primary core interface API declaration.
+</p>
+
+<figure id="l4">
+ <figcaption>Listing 4. The primary core interface API declaration.</figcaption>
+ <pre><code>interface PrimaryCore {
+ boolean verifyDataLine();
+ undefined sendData(sequence&lt;byte> data);
+ undefined initSelfDestruct();
+}</code></pre>
+</figure>
+
+<p>The API is designed to use UTF-8.</p>
+
+</body>
+</html>
+
