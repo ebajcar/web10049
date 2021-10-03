@@ -40,6 +40,7 @@
   <a href="#page04"> &bull; The <samp>input</samp> element</a>
   <a href="#page05"> &bull; Grouping controls</a>
   <a href="#page06"> &bull; Other controls</a>
+  <a href="#page10"> &bull; The <code>pattern</code> attribute</a>
     <hr>
   <a href="ch00_index.html"> Index</a>
 </nav>
@@ -320,15 +321,44 @@ When you hover over the image, the cursor will change to indicate where to click
 <figcaption> both controls appear to be the same; omitting the type defaults to text type. input element is an <strong>empty element</strong> and its default behaviour is <strong>inline</strong>. Paragraph container was used to place them on separate lines.</figcaption>
 </figure>
 
-<p>An <samp>input</samp> tag can include name and value attributes to specify data for submission as a <code>name=value</code> pair. Other attributes:</p>
+<p>An <samp>input</samp> tag can include name and value attributes to specify data for submission as a NAME=VALUE pair. </p>
 	<p style="columns:4;">
-		<code>checked</code><br>
-		<code>disabled</code><br>
-		<code>size</code><br>
-		<code>maxlength</code><br>
-		<code>readonly</code><br>
-		<code>spellcheck</code><br>
+		<code>name</code><br>
+        <code>value</code><br>
 	</p>
+
+<p>Other attributes:</p>
+	<p style="columns:4;">
+		<code>autofocus</code><br>
+        <code>checked</code><br>
+		<code>disabled</code><br>
+		
+		<code>max</code><br>
+        <code>maxlength</code><br>
+		
+		
+        <a href="#page10"><code>pattern</code></a><br>
+        <code>placeholder</code><br>
+        <code>readonly</code><br>
+        <code>required</code><br>
+        <code>size</code><br>
+        <code>spellcheck</code><br>
+	</p>
+    
+<figure>
+<pre class="language-html"><code>
+&lt;form method="get" action="http://some.domain/file.php">
+&lt;form>
+  &lt;p>Enter first name: &lt;input name="first" value="John">&lt;/p>
+  &lt;p>Enter last name: &lt;input name="last" value="Smith">&lt;/p>
+  &lt;p>&lt;input type="submit">&lt;p>
+&lt;/form></code></pre>
+<iframe srcdoc='
+  <input style="font-size:1.5em" size="50" value="http://some.domain/file.php?first=John&last=Smith">
+'></iframe>
+<figcaption> On form submission, browser constructs the URL to sent to the server as HTTP request.  It collects all the NAME attribute values and associated VALUE attribute values, as NAME=VALUE pairs, and appends them to the address, prepended with a question mark and the pairs are separated by &amp; symbol, when the GET method is specified.</figcaption>
+</figure>
+    
 <hr>
 
 
@@ -560,19 +590,21 @@ input https://www.w3schools.com/tags/tag_input.asp
         }
         progressBar.onclick = updateProgress(38);
        </script>  
-<a href="https://www.w3schools.com/tags/tag_progress.asp" target="_blank">- more examples on w3schools </a><br>       
+       <a href="https://www.w3schools.com/tags/tag_progress.asp" target="_blank">- more examples on w3schools </a><br>       
     </dd> 
 
 
 	  <dt class="col-sm-3 text-info">&lt;meter> element </dt>
-	  <dd class="col-sm-9"><a href="https://www.w3.org/TR/html50/forms.html#the-meter-element" target="_blank">4.10.15 The meter element (W3C Recommendation 28 October 2014)</a>
-         <p>The grapefruit pie had a radius of 12cm and a height of
-        2cm.</p>
+	  <dd class="col-sm-9">
+        <a href="https://www.w3.org/TR/html50/forms.html#the-meter-element" target="_blank">4.10.15 The meter element (W3C Recommendation 28 October 2014)</a>
+        <p>The grapefruit pie had a radius of 12cm and a height of 2cm.</p>
         <dl>
-         <dt>Radius: <dd> <meter min=0 max=20 value=12>12cm</meter>
-         <dt>Height: <dd> <meter min=0 max=10 value=2>2cm</meter>
+         <dt>Radius:</dt> <dd> <meter min=0 max=20 value=12>12cm</meter></dd>
+         <dt>Height:</dt> <dd> <meter min=0 max=10 value=2>2cm</meter></dd>
         </dl>   
-     <a href="https://www.w3schools.com/tags/tag_meter.asp" target="_blank">- more examples on w3schools </a><br></dd>
+        <a href="https://www.w3schools.com/tags/tag_meter.asp" target="_blank">- more examples on w3schools </a>
+        <br>
+       </dd>
      
      
 	  <dt class="col-sm-3 text-info">&lt;output> element </dt>
@@ -581,6 +613,8 @@ input https://www.w3schools.com/tags/tag_input.asp
 	  <dt class="col-sm-3 text-info">&lt;textarea> element</dt>
 	  <dd class="col-sm-9"><a href="https://www.w3.org/TR/html50/forms.html#the-textarea-element" target="_blank">4.10.11 The textarea element (W3C Recommendation 28 October 2014)</a></dd>	
  	</dl>	   
+
+
   <h4>Buttons</h4>
 	<p>Buttons always behave the same whether you use a <samp>button</samp> element or an <samp>input</samp> element. As you can see from the examples, however, <samp>button</samp> elements let you use HTML in their content, which is inserted between the opening and closing <samp>button</samp> tags. <samp>input</samp> elements on the other hand are empty elements; their displayed content is inserted inside the value attribute, and therefore only accepts plain text as content.</p>
 <figure>
@@ -615,9 +649,9 @@ input https://www.w3schools.com/tags/tag_input.asp
 <pre class="language-html"><code>
 &lt;!-- image button-->
 &lt;input type="image" 
-		  alt="Click me!" 
-		  src="twitter.png" 
-		  width="50" height="50">
+       alt="Click me!" 
+       src="twitter.png" 
+       width="50" height="50">
 </code></pre>
 <iframe style="height:130px" srcdoc='
 <input type="image" alt="Click me!" src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/iframes/twitter.png" width="50" height="50">
@@ -625,6 +659,105 @@ input https://www.w3schools.com/tags/tag_input.asp
 <figcaption> Image buttons</figcaption>
 </figure>     
 </article> 
+
+<article id="page10"> <!-- Other controls -->
+	<h4>The <code>pattern</code> attribute</h4>
+	<p>The core HTML input controls support a <strong>pattern</strong> attribute that allows you to apply a regular expression to validate user input. The <samp>input</samp> element's value is checked against the pattern on form submission. Use the global title attribute to describe the pattern to help the user.</p>
+	<p>The pattern attribute works with the following input types: text, date, search, url, tel, email, and password.</p>
+    <h5>Examples</h5>
+    
+    <figure class="figure">
+<pre class="language-html"><code>
+&lt;form>
+  &lt;label for="pwd">Password:&lt;/label>
+  &lt;input type="password" id="pwd" name="pwd" 
+         pattern=".{8,}" title="Eight or more alpha characters">
+  &lt;input type="submit">
+&lt;/form>
+</code></pre>
+<iframe style="height:130px" srcdoc='
+<form>
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="pwd" pattern="[A-Za-z]{8,}" title="Eight or more alpha characters">
+  <input type="submit">
+</form>
+'></iframe>
+<figcaption class="figure-caption"> Enter one or two characters and click Submit. Note the popup message. See more <a href="https://www.w3schools.com/tags/att_input_pattern.asp" target="">w3schools</a></figcaption>    
+    </figure>
+  
+
+    <figure class="figure">
+<pre class="language-html"><code>
+&lt;form>
+  &lt;label for="pwd">Password:&lt;/label>
+  &lt;input type="password" id="pwd" name="pwd" 
+         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+         title="Must contain at least one number and one uppercase and 
+                lowercase letter, and at least 8 or more characters">
+  &lt;input type="submit">
+&lt;/form>
+</code></pre>
+<iframe style="height:130px" srcdoc='
+<form>
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+  <input type="submit">
+</form>
+'></iframe>
+<figcaption class="figure-caption"> Enter one or two characters and click Submit. Note the popup message. See more <a href="https://www.w3schools.com/tags/att_input_pattern.asp" target="">w3schools</a></figcaption>    
+    </figure>
+    
+    
+    
+    
+  
+    <h5>Regular expressions (regex)</h5>
+	<figure class="figure">
+		<dl class="row">
+		  <dt class="col-sm-2">Symbol</dt>
+		  <dd class="col-sm-9"><strong>Description</strong></dd>
+		  <dt class="col-sm-2">^</dt>
+		  <dd class="col-sm-9">&mdash; [anchor] The caret character denotes the beginning of a string.</dd>	  	  
+		  <dt class="col-sm-2">$</dt>
+		  <dd class="col-sm-9">&mdash; [anchor] The dollar sign denotes the end of a string.</dd>	  	 
+		  <dt class="col-sm-2">.</dt>
+		  <dd class="col-sm-9">&mdash; The period matches any single character.</dd>	
+		  <dt class="col-sm-2">[A-Z]</dt>
+		  <dd class="col-sm-9">&mdash; Square brackets denote a character set, a list or a range. [A-Z] means any upper case alpha character.</dd>
+		  <dt class="col-sm-2">[^abc]</dt>
+		  <dd class="col-sm-9">&mdash; The carret inside a character set negates the set; [^abc] means not a, not b, not c.</dd>
+		  <dt class="col-sm-2">\d</dt>
+		  <dd class="col-sm-9">&mdash; This combination matches any numeric character.</dd>
+		  <dt class="col-sm-2">\w</dt>
+		  <dd class="col-sm-9">&mdash; This combination matches any word character (alphanumeric including the underscore.</dd>
+		  <dt class="col-sm-2">\s</dt>
+		  <dd class="col-sm-9">&mdash; This combination matches a space character</dd>
+		  <dt class="col-sm-2">\</dt>
+		  <dd class="col-sm-9">&mdash; The backslash is an escape character. Used before a special character will match the special character literally. For example, to find the \ character in a string, the pattern would be \\</dd>
+		  <dt class="col-sm-2">+</dt>
+		  <dd class="col-sm-9">&mdash; [modifier] The plus sign denotes that the preceding character must match at least once, or more times.</dd>
+		  <dt class="col-sm-2">*</dt>
+		  <dd class="col-sm-9">&mdash; [modifier] The asterisk denotes that the preceding character may match zero or more times.</dd>	
+		  <dt class="col-sm-2">?</dt>
+		  <dd class="col-sm-9">&mdash; [modifier] The question mark denotes that the preceding character is optional</dd>
+		  <dt class="col-sm-2">?=n</dt>
+		  <dd class="col-sm-9">&mdash; Matches any string that is followed by a specific string n</dd>
+		  <dt class="col-sm-2"></dt>          
+		</dl>
+		<figcaption class="figure-caption"> Table shows some of the common symbols and their meaning. <br>For more details and practice, see <a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp" target="_blank">w3schools JS RegExp</a>.</figcaption>
+	</figure>   
+	<h5>Evaluate regular expressions</h5>
+	<div class="list-group-item svg-clip"> <a href="http://regexone.com/" target="_blank">A comprehensive interactive tutorial on regexone.com</a>
+        <figure class="figure">
+            <img src="images/regex_groups.png" width="650" alt="example answer using RegexOne to capture groups">
+            <figcaption class="figure-caption"> Example answer using RegexOne to capture groups</a></figcaption>    
+        </figure>    
+    </div>
+	<p class="list-group-item svg-clip"> <a href="https://regexr.com/" target="_blank">RegExr is an online tool to learn, build, and test Regular Expressions (RegEx / RegExp).</a></p>	    
+</article> 
+
+
+
 </section>
 </div>
 </main>

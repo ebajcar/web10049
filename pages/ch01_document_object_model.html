@@ -46,6 +46,11 @@
   <section class="col-8 container">
   
     <h4 id="page01">What is Document Object Model?</h4>	
+ 	<blockquote class="blockquote eeb-border-quote">
+		<p class="mb-0">The DOM (Document Object Model) is an API that represents and interacts with any HTML or XML document. The DOM is a document model loaded in the browser and representing the document as a node tree, where each node represents part of the document (e.g. an element, text string, or comment). 	<br>The DOM is one of the most-used APIs on the Web because it allows code running in a browser to access and interact with every node in the document. Nodes can be created, moved and changed. Event listeners can be added to nodes and triggered on occurrence of a given event. DOM was not originally specified—it came about when browsers began implementing JavaScript. This legacy DOM is sometimes called DOM 0. Today, the WHATWG maintains the DOM Living Standard.</p>
+		<footer class="blockquote-footer">Read further  <cite title="[ developer.mozilla.org/en-US/docs/Glossary/DOM ]"><a href="https://developer.mozilla.org/en-US/docs/Glossary/DOM" target="_blank"> developer.mozilla.org/en-US/docs/Glossary/DOM</a></cite></footer>
+	</blockquote>    
+    
     <p>The Document Object Model is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents. The document can be further processed and the results of that processing can be incorporated back into the presented page.</p>
     <p>Elements in the DOM represent things &mdash; objects; that is, they have intrinsic meaning, also known as semantics. The HTMLElement interface holds the object's methods and attributes (properties).  </p>   
     <footer class="blockquote-footer">Read further  <cite title="[ about DOM at WHATWG ]"><a href="https://dom.spec.whatwg.org/#trees" target="_blank"> about DOM at WHATWG</a></cite></footer>
@@ -58,14 +63,66 @@
     <p>To design classes, you need to explore the relationships among classes. The common relationships among classes are association, aggregation, composition, and inheritance Inheritance enables you to define a general class and extend it to more specialized classes, called subclass, child class, or extended class. The existing class is called a superclass, parent class, or base class. Inheritance is a powerful feature for reusing software.</p>
    
     <hr>	
-	<h4 id="page03">The Document Object</h4>  
+	<h4 id="page03">The Document</h4>  
+	
+				
+	<p>DOM is a mapping layout model for all HTML and a way for CSS and Javascript to get in there and do stuff. <span>Tim Wright</span> calls it <em>developer's best friend</em> (after you master it). DOM is not HTML, not CSS, and not Javascript! DOM is</p> 
+	<ul class="dialog-ol">	
+		<li>the combinations of the elements you use <mark>(objects)</mark>, </li>
+		<li>the order you choose to display them <mark>(model)</mark>, and</li>
+		<li> the endless offerings of access points to modify any part of the overall structure <mark>(document)</mark> while navigating around with the various properties that CSS provides and the various methods Javascript provides. </li>
+	</ul> 				
+ 
+
+    
     <p>When an HTML document is loaded into a web browser, it becomes a document object. The document object is the root node of the HTML document and the "owner" of all other nodes.</p>
     <p>The HTML DOM defines a standard way for accessing and manipulating HTML documents. It presents an HTML document as a <dfn>tree structure</dfn> or a <dfn>hierarchy</dfn>.</p>
     <p>The DOM is a representation of the structure of our HTML page that you can interact with programmatically. An HTML document is a hierarchy of elements (objects). The browser produces an outline based on this hierarchy and displays it to the visitor (user). The browser constructs a DOM that can be used by the developer. The DOM's application programming interface (API) is exposed as objects with properties and methods, enabling you to write Javascript code to interact with HTML elements rendered to the page.</p>
     <p>Our ability to manipulate and create web pages consistently across formats comes from the document object model API. This API defines the order and structure of document files as well as how the file is manipulated to create, edit, or remove contents.</p>
     <footer class="blockquote-footer">Read further  <cite title="[ Introduction to the DOM at MDN]"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank"> Introduction to the DOM at MDN</a></cite></footer>   
-    
+
+
+	<h5>Visual representation of DOM</h5>
+  <figure class="row">
+<pre class="language-html col-5"><code>&lt;html>
+  &lt;head>
+	&lt;meta charset="utf-8">
+	&lt;title>DOM&lt;/title>	
+  &lt;/head>
+  &lt;body>
+
+  &lt;/body>
+&lt;/html></code></pre>	
+	
+<img class="col-7" src="https://docs.google.com/drawings/d/e/2PACX-1vQPDoQTKS83x8csQVwz9P-qhDtqWRxMiE7LyAXo7_JBPGkQ1158lQkId7tX76Vld-_7bAlnEUpk7vkc/pub?w=480&amp;h=360"  style="width:49%;cursor:zoom-in" onclick="document.getElementById('dom0').style.display='block'" alt="...">	
+		<figcaption>Visual representation of minimal HTML5 document.</figcaption>
+  </figure>
+  
+  <footer class="blockquote-footer">Try the  <cite title="[ software.hixie.ch/utilities/js/live-dom-viewer/? ]"><a href="https://software.hixie.ch/utilities/js/live-dom-viewer/?" target="_blank"> Live DOM viewer</a></cite></footer>        
     <hr>
+    
+<div>
+	<h5>DOM terminology </h5>
+				<ul class="w3-ul">
+					<li>A <mark>tree</mark> is a finite hierarchical tree structure. In <mark>tree order</mark> is preorder, depth-first traversal of a tree.</li>
+					<li>An object that participates in a tree has a <mark> parent</mark>, which is either another object or null, and an ordered list of zero or more <mark>child</mark> objects. An object A whose parent is object B is a child of B.</li>
+					<li>The <mark>root</mark> of an object is itself, if its parent is null, or else it is the root of its parent.</li>
+					<li>An object A is called a <mark>descendant</mark> of an object B, if either A is a child of B or A is a child of an object C that is a descendant of B.</li>
+					<li>An <mark>inclusive descendant</mark> is an object or one of its descendants.</li>
+					<li>An object A is called an <mark>ancestor</mark> of an object B if and only if B is a descendant of A.</li>
+					<li>An inclusive ancestor is an object or one of its ancestors.</li>
+					<li>An object A is called a <mark>sibling</mark> of an object B, if and only if B and A share the same non-null parent.</li>
+					<li>An object A is preceding an object B if A and B are in the same tree and A comes before B in tree order.</li>
+					<li>An object A is following an object B if A and B are in the same tree and A comes after B in tree order.</li>
+					<li>The <mark>first child</mark> of an object is its first child or null if it has no children.</li>
+					<li>The <mark>last child</mark> of an object is its last child or null if it has no children.</li>
+					<li>The <mark>previous sibling</mark> of an object is its first preceding sibling or null if it has no preceding sibling.</li>
+					<li>The <mark>next sibling</mark> of an object is its first following sibling or null if it has no following sibling.</li>
+					<li>The <mark>index</mark> of an object is its number of preceding siblings.</li>
+				</ul>
+  <footer class="blockquote-footer">Explore further  <cite title="[ www.w3.org/TR/dom/ ]"><a href="https://www.w3.org/TR/dom/" target="_blank"> www.w3.org/TR/dom/</a></cite></footer>       
+    
+    
     <h4 id="page04">DOM Nodes</h4> 
     <p>DOM is a collection of nodes arranged in a tree. All nodes are related to each other - a family tree of children, parents, siblings, grandparents, etc.  </p>   
     <p>In the HTML DOM, everything is a node:</p>
@@ -96,7 +153,10 @@
     <hr>
     <h4 id="page06">CSS Object Model (CSSOM)</h4> 
     <p>The CSSOM is a map of all CSS selectors and relevant properties for each selector in the form of a tree, with a root node, sibling, descendant, child, and other relationship. The CSSOM is very similar to the DOM. Both of them are part of the critical rendering path which is a series of steps that must happen to properly render a website.</p>
-	
+		<figure>
+		<img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/browser_rendering.png" alt="browser process" style="width:90%;">
+		<figcaption>Browser process to render a web page.</figcaption>
+	</figure>
 
 
     
