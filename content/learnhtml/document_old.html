@@ -29,9 +29,6 @@ code {
 .sher-teal {
   color: #00b2ce;
 }
-.bg-sher-teal {
-  background-color: #00b2ce;
-}
 figcaption {
   color: #00b2ce;
   font-weight: 500;
@@ -80,144 +77,57 @@ figcaption {
         </button>
       </div>   
       <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
-
-          <a href="index.html">HTML Markup</a>
-          <a href="standards.html">Standards, Semantic Correctness, and Accessibility</a>
-          <a href="grammar.html">Syntax, Elements, and Attributes</a>
+   
+          <a href="index.html">Hypertext Markup Language (HTML)</a>
           <a class="bg-gray-100 text-gray-900" href="document.html">HTML Document</a>
-       
+          <a href="index.html">Content Models</a>
+          <a href="index.html">Document Object Model (DOM)</a>
+          
+          <p style="margin-top:30px;border-top:2px solid teal">On this page</p>
+          
+      <a href="#"> Defining document structure</a>
+      <a href="#page02"> Document Type</a>
+      <a href="#page03"> Minimal HTML5 document</a>
+      <a href="#page04"> HEAD element</a>
+      <a href="#page05"> META Element</a>      
+      <a href="#page06"> Character encoding</a>
+      <a href="#page07"> Parsing Whitespace</a>
+      <a href="#page08"> Parsing Entities &amp; Symbols</a>
+      <a href="#page09"> BODY Section</a>
+      <a href="#page10"> Content (data)</a>
+      <a href="#page11"> Content organization</a>
+      <a href="#page12"> Content models</a>
+      <a href="#page13"> Block and inline flow</a>          
+          
       </nav>
     </div>  
         
     <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
-	<h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">HTML Document</h1>
-    
+	<h1>HTML Document</h1>
   
-<section class="col-8 container">
-
-<div class="grid grid-cols-2 gap-4 w-3/4 mt-6 m-auto">
-  <div class="border-t-4 border-teal-500 pt-4">
-    <p class="uppercase sher-teal font-bold">HTML5 document structure</p>
-    <p class="font-semibold">Document type
-    <br>Character encoding
-    <br>Parsing whitespace
-    <br>Parsing entitities &amp; symbols
-    </p>
-  </div>
-  <div class="border-t-4 border-teal-500 pt-4">
-    <p class="uppercase sher-teal font-bold">Minimal HTML5 document</p>
-    <p class="font-semibold">HTML element
-    <br>HEAD element
-    <br>META element
-    <br>TITLE element
-    <br>BODY element
-    </p>
-  </div>
-</div>
-
-
-<div class="my-5">
-  <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-    <div class="flex items-center justify-center px-4 bg-sher-teal">
-
-      
- <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="triangle-exclamation" class="w-6 h-6 text-white fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"></path></svg>     
-    </div>
-    <div class="px-4 py-2 -mx-3">
-      <div class="mx-3">
-        <span class="text-2xl font-semibold sher-teal">HTML5 document structure </span>
-        <p>HTML Document is a text file containing hypertext markup language, which is interpreted and rendered on the screen by a browser. Various components and concepts are important to understand and keep in mind as you develop web applications. Both web sites and web applications use web pages, or more formally, HTML documents.</p>
-        
-        <h5 class="text-lg font-semibold">Document Root</h5> 
-        <p>Each HTML document has a single root element, <code>&lt;html></code>, and is divided into two sections: <code>&lt;head></code> and <code>&lt;body></code>.</p>
-        
-	<h5 class="text-lg font-semibold">Head Section</h5> 	
+  <section class="col-8 container">
+<!-- 1 -->
+	<h4 id="page01">Defining HTML5 document structure</h4>		
+	<p>HTML Document is a text file containing hypertext markup language; interpreted and rendered on the screen by a browser. Various components and concepts are important to understand and keep in mind as you develop web applications. Both web sites and web applications use web pages or, more formally, HTML Documents.</p>
+	<p>Each HTML document has a single root element, <code>&lt;html></code>, and is divided into two sections: <code>&lt;head></code> and <code>&lt;body></code>.</p>		
+	<h5>Head Section</h5> 	
 	<p>The purpose of the <code>&lt;head></code> section is to describe the document itself. The children of head element include <code>&lt;meta></code> to describe the document, <code>&lt;link></code> to include stylesheet files and other assets, <code>&lt;styles></code> to embed styles, <code>&lt;script></code> to include scripts, and <code>&lt;title></code> in window tab.</p>   
-	<h5 class="text-lg font-semibold">Body Section</h5> 	
+	<h5>Body Section</h5> 	
 	<p>The purpose of the <code>&lt;body></code> section is to organize content for presentation by marking it up with HTML elements. The body element contains all marked up content that is presented to the user.</p>		
-	<p class="blockquote-footer">Read further  <cite title="[ How to define Document Structure in HTML5 (pdf) ]"><a href="http://bajcar.dev.fast.sheridanc.on.ca/project_assets/pdf/HowtoDefineDocumentStructureinHTML5.pdf" target="_blank"> How to define Document Structure in HTML5 (pdf)</a></cite></p>	
-        
-      </div>
-    </div>
-  </div>
-</div>
-
- 
+	<footer class="blockquote-footer">Read further  <cite title="[ How to define Document Structure in HTML5 (pdf) ]"><a href="http://bajcar.dev.fast.sheridanc.on.ca/project_assets/pdf/HowtoDefineDocumentStructureinHTML5.pdf" target="_blank"> How to define Document Structure in HTML5 (pdf)</a></cite></footer>	
 
 
-
-<div class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
-    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Document Type</h4>
-    <p>Every HTML document we create should declare its document type (doctype) in the first line. This will identify which specification of HTML is included so the browser knows how to interpret the markup. With HTML5, the general doctype declaration is
-      <pre class="language-html"><code>
-&lt;!DOCTYPE html></code></pre> 
+<!-- 2 -->
+<hr><h4 id="page02">Document Type</h4>    
+	<p>Every HTML document we create should declare its document type (doctype) in the first line. This will identify which specification of HTML is included so the browser knows how to interpret the markup. With HTML5, the general doctype declaration is
+	<br><code>&lt;!DOCTYPE html></code><br>
 	This is the very first line of code in any HTML page you create. Keep in mind that code examples you find online may contain older outdated or irrelevant approaches.</p>
-  </div>
-</div>
 
 
-
- <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-6">
-  <div class="flex">
-    <div class=" w-1/3 md:flex-shrink-0 hover:w-full">
-    <a href="../images/character_encoding.png" target="_blank">
-      <img class="h-full w-full object-cover" src="../images/character_encoding.png" alt="Character encoding">
-      </a>
-    </div>
-    <div class="p-8 w-2/3">
-    <!--
-      <div class="uppercase tracking-wide text-sm sher-teal font-semibold">Character encoding</div>
-      -->
-      <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Character encoding</h4>
-      <p class="mt-2 text-gray-500">character encoding …how symbols are stored.</p> 
-      
-          <ul class="bg-white rounded-lg border border-gray-200 text-gray-900  max-w-lg">
-        <li class="px-6 py-2 border-b border-gray-200 rounded-t-lg">
-            character encoding …how symbols are stored. </li>
-        <li class="px-6 py-2 border-b border-gray-200">
-            <strong>...</strong> </li>
-        <li class="px-6 py-2 border-b border-gray-200">
-            <strong>...</strong> </li>
-        <li class="px-6 py-2 w-full rounded-b-lg">
-            <strong>...</strong> </li>
-    </ul>
-  
-      <p>Read details in <a href="" target="_blank">...</a>.</p>
-       
-    </div>
-  </div>
-</div> 
-
-
-
-
-
-<div class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
-    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Parsing whitespace</h4>
-    <p class="text-gray-700 text-base mb-4">
-      <strong>Whitespace</strong> is any character or series of characters that represent horizontal or vertical space in typography...does not correspond to a visible mark, but typically does occupy an area on a page.</p>
-  </div>
-</div>
-
-
-<div class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
-    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Parsing entities and symbols</h4>
-    <p class="text-gray-700 text-base mb-4">
-      Some elements have attributes that are specific to the element. For example, the <code data-toggle="tooltip" data-placement="top" title="Ordered list" data-ref-link="https://www.w3schools.com/tags/tag_ol.asp">&lt;ol></code> element, by default starts with the natural number 1; you can change the starting value with the attribute <code>start</code> and the kind of marker to use with the attribute <code>type</code>. the code <code>&lt;ol start="3" type="a"></code> will produce a list with the first item numbered "c. First item", instead of the default "1. First item".</p>
-  </div>
-</div>
-
-
-
-<div class="flex justify-center mt-6 ">
-  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
-    <h4 class="text-2xl font-semibold sher-teal">Minimal HTML5 document code</h4>
-    <p class="text-gray-700 text-base mb-4">The current standard includes the following nine (9) lines of code. If a project's requirements necessitate a deviation from the standard, proper documentation is included to describe and justify the non-compliance. A part of maintenance of a projects includes reviews of the current standards and plans to update (or modify)the code to keep it up to date.</p>
-          
-      <pre class="language-html"><code>
+<!-- 3 --> 
+<hr><h4 id="page03">Minimal HTML5 document</h4> 
+	<figure>
+<pre class="html"><code>
 &lt;!DOCTYPE html>
 &lt;html lang="en">
   &lt;head>
@@ -226,33 +136,17 @@ figcaption {
   &lt;/head>
   &lt;body>
   &lt;/body>
-&lt;html></code></pre> 
-<p class="blockquote-footer">Read further  <cite title="[ Creating an HTML5 document (pdf) ]"><a href="http://bajcar.dev.fast.sheridanc.on.ca/project_assets/pdf/HowtoCreateanHTML5document.pdf" target="_blank"> Creating an HTML5 document (pdf)</a></cite></p>
-  </div>
-</div>
-   
-
-
-
-<div class="my-5">
-  <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-    <div class="flex items-center justify-center w-24 bg-sher-teal">
-      <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
-      </svg>
-    </div>
-    <div class="px-4 py-2">
-      <div class="mx-3">
-        <h4 class="text-2xl font-semibold sher-teal">Head Section </h4>
-The purpose of the <code>&lt;head></code> section is to describe the document itself. The children of head element include <code>&lt;meta></code> to describe the document, <code>&lt;link></code> to include stylesheet files and other assets, <code>&lt;styles></code> to embed styles, <code>&lt;script></code> to include scripts, and <code>&lt;title></code> in window tab.</p>        
-      </div>
-    </div>
-  </div>
-</div>
-
+&lt;html></code></pre>
+		<figcaption>Minimal HTML5 document code</figcaption>
+	</figure>
+	<p>Every HTML document we create should declare its document type (doctype) in the first line. This will identify which specification of HTML is included so the browser knows how to interpret the markup. With HTML5, the general doctype declaration is<br>
+	<samp>!DOCTYPE html</samp><br>
+	This is the very first line of code in any HTML page you create. Keep in mind that code examples you find online may contain older outdated or irrelevant approaches.</p>
+    <footer class="blockquote-footer">Read further  <cite title="[ Creating an HTML5 document (pdf) ]"><a href="http://bajcar.dev.fast.sheridanc.on.ca/project_assets/pdf/HowtoCreateanHTML5document.pdf" target="_blank"> Creating an HTML5 document (pdf)</a></cite></footer>
+    
+    
 <!-- 4 -->    
-<section class="my-10">
-<h4 id="page04">Children of the HEAD element</h4>
+<hr><h4 id="page04">Children of the HEAD element</h4>
 	<p>The children of head element include <samp>meta</samp> to describe the document, &lt;link> to include stylesheet files and other assets, <samp>styles</samp> to embed styles, <samp>script</samp> to include scripts, and <samp>title</samp> in the window tab.</p>
 	<dl class="row">
 	  <dt class="col-sm-2">element <samp>base</samp></dt>
@@ -274,9 +168,11 @@ The purpose of the <code>&lt;head></code> section is to describe the document it
 	  <dt class="col-sm-2">element <samp>style</samp></dt>
 	  <dd class="col-sm-9">The style element allows authors to embed style information in their documents. The style element is one of several inputs to the styling processing model. The element does not represent content for the user. The type attribute gives the styling language. If the attribute is present, its value must be a valid mime type that designates a styling language. The charset parameter must not be specified. The default value for the type attribute, which is used if the attribute is absent, is "text/css".</dd>
 	</dl>
-    <p class="blockquote-footer">Read further  <cite title="[ about Document metadta at W3C ]"><a href="https://www.w3.org/TR/html52/document-metadata.html#document-metadata" target="_blank"> about Document metadata at W3C</a></cite></p> 
-    
- <hr><h4 id="page05">Create good META Element descriptions</h4>
+    <footer class="blockquote-footer">Read further  <cite title="[ about Document metadta at W3C ]"><a href="https://www.w3.org/TR/html52/document-metadata.html#document-metadata" target="_blank"> about Document metadata at W3C</a></cite></footer> 
+
+
+<!-- 5 --> 
+<hr><h4 id="page05">Create good META Element descriptions</h4>
     <span hidden>data-ref-link="https://support.google.com/webmasters/answer/35624"</span>
     <p>Make sure that every page on your site has a meta description. Differentiate the descriptions for different pages. Identical or similar descriptions on every page are not helpful.</p>
     <p>Include clearly tagged facts in the description. The meta description doesn't just have to be in sentence format; it's also a great place to include information about the page. For example, news or blog postings can list the author, date of publication, or byline information.</p>    
@@ -284,7 +180,7 @@ The purpose of the <code>&lt;head></code> section is to describe the document it
     <p hidden>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
     This will set the viewport of your page, which will give the browser instructions on how to control the page's dimensions and scaling. Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones).    &#12296; left-angle bracket </p>	    
     <figure>
-    <pre class="language-html"><code>
+    <pre class="html"><code>
 &lt;!-- meta element is used to describe prologue info -->
 &lt;head>
   &lt;meta name="Author" content="name of author(s)">
@@ -295,33 +191,82 @@ The purpose of the <code>&lt;head></code> section is to describe the document it
         Date updated: MMM DD, 20XX."> 
 &lt;/head></code></pre>
     <figcaption> example of meta element used to describe the page's purpose.</figcaption>
-    </figure>	   
+    </figure>	
+
+
+<!-- 6 -->  
+<hr><h4 id="page06">Character encoding</h4>	
+    <figure>
+       <img alt="" style="width:90%" src="images/character_encoding.png" >
+       <figcaption> character encoding …how symbols are stored. </figcaption>
+    </figure> 
+
+
+<!-- 7 -->      
+<hr><h4 id="page07">Parsing Whitespace</h4>
+    <p><strong>Whitespace</strong> is any character or series of characters that represent horizontal or vertical space in typography...does not correspond to a visible mark, but typically does occupy an area on a page.</p>
+
+
+<!-- 8 -->  
+<hr><h4 id="page08">Parsing Entities & Symbols</h4>
+    <p>Some symbols are interpreted in a special way,  such as space <kbd>&nbsp;</kbd>, comma <kbd>,</kbd>, less-than <kbd>&lt;</kbd> and greater-than <kbd>&gt;</kbd> symbols. Trying to use these symbols as part of content requires the use of entities.
+    Reference table at <a href="https://dev.w3.org/html5/html-author/charref">W3C</a></p>
+    <footer class="blockquote-footer">Read further  <cite title="[ W3C Handling character encodings in HTML and CSS (tutorial) ]"><a href="https://www.w3.org/International/tutorials/tutorial-char-enc/" target="_blank"> W3C Handling character encodings in HTML and CSS (tutorial)</a></cite></footer>
+
+
+<!-- 9 -->  
+<hr><h4 id="page09">BODY Section</h4> 
+    <p>The BODY section is the area on the page where the browser renders the marked up content.</p>
     
-</section>
+    
+<!-- 10 -->  
+<hr><h4 id="page10">Content (data)</h4>
+	<p>All data and information presented to the user as <strong>information artefacts</strong>&mdash;review, monograph, book, letter, memo, blog, manual, story, report, news article, in all forms—audio, video, text, braille.</p>
+	<p>Each element defined in the specification has a content model: a description of the element’s expected contents. An HTML element must have contents that match the requirements described in the element’s content model. The contents of an element are its children in the DOM.</p>
+	<figure>
+        <img src="images/artefacts.png" height="400" alt="">
+		<figcaption>Common information artefacts examples</figcaption>
+	</figure>     
+    
+    
+<!-- 11 -->     
+<hr><h4 id="page11">Content organization</h4>     
+    <p>Well-structured content allows more efficient navigation and processing. Use HTML and WAI-ARIA to improve navigation and orientation on web pages and in applications.</p>
+    <dl class="row">
+      <dt class="col-sm-3">Page Regions</dt>
+      <dd class="col-sm-9">Identify and mark up regions on web pages using HTML5 and WAI-ARIA roles.</dd>	
+      <dt class="col-sm-3">Labeling Regions</dt>
+      <dd class="col-sm-9">Label regions to allow users to distinguish and access them.</dd>
+      <dt class="col-sm-3">Headings</dt>
+      <dd class="col-sm-9">Add headings and nest them logically to label sections of web pages according to their relationships and importance.</dd>
+      <dt class="col-sm-3">Content Structure</dt>
+      <dd class="col-sm-9">Mark up the content on a page in a way that uses appropriate and meaningful elements.</dd>
+    </dl>
+    <footer class="blockquote-footer">Read further  <cite title="[ Page Structure Concepts ]"><a href="https://www.w3.org/WAI/tutorials/page-structure/" target="_blank"> Page Structure Concepts and why is it important?</a></cite></footer>	
 
-<div class="my-5">
-  <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-    <div class="flex items-center justify-center w-24 bg-sher-teal">
-      <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
-      </svg>
-    </div>
-    <div class="px-4 py-2">
-      <div class="mx-3">
-        <h4 class="text-2xl font-semibold sher-teal">BODY Section </h4>
-    <p class="text-gray-700 text-base">
-      The BODY section is the area on the page where the browser renders the marked up content. Content is all data and information presented to the user as <strong>information artefacts</strong>&mdash;review, monograph, book, letter, memo, blog, manual, story, report, news article, in all forms—audio, video, text, braille.</p>
-      <p class="text-gray-700 text-base mb-4">The purpose of the <code>&lt;body></code> section is to organize content for presentation by marking it up with HTML elements. The body element contains all marked up content that is presented to the user.</p>		
-	<p class="blockquote-footer">Read further  <cite title="[ How to define Document Structure in HTML5 (pdf) ]"><a href="http://bajcar.dev.fast.sheridanc.on.ca/project_assets/pdf/HowtoDefineDocumentStructureinHTML5.pdf" target="_blank"> How to define Document Structure in HTML5 (pdf)</a></cite></p>
-      </div>
-    </div>
-  </div>
-</div>
 
-
-  
-</section>
+<!-- 12 -->  
+<hr><h4 id="page12">Content Models</h4>	
+    <p>A content model is a description of the element’s expected contents. An HTML element must have contents that match the requirements described in the element’s content model. The contents of an element are its children in the DOM (flow, interactive, embedded, phrasing, meta-data, sectioning, heading).</p>
+    <figure>
+     <object data="https://www.w3.org/TR/html52/images/content-venn.svg" height="188" width="720"><img alt="" height="168" src="https://www.w3.org/TR/html52/images/content-venn.svg" width="112"></object>
+     <figcaption>   Hover over the image to see the list of elements that fall into the category. <a href="https://www.w3.org/TR/html52/dom.html#content-models" target="blank">&mdash;from W3C (click to go to the specification document).</a> </figcaption> 
+     </figure>
      
+
+<!-- 13 -->       
+<hr><h4 id="page13">Block and inline flow</h4>	
+    <ul>
+      <li>By default, block-level elements begin on new lines. Read more <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">MDN web docs</a></li>
+      
+      <li>By default, inline elements stay in line of the parent element. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">MDN web docs</a></li>
+      <li>To determine what content category a particular element belongs to, examine the specifications document.</li>
+    </ul>
+
+    
+  </section>
+     
+    
     </section>
  </main>
   
@@ -380,8 +325,7 @@ The purpose of the <code>&lt;head></code> section is to describe the document it
 </footer> 
  
 </body>
-<!--script src="https://cdn.tailwindcss.com/"></script>
-<script type="text/javascript" src="../scripts/index.min.js"></script-->
+
 <script>
   // topnav
   var topButton = document.getElementById("topnavButton");
@@ -394,25 +338,5 @@ The purpose of the <code>&lt;head></code> section is to describe the document it
   });
 </script>
 <script src="../scripts/prism.js"></script>
-<!-- Required popper.js -->
-<script
-  src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-  charset="utf-8"
-></script>
-<script>
-  function openPopover(event, popoverID) {
-    let element = event.target;
-    while (element.nodeName !== "BUTTON") {
-      element = element.parentNode;
-    }
-    var popper = Popper.createPopper(
-      element,
-      document.getElementById(popoverID),
-      {
-        placement: "bottom",
-      }
-    );
-    document.getElementById(popoverID).classList.toggle("hidden");
-  }
 </body>
 </html>

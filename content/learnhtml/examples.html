@@ -104,6 +104,53 @@ summary {
     <p>Explore <a href="https://ebajcar.github.io/web10049/slides/10049/week06slides.html" target="_blank">slides week 6</a></p>
     <iframe src="https://ebajcar.github.io/web10049/slides/10049/week06slides.html" height="600" width="1040"></iframe>
  
+ <h3>Empty elements</h3>
+ <figure>
+<pre class="language-html"><code>
+&lt;!-- empty elements br, hr, and img -->
+&lt;p>Lorem&lt;br>ipsum&lt;br>on new line&lt;/p>
+&lt;hr>
+&lt;img src="phone.png" alt="green icon of phone handle">
+&lt;hr></code></pre>
+<iframe style="height:186px;" srcdoc='
+<p>Lorem<br>ipsum<br>on new line</p><hr><img src="iframes/phone.png" alt="bubble?"><hr>
+'></iframe>
+<figcaption> Example of empty elements <code>br</code>, <samp>hr</samp>, and <samp>img</samp>
+</figure>	
+ 
+  <h3>Nesting elements</h3>
+ <figure>
+<pre class="language-html"><code>
+&lt;!-- nesting elements inside each other -->
+&lt;p>
+  &lt;q>The quick brown fox jumps over the lazy dog.&lt;/q>	
+  is an 
+  &lt;mark>
+    English-language 
+    &lt;strong>
+      &lt;dfn>pangram&lt;/dfn>
+    &lt;/strong>
+  &lt;/mark>—a sentence that contains all of the letters of the alphabet.
+&lt;/p></code></pre>
+<iframe style="width:100%;height:120px;border:1px dotted blue;" srcdoc='<p> 
+ <q>The quick brown fox jumps over the lazy dog.</q>	
+ is an <mark>English-language <strong><dfn>pangram&lt;/dfn></strong></mark>—a sentence that contains all of the letters of the alphabet.</p>'></iframe>
+<figcaption> Example of nesting elements</figcaption>
+</figure>	    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
 <h3>Quotations and citations</h3>
 
 <details id="example01">
