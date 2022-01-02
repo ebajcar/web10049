@@ -11,6 +11,7 @@
 dl, ol {
   margin-bottom: 16px;
 }
+dt {font-weight: bold;}
 h4, h3 {
   margin-top: 16px;
 }
@@ -28,6 +29,9 @@ code {
 }
 .sher-teal {
   color: #00b2ce;
+}
+.bg-sher-teal {
+  background-color: #00b2ce;
 }
 figcaption {
   color: #00b2ce;
@@ -67,7 +71,7 @@ figcaption {
     
   <main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
       
-    <aside id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
       <div class="flex-shrink-0 px-8 py-4">
         <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
           <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -78,11 +82,11 @@ figcaption {
       </div>   
       <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
 
-          <a class="bg-gray-100 text-gray-900" href="index.html">HTML Markup</a>
+          <a href="index.html">HTML Markup</a>
           <a href="standards.html">Standards, Semantic Correctness, and Accessibility</a>
           <a href="grammar.html">Syntax, Elements, and Attributes</a>
           <a href="document.html">HTML Document</a>
-          <a href="content.html">Content Models and Organization</a>
+          <a class="bg-gray-100 text-gray-900" href="content.html">Content Models and Organization</a>
           <a href="dom.html">Document Object Model (DOM)</a>
           <a href="textual.html">Marking up textual content</a>
           <a href="semantics.html">Marking up semantic content</a>
@@ -90,74 +94,98 @@ figcaption {
           <a href="forms.html">Marking up forms</a>
        
       </nav>
-    </aside>  
+    </div>  
         
     <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
-    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">HTML Markup</h1>
+	<h1 class="text-4xl font-medium leading-tight mt-0 mb-2 text-black-600">Content Models and Organization</h1>
+    
   
 <section class="col-8 container">
 
-<h6 class="text-lg font-light leading-relaxed mt-6 mb-4 text-gray-800" title="developer.mozilla.org">Historically, the desire to have text printed in specific formats meant that original manuscripts were  "marked up" with annotation to indicate to the book-printer how the author would like sections of text laid out...</p>
-		</h6>
-	
-    <p>HTML is the World Wide Web's core markup language. Originally, HTML was primarily designed as a language for semantically describing scientific documents. Its general design, however, has enabled it to be adapted, over the subsequent years, to describe a number of other types of documents and even applications. Today, HTML is used to organize the text and other forms of information, that we want to present on the web.</p>
-    <p>HTML is not a programming language; it is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on.</p>
-    
-<p class="blockquote-footer">Read further  <cite title="[ www.w3.org/standards/webdesign/htmlcss#whatcss ]"><a href="http://bajcar.dev.fast.sheridanc.on.ca/project_assets/pdf/WhatisHTML5.pdf" target="_blank"> What is HTML5 (pdf)</a></cite></p>
-
-<div class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
-    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Standards</h4>
-    <p class="text-gray-700 text-base mb-4">
-      Standards and guidelines assist in optimization for search engines and screen readers. HTML5 semantic elements provide the mechanisms necessary to structure the page more easily for accessibility via screen readers. Search engines take advantage of HTML5 semantics by using the article element to determine the purpose of the page.</p>
+<div class="grid grid-cols-2 gap-4 w-3/4 mt-6 m-auto">
+  <div class="border-t-4 border-teal-500 pt-4">
+    <p class="uppercase sher-teal font-bold">Information artefacts</p>
+    <p class="font-semibold">Content organization
+    <br>Content structure
+    <br>Page regions
+    <br>Headings
+    <br>Labeling regions
+    </p>
+  </div>
+  <div class="border-t-4 border-teal-500 pt-4">
+    <p class="uppercase sher-teal font-bold">Content Models</p>
+    <p class="font-semibold">Block and inline flow
+    <br>Root element
+    <br>Document metadata
+    <br>Inline text semantics
+    <br>Text content
+    <br>Table content
+    <br>Image and multimedia
+    <br>Interactive elements
+    <br>Content sectioning
+    <br>Obsolete and depricated
+    </p>
   </div>
 </div>
-    
- 
-    
- 
+
+
+
  <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
   <div class="md:flex">
     <div class="md:flex-shrink-0">
-      <a href="https://upload.wikimedia.org/wikipedia/commons/7/7f/HTML5_APIs_and_related_technologies_taxonomy_and_status.svg" target="_blank"><img class="h-full w-full object-cover md:w-48" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/HTML5_APIs_and_related_technologies_taxonomy_and_status.svg" alt="Web taxonomy and status">
+      <a href="../images/artefacts.png" target="_blank"><img class="h-full w-full object-cover md:w-48" src="../images/artefacts.png" alt="Web taxonomy and status">
       </a>
     </div>
     <div class="p-8">
-      <div class="uppercase tracking-wide text-sm sher-teal font-semibold">Specifications</div>
-      
-      <p class="mt-2 text-gray-500">HTML5 APIs and related technologies; note this diagram has been prepared a few years ago. Consult the specifications and the standards organizations for updates and current status on the individual components.</p> 
-      <p><strong>The World Wide Web Consortium (W3C)</strong> is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards. Led by Web inventor and Director Tim Berners-Lee and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential. W3C standards define an Open Web Platform for application development that has the unprecedented potential to enable developers to build rich interactive experiences.</p>
-	
-	<p  data-ref-link="https://www.w3.org/standards/" class="blockquote-footer" style="padding:0;margin-top:0;margin-bottom:20px;">Read further  <cite title="[ about W3 Consortium standards ]"><a href="https://www.w3.org/standards/" target="_blank"> about W3 Consortium standards.</a></cite></p>
-    
-	<p><strong>The Web Hypertext Application Technology Working Group (WHATWG)</strong> is a community of people interested in evolving the web through standards and tests. The WHATWG was founded by individuals of Apple, the Mozilla Foundation, and Opera Software in 2004, after a W3C workshop. In 2017, Apple, Google, Microsoft, and Mozilla helped develop an IPR policy and governance structure for the WHATWG, together forming a Steering Group to oversee relevant policies.</p>
-	
-	<p  data-ref-link="https://html.spec.whatwg.org/multipage/" class="blockquote-footer" style="padding:0;margin-top:0;margin-bottom:20px;">Read further  <cite title="[ about WHATWG standards ]"><a href="https://html.spec.whatwg.org/multipage/" target="_blank"> about WHATWG standards.</a></cite></p>
+      <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Information artefacts</h4>
+      <p class="mt-2 text-gray-500">All data and information presented to the user as <strong>information artefacts</strong>&mdash;Common information artefacts examples include review, monograph, book, letter, memo, blog, manual, story, report, news article, in all forms—audio, video, text, braille.</p>
+	<p>Each element defined in the specification has a content model: a description of the element’s expected contents. An HTML element must have contents that match the requirements described in the element’s content model. The contents of an element are its children in the DOM.</p>
     </div>
   </div>
-</div>     
-        
-           
-<div class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
-    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Web Accessibility Initiative (WAI)</h4>
-    <p class="text-gray-700 text-base mb-4">
-      WAI is an initiative of the W3C that leads the web to its full potential includes promoting a high degree of usability for people with disabilities. WAI develops its work through W3C’s consensus-based process, involving different stakeholders in web accessibility. These include industry, disability organizations, government, accessibility research organizations, and more. WAI, in partnership with organizations around the world, pursues accessibility of the web through these primary activities:</p>
-	<ul class="list-disc list-inside">
-		<li>ensuring that W3C standards support accessibility</li>
-		<li>developing accessibility guidelines for web content and applications, browsers, and authoring tools</li>
-		<li>developing resources to improve web accessibility evaluation processes and tools</li>
-		<li>supporting education and outreach on web accessibility</li>
-		<li>coordinating with research and development that may impact future accessibility of the web</li>
-		<li>promoting harmonized international uptake of web accessibility standards</p>
-	</ul>
-	<p  data-ref-link="https://www.w3.org/WAI/" class="blockquote-footer" style="padding:0;margin-top:0;margin-bottom:20px;">Read further  <cite title="[ about WHATWG standards ]"><a href="https://www.w3.org/WAI/" target="_blank"> about W3C Web Accessibility Initiaive.</a></cite></p>
-	
-	<p hidden>https://www.w3.org/community/webed/wiki/HTML/Training</p>
+</div> 
+
+
+
+<div class="my-5">
+  <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="flex items-center justify-center px-4 bg-sher-teal">
+
+      
+ <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="triangle-exclamation" class="w-6 h-6 text-white fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"></path></svg>     
+    </div>
+    <div class="px-4 py-2 -mx-3">
+      <div class="mx-3">
+        <span class="text-2xl font-semibold sher-teal">Content organization</span>
+        <p>Well-structured content allows more efficient navigation and processing. Use HTML and WAI-ARIA to improve navigation and orientation on web pages and in applications.</p>
+    <dl class="row">
+      <dt class="col-sm-3">Page Regions</dt>
+      <dd class="col-sm-9">Identify and mark up regions on web pages using HTML5 and WAI-ARIA roles.</dd>	
+      <dt class="col-sm-3">Labeling Regions</dt>
+      <dd class="col-sm-9">Label regions to allow users to distinguish and access them.</dd>
+      <dt class="col-sm-3">Headings</dt>
+      <dd class="col-sm-9">Add headings and nest them logically to label sections of web pages according to their relationships and importance.</dd>
+      <dt class="col-sm-3">Content Structure</dt>
+      <dd class="col-sm-9">Mark up the content on a page in a way that uses appropriate and meaningful elements.</dd>
+    </dl>
+    <p class="blockquote-footer">Read further  <cite title="[ Page Structure Concepts ]"><a href="https://www.w3.org/WAI/tutorials/page-structure/" target="_blank"> Page Structure Concepts and why is it important?</a></cite></p>
+      </div>
+    </div>
   </div>
 </div>
-    
-    
+
+ 
+
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h5 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Content Models</h5>
+    <p class="text-gray-700 text-base mb-4">
+    A content model is a description of the element’s expected contents. An HTML element must have contents that match the requirements described in the element’s content model. The contents of an element are its children in the DOM (flow, interactive, embedded, phrasing, meta-data, sectioning, heading).</p>
+      <p>Hover over the image to see the list of elements that fall into the category. <a href="https://www.w3.org/TR/html52/dom.html#content-models" target="blank">&mdash;from W3C (click to go to the specification document).</a>
+    </p>
+    <object data="https://www.w3.org/TR/html52/images/content-venn.svg" style="width:100%" height="288"><img alt="" height="168" src="https://www.w3.org/TR/html52/images/content-venn.svg" width="112"></object>
+  </div>
+</div>
+   
 
 
 
@@ -165,7 +193,52 @@ figcaption {
 
 
 
+<div class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Block and inline flow</h4>
+    <p class="text-gray-700 text-base">
+      By default, block-level elements begin on new lines. </p>
+    <p>Read further  <cite title="[ https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements ]"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank"> Block-level elements (MDN web docs)</a></cite></p>
+    <p class="text-gray-700 text-base">By default, inline elements stay in line of the parent element. 
+      To determine what content category a particular element belongs to, examine the specifications document.
+      </p>
+      <p>Read further  <cite title="[ https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements ]"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank"> Inline elements (MDN web docs)</a></cite></p>
+  </div>
+</div>
 
+ 
+
+
+ <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
+  <div class="md:flex">
+    <div class="md:flex-shrink-0">
+      <a href="../../html5elements/dist/index.html" target="_blank"><img class="h-full w-full object-cover md:w-48" src="../images/elements_table.png" alt="Web taxonomy and status">
+      </a>
+    </div>
+    <div class="p-8">
+      <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Table of HTML elements</h4>
+      <p class="mt-2 text-gray-500">Click on the image on the left to explore the table of HTML elements; hover to see the groupings of content models; click on an element to dig deeper. The table highlights the subset of elements to become familiar with in this course.</p>
+      <table>
+        <tr><td class="w-40">Main root</td><td>HTML</td></tr>
+        <tr><td>Document metadata</td><td>HEAD &bull; LINK &bull; META &bull; STYLE &bull; TITLE</td></tr>
+        <tr><td>Sectioning root</td><td>BODY</td></tr>
+        <tr><td>Content sectioning</td><td>ADDRESS &bull; ARTICLE &bull; ASIDE &bull; FOOTER &bull; HEADER &bull; H1 - H6 &bull; MAIN &bull; NAV &bull; SECTION</td></tr>
+        <tr><td>Text content</td><td>BLOCKQUOTE &bull; DD &bull; DIV &bull; DL &bull; DT &bull; FIGCAPTION &bull; FIGURE &bull; HR &bull; LI &bull; OL &bull; P &bull; PRE &bull; UL</td></tr>
+        <tr><td>Inline text semantics</td><td>A &bull; ABBR &bull; B &bull; BR &bull; CITE &bull; CODE &bull; DFN &bull; EM &bull; KBD &bull; MARK &bull; Q &bull; SAMP &bull; SMALL &bull; SPAN &bull; STRONG &bull; SUB &bull; SUP &bull; TIME &bull; U &bull; VAR</td></tr>
+        <tr><td>Image and multimedia</td><td>AREA &bull; AUDIO &bull; IMG &bull; MAP &bull; TRACK &bull; VIDEO</td></tr>
+        <tr><td>Embedded content</td><td>EMBED &bull; IFRAME &bull; OBJECT &bull; PARAM &bull; PICTURE &bull; SOURCE</td></tr>
+        <tr><td>Demarcating edits</td><td>DEL &bull; INS</td></tr>
+        <tr><td>Table content</td><td>CAPTION &bull; TABLE &bull; TD &bull; TH &bull; TR</td></tr>
+        <tr><td>Forms</td><td>BUTTON &bull; DATALIST &bull; FIELDSET &bull; FORM &bull; INPUT &bull; LABEL &bull; LEGEND &bull; METER &bull; OPTGROUP &bull; OPTION &bull; OUTPUT &bull; PROGRESS &bull; SELECT &bull; TEXTAREA</td></tr>
+        <tr><td>Interactive elements</td><td>DETAILS &bull; SUMMARY</td></tr>
+      </table>
+      <p class="mt-2 text-gray-500">Explore the full reference list of HTML elements on      
+       <cite title="[ HTML elements reference ]"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank"> MDN Web Docs</a></cite></p>
+    </div>
+  </div>
+</div> 
+
+ 
   
 </section>
      
@@ -227,7 +300,8 @@ figcaption {
 </footer> 
  
 </body>
-<script src="https://cdn.tailwindcss.com/"></script>
+<!--script src="https://cdn.tailwindcss.com/"></script>
+<script type="text/javascript" src="../scripts/index.min.js"></script-->
 <script>
   // topnav
   var topButton = document.getElementById("topnavButton");

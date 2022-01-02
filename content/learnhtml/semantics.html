@@ -11,6 +11,7 @@
 dl, ol {
   margin-bottom: 16px;
 }
+dt {font-weight: bold;}
 h4, h3 {
   margin-top: 16px;
 }
@@ -28,6 +29,9 @@ code {
 }
 .sher-teal {
   color: #00b2ce;
+}
+.bg-sher-teal {
+  background-color: #00b2ce;
 }
 figcaption {
   color: #00b2ce;
@@ -67,7 +71,7 @@ figcaption {
     
   <main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
       
-    <aside id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
       <div class="flex-shrink-0 px-8 py-4">
         <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
           <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -78,86 +82,126 @@ figcaption {
       </div>   
       <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
 
-          <a class="bg-gray-100 text-gray-900" href="index.html">HTML Markup</a>
+          <a href="index.html">HTML Markup</a>
           <a href="standards.html">Standards, Semantic Correctness, and Accessibility</a>
           <a href="grammar.html">Syntax, Elements, and Attributes</a>
           <a href="document.html">HTML Document</a>
           <a href="content.html">Content Models and Organization</a>
           <a href="dom.html">Document Object Model (DOM)</a>
           <a href="textual.html">Marking up textual content</a>
-          <a href="semantics.html">Marking up semantic content</a>
+          <a class="bg-gray-100 text-gray-900" href="semantics.html">Marking up semantic content</a>
           <a href="interactive.html">Marking up interactive content</a>
           <a href="forms.html">Marking up forms</a>
        
       </nav>
-    </aside>  
+    </div>  
         
     <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
-    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">HTML Markup</h1>
+	<h1 class="text-4xl font-medium leading-tight mt-0 mb-2 text-black-600">Marking up semantic content</h1>
+    
   
 <section class="col-8 container">
 
-<h6 class="text-lg font-light leading-relaxed mt-6 mb-4 text-gray-800" title="developer.mozilla.org">Historically, the desire to have text printed in specific formats meant that original manuscripts were  "marked up" with annotation to indicate to the book-printer how the author would like sections of text laid out...</p>
-		</h6>
-	
-    <p>HTML is the World Wide Web's core markup language. Originally, HTML was primarily designed as a language for semantically describing scientific documents. Its general design, however, has enabled it to be adapted, over the subsequent years, to describe a number of other types of documents and even applications. Today, HTML is used to organize the text and other forms of information, that we want to present on the web.</p>
-    <p>HTML is not a programming language; it is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on.</p>
-    
-<p class="blockquote-footer">Read further  <cite title="[ www.w3.org/standards/webdesign/htmlcss#whatcss ]"><a href="http://bajcar.dev.fast.sheridanc.on.ca/project_assets/pdf/WhatisHTML5.pdf" target="_blank"> What is HTML5 (pdf)</a></cite></p>
+<ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mx-40" id="pills-tabFill" role="tablist">
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Non-semantic wrappers</a>
+  </li> 
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Line breaks and horizontal rules</a>
+  </li> 
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#page-regions" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Page regions</a>
+  </li> 
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Grouping content</a>
+  </li> 
+    <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Articles and sections</a>
+  </li> 
+</ul>
+  
+<ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mb-4 mx-48" id="pills-tabFill" role="tablist">
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Figures and figure captions</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Ordered, unordered, and description lists</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Table data structures</a>
+  </li>
+</ul>
 
-<div class="flex justify-center mt-6">
+
+
+ 
+<!-- Headings and paragraphs -->
+<div id="page-regions" class="flex justify-center mt-6">
   <div class="block p-6 rounded-lg shadow-lg bg-white">
-    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Standards</h4>
-    <p class="text-gray-700 text-base mb-4">
-      Standards and guidelines assist in optimization for search engines and screen readers. HTML5 semantic elements provide the mechanisms necessary to structure the page more easily for accessibility via screen readers. Search engines take advantage of HTML5 semantics by using the article element to determine the purpose of the page.</p>
-  </div>
-</div>
-    
- 
-    
- 
- <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
-  <div class="md:flex">
-    <div class="md:flex-shrink-0">
-      <a href="https://upload.wikimedia.org/wikipedia/commons/7/7f/HTML5_APIs_and_related_technologies_taxonomy_and_status.svg" target="_blank"><img class="h-full w-full object-cover md:w-48" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/HTML5_APIs_and_related_technologies_taxonomy_and_status.svg" alt="Web taxonomy and status">
-      </a>
-    </div>
-    <div class="p-8">
-      <div class="uppercase tracking-wide text-sm sher-teal font-semibold">Specifications</div>
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Page regions</h4>
+    <!--p class="text-gray-700 text-base mb-4">Example using EM and STRONG elements </p-->
+   <dl class="row">	  
+      <dt class="col-sm-3 text-info">element <samp>main</samp></dt>
+      <dd class="col-sm-9">  represents the main content of the body of a document or application. 	 
+      <ul class="list-outside">
+        <li>is not sectioning content and has no effect on the document outline.</li> 
+        <li>main content area of a document includes content that is unique to that document and excludes content that is repeated across a set of documents such as site navigation links, copyright information, site logos and banners and search forms (unless the document or application’s main function is that of a search form).</li> 
+        <li>must not be more than one visible main element in a document.</li> 
+        <li>authors must not include the main element as a descendant of an article, aside, footer, header or nav element.</li> 
+        <li>is not suitable for use to identify the main content areas of sub sections of a document or application.</li> 
+      </ul>
+      <p class="blockquote-footer">Read further  
+        <cite title="[  ]">
+          <a href="https://www.w3.org/TR/html52/grouping-content.html#the-main-element" 
+            target="_blank"> about the main element at W3C☍</a>  
+          <!--a href=" " 
+            target="_blank"> ☍MDN</a-->          
+        </cite>
+      </p> 
+      </dd>	    
+
+      <dt class="col-sm-3 text-info">element <samp>header</samp> </dt>
+      <dd class="col-sm-9"> usually contain Web page's/section's headers: logo, navigations, headers, search form, etc. <small style="word-break:keep-all"><a href="">☍MDN</a>&nbsp;&nbsp;<a href="">☍W3C</a></small></dd>	
       
-      <p class="mt-2 text-gray-500">HTML5 APIs and related technologies; note this diagram has been prepared a few years ago. Consult the specifications and the standards organizations for updates and current status on the individual components.</p> 
-      <p><strong>The World Wide Web Consortium (W3C)</strong> is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards. Led by Web inventor and Director Tim Berners-Lee and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential. W3C standards define an Open Web Platform for application development that has the unprecedented potential to enable developers to build rich interactive experiences.</p>
-	
-	<p  data-ref-link="https://www.w3.org/standards/" class="blockquote-footer" style="padding:0;margin-top:0;margin-bottom:20px;">Read further  <cite title="[ about W3 Consortium standards ]"><a href="https://www.w3.org/standards/" target="_blank"> about W3 Consortium standards.</a></cite></p>
-    
-	<p><strong>The Web Hypertext Application Technology Working Group (WHATWG)</strong> is a community of people interested in evolving the web through standards and tests. The WHATWG was founded by individuals of Apple, the Mozilla Foundation, and Opera Software in 2004, after a W3C workshop. In 2017, Apple, Google, Microsoft, and Mozilla helped develop an IPR policy and governance structure for the WHATWG, together forming a Steering Group to oversee relevant policies.</p>
-	
-	<p  data-ref-link="https://html.spec.whatwg.org/multipage/" class="blockquote-footer" style="padding:0;margin-top:0;margin-bottom:20px;">Read further  <cite title="[ about WHATWG standards ]"><a href="https://html.spec.whatwg.org/multipage/" target="_blank"> about WHATWG standards.</a></cite></p>
-    </div>
-  </div>
-</div>     
-        
+      <dt class="col-sm-3 text-info">element <samp>footer</samp> </dt>
+      <dd class="col-sm-9"> typically contains information about its section: author, links to related documents, copyright info, etc. <small style="word-break:keep-all"><a href="">☍MDN</a>&nbsp;&nbsp;<a href="">☍W3C</a></small></dd>	 
            
-<div class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
-    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Web Accessibility Initiative (WAI)</h4>
-    <p class="text-gray-700 text-base mb-4">
-      WAI is an initiative of the W3C that leads the web to its full potential includes promoting a high degree of usability for people with disabilities. WAI develops its work through W3C’s consensus-based process, involving different stakeholders in web accessibility. These include industry, disability organizations, government, accessibility research organizations, and more. WAI, in partnership with organizations around the world, pursues accessibility of the web through these primary activities:</p>
-	<ul class="list-disc list-inside">
-		<li>ensuring that W3C standards support accessibility</li>
-		<li>developing accessibility guidelines for web content and applications, browsers, and authoring tools</li>
-		<li>developing resources to improve web accessibility evaluation processes and tools</li>
-		<li>supporting education and outreach on web accessibility</li>
-		<li>coordinating with research and development that may impact future accessibility of the web</li>
-		<li>promoting harmonized international uptake of web accessibility standards</p>
-	</ul>
-	<p  data-ref-link="https://www.w3.org/WAI/" class="blockquote-footer" style="padding:0;margin-top:0;margin-bottom:20px;">Read further  <cite title="[ about WHATWG standards ]"><a href="https://www.w3.org/WAI/" target="_blank"> about W3C Web Accessibility Initiaive.</a></cite></p>
-	
-	<p hidden>https://www.w3.org/community/webed/wiki/HTML/Training</p>
+      <dt class="col-sm-3 text-info">element <samp>aside</samp> </dt>
+      <dd class="col-sm-9"> represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content: pull quotes, sidebars, advertising, groups of nav elements, etc.  
+      <small style="word-break:keep-all"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">☍MDN</a>&nbsp;&nbsp;<a href="https://www.w3.org/TR/html52/sections.html#the-aside-element">☍W3C</a></small></dd>		        
+    </dl>	
+    <p class="blockquote-footer">Read further  <cite title="[ about page regions at W3C ]"><a href="https://www.w3.org/WAI/tutorials/page-structure/regions/#complementary-content" target="_blank"> about page regions at W3C</a></cite></p>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='
+    <header><h1>Page Heading</h1>
+    <nav>links will appear here</nav>
+    <main>Main content goes here</main>
+    <footer><address>Web Development &copy; Sheridan College</address></footer>
+    '  height="280px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+ <pre class="language-html"><code>
+&lt;!-- a typical layout using page regions -->
+&lt;header>
+  &lt;h1>Page Heading&lt;/h1>
+&lt;header>
+&lt;nav>
+  links will appear here
+&lt;nav>
+&lt;main>
+  &lt;p>Main content goes here.&lt;/p>
+&lt;main>
+&lt;footer>
+  &lt;!-- contact info goes here -->
+  &lt;address>Web Development &copy; Sheridan College&lt;/address>
+&lt;/footer></code></pre>
+ </code></pre>        
+        </div>
+    </div>
+
   </div>
 </div>
-    
-    
 
 
 
@@ -165,7 +209,19 @@ figcaption {
 
 
 
+<div class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 w-full">heading</h4>
+    <p class="text-gray-700 text-base w-full">
+      TBD</p>
+  </div>
+</div>
 
+ 
+
+
+
+ 
   
 </section>
      
@@ -227,7 +283,8 @@ figcaption {
 </footer> 
  
 </body>
-<script src="https://cdn.tailwindcss.com/"></script>
+<!--script src="https://cdn.tailwindcss.com/"></script>
+<script type="text/javascript" src="../scripts/index.min.js"></script-->
 <script>
   // topnav
   var topButton = document.getElementById("topnavButton");
