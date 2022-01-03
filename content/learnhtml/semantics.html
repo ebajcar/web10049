@@ -87,6 +87,7 @@ figcaption {
           <a href="grammar.html">Syntax, Elements, and Attributes</a>
           <a href="document.html">HTML Document</a>
           <a href="content.html">Content Models and Organization</a>
+          <a href="form-process.html">HTML Forms</a>
           <a href="dom.html">Document Object Model (DOM)</a>
           <a href="textual.html">Marking up textual content</a>
           <a class="bg-gray-100 text-gray-900" href="semantics.html">Marking up semantic content</a>
@@ -104,38 +105,69 @@ figcaption {
 
 <ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mx-40" id="pills-tabFill" role="tablist">
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-     <a href="#" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Non-semantic wrappers</a>
+     <a href="#non-semantic" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Non-semantic wrappers</a>
   </li> 
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-     <a href="#" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Line breaks and horizontal rules</a>
+     <a href="#breaks-hrules" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Line breaks and horizontal rules</a>
   </li> 
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
      <a href="#page-regions" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Page regions</a>
   </li> 
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-     <a href="#" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Grouping content</a>
+     <a href="#grouping-content" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Grouping content</a>
   </li> 
     <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-     <a href="#" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Articles and sections</a>
+     <a href="#article-section" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Articles and sections</a>
   </li> 
 </ul>
   
 <ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mb-4 mx-48" id="pills-tabFill" role="tablist">
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-    <a href="#" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Figures and figure captions</a>
+    <a href="#figure-figcaption" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Figures and figure captions</a>
   </li>
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-    <a href="#" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Ordered, unordered, and description lists</a>
+    <a href="#lists" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Ordered, unordered, and description lists</a>
   </li>
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-    <a href="#" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Table data structures</a>
+    <a href="#table-data" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Table data structures</a>
   </li>
 </ul>
 
 
 
+<!-- Non-semantic wrappers -->
+<div id="non-semantic" class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 w-full">Non-semantic wrappers</h4>
+    <p class="text-gray-700 text-base w-full">
+      TBD</p>
+  </div>
+</div>
+
+
+<!-- Line breaks and horizontal rules -->
+<div id="breaks-hrules"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Line breaks and horizontal rules</h4>
+    <p>Highlights</p>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- examples become available during course -->
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="#" target="_blank">(full code)</a></p> 
+    <!-- <h4>More examples</h4> -->
+  </div>
+</div>
+
  
-<!-- Headings and paragraphs -->
+<!-- Page regions -->
 <div id="page-regions" class="flex justify-center mt-6">
   <div class="block p-6 rounded-lg shadow-lg bg-white">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Page regions</h4>
@@ -180,7 +212,8 @@ figcaption {
     <footer><address>Web Development &copy; Sheridan College</address></footer>
     '  height="280px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
         </div>
-        <div class="m-3"><h4>Code</h4>
+        <div class="m-3">
+        <h4>Code</h4>
  <pre class="language-html"><code>
 &lt;!-- a typical layout using page regions -->
 &lt;header>
@@ -195,31 +228,125 @@ figcaption {
 &lt;footer>
   &lt;!-- contact info goes here -->
   &lt;address>Web Development &copy; Sheridan College&lt;/address>
-&lt;/footer></code></pre>
- </code></pre>        
+&lt;/footer></code></pre>      
         </div>
     </div>
+
 
   </div>
 </div>
 
 
+<!-- Grouping content -->
+<div id="grouping-content"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Grouping content</h4>
+    <p>Highlights</p>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- examples become available during course -->
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="#" target="_blank">(full code)</a></p> 
+    <!-- <h4>More examples</h4> -->
+  </div>
+</div>
 
 
+<!-- Articles and sections -->
+<div id="article-section"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Articles and sections</h4>
+    <p>Highlights</p>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- examples become available during course -->
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="#" target="_blank">(full code)</a></p> 
+    <!-- <h4>More examples</h4> -->
+  </div>
+</div>
 
 
+<!-- Figures and figure captions -->
+<div id="figure-figcaption"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Figures and figure captions</h4>
+    <p>Highlights</p>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- examples become available during course -->
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="#" target="_blank">(full code)</a></p> 
+    <!-- <h4>More examples</h4> -->
+  </div>
+</div>
 
-<div class="flex justify-center mt-6 w-full">
-  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
-    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 w-full">heading</h4>
-    <p class="text-gray-700 text-base w-full">
-      TBD</p>
+
+<!-- Ordered, unordered, and description lists -->
+<div id="lists"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Ordered, unordered, and description lists</h4>
+    <p>Highlights</p>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- examples become available during course -->
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="#" target="_blank">(full code)</a></p> 
+    <!-- <h4>More examples</h4> -->
+  </div>
+</div>
+
+
+<!-- Table data structures -->
+<div id="table-data"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Table data structures</h4>
+    <p>Highlights</p>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- examples become available during course -->
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="#" target="_blank">(full code)</a></p> 
+    <!-- <h4>More examples</h4> -->
   </div>
 </div>
 
  
-
-
 
  
   
