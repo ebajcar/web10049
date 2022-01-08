@@ -80,59 +80,131 @@ ol {
         </button>
       </div>   
       <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
-
-
-   
-          <a class="bg-gray-100 text-gray-900" href="index.html">Web Development</a>
-
-          <a href="internet.html">Internet</a>
-          <a href="protocols.html">Internet</a>
-          <a href="dataflow.html">Internet</a>
-
-
-    
- 
-       
-          
-          
-          
+          <a href="index.html">Web Development</a>
+          <a href="internet.html">Internet and URL</a>
+          <a href="protocols.html">Protocols</a>
+          <a class="bg-gray-100 text-gray-900" href="dataflow.html">How the web works</a>
+          <a href="development.html">Planning and designing. Progressive enhancement.</a>
+          <a href="coding.html">Documentation and coding style</a>
+          <a href="debugging.html">Debugging, testing, and validating code</a>
+          <a href="publishing.html">Publishing your website</a>
+          <a href="protecting.html">Protecting a website</a>
+          <a href="files.html">File names and organization</a>
       </nav>
     </div>  
         
     <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
-    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">Web Development</h1>
+    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">How the Web works</h1>
 
 
- 
+
+ <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
+  <div class="md:flex">
+    <div class="md:flex-shrink-0">
+      <a href="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/web_process.png" target="_blank"><img class="h-full w-72 object-cover" src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/web_process.png" alt="Web taxonomy and status">
+      </a>
+    </div>
+    <div class="p-8">
+      <p class="mt-2 text-xl text-gray-500">A web server is a system that is configured to answer HTTP requests. To convert a generic Linux system into a web hosting platform, you need to install a daemon that listens for connections on TCP port 80, accepts requests for documents, and transmits them to the requesting user. Full procces from the instance a user requests a web page to the content of the requested page rendering in the user's web browser window.</p>
+      <p>Read further        <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works" target="_blank"> How the Web works</a></p>
+    </div>
+  </div>
+</div> 
+
+ <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
+  <div class="md:flex">
+    <div class="w-4/5  mb-8">
+      <a href="../images/browser_requests.png" target="_blank"><img  src="../images/browser_requests.png" alt="Web taxonomy and status">
+      </a>
+    </div>
+    <div class="p-4 mb-8">
+      <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Browser and URL</h4>
+      <p class="mt-2 text-xl text-gray-500">The purpose of a web browser is to get content from the web and display it on the user's device. Browser requests each resources from the web server(s) using the information in the URL (protocol, domain, path, file)</p>
+    </div>
+  </div>
+</div>
 
 
-<!-- Data flow in a web client/server environment-->
-<article id="page05">    
-	<h4>Data flow in a web client/server environment</h4>		
-	<figure>	
-		<img class="figure-img img-fluid rounded" width="200" src="images/dataFlow.png">		
-		<figcaption class="figure-caption">Data flow. Front-end</figcaption>
-	</figure>		
-</article>
+        <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-24 bg-green-500">
+              <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
+              </svg>
+            </div>
+            <div class="px-4 py-2 -mx-3">
+              <div class="mx-3">
+                <span class="text-2xl font-semibold text-green-500 dark:text-green-400">User agents</span>
+                <p class="text-sm text-gray-600 dark:text-gray-200">
+                  A user agent is any software that retrieves and presents Web content for end users or is implemented using Web technologies. User agents include Web browsers, media players, and plug-ins that help in retrieving, rendering and interacting with Web content. The family of user agents also includes operating system shells, consumer electronics with Web-widgets, and stand-alone applications or embedded applications whose user interface is implemented as a combination of Web technologies.</p>	
+                  <p>Read further <a href="https://www.w3.org/WAI/UA/2012/ED-UAAG20-20120119/" target="_blank"> User Agent Accessibility Guidelines (UAAG) 2.0</a></p> 
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- User agents -->
-<article id="page06">     
-	<h4>User agents</h4>
-	<p>A user agent is any software that retrieves and presents Web content for end users or is implemented using Web technologies. User agents include Web browsers, media players, and plug-ins that help in retrieving, rendering and interacting with Web content. The family of user agents also includes operating system shells, consumer electronics with Web-widgets, and stand-alone applications or embedded applications whose user interface is implemented as a combination of Web technologies.</p>	
-	<h5>Web browsers</h5>
-	<p>Web browsers understand HTML, CSS, and Javascript and render the web pages to the visitors. Web browsers, such as Netscape, Opera, and IE contact remote web servers and make requests on behalf of users. The documents can contain hyperlink points (links) to other documents, which may or may not live on the server that the user originally contacted.</p>
-	<figure>
-		<img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/browser_rendering.png" alt="browser process" width="200">
-		<figcaption>Browser process to render a web page.</figcaption>
-	</figure>	
+
+        <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-16 bg-green-500">
+              <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
+              </svg>
+            </div>
+            <div class="px-4 py-2 -mx-3">
+              <div class="mx-3">
+                <span class="text-2xl font-semibold text-green-500 dark:text-green-400">Web browsers </span>
+                <p class="text-sm text-gray-600 dark:text-gray-200">
+                  A web browser is an application software used to access the web. Web browsers understand HTML, CSS, and Javascript and render the web pages to the visitors. Web browsers, such as Netscape, Opera, and IE contact remote web servers and make requests on behalf of users. The documents can contain hyperlink points (links) to other documents, which may or may not live on the server that the user originally contacted. Once the browser receives response to its request, it processes the code as depicted in the following diagram:</p> 
+                  <a href="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/browser_rendering.png" target="_blank">
+                    <img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/browser_rendering.png"  width="400" alt="browser process">
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+ <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
+  <div class="md:flex">
+    <div class="w-4/5  mb-8">
+      <a href="../images/browser-page-load-timeline.png" target="_blank"><img  src="../images/browser-page-load-timeline.png" alt="browser-page-load-timeline">
+      </a>
+    </div>
+    <div class="p-4 mb-8">
+      <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Browser performance</h4>
+      <p class="mt-2 text-xl text-gray-500">The browser's performance depends on the amount of processing it needs to handle.</p>
+    </div>
+  </div>
+</div> 
+
+
 	<p hidden>Guideline 1.1 - Provide access to alternative content.
-	https://www.w3.org/WAI/UA/work/wiki/Browser_Compliance_Notes</p>
+	https://www.w3.org/WAI/UA/work/wiki/Browser_Compliance_Notes
+    https://www.w3.org/WAI/UA/2012/ED-UAAG20-20120119/</p>
 	<!-- FIND LINK TO BROWSER SUPPORT ?????????????????? -->		
-	<h5>Search Engine Optimization (SEO)</h5>
-	<p title="https://developer.mozilla.org/en-US/docs/Glossary/SEO"> Search Engine Optimization (SEO) is the process of making a website more visible in search results. Search engines crawl the web, following links from page to page, and index the content found. Crawlers follow rules. If you follow those rules closely, you give the site the best chances of showing up among the first results, increasing traffic.</p>	      
-</article>
+ <!--https://developers.google.com/search/docs-->
 
 
+        <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-16 bg-green-500">
+              <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
+              </svg>
+            </div>
+            <div class="px-4 py-2 -mx-3">
+              <div class="mx-3">
+                <span class="text-2xl font-semibold text-green-500 dark:text-green-400">Search Engine Optimization (SEO)</span>
+                <p class="text-sm text-gray-600 dark:text-gray-200" title="https://developer.mozilla.org/en-US/docs/Glossary/SEO"> Search Engine Optimization (SEO) is the process of making a website more visible in search results. Search engines crawl the web, following links from page to page, and index the content found. Crawlers follow rules. If you follow those rules closely, you give the site the best chances of showing up among the first results, increasing traffic.</p>
+                <p><strong>A web browser is not the same thing as a search engine.</strong> A search engine is a website running software that searches data for specified information, then provides links to relevant websites.</p>
+                <p>Read further <a href="https://developers.google.com/search/docs/basics/how-search-works" target="_blank"> The basics of how Search works</a></p>               
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
     </section>
  </main>
   

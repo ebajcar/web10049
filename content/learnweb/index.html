@@ -82,21 +82,16 @@ ol {
       <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
 
 
-   
           <a class="bg-gray-100 text-gray-900" href="index.html">Web Development</a>
-
-          
-                    <a href="internet.html">Internet</a>
+          <a href="internet.html">Internet and URL</a>
           <a href="protocols.html">Protocols</a>
-          <a href="dataflow.html">Data flow</a>
-
-
-    
- 
-       
-          
-          
-          
+          <a href="dataflow.html">How the web works</a>
+          <a href="development.html">Planning and designing. Progressive enhancement.</a>
+          <a href="coding.html">Documentation and coding style</a>
+          <a href="debugging.html">Debugging, testing, and validating code</a>
+          <a href="publishing.html">Publishing your website</a>
+          <a href="protecting.html">Protecting a website</a>
+          <a href="files.html">File names and organization</a>
       </nav>
     </div>  
         
@@ -151,9 +146,11 @@ ol {
      spectrum.ieee.org/static/interactive-the-top-programming-languages-2020</a>
     </p>    
 
+<!--
     <p><strong>The Evolution of the Web</strong> The web today is a growing universe of interlinked web pages and web apps, teeming with videos, photos, and interactive content. What the average user doesn't see is the interplay of web technologies and browsers that makes all this possible.  
       <a href="http://www.evolutionoftheweb.com/" target="_blank" class="bookmark source">
       http://www.evolutionoftheweb.com/</a></p>
+-->
       
     <p><strong>How technologies are connected</strong> Technologies cluster together into related ecosystems that tend to be used by the same developers. This network graph demonstrates this by showing which technologies are most highly correlated with each other.
       <a href="https://insights.stackoverflow.com/survey/2019#technology-_-how-technologies-are-connected" target="_blank">
@@ -161,148 +158,6 @@ ol {
  </article>   
    
    
-
-   
-<!-- Internet: the backbone of the Web -->
-<article id="page04"> 
-
- 	<h3>Internet: the backbone of the Web</h3>
-	<p>The <dfn>World Wide Web (WWW)</dfn> is a vast sea of documents (web pages) that interconnect so that you can jump from one page to the next. It is a network of information resources. The Web relies on three mechanisms to make these resources readily available to the widest possible audience:</p>
-	<ol>
-		<li>A <strong>uniform naming scheme</strong> for locating resources on the Web, e.g., URL.</li> 
-		<li><strong>Protocols</strong> for access to named resources over the Web, e.g., HTTP. </li> 
-		<li><strong>Hypertext</strong> for easy navigation among resources, e.g., HTML.</li>  
-	</ol>
-    <p>Read further        <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank"> How does the Internet work?</a></p>
-
-<video width="320" height="240" controls>
-  <source src="../images/concept_http_html.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-</article>
-
-<!-- How the web works -->
-<article id="page08"> 
-    <h3>How the Web works</h3>	
-    <p>A web server is a system that is configured to answer HTTP requests. To convert a generic Linux system into a web hosting platform, you need to install a daemon that listens for connections on TCP port 80, accepts requests for documents, and transmits them to the requesting user. Full procces from the instance a user requests a web page to the content of the requested page rendering in the user's web browser window (See Figure N).</p>
-      <img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/web_process.png" alt="web process" width="200"></p>
-    <p>Read further        <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works" target="_blank"> How the Web works</a></p>
-    
-</article> 
- 
-<!-- Uniform Resource Locator (URL)-->
-<article id="page07"> 
-	<h4>Uniform Resource Locator (URL)</h4>
-	<p>HTML documents utilize URLs for specifying hypertext links. Every resource available on the Web — HTML document, image, video clip, program, etc. — has an address that may be encoded by a URL.</p>	
-	<p hidden>https://websitebuilders.com/how-to/web-at-a-glance/url-anatomy/#The_Components_of_a_URL</p>
-	<figure>
-    <img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/parts_of_url.png" alt="relative path sub-tree"  width="200">
-    <figcaption>Parts of an URL
-      <ul>
-        <li>protocol:  <code>http</code></li>
-        <li>domain:  <code>www.apache.org</code></li>
-        <li>path:  <code>foundation</code></li>
-        <li>file:  <code>FAQ.html</code></li>
-      </ul>
-    </figcaption>
-	</figure>		
-	<p>Read further 
-		<cite title="[ https://url.spec.whatwg.org/ ]">
-		<a href="https://url.spec.whatwg.org/" 
-			target="_blank"> URL (Living Standard — Last Updated 7 May 2020)</a> | <a href="https://url.spec.whatwg.org/#urls" target="_blank"> Examples</a>
-		</cite>
-	</p>	     
-</article>   
-      
-
-   
-<!-- Protocols -->
-<article id="page09"> 
-	<h4>Protocols</h4>
-
-	<figure>
-		<img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/tcp_family.png"  width="200" alt="web process">
-		<figcaption>TCP/IP Protocol Suite</figcaption>
-	</figure>
-	
-	<p>Transmission Control Protocol (TCP) is one of the main protocols of the Internet protocol suite. It originated in the initial network implementation in which it complemented the Internet Protocol (IP). Therefore, the entire suite is commonly referred to as TCP/IP. Read further 
-		<cite title="[ https://www.wikiwand.com/en/Transmission_Control_Protocol ]">
-		<a href="https://www.wikiwand.com/en/Transmission_Control_Protocol" 
-			target="_blank"> Transmission Control Protocol (Wikiwand)</a>
-		</cite>
-	</p> 
-
-
-	<h6>HyperText Transfer Protocol (HTTP)</h6> 
-	<p>HTTP behaves much like other client/server protocols used on the Internet, such as SMTP for email and FTP for file transfer. Web browsers contact remote web servers and make requests on behalf of users. HTTP is the underlying protocol used by the World Wide Web and this protocol defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands. Read further
-		<cite title="[ https://en.wikipedia.org/wiki/Hypertext_Transfer_Protoco. ]">
-		<a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" 
-			target="_blank"> about HTTP from Wikipedia.</a>
-		</cite>
-	</p>  
- 
-
-	<h6>Secure HTTP (HTTPS)</h6> 
-  <p>Many enhanced protocols provide everything from encryption to streaming video. These services are often managed by separate daemons, residing on the same physical server; HTTPS is handled by a daemon that understands the Secure Socket Layer (SSL) protocol and listens for requests on TCP port 443. Read further
-		<cite title="[ https://en.wikipedia.org/wiki/HTTPS ]">
-		<a href="https://en.wikipedia.org/wiki/HTTPS" 
-			target="_blank"> about HTTPS from Wikipedia.</a>
-		</cite>
-	</p>  
-
-  
-	<h6>File Transfer Protocol (FTP)</h6>
-  <p>FTP is a standard network protocol used for the transfer of computer files between a client and server on a computer network. It is built on a client-server model architecture using separate control and data connections between the client and the server. FTP users may authenticate themselves with a clear-text sign-in protocol, normally in the form of a username and password. For secure transmission that protects the username and password, and encrypts the content, FTP is often secured with SSL/TLS (FTPS) and Secure File Transfer Protocol(SFTP). Read further about
-		<cite title="[ FileZilla is a free open source FTP solution. ]">
-		<a href="https://filezilla-project.org/" 
-			target="_blank"> FileZilla (a free open source FTP solution.)</a>
-		</cite>
-	</p>    
-
-	<figure>
-    <img  src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/protocols.png" width="200">
-        <figcaption>Common protocols</figcaption>
-    </figure>	    
-</article> 
-    
-    
-<!-- Web server -->
-<article id="page08"> 
-    <h3>Hypertext Markup Language (HTML)</h3>	
-    <p>[TBD]</p>
-
-    
-</article> 
-
-
-
-
-<!-- Data flow in a web client/server environment-->
-<article id="page05">    
-	<h4>Data flow in a web client/server environment</h4>		
-	<figure>	
-		<img class="figure-img img-fluid rounded" width="200" src="images/dataFlow.png">		
-		<figcaption class="figure-caption">Data flow. Front-end</figcaption>
-	</figure>		
-</article>
-
-<!-- User agents -->
-<article id="page06">     
-	<h4>User agents</h4>
-	<p>A user agent is any software that retrieves and presents Web content for end users or is implemented using Web technologies. User agents include Web browsers, media players, and plug-ins that help in retrieving, rendering and interacting with Web content. The family of user agents also includes operating system shells, consumer electronics with Web-widgets, and stand-alone applications or embedded applications whose user interface is implemented as a combination of Web technologies.</p>	
-	<h5>Web browsers</h5>
-	<p>Web browsers understand HTML, CSS, and Javascript and render the web pages to the visitors. Web browsers, such as Netscape, Opera, and IE contact remote web servers and make requests on behalf of users. The documents can contain hyperlink points (links) to other documents, which may or may not live on the server that the user originally contacted.</p>
-	<figure>
-		<img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/browser_rendering.png" alt="browser process" width="200">
-		<figcaption>Browser process to render a web page.</figcaption>
-	</figure>	
-	<p hidden>Guideline 1.1 - Provide access to alternative content.
-	https://www.w3.org/WAI/UA/work/wiki/Browser_Compliance_Notes</p>
-	<!-- FIND LINK TO BROWSER SUPPORT ?????????????????? -->		
-	<h5>Search Engine Optimization (SEO)</h5>
-	<p title="https://developer.mozilla.org/en-US/docs/Glossary/SEO"> Search Engine Optimization (SEO) is the process of making a website more visible in search results. Search engines crawl the web, following links from page to page, and index the content found. Crawlers follow rules. If you follow those rules closely, you give the site the best chances of showing up among the first results, increasing traffic.</p>	      
-</article>
-
 
     </section>
  </main>

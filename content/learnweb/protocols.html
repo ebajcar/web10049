@@ -81,47 +81,56 @@ ol {
       </div>   
       <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
 
+          <a href="index.html">Web Development</a>
+          <a href="internet.html">Internet and URL</a>
+          <a class="bg-gray-100 text-gray-900" href="protocols.html">Protocols</a>
+          <a href="dataflow.html">How the web works</a>
+          <a href="development.html">Planning and designing. Progressive enhancement.</a>
+          <a href="coding.html">Documentation and coding style</a>
+          <a href="debugging.html">Debugging, testing, and validating code</a>
+          <a href="publishing.html">Publishing your website</a>
+          <a href="protecting.html">Protecting a website</a>
+          <a href="files.html">File names and organization</a>
 
-   
-          <a class="bg-gray-100 text-gray-900" href="index.html">Web Development</a>
 
-          
-          <a href="internet.html">Internet</a>
-          <a href="protocols.html">Protocols</a>
-          <a href="dataflow.html">Data flow</a>
-
-
-    
- 
-       
-          
-          
-          
       </nav>
     </div>  
         
     <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
     <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">Protocols</h1>
 
-
- 
-   
-<!-- Protocols -->
-<article id="page09"> 
-	<h4>TCP/IP Protocol Suite</h4>
-
-		<img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/tcp_family.png"  width="400" alt="web process">
-
-	
-	<p>Transmission Control Protocol (TCP) is one of the main protocols of the Internet protocol suite. It originated in the initial network implementation in which it complemented the Internet Protocol (IP). Therefore, the entire suite is commonly referred to as TCP/IP. Read further 
+        <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-16 bg-green-500">
+              <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
+              </svg>
+            </div>
+            <div class="px-4 py-2 -mx-3">
+              <div class="mx-3">
+                <span class="text-2xl font-semibold text-green-500 dark:text-green-400">TCP/IP Protocol Suite </span>
+                <p class="text-sm text-gray-600 dark:text-gray-200">
+                  Transmission Control Protocol (TCP) is one of the main protocols of the Internet protocol suite. It originated in the initial network implementation in which it complemented the Internet Protocol (IP). Therefore, the entire suite is commonly referred to as TCP/IP. Read further 
 		<cite title="[ https://www.wikiwand.com/en/Transmission_Control_Protocol ]">
 		<a href="https://www.wikiwand.com/en/Transmission_Control_Protocol" 
 			target="_blank"> Transmission Control Protocol (Wikiwand)</a>
 		</cite>
-	</p> 
+	</p> <img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/tcp_family.png"  width="400" alt="web process">
+              </div>
+            </div>
+          </div>
+        </div>
+ 
 
-
-	<h6>HyperText Transfer Protocol (HTTP)</h6> 
+<!-- Protocols -->
+ <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
+  <div class="md:flex">
+    <div class="md:flex-shrink-0" style="height:100%;width:200px">
+      <a href="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/protocols.png" target="_blank"><img style="position:absolute;clip: rect(0px,200px,600px,0px);" src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/protocols.png" alt="Web taxonomy and status">
+      </a>
+    </div>
+    <div class="p-8">
+      <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">HyperText Transfer Protocol (HTTP)</h4>
 	<p>HTTP behaves much like other client/server protocols used on the Internet, such as SMTP for email and FTP for file transfer. Web browsers contact remote web servers and make requests on behalf of users. HTTP is the underlying protocol used by the World Wide Web and this protocol defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands. Read further
 		<cite title="[ https://en.wikipedia.org/wiki/Hypertext_Transfer_Protoco. ]">
 		<a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" 
@@ -129,8 +138,7 @@ ol {
 		</cite>
 	</p>  
  
-
-	<h6>Secure HTTP (HTTPS)</h6> 
+<h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Secure HTTP (HTTPS)</h4>
   <p>Many enhanced protocols provide everything from encryption to streaming video. These services are often managed by separate daemons, residing on the same physical server; HTTPS is handled by a daemon that understands the Secure Socket Layer (SSL) protocol and listens for requests on TCP port 443. Read further
 		<cite title="[ https://en.wikipedia.org/wiki/HTTPS ]">
 		<a href="https://en.wikipedia.org/wiki/HTTPS" 
@@ -138,7 +146,7 @@ ol {
 		</cite>
 	</p>  
 
-  
+<h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">File Transfer Protocol (FTP)</h4>  
 	<h6>File Transfer Protocol (FTP)</h6>
   <p>FTP is a standard network protocol used for the transfer of computer files between a client and server on a computer network. It is built on a client-server model architecture using separate control and data connections between the client and the server. FTP users may authenticate themselves with a clear-text sign-in protocol, normally in the form of a username and password. For secure transmission that protects the username and password, and encrypts the content, FTP is often secured with SSL/TLS (FTPS) and Secure File Transfer Protocol(SFTP). Read further about
 		<cite title="[ FileZilla is a free open source FTP solution. ]">
@@ -146,13 +154,13 @@ ol {
 			target="_blank"> FileZilla (a free open source FTP solution.)</a>
 		</cite>
 	</p>    
+    </div>
+  </div>
+</div> 
 
-	<figure>
-    <img  src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/protocols.png" width="400">
-        <figcaption>Common protocols</figcaption>
-    </figure>	    
-</article> 
-    
+
+
+
  
 
     </section>
