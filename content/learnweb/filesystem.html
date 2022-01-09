@@ -88,107 +88,139 @@ ol {
           <a href="coding.html">Documentation and coding style</a>
           <a href="debugging.html">Debugging, testing, and validating code</a>
           <a href="publishing.html">Publishing your website</a>
-          <a class="bg-gray-100 text-gray-900" href="protecting.html">Protecting a website</a>
+          <a href="protecting.html">Protecting a website</a>
           <a href="files.html">File names and organization</a>
-          <a href="filesystem.html">File system, Namespace, and Pathnames</a>
+          <a class="bg-gray-100 text-gray-900" href="filesystem.html">File system, Namespace, and Pathnames</a>
       </nav>
     </div>  
         
     <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
-    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">Protecting a website</h1>
+    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">File system, Namespace, and Pathnames</h1>
+
+<!-- File system -->
+        <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-16 bg-green-500">
+              <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
+              </svg>
+            </div>
+            <div class="px-4 py-2 -mx-3">
+              <div class="mx-3">
+                <h4 class="text-2xl font-semibold text-green-500 dark:text-green-400">File system</h4>
+                <ol class="text-base">
+                    <li>the most visible aspect of an operating system</li>
+                    <li>provides the mechanism to store and access data and programs through
+                        <ul>
+                            <li>a collection of <strong>files</strong>, each storing related data, and</li>
+                            <li>a <strong>directory</strong> structure, to organize and provide information about all the files in the system.</li>
+                        </ul>
+                    </li>
+                    <li>live on <strong>storage devices</strong>.</li>
+                    <li>is the method that the operating system uses for organizing and storing information on the system, including processes, serial ports, and inter-process communication channels (mapped into the file system namespace)</li>
+                    <li>has four main components:
+                        <ul>
+                            <li>a <strong>namespace</strong>: a way of naming things and organizing them in a hierarchy;</li>
+                            <li>an <strong title="application programming interface">API</strong>: a set of system calls for navigating and manipulating objects;</li>
+                            <li>a <strong>security model</strong>: a scheme for protecting, hiding, and sharing things;</li>
+                            <li>an <strong>implementation</strong>: software that ties the logical model to actual hardware.</li>
+                        </ul>
+                    </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-  <p>Protecting your website is important and needs continual effort. A detailed security plan is necessary but some fundamental steps can be a start. Here are some basic steps you can take:</p>
-  <ol>
-    <li>Use open source scripts and update to new versions as soon as they are released</li>
-    <li>Use strong passwords (combination of alpha, numberic, and special characters; minimum length)</li>
-    <li>Secure the Admin Email address</li>
-    <li>Change file and directory permissions</li>
-    <li>Use Secured FTP Access (encrypted upload)</li>  
-  </ol>
-  <hr>
-  <h4>Check file and directory permissions</h4>
-  <p>Permissions for files and directories should NEVER be 777 (rwxrwxrwx)<br>
-    Set files to 644 (rw-r--r--) and directories to 755 or (rwxr-xr-x),  to allow web pages to be processed.</p>
-			<table class="table table-sm">
-		      <thead>
-		        <tr>
-		          <th>#</th>
-		          <th>Permissions</th>
-		          <th>Numeric<br>Equivalent</th>
-		          <th>Description</th>
-		        </tr>
-		      </thead>
-		      <tbody>
-		        <tr>
-		          <td>1</td>
-		          <td style="width:160px;"><code>-rw-------</code></td>
-		          <td>600</td>
-		          <td>Owner has read and write permissions. Set for most files.</td>
-		        </tr>
-		        <tr>
-		          <td>2</td>
-		          <td><code>-rw-r--r--</code></td>
-		          <td>644</td>
-		          <td>Owner hs read and write permissions; group and world have read only permission. Be sure you want to let other people read this file. Appropriate for most web-related files.</td>
-		        </tr>
-		        <tr>
-		          <td>3</td>
-		          <td><code>-rw-rw-rw-</code></td>
-		          <td>666</td>
-		          <td>Everyone has read and write permissions. Not recommended; this combination allows the file to be accessed and changed by anyone, anywhere on the system.</td>
-		        </tr>
-		        <tr>
-		          <td>4</td>
-		          <td><code>-rwx------</code></td>
-		          <td>700</td>
-		          <td>Owner has read, write, and execute permissions. Best combination for programs the owner wishes to run (files that result from compiling a C or Java program).</td>
-		        </tr>                
-		        <tr>
-		          <td>5</td>
-		          <td><code>-rwxr-xr-x</code></td>
-		          <td>755</td>
-		          <td>Owner has read, write, and execute permissions. Everyone else has read and execute permissions. Appropriate for web site directories.</td>
-		        </tr>     
-		        <tr>
-		          <td>6</td>
-		          <td><code>-rwxrwxrwx</code></td>
-		          <td>777</td>
-		          <td>Everyone has read, write, and execute privileges. Like the 666 setting, this combination should be avoided. 
-                  </td>
-		        </tr> 
-		        <tr>
-		          <td>7</td>
-		          <td><code>-rwx--x--x</code></td>
-		          <td>711</td>
-		          <td>Owner has read, write, and execute privileges. everyone else has execute only permissions. Useful for programs that you want to let others run but not copy. Unfortunately, this is not sufficient for web-related files because the users need to see the content of the files, otherwise your web pages will not render.
-                  </td>
-		        </tr> 
- 		        <tr>
-		          <td>8</td>
-		          <td><code>drwx------</code></td>
-		          <td>700</td>
-		          <td>This is a directory created with the mkdir command. Only the owner has read, write, and execute privileges. Note that all directories must have the executable bit set.
-                  </td>
-		        </tr> 
- 		        <tr>
-		          <td>9</td>
-		          <td><code>drwxr-xr-x</code></td>
-		          <td>755</td>
-		          <td>This directory can be changed only by the owner, but everyone else can view its contents.
-                  </td>
-		        </tr> 
- 		        <tr>
-		          <td>10</td>
-		          <td><code>drwx--x--x</code></td>
-		          <td>711</td>
-		          <td>A handy combination for keeping a directory world-readable but restricted from access by the ls command. File can be read only by someone who knows the filename.
-                  </td>
-		        </tr>                
-		      </tbody>
-		    </table>         
+
+
+<!-- Project file organization and navigation -->
+
+
  
-        
+
+   <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
+  <div class="md:flex">
+    <div class="w-60  mb-8">
+      <a href="../images/file-systems.png" target="_blank"><img  class="h-full w-72 object-cover" src="../images/file-systems.png" alt="browser-page-load-timeline">
+      </a>
+    </div>
+    <div class="p-4 mb-8">
+        <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Namespace</h4>
+        <p class="mt-2 text-xl text-gray-500">Namespace – a way of naming things</p>
+        <ul>
+            <li>Namespace supports two-part file names, with the two parts separated by a period</li>
+            <li>file extension usually indicates something about the file</li>
+            <li>Note that space (blank) is used as delimiter to tokenize commands, therefore it is not used to name file and directory.</li>
+        </ul>
+        <p class="mt-2 text-xl text-gray-500">Namespace – a way of organizing things</p>
+        <p>The key to all operations is that the data has some kind of structure.</p>
+        <ul>
+            <li><strong>Directory</strong>: a file that acts as a holder for other files and directories.</li>
+            <li><strong>File</strong>: a collection of data that is stored on a disk and that can be manipulated as a single unit by its name.</li>
+            <li><strong>Directory tree</strong>: includes a directory and all of its contents and its sub-directories.</li>
+            <li><strong>Parent directory</strong>: a file that contains another directory. </li>
+        </ul>
+    </div>
+  </div>
+</div> 
+
+
+
+ 
+  
+   <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
+  <div class="md:flex">
+    <div class="w-80 ">
+      <a href="../images/picture3.gif" target="_blank"><img   class="h-full w-72 object-cover" src="../images/picture3.gif" alt="browser-page-load-timeline">
+      </a>
+    </div>
+    <div class="p-4 ">
+        <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Directory</h4>
+        <p class="mt-2 text-xl text-gray-500">We use directories to organize files into a hierarchical tree-like system.</p>
+        <ul class="list-outside">
+            <li>collect files together into groups and store each group in its own directory. </li>
+            <li>Since directories are themselves files, a directory can contain other directories, which creates the hierarchy. </li>
+        </ul>
+         <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Current Working Directory</h4>
+        <ul class="list-outside">
+            <li>This is where the calling process is at the time of the call; </li>
+        </ul>  
+        <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Pathname</h4>
+        <ul class="list-outside">
+            <li>A pathname is a location of any specific file.</li>
+            <li>A full pathname contains all the branch directories between the root and the specific file.</li>
+        </ul>
+
+    </div>
+    
+  </div>
+  <div class="md:flex">
+    <div class="w-1/2 mb-8">
+        <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Absolute pathnames</h4>
+        <p class="mt-2 text-xl text-gray-500">Absolute pathname declares the path starting at the root directory and declaring each directory on the path. </p>
+        <ul class="list-outside">
+            <li>start with the root directory</li>
+            <li>always start with a slash /</li>
+            <li>the absolute pathname to some object is always the same.</li>
+        </ul>
+    </div>
+    <div class="w-1/2 mb-8">
+        <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Relative pathnames</h4>
+        <p class="mt-2 text-xl text-gray-500">Relative pathname declares the path in relation to your current position. It does not contain / as the first character. </p>
+        <ul class="list-outside">
+            <li>start with your current directory </li>
+            <li>never start with a slash </li>
+            <li>the relative pathname to some object depends on your current directory</li>
+        </ul>
+    </div>
+  </div>
+</div> 
+  
+
+
+
     </section>
  </main>
   

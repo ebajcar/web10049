@@ -90,6 +90,7 @@ ol {
           <a href="publishing.html">Publishing your website</a>
           <a href="protecting.html">Protecting a website</a>
           <a href="files.html">File names and organization</a>
+          <a href="filesystem.html">File system, Namespace, and Pathnames</a>
       </nav>
     </div>  
         
@@ -97,23 +98,26 @@ ol {
     <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">Debugging, testing, and validating code</h1>
 
 
-	<h4>Debugging, testing, and validating code</h4>
-  <h5>Test and observe (default) presentation.</h5>
+  <h4>Test and observe (default) presentation.</h4>
   <p>Use Chrome browser to test how the browser renders your HTML document (from Notepad++, select Run > Launch in Chrome. Make note of individual components of the content, their position, their characteristics, their behaviour. Is everything visible? only what you've expected? which elements are inline? which elements are block? Test with other browsers, where possible, and use Chrome's Inspect tools.</p>
   
-  <footer class="blockquote-footer">Read further  <cite title="[ Emulate and Test Other Browsers (google) ]"><a href="https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers" target="_blank"> Emulate and Test Other Browsers (google)</a></cite></footer>
+  <p class="blockquote-footer">Read further  <cite title="[ Emulate and Test Other Browsers (google) ]"><a href="https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers" target="_blank"> Emulate and Test Other Browsers (google)</a></cite></p>
+  
   <hr>  
   
   <p>Correct anything that needs to be changed. Test on a regular basis; do not wait until you have completed everything; add ten to twenty lines between tests. Capture all observations in comments. Use techniques like "TODO" and "TOFIX" to annotate incomplete markup or opportunities to improve it (similar to refactoring in Java). Validate, correct to remove errors, and re-test.</p>
 
-  <h5>How to validate HTML5 documents</h5>
+ <hr>  
+ 
+  <h4>How to validate HTML5 documents</h4>
   <p>Testing is not enough. Most browsers will do a very good job displaying your content pretty much as you expect them to do so. Content can display properly and you still may have syntax and semantic errors in your code.</p>
   <p>Always validate your code at validator.w3.org. Use the "Validate by Direct Input" tab for now. In the editor, press Ctr+a to select all code; followed by Ctr+c to copy selection to buffer, and then in the "Enter the Markup to validate" area page, Ctr+v to paste the buffer.</p>
   
-   <footer class="blockquote-footer">Read further  <cite title="[ W3C Recommendation, 1.10. conformance requirements for authors ]"><a href="https://www.w3.org/TR/html52/introduction.html#conformance-requirements-for-authors" target="_blank"> W3C Recommendation, 1.10. Conformance requirements for authors;  detailing common reasons for distinguishing between a conforming document and one with errors.</a></cite></footer>
+   <p class="blockquote-footer">Read further  <cite title="[ W3C Recommendation, 1.10. conformance requirements for authors ]"><a href="https://www.w3.org/TR/html52/introduction.html#conformance-requirements-for-authors" target="_blank"> W3C Recommendation, 1.10. Conformance requirements for authors;  detailing common reasons for distinguishing between a conforming document and one with errors.</a></cite></p>
+   
   <hr> 
   
-  <h5>Debugging HTML</h5>
+  <h4>Debugging HTML</h4>
   <p>Writing HTML is fine, but what if something goes wrong, and you can't work out where the error in the code is? This article, <a href="" target="_blank">Debugging HTML (MDN)</a>, will introduce you to some tools that can help you find and fix errors in HTML.</p>
   <p>The basic rules to adhere to, in addition to semantic correctness, for HTML5 specifically:</p>
   <ol type="i">
