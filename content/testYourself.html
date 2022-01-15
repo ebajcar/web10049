@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Tips</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">   
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">   
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">  
+<style>
+body {
+  background-position: center;
+  background-size: cover;
+  background-color: #093D6D;
+  background-image: url('images/bg/sher_darkb.jpg');
+  font-family: "Poppins", sans-serif;  
+}
+.sher-dark-blue
+{color:#fff;background-color:#093D6D;}
+.w3-2019-mango-mojito
+{color:#000;background-color:#D69C2F}
+strong {
+  font-weight:bold;
+}
+.grid {
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  display: block;
+  padding: 5px;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+@media (min-width: 900px) {
+  .grid {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+}
+.item {
+  box-sizing: border-box;
+  padding: 5px;
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid;
+}
+
+.box {
+  background: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 25px;
+    border-radius: 5px;
+}
+
+.box-dark {
+  background: #000;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.box-warning {
+  color:#000;background-color:#F0EAD6;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 25px;
+    border-radius: 5px;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0.3em 0 0.5em;
+}
+
+.byline {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.type {
+  color: darkred;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  order: -1;
+  text-transform: uppercase;
+}
+
+.dialog-par {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 5px auto;
+}
+.dialog-ul { 
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+.button {
+  margin-top: 1rem;
+}
+.button button {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: #ddd;
+  transition: background-color 200ms ease;
+}
+.button button:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.dialog {
+  width: 80vw;
+  border: 0;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 400px) {
+  .dialog {
+    width: 50vw;
+    border: 0;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+#close {
+  display: block;
+  margin-top: 2rem;
+}
+</style> 
+</head>
+
+<body>
+
+<ul>
+
+	
+
+
+
+
+
+  <li class="item">
+    <div class="item box">
+      <h3 class="title"><span>Review and continually improve your knowledge and skills…</span></h3>
+      <p class="type">Test Yourself!</p>
+			<ul class="w3-ul">
+				<li><span class="w3-badge w3-orange">1</span> <span class="w3-tag">5 minutes</span> Take a blank sheet of paper. Free-write everything you know or remember about the content of this module. Do not filter or evaluate what you are writing. Stop writing after five minutes.</li>
+				<li><span class="w3-badge w3-orange">2</span> <span class="w3-tag">10 minutes</span> Find a partner. With your partner, improve your answers. Continue writing on the same sheet. 		 
+					If you have an answer already, is it complete? is it correct? compare your answer with your partner.  
+					If you do not have an answer, write out one and compare with your partner.
+					It is a good idea to write out the question with your answer.  After fifteen minutes, stop the activity.</li>
+				<li><span class="w3-badge w3-orange">3</span> <span class="w3-tag">15 minutes</span>Consult your notes and resources. Identify what you have missed. Correct and complete your answers. Continue to work on completing and improving your answers outside of the class.  You can share questions and answers on Piazza Q&A between classes.</li>
+			</ul>
+			<h5>Repeat on a regular basis.  Compare to previous performance.  If you do not see significant progress, evaluate your study habits, find a study group or seek help such as tutoring.</h5>
+    </div>
+  </li>  
+
+
+
+</ul>
+
+  <dialog class="dialog" id="modal">
+    <h3 class="title"><span>What do you already know? <br>What do you need to work on?</span>
+      </h3>
+	<ul class="dialog-par">
+			<li>What is a computing device? computer language? What types of computer languages are there?</li>
+			<li>How do you organize your files on your computer? What is a file? directory? folder?</li>
+			<li>What is frontend and backend development? What is programming? Development?</li>
+			<li>How does the Internet work?</li>
+			<li>What is Client/Server environment?</li>
+			<li>Why do we need to communicate effectively with both computing devices and human users?</li>
+			<li>What are standards? Why are they important?</li>
+		</ul>
+    <button id="modal-close">Close</button>
+  </dialog>
+<script>
+//-----------------------------------
+// Declare Variables
+//-----------------------------------
+
+// Modal
+var modalButton = document.getElementById('modal-button');
+var modal = document.getElementById('modal');
+var modalClose = document.getElementById('modal-close');
+
+//-----------------------------------
+// Button Actions
+//-----------------------------------
+
+// on click, show as a modal
+modalButton.addEventListener('click', function() {
+  modal.showModal();
+});
+
+// close modal on click
+modalClose.addEventListener('click', function() {
+  modal.close();
+});
+</script>
+
+
+</body>
+
+</html>
