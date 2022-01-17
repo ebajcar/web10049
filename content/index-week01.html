@@ -91,8 +91,29 @@ h4 {
  
     </div>  
    
-
-
+<!--  
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+      <div class="flex-shrink-0 px-8 py-4">
+        <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path id="navOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path id="navClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>   
+        </button>
+      </div>   
+      <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+          <a href="#"class="active">Start here&hellip;</a>
+          <a href="learnweb/index.html">Web development</a>
+          <a href="learnhtml/index.html">Learn HTML</a>
+          <a href="learncss/index.html">Learn CSS</a>
+          <a href="#">       
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd" />
+            </svg></a>
+      </nav>
+    </div>  
+-->    
+    </div>
     <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
         <!-- announcement -->
         <section>
@@ -103,18 +124,20 @@ h4 {
             <ul class="bg-gray-50 sher-teal rounded-3xl p-2 sm:p-5 xl:p-6" style="list-style:none;max-height:500px;overflow-y:auto;">
                 <li>
                     <article  class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white">
-                    <h3 class="font-semibold sher-teal md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">Week 2 Agenda</h3>
+                    <h3 class="font-semibold sher-teal md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">Week 1 Agenda</h3>
                     <time dateTime="2022-01-10T19:00:00.000Z" class="md:col-start-1 md:col-span-2 row-start-1 md:row-end-3 flex items-center font-medium mb-1 md:mb-0"><svg viewBox="0 0 12 12" class="w-3 h-3 mr-6 overflow-visible text-cyan-400"><circle cx="6" cy="6" r="6" fill="currentColor"></circle><circle cx="6" cy="6" r="11" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M 6 18 V 500" fill="none" stroke-width="2" stroke="currentColor" class="text-gray-200"></path></svg>Jan 10, 2022</time>
                     
                     <div  class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 text-black">
                             <div class="prose max-w-none">
 
                                 <div class="bg-gray-100 rounded-lg py-5 px-6 mb-4 text-basetext-black" role="alert">
-
-                                  <p>1. Review Week 1 material and finish setting up development environment<br>
-                                  2. Work together in Piazza to develop answers and discuss Worksheet 1<br>3. Dig deeper with HTML5.</p>
+                                <h6 class="text-xl font-medium leading-tight mb-2">Welcome to Web Development (SYST10049) course!</h6>
+                                  <p>1. Course Overview<br>
+                                  2. Set up environment and tools<br>3. What is web development?</p>
                                 </div>
 
+                                <h5 class="text-xl font-medium leading-tight mt-0 mb-2 sher-teal">Course Overview</h5>
+                                <p>Familiarize yourself with SLATE. Read through Course Outline. Ask relevant questions.</p>
                                 <p>
                                     <a href="https://piazza.com/sheridan/winter2022/syst10049bajcar" target="_blank">Piazza Q&amp;A</a> will be used for class discussions and asking questions. Sign up using your <code>@sheridancollege.ca</code> email. If you already have an accout, use it. When creating a new account, it does not matter what you enter for program/degree info.
                                 </p>
@@ -127,16 +150,52 @@ h4 {
                                     Learn to use these sources. At the rate these technologies change, books, videos, and publications quickly become out-of-date. Read a wide range of resources and cross-reference with the primary source.
                                 </p>
                                 
+                                <ol hidden class="list-outside">
+                                  <li>What textbook(s) do I need to purchase for this course?<br>
+                                  <strong>There is no textbook.</strong> Access to all material is provided by your professor through SLATE.</li>
+                                  <li>What factors most clearly affect the grading of an assignment?<br>
+                                  &bull; <a href="https://comm13729-sheridancollege.notion.site/Evaluation-factors-21faa414f82747c9a8b9c2445624e666" target="_blank">Read more.</a></li>
+                                  <li>How do I get an A in (any) course?<br>
+                                  &bull; <a href="https://comm13729-sheridancollege.notion.site/How-do-I-get-an-A-in-any-course-be6f9035862f48139b2fdc417922a77c" target="_blank">Read more.</a></li>
 
-                                <h4>Review from last week</h4>
+                                  <li>What if I have situation that affects my class performance?<br>
+                                  &bull; Read more at <a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a><br>
+                                  &bull; Also check out services offered at <a href="https://central.sheridancollege.ca/student-affairs"> Student Affairs</a></li>   
+                                  
+                                 <li>What resources are available to help me develop good study habits? <br> 
+                                 &bull;  Read more at  <a href="https://central.sheridancollege.ca/library-services">Library Services</a>
+                                 &bull;  <a href="https://sheridancollege.libguides.com/skillshub">Academic Skills Hub</a>.<br>
+                                 &bull;   <a href="https://sheridancollege.libguides.com/scitech">Research and course guides</a>  created by Sheridan Library staff to help students find information sources.<br>
+                                 &bull;   <a href="https://sheridancollege.libguides.com/programming">Computer programming: getting started</a>
+                                 </li>  
+                                 <li>What computing environment do I need to have to complete my course work?<br>
+                                 &bull;  Read more at <a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a> <br> &bull; <a href="https://it.sheridancollege.ca/laptop-requirements/requirements.html">Laptop requirements</a></li>   
+
+                                </ol>
+                                
+                                <h4>Set up environment and tools</h4>
+                                <ol>
+                                  <li hidden>Piazza Q&amp;A for all class discussions and questions</li>
+                                  
+                                  <li><a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> text editor</li>
+                                  <li><a href="https://www.google.com/chrome/" target="_blank">Chrome web browser</a> for testing web pages</li>
+                                  <li>Working locally: how to organize your work -- create a folder <code>C:\public_html\syst10049</code></li>
+                                  
+                                  <li hidden>Filezilla FTP client</li>
+                                  <li hidden>Sheridan web server (dev.fast.sheridanc.on.ca)</li>
+                                  <li hidden>Notion (keeping and sharing notes)</li>
+                                  <li hidden>replit (collaborative coding)</li>
+                                </ol>
+
+                                <h4>What is web development?</h4>
                                 <ol>
                                   <li>Web environment, standards, conventions</li>
                                   <li>Development process</li>
                                   <li>Markup languages: Starting with HTML5</li>
                                 </ol>
-                                <p class="text-base font-medium">Complete for next class <a class="text-teal-600 hover:text-teal-700" aria-label="Read &quot;Week 1 slides&quot;" href="https://sheridanc-fast-syst10049.notion.site/Winter-2022-Worksheet-2-50304c9c557d4919b73de2d2d267a363" target="_blank">Worksheet 2 →</a></p>
+                                <p class="text-base font-medium">Complete for next class <a class="text-teal-600 hover:text-teal-700" aria-label="Read &quot;Week 1 slides&quot;" href="https://sheridanc-fast-syst10049.notion.site/Winter-2022-Worksheet-1-ec4cf717108c4ef3953f55209ef6099d" target="_blank">Worksheet 1 →</a></p>
                             </div>
-                            <div class="text-base font-medium"><a class="text-teal-600 hover:text-teal-700" aria-label="Read &quot;Week 2 slides&quot;" href="https://ebajcar.github.io/web10049/slides/10049/week02slides.html" target="_blank">This week's slides →</a></div>
+                            <div class="text-base font-medium"><a class="text-teal-600 hover:text-teal-700" aria-label="Read &quot;Week 1 slides&quot;" href="https://ebajcar.github.io/web10049/slides/10049/week01slides.html" target="_blank">This week's slides →</a></div>
                     </div>
                    </article>
                 </li>
