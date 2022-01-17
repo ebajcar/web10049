@@ -194,7 +194,7 @@ of Emeralds.
 <div id="emphasis-importance"class="flex justify-center mt-6">
   <div class="block p-6 rounded-lg shadow-lg bg-white">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Emphasis and importance</h4>
-    	<dl class="row">
+    	<dl class="w-full">
 	  <dt class="text-xl">element &lt;em></dt>
 	  <dd class="text-base">  represents stress emphasis of its contents. The level of stress that a particular piece of content has is given by its number of ancestor em elements. The placement of stress emphasis changes the meaning of the sentence. The element thus forms an integral part of the content. The precise way in which stress is used in this way depends on the language.
       <p>Read more &mdash;<a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element" target="_blank">HTML specs</a></p>
@@ -277,22 +277,36 @@ of Emeralds.
 
 
 <!-- Quotations and citations -->
-<div id="quotation-citation"class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
+<div id="quotation-citation"class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Quotations and citations</h4>
-    <p>Highlights</p>
+	<dl class="w-full">
+	  <dt class="col-sm-3 text-info">The &lt;q> element</dt>
+	  <dd class="col-sm-9"> indicates that the enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks. </dd>	
+	  <dt class="col-sm-3 text-info">Citation element &lt;cite></dt>
+	  <dd class="col-sm-9"> is used to describe a reference to a cited creative work, such as book, movie, painting, etc., and must include the title of that work. <small><a href="https://mzl.la/2SyRf1S">&mdash;MDN</a></small></dd>	
+	</dl>    
     <h4>Example</h4>
      <div class="grid grid-cols-2">
         <div class="m-3"><h4>Output</h4>
-        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        <iframe srcdoc='<q style="font-size:20px;font-family:Georgia, serif;">All we have to decide is what to do with the time that is given us.</q><br>&mdash;J.R.R Tolkien, <cite>The Fellowship of the Ring</cite>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
         </div>
         <div class="m-3"><h4>Code</h4>
 <pre class="language-html"><code>
-&lt;!-- examples become available during course -->
+&lt;!-- quotations marks around quotation -->
+
+&lt;q>All we have to decide is what to do with 
+    the time that is given us.&lt;/q>
+&lt;br>
+
+&lt;!-- defines the title of a work, not person's name  -->
+
+&mdash;J.R.R Tolkien, &lt;cite>The Fellowship of the Ring&lt;/cite>
+
 </code></pre>  
         </div>
     </div>
-    <p><a href="#" target="_blank">(full code)</a></p> 
+    <p hidden><a href="#" target="_blank">(full code)</a></p> 
     <!-- <h4>More examples</h4> -->
   </div>
 </div>
@@ -302,19 +316,35 @@ of Emeralds.
 <div id="abbreviation-definition"class="flex justify-center mt-6">
   <div class="block p-6 rounded-lg shadow-lg bg-white">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Abbreviation and definitions</h4>
-    <p>Highlights</p>
+    <h4>Inline text semantics</h4>
+    <dl class="row">
+	  <dt class="col-sm-3 text-info">The &lt;dfn> element</dt><dd class="col-sm-9">represents the defining instance of a term, often the first use of a term in a document. The nearest parent of the &lt;dfn> tag must also contain the definition (explanation) for the term. 
+	  <small><a href="https://www.w3schools.com/tags/tag_dfn.asp">&mdash;w3schools</a></small></dd>	
+	  <dt class="col-sm-3 text-info">The &lt;abbr> element</dt><dd class="col-sm-9">An abbreviation or an acronym are both shortened versions of something else. Both are often represented as a series of letters. Use the global title attribute to show the description of the abbreviation, or acronym, when you mouse over the <code>&lt;abbr></code> element. 
+	  <small><a href="https://www.w3schools.com/tags/tag_abbr.asp">&mdash;w3schools</a></small></dd>	
+	</dl>
     <h4>Example</h4>
      <div class="grid grid-cols-2">
         <div class="m-3"><h4>Output</h4>
-        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        <iframe srcdoc='<p><dfn>
+<abbr style="cursor:help"  title="HyperText Markup Language">HTML</abbr></dfn> is the standard markup language for creating web pages.</p><p><abbr style="cursor:help" title="laughing my arms off">LMAO</abbr><br><abbr style="cursor:help"  title="rolling on the floor laughing">ROFL</abbr><br><abbr  style="cursor:help" title="laughing and shaking my head">LSMH</abbr></p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
         </div>
         <div class="m-3"><h4>Code</h4>
 <pre class="language-html"><code>
-&lt;!-- examples become available during course -->
+&lt;!-- definition, abbreviation, acronym -->
+&lt;p>
+    &lt;dfn>
+        &lt;abbr title="HyperText Markup Language">HTML&lt;/abbr>
+    &lt;/dfn>
+    is the standard markup language for creating web pages.
+&lt;/p>
+&lt;p>&lt;abbr title="laughing my arms off">LMAO&lt;/abbr>
+&lt;br>&lt;abbr title="rolling on the floor laughing">ROFL&lt;/abbr>
+&lt;br>&lt;abbr title="laughing and shaking my head">LSMH&lt;/abbr>&lt;/p>
 </code></pre>  
         </div>
     </div>
-    <p><a href="#" target="_blank">(full code)</a></p> 
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/inline-abbr-dfn.html" target="_blank">inline-abbr-dfn.html</a> (full code)</p> 
     <!-- <h4>More examples</h4> -->
   </div>
 </div>
@@ -322,23 +352,37 @@ of Emeralds.
 
 <!-- Contact details -->
 <div id="contact-details"class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
-    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Contact details</h4>
-    <p>Highlights</p>
-    <h4>Example</h4>
-     <div class="grid grid-cols-2">
-        <div class="m-3"><h4>Output</h4>
-        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+    <div class="block p-6 rounded-lg shadow-lg bg-white">
+        <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Contact details</h4>
+        <dl class="row">
+            <dt class="col-sm-3">Element &lt;address></dt>
+            <dd class="col-sm-9">represents the contact information for its nearest article or body element ancestor. The address element must not be used to represent arbitrary addresses, unless those addresses are in fact the relevant contact information. The address element must not contain information other than contact information. Typically, the address element would be included along with other information in a footer element. 
+            <a href="https://html.spec.whatwg.org/multipage/sections.html#the-address-element" target="_blank">W3C Spec</a>
+            </dd>	
+        </dl>    
+        <h4>Example</h4>
+        <div class="grid grid-cols-2">
+            <div class="m-3">
+                <h4>Output</h4>
+                <iframe src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/iframes/address.html"  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+            </div>
+            <div class="m-3">
+                <h4>Code</h4>
+                <pre class="language-html"><code>
+&lt;!-- contact information -->
+&lt;address>	
+Written by Charlie Chaplin.&lt;br> 
+Visit us at:&lt;br>
+somesite.ca&lt;br>
+123 Any Street&lt;br> 
+Anytown, postalcode
+&lt;/address
+                </code></pre>  
+            </div>
         </div>
-        <div class="m-3"><h4>Code</h4>
-<pre class="language-html"><code>
-&lt;!-- examples become available during course -->
-</code></pre>  
-        </div>
+        <p><a href="https://web10049-examples.w3spaces.com/content-textual/contact-details.html" target="_blank">contact-details.html </a>(full code)</p> 
+        <!-- <h4>More examples</h4> -->
     </div>
-    <p><a href="#" target="_blank">(full code)</a></p> 
-    <!-- <h4>More examples</h4> -->
-  </div>
 </div>
 
 
@@ -360,41 +404,83 @@ of Emeralds.
   <div class="block p-6 rounded-lg shadow-lg bg-white">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Superscript and subscript</h4>
     <p>Highlights</p>
+	<dl class="row">
+	  <dt class="col-sm-3">Element &lt;sub></dt><dd class="col-sm-9">The <samp>sub</samp> tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H<sub>2</sub>O.</dd>	
+	  <dt class="col-sm-3">Element &lt;sup></dt><dd class="col-sm-9">The <samp>sup</samp> tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW<sup>[1]</sup>.</dd>	
+	</dl>
     <h4>Example</h4>
      <div class="grid grid-cols-2">
         <div class="m-3"><h4>Output</h4>
-        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+            <iframe srcdoc='<p> Water is the chemical substance with chemical formula H<sub>2</sub>O; one molecule of water has two hydrogen atoms covalently bonded to a single oxygen atom.<sup>[24]</sup> Water is a tasteless, odorless liquid at ambient temperature and pressure.</p><hr><p title=footnote>[24] Campbell, Williamson & Heyden 2006.</p>'  
+            height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
         </div>
-        <div class="m-3"><h4>Code</h4>
-<pre class="language-html"><code>
-&lt;!-- examples become available during course -->
-</code></pre>  
+        <div class="m-3">
+            <h4>Code</h4>
+            <pre class="language-html"><code>
+&lt;!-- comment -->
+&lt;p>
+Water is the chemical substance with chemical formula 
+H&lt;sub>2&lt;/sub>O; 
+one molecule of water has two hydrogen atoms covalently 
+bonded to a single oxygen atom.&lt;sup>[24]&lt;/sup> 
+Water is a tasteless, odorless liquid at ambient temperature 
+and pressure.
+&lt;/p>
+&lt;hr>
+&lt;p title="footnote">[24] Campbell, 
+     Williamson & Heyden 2006.&lt;/p>
+            </code></pre>  
         </div>
     </div>
-    <p><a href="#" target="_blank">(full code)</a></p> 
-    <!-- <h4>More examples</h4> -->
+    <p><a hidden href="#" target="_blank">(full code)</a></p> 
+    <h4>More examples</h4>
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/super-sub-formula.html" target="_blank">super-sub-formula.html</a> (full code)</p> 
   </div>
 </div>
 
 
 <!-- Computer code -->
 <div id="computer-code"class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Computer code</h4>
     <p>Highlights</p>
+	<dl class="row">
+	  <dt class="col-sm-3 text-info">element &lt;code> </dt>
+	  <dd class="col-sm-9">defines a fragment of computer code. does not preserve extra whitespace and line-breaks.</dd>	  
+	  <dt class="col-sm-3 text-info">element &lt;var> </dt>
+	  <dd class="col-sm-9">defines a variable. The variable could be a variable in a mathematical expression or a variable in programming context. </dd>
+
+	  <dt class="col-sm-3 text-info">element &lt;samp> </dt>
+	  <dd class="col-sm-9">represents output from a program or computing system.</dd>
+	  <dt class="col-sm-3 text-info">element &lt;kbd> </dt>
+	  <dd class="col-sm-9">represents user input, like keyboard input or voice commands</dd>	  	  
+	</dl>
     <h4>Example</h4>
      <div class="grid grid-cols-2">
         <div class="m-3"><h4>Output</h4>
-        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        <iframe srcdoc='<p>In physics, mass–energy equivalence is the principle 
+that anything having mass has an equivalent amount of energy 
+and vice versa, with these fundamental quantities directly 
+relating to one another by Albert Einstein&apos;s famous 
+formula: </p><p><var>E</var> = <var>mc</var><sup>2</sup>.</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
         </div>
         <div class="m-3"><h4>Code</h4>
 <pre class="language-html"><code>
-&lt;!-- examples become available during course -->
+&lt;!-- var -->
+&lt;p>In physics, mass–energy equivalence is the principle 
+that anything having mass has an equivalent amount of energy 
+and vice versa, with these fundamental quantities directly 
+relating to one another by Albert Einstein's famous 
+formula:&lt;p>
+&lt;p>
+    &lt;var>E&lt;/var> = &lt;var>mc&lt;/var>&lt;sup>2&lt;/sup>.	
+&lt;/p>
 </code></pre>  
         </div>
     </div>
-    <p><a href="#" target="_blank">(full code)</a></p> 
-    <!-- <h4>More examples</h4> -->
+    <p hidden><a href="#" target="_blank">(full code)</a></p> 
+    <h4>More examples</h4>
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/code-samp-kbd.html" target="_blank">code-samp-kbd.htm</a></p> 
   </div>
 </div>
 
@@ -404,18 +490,25 @@ of Emeralds.
   <div class="block p-6 rounded-lg shadow-lg bg-white">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Time and date</h4>
     <p>Highlights</p>
+	<dl class="row">
+	  <dt class="col-sm-3 text-info">The &lt;time> element</dt>
+	  <dd class="col-sm-9"> represents its contents, along with a machine-readable form of those contents in the datetime attribute. The kind of content is limited to various kinds of dates, times, time-zone offsets, and durations. The datetime attribute may be present. If present, its value must be a representation of the element's contents in a machine-readable format. A time element that does not have a datetime content attribute must not have any element descendants. <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element" target="_blank">W3C Spec</a></dd>	  		  	  
+	</dl>
     <h4>Example</h4>
      <div class="grid grid-cols-2">
         <div class="m-3"><h4>Output</h4>
-        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        <iframe srcdoc='<p> <time>2011-11-18</time>	</p>'  height="158px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
         </div>
         <div class="m-3"><h4>Code</h4>
 <pre class="language-html"><code>
-&lt;!-- examples become available during course -->
+&lt;!-- comment -->
+&lt;p>
+&lt;time>2011-11-18&lt;/time>	
+&lt;/p>
 </code></pre>  
         </div>
     </div>
-    <p><a href="#" target="_blank">(full code)</a></p> 
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/time-date.html" target="_blank">time-date.html </a>(full code)</p> 
     <!-- <h4>More examples</h4> -->
   </div>
 </div>
@@ -423,21 +516,36 @@ of Emeralds.
 
 <!-- Demarcating edits -->
 <div id="demarcating-edits"class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Demarcating edits</h4>
     <p>Highlights</p>
+	<dl class="row">
+	  <dt class="col-sm-4 text-info">The &lt;del> element</dt>
+	  <dd class="col-sm-8"></dd>	  
+	  <dt class="col-sm-4 text-info">The &lt;ins> element</dt>
+	  <dd class="col-sm-8"></dd>		  	  
+	</dl>
     <h4>Example</h4>
      <div class="grid grid-cols-2">
         <div class="m-3"><h4>Output</h4>
-        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        <iframe srcdoc='<p><del>This phrase is removed.</del><ins>It is replaced 
+                        by this phrase.</ins></p>'  
+                height="198px" 
+                width="100%" 
+                style="border:1px dotted gray;" 
+                title="Iframe Example">
+        </iframe>
         </div>
         <div class="m-3"><h4>Code</h4>
 <pre class="language-html"><code>
-&lt;!-- examples become available during course -->
+&lt;!-- comment -->
+&lt;p>&lt;del>This phrase is removed.&lt;/del>
+&lt;ins>It is replaced by this phrase.&lt;/ins>	
+&lt;/p>
 </code></pre>  
         </div>
     </div>
-    <p><a href="#" target="_blank">(full code)</a></p> 
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/demarcating-edits.html" target="_blank">demarcating-edits.html </a>(full code)</p> 
     <!-- <h4>More examples</h4> -->
   </div>
 </div>
@@ -445,8 +553,135 @@ of Emeralds.
 
 <!-- Block quotes and preformatted text -->
 <div id="block-preformat"class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Block quotes and preformatted text</h4>
+    <dl class="row">
+	  <dt class="col-sm-4 text-info">The &lt;pre> element</dt>
+	  <dd class="col-sm-8">defines preformatted text. preserves whitespace and line-breaks.</dd>
+	  <dt class="col-sm-4 text-info">The &lt;blockquote> element</dt>
+	  <dd class="col-sm-8">specifies a section that is quoted from another source. Use <samp>q</samp> for inline (short) quotations.</dd>	  
+	</dl>  
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc="<pre>
+            Imagine there's no heaven
+            It's easy if you try
+            No hell below us
+            Above us only sky
+            Imagine all the people
+            Living for today...
+
+        Imagine there's no countries
+          It isn't hard to do
+          Nothing to kill or die for
+          And no religion too
+          Imagine all the people
+          Living life in peace...
+
+        You may say I'm a dreamer
+        But I'm not the only one
+                I hope someday you'll join us
+                And the world will be as one
+</pre>
+"  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- Imagine by -->
+&lt;pre> 
+            Imagine there's no heaven
+            It's easy if you try
+            No hell below us
+            Above us only sky
+            Imagine all the people
+            Living for today...
+
+        Imagine there's no countries
+          It isn't hard to do
+          Nothing to kill or die for
+          And no religion too
+          Imagine all the people
+          Living life in peace...
+
+        You may say I'm a dreamer
+        But I'm not the only one
+                I hope someday you'll join us
+                And the world will be as one
+&lt;/pre>
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/preformatted-text.html" target="_blank">preformatted-text.html</a> (full code)</p> 
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc="
+  <p>using p element</p>
+  <p>
+        /'^'\
+       ( o o )
+  -oOOO--(_)--OOOo-
+
+    .oooO
+    (   )  Oooo.
+  ---\ (---(   )---
+      \_)   ) /
+           (_/
+  </p>         
+  <p>using pre element</p>
+  <pre>
+        /'^'\
+       ( o o )
+  -oOOO--(_)--OOOo-
+
+    .oooO
+    (   )  Oooo.
+  ---\ (---(   )---
+      \_)   ) /
+           (_/	 
+  </pre>
+"  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- text art -->
+&lt;p>using p element&lt;/p>
+&lt;p>
+      /'^'\
+     ( o o )
+-oOOO--(_)--OOOo-
+
+  .oooO
+  (   )  Oooo.
+---\ (---(   )---
+    \_)   ) /
+         (_/
+&lt;/p>         
+&lt;p>using pre element&lt;/p>
+&lt;pre>
+      /'^'\
+     ( o o )
+-oOOO--(_)--OOOo-
+
+  .oooO
+  (   )  Oooo.
+---\ (---(   )---
+    \_)   ) /
+         (_/	 
+&lt;/pre>
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/text-art.html" target="_blank">text-art.html </a> (full code)</p> 
+  </div>
+</div>
+
+
+
+<!-- blank 
+<div  id="block-preformat"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">???</h4>
     <p>Highlights</p>
     <h4>Example</h4>
      <div class="grid grid-cols-2">
@@ -455,16 +690,14 @@ of Emeralds.
         </div>
         <div class="m-3"><h4>Code</h4>
 <pre class="language-html"><code>
-&lt;!-- examples become available during course -->
+
 </code></pre>  
         </div>
     </div>
     <p><a href="#" target="_blank">(full code)</a></p> 
-    <!-- <h4>More examples</h4> -->
   </div>
 </div>
-
-  
+-->
 </section>
      
     </section>
