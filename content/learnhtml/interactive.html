@@ -112,6 +112,9 @@ figcaption {
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
      <a href="#images" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Image</a>
   </li> 
+    <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#images" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Image Map</a>
+  </li> 
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
      <a href="#picture" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Picture</a>
   </li> 
@@ -144,13 +147,14 @@ https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element
 
      <div class="grid grid-cols-2">
         <div class="m-3"><h4>Output</h4>
-        <iframe srcdoc='<p>
-        
-</p>'  height="120px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        <iframe srcdoc='<a>link 1</a><br><a href="URL" target="_blank">link 1</a>'  
+        height="120px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
         </div>
         <div class="m-3"><h4>Code</h4>
  <pre class="language-html"><code>
- 
+&lt;a>link 1&lt;/a>
+&lt;br>
+&lt;a href="URL" target="_blank">link 1&lt;/a>
  </code></pre>        
         </div>
     </div>
@@ -159,75 +163,87 @@ https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element
 
 
 <!-- Navigation -->
-<div id="navigation"class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
+<div id="navigation"class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Navigation</h4>
     <p>Highlights</p>
     <h4>Example</h4>
      <div class="grid grid-cols-2">
         <div class="m-3"><h4>Output</h4>
-        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        <iframe srcdoc='<nav>
+        <a href="URL" target="_blank">link 1</a>
+        <a href="URL" target="_blank">link 2</a>
+        <a href="URL" target="_blank">link 3</a>
+        </nav>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
         </div>
         <div class="m-3"><h4>Code</h4>
 <pre class="language-html"><code>
-&lt;!-- examples become available during course -->
+ &lt;nav>
+  &lt;a href="URL" target="_blank">link 1&lt;/a>
+  &lt;a href="URL" target="_blank">link 2&lt;/a>
+  &lt;a href="URL" target="_blank">link 3&lt;/a>
+&lt;/nav>
 </code></pre>  
         </div>
     </div>
-    <p><a href="#" target="_blank">(full code)</a></p> 
+    <!--p><a href="#" target="_blank">(full code)</a></p> 
     <h4>More examples</h4>
-    <p><a href="https://web10049-examples.w3spaces.com/examples-textual/e02-010.html" target="_blank">e02-010.html </a> A simple navigation</p> 
+    <p><a href="https://web10049-examples.w3spaces.com/examples-textual/e02-010.html" target="_blank">e02-010.html </a> A simple navigation</p--> 
   </div>
 </div>
 
 
 <!-- Image -->
-<div id="images"class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
+<div id="images"class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Image</h4>
-    <p>Highlights</p>
-    <h4>Example</h4>
-     <div class="grid grid-cols-2">
-        <div class="m-3"><h4>Output</h4>
-        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
-        </div>
-        <div class="m-3"><h4>Code</h4>
-<pre class="language-html"><code>
-&lt;!-- examples become available during course -->
-</code></pre>  
-        </div>
-    </div>
-    <p><a href="#" target="_blank">(full code)</a></p> 
-    <!-- <h4>More examples</h4> -->
+
+
+    <p><a href="https://bajcar.dev.fast.sheridanc.on.ca/10049/codeMirrorExamples/example03_010.html" target="_blank">Example03_010</a></p> 
+  
   </div>
 </div>
 
 
 <!-- Picture -->
-<div id="picture"class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
+<div id="picture"class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Picture</h4>
-    <p>Highlights</p>
-    <h4>Example</h4>
-     <div class="grid grid-cols-2">
-        <div class="m-3"><h4>Output</h4>
-        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
-        </div>
-        <div class="m-3"><h4>Code</h4>
-<pre class="language-html"><code>
-&lt;!-- examples become available during course -->
+
+    <p>One of the newest additions is the &lt;picture> element: see <a href="https://web10049-examples.w3spaces.com/content-interactive/picture-element.html?bypass-cache=27773671" target="_blank">Example here</a></p>
+<pre class="language-html"><code>    
+&lt;picture>
+  &lt;source media="(min-width: 650px)" srcset="images/picture_cats.jpg">
+  &lt;source media="(min-width: 465px)" srcset="images/picture_dogs.jpg">
+  &lt;img src="images/picture_flower.jpg">
+&lt;/picture>
 </code></pre>  
-        </div>
-    </div>
-    <p><a href="#" target="_blank">(full code)</a></p> 
-    <!-- <h4>More examples</h4> -->
+  </div>
+</div>
+
+<!-- Image map -->
+<div id="picture"class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Image Map</h4>
+
+    <p>The &lt;map> tag is used to define an image map. An image map is an image with clickable areas: see <a href="https://web10049-examples.w3spaces.com/content-interactive/image-map.html">Example here</a></p>
+<pre class="language-html"><code>    
+&lt;img src="images/workplace.png" alt="Workplace" usemap="#workmap" width="640">
+
+&lt;map name="workmap">
+  &lt;area shape="rect" coords="34,44,270,350" alt="Notebook" href="image-map-notes.html">
+  &lt;area shape="rect" coords="480,172,530,250" alt="Phone" href="image-map-phone.html">
+  &lt;area shape="circle" coords="520,340,44" alt="Cup of coffee" href="image-map-coffee.html">
+&lt;/map>
+</code></pre>  
   </div>
 </div>
 
 
+
 <!-- Video -->
-<div id="videos"class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
+<div id="videos"class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Video</h4>
     <p>Highlights</p>
     <h4>Example</h4>
@@ -248,8 +264,8 @@ https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element
 
 
 <!-- Audio -->
-<div id="audio"class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
+<div id="audio"class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Audio</h4>
     <p>Highlights</p>
     <h4>Example</h4>
@@ -270,8 +286,8 @@ https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element
 
 
 <!-- Multimedia -->
-<div id="multimedia"class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
+<div id="multimedia"class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Multimedia</h4>
     <p>Highlights</p>
     <h4>Example</h4>
