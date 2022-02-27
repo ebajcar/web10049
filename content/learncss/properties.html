@@ -78,10 +78,10 @@ figcaption {
       </div>   
       <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
 
-          <a class="bg-gray-100 text-gray-900" href="index.html">Cascading Style Sheets(CSS)</a>
+          <a href="index.html">Cascading Style Sheets(CSS)</a>
           <a href="syntax.html">Style Rules, Syntax and Structure</a>
           <a href="selectors.html">Selectors</a>
-          <a href="properties.html">Properties</a>
+          <a class="bg-gray-100 text-gray-900" href="properties.html">Properties</a>
           <a href="layouts.html">Layouts</a>
           <a href="responsive.html">Responsive Design</a>
           <a href="forms.html">Form validation</a>
@@ -89,107 +89,143 @@ figcaption {
       </nav>
     </div>  
         
-    <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
-	<h1>Cascading Style Sheets(CSS)</h1>
- 
+<section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
+<h1 class="text-4xl font-medium leading-tight mt-0 mb-2 text-black-600">Cascading Style Sheets(CSS)</h1>
 
- 
- 
-<!-- Master CSS -->
-<div id="1" class="flex justify-center mt-6">
+
+
+
+<ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mb-4 mx-48" id="pills-tabFill" role="tablist">
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#super-subscript" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Color and background properties</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#computer-code" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Font properties</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#time-date" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Text properties</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#demarcating-edits" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">List properties</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#block-preformat" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Table properties</a>
+  </li>
+</ul>
+
+
+<!-- color and background properties -->
+<div class="flex justify-center mt-6">
   <div class="block p-6 rounded-lg shadow-lg bg-white">
-    <h5 class="text-2xl font-semibold sher-teal">Master CSS</h5>
-    <q class="text-gray-700 text-base mb-4">
-      <q>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the separation of structure (or: content) from presentation.</q>    <br>
-    Explore further <a href="http://www.w3.org/standards/webdesign/htmlcss#whatcss" target="_blank"> World Wide Web Consortium (W3C)</a></p>
- 	<ol style="background-color:linen; padding-top: 1em;padding-bottom: 1em;font-weight: 600;">
-		<li>Learn about selectors: how they work? what is available? when to use each?</li>
-		<li>Learn about properties: how they work? what is available? when to use each?</li>
-		<li>Practice! practice a lot!
-			<ol>
-				<li>Start with valid HTML5 code. (<a href="http://bajcar.dev.fast.sheridanc.on.ca/www10049/checklists_pre2018/htmlSheet.html" target="_blank">Review HTML5 regularly</a>)</li>
-				<li>Identify and evaluate how each component of the content is to be presented. (<a href="http://bajcar.dev.fast.sheridanc.on.ca/www10049/checklists_pre2018/cssSheet2019.html" target="_blank">Overview of CSS3</a>)</li>		
-				<li>Create each CSS rule, starting with the general, start with the top of DOM, to achieve the desired presentation.</li>
-				<li>Test, experiment, make observations. Look for improvements. </li>
-				<li>Follow guidelines, document your code well, and keep your CSS tidy.</li>				
-			</ol>
-		</li>
-		<li>Repeat. Commit to 30-45 minutes a day for a month. Always push the boundaries to learn more. Practice to achieve higher level of mastery.</li>
-	</ol>   
+    <h5 class="text-2xl font-semibold sher-teal">Color and background properties</h5>
+<!--
+<hr style="margin:15px 0;border:1px dotted teal;">
+<h5 class="text-gray-900 text-xl leading-tight font-medium mb-2"></h5> 
+-->
+	<p>Explore <code>color • background • background-color • background-image • background-origin • background-position • background-repeat • background-size</code></p>  
+    
+    
+<hr style="margin:15px 0;border:1px dotted teal;">
+<h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Color properties: color, opacity</h5>  
+
+  </div>
+</div>
+
+
+<!--   -->
+<div class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h5 class="text-2xl font-semibold sher-teal">Font properties</h5>
+    <p class="text-gray-700 text-base mb-4">
+
+    </p>  
+    <p>Explore <code>font • font-family • font-size • font-style • font-variant • font-weight</code></p>
+  </div>
+</div>
+
+
+<!-- Text properties -->
+<div class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h5 class="text-2xl font-semibold sher-teal">Text properties</h5>
+<p>Explore <code>color • direction • letter-spacing • line-height • text-align • text-decoration • text-indent • text-shadow • text-transform • text-overflow • vertical-align • white-space • word-spacining</code></p>
   </div>
 </div>
 
 
 
-<!-- follow guidelines -->
-<div id="6" class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
-    <h5 class="text-2xl font-semibold sher-teal">Follow guidelines</h5>
+<!--  Styling lists -->
+<div class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h5 class="text-2xl font-semibold sher-teal">List properties</h5>
+    <p class="text-gray-700 text-base mb-4">
 
-  <dl>
-	  <dt class="text-gray-900 text-xl leading-tight font-medium mb-2">Organize your code</dt>
-    <dd style="border-bottom: 1px dotted teal;padding-top:10px;">
-      <ul>
-        <li title='For example, a commonly used removal of default margins and padding on all elements: * { margin: 0; padding: 0; } '><strong>Resetting browser defaults</strong> Each browser has default values that will be applied to elements in the absence of CSS style rule. This can cause inconsistencies in the appeaarance of the page design across different browsers.  It is important to reset the browser's default values to ensure that your style sheet has total control of the design.</li>
-        <li title='For example, including the at-rule at the beginning of another CSS file: @import "reset.css";'><strong>Modularizing style sheets</strong> When styling large websites, it is ueful to make individual sheets for different purposes and then link them in a single mater style sheet. </li>
-        <li><strong>Describing sections</strong> Each style sheet should be separated into sections with commented headings, desribing the purpose of that section. This makes the code easier for others to understand and easier for you to understand when revisiting the code some time later.</li>
-        <li><strong>Keeping your code consistent</strong> List the rule declarations in alphabetical property order to more readily find a declaration. Give preference to including the terminating semi-colon after the final declaration. (although optional, easy to miss later when appending further declarations)</li>
-   
-      </ul>
-    </dd>
-    
-	  <dt class="text-gray-900 text-xl leading-tight font-medium mb-2">Optimize style rules</dt>
-    <dd style="border-bottom: 1px dotted teal;padding-top:10px;">
-      <ul>
-        <li><strong>Inheriting values</strong> It is important to recognize that many property values of a parent element are inherited by the child element it contains. Most commonly the font and color properties are inherited from the containing parent element. <em>If a style rule sets these properties for the parent element a further rule need not repeat them for the child element</em> (unless different values are desired).</li>
-        <li><strong>Sizing text</strong> When specifying text size, it is best practice to avoid absolute unit values in order to allow the user to enlarge text. The preferred method is to size text relative to the browser using <code>em</code> units. Standard browser font size is <code>1em</code>, which is equal to <code>16px</code>.</li>
-        <li><strong>Employing shorthand</strong> Always use CSS shorthand properties rather than individual properties to keep style sheet code concise.</li>   
-        <li><strong>Employing multiple classes</strong> The HTML element's class attribute can be assigned multiple values, each separated by a space.  This is a very powerful feature, allowing you to apply styles from more than one class to any element.</li>         
-      </ul>    
-    </dd>    
- 
-    
-	  <dt class="text-gray-900 text-xl leading-tight font-medium mb-2">Validate style sheets</dt>
-    <dd style="border-bottom: 1px dotted teal;padding-top:10px;">
-        Web broswers make no attempt to validate code, so it is important to verify every HTML document and CSS style sheet before the web page is published, even when the page looks fine in your browser.  When the browser encounters code errors, it makes a guess at what is intended, but different browsers may make different interpretations and so display the page incorrectly. W3C provides free online validator tools that check web page code for errors and warnings.
-      <ul>
-        <li><strong>W3C HTML Validator Tool</strong> at <a href="https://validator.w3.org/" target="_blank"> validator.w3.org/</a> </li>    
-        <li><strong>W3C CSS Validator Tool</strong> at <a href="https://jigsaw.w3.org/css-validator/" target="_blank"> jigsaw.w3.org/css-validator/</a> </li>         
-      </ul> 
-    </dd>    
-  
-  
-    <dt class="text-gray-900 text-xl leading-tight font-medium mb-2">Keep your CSS tidy</dt>	
-    <dd style="border-bottom: 1px dotted teal;padding-top:10px;">
-      <ul>
-        <li>Keep it consistent</li>
-        <li>Format readable CSS</li>
-        <li>Comment your CSS</li>
-        <li>Create logical sections in your stylesheet</li>
-        <li>Avoid overly-specific selectors</li>
-        <li>Break large stylesheets into multiple smaller ones</li>
-      </ul>
-      <a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
-        href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing#Tips_to_keep_your_CSS_tidy">
-        Read more @ MDN
-      </a>
-    </dd>
-    
-    <dt class="text-gray-900 text-xl leading-tight font-medium mb-2">Document with comments</dt>
-    <dd style="border-bottom: 1px dotted teal;padding-top:10px;">
-      <p>As with HTML, you are encouraged to make comments in your CSS, to help you understand how your code works when coming back to it after several months, and to help others coming to the code to work on it understand it.</p>
-      <p>Comments in CSS begin with /* and end with */. In the below code block I have used comments to mark the start of different distinct code sections. This is useful to help you navigate your codebase as it gets larger — you can search for the comments in your code editor.</p>
-    </dd>
-  </dl>
+    </p>  
+    	<ul>
+		<li>The <code>list-style-type</code> <em>property</em> specifies the type of list item marker.</li>
+		<li>The <code>list-style-image</code> <em>property</em> specifies an image as the list item marker</li>
+		<li>The <code>list-style-position</code> <em>property</em> specifies the position of the list-item markers (bullet points).</li>
+		<li>The <code>list-style-type:none</code> <em>property</em> can also be used to remove the markers/bullets. Note that the list also has default margin and padding. To remove this, add <code>margin:0</code> and <code>padding:0</code> to &lt;ul> or &lt;ol>:</li>
+		<li>The <code>list-style</code> <em>property</em> is a <strong>shorthand property</strong>. It is used to set all the list properties in one declaration:</li>
+		<li>We can also style lists with colors, to make them look a little more interesting.</li>
+		
+	</ul>
+		<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3schools.com/css/css_list.asp">
+		Explore the examples @w3schools	</a>   
   </div>
 </div>
 
 
+<!-- Styling tables  -->
+<div class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h5 class="text-2xl font-semibold sher-teal">Table properties</h5>
+	<ul>
+		<li>To specify table borders in CSS, use the <code>border</code> <em>property</em>.</li>
+		<li>The <code>border-collapse</code> <em>property</em> sets whether the table borders should be collapsed into a single border</li>
+		<li>Width and height of a table are defined by the <code>width</code> and <code>height</code> <em>properties</em>.</li>
+		<li>The <code>text-align</code> <em>property</em> sets the horizontal alignment (like left, right, or center) of the content in &lt;th> or &lt;td>.</li>
+		<li>The <code>vertical-align</code> <em>property</em> sets the vertical alignment (like top, bottom, or middle) of the content in &lt;th> or &lt;td>.</li>
+		<li>To control the space between the border and the content in a table, use the <code>padding</code> <em>property</em> on &lt;td> and &lt;th> elements.</li>
+		<li>Add the <code>border-bottom</code> <em>property</em> to &lt;th> and &lt;td> for horizontal dividers</li>
+    </ul>
+    <hr>
+    <ul>
+		<li>Use the <code>:hover</code> <em>selector</em> on &lt;tr> to highlight table rows on mouse over</li>
+		<li>For zebra-striped tables, use the <code>nth-child()</code> <em>selector</em> and add a <code>background-color</code> <em>property</em> to all even (or odd) table rows</li>
+
+	</ul>
+		<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3schools.com/css/css_table.asp">
+		Explore the examples @w3schools	</a> 
+    <p class="text-gray-700 text-base mb-4">
+
+    </p>  
  
-    </section>
-    
-    
- </main>
+  </div>
+</div>
+
+
+
+
+<!--
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h5 class="text-2xl font-semibold sher-teal">Styling lists</h5>
+    <p class="text-gray-700 text-base mb-4">
+
+    </p>  
+  </div>
+</div>
+   -->
+
+
+
+
+
+</section>
+</main>
   
 
   
