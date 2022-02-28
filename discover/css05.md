@@ -1,7 +1,16 @@
 # (5) 
 
 ## Complete the following tutorials. Document what you have learned.
-##### Styling HTML forms
+
+#### Media queries
+[https://www.w3schools.com/css/css3_mediaqueries.asp](https://www.w3schools.com/css/css3_mediaqueries.asp)
+[https://www.w3schools.com/css/css3_mediaqueries_ex.asp](https://www.w3schools.com/css/css3_mediaqueries_ex.asp)
+[https://www.w3schools.com/css/css_rwd_intro.asp](https://www.w3schools.com/css/css_rwd_intro.asp)
+
+
+#### Styling HTML forms
+
+
 [https://www.w3schools.com/css/css_form.asp](https://www.w3schools.com/css/css_form.asp)
 
 ##### Using Attributes as selectors
