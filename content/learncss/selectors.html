@@ -118,18 +118,68 @@ figcaption {
   <div class="block p-6 rounded-lg shadow-lg bg-white">
     <h5 class="text-2xl font-semibold sher-teal">Selectors</h5>
 	<p>Explore selectors, the different ways you can target (select) which element or elements you want to style, to change the values for some of the properties.</p>
+    <p>We can divide CSS selectors into five categories:</p>
+    <ul>
+        <li>Simple selectors (select elements based on name, id, class)</li>
+        <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+        <li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">Pseudo-class</a> selectors (select elements based on a certain state)</li>
+        <li><a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudo-element</a> selectors (select and style a part of an element)</li>
+        <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+    </ul>
 
-	<dl class="row">
-	  <dt class="col-sm-4">universal selector</dt><dd class="col-sm-5"><code>* {}</code></dd>
-	  <dt class="col-sm-4">type selector</dt><dd class="col-sm-5"><code>h1 {}</code></dd>
-	  <dt class="col-sm-4">group selectors</dt><dd class="col-sm-5"><code>h1, p, li, a {}</code></dd>	
-	  <dt class="col-sm-4">descendant selector</dt><dd class="col-sm-5"><code>article p {}</code></dd>	
-	  <dt class="col-sm-4">child selector</dt><dd class="col-sm-5"><code>article > p {}</code></dd>	
-	  <dt class="col-sm-4">adjacent sibling</dt><dd class="col-sm-5"><code>.agenda dt + dd {}</code></dd>	
-	  <dt class="col-sm-4">class selector</dt><dd class="col-sm-5"><code>.my-class {}</code></dd>	
-	  <dt class="col-sm-4">id selector</dt><dd class="col-sm-5"><code>#my-id {}</code></dd>	
-	  <dt class="col-sm-4">attribute selector</dt><dd class="col-sm-5"><code>[placeholder] {}</code></dd>	
-	</dl>
+	<table class="table-fixed">
+      <tr>
+      <th style="background:lightgray"></th>
+	  <td class="px-8">universal selector</td>
+      <td><code>* {}</code></td>
+      </tr>
+      
+      <tr>
+      <th rowspan="3">Simple selectors</th>
+	  <td class="px-8">class selector</td>
+      <td><code>.my-class {}</code></td>
+      </tr>
+      <tr>
+	  <td class="px-8">id selector</td>
+      <td><code>#my-id {}</code></td>
+      </tr>
+      <tr>
+	  <td class="px-8">type selector</td>
+      <td><code>h1 {}</code></td>
+      </tr>
+      <tr>
+      <th style="background:lightgray"></th>
+	  <td class="px-8">group selectors</td>
+      <td><code>h1, p, li, a {}</code></td>	
+      </tr>
+      
+      <tr>
+      <th rowspan="4">Combinators</th>
+	  <td class="px-8">descendant selector</td>
+      <td><code>article p {}</code></td>	
+      </tr>
+      <tr>
+	  <td class="px-8">child selector</td>
+      <td><code>article > p {}</code></td>
+      </tr>
+      <tr>
+	  <td class="px-8">adjacent sibling</td>
+      <td><code>.agenda dt + dd {}</code></td>
+      <td class="px-8">DD immediately after DT</td>
+      </tr>
+      <tr>
+	  <td class="px-8">general sibling</td>
+      <td><code>.agenda dt ~ dd {}</code></td>
+      <td class="px-8">all DD after DT</td>
+      </tr>
+      
+      <tr>
+      <th style="background:lightgray"></th>
+	  <td class="px-8">attribute selector</td>
+      <td><code>[placeholder] {}</code></td>
+      </tr>
+      
+	</table>
 	
 	<hr>
 	<h4>Invalid selectors</h4>
