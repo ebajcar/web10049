@@ -38,9 +38,10 @@ GRID-TEMPLATE-AREAS [https://www.w3schools.com/cssref/pr_grid-template-areas.asp
 GRID-TEMPLATE-COLUMNS [https://www.w3schools.com/cssref/pr_grid-template-columns.asp](https://www.w3schools.com/cssref/pr_grid-template-columns.asp)
 GRID-TEMPLATE-ROWS  [https://www.w3schools.com/cssref/pr_grid-template-rows.asp](https://www.w3schools.com/cssref/pr_grid-template-rows.asp) 
 29. @CHARSET [https://www.w3schools.com/cssref/pr_charset_rule.asp](https://www.w3schools.com/cssref/pr_charset_rule.asp)
-30. Learn more about CSS selectors
+
+Learn more about CSS selectors
 NTH-CHILD [https://www.w3schools.com/cssref/sel_nth-child.asp](https://www.w3schools.com/cssref/sel_nth-child.asp)
- ONLY-CHILD [https://www.w3schools.com/cssref/trysel.asp?selector=b:only-child](https://www.w3schools.com/cssref/trysel.asp?selector=b:only-child)
+ONLY-CHILD [https://www.w3schools.com/cssref/trysel.asp?selector=b:only-child](https://www.w3schools.com/cssref/trysel.asp?selector=b:only-child)
 
 
  
