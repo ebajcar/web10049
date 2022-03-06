@@ -12,29 +12,30 @@ For each of the following CSS properties, complete the tutorial on w3schools.  N
 > HTML DOM reference: [boxSizing property](https://www.w3schools.com/jsref/prop_style_boxsizing.asp)
 
 #### Your turn:
-10. CSS combinators [https://www.w3schools.com/css/css_combinators.asp](https://www.w3schools.com/css/css_combinators.asp)
-11. CSS pseudo-classes [https://www.w3schools.com/css/css_pseudo_classes.asp](https://www.w3schools.com/css/css_pseudo_classes.asp)
-12. CSS pseudo-elements [https://www.w3schools.com/css/css_pseudo_elements.asp](https://www.w3schools.com/css/css_pseudo_elements.asp)
-13. CSS specificity [https://www.w3schools.com/css/css_specificity.asp](https://www.w3schools.com/css/css_specificity.asp)
+1. CSS combinators [https://www.w3schools.com/css/css_combinators.asp](https://www.w3schools.com/css/css_combinators.asp)
+2. CSS pseudo-classes [https://www.w3schools.com/css/css_pseudo_classes.asp](https://www.w3schools.com/css/css_pseudo_classes.asp)
+3. CSS pseudo-elements [https://www.w3schools.com/css/css_pseudo_elements.asp](https://www.w3schools.com/css/css_pseudo_elements.asp)
+4. CSS specificity [https://www.w3schools.com/css/css_specificity.asp](https://www.w3schools.com/css/css_specificity.asp)
 
-Box model
-15. CSS Box Sizing tutorial [https://www.w3schools.com/css/css3_box-sizing.asp](https://www.w3schools.com/css/css3_box-sizing.asp)
-16. CSS box model [https://www.w3schools.com/css/css_boxmodel.asp](https://www.w3schools.com/css/css_boxmodel.asp)
-17. CSS dimensions [https://www.w3schools.com/css/css_dimension.asp](https://www.w3schools.com/css/css_dimension.asp)
-18. CSS margin [https://www.w3schools.com/css/css_margin.asp](https://www.w3schools.com/css/css_margin.asp)
-19. CSS padding [https://www.w3schools.com/css/css_padding.asp](https://www.w3schools.com/css/css_padding.asp)
-20.  CSS border [https://www.w3schools.com/css/css_border.asp](https://www.w3schools.com/css/css_border.asp)
-21. CSS3 box-sizing [https://www.w3schools.com/cssref/css3_pr_box-sizing.asp](https://www.w3schools.com/cssref/css3_pr_box-sizing.asp)
-23. CSS outline [https://www.w3schools.com/css/css_outline.asp](https://www.w3schools.com/css/css_outline.asp)
-8. BORDER-COLLAPSE [https://www.w3schools.com/cssref/pr_border-collapse.asp](https://www.w3schools.com/cssref/pr_border-collapse.asp)
-9.  BORDER-IMAGE [https://www.w3schools.com/cssref/css3_pr_border-image.asp](https://www.w3schools.com/cssref/css3_pr_border-image.asp)
-10. BORDER-RADIUS [https://www.w3schools.com/cssref/css3_pr_border-radius.asp](https://www.w3schools.com/cssref/css3_pr_border-radius.asp)
-11. BOX-SHADOW [https://www.w3schools.com/cssref/css3_pr_box-shadow.asp](https://www.w3schools.com/cssref/css3_pr_box-shadow.asp)
 
-Positioning
-25. CSS positioning [https://www.w3schools.com/css/css_positioning.asp](https://www.w3schools.com/css/css_positioning.asp)
-26. CSS float [https://www.w3schools.com/css/css_float.asp](https://www.w3schools.com/css/css_float.asp)
-27. CSS Layout - horizontal and vertical align [https://www.w3schools.com/css/css_align.asp](https://www.w3schools.com/css/css_align.asp) 
+#### Box model
+1. CSS Box Sizing tutorial [https://www.w3schools.com/css/css3_box-sizing.asp](https://www.w3schools.com/css/css3_box-sizing.asp)
+2. CSS box model [https://www.w3schools.com/css/css_boxmodel.asp](https://www.w3schools.com/css/css_boxmodel.asp)
+3. CSS dimensions [https://www.w3schools.com/css/css_dimension.asp](https://www.w3schools.com/css/css_dimension.asp)
+4. CSS margin [https://www.w3schools.com/css/css_margin.asp](https://www.w3schools.com/css/css_margin.asp)
+5. CSS padding [https://www.w3schools.com/css/css_padding.asp](https://www.w3schools.com/css/css_padding.asp)
+6. CSS border [https://www.w3schools.com/css/css_border.asp](https://www.w3schools.com/css/css_border.asp)
+7. CSS3 box-sizing [https://www.w3schools.com/cssref/css3_pr_box-sizing.asp](https://www.w3schools.com/cssref/css3_pr_box-sizing.asp)
+8. CSS outline [https://www.w3schools.com/css/css_outline.asp](https://www.w3schools.com/css/css_outline.asp)
+9. BORDER-COLLAPSE [https://www.w3schools.com/cssref/pr_border-collapse.asp](https://www.w3schools.com/cssref/pr_border-collapse.asp)
+10. BORDER-IMAGE [https://www.w3schools.com/cssref/css3_pr_border-image.asp](https://www.w3schools.com/cssref/css3_pr_border-image.asp)
+11. BORDER-RADIUS [https://www.w3schools.com/cssref/css3_pr_border-radius.asp](https://www.w3schools.com/cssref/css3_pr_border-radius.asp)
+12. BOX-SHADOW [https://www.w3schools.com/cssref/css3_pr_box-shadow.asp](https://www.w3schools.com/cssref/css3_pr_box-shadow.asp)
+
+#### Positioning
+1. CSS positioning [https://www.w3schools.com/css/css_positioning.asp](https://www.w3schools.com/css/css_positioning.asp)
+2. CSS float [https://www.w3schools.com/css/css_float.asp](https://www.w3schools.com/css/css_float.asp)
+3. CSS Layout - horizontal and vertical align [https://www.w3schools.com/css/css_align.asp](https://www.w3schools.com/css/css_align.asp) 
 	- [Center Align Elements](https://www.w3schools.com/css/tryit.asp?filename=trycss_align_container)
 	- [Center Text](https://www.w3schools.com/css/tryit.asp?filename=trycss_align_text)
 	- [Center an Image](https://www.w3schools.com/css/tryit.asp?filename=trycss_align_image)
@@ -54,7 +55,7 @@ Positioning
 **[CSS Styling lists](https://www.w3schools.com/css/css_list.asp)**
 
 **[CSS Styling tables](https://www.w3schools.com/css/css_table.asp)**
-14. CAPTION-SIDE [https://www.w3schools.com/cssref/pr_tab_caption-side.asp](https://www.w3schools.com/cssref/pr_tab_caption-side.asp) (table)
+- CAPTION-SIDE [https://www.w3schools.com/cssref/pr_tab_caption-side.asp](https://www.w3schools.com/cssref/pr_tab_caption-side.asp) (table)
 
 
  
