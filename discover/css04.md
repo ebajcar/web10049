@@ -9,15 +9,16 @@ For each of the following CSS properties, complete the tutorial on w3schools.  N
 > 
 
 #### Your turn:
-1. **FLEX [https://www.w3schools.com/cssref/css3_pr_flex.asp](https://www.w3schools.com/cssref/css3_pr_flex.asp)**
-2. FLEX-BASIS [https://www.w3schools.com/cssref/css3_pr_flex-basis.asp](https://www.w3schools.com/cssref/css3_pr_flex-basis.asp)
-3.  FLEX-DIRECTION [https://www.w3schools.com/cssref/css3_pr_flex-direction.asp](https://www.w3schools.com/cssref/css3_pr_flex-direction.asp)
-4. FLEX-FLOW [https://www.w3schools.com/cssref/css3_pr_flex-flow.asp](https://www.w3schools.com/cssref/css3_pr_flex-flow.asp)
-5. FLEX-GROW [https://www.w3schools.com/cssref/css3_pr_flex-grow.asp](https://www.w3schools.com/cssref/css3_pr_flex-grow.asp)
-6. FLEX-SHRINK [https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp](https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp)
-7. FLEX-WRAP [https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp](https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp)
-8. ALIGN-CONTENT [https://www.w3schools.com/cssref/css3_pr_align-content.asp](https://www.w3schools.com/cssref/css3_pr_align-content.asp)
-9. ALIGN-ITEMS [https://www.w3schools.com/cssref/css3_pr_align-items.asp](https://www.w3schools.com/cssref/css3_pr_align-items.asp)
+**FLEX [https://www.w3schools.com/cssref/css3_pr_flex.asp](https://www.w3schools.com/cssref/css3_pr_flex.asp)**
+* FLEX-BASIS [https://www.w3schools.com/cssref/css3_pr_flex-basis.asp](https://www.w3schools.com/cssref/css3_pr_flex-basis.asp)
+* FLEX-DIRECTION [https://www.w3schools.com/cssref/css3_pr_flex-direction.asp](https://www.w3schools.com/cssref/css3_pr_flex-direction.asp)
+* FLEX-FLOW [https://www.w3schools.com/cssref/css3_pr_flex-flow.asp](https://www.w3schools.com/cssref/css3_pr_flex-flow.asp)
+* FLEX-GROW [https://www.w3schools.com/cssref/css3_pr_flex-grow.asp](https://www.w3schools.com/cssref/css3_pr_flex-grow.asp)
+* FLEX-SHRINK [https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp](https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp)
+* FLEX-WRAP [https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp](https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp)
+* ALIGN-CONTENT [https://www.w3schools.com/cssref/css3_pr_align-content.asp](https://www.w3schools.com/cssref/css3_pr_align-content.asp)
+* 
+* ALIGN-ITEMS [https://www.w3schools.com/cssref/css3_pr_align-items.asp](https://www.w3schools.com/cssref/css3_pr_align-items.asp)
 10. **GRID [https://www.w3schools.com/cssref/pr_grid.asp](https://www.w3schools.com/cssref/pr_grid.asp)**
 11. GRID-AREA [https://www.w3schools.com/cssref/pr_grid-area.asp](https://www.w3schools.com/cssref/pr_grid-area.asp)
 12. GRID-AUTO-COLUMNS [https://www.w3schools.com/cssref/pr_grid-auto-columns.asp](https://www.w3schools.com/cssref/pr_grid-auto-columns.asp)
