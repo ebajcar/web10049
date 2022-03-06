@@ -1,6 +1,16 @@
-# (5) 
+# (5) CSS Selectors and Properties
 
-## Complete the following tutorials. Document what you have learned.
+### Complete the following tutorials. Document what you have learned.
+For each of the following CSS properties and selectors, complete the tutorial on w3schools.  Note the definition, intended purpose, browser support, supported attributes, and possible attribute values.
+#### Example
+0. BOX-SIZING [https://www.w3schools.com/cssref/css3_pr_box-sizing.asp](https://www.w3schools.com/cssref/css3_pr_box-sizing.asp)
+
+> **`box-sizing` property** defines how the width and height of an element are calculated: should they include padding and borders, or not.
+>  SYNTAX: `box-sizing: content-box|border-box|initial|inherit;`
+> `content-box` value -- **default**. The width and height properties (and min/max properties) includes only the content. Border and padding are not included.  
+> `border-box` value -- The width and height properties (and min/max properties) includes content, padding and border
+> HTML DOM reference: [boxSizing property](https://www.w3schools.com/jsref/prop_style_boxsizing.asp)
+
 
 #### Media queries
 [https://www.w3schools.com/css/css3_mediaqueries.asp](https://www.w3schools.com/css/css3_mediaqueries.asp)
