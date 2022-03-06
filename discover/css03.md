@@ -15,9 +15,9 @@ For each of the following CSS properties, complete the tutorial on w3schools.  N
 * FLEX-FLOW [https://www.w3schools.com/cssref/css3_pr_flex-flow.asp](https://www.w3schools.com/cssref/css3_pr_flex-flow.asp)
 * FLEX-GROW [https://www.w3schools.com/cssref/css3_pr_flex-grow.asp](https://www.w3schools.com/cssref/css3_pr_flex-grow.asp)
 * FLEX-SHRINK [https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp](https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp)
-* FLEX-WRAP [https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp](https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp)
+* ✔️ [FLEX-WRAP](https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp) Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
 * ALIGN-CONTENT [https://www.w3schools.com/cssref/css3_pr_align-content.asp](https://www.w3schools.com/cssref/css3_pr_align-content.asp)
-* ALIGN-ITEMS [https://www.w3schools.com/cssref/css3_pr_align-items.asp](https://www.w3schools.com/cssref/css3_pr_align-items.asp)
+* ✔️[ALIGN-ITEMS](https://www.w3schools.com/cssref/css3_pr_align-items.asp) Vertically aligns the flex items when the items do not use all available space on the cross-axis
 
 **GRID [https://www.w3schools.com/cssref/pr_grid.asp](https://www.w3schools.com/cssref/pr_grid.asp)**
 * GRID-AREA [https://www.w3schools.com/cssref/pr_grid-area.asp](https://www.w3schools.com/cssref/pr_grid-area.asp)
