@@ -8,16 +8,19 @@ For each of the following CSS properties, complete the tutorial on w3schools.  N
 &bull; HTML DOM reference: [display property](https://www.w3schools.com/jsref/prop_style_display.asp)
 > 
 
-#### Your turn:
-**[FLEX](https://www.w3schools.com/cssref/css3_pr_flex.asp)** -- CSS Flexbox Layout [w3schools tutorial](https://www.w3schools.com/css/css3_flexbox.asp)
+**CSS Flexbox Layout [w3schools tutorial](https://www.w3schools.com/css/css3_flexbox.asp)**
+* ✔️ [FLEX](https://www.w3schools.com/cssref/css3_pr_flex.asp) A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties
 * [FLEX-BASIS](https://www.w3schools.com/cssref/css3_pr_flex-basis.asp)
-*  [FLEX-DIRECTION](https://www.w3schools.com/cssref/css3_pr_flex-direction.asp)
-* FLEX-FLOW [https://www.w3schools.com/cssref/css3_pr_flex-flow.asp](https://www.w3schools.com/cssref/css3_pr_flex-flow.asp)
+* ✔️ [FLEX-DIRECTION](https://www.w3schools.com/cssref/css3_pr_flex-direction.asp) Specifies the direction of the flexible items inside a flex container
+* ✔️  [FLEX-FLOW](https://www.w3schools.com/cssref/css3_pr_flex-flow.asp) A shorthand property for flex-direction and flex-wrap
 * FLEX-GROW [https://www.w3schools.com/cssref/css3_pr_flex-grow.asp](https://www.w3schools.com/cssref/css3_pr_flex-grow.asp)
 * FLEX-SHRINK [https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp](https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp)
 * ✔️ [FLEX-WRAP](https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp) Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
 * ✔️ [ALIGN-CONTENT](https://www.w3schools.com/cssref/css3_pr_align-content.asp) Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines
 * ✔️[ALIGN-ITEMS](https://www.w3schools.com/cssref/css3_pr_align-items.asp) Vertically aligns the flex items when the items do not use all available space on the cross-axis
+* ORDER
+* JUSTIFY-CONTENT
+* ALIGN-SELF
 
 **GRID [https://www.w3schools.com/cssref/pr_grid.asp](https://www.w3schools.com/cssref/pr_grid.asp)**
 * GRID-AREA [https://www.w3schools.com/cssref/pr_grid-area.asp](https://www.w3schools.com/cssref/pr_grid-area.asp)
