@@ -39,8 +39,9 @@ For each of the following CSS properties, complete the tutorial on w3schools.  N
 * * GRID-TEMPLATE-COLUMNS [https://www.w3schools.com/cssref/pr_grid-template-columns.asp](https://www.w3schools.com/cssref/pr_grid-template-columns.asp)
 * * GRID-TEMPLATE-ROWS  [https://www.w3schools.com/cssref/pr_grid-template-rows.asp](https://www.w3schools.com/cssref/pr_grid-template-rows.asp) 
 
-
+Learn more about CSS at0rules
 * @CHARSET [https://www.w3schools.com/cssref/pr_charset_rule.asp](https://www.w3schools.com/cssref/pr_charset_rule.asp)
+* @IMPORT
 
 Learn more about CSS selectors
 NTH-CHILD [https://www.w3schools.com/cssref/sel_nth-child.asp](https://www.w3schools.com/cssref/sel_nth-child.asp)
