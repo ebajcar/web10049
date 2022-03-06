@@ -9,7 +9,7 @@ For each of the following CSS properties, complete the tutorial on w3schools.  N
 > 
 
 #### Your turn:
-**[FLEX](https://www.w3schools.com/cssref/css3_pr_flex.asp)** -- [w3schools tutorial](https://www.w3schools.com/css/css3_flexbox.asp)
+**[FLEX](https://www.w3schools.com/cssref/css3_pr_flex.asp)** -- CSS Flexbox Layout [w3schools tutorial](https://www.w3schools.com/css/css3_flexbox.asp)
 * [FLEX-BASIS](https://www.w3schools.com/cssref/css3_pr_flex-basis.asp)
 *  [FLEX-DIRECTION](https://www.w3schools.com/cssref/css3_pr_flex-direction.asp)
 * FLEX-FLOW [https://www.w3schools.com/cssref/css3_pr_flex-flow.asp](https://www.w3schools.com/cssref/css3_pr_flex-flow.asp)
