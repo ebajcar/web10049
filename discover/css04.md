@@ -38,6 +38,8 @@ For each of the following CSS properties, complete the tutorial on w3schools.  N
 * * GRID-TEMPLATE-AREAS [https://www.w3schools.com/cssref/pr_grid-template-areas.asp](https://www.w3schools.com/cssref/pr_grid-template-areas.asp)
 * * GRID-TEMPLATE-COLUMNS [https://www.w3schools.com/cssref/pr_grid-template-columns.asp](https://www.w3schools.com/cssref/pr_grid-template-columns.asp)
 * * GRID-TEMPLATE-ROWS  [https://www.w3schools.com/cssref/pr_grid-template-rows.asp](https://www.w3schools.com/cssref/pr_grid-template-rows.asp) 
+
+
 * @CHARSET [https://www.w3schools.com/cssref/pr_charset_rule.asp](https://www.w3schools.com/cssref/pr_charset_rule.asp)
 
 Learn more about CSS selectors
