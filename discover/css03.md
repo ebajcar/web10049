@@ -12,6 +12,19 @@ For each of the following CSS properties, complete the tutorial on w3schools.  N
 > HTML DOM reference: [boxSizing property](https://www.w3schools.com/jsref/prop_style_boxsizing.asp)
 
 #### Your turn:
+1.  CSS border [https://www.w3schools.com/css/css_border.asp](https://www.w3schools.com/css/css_border.asp)
+2. CSS margin [https://www.w3schools.com/css/css_margin.asp](https://www.w3schools.com/css/css_margin.asp)
+3. CSS padding [https://www.w3schools.com/css/css_padding.asp](https://www.w3schools.com/css/css_padding.asp)
+4. CSS dimensions [https://www.w3schools.com/css/css_dimension.asp](https://www.w3schools.com/css/css_dimension.asp)
+5. CSS box model [https://www.w3schools.com/css/css_boxmodel.asp](https://www.w3schools.com/css/css_boxmodel.asp)
+6. CSS3 box-sizing [https://www.w3schools.com/cssref/css3_pr_box-sizing.asp](https://www.w3schools.com/cssref/css3_pr_box-sizing.asp)
+7. CSS outline [https://www.w3schools.com/css/css_outline.asp](https://www.w3schools.com/css/css_outline.asp)
+8. CSS positioning [https://www.w3schools.com/css/css_positioning.asp](https://www.w3schools.com/css/css_positioning.asp)
+9. CSS float [https://www.w3schools.com/css/css_float.asp](https://www.w3schools.com/css/css_float.asp)
+10. CSS combinators [https://www.w3schools.com/css/css_combinators.asp](https://www.w3schools.com/css/css_combinators.asp)
+11. CSS pseudo-classes [https://www.w3schools.com/css/css_pseudo_classes.asp](https://www.w3schools.com/css/css_pseudo_classes.asp)
+12. CSS pseudo-elements [https://www.w3schools.com/css/css_pseudo_elements.asp](https://www.w3schools.com/css/css_pseudo_elements.asp)
+13. CSS specificity [https://www.w3schools.com/css/css_specificity.asp](https://www.w3schools.com/css/css_specificity.asp)
 1. CSS Box Sizing tutorial [https://www.w3schools.com/css/css3_box-sizing.asp](https://www.w3schools.com/css/css3_box-sizing.asp)
 2. [CSS Styling Links](https://www.w3schools.com/css/css_link.asp) **states**, text-decoration, &hellip;
 3. CSS Layout - horizontal and vertical align [https://www.w3schools.com/css/css_align.asp](https://www.w3schools.com/css/css_align.asp) 
