@@ -1,47 +1,48 @@
 # (4) CSS Selectors and Properties
 
 ### Complete the following tutorials. Document what you have learned.
-For each of the following CSS properties, complete the tutorial on w3schools.  Note the definition, intended purpose, browser support, supported attributes, and possible attribute values.
+For each of the following CSS properties and selectors, complete the tutorial on w3schools.  Note the definition, intended purpose, browser support, supported attributes, and possible attribute values.
 #### Example
-0. DISPLAY [https://www.w3schools.com/css/css_display_visibility.asp](https://www.w3schools.com/css/css_display_visibility.asp)
-> &bull; **display property** specifies if/how an element is displayed.<br>&bull; The `display` property is the most important CSS property for controlling layout.<br>&bull;SYNTAX: `display: _value_;`<br>&bull; **values:** &mdash;[block, inline, inline-block, flex, grid, none,](https://www.w3schools.com/cssref/playit.asp?filename=playcss_display&preval=none)&hellip;, [inline-block](https://www.w3schools.com/css/css_inline-block.asp)<br>&bull; **note:** every HTML element has a default display value depending on what type of element it is. <br>&bull; **note:** The default display value for most elements is block or inline.<br>&bull; **VISIBILITY**  `visibility:hidden;`  also hides an element. However, the element will still take up the same space as before.
-&bull; HTML DOM reference: [display property](https://www.w3schools.com/jsref/prop_style_display.asp)
-> 
+0. BOX-SIZING [https://www.w3schools.com/cssref/css3_pr_box-sizing.asp](https://www.w3schools.com/cssref/css3_pr_box-sizing.asp)
 
-#### Your turn:
-1. **FLEX [https://www.w3schools.com/cssref/css3_pr_flex.asp](https://www.w3schools.com/cssref/css3_pr_flex.asp)**
-2. FLEX-BASIS [https://www.w3schools.com/cssref/css3_pr_flex-basis.asp](https://www.w3schools.com/cssref/css3_pr_flex-basis.asp)
-3.  FLEX-DIRECTION [https://www.w3schools.com/cssref/css3_pr_flex-direction.asp](https://www.w3schools.com/cssref/css3_pr_flex-direction.asp)
-4. FLEX-FLOW [https://www.w3schools.com/cssref/css3_pr_flex-flow.asp](https://www.w3schools.com/cssref/css3_pr_flex-flow.asp)
-5. FLEX-GROW [https://www.w3schools.com/cssref/css3_pr_flex-grow.asp](https://www.w3schools.com/cssref/css3_pr_flex-grow.asp)
-6. FLEX-SHRINK [https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp](https://www.w3schools.com/cssref/css3_pr_flex-shrink.asp)
-7. FLEX-WRAP [https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp](https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp)
-8. ALIGN-CONTENT [https://www.w3schools.com/cssref/css3_pr_align-content.asp](https://www.w3schools.com/cssref/css3_pr_align-content.asp)
-9. ALIGN-ITEMS [https://www.w3schools.com/cssref/css3_pr_align-items.asp](https://www.w3schools.com/cssref/css3_pr_align-items.asp)
-10. **GRID [https://www.w3schools.com/cssref/pr_grid.asp](https://www.w3schools.com/cssref/pr_grid.asp)**
-11. GRID-AREA [https://www.w3schools.com/cssref/pr_grid-area.asp](https://www.w3schools.com/cssref/pr_grid-area.asp)
-12. GRID-AUTO-COLUMNS [https://www.w3schools.com/cssref/pr_grid-auto-columns.asp](https://www.w3schools.com/cssref/pr_grid-auto-columns.asp)
-13. GRID-AUTO-FLOW [https://www.w3schools.com/cssref/pr_grid-auto-flow.asp](https://www.w3schools.com/cssref/pr_grid-auto-flow.asp)
-14. GRID-AUTO-ROWS [https://www.w3schools.com/cssref/pr_grid-auto-rows.asp](https://www.w3schools.com/cssref/pr_grid-auto-rows.asp)
-15. GRID-COLUMN [https://www.w3schools.com/cssref/pr_grid-column.asp](https://www.w3schools.com/cssref/pr_grid-column.asp)
-GRID-COLUMN-GAP [https://www.w3schools.com/cssref/pr_grid-column-end.asp](https://www.w3schools.com/cssref/pr_grid-column-end.asp)
-GRID-COLUMN-END [https://www.w3schools.com/cssref/pr_grid-column-gap.asp](https://www.w3schools.com/cssref/pr_grid-column-gap.asp)
-GRID-COLUMN-START [https://www.w3schools.com/cssref/pr_grid-column-start.asp](https://www.w3schools.com/cssref/pr_grid-column-start.asp)
-19. GRID-GAP [https://www.w3schools.com/cssref/pr_grid-gap.asp](https://www.w3schools.com/cssref/pr_grid-gap.asp)
-20. GRID-ROW [https://www.w3schools.com/cssref/pr_grid-row.asp](https://www.w3schools.com/cssref/pr_grid-row.asp)
-GRID-ROW-END [https://www.w3schools.com/cssref/pr_grid-row-end.asp](https://www.w3schools.com/cssref/pr_grid-row-end.asp)
-GRID-ROW-END [https://www.w3schools.com/cssref/pr_grid-row-end.asp](https://www.w3schools.com/cssref/pr_grid-row-end.asp)
-GRID-ROW-GAP [https://www.w3schools.com/cssref/pr_grid-row-gap.asp](https://www.w3schools.com/cssref/pr_grid-row-gap.asp)
-GRID-ROW-START [https://www.w3schools.com/cssref/pr_grid-row-start.asp](https://www.w3schools.com/cssref/pr_grid-row-start.asp)
-25. GRID-TEMPLATE [https://www.w3schools.com/cssref/pr_grid-template.asp](https://www.w3schools.com/cssref/pr_grid-template.asp)
-GRID-TEMPLATE-AREAS [https://www.w3schools.com/cssref/pr_grid-template-areas.asp](https://www.w3schools.com/cssref/pr_grid-template-areas.asp)
-GRID-TEMPLATE-COLUMNS [https://www.w3schools.com/cssref/pr_grid-template-columns.asp](https://www.w3schools.com/cssref/pr_grid-template-columns.asp)
-GRID-TEMPLATE-ROWS  [https://www.w3schools.com/cssref/pr_grid-template-rows.asp](https://www.w3schools.com/cssref/pr_grid-template-rows.asp) 
-29. @CHARSET [https://www.w3schools.com/cssref/pr_charset_rule.asp](https://www.w3schools.com/cssref/pr_charset_rule.asp)
-30. Learn more about CSS selectors
-NTH-CHILD [https://www.w3schools.com/cssref/sel_nth-child.asp](https://www.w3schools.com/cssref/sel_nth-child.asp)
- ONLY-CHILD [https://www.w3schools.com/cssref/trysel.asp?selector=b:only-child](https://www.w3schools.com/cssref/trysel.asp?selector=b:only-child)
+> **`box-sizing` property** defines how the width and height of an element are calculated: should they include padding and borders, or not.
+>  SYNTAX: `box-sizing: content-box|border-box|initial|inherit;`
+> `content-box` value -- **default**. The width and height properties (and min/max properties) includes only the content. Border and padding are not included.  
+> `border-box` value -- The width and height properties (and min/max properties) includes content, padding and border
+> HTML DOM reference: [boxSizing property](https://www.w3schools.com/jsref/prop_style_boxsizing.asp)
 
+
+#### Media queries
+[https://www.w3schools.com/css/css3_mediaqueries.asp](https://www.w3schools.com/css/css3_mediaqueries.asp)
+[https://www.w3schools.com/css/css3_mediaqueries_ex.asp](https://www.w3schools.com/css/css3_mediaqueries_ex.asp)
+[https://www.w3schools.com/css/css_rwd_intro.asp](https://www.w3schools.com/css/css_rwd_intro.asp)
+
+
+#### Styling HTML forms
+
+
+[https://www.w3schools.com/css/css_form.asp](https://www.w3schools.com/css/css_form.asp)
+
+##### Using Attributes as selectors
+[https://www.w3schools.com/css/css_attribute_selectors.asp](https://www.w3schools.com/css/css_attribute_selectors.asp)
+1. Selects all elements with a target attribute
+2. Selects all elements with target="_blank"
+3. Selects all elements with a title attribute containing the word "flower"
+4. Selects all elements with a lang attribute value starting with "en"
+5. Selects every <a> element whose href attribute value begins with "https"
+6. Selects every <a> element whose href attribute value ends with ".pdf"
+7. Selects every <a> element whose href attribute value contains the substring "w3schools"
+
+Checkout [attribute selectors @ W3C](https://www.w3.org/TR/selectors/#attribute-selectors)
+
+---
+
+##### Complete the exercises [CSS Attribute Selectors](https://www.w3schools.com/css/exercise.asp?filename=exercise_attribute_selectors1)
+-   Set the background-color to "lightblue" for elements with a "target" attribute.
+-   Set the background-color to "lightblue" for elements with an attribute like: target="_blank"
+-   Set a border with the color "red", around elements with a "title" attribute containing the word "red".
+-   Set a border with the color "red", around elements with a "title" attribute ending with the word "flower" (not flowers).
+-   Set a border with the color "red", around elements with a "title" attribute containing the value "flow".
 
  
 ---
