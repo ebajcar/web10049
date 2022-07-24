@@ -84,7 +84,8 @@ h4 {
 
             <button class="bg-dark-gray sher-teal active:bg-purple-600 font-bold uppercase text-base px-4 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"><a href="https://comm13729-sheridancollege.notion.site/Class-Plan-Information-c86adbe0453243a280fd72d003447ae0" target="_blank" style="color:white;">Classroom &amp; Evaluation Policies</a></button>
 
-            <button class="bg-dark-gray sher-teal active:bg-purple-600 font-bold uppercase text-base px-4 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"><a href="https://ebajcar.github.io/web10199_worksheets/noteworthy/gradeCalc.html" target="_blank" style="color:#00b2ce;">A Guideline for Implementing Good Solutions</a></button>
+            <button class="bg-dark-gray sher-teal active:bg-purple-600 font-bold uppercase text-base px-8 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal(&quot;modal-example&quot;)">Study tool</button>
+            
       </nav>
     </div>  
     
@@ -213,6 +214,27 @@ h4 {
 	</div>
 </div>
 <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-example-large-backdrop"></div>
+
+
+ <!-- study tools -->
+<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-example">
+	<div class="relative w-auto my-6 mx-auto max-w-6xl">
+		<div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+			<div class="flex items-start justify-between p-5 border-b border-solid border-gray-200 rounded-t">
+				<h3 class="text-3xl font-semibold">Study tools</h3>
+				<button class="p-1 ml-auto bg-transparent border-0 text-gray-300 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal(&quot;modal-example-large&quot;)"><span class="bg-transparent h-6 w-6 text-2xl block outline-none focus:outline-none"><i class="fas fa-times"></i></span></button>
+			</div>
+			<div class="relative p-6 flex-auto">
+                <iframe src="testYourself.html" style="width:800px;height:560px"></iframe>
+			</div>
+			<div class="flex items-center justify-end p-6 border-t border-solid border-gray-200 rounded-b">
+				<button class="sher-teal text-white active:bg-purple-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal(&quot;modal-example&quot;)">understood</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-example-backdrop"></div>
+
 
 
 <script type="text/javascript">

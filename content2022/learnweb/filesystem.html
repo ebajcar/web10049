@@ -80,34 +80,40 @@ ol {
         </button>
       </div>   
       <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
-          <a href="index.html">Web Development</a>
-          <a href="internet.html">Internet and URL</a>
-          <a href="protocols.html">Protocols</a>
+          <a class="bg-gray-100 text-gray-900" href="index.html">Web Development</a>
+          
           <a href="dataflow.html">How the web works</a>
-          <a href="development.html">Planning and designing. Progressive enhancement.</a>
-          <a href="coding.html">Documentation and coding style</a>
-          <a href="debugging.html">Debugging, testing, and validating code</a>
-          <a href="publishing.html">Publishing your website</a>
+          <a href="accessibility.html">User agents and accessibility</a>
+          <a href="protocols.html">Protocols</a>
+          <a href="filesystem.html">Namespace and File naming</a>
+          <a href="files.html">File organization and Pathnames</a>
+          <a href="internet.html">Internet and URL</a>
           <a href="protecting.html">Protecting a website</a>
-          <a href="files.html">File names and organization</a>
-          <a class="bg-gray-100 text-gray-900" href="filesystem.html">File system, Namespace, and Pathnames</a>
+          
+          <a href="standards.html">Standards</a>
+          <a href="progressive.html">Progressive Enhancement.</a>
+          <a href="development.html">Planning and Designing</a>
+          <a href="coding.html">Documentation and Coding style</a>
+          <a href="debugging.html">Debugging and Testing</a>
+          <a href="publishing.html">Publishing your website</a></a>
+          <a href="protecting.html">Protecting a website</a>
       </nav>
     </div>  
         
     <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
-    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">File system, Namespace, and Pathnames</h1>
+    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">Namespace and File naming conventions</h1>
 
 <!-- File system -->
         <div class="my-5">
           <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <div class="flex items-center justify-center w-16 bg-green-500">
+            <div class="flex items-center justify-center w-16 bg-blue-500">
               <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
               </svg>
             </div>
             <div class="px-4 py-2 -mx-3">
               <div class="mx-3">
-                <h4 class="text-2xl font-semibold text-green-500 dark:text-green-400">File system</h4>
+                <h4 class="text-2xl font-semibold text-blue-500 dark:text-blue-400">File system</h4>
                 <ol class="text-base">
                     <li>the most visible aspect of an operating system</li>
                     <li>provides the mechanism to store and access data and programs through
@@ -167,61 +173,38 @@ ol {
 </div> 
 
 
+       <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-16 bg-red-500">
+              <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
+              </svg>
+            </div>
+            <div class="px-4 py-2 -mx-3">
+              <div class="mx-3">
+                <h4 class="text-2xl font-semibold text-red-500 dark:text-green-400">File naming conventions</h4>
+	<ol class="text-base">
+		<li>Do not use spaces in file and directory (folder) names</li>
+		<li>Use short filenames (seven-nine characters) that have meaning</li>
+		<li>Use lower case, but camel casing is OK; be consistent.</li>
+		<li>Use alphanumeric characters only: letters and numbers</li>
+		<li>Avoid special characters, such as * ! # $ % ^ & = + ; ,</li>
+		<li>Use underscores or hyphens; be consistent.</li>
+		<li>Use either .html or .htm (pick one nd stick to it, do not mix); preferred (newer) .html</li>
+		<li>All filenames end in dot-three-letter, some dot-four-letter, extension.</li>
+	</ol> 
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
 
  
   
-   <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
-  <div class="md:flex">
-    <div class="w-80 ">
-      <a href="../images/Picture3.gif" target="_blank"><img   class="h-full w-72 object-cover" src="../images/Picture3.gif" alt="browser-page-load-timeline">
-      </a>
-    </div>
-    <div class="p-4 ">
-        <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Directory</h4>
-        <p class="mt-2 text-xl text-gray-500">We use directories to organize files into a hierarchical tree-like system.</p>
-        <ul class="list-outside">
-            <li>collect files together into groups and store each group in its own directory. </li>
-            <li>Since directories are themselves files, a directory can contain other directories, which creates the hierarchy. </li>
-        </ul>
-         <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Current Working Directory</h4>
-        <ul class="list-outside">
-            <li>This is where the calling process is at the time of the call; </li>
-        </ul>  
-        <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Pathname</h4>
-        <ul class="list-outside">
-            <li>A pathname is a location of any specific file.</li>
-            <li>A full pathname contains all the branch directories between the root and the specific file.</li>
-        </ul>
 
-    </div>
-    
-  </div>
-  <div class="md:flex">
-    <div class="w-1/2 mb-8">
-        <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Absolute pathnames</h4>
-        <p class="mt-2 text-xl text-gray-500">Absolute pathname declares the path starting at the root directory and declaring each directory on the path. </p>
-        <ul class="list-outside">
-            <li>start with the root directory</li>
-            <li>always start with a slash /</li>
-            <li>the absolute pathname to some object is always the same.</li>
-        </ul>
-    </div>
-    <div class="w-1/2 mb-8">
-        <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Relative pathnames</h4>
-        <p class="mt-2 text-xl text-gray-500">Relative pathname declares the path in relation to your current position. It does not contain / as the first character. </p>
-        <ul class="list-outside">
-            <li>start with your current directory </li>
-            <li>never start with a slash </li>
-            <li>the relative pathname to some object depends on your current directory</li>
-        </ul>
-    </div>
-  </div>
-</div> 
-<div>
-  <q>It is best practice to use relative file paths (if possible). When using relative file paths, your web pages will not be bound to your current base URL. All links will work on your own computer (localhost) as well as on your current public domain and your future public domains.</q>
-<a href="https://www.w3schools.com/html/html_filepaths.asp" target="_blank">&mdash;HTML File Paths (w3schools)</a>
-</div>
-  
+
+
 
 
 

@@ -100,56 +100,80 @@ ol {
     </div>  
         
     <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
-    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">Publishing your website</h1>
-    <h4>🚧 Content will become available soon &mdash; currently being updated.</h4>
+    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">Progressive Enhancement (PE)</h1>
 
-<!--
-  <p>It is a standard practice to development applications in a development environment, and then upload the application to a production environment. As changes and additions are made in the development environment, the production environment is synchronized accordingly.</p>
 
-  <h6>Work with sftp and ssh protocols.</h6>
-	<p>If you don't already have it installed on your machine, you can download FileZilla Client from</p>
-  <p><code>
-  https://filezilla-project.org/download.php?type=client</code></p>
-  <p>Make sure the type is client for your machine.</p>
-<figure>
-<iframe style="width:300px;height:200px;" src="https://docs.google.com/presentation/d/e/2PACX-1vTJtn5Pn6NcID_WZVm8mjLxgjpRJDCnmes6GHuM4jXruquONl1JTRxROVOZqHNXoLc8P-UzAOoUjVzh/embed?start=false&loop=false&delayms=3000" frameborder="0"  allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
- <figcaption>Installing FileZilla Client. The tool uses the FTP protocol. (Make sure you always use the "secure" versions.</figcaption>
-</figure>
+
+
+
+
+
+
+        <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-16 bg-red-300">
+              <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
+              </svg>
+            </div>
+            <div class="px-4 py-2 -mx-3">
+              <div class="mx-3">
+              <!--
+                 Progressive Enhancement
+                 MDN: https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement
+                 freecodecamp https://www.freecodecamp.org/news/what-is-progressive-enhancement-and-why-it-matters-e80c7aaf834a/
+                   Initial HTML
+                        Sites are loaded with script. It could be Angular, React or some other framework. When these scripts are responsible for initial content display, your user will be seeing the blank page on the browser or device when something went wrong with scripts or when the user is on the slow network.
+
+                        It’s always good to consider loading initial content from HTML to provide a better user experience, rather than completely relying on scripts which are yet to load.
+                   Strong Foundation
+                   Stability
+                   SEO and Accessibility
+                   https://www.oreilly.com/library/view/designing-with-progressive/9780321659477/ 
+                   Designing with Progressive Enhancement: Building the Web that Works for Everyone ISBN: 9780321658883
+                   https://unboring.net/workflows/progressive-enhancement/
+                   Workflow: Applying Progressive Enhancement on a WebVR project
+              -->
+                <span class="text-2xl font-semibold text-red-500 dark:text-red-400">Progressive enhancement (PE)</span>
+                <p class="text-sm text-gray-600 dark:text-gray-200">
+                     Progressive enhancement is a strategy for web design that emphasizes core web page content first. It emphasizes accessiblity, semantic HTML markup, and external stylesheet and scripting technologies. The part of the development process in focus here (stage 2 of progressive enhancement) includes:</p>
+  <ol type="A">
+    <li>Prepare and organize files.</li>
+    <li>Create HTML document.</li>
+    <li>Identify content types and mark up appropriately (aim for semantic correctness).</li>
+    <li>Test and observe (default) presentation.</li>
+    <li>Validate, correct to remove errors, and re-test.</li>	
+  </ol>	
+  <img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/pe.png" alt="PE approach" style="width:80%;">
+  <span class="text-xl font-semibold text-red-500 dark:text-red-400">Core principles</span>
+		<p>Progressive Enhancement consists of core principles:</p>
+		<ol>
+			 <li>basic content should be accessible to all web browsers</li>
+			 <li>basic functionality should be accessible to all web browsers</li>
+			 <li>sparse, semantic markup contains all content.</li>
+			 <li>enhanced layout is provided by externally linked CSS</li>
+			 <li>enhanced behaviour is provided by unobtrusive, externally linked JavaScript.</li>
+			 <li>end-user web browser preferences are respected</li>
+		</ol>	
+		<p class="blockquote-footer">Read further  <cite title="[ https://www.wikiwand.com/en/Progressive_enhancement ]"><a href="https://www.wikiwand.com/en/Progressive_enhancement" target="_blank"> Progressive enhancement (wikiwand)</a></cite></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
  
-  <h6>Publishing using FileZilla</h6>
-	<dl class="row">
-	  <dt class="col-sm-2 text-primary">STEP 1:</dt>
-	  <dd class="col-sm-10">Start filezilla application. Log in with your credentials onto dev.fast.sheridanc.on.ca</dd>	  
-	  <dt class="col-sm-2 text-primary">STEP 2:</dt>
-	  <dd class="col-sm-10">Navigate to the appropriate location on the server (right panel)
-	  /home/userid/public_html/syst10049</dd>	
-	  <dt class="col-sm-2 text-primary">STEP 3:</dt>
-	  <dd class="col-sm-10">Navigate to the appropriate location on the client (left panel)
-c:/public_html/syst10049</dd>
-	  <dt class="col-sm-2 text-primary">STEP 4:</dt>
-	  <dd class="col-sm-10">Drag and drop the objects from one location (local machine) to the other (server machine).</dd>	  
-	</dl>
 
-		<div hidden>		
-			<h6>Publishing a project using sftp:</h6>
-			<ul class="w3-ul">
-			<li>STEP 1:&nbsp;&nbsp;Start the psftp application. Log in with your credentials onto <code>dev.fast.sheridanc.on.ca</code>
-			</li>
-			<li>STEP 2:&nbsp;&nbsp;On server, position yourself in /home/userid/public_html:<br>
-			<code>cd public_html/syst10049</code>
-			</li>
-			<li>STEP 3:&nbsp;&nbsp;On your laptop, position yourself in c:/public_html directory<br> 
-			<code>lcd c:/public_html/syst10049</code>
-			</li>
-			<li>STEP 4:&nbsp;&nbsp;Upload the entire project:<br>
-			<code>mput -r projectName</code>
-			</li>
-			</ul>
-			<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSArTWRhxe7g_nLMvQ-DIKwDqINMuzOM3s4npsMReM983PZWxS5L2w51dJnsLOKX4Q6GnjBeHix4WWq/embed?start=false&loop=false&delayms=3000" frameborder="0" width="300" height="197" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-			Note: The steps are exactly the same, instead of giving commands, you use the graphical interface. Both tools use FTP protocol. (Make sure you always use the "secure" versions.
-		</div>  
--->        
+
+	<p hidden>Guideline 1.1 - Provide access to alternative content.
+	https://www.w3.org/WAI/UA/work/wiki/Browser_Compliance_Notes
+    https://www.w3.org/WAI/UA/2012/ED-UAAG20-20120119/</p>
+	<!-- FIND LINK TO BROWSER SUPPORT ?????????????????? -->		
+ <!--https://developers.google.com/search/docs-->
+
+
+
+        
         
     </section>
  </main>

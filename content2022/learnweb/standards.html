@@ -33,9 +33,6 @@ figcaption {
   color: #00b2ce;
   font-weight: 500;
 }
-ol {
-  list-style-type: decimal;
-}
 </style>
 </head>
 
@@ -80,6 +77,7 @@ ol {
         </button>
       </div>   
       <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+
           <a class="bg-gray-100 text-gray-900" href="index.html">Web Development</a>
 
           <a href="dataflow.html">How the web works</a>
@@ -96,61 +94,63 @@ ol {
           <a href="coding.html">Documentation and Coding style</a>
           <a href="debugging.html">Debugging and Testing</a>
           <a href="publishing.html">Publishing your website</a>
+
       </nav>
     </div>  
         
     <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
-    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">Publishing your website</h1>
-    <h4>🚧 Content will become available soon &mdash; currently being updated.</h4>
+    <h1 class="text-4xl font-medium leading-tight mt-0 mb-2 text-black-600">Standards and Specifications</h1>
 
-<!--
-  <p>It is a standard practice to development applications in a development environment, and then upload the application to a production environment. As changes and additions are made in the development environment, the production environment is synchronized accordingly.</p>
+      <section class="col-8 container">
 
-  <h6>Work with sftp and ssh protocols.</h6>
-	<p>If you don't already have it installed on your machine, you can download FileZilla Client from</p>
-  <p><code>
-  https://filezilla-project.org/download.php?type=client</code></p>
-  <p>Make sure the type is client for your machine.</p>
-<figure>
-<iframe style="width:300px;height:200px;" src="https://docs.google.com/presentation/d/e/2PACX-1vTJtn5Pn6NcID_WZVm8mjLxgjpRJDCnmes6GHuM4jXruquONl1JTRxROVOZqHNXoLc8P-UzAOoUjVzh/embed?start=false&loop=false&delayms=3000" frameborder="0"  allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
- <figcaption>Installing FileZilla Client. The tool uses the FTP protocol. (Make sure you always use the "secure" versions.</figcaption>
-</figure>
 
- 
-  <h6>Publishing using FileZilla</h6>
-	<dl class="row">
-	  <dt class="col-sm-2 text-primary">STEP 1:</dt>
-	  <dd class="col-sm-10">Start filezilla application. Log in with your credentials onto dev.fast.sheridanc.on.ca</dd>	  
-	  <dt class="col-sm-2 text-primary">STEP 2:</dt>
-	  <dd class="col-sm-10">Navigate to the appropriate location on the server (right panel)
-	  /home/userid/public_html/syst10049</dd>	
-	  <dt class="col-sm-2 text-primary">STEP 3:</dt>
-	  <dd class="col-sm-10">Navigate to the appropriate location on the client (left panel)
-c:/public_html/syst10049</dd>
-	  <dt class="col-sm-2 text-primary">STEP 4:</dt>
-	  <dd class="col-sm-10">Drag and drop the objects from one location (local machine) to the other (server machine).</dd>	  
-	</dl>
+        <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center px-4 bg-blue-800">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="triangle-exclamation" class="w-6 h-6 text-white fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"></path></svg>     
+            </div>
+            <div class="px-4 py-2 -mx-3">
+             
+              <div class="mx-3">
+              <!--div style="background-color: yellow;font-variant:small-caps;text-align:center;width:20%">Resently added</div-->
+                <h3>What are standards?</h3>
+                <p class="text-base text-gray-600 dark:text-gray-200">Standards are published documents that establish specifications and procedures designed to ensure the reliability of the materials, products, methods, and services people use every day. Standards address a range of issues, including but not limited to various protocols that help ensure product functionality and compatibility, facilitate inter-operability and support consumer safety and public health.</p>
+                
+                <h3>Why are they important?</h3>
+                <p>Standards form the fundamental building blocks for product development by establishing consistent protocols that can be universally understood and adopted. This helps fuel compatibility and interoperability and simplifies product development, and speeds time-to-market. Standards also make it easier to understand and compare competing products. As standards are globally adopted and applied in many markets, they also fuel international trade.</P>
+                <p>It is only through the use of standards that the requirements of inter-connectivity and inter-operability can be assured. It is only through the application of standards that the credibility of new products and new markets can be verified. In summary standards fuel the development and implementation of technologies that influence and transform the way we live, work and communicate.</P>
+                <cite>Source: Inside the IEEE-SA, Standards at Work on 10/03/2011</cite>
+              </div>
+            </div>
+          </div>
+        </div>
 
-		<div hidden>		
-			<h6>Publishing a project using sftp:</h6>
-			<ul class="w3-ul">
-			<li>STEP 1:&nbsp;&nbsp;Start the psftp application. Log in with your credentials onto <code>dev.fast.sheridanc.on.ca</code>
-			</li>
-			<li>STEP 2:&nbsp;&nbsp;On server, position yourself in /home/userid/public_html:<br>
-			<code>cd public_html/syst10049</code>
-			</li>
-			<li>STEP 3:&nbsp;&nbsp;On your laptop, position yourself in c:/public_html directory<br> 
-			<code>lcd c:/public_html/syst10049</code>
-			</li>
-			<li>STEP 4:&nbsp;&nbsp;Upload the entire project:<br>
-			<code>mput -r projectName</code>
-			</li>
-			</ul>
-			<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSArTWRhxe7g_nLMvQ-DIKwDqINMuzOM3s4npsMReM983PZWxS5L2w51dJnsLOKX4Q6GnjBeHix4WWq/embed?start=false&loop=false&delayms=3000" frameborder="0" width="300" height="197" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-			Note: The steps are exactly the same, instead of giving commands, you use the graphical interface. Both tools use FTP protocol. (Make sure you always use the "secure" versions.
-		</div>  
--->        
+
+            <div class="my-5">
+              <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center px-4 bg-green-800">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="triangle-exclamation" class="w-6 h-6 text-white fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"></path></svg>     
+            </div>
+                <div class="px-4 py-2 -mx-3">
+                  <div class="mx-3">
+                    <h4 class="text-2xl font-semibold text-green-500 dark:text-green-400">Web Technologies Standards</h4>
+                    <p class="text-base text-gray-600 dark:text-gray-200">
+                    Standards and guidelines assist in optimization for search engines and screen readers. HTML5 semantic elements provide the mechanisms necessary to structure the page more easily for accessibility via screen readers. Search engines take advantage of HTML5 semantics by using the article element to determine the purpose of the page.
+                    </p><p class="text-sm text-gray-600 dark:text-gray-200">
+                      Elements, attributes, and attribute values in HTML are defined in the Specification, to have certain meanings (semantics). These definitions allow HTML processors, like web browsers and search engines, to present documents and applications consistently in different contexts.
+                    </p>
+                    <h4 class="text-2xl font-semibold text-green-500 dark:text-green-400">Specifications</h4>
+                    <ul>
+                    <li><a href="https://www.w3.org/TR/#tr_HTML" target="_blank">All standards & drafts. — W3Consortium (w3.org)</a></li>
+                    <li><a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML Living Standard — Last Updated 5 January 2022 (whatwg.org)</a></li>
+                   
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
         
+      </section>   
     </section>
  </main>
   
@@ -209,7 +209,7 @@ c:/public_html/syst10049</dd>
 </footer> 
  
 </body>
-
+<script type="text/javascript" src="../scripts/index.min.js"></script>
 <script>
   // topnav
   var topButton = document.getElementById("topnavButton");
@@ -222,5 +222,25 @@ c:/public_html/syst10049</dd>
   });
 </script>
 <script src="../scripts/prism.js"></script>
+<!-- Required popper.js -->
+<script
+  src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+  charset="utf-8"
+></script>
+<script>
+  function openPopover(event, popoverID) {
+    let element = event.target;
+    while (element.nodeName !== "BUTTON") {
+      element = element.parentNode;
+    }
+    var popper = Popper.createPopper(
+      element,
+      document.getElementById(popoverID),
+      {
+        placement: "bottom",
+      }
+    );
+    document.getElementById(popoverID).classList.toggle("hidden");
+  }
 </body>
 </html>

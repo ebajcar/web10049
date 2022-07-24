@@ -100,57 +100,82 @@ ol {
     </div>  
         
     <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
-    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">Publishing your website</h1>
-    <h4>🚧 Content will become available soon &mdash; currently being updated.</h4>
+    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">File names and organization</h1>
 
-<!--
-  <p>It is a standard practice to development applications in a development environment, and then upload the application to a production environment. As changes and additions are made in the development environment, the production environment is synchronized accordingly.</p>
-
-  <h6>Work with sftp and ssh protocols.</h6>
-	<p>If you don't already have it installed on your machine, you can download FileZilla Client from</p>
-  <p><code>
-  https://filezilla-project.org/download.php?type=client</code></p>
-  <p>Make sure the type is client for your machine.</p>
-<figure>
-<iframe style="width:300px;height:200px;" src="https://docs.google.com/presentation/d/e/2PACX-1vTJtn5Pn6NcID_WZVm8mjLxgjpRJDCnmes6GHuM4jXruquONl1JTRxROVOZqHNXoLc8P-UzAOoUjVzh/embed?start=false&loop=false&delayms=3000" frameborder="0"  allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
- <figcaption>Installing FileZilla Client. The tool uses the FTP protocol. (Make sure you always use the "secure" versions.</figcaption>
-</figure>
 
  
-  <h6>Publishing using FileZilla</h6>
-	<dl class="row">
-	  <dt class="col-sm-2 text-primary">STEP 1:</dt>
-	  <dd class="col-sm-10">Start filezilla application. Log in with your credentials onto dev.fast.sheridanc.on.ca</dd>	  
-	  <dt class="col-sm-2 text-primary">STEP 2:</dt>
-	  <dd class="col-sm-10">Navigate to the appropriate location on the server (right panel)
-	  /home/userid/public_html/syst10049</dd>	
-	  <dt class="col-sm-2 text-primary">STEP 3:</dt>
-	  <dd class="col-sm-10">Navigate to the appropriate location on the client (left panel)
-c:/public_html/syst10049</dd>
-	  <dt class="col-sm-2 text-primary">STEP 4:</dt>
-	  <dd class="col-sm-10">Drag and drop the objects from one location (local machine) to the other (server machine).</dd>	  
-	</dl>
 
-		<div hidden>		
-			<h6>Publishing a project using sftp:</h6>
-			<ul class="w3-ul">
-			<li>STEP 1:&nbsp;&nbsp;Start the psftp application. Log in with your credentials onto <code>dev.fast.sheridanc.on.ca</code>
-			</li>
-			<li>STEP 2:&nbsp;&nbsp;On server, position yourself in /home/userid/public_html:<br>
-			<code>cd public_html/syst10049</code>
-			</li>
-			<li>STEP 3:&nbsp;&nbsp;On your laptop, position yourself in c:/public_html directory<br> 
-			<code>lcd c:/public_html/syst10049</code>
-			</li>
-			<li>STEP 4:&nbsp;&nbsp;Upload the entire project:<br>
-			<code>mput -r projectName</code>
-			</li>
+
+
+
+<!-- Project file organization and navigation -->
+
+    <h4>Project file organization and navigation</h4> 
+	<p>Where should your website live on your computer? What structure should your website have?</p>
+ 
+
+   <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
+  <div class="md:flex">
+    <div class="w-48  mb-8">
+      <a href="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/sample_webspace_org.png" target="_blank"><img  src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/sample_webspace_org.png" alt="browser-page-load-timeline">
+      </a>
+    </div>
+    <div class="p-4 mb-8">
+      <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Standard file organization</h4>
+      <p class="mt-2 text-xl text-gray-500">Sample webspace organization</p>
+  <p>Practice good file management! Use standard hierarchy structure, conceptual and physical diagrams.</p>
+  <p hidden>The most common structure used is the hierarchy, based on the Graphs and Trees [find file]</p> 
+    </div>
+  </div>
+</div> 
+
+
+
+ 
+  
+   <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
+  <div class="md:flex">
+    <div class="w-3/5  mb-8">
+      <a href="https://www.w3.org/community/webed/wiki/images/5/5d/Path.png" target="_blank"><img  src="https://www.w3.org/community/webed/wiki/images/5/5d/Path.png" alt="browser-page-load-timeline">
+      </a>
+    </div>
+    <div class="p-4 mb-8">
+      <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">File paths (pathnames)</h4>
+      <p class="mt-2 text-xl text-gray-500"><strong>Syntax</strong> <code>&lt;a href="path/file.html">Link label&lt;/a></code></p>
+      			<ul>
+				<li>Linking to file in a <strong>same directory</strong> (current directory is XXX): 
+					code in b.html, linking to c.html <br><code>&lt;a href="c.html">Link label&lt;/a></code></li>
+				<li>Linking to file in a <strong>parent directory</strong>: 
+					code in b.html, linking to a.html <br><code>&lt;a href="../a.html">Link label&lt;/a></code></li>
+				<li>Linking to file in a <strong>subdirectory</strong>:
+					code in a.html, linking to b.html <br><code>&lt;a href="XXX/b.html">Link label&lt;/a></code></li>
+				<li>absolute URL: 
+					<br><code>&lt;a href="http://www.apache.org/foundation/FAQ.html">Apache Software Foundation FAQ&lt;/a></code></li>
 			</ul>
-			<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSArTWRhxe7g_nLMvQ-DIKwDqINMuzOM3s4npsMReM983PZWxS5L2w51dJnsLOKX4Q6GnjBeHix4WWq/embed?start=false&loop=false&delayms=3000" frameborder="0" width="300" height="197" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-			Note: The steps are exactly the same, instead of giving commands, you use the graphical interface. Both tools use FTP protocol. (Make sure you always use the "secure" versions.
-		</div>  
--->        
-        
+    </div>
+  </div>
+</div> 
+  
+
+	<h4>Navigating directory tree</h4>
+	<table>
+    <tr>
+	  <th style="width:300px">Path</th>
+	  <th>What it means&hellip;</th>	
+	</tr><tr>  
+	  <td><code>&lt;a href="tips/page.html"></code></td>
+	  <td>page.html is located in a directory called <em>tips</em>. The file containing this code is located in the current directory.</td>	
+	 </tr><tr> 
+	  <td><code>&lt;a href="tips/other/page.html"></code></td>
+	  <td>page.html is located in a directory called other that is located in a folder called tips that is located in the current directory.</td>
+	 </tr><tr> 
+	  <td><code>&lt;a href="../../page.html"></code></td>
+	  <td>page.html is located in a directory two levels up from the current directory.</td>	
+    </tr>
+	</table>
+
+
+
     </section>
  </main>
   
