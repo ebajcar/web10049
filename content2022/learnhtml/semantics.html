@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<title> SYST10049 learn HTML </title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css"/> 
+<link rel="stylesheet" href="../css/prism_coy_dev.css"  />
+<style>
+dl, ol {
+  margin-bottom: 16px;
+}
+dt {font-weight: bold;}
+h4, h3 {
+  margin-top: 16px;
+}
+.ordered-list {
+  list-style-type: decimal;
+}
+.text-danger {
+  color: red;
+}
+.bg-dark-gray  {
+  background-color: #333940;
+}
+code {
+  color: black !important;
+}
+.sher-teal {
+  color: #00b2ce;
+}
+.bg-sher-teal {
+  background-color: #00b2ce;
+}
+figcaption {
+  color: #00b2ce;
+  font-weight: 500;
+}
+</style>
+</head>
+
+<body>
+  <nav id="navTop" class="w-full z-30 top-0 text-white bg-dark-gray ">
+    <div class="w-full container max-w-screen-lg mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-0 py-2">
+      <div class="md:pl-4">
+        <a class="text-white hover:text-white no-underline hover:no-underline
+        font-bold text-2xl lg:text-4xl rounded-lg hover:bg-nwoods-secondary " href="../">
+          <h1 class="mb-0 p-1 ">SYST10049</h1>
+        </a>
+      </div>
+      <button id="topnavButton" class="rounded-lg sm:hidden focus:outline-none focus:ring" aria-label="Navigation">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path id="topnavOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path id="topnavClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>      
+      <div id="topnavList" class="hidden sm:block items-center w-auto mt-0 text-white p-0 z-20">
+        <ul class="list-reset list-none font-semibold flex justify-end flex-wrap sm:flex-nowrap items-center px-0 pb-0">
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../index.html">Home</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnweb/index.html">Web development</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnhtml/index.html">Learn HTML5</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learncss/index.html">Learn CSS3</a></li>
+          
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="https://piazza.com/sheridan/winter2022/syst10049bajcar" target="_blank">Class Q&amp;A</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-b border-gray-600 opacity-50 my-0 py-0" />
+  </nav>
+    
+  <main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+      
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+      <div class="flex-shrink-0 px-8 py-4">
+        <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path id="navOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path id="navClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>   
+        </button>
+      </div>   
+      <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+
+          <a href="index.html">HTML Markup</a>
+          <a href="standards.html">Standards, Semantic Correctness, and Accessibility</a>
+          <a href="grammar.html">Syntax, Elements, and Attributes</a>
+          <a href="document.html">HTML Document</a>
+          <a href="content.html">Content Models and Organization</a>
+          <a href="form-process.html">HTML Forms</a>
+          <a href="dom.html">Document Object Model (DOM)</a>
+          <a href="textual.html">Marking up textual content</a>
+          <a class="bg-gray-100 text-gray-900" href="semantics.html">Marking up semantic content</a>
+          <a href="interactive.html">Marking up interactive content</a>
+          <!--a href="forms.html">Marking up forms</a-->
+       
+      </nav>
+    </div>  
+        
+    <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
+	<h1 class="text-4xl font-medium leading-tight mt-0 mb-2 text-black-600">Marking up semantic content</h1>
+    
+  
+<section class="col-8 container">
+
+<ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mx-40" id="pills-tabFill" role="tablist">
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#non-semantic" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Non-semantic wrappers</a>
+  </li> 
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#breaks-hrules" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Line breaks and horizontal rules</a>
+  </li> 
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#page-regions" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Page regions</a>
+  </li> 
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#grouping-content" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Grouping content</a>
+  </li> 
+    <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#article-section" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Articles and sections</a>
+  </li> 
+</ul>
+  
+<ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mb-4 mx-48" id="pills-tabFill" role="tablist">
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#figure-figcaption" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Figures and figure captions</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#lists" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Ordered, unordered, and description lists</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#table-data" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Table data structures</a>
+  </li>
+</ul>
+
+
+
+<!-- Non-semantic wrappers -->
+<div id="non-semantic" class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 w-full">Non-semantic wrappers</h4>
+    <p class="text-gray-700 text-base w-full">
+      Used only when a suitable semantic element is not available.  Always give preference to a semantic element before selecting DIV or SPAN</p>
+	<dl class="row">
+	  <dt class="col-sm-4 text-info">The &lt;div> element</dt>
+	  <dd class="col-sm-8">a block behaviour</dd>	  
+	  <dt class="col-sm-4 text-info">The &lt;span> element</dt>
+	  <dd class="col-sm-8">an inline behaviour</dd>		  	  
+	</dl>
+  </div>
+</div>
+
+
+<!-- Line breaks and horizontal rules -->
+<div id="breaks-hrules"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Line breaks and horizontal rules</h4>
+	<dl class="row">
+	  <dt class="col-sm-4 text-info">The &lt;br> element</dt>
+	  <dd class="col-sm-8">a line break; an empty element; inline behaviour (is not a box, does not take up the entire width)</dd>	  
+	  <dt class="col-sm-4 text-info">The &lt;hr> element</dt>
+	  <dd class="col-sm-8">an horizontal line; an empty element; block behaviour</dd>		  	  
+	</dl>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><hr><p>Lorem ipsum dolor sit amet, 
+        <br>consectetur 
+        <br>adipiscing elit, sed do eiusmod tempor incididunt ut labore et <br>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo consequat.</p><hr>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+&lt;/p>
+&lt;hr>
+&lt;p>
+&lt;!-- the same paragraph contains break lines -->
+Lorem ipsum dolor sit amet, 
+&lt;br>consectetur 
+&lt;br>adipiscing elit, sed do eiusmod tempor incididunt 
+ut labore et 
+&lt;br>dolore magna aliqua. Ut enim ad minim veniam, quis 
+nostrud exercitation ullamco 
+&lt;br>laboris nisi ut aliquip ex ea commodo consequat. 
+&lt;/p>
+&lt;hr>
+</code></pre>  
+        </div>
+    </div>
+    <p hidden><a href="#" target="_blank">(full code)</a></p> 
+    <!-- <h4>More examples</h4> -->
+  </div>
+</div>
+
+ 
+<!-- Page regions -->
+<div id="page-regions" class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Page regions</h4>
+    <!--p class="text-gray-700 text-base mb-4">Example using EM and STRONG elements </p-->
+   <dl class="row">	  
+      <dt class="col-sm-3 text-info">element <samp>main</samp></dt>
+      <dd class="col-sm-9">  represents the main content of the body of a document or application. 	 
+      <ul class="list-outside">
+        <li>is not sectioning content and has no effect on the document outline.</li> 
+        <li>main content area of a document includes content that is unique to that document and excludes content that is repeated across a set of documents such as site navigation links, copyright information, site logos and banners and search forms (unless the document or application’s main function is that of a search form).</li> 
+        <li>must not be more than one visible main element in a document.</li> 
+        <li>authors must not include the main element as a descendant of an article, aside, footer, header or nav element.</li> 
+        <li>is not suitable for use to identify the main content areas of sub sections of a document or application.</li> 
+      </ul>
+      <p class="blockquote-footer">Read further  
+        <cite title="[  ]">
+          <a href="https://www.w3.org/TR/html52/grouping-content.html#the-main-element" 
+            target="_blank"> about the main element at W3C☍</a>  
+          <!--a href=" " 
+            target="_blank"> ☍MDN</a-->          
+        </cite>
+      </p> 
+      </dd>	    
+
+      <dt class="col-sm-3 text-info">element <samp>header</samp> </dt>
+      <dd class="col-sm-9"> usually contain Web page's/section's headers: logo, navigations, headers, search form, etc. <small style="word-break:keep-all"><a href="">☍MDN</a>&nbsp;&nbsp;<a href="">☍W3C</a></small></dd>	
+      
+      <dt class="col-sm-3 text-info">element <samp>footer</samp> </dt>
+      <dd class="col-sm-9"> typically contains information about its section: author, links to related documents, copyright info, etc. <small style="word-break:keep-all"><a href="">☍MDN</a>&nbsp;&nbsp;<a href="">☍W3C</a></small></dd>	 
+           
+      <dt class="col-sm-3 text-info">element <samp>aside</samp> </dt>
+      <dd class="col-sm-9"> represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content: pull quotes, sidebars, advertising, groups of nav elements, etc.  
+      <small style="word-break:keep-all"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">☍MDN</a>&nbsp;&nbsp;<a href="https://www.w3.org/TR/html52/sections.html#the-aside-element">☍W3C</a></small></dd>		        
+    </dl>	
+    <p class="blockquote-footer">Read further  <cite title="[ about page regions at W3C ]"><a href="https://www.w3.org/WAI/tutorials/page-structure/regions/#complementary-content" target="_blank"> about page regions at W3C</a></cite></p>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='
+    <header><h1>Page Heading</h1>
+    <nav>links will appear here</nav>
+    <main>Main content goes here</main>
+    <footer><address>Web Development &copy; Sheridan College</address></footer>
+    '  height="280px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3">
+        <h4>Code</h4>
+ <pre class="language-html"><code>
+&lt;!-- a typical layout using page regions -->
+&lt;header>
+  &lt;h1>Page Heading&lt;/h1>
+&lt;header>
+&lt;nav>
+  links will appear here
+&lt;nav>
+&lt;main>
+  &lt;p>Main content goes here.&lt;/p>
+&lt;main>
+&lt;footer>
+  &lt;!-- contact info goes here -->
+  &lt;address>Web Development &copy; Sheridan College&lt;/address>
+&lt;/footer></code></pre>      
+        </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+<!-- Articles and sections -->
+<div id="article-section"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Articles and sections</h4>
+    <dl class="row">     
+      <dt class="col-sm-2 text-info">element <samp>article</samp></dt>
+      <dd class="col-sm-10"> represents a independent item section of content: news topic, forum post, newspaper article, blog entry, user-submitted comment, etc. <p class="blockquote-footer">Read further <small style="word-break:keep-all"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">☍MDN</a>&nbsp;&nbsp;<a href="https://www.w3.org/TR/html52/sections.html#the-article-element">☍W3C</a></small></p> </dd>		  
+      
+	  <dt class="col-sm-2 text-info">element <samp>section</samp></dt>
+      <dd class="col-sm-10">  represents a generic section of a document or application. 	 
+        <ul>
+          <li>It is a thematic grouping of content. Each section should be identified, typically by including a heading (h1-h6 element) as a child of the section element.</li>
+          <li>You are encouraged to use the &lt;article> element, instead, <em>when the content is complete, or self-contained, composition.</em></li> 
+          <li>The section element is not a generic container element. When an element is needed only for styling purposes or as a convenience for scripting, authors are encouraged to use the div element instead. A general rule is that the section element is appropriate only if the element’s contents would be listed explicitly in the document’s outline.</li>      
+        </ul>
+        <p class="blockquote-footer">Read further  
+          <cite title="[  ]">
+            <a href="https://www.w3.org/TR/html52/sections.html#the-section-element" 
+              target="_blank"> about the section element at W3C☍</a>          
+          </cite>
+        </p>     
+      </dd>		    
+    </dl>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='
+<article>
+  <header>
+    <h2>Article Heading</h2>
+    <h5>Byline</h5>
+  </header>
+  <section>
+    <h3>Section 1 Subheading</h3>
+    <p>Content</p>
+  </section>
+  <section>
+    <h3>Section 2 Subheading</h3>
+    <p>Content</p>  
+  </section> 
+  &hellip;  
+  <footer>
+    article footer
+  </footer>    
+</article>
+    '
+                height="338px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- a sample article layout -->
+&lt;article>
+  &lt;header>
+    &lt;h2>Article Heading&lt;/h2>
+    &lt;h5>Byline&lt;/h5>
+  &lt;/header>
+  &lt;section>
+    &lt;h3>Section 1 Subheading&lt;/h3>
+    &lt;p>Content...&lt;/p>
+  &lt;/section>
+  &lt;section>
+    &lt;h3>Section 2 Subheading&lt;/h3>
+    &lt;p>Content...&lt;/p>
+  &lt;/section>  
+    &hellip;
+  &lt;footer>
+    article footer
+  &lt;/footer>    
+&lt;/article>
+</code></pre>  
+        </div>
+    </div>
+    <p hidden><a href="#" target="_blank">(full code)</a></p> 
+    <!-- <h4>More examples</h4> -->
+  </div>
+</div>
+
+
+
+<!-- Grouping content -->
+ <div id="grouping-content" class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-6">
+  <div class="flex">
+    <div class=" w-1/3 md:flex-shrink-0 hover:w-full">
+    <a href="../images/grouping_content_list.png" target="_blank">
+      <img class="h-full w-full object-cover" src="../images/grouping_content_list.png" alt="grouping content">
+      </a>
+    </div>
+    <div class="p-8 w-2/3">
+      <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Grouping content </h4>
+        <p>P, ADDDRESS, HR, PRE, BLOCKQUOTE OL, UL, LI, DL, DT, DD, FIGURE, FIGCAPTION, MAIN, DIV</p>
+        <p>Read details in <a href="https://html.spec.whatwg.org/multipage/grouping-content.html#grouping-content" target="_blank">HTML language specifications (whatwg.org)</a>
+        <br>4.4.1 The p element 4.4.2 The address element 4.4.3 The hr element4.4.4 The pre element 4.4.5 The blockquote element 4.4.6 The ol element 4.4.7 The ul element 4.4.8 The li element 4.4.9 The dl element 4.4.10 The dt element 4.4.11 The dd element 4.4.12 The figure element 4.4.13 The figcaption element 4.4.14 The main element 4.4.15 The div element</p>
+    </div>
+  </div>
+</div> 
+
+
+<!-- 
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Grouping content</h4>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="#" target="_blank">(full code)</a></p> 
+  </div>
+</div>
+-->
+
+
+
+<!-- Figures and figure captions -->
+<div id="figure-figcaption"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Figures and figure captions</h4>
+	<dl class="row">
+	  <dt class="col-sm-3 text-info">element <samp>figure</samp> </dt>
+	  <dd class="col-sm-9">represents some flow content, optionally with a caption, that is self-contained (like a complete sentence) and is typically referenced as a single unit from the main flow of the document.
+      <ul>
+        <li>can be used to annotate illustrations, diagrams, photos, code listings, etc.</li> 
+        <li>when a figure is referred to from the main content of the document by identifying it by its caption (e.g., by figure number), it enables such content to be easily moved away from that primary content, e.g., to the side of the page, to dedicated pages, or to an appendix, without affecting the flow of the document.</li> 
+      </ul>
+      <p class="blockquote-footer">Read further  
+        <cite title="[ about the figure element at W3C☍ ]">
+          <a href="https://www.w3.org/TR/html52/grouping-content.html#the-figure-element" 
+            target="_blank"> about the figure element at W3C☍</a>  
+          <!-- a href=" " 
+            target="_blank"> ☍MDN</a-->          
+        </cite>
+      </p> 
+	  </dd>	
+    
+	  <dt class="col-sm-3 text-info">element <samp>figcaption</samp></dt>
+	  <dd class="col-sm-9"> <p>represents a caption or legend for the rest of the contents of the figcaption element’s parent figure element, if any.</p></dd>
+	</dl>	
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='
+<p>Content before...</p>
+<figure>
+    <img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/semElements.gif" alt="page regions" height="150">
+<figcaption>Figure XVI: description here</figcaption>
+</figure>
+<p>Content after...</p>
+    '  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- image in a figure with description -->
+&lt;p>Content before...&lt;/p>
+&lt;figure>
+    &lt;img src="semElements.gif" alt="page regions">
+&lt;figcaption>Figure XVI: description here&lt;/figcaption>
+&lt;/figure>
+&lt;p>Content after...&lt;/p>
+</code></pre>  
+        </div>
+    </div>
+    <p hidden><a href="#" target="_blank">(full code)</a></p> 
+    <h4>More examples</h4>
+    <p><a href="https://web10049-examples.w3spaces.com/content-semantic/figure-for-code.html" target="_blank">figure-for-code.html </a>(full code)</p> 
+  </div>
+</div>
+
+
+<!-- Ordered, unordered, and description lists -->
+<div id="lists"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Ordered, unordered, and description lists</h4>
+    <h4>Ordered (numbered) and unordered (bulletted) lists</h4>
+	<dl  class="row">	
+	  <dt class="col-sm-2 text-info">element <samp>ol</samp></dt>
+	  <dd class="col-sm-10">The ol element represents a list of items, where the items have been intentionally ordered, such that changing the order would change the meaning of the document. The items of the list are the li element child nodes of the ol element, in tree order.
+      <ul>
+        <li>The <code>reversed</code> attribute is a boolean attribute. If present, it indicates that the list is a descending list (..., 3, 2, 1). If the attribute is omitted, the list is an ascending list (1, 2, 3, ...).</li>
+        <li>The <code>start</code> attribute, if present, must be a valid integer giving the ordinal value of the first list item.</li>
+        <li>The <code>type</code> attribute, can be used to specify the kind of marker to use in the list, in the cases where that matters. It must have a value that is a case-sensitive match for one of the characters <kbd>1</kbd> (decimal), <kbd>a</kbd> (lower-alpha),      <kbd>A</kbd> (upper-alpha), <kbd>i</kbd>  (lower-roman),  <kbd>I</kbd> (upper-roman). </li>
+      </ul>
+    </dd>	
+	  <dt class="col-sm-2 text-info">element <samp>ul</samp></dt>
+	  <dd class="col-sm-10">The ul element represents a list of items, where the order of the items is not important — that is, where changing the order would not materially change the meaning of the document. The items of the list are the li element child nodes of the ul element.</dd>	
+	  <dt class="col-sm-2 text-info">element <samp>li</samp></dt>
+	  <dd class="col-sm-10">The li element represents a list item. If its parent element is an ol, or ul, then the element is an item of the parent element’s list, as defined for those elements. Otherwise, the list item has no defined list-related relationship to any other li element.</dd> 
+	</dl>	
+
+  <p class="blockquote-footer">Read further  <cite title="[ol, ul, li elements at W3C ]"><a href="https://www.w3.org/TR/html52/grouping-content.html#the-ol-element" target="_blank"> ol, ul, li elements at W3C</a></cite></p>
+  
+  <h4>Description lists</h4>
+	<dl  class="row">	
+	  <dt class="col-sm-3 text-info">element <samp>dl</samp></dt>
+	  <dd class="col-sm-8">The dl element represents a description list of zero or more term-description groups. Each term-description group consists of one or more terms and one or more descriptions. Term-description groups may be names and definitions, questions and answers, categories and topics, or any other groups of term-description pairs.</dd>
+	  <dt class="col-sm-3 text-info">element <samp>dt</samp></dt>
+	  <dd class="col-sm-8">The dt element represents a term, part of a term-description group in a description list (dl element).</dd>
+	  <dt class="col-sm-3 text-info">element <samp>dd</samp></dt>
+	  <dd class="col-sm-8">The dd element represents a description, part of a term-description group in a description list (dl element).</dd>	  		  
+	</dl>	
+    
+<p class="blockquote-footer">Read further  <cite title="[about dl, dt, dd on W3C. ]"><a href="https://www.w3.org/TR/html52/grouping-content.html#the-dl-element" target="_blank"> about dl, dt, dd on W3C.</a></cite></p>     
+    
+    <h4>Examples</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='
+  <ol>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ol>
+'  height="158px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;ol>
+  &lt;li>First item&lt;/li>
+  &lt;li>Second item&lt;/li>
+  &lt;li>Third item&lt;/li>
+&lt;/ol>
+</code></pre>  
+        </div>
+    </div>
+    <p hidden><a href="#" target="_blank">(full code)</a></p> 
+    <!-- <h4>More examples</h4> -->
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ul>
+'  height="158px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;ul>
+  &lt;li>First item&lt;/li>
+  &lt;li>Second item&lt;/li>
+  &lt;li>Third item&lt;/li>
+&lt;/ul>
+</code></pre>  
+        </div>
+    </div>
+    <p hidden><a href="#" target="_blank">(full code)</a></p> 
+
+    <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='
+<figure>
+  <figcaption>The top 10 movies of all time</figcaption>
+  <ol reversed>
+    <li><cite lang="sh">Црна мачка, бели мачор</cite>, 1998</li>
+    <li><cite>A Bug’s Life</cite>, 1998</li>
+    <li><cite>Toy Story</cite>, 1995</li>
+    <li><cite>Monsters, Inc</cite>, 2001</li>
+    <li><cite>Cars</cite>, 2006</li>
+    <li><cite>Toy Story 2</cite>, 1999</li>
+    <li><cite>Finding Nemo</cite>, 2003</li>
+    <li><cite>The Incredibles</cite>, 2004</li>
+    <li><cite>Ratatouille</cite>, 2007</li>
+  </ol>
+</figure>
+'  height="288px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;figure>
+  &lt;figcaption>The top 10 movies of all time&lt;/figcaption>
+  &lt;ol reversed>
+    &lt;li>&lt;cite lang="sh">Црна мачка, бели мачор&lt;/cite>, 
+            1998&lt;/li>
+    &lt;li>&lt;cite>A Bug’s Life&lt;/cite>, 1998&lt;/li>
+    &lt;li>&lt;cite>Toy Story&lt;/cite>, 1995&lt;/li>
+    &lt;li>&lt;cite>Monsters, Inc&lt;/cite>, 2001&lt;/li>
+    &lt;li>&lt;cite>Cars&lt;/cite>, 2006&lt;/li>
+    &lt;li>&lt;cite>Toy Story 2&lt;/cite>, 1999&lt;/li>
+    &lt;li>&lt;cite>Finding Nemo&lt;/cite>, 2003&lt;/li>
+    &lt;li>&lt;cite>The Incredibles&lt;/cite>, 2004&lt;/li>
+    &lt;li>&lt;cite>Ratatouille&lt;/cite>, 2007&lt;/li>
+  &lt;/ol>
+&lt;/figure>
+</code></pre>  
+        </div>
+    </div>
+    <p>Example from <cite><a  target="_blank" href="https://www.w3.org/TR/html52/grouping-content.html#the-li-element">W3C</a></cite> demonstrating a reversed ordered list, in a figure with figure caption, use of cite element and lang attribute.</p> 
+
+    
+    <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='
+<dl>
+  <dt>What is my favorite drink?</dt>
+  <dd>Tea</dd>
+  <dt>What is my favorite food?</dt>
+  <dd>Sushi</dd>
+  <dt>What is my favourite film?</dt>
+  <dd>What a Wonderful Life</dd>
+</dl>
+'  height="158px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;dl>
+  &lt;dt>What is my favorite drink?&lt;/dt>
+  &lt;dd>Tea&lt;/dd>
+  &lt;dt>What is my favorite food?&lt;/dt>
+  &lt;dd>Sushi&lt;/dd>
+  &lt;dt>What is my favourite film?&lt;/dt>
+  &lt;dd>What a Wonderful Life&lt;/dd>
+&lt;/dl>
+</code></pre>  
+        </div>
+    </div>
+    <p hidden><a href="#" target="_blank">(full code)</a></p> 
+    
+    <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+            <iframe srcdoc='<dl>
+              <dt lang="en-us"><dfn>Color</dfn></dt>
+              <dt lang="en-gb"><dfn>Colour</dfn></dt>
+              <dd>A sensation which (in humans) derives from the ability of the fine structure of the eye to distinguish three differently filtered analyses of a view.</dd>
+            </dl>'
+             height="158px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!--
+In this example the DFN element indicates that the DT 
+element contains a defined term, the definition for which 
+is represented by the DD element
+-->
+&lt;dl>
+  &lt;dt lang="en-us">&lt;dfn>Color&lt;/dfn>&lt;/dt>
+  &lt;dt lang="en-gb">&lt;dfn>Colour&lt;/dfn>&lt;/dt>
+  &lt;dd>A sensation which (in humans) derives from the ability
+  of the fine structure of the eye to distinguish three 
+  differently filtered analyses of a view.&lt;/dd>
+&lt;/dl>
+</code></pre>  
+        </div>
+    </div>
+    <p hidden><a href="#" target="_blank">(full code)</a></p> 
+  </div>
+</div>
+
+
+<!-- Table data structures -->
+<div id="table-data"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Table data structures</h4>
+	<p>The various table elements and their content attributes together define the <strong>table model</strong>. A <strong>table</strong> consists of cells aligned on a two-dimensional grid of <strong>slots</strong> with coordinates (x, y). The grid is finite, and is either empty or has one or more slots. Tables correspond to <code>table</code> elements. A <strong>cell</strong> is a set of slots anchored at a slot. Cells can either be data cells or header cells. Data cells correspond to <code>td</code> elements, and header cells correspond to <code>th</code> elements. Cells of both types can have zero or more associated header cells. It is possible, in certain error cases, for two cells to occupy the same slot. Documents must not have table model errors. A <strong>row</strong> is a complete set of slots from x=0 to x=N-1, for a particular value of y. Rows usually correspond to <code>tr</code> elements. A <strong>column</strong> is a complete set of slots from y=0 to y=N-1, for a particular value of x. Columns can correspond to <code>col</code> elements. </p>
+    
+    <p>Read more <a href="https://html.spec.whatwg.org/multipage/tables.html#tables" target="_blank">4.9 Tabular data (W3C specs)</a></p> 
+
+	<h4>Simple data tables</h4>
+	<dl class="row">
+	  <dt class="col-sm-4 text-info">element <samp>table</samp> </dt>
+	  <dd class="col-sm-8">An HTML table is defined with the <samp>table</samp> tag.</dd>	  
+    
+	  <dt class="col-sm-4 text-info">element <samp>tr</samp>  </dt>
+	  <dd class="col-sm-8">Each table row is defined with the <samp>tr</samp> tag. </dd>	
+    
+	  <dt class="col-sm-4 text-info">element <samp>td</samp>  </dt>
+	  <dd class="col-sm-8">A table data cell is defined with the <samp>td</samp> tag.</dd>
+    
+	  <dt class="col-sm-4 text-info">element <samp>th</samp>  </dt>
+	  <dd class="col-sm-8">A table header is defined with the <samp>th</samp> tag. By default, table headings are bold and centered.</dd>	
+    
+	  <dt class="col-sm-4 text-info">attribute <code>colspan</code>  </dt>
+	  <dd class="col-sm-8">Cells that span many columns are created using the <code>colspan</code> attribute.</dd>	
+    
+	  <dt class="col-sm-4 text-info">attribute <code>rowspan</code>  </dt>
+	  <dd class="col-sm-8">Cells that span many rows are created using the <code>rowspan</code> attribute.</dd>	
+    
+	  <dt class="col-sm-4 text-info">attribute <code>border</code>  </dt>
+	  <dd class="col-sm-8">If you do not specify a border for the table, it will be displayed without borders. A border is set using the CSS border property. <em class="text-danger">Note that in some examples, the <code>border</code> attribute is used <strong>temporarily</strong>, to display borders without CSS.</em></dd>	
+    
+	  <dt class="col-sm-4 text-info">element <samp>caption</samp>  </dt>
+	  <dd class="col-sm-8">To add a caption to a table, use <samp>caption</samp> tag. It must be inserted <strong>immediately after</strong> the <samp>table</samp> tag.</dd>    
+	</dl>
+    <h4>Examples</h4>
+    <p> Example of a two-by-two table. Note the border attribute is included only during development to see the boraders of the table and the cells. Later will be replaced by styles.</p>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='
+<table border="1">
+  <tr>
+    <td>A</td>
+	<td>B</td>
+  </tr>
+  <tr>
+    <td>C</td>
+	<td>D</td>
+  </tr>  
+</table>
+'  height="220" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- border attribute temporary -->
+&lt;table border="1">	
+  &lt;tr>
+    &lt;td>A&lt;/td>
+    &lt;td>B&lt;/td>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>C&lt;/td>
+    &lt;td>D&lt;/td>
+  &lt;/tr> 
+&lt;/table>
+</code></pre>  
+        </div>
+    </div>
+    <p hidden><a href="#" target="_blank">(full code)</a></p> 
+    <!-- <h4>More examples</h4> -->
+ 
+<p> Example of a two-by-two table. The cells in the first row have been replaced by <strong>table headings (th)</strong>; bold by default.</p> 
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='
+<table border="1">
+  <tr>
+    <th>A</th>
+	<th>B</th>
+  </tr>
+  <tr>
+    <td>C</td>
+	<td>D</td>
+  </tr>  
+</table>
+'  height="220" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- border attribute temporary -->
+&lt;table border="1">	
+  &lt;tr>
+    &lt;th>A&lt;/th>
+    &lt;th>B&lt;/th>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>C&lt;/td>
+    &lt;td>D&lt;/td>
+  &lt;/tr> 
+&lt;/table>
+</code></pre>  
+        </div>
+    </div>
+    <p hidden><a href="#" target="_blank">(full code)</a></p> 
+    <!-- <h4>More examples</h4> -->
+    
+    
+<p> Example of a three-by-three table with row spans and column spans. Note the alignment of the content - horizontally right-justified and vertically centered.</p>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='
+<table border="1">
+  <tr>
+    <td colspan="2">A</td>
+	<td rowspan="2">C</td>
+  </tr>
+  <tr>
+    <td rowspan="2">D</td>
+	<td>E</td>
+  </tr>  
+  <tr>
+	<td colspan="2">H</td>
+  </tr>   
+</table>
+'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- border attribute temporary -->
+&lt;table border="1">	
+  &lt;tr>
+    &lt;td colspan="2">A&lt;/td>
+    &lt;td rowspan="2">C&lt;/td>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td rowspan="2">D&lt;/td>
+    &lt;td>E&lt;/td>
+  &lt;/tr> 
+  &lt;tr>
+    &lt;td colspan="2">H&lt;/td>
+  &lt;/tr>   
+&lt;/table>
+</code></pre>  
+        </div>
+    </div>
+    <p hidden><a href="#" target="_blank">(full code)</a></p> 
+    <!-- <h4>More examples</h4> -->
+    
+    
+	<h4>Complex data tables</h4>	
+	<p><del>tbody, thead, tfoot, col, colgroup</del> - not covered in the condensed version.</p>
+<!--
+	<dl class="row">	  
+	  <dt class="col-sm-4 text-info">The &lt;tbody> element</dt>
+	  <dd class="col-sm-8"></dd>	
+	  <dt class="col-sm-4 text-info">The &lt;thead> element</dt>
+	  <dd class="col-sm-8"></dd>
+	  <dt class="col-sm-4 text-info">The &lt;tfoot> element</dt>
+	  <dd class="col-sm-8"></dd>
+	  <dt class="col-sm-4 text-info">The &lt;col> element</dt>
+	  <dd class="col-sm-8"></dd>
+	  <dt class="col-sm-4 text-info">The &lt;colgroup> element</dt>
+	  <dd class="col-sm-8"></dd>	  
+	</dl>
+    -->
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<p>Not covered in this class. explore on your own.</p>'  height="108px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- comment -->
+&lt;table>
+&lt;tbody>
+&lt;/tbody>
+&lt;thead>
+&lt;/thead>
+&lt;tfoot>
+&lt;/tfoot>
+&lt;/table>
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced" target="_blank">HTML table advanced features and accessibility (MDN)</a></p> 
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map inforgraphic -->
+    
+    
+    
+    
+    
+  </div>
+</div>
+
+ 
+
+ 
+  
+</section>
+     
+    </section>
+ </main>
+  
+
+  
+  <footer class="bg-dark-gray text-white"> 
+     <section class="max-w-screen-lg text-white container mx-auto py-2 px-12">  
+      <p id="version" class="leading-none mb-2 my-4">&copy;  This work is the intellectual property of Sheridan College. Any further copying and distribution outside of class must be within the copyright law. Posting to commercial sites for profit is prohibited.</p>
+         <p class="text-sm text-gray-100 md:mb-6">
+         <a class="text-white" href="">SYST10049 Web development | Sheridan College</a>
+      </p>     
+    </section> 
+    <div class="container max-w-screen-lg mx-auto  px-8">   
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+          <ul class="text-sm font-medium pb-14 sm:pb-20 grid grid-cols-1 sm:grid-cols-3 gap-y-10">
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Course Material</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Resources</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
+                <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Sheridan College</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
+                 <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                 <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                 <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>                  
+                <li>
+                  <a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a>
+                  <span style="color:gray"><br>Office hours (by appointment)</span>
+                </li>
+                <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>  
+                <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+  </div>
+</footer> 
+ 
+</body>
+<!--script src="https://cdn.tailwindcss.com/"></script>
+<script type="text/javascript" src="../scripts/index.min.js"></script-->
+<script>
+  // topnav
+  var topButton = document.getElementById("topnavButton");
+  var topnavList = document.getElementById("topnavList");
+  topButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    topnavList.classList.toggle("hidden");
+    document.getElementById("topnavOpen").classList.toggle("hidden");
+    document.getElementById("topnavClosed").classList.toggle("hidden");
+  });
+</script>
+<script src="../scripts/prism.js"></script>
+<!-- Required popper.js -->
+<script
+  src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+  charset="utf-8"
+></script>
+<script>
+  function openPopover(event, popoverID) {
+    let element = event.target;
+    while (element.nodeName !== "BUTTON") {
+      element = element.parentNode;
+    }
+    var popper = Popper.createPopper(
+      element,
+      document.getElementById(popoverID),
+      {
+        placement: "bottom",
+      }
+    );
+    document.getElementById(popoverID).classList.toggle("hidden");
+  }
+</body>
+</html>

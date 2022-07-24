@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<title> SYST10049 learn HTML </title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css"/> 
+<link rel="stylesheet" href="../css/prism_coy_dev.css"  />
+<style>
+dl, ol {
+  margin-bottom: 16px;
+}
+h4, h3 {
+  margin-top: 16px;
+}
+.ordered-list {
+  list-style-type: decimal;
+}
+.text-danger {
+  color: red;
+}
+.bg-dark-gray  {
+  background-color: #333940;
+}
+code {
+  color: black !important;
+}
+.sher-teal {
+  color: #00b2ce;
+}
+figcaption {
+  color: #00b2ce;
+  font-weight: 500;
+}
+ol {
+  list-style-type: decimal;
+}
+</style>
+</head>
+
+<body>
+  <nav id="navTop" class="w-full z-30 top-0 text-white bg-dark-gray ">
+    <div class="w-full container max-w-screen-lg mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-0 py-2">
+      <div class="md:pl-4">
+        <a class="text-white hover:text-white no-underline hover:no-underline
+        font-bold text-2xl lg:text-4xl rounded-lg hover:bg-nwoods-secondary " href="../">
+          <h1 class="mb-0 p-1 ">SYST10049</h1>
+        </a>
+      </div>
+      <button id="topnavButton" class="rounded-lg sm:hidden focus:outline-none focus:ring" aria-label="Navigation">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path id="topnavOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path id="topnavClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>      
+      <div id="topnavList" class="hidden sm:block items-center w-auto mt-0 text-white p-0 z-20">
+        <ul class="list-reset list-none font-semibold flex justify-end flex-wrap sm:flex-nowrap items-center px-0 pb-0">
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../index.html">Home</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnweb/index.html">Web development</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnhtml/index.html">Learn HTML5</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learncss/index.html">Learn CSS3</a></li>
+          
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="https://piazza.com/sheridan/winter2022/syst10049bajcar" target="_blank">Class Q&amp;A</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-b border-gray-600 opacity-50 my-0 py-0" />
+  </nav>
+    
+  <main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+      
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+      <div class="flex-shrink-0 px-8 py-4">
+        <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path id="navOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path id="navClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>   
+        </button>
+      </div>   
+      <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+          <a href="index.html">Web Development</a>
+          <a href="internet.html">Internet and URL</a>
+          <a href="protocols.html">Protocols</a>
+          <a href="dataflow.html">How the web works</a>
+          <a class="bg-gray-100 text-gray-900" href="development.html">Planning and designing. Progressive enhancement.</a>
+          <a href="coding.html">Documentation and coding style</a>
+          <a href="debugging.html">Debugging, testing, and validating code</a>
+          <a href="publishing.html">Publishing your website</a>
+          <a href="protecting.html">Protecting a website</a>
+          <a href="files.html">File names and organization</a>
+          <a href="filesystem.html">File system, Namespace, and Pathnames</a>
+      </nav>
+    </div>  
+        
+    <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
+    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">Planning and designing a web app</h1>
+
+<p class="text-base font-light leading-relaxed mt-6 mb-1 text-gray-800">HTML may not be a programming language, but we apply the same rigor and attention to detail as with other programming languages. Commonly, HTML and CSS are part of development in other languages, like Java, Python, PHP, and many others, to design the user interface for an application.</p>
+
+ <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
+  <div class="md:flex">
+    <div class="md:flex-shrink-0">
+      <a href="../images/sdlc2.jpg" target="_blank"><img class="h-full w-72 object-cover" src="../images/sdlc2.jpg" alt="Web taxonomy and status">
+      </a>
+    </div>
+    <div class="p-8">
+      <p class="mt-2 text-xl text-gray-500">Software development is the process of conceiving, specifying, designing, programming, documenting, testing, and bug fixing involved in creating and maintaining applications, frameworks, or other software components.</p>
+      <p>Read further        <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works" target="_blank"> How the Web works</a></p>
+    </div>
+  </div>
+</div> 
+
+
+
+
+        <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+
+            <div class="px-4 py-2 -mx-3">
+              <div class="mx-3">
+
+                <p class="text-sm text-gray-600 dark:text-gray-200">
+                   Keep in mind that the process involves many aspects that we are not including here. A significant part of planning and design, is to 
+ identify and organize content, then to consider how this content (objects) is going to be presented to the user. The process includes the following steps and techniques:</p>
+  <ol style="list-style:none;">
+    <li>Step 1:  understand theme and topics of website and decode user requirements.</li>
+    <li>Step 2:  choose right style and sketch ideas using 
+        <dfn data-toggle="tooltip" data-placement="top" title="Visual technique to organize your web pages to plan their sequence and relationships.">storyboard</dfn> techniques.</li>
+    <li>Step 3:  draw clean and clear <dfn data-toggle="tooltip" data-placement="top" title="Diagrams to plan out the layout of your web pages">wireframes</dfn> to summarize structure.</li>
+    <li>Step 4:  design pages in pixels and create a real-scale mockups.</li>
+    <li>Step 5:  convert mockups to HTML and CSS.</li>	
+   </ol>  
+   <p>You will work from textual descriptions, rendered results, and rough sketches, to convert to HTML, and later to CSS.</p>
+
+  <p class="blockquote-footer">Read further  <cite title="[ basics of user experiences (google) ]"><a href="https://developers.google.com/web/fundamentals/design-and-ux/ux-basics/#storyboard_the_idea" target="_blank"> about basics of user experiences (google)</a></cite></p>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-16 bg-red-300">
+              <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
+              </svg>
+            </div>
+            <div class="px-4 py-2 -mx-3">
+              <div class="mx-3">
+              <!--
+                 Progressive Enhancement
+                 MDN: https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement
+                 freecodecamp https://www.freecodecamp.org/news/what-is-progressive-enhancement-and-why-it-matters-e80c7aaf834a/
+                   Initial HTML
+                        Sites are loaded with script. It could be Angular, React or some other framework. When these scripts are responsible for initial content display, your user will be seeing the blank page on the browser or device when something went wrong with scripts or when the user is on the slow network.
+
+                        It’s always good to consider loading initial content from HTML to provide a better user experience, rather than completely relying on scripts which are yet to load.
+                   Strong Foundation
+                   Stability
+                   SEO and Accessibility
+                   https://www.oreilly.com/library/view/designing-with-progressive/9780321659477/ 
+                   Designing with Progressive Enhancement: Building the Web that Works for Everyone ISBN: 9780321658883
+                   https://unboring.net/workflows/progressive-enhancement/
+                   Workflow: Applying Progressive Enhancement on a WebVR project
+              -->
+                <span class="text-2xl font-semibold text-red-500 dark:text-red-400">Progressive enhancement (PE)</span>
+                <p class="text-sm text-gray-600 dark:text-gray-200">
+                     Progressive enhancement is a strategy for web design that emphasizes core web page content first. It emphasizes accessiblity, semantic HTML markup, and external stylesheet and scripting technologies. The part of the development process in focus here (stage 2 of progressive enhancement) includes:</p>
+  <ol type="A">
+    <li>Prepare and organize files.</li>
+    <li>Create HTML document.</li>
+    <li>Identify content types and mark up appropriately (aim for semantic correctness).</li>
+    <li>Test and observe (default) presentation.</li>
+    <li>Validate, correct to remove errors, and re-test.</li>	
+  </ol>	
+  <img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/pe.png" alt="PE approach" style="width:80%;">
+  <span class="text-xl font-semibold text-red-500 dark:text-red-400">Core principles</span>
+		<p>Progressive Enhancement consists of core principles:</p>
+		<ol>
+			 <li>basic content should be accessible to all web browsers</li>
+			 <li>basic functionality should be accessible to all web browsers</li>
+			 <li>sparse, semantic markup contains all content.</li>
+			 <li>enhanced layout is provided by externally linked CSS</li>
+			 <li>enhanced behaviour is provided by unobtrusive, externally linked JavaScript.</li>
+			 <li>end-user web browser preferences are respected</li>
+		</ol>	
+		<p class="blockquote-footer">Read further  <cite title="[ https://www.wikiwand.com/en/Progressive_enhancement ]"><a href="https://www.wikiwand.com/en/Progressive_enhancement" target="_blank"> Progressive enhancement (wikiwand)</a></cite></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+ 
+
+
+	<p hidden>Guideline 1.1 - Provide access to alternative content.
+	https://www.w3.org/WAI/UA/work/wiki/Browser_Compliance_Notes
+    https://www.w3.org/WAI/UA/2012/ED-UAAG20-20120119/</p>
+	<!-- FIND LINK TO BROWSER SUPPORT ?????????????????? -->		
+ <!--https://developers.google.com/search/docs-->
+
+
+
+        
+        
+    </section>
+ </main>
+  
+
+  
+  <footer class="bg-dark-gray text-white"> 
+     <section class="max-w-screen-lg text-white container mx-auto py-2 px-12">  
+      <p id="version" class="leading-none mb-2 my-4">&copy;  This work is the intellectual property of Sheridan College. Any further copying and distribution outside of class must be within the copyright law. Posting to commercial sites for profit is prohibited.</p>
+         <p class="text-sm text-gray-100 md:mb-6">
+         <a class="text-white" href="">SYST10049 Web development | Sheridan College</a>
+      </p>     
+    </section> 
+    <div class="container max-w-screen-lg mx-auto  px-8">   
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+          <ul class="text-sm font-medium pb-14 sm:pb-20 grid grid-cols-1 sm:grid-cols-3 gap-y-10">
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Course Material</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Resources</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
+                <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Sheridan College</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
+                 <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                 <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                 <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>                  
+                <li>
+                  <a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a>
+                  <span style="color:gray"><br>Office hours (by appointment)</span>
+                </li>
+                <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>  
+                <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+  </div>
+</footer> 
+ 
+</body>
+
+<script>
+  // topnav
+  var topButton = document.getElementById("topnavButton");
+  var topnavList = document.getElementById("topnavList");
+  topButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    topnavList.classList.toggle("hidden");
+    document.getElementById("topnavOpen").classList.toggle("hidden");
+    document.getElementById("topnavClosed").classList.toggle("hidden");
+  });
+</script>
+<script src="../scripts/prism.js"></script>
+</body>
+</html>

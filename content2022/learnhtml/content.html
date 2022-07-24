@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<title> SYST10049 learn HTML </title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css"/> 
+<link rel="stylesheet" href="../css/prism_coy_dev.css"  />
+<style>
+dl, ol {
+  margin-bottom: 16px;
+}
+dt {font-weight: bold;}
+h4, h3 {
+  margin-top: 16px;
+}
+.ordered-list {
+  list-style-type: decimal;
+}
+.text-danger {
+  color: red;
+}
+.bg-dark-gray  {
+  background-color: #333940;
+}
+code {
+  color: black !important;
+}
+.sher-teal {
+  color: #00b2ce;
+}
+.bg-sher-teal {
+  background-color: #00b2ce;
+}
+figcaption {
+  color: #00b2ce;
+  font-weight: 500;
+}
+</style>
+</head>
+
+<body>
+  <nav id="navTop" class="w-full z-30 top-0 text-white bg-dark-gray ">
+    <div class="w-full container max-w-screen-lg mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-0 py-2">
+      <div class="md:pl-4">
+        <a class="text-white hover:text-white no-underline hover:no-underline
+        font-bold text-2xl lg:text-4xl rounded-lg hover:bg-nwoods-secondary " href="../">
+          <h1 class="mb-0 p-1 ">SYST10049</h1>
+        </a>
+      </div>
+      <button id="topnavButton" class="rounded-lg sm:hidden focus:outline-none focus:ring" aria-label="Navigation">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path id="topnavOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path id="topnavClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>      
+      <div id="topnavList" class="hidden sm:block items-center w-auto mt-0 text-white p-0 z-20">
+        <ul class="list-reset list-none font-semibold flex justify-end flex-wrap sm:flex-nowrap items-center px-0 pb-0">
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../index.html">Home</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnweb/index.html">Web development</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnhtml/index.html">Learn HTML5</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learncss/index.html">Learn CSS3</a></li>
+          
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="https://piazza.com/sheridan/winter2022/syst10049bajcar" target="_blank">Class Q&amp;A</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-b border-gray-600 opacity-50 my-0 py-0" />
+  </nav>
+    
+  <main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+      
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+      <div class="flex-shrink-0 px-8 py-4">
+        <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path id="navOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path id="navClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>   
+        </button>
+      </div>   
+      <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+
+          <a href="index.html">HTML Markup</a>
+          <a href="standards.html">Standards, Semantic Correctness, and Accessibility</a>
+          <a href="grammar.html">Syntax, Elements, and Attributes</a>
+          <a href="document.html">HTML Document</a>
+          <a class="bg-gray-100 text-gray-900" href="content.html">Content Models and Organization</a>
+          <a href="form-process.html">HTML Forms</a>
+          <a href="dom.html">Document Object Model (DOM)</a>
+          <a href="textual.html">Marking up textual content</a>
+          <a href="semantics.html">Marking up semantic content</a>
+          <a href="interactive.html">Marking up interactive content</a>
+          <!--a href="forms.html">Marking up forms</a-->
+       
+      </nav>
+    </div>  
+        
+    <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
+	<h1 class="text-4xl font-medium leading-tight mt-0 mb-2 text-black-600">Content Models and Organization</h1>
+    
+  
+<section class="col-8 container">
+
+<div class="grid grid-cols-2 gap-4 w-3/4 mt-6 m-auto">
+  <div class="border-t-4 border-teal-500 pt-4">
+    <p class="uppercase sher-teal font-bold">Information artefacts</p>
+    <p class="font-semibold">Content organization
+    <br>Content structure
+    <br>Page regions
+    <br>Headings
+    <br>Labeling regions
+    </p>
+  </div>
+  <div class="border-t-4 border-teal-500 pt-4">
+    <p class="uppercase sher-teal font-bold">Content Models</p>
+    <p class="font-semibold">Block and inline flow
+    <br>Root element
+    <br>Document metadata
+    <br>Inline text semantics
+    <br>Text content
+    <br>Table content
+    <br>Image and multimedia
+    <br>Interactive elements
+    <br>Content sectioning
+    <br>Obsolete and depricated
+    </p>
+  </div>
+</div>
+
+
+
+ <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
+  <div class="md:flex">
+    <div class="md:flex-shrink-0">
+      <a href="../images/artefacts.png" target="_blank"><img class="h-full w-full object-cover md:w-48" src="../images/artefacts.png" alt="Web taxonomy and status">
+      </a>
+    </div>
+    <div class="p-8">
+      <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Information artefacts</h4>
+      <p class="mt-2 text-gray-500">All data and information presented to the user as <strong>information artefacts</strong>&mdash;Common information artefacts examples include review, monograph, book, letter, memo, blog, manual, story, report, news article, in all forms—audio, video, text, braille.</p>
+	<p>Each element defined in the specification has a content model: a description of the element’s expected contents. An HTML element must have contents that match the requirements described in the element’s content model. The contents of an element are its children in the DOM.</p>
+    </div>
+  </div>
+</div> 
+
+
+
+<div class="my-5">
+  <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="flex items-center justify-center px-4 bg-sher-teal">
+
+      
+ <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="triangle-exclamation" class="w-6 h-6 text-white fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"></path></svg>     
+    </div>
+    <div class="px-4 py-2 -mx-3">
+      <div class="mx-3">
+        <span class="text-2xl font-semibold sher-teal">Content organization</span>
+        <p>Well-structured content allows more efficient navigation and processing. Use HTML and WAI-ARIA to improve navigation and orientation on web pages and in applications.</p>
+    <dl class="row">
+      <dt class="col-sm-3">Page Regions</dt>
+      <dd class="col-sm-9">Identify and mark up regions on web pages using HTML5 and WAI-ARIA roles.</dd>	
+      <dt class="col-sm-3">Labeling Regions</dt>
+      <dd class="col-sm-9">Label regions to allow users to distinguish and access them.</dd>
+      <dt class="col-sm-3">Headings</dt>
+      <dd class="col-sm-9">Add headings and nest them logically to label sections of web pages according to their relationships and importance.</dd>
+      <dt class="col-sm-3">Content Structure</dt>
+      <dd class="col-sm-9">Mark up the content on a page in a way that uses appropriate and meaningful elements.</dd>
+    </dl>
+    <p class="blockquote-footer">Read further  <cite title="[ Page Structure Concepts ]"><a href="https://www.w3.org/WAI/tutorials/page-structure/" target="_blank"> Page Structure Concepts and why is it important?</a></cite></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h5 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Content Models</h5>
+    <p class="text-gray-700 text-base mb-4">
+    A content model is a description of the element’s expected contents. An HTML element must have contents that match the requirements described in the element’s content model. The contents of an element are its children in the DOM (flow, interactive, embedded, phrasing, meta-data, sectioning, heading).</p>
+      <p>Hover over the image to see the list of elements that fall into the category. <a href="https://www.w3.org/TR/html52/dom.html#content-models" target="blank">&mdash;from W3C (click to go to the specification document).</a>
+    </p>
+    <object data="https://www.w3.org/TR/html52/images/content-venn.svg" style="width:100%" height="288"><img alt="" height="168" src="https://www.w3.org/TR/html52/images/content-venn.svg" width="112"></object>
+  </div>
+</div>
+
+<div class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Block and inline flow</h4>
+    <p class="text-gray-700 text-base">
+      By default, block-level elements begin on new lines. </p>
+    <p>Read further  <cite title="[ https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements ]"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank"> Block-level elements (MDN web docs)</a></cite></p>
+    <p class="text-gray-700 text-base">By default, inline elements stay in line of the parent element. 
+      To determine what content category a particular element belongs to, examine the specifications document.
+      </p>
+      <p>Read further  <cite title="[ https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements ]"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank"> Inline elements (MDN web docs)</a></cite></p>
+  </div>
+</div>
+
+ 
+
+
+ <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
+  <div class="md:flex">
+    <div class="md:flex-shrink-0">
+      <a href="../../html5elements/dist/index.html" target="_blank"><img class="h-full w-full object-cover md:w-48" src="../images/elements_table.png" alt="Web taxonomy and status">
+      </a>
+    </div>
+    <div class="p-8">
+      <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Table of HTML elements</h4>
+      <p class="mt-2 text-gray-500">Click on the image on the left to explore the table of HTML elements; hover to see the groupings of content models; click on an element to dig deeper. The table highlights the subset of elements to become familiar with in this course.</p>
+      <table>
+        <tr><td class="w-40">Main root</td><td>HTML</td></tr>
+        <tr><td>Document metadata</td><td>HEAD &bull; LINK &bull; META &bull; STYLE &bull; TITLE</td></tr>
+        <tr><td>Sectioning root</td><td>BODY</td></tr>
+        <tr><td>Content sectioning</td><td>ADDRESS &bull; ARTICLE &bull; ASIDE &bull; FOOTER &bull; HEADER &bull; H1 - H6 &bull; MAIN &bull; NAV &bull; SECTION</td></tr>
+        <tr><td>Text content</td><td>BLOCKQUOTE &bull; DD &bull; DIV &bull; DL &bull; DT &bull; FIGCAPTION &bull; FIGURE &bull; HR &bull; LI &bull; OL &bull; P &bull; PRE &bull; UL</td></tr>
+        <tr><td>Inline text semantics</td><td>A &bull; ABBR &bull; B &bull; BR &bull; CITE &bull; CODE &bull; DFN &bull; EM &bull; KBD &bull; MARK &bull; Q &bull; SAMP &bull; SMALL &bull; SPAN &bull; STRONG &bull; SUB &bull; SUP &bull; TIME &bull; U &bull; VAR</td></tr>
+        <tr><td>Image and multimedia</td><td>AREA &bull; AUDIO &bull; IMG &bull; MAP &bull; TRACK &bull; VIDEO</td></tr>
+        <tr><td>Embedded content</td><td>EMBED &bull; IFRAME &bull; OBJECT &bull; PARAM &bull; PICTURE &bull; SOURCE</td></tr>
+        <tr><td>Demarcating edits</td><td>DEL &bull; INS</td></tr>
+        <tr><td>Table content</td><td>CAPTION &bull; TABLE &bull; TD &bull; TH &bull; TR</td></tr>
+        <tr><td>Forms</td><td>BUTTON &bull; DATALIST &bull; FIELDSET &bull; FORM &bull; INPUT &bull; LABEL &bull; LEGEND &bull; METER &bull; OPTGROUP &bull; OPTION &bull; OUTPUT &bull; PROGRESS &bull; SELECT &bull; TEXTAREA</td></tr>
+        <tr><td>Interactive elements</td><td>DETAILS &bull; SUMMARY</td></tr>
+      </table>
+      <p class="mt-2 text-gray-500">Explore the full reference list of HTML elements on      
+       <cite title="[ HTML elements reference ]"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank"> MDN Web Docs</a></cite></p>
+    </div>
+  </div>
+</div> 
+
+ 
+  
+</section>
+     
+    </section>
+ </main>
+  
+
+  
+  <footer class="bg-dark-gray text-white"> 
+     <section class="max-w-screen-lg text-white container mx-auto py-2 px-12">  
+      <p id="version" class="leading-none mb-2 my-4">&copy;  This work is the intellectual property of Sheridan College. Any further copying and distribution outside of class must be within the copyright law. Posting to commercial sites for profit is prohibited.</p>
+         <p class="text-sm text-gray-100 md:mb-6">
+         <a class="text-white" href="">SYST10049 Web development | Sheridan College</a>
+      </p>     
+    </section> 
+    <div class="container max-w-screen-lg mx-auto  px-8">   
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+          <ul class="text-sm font-medium pb-14 sm:pb-20 grid grid-cols-1 sm:grid-cols-3 gap-y-10">
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Course Material</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Resources</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
+                <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Sheridan College</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
+                 <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                 <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                 <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>                  
+                <li>
+                  <a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a>
+                  <span style="color:gray"><br>Office hours (by appointment)</span>
+                </li>
+                <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>  
+                <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+  </div>
+</footer> 
+ 
+</body>
+<!--script src="https://cdn.tailwindcss.com/"></script>
+<script type="text/javascript" src="../scripts/index.min.js"></script-->
+<script>
+  // topnav
+  var topButton = document.getElementById("topnavButton");
+  var topnavList = document.getElementById("topnavList");
+  topButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    topnavList.classList.toggle("hidden");
+    document.getElementById("topnavOpen").classList.toggle("hidden");
+    document.getElementById("topnavClosed").classList.toggle("hidden");
+  });
+</script>
+<script src="../scripts/prism.js"></script>
+<!-- Required popper.js -->
+<script
+  src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+  charset="utf-8"
+></script>
+<script>
+  function openPopover(event, popoverID) {
+    let element = event.target;
+    while (element.nodeName !== "BUTTON") {
+      element = element.parentNode;
+    }
+    var popper = Popper.createPopper(
+      element,
+      document.getElementById(popoverID),
+      {
+        placement: "bottom",
+      }
+    );
+    document.getElementById(popoverID).classList.toggle("hidden");
+  }
+</body>
+</html>

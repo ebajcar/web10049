@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<title> SYST10049 learn HTML </title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css"/> 
+<link rel="stylesheet" href="../css/prism_coy_dev.css"  />
+<style>
+dl, ol {
+  margin-bottom: 16px;
+}
+h4, h3 {
+  margin-top: 16px;
+}
+.ordered-list {
+  list-style-type: decimal;
+}
+.text-danger {
+  color: red;
+}
+.bg-dark-gray  {
+  background-color: #333940;
+}
+code {
+  color: black !important;
+}
+.sher-teal {
+  color: #00b2ce;
+}
+figcaption {
+  color: #00b2ce;
+  font-weight: 500;
+}
+ol {
+  list-style-type: decimal;
+}
+</style>
+</head>
+
+<body>
+  <nav id="navTop" class="w-full z-30 top-0 text-white bg-dark-gray ">
+    <div class="w-full container max-w-screen-lg mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-0 py-2">
+      <div class="md:pl-4">
+        <a class="text-white hover:text-white no-underline hover:no-underline
+        font-bold text-2xl lg:text-4xl rounded-lg hover:bg-nwoods-secondary " href="../">
+          <h1 class="mb-0 p-1 ">SYST10049</h1>
+        </a>
+      </div>
+      <button id="topnavButton" class="rounded-lg sm:hidden focus:outline-none focus:ring" aria-label="Navigation">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path id="topnavOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path id="topnavClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>      
+      <div id="topnavList" class="hidden sm:block items-center w-auto mt-0 text-white p-0 z-20">
+        <ul class="list-reset list-none font-semibold flex justify-end flex-wrap sm:flex-nowrap items-center px-0 pb-0">
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../index.html">Home</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnweb/index.html">Web development</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnhtml/index.html">Learn HTML5</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learncss/index.html">Learn CSS3</a></li>
+          
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="https://piazza.com/sheridan/winter2022/syst10049bajcar" target="_blank">Class Q&amp;A</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-b border-gray-600 opacity-50 my-0 py-0" />
+  </nav>
+    
+  <main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+      
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+      <div class="flex-shrink-0 px-8 py-4">
+        <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path id="navOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path id="navClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>   
+        </button>
+      </div>   
+      <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+          <a href="index.html">Web Development</a>
+          <a href="internet.html">Internet and URL</a>
+          <a href="protocols.html">Protocols</a>
+          <a href="dataflow.html">How the web works</a>
+          <a href="development.html">Planning and designing. Progressive enhancement.</a>
+          <a href="coding.html">Documentation and coding style</a>
+          <a href="debugging.html">Debugging, testing, and validating code</a>
+          <a href="publishing.html">Publishing your website</a>
+          <a class="bg-gray-100 text-gray-900" href="protecting.html">Protecting a website</a>
+          <a href="files.html">File names and organization</a>
+          <a href="filesystem.html">File system, Namespace, and Pathnames</a>
+      </nav>
+    </div>  
+        
+    <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
+    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">Protecting a website</h1>
+
+
+  <p>Protecting your website is important and needs continual effort. A detailed security plan is necessary but some fundamental steps can be a start. Here are some basic steps you can take:</p>
+  <ol>
+    <li>Use open source scripts and update to new versions as soon as they are released</li>
+    <li>Use strong passwords (combination of alpha, numberic, and special characters; minimum length)</li>
+    <li>Secure the Admin Email address</li>
+    <li>Change file and directory permissions</li>
+    <li>Use Secured FTP Access (encrypted upload)</li>  
+  </ol>
+  <hr>
+  <h4>Check file and directory permissions</h4>
+  <p>Permissions for files and directories should NEVER be 777 (rwxrwxrwx)<br>
+    Set files to 644 (rw-r--r--) and directories to 755 or (rwxr-xr-x),  to allow web pages to be processed.</p>
+			<table class="table table-sm">
+		      <thead>
+		        <tr>
+		          <th>#</th>
+		          <th>Permissions</th>
+		          <th>Numeric<br>Equivalent</th>
+		          <th>Description</th>
+		        </tr>
+		      </thead>
+		      <tbody>
+		        <tr>
+		          <td>1</td>
+		          <td style="width:160px;"><code>-rw-------</code></td>
+		          <td>600</td>
+		          <td>Owner has read and write permissions. Set for most files.</td>
+		        </tr>
+		        <tr>
+		          <td>2</td>
+		          <td><code>-rw-r--r--</code></td>
+		          <td>644</td>
+		          <td>Owner hs read and write permissions; group and world have read only permission. Be sure you want to let other people read this file. Appropriate for most web-related files.</td>
+		        </tr>
+		        <tr>
+		          <td>3</td>
+		          <td><code>-rw-rw-rw-</code></td>
+		          <td>666</td>
+		          <td>Everyone has read and write permissions. Not recommended; this combination allows the file to be accessed and changed by anyone, anywhere on the system.</td>
+		        </tr>
+		        <tr>
+		          <td>4</td>
+		          <td><code>-rwx------</code></td>
+		          <td>700</td>
+		          <td>Owner has read, write, and execute permissions. Best combination for programs the owner wishes to run (files that result from compiling a C or Java program).</td>
+		        </tr>                
+		        <tr>
+		          <td>5</td>
+		          <td><code>-rwxr-xr-x</code></td>
+		          <td>755</td>
+		          <td>Owner has read, write, and execute permissions. Everyone else has read and execute permissions. Appropriate for web site directories.</td>
+		        </tr>     
+		        <tr>
+		          <td>6</td>
+		          <td><code>-rwxrwxrwx</code></td>
+		          <td>777</td>
+		          <td>Everyone has read, write, and execute privileges. Like the 666 setting, this combination should be avoided. 
+                  </td>
+		        </tr> 
+		        <tr>
+		          <td>7</td>
+		          <td><code>-rwx--x--x</code></td>
+		          <td>711</td>
+		          <td>Owner has read, write, and execute privileges. everyone else has execute only permissions. Useful for programs that you want to let others run but not copy. Unfortunately, this is not sufficient for web-related files because the users need to see the content of the files, otherwise your web pages will not render.
+                  </td>
+		        </tr> 
+ 		        <tr>
+		          <td>8</td>
+		          <td><code>drwx------</code></td>
+		          <td>700</td>
+		          <td>This is a directory created with the mkdir command. Only the owner has read, write, and execute privileges. Note that all directories must have the executable bit set.
+                  </td>
+		        </tr> 
+ 		        <tr>
+		          <td>9</td>
+		          <td><code>drwxr-xr-x</code></td>
+		          <td>755</td>
+		          <td>This directory can be changed only by the owner, but everyone else can view its contents.
+                  </td>
+		        </tr> 
+ 		        <tr>
+		          <td>10</td>
+		          <td><code>drwx--x--x</code></td>
+		          <td>711</td>
+		          <td>A handy combination for keeping a directory world-readable but restricted from access by the ls command. File can be read only by someone who knows the filename.
+                  </td>
+		        </tr>                
+		      </tbody>
+		    </table>         
+ 
+        
+    </section>
+ </main>
+  
+
+  
+  <footer class="bg-dark-gray text-white"> 
+     <section class="max-w-screen-lg text-white container mx-auto py-2 px-12">  
+      <p id="version" class="leading-none mb-2 my-4">&copy;  This work is the intellectual property of Sheridan College. Any further copying and distribution outside of class must be within the copyright law. Posting to commercial sites for profit is prohibited.</p>
+         <p class="text-sm text-gray-100 md:mb-6">
+         <a class="text-white" href="">SYST10049 Web development | Sheridan College</a>
+      </p>     
+    </section> 
+    <div class="container max-w-screen-lg mx-auto  px-8">   
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+          <ul class="text-sm font-medium pb-14 sm:pb-20 grid grid-cols-1 sm:grid-cols-3 gap-y-10">
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Course Material</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Resources</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
+                <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Sheridan College</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
+                 <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                 <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                 <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>                  
+                <li>
+                  <a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a>
+                  <span style="color:gray"><br>Office hours (by appointment)</span>
+                </li>
+                <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>  
+                <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+  </div>
+</footer> 
+ 
+</body>
+
+<script>
+  // topnav
+  var topButton = document.getElementById("topnavButton");
+  var topnavList = document.getElementById("topnavList");
+  topButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    topnavList.classList.toggle("hidden");
+    document.getElementById("topnavOpen").classList.toggle("hidden");
+    document.getElementById("topnavClosed").classList.toggle("hidden");
+  });
+</script>
+<script src="../scripts/prism.js"></script>
+</body>
+</html>

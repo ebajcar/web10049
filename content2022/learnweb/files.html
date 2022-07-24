@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<title> SYST10049 learn HTML </title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css"/> 
+<link rel="stylesheet" href="../css/prism_coy_dev.css"  />
+<style>
+dl, ol {
+  margin-bottom: 16px;
+}
+h4, h3 {
+  margin-top: 16px;
+}
+.ordered-list {
+  list-style-type: decimal;
+}
+.text-danger {
+  color: red;
+}
+.bg-dark-gray  {
+  background-color: #333940;
+}
+code {
+  color: black !important;
+}
+.sher-teal {
+  color: #00b2ce;
+}
+figcaption {
+  color: #00b2ce;
+  font-weight: 500;
+}
+ol {
+  list-style-type: decimal;
+}
+</style>
+</head>
+
+<body>
+  <nav id="navTop" class="w-full z-30 top-0 text-white bg-dark-gray ">
+    <div class="w-full container max-w-screen-lg mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-0 py-2">
+      <div class="md:pl-4">
+        <a class="text-white hover:text-white no-underline hover:no-underline
+        font-bold text-2xl lg:text-4xl rounded-lg hover:bg-nwoods-secondary " href="../">
+          <h1 class="mb-0 p-1 ">SYST10049</h1>
+        </a>
+      </div>
+      <button id="topnavButton" class="rounded-lg sm:hidden focus:outline-none focus:ring" aria-label="Navigation">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path id="topnavOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path id="topnavClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>      
+      <div id="topnavList" class="hidden sm:block items-center w-auto mt-0 text-white p-0 z-20">
+        <ul class="list-reset list-none font-semibold flex justify-end flex-wrap sm:flex-nowrap items-center px-0 pb-0">
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../index.html">Home</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnweb/index.html">Web development</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnhtml/index.html">Learn HTML5</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learncss/index.html">Learn CSS3</a></li>
+          
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="https://piazza.com/sheridan/winter2022/syst10049bajcar" target="_blank">Class Q&amp;A</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-b border-gray-600 opacity-50 my-0 py-0" />
+  </nav>
+    
+  <main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+      
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+      <div class="flex-shrink-0 px-8 py-4">
+        <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path id="navOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path id="navClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>   
+        </button>
+      </div>   
+      <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+          <a href="index.html">Web Development</a>
+          <a href="internet.html">Internet and URL</a>
+          <a href="protocols.html">Protocols</a>
+          <a href="dataflow.html">How the web works</a>
+          <a href="development.html">Planning and designing. Progressive enhancement.</a>
+          <a href="coding.html">Documentation and coding style</a>
+          <a href="debugging.html">Debugging, testing, and validating code</a>
+          <a href="publishing.html">Publishing your website</a>
+          <a href="protecting.html">Protecting a website</a>
+          <a class="bg-gray-100 text-gray-900" href="files.html">File names and organization</a>
+          <a href="filesystem.html">File system, Namespace, and Pathnames</a>
+      </nav>
+    </div>  
+        
+    <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
+    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">File names and organization</h1>
+
+
+        <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-16 bg-green-500">
+              <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
+              </svg>
+            </div>
+            <div class="px-4 py-2 -mx-3">
+              <div class="mx-3">
+                <h4 class="text-2xl font-semibold text-green-500 dark:text-green-400">File naming conventions</h4>
+	<ol class="text-base">
+		<li>Do not use spaces in file and directory (folder) names</li>
+		<li>Use short filenames (seven-nine characters) that have meaning</li>
+		<li>Use lower case, but camel casing is OK; be consistent.</li>
+		<li>Use alphanumeric characters only: letters and numbers</li>
+		<li>Avoid special characters, such as * ! # $ % ^ & = + ; ,</li>
+		<li>Use underscores or hyphens; be consistent.</li>
+		<li>Use either .html or .htm (pick one nd stick to it, do not mix); preferred (newer) .html</li>
+		<li>All filenames end in dot-three-letter, some dot-four-letter, extension.</li>
+	</ol> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+<!-- Project file organization and navigation -->
+
+    <h4>Project file organization and navigation</h4> 
+	<p>Where should your website live on your computer? What structure should your website have?</p>
+ 
+
+   <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
+  <div class="md:flex">
+    <div class="w-48  mb-8">
+      <a href="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/sample_webspace_org.png" target="_blank"><img  src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/sample_webspace_org.png" alt="browser-page-load-timeline">
+      </a>
+    </div>
+    <div class="p-4 mb-8">
+      <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">Standard file organization</h4>
+      <p class="mt-2 text-xl text-gray-500">Sample webspace organization</p>
+  <p>Practice good file management! Use standard hierarchy structure, conceptual and physical diagrams.</p>
+  <p hidden>The most common structure used is the hierarchy, based on the Graphs and Trees [find file]</p> 
+    </div>
+  </div>
+</div> 
+
+
+
+ 
+  
+   <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-8">
+  <div class="md:flex">
+    <div class="w-3/5  mb-8">
+      <a href="https://www.w3.org/community/webed/wiki/images/5/5d/Path.png" target="_blank"><img  src="https://www.w3.org/community/webed/wiki/images/5/5d/Path.png" alt="browser-page-load-timeline">
+      </a>
+    </div>
+    <div class="p-4 mb-8">
+      <h4 class="uppercase tracking-wide text-sm sher-teal font-semibold">File paths (pathnames)</h4>
+      <p class="mt-2 text-xl text-gray-500"><strong>Syntax</strong> <code>&lt;a href="path/file.html">Link label&lt;/a></code></p>
+      			<ul>
+				<li>Linking to file in a <strong>same directory</strong> (current directory is XXX): 
+					code in b.html, linking to c.html <br><code>&lt;a href="c.html">Link label&lt;/a></code></li>
+				<li>Linking to file in a <strong>parent directory</strong>: 
+					code in b.html, linking to a.html <br><code>&lt;a href="../a.html">Link label&lt;/a></code></li>
+				<li>Linking to file in a <strong>subdirectory</strong>:
+					code in a.html, linking to b.html <br><code>&lt;a href="XXX/b.html">Link label&lt;/a></code></li>
+				<li>absolute URL: 
+					<br><code>&lt;a href="http://www.apache.org/foundation/FAQ.html">Apache Software Foundation FAQ&lt;/a></code></li>
+			</ul>
+    </div>
+  </div>
+</div> 
+  
+
+	<h4>Navigating directory tree</h4>
+	<table>
+    <tr>
+	  <th style="width:300px">Path</th>
+	  <th>What it means&hellip;</th>	
+	</tr><tr>  
+	  <td><code>&lt;a href="tips/page.html"></code></td>
+	  <td>page.html is located in a directory called <em>tips</em>. The file containing this code is located in the current directory.</td>	
+	 </tr><tr> 
+	  <td><code>&lt;a href="tips/other/page.html"></code></td>
+	  <td>page.html is located in a directory called other that is located in a folder called tips that is located in the current directory.</td>
+	 </tr><tr> 
+	  <td><code>&lt;a href="../../page.html"></code></td>
+	  <td>page.html is located in a directory two levels up from the current directory.</td>	
+    </tr>
+	</table>
+
+
+
+    </section>
+ </main>
+  
+
+  
+  <footer class="bg-dark-gray text-white"> 
+     <section class="max-w-screen-lg text-white container mx-auto py-2 px-12">  
+      <p id="version" class="leading-none mb-2 my-4">&copy;  This work is the intellectual property of Sheridan College. Any further copying and distribution outside of class must be within the copyright law. Posting to commercial sites for profit is prohibited.</p>
+         <p class="text-sm text-gray-100 md:mb-6">
+         <a class="text-white" href="">SYST10049 Web development | Sheridan College</a>
+      </p>     
+    </section> 
+    <div class="container max-w-screen-lg mx-auto  px-8">   
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+          <ul class="text-sm font-medium pb-14 sm:pb-20 grid grid-cols-1 sm:grid-cols-3 gap-y-10">
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Course Material</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Resources</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
+                <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Sheridan College</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
+                 <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                 <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                 <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>                  
+                <li>
+                  <a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a>
+                  <span style="color:gray"><br>Office hours (by appointment)</span>
+                </li>
+                <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>  
+                <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+  </div>
+</footer> 
+ 
+</body>
+
+<script>
+  // topnav
+  var topButton = document.getElementById("topnavButton");
+  var topnavList = document.getElementById("topnavList");
+  topButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    topnavList.classList.toggle("hidden");
+    document.getElementById("topnavOpen").classList.toggle("hidden");
+    document.getElementById("topnavClosed").classList.toggle("hidden");
+  });
+</script>
+<script src="../scripts/prism.js"></script>
+</body>
+</html>
