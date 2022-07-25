@@ -102,17 +102,23 @@ ol {
     <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
     <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">Writing documentation and coding style</h1>
 
-    <p class="text-xl font-light leading-relaxed mt-6 mb-4 text-gray-800">Commenting Your Pages Best practices always encourage you to document your code through the use of comments. A programmer might create a working program today, see it used for months or years, and then have to make changes to it. Programming languages are fairly cryptic, there are many of them, each with its own syntax and semantic differences, and if the program is complex, even the original author will struggle to understand what the code was meant to do. Comments provide the opportunity to describe, in plain text, what the program does and how it works.</p>
+    <p class="text-xl font-light leading-relaxed mt-6 mb-4 text-gray-800">Best practices always encourage you to document your code through the use of comments. A programmer might create a working program today, see it used for months or years, and then have to make changes to it. Programming languages are fairly cryptic, there are many of them, each with its own syntax and semantic differences, and if the program is complex, even the original author will struggle to understand what the code was meant to do. Comments provide the opportunity to describe, in plain text, what the program does and how it works.</p>
 
-
-
-<!-- Writing documentation and coding -->
-
-	<p>Use comments to describe the code precisely and completely. <br>
-	<code>&lt;!-- HTML comments go between opening and closing tags like this --></code> <br>
-	Use comments <strong>in addition to</strong> the meta element for describing the document.</p>
-
-				<p>Add appropriate documentation. Always include header (prologue) after the &lt;meta charset=...> element</p>
+        <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center px-4 bg-blue-100">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="triangle-exclamation" class="w-6 h-6 text-white fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"></path></svg>     
+            </div>
+            <div class="px-4 py-2 -mx-3">
+             
+              <div class="mx-3">
+              <!--div style="background-color: yellow;font-variant:small-caps;text-align:center;width:20%">Resently added</div-->
+                <h3>Writing code</h3>
+                <p class="text-base text-gray-600 dark:text-gray-200">Code must be neat and organized to be easy to read and easy to debug. Best practices include <strong>indentation</strong> and <strong>new line for each statement</strong>. Also note text editors provide syntax highlighting, indentation, line numbers, and mono-spaced font to make the code easier to read.</p>
+                <p>When sharing code on paper or electronically (PDF), include line numbers, print single-line spacing, use mono-spaced font, preserve indentation, and color syntax (whenever possible). Every printed document must have header and footer, which provide author's name on every page, name of the document on every page, and page number (preferably in the format "Page X of Y" (especially for longer printouts).</p>
+                <h3>Documenting code</h3>
+                <p>Every code file (regardless of language) must have inline documentation, whether or not there is external or more formal documentation (specs, design, guides,...) being prepared. At minimum, include  header (sometimes called prologue) at the top of each file; specify the author(s), date file created, date last modified, original file name, short description (purpose), optionally pseudo-code when appropriate.</P>
+				<p>Add appropriate header. Always include header (prologue) after the &lt;meta charset=...> element in HTML (in other languages you included at the beginning of the file or after any directives)</p>
 			
 <pre class="language-html"><code>
 &lt;!-- 
@@ -126,9 +132,14 @@ Description:  describe the solution in detail
               (include algorithm if applicable)
               - focus on the "why"
 --&gt;
-</code></pre>				
-
-				<p>Include meaningful observations and specifications throughout the document.</p>
+</code></pre>	
+                <p>Use comments to describe the code precisely and completely. <br>
+                <code>&lt;!-- HTML comments go between opening and closing tags like this --></code> <br>
+                Use comments <strong>in addition to</strong> the meta element for describing the document.</p>
+                
+                <p class="lead">DO NOT PUT comments before the DOCTYPE declaration. Place comments inside the head and body sections only.</p>
+                
+  				<p>Include meaningful observations and specifications throughout the document.</p>
 			
 <pre class="language-html"><code>
 &lt;!-- Browsers automatically add some white space (a margin)
@@ -141,9 +152,21 @@ This paragraph
 but 	the					 browser 
 ignores it.
 &lt;/p>
-</code></pre>				
+</code></pre>		      
 
-	<p class="lead">DO NOT PUT comments before the DOCTYPE declaration. Place comments inside the head and body sections only.</p>
+                <h3>Using existing code</h3>
+                <p class="text-base text-gray-600 dark:text-gray-200"><strong>Do not use any code you do not understand.</strong> Do not rely on copy and paste technique to complete your work.  If you are working with other people's code, make sure you document well what the code does, who created, where you found it, and what changes you made to it (if any).</p>       
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!-- Writing documentation and coding -->
+
+
+
+
+	
 	
 	<p>What does <a href="https://www.w3schools.com/html/html5_syntax.asp">w3schools</a> say about the following?</p>
 	<ol style="columns:2">
