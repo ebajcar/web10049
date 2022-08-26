@@ -127,13 +127,22 @@
       time {
         opacity: 0.5;
       }
+      .curweek {
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color:#eee;
+      }
     </style>
- 
+ <script>
+const curdate = new Date();
+console.log(curdate);
+ </script>
   </head>
   <body>
   
 <details open>
 <summary  style="text-align:right;cursor: row-resize;">
+<p>Today's date <span id="thisday"></span></p>
 <h3><small>Weeks 1-7</small> Session 7A </h3>
 <kbd>click to expand/collapse</kbd>
 </summary>
@@ -149,7 +158,7 @@
   </thead>
 
   <tbody>
-    <tr id="01" style="border: 2px solid black;border-radius: 5px;background-color:#eee;">
+    <tr id="01" class="curweek">
         <td class="cell-title">Week 1</td>
         <td class="cell-Ad_q">
             Web ecosystem • client/server environment • protocols • browser process • HTML basics • web page
