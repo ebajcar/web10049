@@ -145,16 +145,16 @@ figcaption {
 
 <ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mb-4 mx-48" id="pills-tabFill" role="tablist">
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-    <a href="#2" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Style rules</a>
+    <a href="#2" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0">Style rules</a>
   </li>
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-    <a href="#3" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Syntax and structure</a>
+    <a href="#3" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0">Syntax and structure</a>
   </li>
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-    <a href="#4" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Specificity, Inheritance, and the Cascade</a>
+    <a href="#4" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0">Specificity, Inheritance, and the Cascade</a>
   </li>
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-    <a href="#5" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Code location</a>
+    <a href="#5" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0">Code location</a>
   </li>
 </ul>
 
@@ -165,23 +165,25 @@ figcaption {
 <div id="2" class="flex justify-center mt-6">
   <div class="block p-6 rounded-lg shadow-lg bg-white">
     <h5 class="text-2xl font-semibold sher-teal">Style Rules</h5>	
-	<p>A CSS document is a series of style rules, which are</p>
-	<ul>
+	<p class="text-xl font-light leading-relaxed text-gray-800">A CSS document is a series of style rules, which are</p>
+	<ul class="list-disc list-inside">
 		<li><strong>qualified rules</strong> that apply styles to elements in a document, and</li>
 		<li><strong>at-rules</strong>, which define special processing rules or values for the CSS document.</li>
 	</ul>
-    <hr>
-    
-	<h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Qualified rules</h5>
+
+<div class="w-full mx-auto bg-white rounded-xl py-5">
+    <h5 class="font-medium leading-tight text-xl mt-0 mb-2  sher-teal">Qualified rules</h5>	
 	<p>A <strong>qualified</strong> rule starts with a prelude then has a {}-wrapped block containing a sequence of declarations. The meaning of the prelude varies based on the context that the rule appears in—for style rules, it’s a selector which specifies what elements the declarations will apply to. Each declaration has a name, followed by a colon and the declaration value. Declarations are separated by semicolons.</p>
 	<p>A <strong>style rule</strong> is a qualified rule that associates a <strong>selector list</strong> with a list of <strong>property declarations</strong>. They are also called rule sets in [CSS2]. CSS Cascading and Inheritance [CSS-CASCADE-3] defines how the declarations inside of style rules participate in the cascade.</p>
-     <hr>
+</div>
        
-	<h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">At-rules</h5>	
+<div class="w-full mx-auto bg-white rounded-xl">
+    <h5 class="font-medium leading-tight text-xl mt-0 mb-2  sher-teal">At-rules</h5>	       
 	<p>At-rules are all different, but they have a basic structure in common. They start with an "@" symbol, followed by their name as a CSS keyword. Some at-rules are simple statements, with their name followed by more CSS values to specify their behavior, and finally ended by a semicolon. Others are blocks; they can have CSS values following their name, but they end with a {}-wrapped block, similar to a qualified rule. Even the contents of these blocks are specific to the given at-rule: sometimes they contain a sequence of declarations, like a qualified rule; other times, they may contain additional blocks, or at-rules, or other structures altogether.<br>
 	| <strong>@import</strong> | <strong>@media</strong> | <strong>@keyframes</strong> | <strong>@font-face</strong> | <strong>@charset</strong> | </p>
 	
   Explore further <a href="https://www.w3.org/TR/css-syntax-3/#syntax-description" target="_blank"> At-rules (W3C specification)	</a>
+</div>
   </div>
 </div>
 
@@ -191,8 +193,7 @@ figcaption {
 <div id="3" class="flex justify-center mt-6">
   <div class="block p-6 rounded-lg shadow-lg bg-white">
     <h5 class="text-2xl font-semibold sher-teal">Syntax and Structure</h5>
-    <p class="text-gray-700 text-base mb-4">
-        CSS Level 3 delivers a wide range of styles and effects, enhancing a web app without sacrificing semantic structure or performance .
+    <p>CSS Level 3 delivers a wide range of styles and effects, enhancing a web app without sacrificing semantic structure or performance .
     </p>  
 <pre class="language-css"><code>
 selectors {    /* declaration start (open brace) */
@@ -202,19 +203,18 @@ selectors {    /* declaration start (open brace) */
 	<p><strong>Selector</strong> specifies the target of styling.<br>
 	   <strong>Declaration</strong> specifies the property and value to be applied to the selector.</p>
        
-  <hr style="margin:15px 0;border:1px dotted teal;">
-
-  <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Selector</h5>	
+       
+ <div class="w-full mx-auto bg-white rounded-xl py-4">
+    <h5 class="font-medium leading-tight text-xl mt-0 mb-2  sher-teal">Selector</h5>      	
 	<p>A <strong>selector</strong> represents a particular pattern of element(s) in a <strong>tree structure</strong>. The term selector can refer to a <em>simple selector</em>, <em>compound selector</em>, <em>complex selector</em>, or <em>selector list</em>. The subject of a selector is any element that selector is defined to be about; that is, any element matching that selector. A list of simple/compound/complex selectors is a comma-separated list of simple, compound, or complex selectors. This is also called just a <strong>selector list</strong>.</p>	
 
     Explore further <a href="https://www.w3.org/TR/selectors-4/#syntax" target="_blank"> Selector syntax and structure (W3C specification)	</a>
-
+</div>
        
-  <hr style="margin:15px 0;border:1px dotted teal;">
-
-  <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Declaration</h5>
+ <div class="w-full mx-auto bg-white rounded-xl py-4">
+    <h5 class="font-medium leading-tight text-xl mt-0 mb-2  sher-teal">Declaration</h5>  
   <p>Declarations are of the form "property-name: values". There are many properties and associated concepts, including:</p>
-	<ul>
+	<ul class="list-disc list-inside">
 		<li>Specificity, inheritance, and the Cascade</li>
 		<li>Box model and margin collapse</li>
 		<li>The containing block</li>
@@ -222,6 +222,7 @@ selectors {    /* declaration start (open brace) */
 		<li>Initial, computed, used, and actual values</li>
 		<li>CSS shorthand properties</li>	
 	</ul>
+    </div>
   </div>
 </div>
 
@@ -284,7 +285,7 @@ selectors {    /* declaration start (open brace) */
     <figure>  
     <pre class="language-html"><code>&lt;link rel="stylesheet" href="css/style.css">
 &lt;/head></code></pre>
-    <figcaption><strong class="text-danger">Scope</strong> is web-app wide, can be used on multiple pages.</figcaption>
+    <figcaption class="text-black"><strong>Scope</strong> is web-app wide, can be used on multiple pages.</figcaption>
     </figure>
 </div>
 
@@ -302,7 +303,7 @@ selectors {
 } 
 &lt;/style> 
 &lt;/head></code></pre>
-    <figcaption><strong class="text-danger">Scope</strong> is the HTML document, can be used on multiple times of the page.</figcaption>
+    <figcaption class="text-black"><strong>Scope</strong> is the HTML document, can be used on multiple times of the page.</figcaption>
     </figure>
 </div>
 
@@ -311,7 +312,7 @@ selectors {
     <figure>
     <pre class="language-html"><code>
     &lt;tag style="property:value;property:value;"> content &lt;/tag></code></pre>
-    <figcaption><strong class="text-danger">Scope</strong> is the element containing the attribute, cannot be reused, good only for that one element.</figcaption>
+    <figcaption class="text-black"><strong>Scope</strong> is the element containing the attribute, cannot be reused, good only for that one element.</figcaption>
     </figure>
 </div>
 
@@ -371,23 +372,23 @@ selectors {
   
 	<p>Using external stylesheets allows you to make all pages look the same and to reduce duplication of the same code from file to file. To move from internal (<em>scope</em> is the document) to external (<em>scope</em> is the web app), follow the guidelines:</p>
   
-  <ol>
+  <ul class="list-inside list-decimal">
     <li>Create an empty external file with <code>.css</code> extension.</li>
     <li>Cut and paste CSS rules from the <code>&lt;style></code> element to the newly created file.
-      <ul>
+      <ul class="list-disc list-inside px-4">
       <li>You can create multiple files to organize the CSS code.</li>
       <li>The CSS file contains only CSS rules.</li>
       <li>Include the same header (prologue) in each CSS file as the HTML document, with appropriate adjustements.</li>
       </ul>
     </li>
     <li>Save the new file in the project's <code>css</code> sub-directory.
-      <ul>
+      <ul class="list-disc list-inside px-4">
       <li>All external stylesheets have the extension <code>.css</code>.</li>
       <li>All external stylesheets are stored in the <code>css</code> sub-directory.</li>
       </ul>
     </li>
     <li>To create the link to the external file, replace the <code>&lt;style></code> element with <code>&lt;link></code> element to link in the external style sheets.
-      <ul>
+      <ul class="list-disc list-inside px-4">
       <li>Create a link for each CSS file that you want to include.</li>
       <li>The order of the links matters when <strong>re-defining property values</strong> for the same element/property combination.</li>
       </ul>
