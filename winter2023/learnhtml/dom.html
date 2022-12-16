@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<title> SYST10049 learn HTML </title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css"/> 
+<link rel="stylesheet" href="../css/prism_coy_dev.css"  />
+<style>
+dl, ol {
+  margin-bottom: 16px;
+}
+h4, h3 {
+  margin-top: 16px;
+}
+.ordered-list {
+  list-style-type: decimal;
+}
+.text-danger {
+  color: red;
+}
+.bg-dark-gray  {
+  background-color: #333940;
+}
+code {
+  color: black !important;
+}
+.sher-teal {
+  color: #00b2ce;
+}
+.bg-sher-teal {
+  background-color: #00b2ce;
+}
+figcaption {
+  color: #00b2ce;
+  font-weight: 500;
+}
+</style>
+</head>
+
+<body>
+  <nav id="navTop" class="w-full z-30 top-0 text-white bg-dark-gray ">
+    <div class="w-full container max-w-screen-lg mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-0 py-2">
+      <div class="md:pl-4">
+        <a class="text-white hover:text-white no-underline hover:no-underline
+        font-bold text-2xl lg:text-4xl rounded-lg hover:bg-nwoods-secondary " href="../">
+          <h1 class="mb-0 p-1 ">SYST10049</h1>
+        </a>
+      </div>
+      <button id="topnavButton" class="rounded-lg sm:hidden focus:outline-none focus:ring" aria-label="Navigation">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path id="topnavOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path id="topnavClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>      
+      <div id="topnavList" class="hidden sm:block items-center w-auto mt-0 text-white p-0 z-20">
+        <ul class="list-reset list-none font-semibold flex justify-end flex-wrap sm:flex-nowrap items-center px-0 pb-0">
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../index.html">Home</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnweb/index.html">Web development</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnhtml/index.html">Learn HTML5</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learncss/index.html">Learn CSS3</a></li>
+          
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="https://piazza.com/sheridan/winter2022/syst10049bajcar" target="_blank">Class Q&amp;A</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-b border-gray-600 opacity-50 my-0 py-0" />
+  </nav>
+    
+  <main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+      
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+      <div class="flex-shrink-0 px-8 py-4">
+        <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path id="navOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path id="navClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>   
+        </button>
+      </div>   
+      <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+
+          <a href="index.html">HTML Markup</a>
+          <a href="standards.html">Standards, Semantic Correctness, and Accessibility</a>
+          <a href="grammar.html">Syntax, Elements, and Attributes</a>
+          <a href="document.html">HTML Document</a>
+          <a href="content.html">Content Models and Organization</a>
+          <a href="form-process.html">HTML Forms</a>
+          <a class="bg-gray-100 text-gray-900" href="dom.html">Document Object Model (DOM)</a>
+          <a href="textual.html">Marking up textual content</a>
+          <a href="semantics.html">Marking up semantic content</a>
+          <a href="interactive.html">Marking up interactive content</a>
+          <!--a href="forms.html">Marking up forms</a-->
+       
+      </nav>
+    </div>  
+        
+    <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
+	<h1 class="text-4xl font-medium leading-tight mt-0 mb-2 text-black-600">Document Object Model (DOM)</h1>
+    
+  
+<section class="col-8 container">
+
+<div class="grid grid-cols-2 gap-4 w-3/4 mt-6 m-auto">
+  <div class="border-t-4 border-teal-500 pt-4">
+    <p class="uppercase sher-teal font-bold">What is DOM?</p>
+    <p class="font-semibold">Thinking in objects
+    <br>The document
+    <br>Visual representation of DOM
+    <br>DOM terminology
+    <br>DOM nodes
+    <br>DOM processing
+    <br>CSS Object Model (CSSOM)
+    </p>
+  </div>
+
+</div>
+
+
+<div class="my-5">
+  <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="flex items-center justify-center px-4 bg-sher-teal">
+
+      
+ <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="triangle-exclamation" class="w-6 h-6 text-white fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"></path></svg>     
+    </div>
+    <div class="px-4 py-2 -mx-3">
+      <div class="mx-3">
+        <span class="text-2xl font-semibold sher-teal">What is Document Object Model?</span>
+	<blockquote class="blockquote eeb-border-quote">
+		<p class="text-base">The DOM (Document Object Model) is an API that represents and interacts with any HTML or XML document. The DOM is a document model loaded in the browser and representing the document as a node tree, where each node represents part of the document (e.g. an element, text string, or comment).The DOM is one of the most-used APIs on the Web because it allows code running in a browser to access and interact with every node in the document. Nodes can be created, moved and changed. Event listeners can be added to nodes and triggered on occurrence of a given event. DOM was not originally specified—it came about when browsers began implementing JavaScript. This legacy DOM is sometimes called DOM 0. Today, the WHATWG maintains the DOM Living Standard.</p>
+		<p class="blockquote-footer">Read further  <cite title="[ developer.mozilla.org/en-US/docs/Glossary/DOM ]"><a href="https://developer.mozilla.org/en-US/docs/Glossary/DOM" target="_blank"> developer.mozilla.org/en-US/docs/Glossary/DOM</a></cite></p>
+	</blockquote>    
+    
+    <p class="text-base">The Document Object Model is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents. The document can be further processed and the results of that processing can be incorporated back into the presented page.</p>
+    <p class="text-base">Elements in the DOM represent things &mdash; objects; that is, they have intrinsic meaning, also known as semantics. The HTMLElement interface holds the object's methods and attributes (properties).  </p>   
+    <p class="blockquote-footer">Read further  <cite title="[ about DOM at WHATWG ]"><a href="https://dom.spec.whatwg.org/#trees" target="_blank"> about DOM at WHATWG</a></cite></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Thinking in Objects</h4>
+    <p class="text-gray-700 text-base mb-2">
+      The procedural paradigm focuses on designing methods. The object-oriented paradigm couples data and methods together into objects. Software design using the object-priented paradigm focuses on objects and operations on objects.</p>
+    <p>Objects are the fundamental building blocks of applications from an object-oriented perspective. An object is a self-contained component that contains properties and methods needed to make a certain type of data useful. An object’s properties are what it knows and its methods are what it can do.</p>
+    <p>An object represents an entity in the real world that can be distinctly identified. An object has a unique identity, state, and behaviour. The state of an object, also known as its properties or attributes, is represented by data fields with their current values. The behaviour of an object, also known as its actions, is defined by methods. To invoke a method on an object is to ask the object to perform an action. Reference your Java textbook.</p>
+    <p>To design classes, you need to explore the relationships among classes. The common relationships among classes are association, aggregation, composition, and inheritance Inheritance enables you to define a general class and extend it to more specialized classes, called subclass, child class, or extended class. The existing class is called a superclass, parent class, or base class. Inheritance is a powerful feature for reusing software.</p>
+  </div>
+</div>
+
+
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">The Document</h4>
+    <p class="text-gray-700 text-base mb-2">
+    DOM is a mapping layout model for all HTML and a way for CSS and Javascript to get in there and do stuff. <span>Tim Wright</span> calls it <em>developer's best friend</em> (after you master it). DOM is not HTML, not CSS, and not Javascript! DOM is
+      </p>
+	<ul class="dialog-ol">	
+		<li>the combinations of the elements you use <mark>(objects)</mark>, </li>
+		<li>the order you choose to display them <mark>(model)</mark>, and</li>
+		<li> the endless offerings of access points to modify any part of the overall structure <mark>(document)</mark> while navigating around with the various properties that CSS provides and the various methods Javascript provides. </li>
+	</ul> 
+<p>When an HTML document is loaded into a web browser, it becomes a document object. The document object is the root node of the HTML document and the "owner" of all other nodes.</p>
+    <p>The HTML DOM defines a standard way for accessing and manipulating HTML documents. It presents an HTML document as a <dfn>tree structure</dfn> or a <dfn>hierarchy</dfn>.</p>
+    <p>The DOM is a representation of the structure of our HTML page that you can interact with programmatically. An HTML document is a hierarchy of elements (objects). The browser produces an outline based on this hierarchy and displays it to the visitor (user). The browser constructs a DOM that can be used by the developer. The DOM's application programming interface (API) is exposed as objects with properties and methods, enabling you to write Javascript code to interact with HTML elements rendered to the page.</p>
+    <p>Our ability to manipulate and create web pages consistently across formats comes from the document object model API. This API defines the order and structure of document files as well as how the file is manipulated to create, edit, or remove contents.</p>
+    <p class="blockquote-footer">Read further  <cite title="[ Introduction to the DOM at MDN]"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank"> Introduction to the DOM at MDN</a></cite></p>      
+  </div>
+</div>
+
+
+<!-- isual representation of DOM -->
+<div class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal w-full">Visual representation of DOM</h4>
+    <p>Visual representation of minimal HTML5 document.</p>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Diagram</h4>
+        <img class="col-7" src="https://docs.google.com/drawings/d/e/2PACX-1vQPDoQTKS83x8csQVwz9P-qhDtqWRxMiE7LyAXo7_JBPGkQ1158lQkId7tX76Vld-_7bAlnEUpk7vkc/pub?w=480&amp;h=360"  style="width:100%;cursor:zoom-in" onclick="document.getElementById('dom0').style.display='block'" alt="...">
+        </div>
+        <div class="m-3"><h4>Code</h4>
+        <p>Minimal HTML document starts with the root element...</p>
+<pre class="language-html"><code>&lt;html>
+  &lt;head>
+	&lt;meta charset="utf-8">
+	&lt;title>DOM&lt;/title>	
+  &lt;/head>
+  &lt;body>
+  &lt;/body>
+&lt;/html></code></pre>	
+        </div>
+    </div>
+    <p class="blockquote-footer">Try the  <cite title="[ software.hixie.ch/utilities/js/live-dom-viewer/? ]"><a href="https://software.hixie.ch/utilities/js/live-dom-viewer/?" target="_blank"> Live DOM viewer</a></cite></p> 
+  </div>
+</div>
+
+
+
+
+
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">DOM terminology</h4>
+ 				<ul class="list-outside">
+					<li>A <mark>tree</mark> is a finite hierarchical tree structure. In <mark>tree order</mark> is preorder, depth-first traversal of a tree.</li>
+					<li>An object that participates in a tree has a <mark> parent</mark>, which is either another object or null, and an ordered list of zero or more <mark>child</mark> objects. An object A whose parent is object B is a child of B.</li>
+					<li>The <mark>root</mark> of an object is itself, if its parent is null, or else it is the root of its parent.</li>
+					<li>An object A is called a <mark>descendant</mark> of an object B, if either A is a child of B or A is a child of an object C that is a descendant of B.</li>
+					<li>An <mark>inclusive descendant</mark> is an object or one of its descendants.</li>
+					<li>An object A is called an <mark>ancestor</mark> of an object B if and only if B is a descendant of A.</li>
+					<li>An inclusive ancestor is an object or one of its ancestors.</li>
+					<li>An object A is called a <mark>sibling</mark> of an object B, if and only if B and A share the same non-null parent.</li>
+					<li>An object A is preceding an object B if A and B are in the same tree and A comes before B in tree order.</li>
+					<li>An object A is following an object B if A and B are in the same tree and A comes after B in tree order.</li>
+					<li>The <mark>first child</mark> of an object is its first child or null if it has no children.</li>
+					<li>The <mark>last child</mark> of an object is its last child or null if it has no children.</li>
+					<li>The <mark>previous sibling</mark> of an object is its first preceding sibling or null if it has no preceding sibling.</li>
+					<li>The <mark>next sibling</mark> of an object is its first following sibling or null if it has no following sibling.</li>
+					<li>The <mark>index</mark> of an object is its number of preceding siblings.</li>
+				</ul>
+  <p class="blockquote-footer">Explore further  <cite title="[ www.w3.org/TR/dom/ ]"><a href="https://www.w3.org/TR/dom/" target="_blank"> www.w3.org/TR/dom/</a></cite></p>  
+  </div>
+</div>
+
+
+
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">DOM Nodes</h4>
+    <p class="text-gray-700 text-base">
+    DOM is a collection of nodes arranged in a tree. All nodes are related to each other - a family tree of children, parents, siblings, grandparents, etc. 
+      </p>
+  <p>In the HTML DOM, everything is a node:</p>
+    <ul>
+        <li>The document itself is a document node.</li>
+        <li>All HTML elements are element nodes.</li>
+        <li>All HTML attributes are attribute nodes.</li>
+        <li>Text inside HTML elements are text nodes.</li>
+        <li>Comments are comment nodes.</li>
+    </ul>
+    <p>Each element in this tree has exactly one parent, with the exception of the root element, which has none.</p>    
+    <figure>
+      <img style="width:70%;border:none;margin:auto;" 
+          src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/min_html_chart.png">	
+      <figcaption>Hierarchical representation of the minimal HTML5 document: a tree of elements encoded in the source document. </figcaption>
+    </figure>   
+    <p>Practice identifying the relationships in a DOM structure and representing web page structure in a hierarchy diagram.</p>      
+  </div>
+</div>
+
+
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">DOM processing</h4>
+    <p class="text-gray-700 text-base mb-2">
+      </p>
+      <img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/full-process.png" alt="browser process" style="width:80%;text-align:center;margin:auto;">	
+
+    <p class="blockquote-footer">Read further  <cite title="[ Constructing the Object Model (Google)]"><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model" target="_blank"> Constructing the Object Model</a></cite></p>      
+  </div>
+</div>
+
+
+
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">CSS Object Model (CSSOM)</h4>
+    <p class="text-gray-700 text-base mb-2">
+    The CSSOM is a map of all CSS selectors and relevant properties for each selector in the form of a tree, with a root node, sibling, descendant, child, and other relationship. The CSSOM is very similar to the DOM. Both of them are part of the critical rendering path which is a series of steps that must happen to properly render a website.
+      </p>
+      		<figure>
+		<img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/browser_rendering.png" alt="browser process" style="width:90%;">
+		<figcaption>Browser process to render a web page.</figcaption>
+	</figure>
+  </div>
+</div>
+
+  
+</section>
+     
+    </section>
+ </main>
+  
+
+  
+  <footer class="bg-dark-gray text-white"> 
+     <section class="max-w-screen-lg text-white container mx-auto py-2 px-12">  
+      <p id="version" class="leading-none mb-2 my-4">&copy;  This work is the intellectual property of Sheridan College. Any further copying and distribution outside of class must be within the copyright law. Posting to commercial sites for profit is prohibited.</p>
+         <p class="text-sm text-gray-100 md:mb-6">
+         <a class="text-white" href="">SYST10049 Web development | Sheridan College</a>
+      </p>     
+    </section> 
+    <div class="container max-w-screen-lg mx-auto  px-8">   
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+          <ul class="text-sm font-medium pb-14 sm:pb-20 grid grid-cols-1 sm:grid-cols-3 gap-y-10">
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Course Material</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Resources</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
+                <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Sheridan College</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
+                 <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                 <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                 <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>                  
+                <li>
+                  <a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a>
+                  <span style="color:gray"><br>Office hours (by appointment)</span>
+                </li>
+                <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>  
+                <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+  </div>
+</footer> 
+ 
+</body>
+<!--script src="https://cdn.tailwindcss.com/"></script>
+<script type="text/javascript" src="../scripts/index.min.js"></script-->
+<script>
+  // topnav
+  var topButton = document.getElementById("topnavButton");
+  var topnavList = document.getElementById("topnavList");
+  topButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    topnavList.classList.toggle("hidden");
+    document.getElementById("topnavOpen").classList.toggle("hidden");
+    document.getElementById("topnavClosed").classList.toggle("hidden");
+  });
+</script>
+<script src="../scripts/prism.js"></script>
+<!-- Required popper.js -->
+<script
+  src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+  charset="utf-8"
+></script>
+<script>
+  function openPopover(event, popoverID) {
+    let element = event.target;
+    while (element.nodeName !== "BUTTON") {
+      element = element.parentNode;
+    }
+    var popper = Popper.createPopper(
+      element,
+      document.getElementById(popoverID),
+      {
+        placement: "bottom",
+      }
+    );
+    document.getElementById(popoverID).classList.toggle("hidden");
+  }
+</body>
+</html>

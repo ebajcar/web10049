@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<title> SYST10049 learn HTML </title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css"/> 
+<link rel="stylesheet" href="../css/prism_coy_dev.css"  />
+<style>
+dl, ol {
+  margin-bottom: 16px;
+}
+h4, h3 {
+  margin-top: 16px;
+}
+.ordered-list {
+  list-style-type: decimal;
+}
+.text-danger {
+  color: red;
+}
+.bg-dark-gray  {
+  background-color: #333940;
+}
+code {
+  color: black !important;
+}
+.sher-teal {
+  color: #00b2ce;
+}
+figcaption {
+  color: #00b2ce;
+  font-weight: 500;
+}
+</style>
+</head>
+
+<body>
+  <nav id="navTop" class="w-full z-30 top-0 text-white bg-dark-gray ">
+    <div class="w-full container max-w-screen-lg mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-0 py-2">
+      <div class="md:pl-4">
+        <a class="text-white hover:text-white no-underline hover:no-underline
+        font-bold text-2xl lg:text-4xl rounded-lg hover:bg-nwoods-secondary " href="../">
+          <h1 class="mb-0 p-1 ">SYST10049</h1>
+        </a>
+      </div>
+      <button id="topnavButton" class="rounded-lg sm:hidden focus:outline-none focus:ring" aria-label="Navigation">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path id="topnavOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path id="topnavClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>      
+      <div id="topnavList" class="hidden sm:block items-center w-auto mt-0 text-white p-0 z-20">
+        <ul class="list-reset list-none font-semibold flex justify-end flex-wrap sm:flex-nowrap items-center px-0 pb-0">
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../index.html">Home</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnweb/index.html">Web development</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnhtml/index.html">Learn HTML5</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learncss/index.html">Learn CSS3</a></li>
+          
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="https://piazza.com/sheridan/winter2022/syst10049bajcar" target="_blank">Class Q&amp;A</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-b border-gray-600 opacity-50 my-0 py-0" />
+  </nav>
+    
+  <main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+      
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+      <div class="flex-shrink-0 px-8 py-4">
+        <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path id="navOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path id="navClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>   
+        </button>
+      </div>   
+      <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+
+          <a href="index.html">HTML Markup</a>
+          <a class="bg-gray-100 text-gray-900" href="standards.html">Standards, Semantic Correctness, and Accessibility</a>
+          <a href="grammar.html">Syntax, Elements, and Attributes</a>
+          <a href="document.html">HTML Document</a>
+          <a href="content.html">Content Models and Organization</a>
+          <a href="form-process.html">HTML Forms</a>
+          <a href="dom.html">Document Object Model (DOM)</a>
+          <a href="textual.html">Marking up textual content</a>
+          <a href="semantics.html">Marking up semantic content</a>
+          <a href="interactive.html">Marking up interactive content</a>
+          <!--a href="forms.html">Marking up forms</a-->
+
+      </nav>
+    </div>  
+        
+    <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
+    <h1 class="text-4xl font-medium leading-tight mt-0 mb-2 text-black-600">Standards, Semantic Correctness, and Accessibility</h1>
+
+      <section class="col-8 container">
+
+<div class="grid grid-cols-3 gap-4 w-3/4 mt-6 m-auto">
+  <div class="border-t-4 border-teal-500 pt-4">
+    <p class="uppercase sher-teal font-bold">Standards</p>
+    <p class="font-semibold">Basic syntax
+    <br>Well-formed &amp; valid code
+    </p>
+  </div>
+  <div class="border-t-4 border-teal-500 pt-4">
+    <p class="uppercase sher-teal font-bold">Semantic correctness</p>
+    <p class="font-semibold">Artefacts
+    <br>Conventions
+    </p>
+  </div>
+  <div class="border-t-4 border-teal-500 pt-4">
+    <p class="uppercase sher-teal font-bold">Accessibility</p>
+    <p class="font-semibold">Standards &amp; Principles
+    </p>
+  </div>  
+</div>
+
+
+        <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-16 bg-green-500">
+              <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
+              </svg>
+            </div>
+            <div class="px-4 py-2 -mx-3">
+              <div class="mx-3">
+                <h4 class="text-2xl font-semibold text-green-500 dark:text-green-400">Standards</h4>
+                <p class="text-base text-gray-600 dark:text-gray-200">
+                Standards and guidelines assist in optimization for search engines and screen readers. HTML5 semantic elements provide the mechanisms necessary to structure the page more easily for accessibility via screen readers. Search engines take advantage of HTML5 semantics by using the article element to determine the purpose of the page.
+                </p><p class="text-sm text-gray-600 dark:text-gray-200">
+                  Elements, attributes, and attribute values in HTML are defined in the Specification, to have certain meanings (semantics). These definitions allow HTML processors, like web browsers and search engines, to present documents and applications consistently in different contexts.
+                </p>
+                <h4 class="text-2xl font-semibold text-green-500 dark:text-green-400">Specifications</h4>
+                <ul>
+                <li><a href="https://www.w3.org/TR/#tr_HTML" target="_blank">All standards & drafts. — W3Consortium (w3.org)</a></li>
+                <li><a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML Living Standard — Last Updated 5 January 2022 (whatwg.org)</a></li>
+               
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <section> 
+            <h4>Basic Syntax</h4>
+            <pre class="language-html"><code>
+            &lt;!-- HTML comment -->
+            &lt;tag attribute="value">Content&lt;/tag></code></pre>   
+
+            <h4>Well-formed and valid code</h4>
+            <p>Well-formed code refers to compliance to standards, including</p>
+            <ol>
+                <li>closing all elements;</li>
+                <li>nesting elements properly;</li>
+                <li>using correct syntax for attributes;</li>
+            </ol>
+            <p>Validity refers to eliminating all syntax and semantic errors. This can be done by using the validation tool at <a href="https://validator.w3.org/" target="_blank">validator.w3.org</a></p>	
+            <p hidden>A good discussion can be found on stackoverflow https://stackoverflow.com/questions/3583332/html5-and-well-formedness </p> 
+        </section>
+
+        <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-36 bg-green-500">
+              <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
+              </svg>
+            </div>
+            <div class="px-4 py-2 -mx-3">
+              <div class="mx-3">
+                <span class="text-2xl font-semibold text-green-500 dark:text-green-400">Semantic correctness </span>
+                <p>Semantic correctness means that all elements are chosen well. <strong>Semantics are front and center with HTML5</strong>, giving meaning to structure of web apps and dynamic web content. This semantic information is critical to assistive technologies. In some cases assistive technologies use semantic information to provide additional functionality. A speech recognition tool might provide a voice command for moving focus to the start of the main element for example. When the appropriate HTML element or attribute is not used, it deprives HTML processors of valuable semantic information. <a href="https://www.w3.org/TR/html52/dom.html#elements">W3C</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section>
+            <h4>Why do we need semantics?</h4>
+            <p title="from HTML text fundamentals (MDN)">Semantics are relied on everywhere around us — we rely on previous experience to tell us what the function of an everyday object is; when we see something, we know what its function will be. So, for example, we expect a red traffic light to mean "stop", and a green traffic light to mean "go". Things can get tricky very quickly if the wrong semantics are applied (Do any countries use red to mean "go"? I hope not.) Read more at <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals" target="_target">HTML text fundamentals (MDN)</a>.</p>	
+                <p title="from Document and website structure (MDN)">In your HTML code, you can mark up sections of content based on their functionality — you can use elements that represent the sections of content  unambiguously. Assistive technologies like screenreaders can recognise those elements and help with tasks like "find the main navigation", or "find the main content." </p>
+                <p>The consequences of not using the right element structure and semantics for the right job fails to give the content structure, so the browser does not know what is a heading and what is a paragraph. </p>
+                <ul>
+                    <li>Users looking at a web page tend to scan quickly to find relevant content, often just reading the headings to begin with (we usually spend a very short time on a web page). If they can't see anything useful within a few seconds, they'll likely get frustrated and go somewhere else.</li>
+                    <li>Search engines indexing your page consider the contents of headings as important keywords for influencing the page's search rankings. Without headings, your page will perform poorly in terms of SEO (Search Engine Optimization).</li>
+                    <li>Severely visually impaired people often don't read web pages; they listen to them instead. This is done with software called a screen reader. This software provides ways to get fast access to given text content. Among the various techniques used, they provide an outline of the document by reading out the headings, allowing their users to find the information they need quickly. If headings are not available, they will be forced to listen to the whole document read out loud.</li>
+                    <li>To style content with CSS, or make it do interesting things with JavaScript, you need to have elements wrapping the relevant content, so CSS/JavaScript can effectively target it.</li>
+                </ul>
+                <p>We therefore need to give our content structural markup. Read more at <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_target">Document and website structure (MDN)</a>.</p>	
+        </section>
+
+        <div class="my-5">
+          <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="flex items-center justify-center w-24 bg-green-500">
+              <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
+              </svg>
+            </div>
+            <div class="px-4 py-2 -mx-3">
+              <div class="mx-3">
+                <span class="text-2xl font-semibold text-green-500 dark:text-green-400">Accessibility </span>
+                <p>W3C develops international Web standards: HTML, CSS, and many more. W3C’s Web standards are called W3C Recommendations. All W3C standards are reviewed for accessibility support and their guidelines show how web accessibility depends on several components of web development and interaction working together, and how the WAI guidelines apply.</p> 
+            <p class="blockquote-footer">Read further  <cite title="[ https://www.w3.org/WAI/standards-guidelines/ ]"><a href="https://www.w3.org/WAI/standards-guidelines/" target="_blank"> W3C WAI Accessiblity Standards Overview</a></cite></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section>   
+            <h4>Accessibility principles</h4>
+             <p>
+            <a class="dropdown-item"  href="https://youtu.be/20SHvU2PKsM" target="_blank">🎬 Web Accessibility and W3C Standards (video)</a>
+            </p>   
+            <p>W3C WAI provides information about web accessiblity requirements, including</p>
+              <ul>
+                <li>Web accessibility standards</li>
+                <li>Perceivable information and user interface</li>
+                <li>Operable user interface and navigation</li>
+                <li>Understandable information and user interface</li>
+                <li>Robust content and reliable interpretation</li>
+              </ul>
+            <p>Read further  <cite title="[ https://www.w3.org/WAI/fundamentals/accessibility-principles/ ]"><a href="https://www.w3.org/WAI/fundamentals/accessibility-principles/" target="_blank"> W3C WAI Accessiblity Principles</a></cite></p>       
+        </section>        
+
+      </section>   
+    </section>
+ </main>
+  
+
+  
+  <footer class="bg-dark-gray text-white"> 
+     <section class="max-w-screen-lg text-white container mx-auto py-2 px-12">  
+      <p id="version" class="leading-none mb-2 my-4">&copy;  This work is the intellectual property of Sheridan College. Any further copying and distribution outside of class must be within the copyright law. Posting to commercial sites for profit is prohibited.</p>
+         <p class="text-sm text-gray-100 md:mb-6">
+         <a class="text-white" href="">SYST10049 Web development | Sheridan College</a>
+      </p>     
+    </section> 
+    <div class="container max-w-screen-lg mx-auto  px-8">   
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+          <ul class="text-sm font-medium pb-14 sm:pb-20 grid grid-cols-1 sm:grid-cols-3 gap-y-10">
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Course Material</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Resources</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
+                <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Sheridan College</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
+                 <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                 <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                 <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>                  
+                <li>
+                  <a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a>
+                  <span style="color:gray"><br>Office hours (by appointment)</span>
+                </li>
+                <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>  
+                <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+  </div>
+</footer> 
+ 
+</body>
+<script type="text/javascript" src="../scripts/index.min.js"></script>
+<script>
+  // topnav
+  var topButton = document.getElementById("topnavButton");
+  var topnavList = document.getElementById("topnavList");
+  topButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    topnavList.classList.toggle("hidden");
+    document.getElementById("topnavOpen").classList.toggle("hidden");
+    document.getElementById("topnavClosed").classList.toggle("hidden");
+  });
+</script>
+<script src="../scripts/prism.js"></script>
+<!-- Required popper.js -->
+<script
+  src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+  charset="utf-8"
+></script>
+<script>
+  function openPopover(event, popoverID) {
+    let element = event.target;
+    while (element.nodeName !== "BUTTON") {
+      element = element.parentNode;
+    }
+    var popper = Popper.createPopper(
+      element,
+      document.getElementById(popoverID),
+      {
+        placement: "bottom",
+      }
+    );
+    document.getElementById(popoverID).classList.toggle("hidden");
+  }
+</body>
+</html>
