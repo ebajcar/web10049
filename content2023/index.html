@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<title> SYST10049 home page </title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e511a6976b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/styles.css"/> 
+<link rel="stylesheet" href="css/prism.css"  />
+<style>
+/* linted with https://stylelint.io/demo */
+dl,
+ol {
+  margin-bottom: 16px;
+}
+
+h4 {
+  margin-top: 16px;
+}
+
+.ordered-list {
+  list-style-type: decimal;
+}
+
+.text-danger {
+  color: red;
+}
+
+.bg-dark-gray {
+  background-color: #333940;
+}
+
+.bg-red {
+  background-color: darkred;
+}
+.sher-teal {
+  color: #00b2ce;
+}
+ol {
+  list-style-type: decimal;
+}
+</style>
+</head>
+
+<body>
+  <nav id="navTop" class="w-full z-30 top-0 text-white bg-dark-gray">
+    <div class="w-full container max-w-screen-lg mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-0 py-2">
+      <div class="md:pl-4">
+        <a class="text-white hover:text-white no-underline hover:no-underline
+        font-bold text-2xl lg:text-4xl rounded-lg hover:bg-nwoods-secondary " href="#">
+          <h1 class="mb-0 p-1 ">SYST10049</h1>
+        </a>
+      </div>
+      <button id="topnavButton" class="rounded-lg sm:hidden focus:outline-none focus:ring" aria-label="Navigation">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path id="topnavOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path id="topnavClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>      
+      <div id="topnavList" class="hidden sm:block items-center w-auto mt-0 text-white p-0 z-20">
+        <ul class="list-reset list-none font-semibold flex justify-end flex-wrap sm:flex-nowrap items-center px-0 pb-0">
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="index.html">Home</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="learnweb/index.html">Web development</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="learnhtml/index.html">Learn HTML5</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="learncss/index.html">Learn CSS3</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="#" target="_blank"><i class='fas fa-share-square' style='font-size:14px'></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-b border-gray-600 opacity-50 my-0 py-0" />
+  </nav>
+    
+  <main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+      
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+      <div class="flex-shrink-0 px-8 py-4">
+        <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path id="navOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path id="navClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>   
+        </button>
+      </div>   
+      <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+            <a href="#" class="text-3xl tracking-tight text-gray-900">Class Plan</a>
+
+            <button class="bg-dark-gray sher-teal active:bg-purple-600 font-bold uppercase text-base px-8 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal(&quot;modal-example-large&quot;)">Learning Outcomes</button>
+
+            <button class="bg-dark-gray sher-teal active:bg-purple-600 font-bold uppercase text-base px-4 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"><a href="https://comm13729-sheridancollege.notion.site/Class-Plan-Information-c86adbe0453243a280fd72d003447ae0" target="_blank" style="color:white;">Classroom &amp; Evaluation Policies</a></button>
+            
+            <button class="bg-dark-gray sher-teal active:bg-purple-600 font-bold uppercase text-base px-4 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal(&quot;modal-factors&quot;)">Evaluation Factors</button>
+
+            <button class="bg-dark-gray sher-teal active:bg-purple-600 font-bold uppercase text-base px-8 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal(&quot;modal-example&quot;)">Test yourself!</button>
+        
+            <button class="bg-red font-bold uppercase text-base px-4 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"><a href="https://bajcar.dev.fast.sheridanc.on.ca/syst10049/" target="_blank" style="color:white;">Examples published in class</a></button>      
+      </nav>
+    </div>  
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+       
+    <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
+     
+          
+         
+        <hr style="margin:20px 0;">
+        <h3>Course Information</h3>
+        <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl">
+            <div class="md:flex">
+                <div class="md:flex-shrink-0">
+                    <img class="h-full w-full object-cover md:w-48" src="images/html5.jpg" alt="Web development">
+                </div>
+                <div class="p-8">
+                    <div class="uppercase tracking-wide text-sm sher-teal font-semibold">Course Overview</div>
+                    <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">SYST10049 Web Development</a>
+                    <p class="mt-2 text-gray-500">Learn how to use standards-based Hyperlink Markup Language (HTML5) and Cascading Style Sheets (CSS3) to create websites that are laid out in a logical file structure. Students publish their websites to a dedicated student space with emphasis on website security. Students also learn how to create forms with various controls and types of form handlers. Studies incorporate the latest web technologies.</p> 
+                    <p>Read details in <a href="" target="_blank">Course Outline</a>.</p>
+                </div>
+            </div>
+        </div>     
+        
+ 
+        
+         <hr style="margin:20px 0;">
+        <h3>Course Content</h3>
+        <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl">     
+    
+           <div class="grid grid-cols-3 gap-2">
+               <!-- column 1 -->
+              <div class="bg-dark-gray shadow-lg mx-auto w-96 max-w-full pointer-events-auto bg-clip-padding rounded-lg block mb-3" id="static-example" role="alert" aria-live="assertive" aria-atomic="true" data-mdb-autohide="false">
+                <div class="bg-dark-gray flex justify-between items-center py-2 px-3 bg-clip-padding border-b border-blue-400 rounded-t-lg">
+                  <div class="text-blue-400" style="text-align:center">
+                  <a href="https://www.notion.so/sheridanc-fast-syst10049/Worksheet-1-2f8a8821e8aa4426b71660d79c3d3032" target="_blank" style="color:lightblue;font-size:1.9em;text-align:center;">Web Development</a>
+                  </div>
+                </div>
+                <div class="p-3 bg-dark-gray rounded-b-lg break-words text-white">
+                  <ol>
+                    <li>How the web works</li>
+                    <li>User agents and accessibility</li>
+                    <li>Protocols</li>
+                    <li>Namespace and File naming</li>
+                    <li>File organization and Pathnames</li>
+                    <li>Internet and URL</li>
+                    <li>Protecting a website</li>
+                    <li>Standards</li>
+                    <li>Progressive enhancement (PE)</li>
+                    <li>Planning and Designing</li>
+                    <li>Documentation and Coding style</li>
+                    <li>Debugging and Testing</li>
+                    <li>Publishing your website</li>
+                  </ol>
+                </div>
+              </div>
+
+              <!-- column 2 -->
+              <div class="bg-dark-gray shadow-lg mx-auto w-96 max-w-full pointer-events-auto bg-clip-padding rounded-lg block mb-3" id="static-example" role="alert" aria-live="assertive" aria-atomic="true" data-mdb-autohide="false">
+                <div class="bg-dark-gray flex justify-between items-center py-2 px-3 bg-clip-padding border-b border-blue-400 rounded-t-lg">
+                  <div class="text-blue-400" style="text-align:center">
+                  <a href="https://www.notion.so/sheridanc-fast-syst10049/Worksheet-1-2f8a8821e8aa4426b71660d79c3d3032" target="_blank" style="color:lightblue;font-size:1.9em;text-align:center;">Learn HTML5</a>
+                  </div>
+                </div>
+                <div class="p-3 bg-dark-gray rounded-b-lg break-words text-white">
+                  <ol class="ul-outside">
+                    <li>HTML Markup</li>
+                    <li>Standards, Semantic correctness, Accessiblity</li>
+                    <li>Syntax, Elements and Attributes</li>
+                    <li>HTML Document</li>
+                    <li>Content models and organization</li>
+                    <li>HTML Forms</li>
+                    <li>Document Object Model (DOM)</li>
+                    <li>Marking up textual content</li>
+                    <li>Marking up semantic content</li>
+                    <li>Marking up interactive content</li>
+                  </ol>
+                </div>
+              </div>
+              
+              <!-- column 3 -->
+              <div class="bg-dark-gray shadow-lg mx-auto w-96 max-w-full pointer-events-auto bg-clip-padding rounded-lg block mb-3" id="static-example" role="alert" aria-live="assertive" aria-atomic="true" data-mdb-autohide="false">
+                <div class="bg-dark-gray flex justify-between items-center py-2 px-3 bg-clip-padding border-b border-blue-400 rounded-t-lg">
+                  <div class="text-blue-400" style="text-align:center">
+                  <a href="https://www.notion.so/sheridanc-fast-syst10049/Worksheet-1-2f8a8821e8aa4426b71660d79c3d3032" target="_blank" style="color:lightblue;font-size:1.9em;text-align:center;">Learn CSS3</a>
+                  </div>
+                </div>
+                <div class="p-3 bg-dark-gray rounded-b-lg break-words text-white">
+                  <ol>
+                    <li>Cascading Style Sheets (CSS)</li>
+                    <li>Style rules, syntax and structure</li>
+                    <li>Selectors</li>
+                    <li>Properties</li>
+                    <li>Layouts</li>
+                    <li>User experience and Responsiveness design</li>
+                    <li>Form validation</li>
+                  </ol>
+                </div>
+              </div>
+              
+    
+              
+
+ 
+   
+   </div>  
+</div> <!--  end of grid -->  
+
+    
+   
+               
+        
+        
+        
+        
+        
+        
+        
+        <!--
+        
+        
+        <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-6"> 
+            <h4 class="text-2xl tracking-tight text-gray-900">Learn the foundation to enable you to build apps like this example!</h4>
+            <p class="codepen" data-height="637" data-default-tab="result" data-slug-hash="MKjqLL" data-user="timotius02" style="height: 637px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/timotius02/pen/MKjqLL">
+            BB-8 </a> by Timotius Sitorus (<a href="https://codepen.io/timotius02">@timotius02</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>     
+        </div>   
+-->        
+    </section>
+</main>
+  
+
+  
+  <footer class="bg-dark-gray text-white"> 
+     <section class="max-w-screen-lg text-white container mx-auto py-2 px-12">  
+      <p id="version" class="leading-none mb-2 my-4">&copy;  This work is the intellectual property of Sheridan College. Any further copying and distribution outside of class must be within the copyright law. Posting to commercial sites for profit is prohibited.</p>
+         <p class="text-sm text-gray-100 md:mb-6">
+         <a class="text-white" href="">SYST10049 Web Development | Sheridan College</a>
+      </p>     
+    </section> 
+    <div class="container max-w-screen-lg mx-auto  px-8">   
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+          <ul class="text-sm font-medium pb-14 sm:pb-20 grid grid-cols-1 sm:grid-cols-3 gap-y-10">
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Course Material</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Resources</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
+                <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Sheridan College</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
+                 <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                 <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                 <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>                  
+                <li>
+                  <a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a>
+                  <span style="color:gray"><br>Office hours (by appointment)</span>
+                </li>
+                <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>  
+                <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+  </div>
+</footer> 
+ 
+ 
+ <!-- course outcomes -->
+<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-example-large">
+	<div class="relative w-auto my-6 mx-auto max-w-6xl">
+		<div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+			<div class="flex items-start justify-between p-5 border-b border-solid border-gray-200 rounded-t">
+				<h3 class="text-3xl font-semibold">Course Learning Outcomes</h3>
+				<button class="p-1 ml-auto bg-transparent border-0 text-gray-300 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal(&quot;modal-example-large&quot;)"><span class="bg-transparent h-6 w-6 text-2xl block outline-none focus:outline-none"><i class="fas fa-times"></i></span></button>
+			</div>
+			<div class="relative p-6 flex-auto">
+		<table class="table table-sm table-condensed table-hover">
+			<tr><th>1</th><td>Create a properly structured web page using (HTML5).</td></tr>
+			<tr><th>2</th><td>Represent the Document Object Model (DOM) in a hierarchical diagram.</td></tr>
+			<tr><th>3</th><td>Recognize the importance of browser compatibility with HTML5 and CSS3 standards.</td></tr>
+			<tr><th>4</th><td>Style a web page using Cascading Style Sheets (CSS3).</td>    </tr>  
+			<tr><th>5</th><td>Create page layouts that adapt to suit the constraints of the display using media queries.</td></tr>
+			<tr><th>6</th><td>Publish a web page on the internet.</td></tr>
+			<tr><th>7</th><td>Explain how web servers display web pages.</td></tr>
+			<tr><th>8</th><td>Secure a web page.</td></tr>
+			<tr><th>9</th><td>Logically layout a web space.</td></tr>
+			<tr><th>10</th><td>Design forms that use major controls and form handling logic.</td> </tr> 
+			<tr><th>11</th><td><span style="text-decoration:line-through">Create</span> Use client-side scripts with JavaScript for form data validation.</td> </tr>      
+		</table>
+			</div>
+			<div class="flex items-center justify-end p-6 border-t border-solid border-gray-200 rounded-b">
+				<button class="sher-teal text-white active:bg-purple-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal(&quot;modal-example-large&quot;)">understood</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-example-large-backdrop"></div>
+
+
+ <!-- study tools -->
+<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-example">
+	<div class="relative w-auto my-6 mx-auto max-w-6xl">
+		<div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+			<div class="flex items-start justify-between p-5 border-b border-solid border-gray-200 rounded-t">
+				<h3 class="text-3xl font-semibold">Study tools</h3>
+				<button class="p-1 ml-auto bg-transparent border-0 text-gray-300 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal(&quot;modal-example-large&quot;)"><span class="bg-transparent h-6 w-6 text-2xl block outline-none focus:outline-none"><i class="fas fa-times"></i></span></button>
+			</div>
+			<div class="relative p-6 flex-auto">
+                <iframe src="testYourself.html" style="width:800px;height:560px"></iframe>
+			</div>
+			<div class="flex items-center justify-end p-6 border-t border-solid border-gray-200 rounded-b">
+				<button class="sher-teal text-white active:bg-purple-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal(&quot;modal-example&quot;)">understood</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-example-backdrop"></div>
+
+
+ <!-- ... -->
+<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-factors">
+	<div class="relative w-auto my-6 mx-auto max-w-6xl">
+		<div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+			<div class="flex items-start justify-between p-5 border-b border-solid border-gray-200 rounded-t">
+				<h3 class="text-3xl font-semibold">Evaluation Factors</h3>
+				<button class="p-1 ml-auto bg-transparent border-0 text-gray-300 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal(&quot;modal-factors&quot;)"><span class="bg-transparent h-6 w-6 text-2xl block outline-none focus:outline-none"><i class="fas fa-times"></i></span></button>
+			</div>
+			<div class="relative p-6 flex-auto">
+               <h4>Algorithm Design</h4>
+                <ul>
+                    <li>Use appropriate programming structures [weight factor: 1/10]</li>
+                    <li>Test all cases [weight factor: 1/10]</li>
+                    <li>Error Handling [weight factor: 1/10]</li>
+                </ul>
+                <h4>Program Style</h4>
+                <ul>
+                    <li>Comments [weight factor: 1/10]</li>
+                    <li>Naming variables, files,... [weight factor: 1/10]</li>
+                    <li>Readability and Indentation [weight factor: 2/10]</li>
+                </ul>                    
+                <h4>Program Correctness</h4>
+                <ul>
+                    <li>Ability to Compile or Interpret without Errors [weight factor: 1/10]</li>
+                    <li>Program Correctness, Correct Results [weight factor: 2/10]</li>
+                </ul> 
+                <h4>Citations</h4>
+                <p>Lack of Source [weight factor: -4/10] <br>In comments, reference all sources used (classroom, course material, <br>references, videos, websites,...) and describe what changes you've made.  </p>                           
+			</div>
+			<div class="flex items-center justify-end p-6 border-t border-solid border-gray-200 rounded-b">
+				<button class="sher-teal text-white active:bg-purple-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal(&quot;modal-factors&quot;)">understood</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-factors-backdrop"></div>
+
+
+
+	<!-- Modal evaluation factors
+<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-factors">
+	<div class="relative w-auto my-6 mx-auto max-w-6xl">
+		<div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+			<div class="flex items-start justify-between p-5 border-b border-solid border-gray-200 rounded-t">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Evaluation Factors</h3>
+      </div>
+      <div class="relative p-6 flex-auto">
+            <h4>Algorithm Design</h4>
+            <ul>
+                <li>Use appropriate programming structures [weight factor: 1/10]</li>
+                <li>Test all cases [weight factor: 1/10]</li>
+                <li>Error Handling [weight factor: 1/10]</li>
+            </ul>
+            <h4>Program Style</h4>
+            <ul>
+                <li>Comments [weight factor: 1/10]</li>
+                <li>Naming variables, files,... [weight factor: 1/10]</li>
+                <li>Readability and Indentation [weight factor: 2/10]</li>
+            </ul>                    
+            <h4>Program Correctness</h4>
+            <ul>
+                <li>Ability to Compile or Interpret without Errors [weight factor: 1/10]</li>
+                <li>Program Correctness, Correct Results [weight factor: 2/10]</li>
+            </ul> 
+            <h4>Citation</h4>
+            <p>Lack of Source [weight factor: -4/10] In comments, reference all sources used (classroom, course material, references, videos, websites,...) and describe what changes you've made.  </p>                               
+      </div>
+			<div class="flex items-center justify-end p-6 border-t border-solid border-gray-200 rounded-b">
+				<button class="sher-teal text-white active:bg-purple-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal(&quot;modal-factors&quot;)">understood</button>
+			</div>
+    </div>
+  </div>
+</div>
+<div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-factors-backdrop"></div>
+ -->
+
+<script type="text/javascript">
+  function toggleModal(modalID) {
+    document.getElementById(modalID).classList.toggle("hidden");
+    document
+      .getElementById(modalID + "-backdrop")
+      .classList.toggle("hidden");
+    document.getElementById(modalID).classList.toggle("flex");
+    document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+  }
+</script>  
+<script>
+  // topnav
+  var topButton = document.getElementById("topnavButton");
+  var topnavList = document.getElementById("topnavList");
+  topButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    topnavList.classList.toggle("hidden");
+    document.getElementById("topnavOpen").classList.toggle("hidden");
+    document.getElementById("topnavClosed").classList.toggle("hidden");
+  });
+</script>
+<script src="scripts/prism.js"></script>
+<!-- Required popper.js -->
+<script
+  src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+  charset="utf-8"
+></script>
+<script>
+  function openPopover(event, popoverID) {
+    let element = event.target;
+    while (element.nodeName !== "BUTTON") {
+      element = element.parentNode;
+    }
+    var popper = Popper.createPopper(
+      element,
+      document.getElementById(popoverID),
+      {
+        placement: "bottom",
+      }
+    );
+    document.getElementById(popoverID).classList.toggle("hidden");
+  }
+</script>     
+</body>
+</html>

@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<title> SYST10049 learn HTML </title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css"/> 
+<link rel="stylesheet" href="../css/prism_coy_dev.css"  />
+<style>
+dl, ol {
+  margin-bottom: 16px;
+}
+dt {font-weight: bold;}
+h4, h3 {
+  margin-top: 16px;
+}
+.ordered-list {
+  list-style-type: decimal;
+}
+.text-danger {
+  color: red;
+}
+.bg-dark-gray  {
+  background-color: #333940;
+}
+code {
+  color: black !important;
+}
+.sher-teal {
+  color: #00b2ce;
+}
+.bg-sher-teal {
+  background-color: #00b2ce;
+}
+figcaption {
+  color: #00b2ce;
+  font-weight: 500;
+}
+</style>
+</head>
+
+<body>
+  <nav id="navTop" class="w-full z-30 top-0 text-white bg-dark-gray ">
+    <div class="w-full container max-w-screen-lg mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-0 py-2">
+      <div class="md:pl-4">
+        <a class="text-white hover:text-white no-underline hover:no-underline
+        font-bold text-2xl lg:text-4xl rounded-lg hover:bg-nwoods-secondary " href="../">
+          <h1 class="mb-0 p-1 ">SYST10049</h1>
+        </a>
+      </div>
+      <button id="topnavButton" class="rounded-lg sm:hidden focus:outline-none focus:ring" aria-label="Navigation">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path id="topnavOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path id="topnavClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>      
+      <div id="topnavList" class="hidden sm:block items-center w-auto mt-0 text-white p-0 z-20">
+        <ul class="list-reset list-none font-semibold flex justify-end flex-wrap sm:flex-nowrap items-center px-0 pb-0">
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../index.html">Home</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnweb/index.html">Web development</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnhtml/index.html">Learn HTML5</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learncss/index.html">Learn CSS3</a></li>
+          
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="https://piazza.com/sheridan/winter2022/syst10049bajcar" target="_blank">Class Q&amp;A</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-b border-gray-600 opacity-50 my-0 py-0" />
+  </nav>
+    
+  <main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+      
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+      <div class="flex-shrink-0 px-8 py-4">
+        <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path id="navOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path id="navClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>   
+        </button>
+      </div>   
+      <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+
+          <a href="index.html">HTML Markup</a>
+          <a href="standards.html">Standards, Semantic Correctness, and Accessibility</a>
+          <a href="grammar.html">Syntax, Elements, and Attributes</a>
+          <a href="document.html">HTML Document</a>
+          <a href="content.html">Content Models and Organization</a>
+          <a href="form-process.html">HTML Forms</a>
+          <a href="dom.html">Document Object Model (DOM)</a>
+          <a class="bg-gray-100 text-gray-900" href="textual.html">Marking up textual content</a>
+          <a href="semantics.html">Marking up semantic content</a>
+          <a href="interactive.html">Marking up interactive content</a>
+          <!--a href="forms.html">Marking up forms</a-->
+       
+      </nav>
+    </div>  
+        
+    <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
+	<h1 class="text-4xl font-medium leading-tight mt-0 mb-2 text-black-600">Marking up textual content</h1>
+    
+  
+<section class="col-8 container">
+
+<ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mx-40" id="pills-tabFill" role="tablist">
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#headings-paragraphs" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Headings and paragraphs</a>
+  </li> 
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#emphasis-importance" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Emphasis and importance</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#italic-bold-underline" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Italic, bold, and underline</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#quotation-citation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Quotations and citations</a>
+  </li>
+    <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#abbreviation-definition" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Abbreviation and definitions</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#contact-details" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Contact details</a>
+  </li>
+</ul>
+  
+<ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mb-4 mx-48" id="pills-tabFill" role="tablist">
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#super-subscript" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Superscript and subscript</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#computer-code" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Computer code</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#time-date" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Time and date</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#demarcating-edits" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Demarcating edits</a>
+  </li>
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+    <a href="#block-preformat" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Block quotes and preformatted text</a>
+  </li>
+</ul>
+
+
+
+ 
+<!-- Headings and paragraphs -->
+<div id="headings-paragraphs" class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Headings and paragraphs</h4>
+    <!--p class="text-gray-700 text-base mb-4">Example using EM and STRONG elements </p-->
+    <dl class="row">
+	  <dt class="text-xl">element &lt;p> </dt>
+	  <dd class="text-base">  represents a paragraph; usually represented in visual media by blocks of text that are physically separated from adjacent blocks through blank lines.</dd>	
+	  <dt class="text-xl">elements &lt;h1>&hellip;&lt;h6> </dt>
+	  <dd class="text-base">  represent headings for their sections. These elements have a rank given by the number in their name. The h1 element has the highest rank, the h6 element has the lowest rank, and two elements with the same name have equal rank. h1–h6 elements must not be used to markup subheadings, subtitles, alternative titles and taglines unless intended to be the heading for a new section or subsection. Assistive technology often announces the presence and level of a heading to users, as a hint to understand the structure of a document and construct a 'mental model' of its outline <small><a href="https://www.w3.org/TR/html52/sections.html#the-h1-h2-h3-h4-h5-and-h6-elements" target="_blank">&mdash;more at whatwg.org</a></small></dd>	
+	</dl>
+     <div class="grid grid-cols-2">
+        <div class="m-3">
+            <h4>Output</h4>
+            <iframe srcdoc='<h2>Chapter III</h2><h3>How Dorothy saved the Scarecrow.</h3><p>Dorothy was left alone she began to feel hungry. So she went to the cupboard and cut herself some bread, which she spread with butter. She gave some to Toto, and taking a pail from the shelf she carried it down to the little brook and filled it with clear, sparkling water. Toto ran over to the trees and began to bark at the birds sitting there. Dorothy went to get him, and saw such delicious fruit hanging from the branches that she gathered some of it, finding it just what she wanted to help out her breakfast.</p><p>Then she went back to the house, and having helped[Pg 32] herself and Toto to a good drink of the cool, clear water, she set about making ready for the journey to the City of Emeralds.</p>'  height="378px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+ <pre class="language-html"><code>
+&lt;!-- Headings and paragraphs -->
+&lt;h2>Chapter III&lt;/h2>
+&lt;h3>How Dorothy saved the Scarecrow.&lt;/h3>
+&lt;p>Dorothy was left alone she began to feel hungry. 
+So she went to the cupboard and cut herself some bread, 
+which she spread with butter. She gave some to Toto, 
+and taking a pail from the shelf she carried it down to 
+the little brook and filled it with clear, sparkling water. 
+Toto ran over to the trees and began to bark at the birds 
+sitting there. Dorothy went to get him, and saw such 
+delicious fruit hanging from the branches that she 
+gathered some of it, finding it just what she wanted to 
+help out her breakfast.&lt;/p>
+&lt;p>Then she went back to the house, and having helped[Pg 32] 
+herself and Toto to a good drink of the cool, clear water, 
+she set about making ready for the journey to the City 
+of Emeralds.
+&lt;/p></code></pre>      
+        </div>
+    </div>
+    <p><a href="https://web10049-examples.w3spaces.com/content/headings-paragraphs.html" target="_blank">
+        headings-paragraphs.html</a> (full code)
+    </p> 
+  </div>
+</div>
+
+ 
+<!-- Emphasis and importance -->
+<div id="emphasis-importance"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Emphasis and importance</h4>
+    	<dl class="w-full">
+	  <dt class="text-xl">element &lt;em></dt>
+	  <dd class="text-base">  represents stress emphasis of its contents. The level of stress that a particular piece of content has is given by its number of ancestor em elements. The placement of stress emphasis changes the meaning of the sentence. The element thus forms an integral part of the content. The precise way in which stress is used in this way depends on the language.
+      <p>Read more &mdash;<a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element" target="_blank">HTML specs</a></p>
+      </dd>
+	  <dt class="text-xl">element &lt;strong></dt>
+	  <dd class="text-base"> represents strong importance, seriousness, or urgency for its contents. 
+      <p>Read more &mdash;<a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element" target="_blank">HTML specs</a></p></dd>	
+	</dl>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe src="https://web10049-examples.w3spaces.com/content-textual/emphasis-importance.html?bypass-cache=1637936016" name="iframe_a" height="378px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+ <pre class="language-html"><code>
+&lt;!-- emphasizing words and phrases -->
+&lt;p>
+    If you need to emphasize a word or a particular fact in 
+    a sentence, you can use italics to stress it. That said, 
+    italics and other font changes lose their impact if 
+    overused. Use it sparingly and rely on strong writing and 
+    &lt;em>strategic word placement&lt;/em> 
+    to get your point across.
+&lt;/p>
+
+&lt;p>
+    Boldface fonts can be used sparsely to draw attention 
+    to words or short phrases, and are most often seen in 
+    business writing. 
+    &lt;strong>
+        Using boldface for emphasis is not appropriate for 
+        academic writing.
+    &lt;/strong>
+&lt;/p>
+ </code></pre>   
+        </div>
+    </div>
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/emphasis-importance.html" target="_blank">emphasis-importance.html</a> (full code)</p> 
+    <h4>More examples</h4>
+    <ul>
+        <li>Nested STRONG elements &mdash;<a href="https://web10049-examples.w3spaces.com/content-textual/importance.html" target="_blank">importance.html</a></li> 
+        <li>How changing the stress emphasis changes the meaning. &mdash;<a href="https://web10049-examples.w3spaces.com/content-textual/emphasis.html" target="_blank">emphasis.html</a> (source: Example from <a href="https://www.w3.org/TR/html52/textlevel-semantics.html#the-em-element" target="">W3C Recommendation, 4.5.2 The em element</a>)</li> 
+    </ul>
+  </div>
+</div>
+
+
+<!-- Italic, bold, and underline -->
+<div id="italic-bold-underline"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Italic, bold, and underline</h4>
+    <p>The elements &lt;b>, &lt;i>, and &lt;u> came about so people could write bold, italics, or underlined text in an era when CSS was still supported poorly or not at all. They only affect presentation and not semantics, are known as presentational elements and <strong>should no longer be used</strong> [<a href="https://mzl.la/35tLCHN" target="">MDN</a>], because semantics is so important to accessibility, SEO, etc.  The concept of italics isn't very helpful to people using screen readers, or to people using a writing system other than the Latin alphabet.</p>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<p>The snow goose (<i>Anser caerulescens</i>), consisting of both a white morph and dark morph,   is a North American species of goose. Its name derives from the typically white plumage.</p> <p>The menu was a sea of exotic words like <i lang="uk-latn">vatrushka</i>, <i lang="id">nasi goreng</i> and <i lang="fr">soupe à l&apos;oignon</i>.</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+ <pre class="language-html"><code>
+&lt;!-- scientific names -->
+&lt;p>	
+  The snow goose (&lt;i>Anser caerulescens&lt;/i>),
+  consisting of both a white morph and dark morph,
+  is a North American species of goose. Its name 
+  derives from the typically white plumage.
+&lt;/p>
+&lt;!-- foreign words -->
+&lt;p>	
+  The menu was a sea of exotic words like 
+  &lt;i lang="uk-latn">vatrushka&lt;/i>,
+  &lt;i lang="id">nasi goreng&lt;/i> and 
+  &lt;i lang="fr">soupe à l'oignon&lt;/i>.
+&lt;/p></code></pre>  
+        </div>
+    </div>
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/italic.html" target="_blank">italic.html</a> (full code)</p> 
+    <!-- <h4>More examples</h4> -->
+  </div>
+</div>
+
+
+<!-- Quotations and citations -->
+<div id="quotation-citation"class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Quotations and citations</h4>
+	<dl class="w-full">
+	  <dt class="col-sm-3 text-info">The &lt;q> element</dt>
+	  <dd class="col-sm-9"> indicates that the enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks. </dd>	
+	  <dt class="col-sm-3 text-info">Citation element &lt;cite></dt>
+	  <dd class="col-sm-9"> is used to describe a reference to a cited creative work, such as book, movie, painting, etc., and must include the title of that work. <small><a href="https://mzl.la/2SyRf1S">&mdash;MDN</a></small></dd>	
+	</dl>    
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<q style="font-size:20px;font-family:Georgia, serif;">All we have to decide is what to do with the time that is given us.</q><br>&mdash;J.R.R Tolkien, <cite>The Fellowship of the Ring</cite>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- quotations marks around quotation -->
+
+&lt;q>All we have to decide is what to do with 
+    the time that is given us.&lt;/q>
+&lt;br>
+
+&lt;!-- defines the title of a work, not person's name  -->
+
+&mdash;J.R.R Tolkien, &lt;cite>The Fellowship of the Ring&lt;/cite>
+
+</code></pre>  
+        </div>
+    </div>
+    <p hidden><a href="#" target="_blank">(full code)</a></p> 
+    <!-- <h4>More examples</h4> -->
+  </div>
+</div>
+
+
+<!-- Abbreviation and definitions -->
+<div id="abbreviation-definition"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Abbreviation and definitions</h4>
+    <h4>Inline text semantics</h4>
+    <dl class="row">
+	  <dt class="col-sm-3 text-info">The &lt;dfn> element</dt><dd class="col-sm-9">represents the defining instance of a term, often the first use of a term in a document. The nearest parent of the &lt;dfn> tag must also contain the definition (explanation) for the term. 
+	  <small><a href="https://www.w3schools.com/tags/tag_dfn.asp">&mdash;w3schools</a></small></dd>	
+	  <dt class="col-sm-3 text-info">The &lt;abbr> element</dt><dd class="col-sm-9">An abbreviation or an acronym are both shortened versions of something else. Both are often represented as a series of letters. Use the global title attribute to show the description of the abbreviation, or acronym, when you mouse over the <code>&lt;abbr></code> element. 
+	  <small><a href="https://www.w3schools.com/tags/tag_abbr.asp">&mdash;w3schools</a></small></dd>	
+	</dl>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<p><dfn>
+<abbr style="cursor:help"  title="HyperText Markup Language">HTML</abbr></dfn> is the standard markup language for creating web pages.</p><p><abbr style="cursor:help" title="laughing my arms off">LMAO</abbr><br><abbr style="cursor:help"  title="rolling on the floor laughing">ROFL</abbr><br><abbr  style="cursor:help" title="laughing and shaking my head">LSMH</abbr></p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- definition, abbreviation, acronym -->
+&lt;p>
+    &lt;dfn>
+        &lt;abbr title="HyperText Markup Language">HTML&lt;/abbr>
+    &lt;/dfn>
+    is the standard markup language for creating web pages.
+&lt;/p>
+&lt;p>&lt;abbr title="laughing my arms off">LMAO&lt;/abbr>
+&lt;br>&lt;abbr title="rolling on the floor laughing">ROFL&lt;/abbr>
+&lt;br>&lt;abbr title="laughing and shaking my head">LSMH&lt;/abbr>&lt;/p>
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/inline-abbr-dfn.html" target="_blank">inline-abbr-dfn.html</a> (full code)</p> 
+    <!-- <h4>More examples</h4> -->
+  </div>
+</div>
+
+
+<!-- Contact details -->
+<div id="contact-details"class="flex justify-center mt-6">
+    <div class="block p-6 rounded-lg shadow-lg bg-white">
+        <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Contact details</h4>
+        <dl class="row">
+            <dt class="col-sm-3">Element &lt;address></dt>
+            <dd class="col-sm-9">represents the contact information for its nearest article or body element ancestor. The address element must not be used to represent arbitrary addresses, unless those addresses are in fact the relevant contact information. The address element must not contain information other than contact information. Typically, the address element would be included along with other information in a footer element. 
+            <a href="https://html.spec.whatwg.org/multipage/sections.html#the-address-element" target="_blank">W3C Spec</a>
+            </dd>	
+        </dl>    
+        <h4>Example</h4>
+        <div class="grid grid-cols-2">
+            <div class="m-3">
+                <h4>Output</h4>
+                <iframe src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/iframes/address.html"  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+            </div>
+            <div class="m-3">
+                <h4>Code</h4>
+                <pre class="language-html"><code>
+&lt;!-- contact information -->
+&lt;address>	
+Written by Charlie Chaplin.&lt;br> 
+Visit us at:&lt;br>
+somesite.ca&lt;br>
+123 Any Street&lt;br> 
+Anytown, postalcode
+&lt;/address
+                </code></pre>  
+            </div>
+        </div>
+        <p><a href="https://web10049-examples.w3spaces.com/content-textual/contact-details.html" target="_blank">contact-details.html </a>(full code)</p> 
+        <!-- <h4>More examples</h4> -->
+    </div>
+</div>
+
+
+ 
+<!--
+<div class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 w-full">heading</h4>
+    <p class="text-gray-700 text-base w-full">
+      TBD</p>
+  </div>
+</div>
+-->
+ 
+
+
+<!-- Superscript and subscript -->
+<div id="super-subscript"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Superscript and subscript</h4>
+    <p>Highlights</p>
+	<dl class="row">
+	  <dt class="col-sm-3">Element &lt;sub></dt><dd class="col-sm-9">The <samp>sub</samp> tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H<sub>2</sub>O.</dd>	
+	  <dt class="col-sm-3">Element &lt;sup></dt><dd class="col-sm-9">The <samp>sup</samp> tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW<sup>[1]</sup>.</dd>	
+	</dl>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+            <iframe srcdoc='<p> Water is the chemical substance with chemical formula H<sub>2</sub>O; one molecule of water has two hydrogen atoms covalently bonded to a single oxygen atom.<sup>[24]</sup> Water is a tasteless, odorless liquid at ambient temperature and pressure.</p><hr><p title=footnote>[24] Campbell, Williamson & Heyden 2006.</p>'  
+            height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3">
+            <h4>Code</h4>
+            <pre class="language-html"><code>
+&lt;!-- comment -->
+&lt;p>
+Water is the chemical substance with chemical formula 
+H&lt;sub>2&lt;/sub>O; 
+one molecule of water has two hydrogen atoms covalently 
+bonded to a single oxygen atom.&lt;sup>[24]&lt;/sup> 
+Water is a tasteless, odorless liquid at ambient temperature 
+and pressure.
+&lt;/p>
+&lt;hr>
+&lt;p title="footnote">[24] Campbell, 
+     Williamson & Heyden 2006.&lt;/p>
+            </code></pre>  
+        </div>
+    </div>
+    <p><a hidden href="#" target="_blank">(full code)</a></p> 
+    <h4>More examples</h4>
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/super-sub-formula.html" target="_blank">super-sub-formula.html</a> (full code)</p> 
+  </div>
+</div>
+
+
+<!-- Computer code -->
+<div id="computer-code"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Computer code</h4>
+    <p>Highlights</p>
+	<dl class="row">
+	  <dt class="col-sm-3 text-info">element &lt;code> </dt>
+	  <dd class="col-sm-9">defines a fragment of computer code. does not preserve extra whitespace and line-breaks.</dd>	  
+	  <dt class="col-sm-3 text-info">element &lt;var> </dt>
+	  <dd class="col-sm-9">defines a variable. The variable could be a variable in a mathematical expression or a variable in programming context. </dd>
+
+	  <dt class="col-sm-3 text-info">element &lt;samp> </dt>
+	  <dd class="col-sm-9">represents output from a program or computing system.</dd>
+	  <dt class="col-sm-3 text-info">element &lt;kbd> </dt>
+	  <dd class="col-sm-9">represents user input, like keyboard input or voice commands</dd>	  	  
+	</dl>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<p>In physics, mass–energy equivalence is the principle 
+that anything having mass has an equivalent amount of energy 
+and vice versa, with these fundamental quantities directly 
+relating to one another by Albert Einstein&apos;s famous 
+formula: </p><p><var>E</var> = <var>mc</var><sup>2</sup>.</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- var -->
+&lt;p>In physics, mass–energy equivalence is the principle 
+that anything having mass has an equivalent amount of energy 
+and vice versa, with these fundamental quantities directly 
+relating to one another by Albert Einstein's famous 
+formula:&lt;p>
+&lt;p>
+    &lt;var>E&lt;/var> = &lt;var>mc&lt;/var>&lt;sup>2&lt;/sup>.	
+&lt;/p>
+</code></pre>  
+        </div>
+    </div>
+    <p hidden><a href="#" target="_blank">(full code)</a></p> 
+    <h4>More examples</h4>
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/code-samp-kbd.html" target="_blank">code-samp-kbd.htm</a></p> 
+  </div>
+</div>
+
+
+<!-- Time and date -->
+<div id="time-date"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Time and date</h4>
+    <p>Highlights</p>
+	<dl class="row">
+	  <dt class="col-sm-3 text-info">The &lt;time> element</dt>
+	  <dd class="col-sm-9"> represents its contents, along with a machine-readable form of those contents in the datetime attribute. The kind of content is limited to various kinds of dates, times, time-zone offsets, and durations. The datetime attribute may be present. If present, its value must be a representation of the element's contents in a machine-readable format. A time element that does not have a datetime content attribute must not have any element descendants. <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element" target="_blank">W3C Spec</a></dd>	  		  	  
+	</dl>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<p> <time>2011-11-18</time>	</p>'  height="158px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- comment -->
+&lt;p>
+&lt;time>2011-11-18&lt;/time>	
+&lt;/p>
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/time-date.html" target="_blank">time-date.html </a>(full code)</p> 
+    <!-- <h4>More examples</h4> -->
+  </div>
+</div>
+
+
+<!-- Demarcating edits -->
+<div id="demarcating-edits"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Demarcating edits</h4>
+    <p>Highlights</p>
+	<dl class="row">
+	  <dt class="col-sm-4 text-info">The &lt;del> element</dt>
+	  <dd class="col-sm-8"></dd>	  
+	  <dt class="col-sm-4 text-info">The &lt;ins> element</dt>
+	  <dd class="col-sm-8"></dd>		  	  
+	</dl>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<p><del>This phrase is removed.</del><ins>It is replaced 
+                        by this phrase.</ins></p>'  
+                height="198px" 
+                width="100%" 
+                style="border:1px dotted gray;" 
+                title="Iframe Example">
+        </iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- comment -->
+&lt;p>&lt;del>This phrase is removed.&lt;/del>
+&lt;ins>It is replaced by this phrase.&lt;/ins>	
+&lt;/p>
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/demarcating-edits.html" target="_blank">demarcating-edits.html </a>(full code)</p> 
+    <!-- <h4>More examples</h4> -->
+  </div>
+</div>
+
+
+<!-- Block quotes and preformatted text -->
+<div id="block-preformat"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Block quotes and preformatted text</h4>
+    <dl class="row">
+	  <dt class="col-sm-4 text-info">The &lt;pre> element</dt>
+	  <dd class="col-sm-8">defines preformatted text. preserves whitespace and line-breaks.</dd>
+	  <dt class="col-sm-4 text-info">The &lt;blockquote> element</dt>
+	  <dd class="col-sm-8">specifies a section that is quoted from another source. Use <samp>q</samp> for inline (short) quotations.</dd>	  
+	</dl>  
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc="<pre>
+            Imagine there's no heaven
+            It's easy if you try
+            No hell below us
+            Above us only sky
+            Imagine all the people
+            Living for today...
+
+        Imagine there's no countries
+          It isn't hard to do
+          Nothing to kill or die for
+          And no religion too
+          Imagine all the people
+          Living life in peace...
+
+        You may say I'm a dreamer
+        But I'm not the only one
+                I hope someday you'll join us
+                And the world will be as one
+</pre>
+"  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- Imagine by -->
+&lt;pre> 
+            Imagine there's no heaven
+            It's easy if you try
+            No hell below us
+            Above us only sky
+            Imagine all the people
+            Living for today...
+
+        Imagine there's no countries
+          It isn't hard to do
+          Nothing to kill or die for
+          And no religion too
+          Imagine all the people
+          Living life in peace...
+
+        You may say I'm a dreamer
+        But I'm not the only one
+                I hope someday you'll join us
+                And the world will be as one
+&lt;/pre>
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/preformatted-text.html" target="_blank">preformatted-text.html</a> (full code)</p> 
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc="
+  <p>using p element</p>
+  <p>
+        /'^'\
+       ( o o )
+  -oOOO--(_)--OOOo-
+
+    .oooO
+    (   )  Oooo.
+  ---\ (---(   )---
+      \_)   ) /
+           (_/
+  </p>         
+  <p>using pre element</p>
+  <pre>
+        /'^'\
+       ( o o )
+  -oOOO--(_)--OOOo-
+
+    .oooO
+    (   )  Oooo.
+  ---\ (---(   )---
+      \_)   ) /
+           (_/	 
+  </pre>
+"  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+&lt;!-- text art -->
+&lt;p>using p element&lt;/p>
+&lt;p>
+      /'^'\
+     ( o o )
+-oOOO--(_)--OOOo-
+
+  .oooO
+  (   )  Oooo.
+---\ (---(   )---
+    \_)   ) /
+         (_/
+&lt;/p>         
+&lt;p>using pre element&lt;/p>
+&lt;pre>
+      /'^'\
+     ( o o )
+-oOOO--(_)--OOOo-
+
+  .oooO
+  (   )  Oooo.
+---\ (---(   )---
+    \_)   ) /
+         (_/	 
+&lt;/pre>
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="https://web10049-examples.w3spaces.com/content-textual/text-art.html" target="_blank">text-art.html </a> (full code)</p> 
+  </div>
+</div>
+
+
+
+<!-- blank 
+<div  id="block-preformat"class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">???</h4>
+    <p>Highlights</p>
+    <h4>Example</h4>
+     <div class="grid grid-cols-2">
+        <div class="m-3"><h4>Output</h4>
+        <iframe srcdoc='<p>examples become available during course</p>'  height="298px" width="100%" style="border:1px dotted gray;" title="Iframe Example"></iframe>
+        </div>
+        <div class="m-3"><h4>Code</h4>
+<pre class="language-html"><code>
+
+</code></pre>  
+        </div>
+    </div>
+    <p><a href="#" target="_blank">(full code)</a></p> 
+  </div>
+</div>
+-->
+</section>
+     
+    </section>
+ </main>
+  
+
+  
+  <footer class="bg-dark-gray text-white"> 
+     <section class="max-w-screen-lg text-white container mx-auto py-2 px-12">  
+      <p id="version" class="leading-none mb-2 my-4">&copy;  This work is the intellectual property of Sheridan College. Any further copying and distribution outside of class must be within the copyright law. Posting to commercial sites for profit is prohibited.</p>
+         <p class="text-sm text-gray-100 md:mb-6">
+         <a class="text-white" href="">SYST10049 Web development | Sheridan College</a>
+      </p>     
+    </section> 
+    <div class="container max-w-screen-lg mx-auto  px-8">   
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+          <ul class="text-sm font-medium pb-14 sm:pb-20 grid grid-cols-1 sm:grid-cols-3 gap-y-10">
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Course Material</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Resources</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
+                <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Sheridan College</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
+                 <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                 <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                 <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>                  
+                <li>
+                  <a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a>
+                  <span style="color:gray"><br>Office hours (by appointment)</span>
+                </li>
+                <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>  
+                <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+  </div>
+</footer> 
+ 
+</body>
+<!--script src="https://cdn.tailwindcss.com/"></script>
+<script type="text/javascript" src="../scripts/index.min.js"></script-->
+<script>
+  // topnav
+  var topButton = document.getElementById("topnavButton");
+  var topnavList = document.getElementById("topnavList");
+  topButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    topnavList.classList.toggle("hidden");
+    document.getElementById("topnavOpen").classList.toggle("hidden");
+    document.getElementById("topnavClosed").classList.toggle("hidden");
+  });
+</script>
+<script src="../scripts/prism.js"></script>
+<!-- Required popper.js -->
+<script
+  src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+  charset="utf-8"
+></script>
+<script>
+  function openPopover(event, popoverID) {
+    let element = event.target;
+    while (element.nodeName !== "BUTTON") {
+      element = element.parentNode;
+    }
+    var popper = Popper.createPopper(
+      element,
+      document.getElementById(popoverID),
+      {
+        placement: "bottom",
+      }
+    );
+    document.getElementById(popoverID).classList.toggle("hidden");
+  }
+</body>
+</html>

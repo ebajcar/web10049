@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<title> SYST13416 </title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css"/> 
+<link rel="stylesheet" href="../css/prism_coy_dev.css"  />
+<style>
+dl, ol {
+  margin-bottom: 16px;
+}
+h4, h3 {
+  margin-top: 16px;
+}
+.ordered-list {
+  list-style-type: decimal;
+}
+.text-danger {
+  color: red;
+}
+.bg-dark-gray  {
+  background-color: #333940;
+}
+code {
+  color: black !important;
+}
+.sher-teal {
+  color: #00b2ce;
+}
+.bg-sher-teal {
+  background-color: #00b2ce;
+}
+figcaption {
+  color: #00b2ce;
+  font-weight: 500;
+}
+</style>
+</head>
+
+<body>
+  <nav id="navTop" class="w-full z-30 top-0 text-white bg-dark-gray ">
+    <div class="w-full container max-w-screen-lg mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-0 py-2">
+      <div class="md:pl-4">
+        <a class="text-white hover:text-white no-underline hover:no-underline
+        font-bold text-2xl lg:text-4xl rounded-lg hover:bg-nwoods-secondary " href="../">
+          <h1 class="mb-0 p-1 ">SYST13416 <small>Linux/UNIX Operating Systems</small></h1>
+        </a>
+      </div>
+      <button id="topnavButton" class="rounded-lg sm:hidden focus:outline-none focus:ring" aria-label="Navigation">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path id="topnavOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path id="topnavClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>      
+      <div id="topnavList" class="hidden sm:block items-center w-auto mt-0 text-white p-0 z-20">
+        <ul class="list-reset list-none font-semibold flex justify-end flex-wrap sm:flex-nowrap items-center px-0 pb-0">
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-b border-gray-600 opacity-50 my-0 py-0" />
+  </nav>
+    
+  <main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+      
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+      <div class="flex-shrink-0 px-8 py-4">
+        <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path id="navOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path id="navClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>   
+        </button>
+      </div>   
+      <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+
+          <a class="bg-gray-200 text-gray-900" href="worksheet1.html">Worksheet 1</a>
+          <!--
+          <a href="module2.html">Worksheet 2</a>
+          <a href="module3.html">Worksheet 3</a>
+          <a href="module4.html">Worksheet 4</a>
+          <a href="module5.html">Worksheet 5</a>
+          <a href="module6.html">Worksheet 6</a>
+          <a href="module7.html">Worksheet 7</a>
+          <a href="module8.html">Worksheet 8</a>
+          <a href="module9.html">Worksheet 9</a>
+          <a href="moduleA.html">Worksheet 10</a>
+          -->
+      </nav>
+    </div>  
+        
+    <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
+        <h1 class="text-4xl font-medium leading-tight mt-0 mb-2 text-black-600">Worksheet 1</h1>
+
+
+<!-- Learning Objectives-->
+<div class="my-5">
+  <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="flex items-center justify-center px-4 bg-sher-teal">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="triangle-exclamation" class="w-6 h-6 text-white fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"></path></svg>     
+    </div>
+    <div class="px-4 py-2 -mx-3">
+      <div class="mx-3">
+        <h5 class="text-2xl font-semibold sher-teal">In this tutorial&hellip;</h5>
+        <ul class="list-outside">
+            <li><a href="#e01">Exercise 1: Read and Reflect</a></li>
+            <li><a href="#e02">Exercise 2: Install Remote Access Tool</a></li>
+            <li><a href="#e03">Exercise 3: Log On to Linux Remotely</a></li>
+            <li><a href="#e04">Exercise 4: Get Online Help</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Exercie 1: Read and Reflect-->
+<div id="e01" class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h5 class="text-2xl font-semibold sher-teal">Exercise 1: Read and Reflect</h5>
+		<p>To help you develop your critical thinking and system thinking, consider the following questions after reading the material for Module 1:</p>
+		
+		<ol>
+			<li>Describe the components of an operating system. Why do we care? </li>
+			<li>How does the computer work?</li>
+			<li>List and give examples of operating system tasks. What utilities does an OS provide?</li>
+			<li>The first tenet of UNIX is "Small is beautiful". What are the other eight (8) tenets? Give a short description of each.</li>
+			<li>One of the ideas that comes from the UNIX philosophy is the "Rule of Parsimony". Explain.</li>
+			<li>Why are conventions and standards important? How do they affect the computers? people? solutions?</li>
+		</ol>
+		<!--p>The material in this section is a natural extension if you already have some experience with Unix/Linux, have fundamental knowledge and skill working with CLI, and wish to explore the environment beyond the scope of this course.</p-->
+  </div>
+</div>
+
+
+
+<!-- Exercise 2-->
+<div  id="e02" class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h5 class="text-2xl font-semibold sher-teal">Exercise 2: Install Remote Access Tool </h5>
+    <!--
+		<p>Note you need only one of the following tools</p>
+		<p><strong>Choice 1 (Windows)</strong></p>
+        <del>
+		<ol>
+			<li>Log in to AccessSheridan.</li>
+			<li>Go to the Software Installation link.</li>
+			<li>In the list of applications, find SSH Secure Shell 3 application link.</li>
+			<li>Click on the link and let the application install. NOTE: your laptop must be registered on the Sheridan network. If you are having difficulty, please see ITSC for help.</li>
+			<li>After successful install, find the SSH Secure Shell application. Click on the [start] button in the lower left-hand corner of your monitor. Select [Programs].
+			In the list, find the menu for [SSH Secure Shell].</li>
+			<li>You will see two choices,  [Secure Shell Client] and [File Transfer ]<br>OR<br>you may find two icons on your desktop, File Transfer and Shell Client .</li>
+		</ol>
+        </del>
+        -->
+		<p><strong>Windows</strong></p>
+		<ol class="list-outside">
+			<li>A free application is putty. You can google it and follow their instructions to download and install.   Or use this link:  <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank">http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html</a></li>
+			<li>8. You will need to download:<br>
+			For Windows on Intel x86<br>
+			<strong>putty.exe</strong>  &nbsp;&mdash;PuTTY (the Telnet and SSH client itself)<br>
+			<del><strong>psftp.exe</strong>  &nbsp;&mdash;PSFTP (an SFTP client, i.e. general file transfer sessions much like FTP)</del> If you already have FileZilla, you do not need to this, its just another implementation of the secure FTP protocol.
+			</li>
+			<li>The download should be straight forward.  The site has good documentation as well, so have a look at it. Note that if you are having access problems with any of these tools, check your firewall and virus tool setting, or check with the help desk.</li>
+		</ol>	
+		<p><strong>Mac</strong></p>
+		<ol class="list-outside">
+			<li>Find the "Terminal" or "Console"  app on your system.  Running this app will automatically give you access to your local Linux  environment and you can do lot of the work locally.  
+			</li>
+			<li>You can connect to dev.fast.sheridanc.on.ca with the ssh command. At the terminal prompt, type (substitute "username" with your user name)<br>
+            <pre class="brush: bash; highlight: [0]; first-line: 1" title="">ssh username@dev.fast.sheridanc.on.ca</pre> 
+            
+            See Textbook Chapter 17 "ssh: Logs In or Executes Commands on a Remote System" (pp. 694).<br>Have a look at the manual page for the ssh command and talk to me for additional instructions.</li>
+		</ol>	
+		<p><strong>Network Logon Information (for any tool)</strong></p>	
+		<p class="dent">host name:  dev.fast.sheridanc.on.ca<br>
+		user name:  your Sheridan ID<br>
+		Use default port:  22<br>
+		Use default authentication:  password<br>
+		Password:  originally sent to your Outlook email, or request/reset <a href="http://tech.fast.sheridanc.on.ca/" target="_blank">here (tech.fast.sheridanc.on.ca > Services > LAMP/Git</a>).</p>
+		<p>&nbsp;</p>
+  </div>
+</div>
+
+
+
+<!-- Exercise 3-->
+<div id="e03" class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h5 class="text-2xl font-semibold sher-teal">Exercise 3: Log On to Linux Remotely</h5>
+	<p class="dent">
+		<strong>NOTE:  on a Linux system, when you type a password, you do not see any stars, it looks like nothing is happening! This is a security feature! Your typing is being received and interpreted, so make sure you do not make any errors! Remember that Linux is CASE-SENSITIVE!</strong>
+	</p>
+    <p>&nbsp;</p>
+	<p><strong>Using putty tool</strong></p>
+	<ul>
+		<li>In Windows, run putty.exe application, either by clicking on the icon or from the start menu. </li>
+		<li>When the application opens, you will see the configuration window.  </li>
+		<li>Use the same information as above.  The main difference you will find is that you will be prompted for your login after the connection and you will see the command prompt upon successful logon.  </li>
+	</ul>
+	
+	<p>&nbsp;</p>
+
+
+	
+	
+	<p><strong>Logging in and out; choosing the correct shell</strong></p>
+	<p>Start a bash shell session by typing bash, followed by the Enter key:</p>
+	<pre>&gt; bash</pre>
+	
+	<p>Note the change. On our server, currently the login shell is tcsh, which uses the &gt; symbol as the prompt character. Type the command exit followed by the Enter key:</p>
+	<pre>~$  exit</pre>
+	
+	<p>Note that you are back to the original prompt. Again, type exit command followed by the Enter key:</p>
+    <pre class="brush: bash; highlight: [0]; first-line: 1" title="">&gt; exit</pre> 
+
+	<p>Note that since you were at the login shell (the one that was presented to you upon login), this time the exit command logged you out.</p>
+	<p>You can type "exit" or "logout" at the command prompt <strong>regardless</strong> of what tool you use.<br> or <br>You can use the Icon shortcut or Menu items to disconnect <strong>depending</strong> on the tool you use. </p>
+	<p>&nbsp;</p>
+  </div>
+    </div>
+</div>
+
+
+
+<!-- Exercise 4-->
+<div id="e04" class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h5 class="text-2xl font-semibold sher-teal">Exercise 4: Get Online Help</h5>
+	<p><strong>The best resource, the primary source, is the online manual that comes with the distribution or version you are using.</strong></p>	
+	<p>Remember that Linux is open source, which means that you, or anyone, can change and recompile the kernel.  Such changes are (or should be) then reflected in the documentation. </p>	
+	<p>Therefore, first try using the man (manual page) command that comes with your installed system. </p>	
+	<p>The general syntax for all commands:
+<pre class="brush: bash; highlight: [0]; first-line: 1" title="">command [-options] [arguments]</pre> 
+Note the square brackets denote that options and arguments are optional. Most options start with a dash. You always start with the command. You always end with pressing the Enter key.
+	</p>
+		<p>The following command displays information about the online manual itself:
+<pre class="brush: bash; highlight: [0]; first-line: 1" title="">man man</pre> 
+Pressing Enter at the end, starts processing of the command. Note the first token (word) is the name of the command, the second token is an argument.  There are no options specified.
+	</p>
+	<p>Once you press Enter, the manual page will display.  Note the way it displays, what sections it lists and what information it provides. To get around the manual page, use:</p>	
+	<ul>
+		<li>Use the <strong>SPACE BAR</strong> to move one page (screen) forward.</li>
+		<li>Use the <strong>b</strong> key to move one page back.</li>
+		<li>Use the <strong>q</strong> key to quit (exit) the displaying of the manual page.</li>
+	</ul>
+		<p>Another important thing to remember:  Linux is CASE-SENSITIVE! try
+<pre class="brush: bash; highlight: [0]; first-line: 1" title="">Man mAn</pre> 
+or some other variation of upper and lower case characters.	Spend some time perusing the online manual pages. 
+You do not have to read it all, but familiarize yourself with it sufficiently to get your bearings.  </p>
+	<p><strong>Make it a habit to view the manual page for each new command you work with.</strong></p>
+	
+	
+	<p>Peruse the following pages:</p>	
+	<ul>
+		<li>man</li>
+		<li>bash</li>
+		<li>ls</li>
+		<li>pwd</li>
+		<li>cd</li>
+		<li>chmod</li>
+	</ul>
+	
+	<p>Keep a notebook and note your observations. </p>	
+	<ul>
+		<li>What kinds of errors are you encountering?</li>
+		<li>What questions come to mind when you are working in this environment?</li>
+		<li>When you encounter an error or problem, note the solution and how you found the solution.</li>
+	</ul>	
+  </div>
+</div>
+
+
+
+
+
+</section>
+  </main>
+  
+  <footer class="bg-dark-gray text-white"> 
+    <section class="max-w-screen-lg text-white container mx-auto py-2 px-12">  
+        <p id="version" class="leading-none mb-2 my-4">
+            &copy;  This work is the intellectual property of Sheridan College. 
+            Any further copying and distribution outside of class must be within 
+            the copyright law. Posting to commercial sites for profit is prohibited.
+        </p>
+        <p class="text-sm text-gray-100 md:mb-6">
+            <a class="text-white" href="">SYST13416 Linux/UNIX Operating Systems | Sheridan College</a>
+        </p>     
+    </section> 
+    <div class="container max-w-screen-lg mx-auto  px-8">   
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+          <ul class="text-sm font-medium pb-14 sm:pb-20 grid grid-cols-1 sm:grid-cols-3 gap-y-10">
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Course Material</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=13416&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                <li><a href="https://tldp.org/">The Linux Documentation Project</a></li>  
+                <li><a href="https://www.fsf.org/">Free Software Foundation</a></li>   
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Resources</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.gnu.org/">GNU Operating System</a></li>
+                <li><hr style="margin-top:10px;width:50%"></li>
+                <li><a href="https://linuxmint.com/">Linux Mint</a></li>
+                <li><a href="https://www.ubuntu.com/">Ubuntu</a> </li> 
+                <li><a href="http://www.debian.org/">Debian (formerly Debian GNU/Linux)</a> </li>  
+                <li><a href="https://distrowatch.com/dwres.php?resource=major">DistroWatch.com</a> </li><li><a href="https://www.tecmint.com/linux-distro-for-power-users/">tecmint.com</a> </li>                 
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Sheridan College</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
+                 <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                 <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                 <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>
+                <li>
+                  <a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a>
+                  <span style="color:gray"><br>Office hours (by appointment)</span>
+                </li>
+                <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>  
+                <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </footer> 
+</body>
+
+<script>
+  // topnav
+  var topButton = document.getElementById("topnavButton");
+  var topnavList = document.getElementById("topnavList");
+  topButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    topnavList.classList.toggle("hidden");
+    document.getElementById("topnavOpen").classList.toggle("hidden");
+    document.getElementById("topnavClosed").classList.toggle("hidden");
+  });
+</script>
+<script src="../scripts/prism.js"></script>
+</body>
+</html>

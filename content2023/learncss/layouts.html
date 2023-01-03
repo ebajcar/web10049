@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<title> SYST10049 learn CSS </title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css"/> 
+<link rel="stylesheet" href="../css/prism_coy_dev.css"  />
+<style>
+dl, ol {
+  margin-bottom: 16px;
+}
+h4, h3 {
+  margin-top: 16px;
+}
+.ordered-list {
+  list-style-type: decimal;
+}
+.text-danger {
+  color: red;
+}
+.bg-dark-gray  {
+  background-color: #333940;
+}
+code {
+  color: black !important;
+}
+.sher-teal {
+  color: #00b2ce;
+}
+figcaption {
+  color: #00b2ce;
+  font-weight: 500;
+}
+</style>
+</head>
+
+<body>
+  <nav id="navTop" class="w-full z-30 top-0 text-white bg-dark-gray ">
+    <div class="w-full container max-w-screen-lg mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-0 py-2">
+      <div class="md:pl-4">
+        <a class="text-white hover:text-white no-underline hover:no-underline
+        font-bold text-2xl lg:text-4xl rounded-lg hover:bg-nwoods-secondary " href="../">
+          <h1 class="mb-0 p-1 ">SYST10049</h1>
+        </a>
+      </div>
+      <button id="topnavButton" class="rounded-lg sm:hidden focus:outline-none focus:ring" aria-label="Navigation">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path id="topnavOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path id="topnavClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>      
+      <div id="topnavList" class="hidden sm:block items-center w-auto mt-0 text-white p-0 z-20">
+        <ul class="list-reset list-none font-semibold flex justify-end flex-wrap sm:flex-nowrap items-center px-0 pb-0">
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../index.html">Home</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnweb/index.html">Web development</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnhtml/index.html">Learn HTML5</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learncss/index.html">Learn CSS3</a></li>
+          
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="#">Class Q&amp;A</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-b border-gray-600 opacity-50 my-0 py-0" />
+  </nav>
+    
+  <main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+      
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+      <div class="flex-shrink-0 px-8 py-4">
+        <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path id="navOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path id="navClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>   
+        </button>
+      </div>   
+      <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+
+          <a href="index.html">Cascading Style Sheets(CSS)</a>
+          <a href="syntax.html">Style Rules, Syntax and Structure</a>
+          <a href="selectors.html">Selectors</a>
+          <a href="properties.html">Properties</a>
+          <a class="bg-gray-100 text-gray-900" href="layouts.html">Layouts</a>
+          <a href="responsive.html">User experience and Responsive Design</a>
+          <a href="forms.html">Form validation</a>
+
+      </nav>
+    </div>  
+        
+<section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
+<h1 class="text-4xl font-medium leading-tight mt-0 mb-2 text-black-600">Layout properties and techniques</h1>
+
+<!--
+<div class="grid grid-cols-2 gap-4 w-3/4 mt-6 m-auto">
+  <div class="border-t-4 border-teal-500 pt-4">
+    <p class="uppercase sher-teal font-bold">HTML Layout Techniques</p>
+    <p class="font-semibold">HTML tables
+    <br>CSS framework
+    <br>CSS flexbox
+    <br>CSS grid
+    </p>
+  </div>
+  <div class="border-t-4 border-teal-500 pt-4">
+    <p class="uppercase sher-teal font-bold"></p>
+    <p class="font-semibold">
+    <br>
+
+    </p>
+  </div>
+</div>
+-->
+
+<!-- Layout Techniques -->
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h5 class="text-2xl font-semibold sher-teal">Layout Techniques</h5>
+
+	<p>There are different ways to create multi-column layouts. Each way has its pros and cons.</p>
+	<ul>
+		<li>HTML tables</li>
+		<li>CSS float property</li>
+		<li>CSS framework</li>
+		<li>CSS flexbox</li>
+		<li>CSS grid</li>
+	</ul>
+    
+      <figure class="fig-bookmark">
+     
+               <div class="bookmark-description">Website Layout: A website is often divided into headers, menus, content and a footer. There are tons of different layout designs to choose from. However, the structure above, is one of the most common, and we will take a closer look at it in this tutorial.</div>
+        <p>
+         <a href="https://www.w3schools.com/css/css_website_layout.asp" target="_blank">https://www.w3schools.com/css/css_website_layout.asp</p>
+
+      <img src="../images/web_layout.png" width="600"/></a>
+      <figcaption>A typical website layout.</figcaption>
+    </figure>   
+    
+    
+	<br>	
+	<p>Regardless of the chosen technique, follow the sequence of steps:</p>
+	<ol>
+		<li>Start with well-formed and valid HTML5 code with appropriate comments.</li>
+		<li>Consider the general CSS rules first.</li>
+		<li>Apply the desired values for positioning of the content.</li>
+		<li>Use a technique (flexbox, grid,...) to layout the page.</li>
+		<li>Add finishing touches...</li>
+	</ol>
+	<!--a class="btn btn-outline-warning btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="http://bajcar.dev.fast.sheridanc.on.ca/course_syst10049_examples/design_layouts.html">
+		Explore: example	 
+	</a-->	
+ 
+  </div>
+</div>
+
+
+
+<!-- Styling tables  -->
+<div class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h5 class="text-2xl font-semibold sher-teal">Styling tables</h5>
+	<ul>
+		<li>To specify table borders in CSS, use the <code>border</code> <em>property</em>.</li>
+		<li>The <code>border-collapse</code> <em>property</em> sets whether the table borders should be collapsed into a single border</li>
+		<li>Width and height of a table are defined by the <code>width</code> and <code>height</code> <em>properties</em>.</li>
+		<li>The <code>text-align</code> <em>property</em> sets the horizontal alignment (like left, right, or center) of the content in &lt;th> or &lt;td>.</li>
+		<li>The <code>vertical-align</code> <em>property</em> sets the vertical alignment (like top, bottom, or middle) of the content in &lt;th> or &lt;td>.</li>
+		<li>To control the space between the border and the content in a table, use the <code>padding</code> <em>property</em> on &lt;td> and &lt;th> elements.</li>
+		<li>Add the <code>border-bottom</code> <em>property</em> to &lt;th> and &lt;td> for horizontal dividers</li>
+		<li>Use the <code>:hover</code> <em>selector</em> on &lt;tr> to highlight table rows on mouse over</li>
+		<li>For zebra-striped tables, use the <code>nth-child()</code> <em>selector</em> and add a <code>background-color</code> <em>property</em> to all even (or odd) table rows</li>
+
+	</ul>
+		<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3schools.com/css/css_table.asp">
+		Explore the examples @w3schools	</a> 
+    <p class="text-gray-700 text-base mb-4">
+
+    </p>  
+ 
+  </div>
+</div>
+
+
+<!-- Float property  -->
+<div class="flex justify-center mt-6 w-full">
+  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
+    <h5 class="text-2xl font-semibold sher-teal">Float property</h5>
+    <p class="text-gray-700 text-base mb-4">
+
+    </p>  
+  </div>
+</div>
+
+<!--  CSS Flexbox layout -->
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h5 class="text-2xl font-semibold sher-teal">CSS Flexbox layout</h5>
+    <p class="text-gray-700 text-base mb-4">
+
+    </p>  
+	<p>Before the Flexbox Layout module, there were four layout modes:</p>
+	<ol>
+		<li>Block, for sections in a webpage</li>
+		<li>Inline, for text</li>
+		<li>Table, for two-dimensional table data</li>
+		<li>Positioned, for explicit position of an element</li>
+	</ol>	
+	<p>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. To start using the Flexbox model, you need to first define a flex container. The flex container becomes flexible by setting the <code>display</code> <em>property</em> to flex.</p>
+	<p>The flex container properties are:<br>
+<code>flex-direction<br>
+&nbsp;flex-wrap<br>
+&nbsp;flex-flow<br>
+&nbsp;justify-content<br>
+&nbsp;align-items<br>
+&nbsp;align-content</code>
+</p>
+	<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3schools.com/css/css3_flexbox.asp">
+		Explore the examples @w3schools	 
+	</a>	
+  </div>
+</div>
+
+
+<!--  CSS Grid Layout -->
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h5 class="text-2xl font-semibold sher-teal">CSS Grid Layout</h5>
+    <p class="text-gray-700 text-base mb-4">
+
+    </p>  
+	<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+	<dl class="row">
+	  <dt class="col-sm-3">Grid Elements</dt>
+	  <dd class="col-sm-9">A grid layout consists of a parent element, with one or more child elements.</dd>
+	  <dt class="col-sm-3">Display Property</dt>
+	  <dd class="col-sm-9">An HTML element becomes a grid container when its display property is set to grid or inline-grid</dd>
+	  <dt class="col-sm-3">Grid Columns</dt>
+	  <dd class="col-sm-9">The vertical lines of grid items are called columns.</dd>	  
+	  <dt class="col-sm-3">Grid Rows</dt>
+	  <dd class="col-sm-9">The horizontal lines of grid items are called rows.</dd>
+	  <dt class="col-sm-3">Grid Gaps</dt>
+	  <dd class="col-sm-9">The spaces between each column/row are called gaps.</dd>
+	  <dt class="col-sm-3">Grid Lines</dt>
+	  <dd class="col-sm-9">The lines between columns are called column lines.<br>The lines between rows are called row lines.</dd>	  
+	</dl>	
+	<p>To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid. Grid containers consist of grid items, placed inside columns and rows.</p>
+	<p>The grid property is a shorthand property for the following properties:<br>
+<code>grid-template-rows<br>
+&nbsp;grid-template-columns<br>
+&nbsp;grid-template-areas<br>
+&nbsp;grid-auto-rows<br>
+&nbsp;grid-auto-columns<br>
+&nbsp;grid-auto-flow</code>
+</p>
+
+	<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3schools.com/css/css_grid.asp">
+		Explore the examples @w3schools	 
+	</a>  
+  </div>
+</div>
+
+
+
+<!--  Frameworks and libraries -->
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h5 class="text-2xl font-semibold sher-teal">Frameworks and libraries</h5>
+    <p class="text-gray-700 text-base mb-4">
+
+    </p> 
+	  <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Create own framework</h5> 
+            <p>Start with no styles. Identify what CSS Rules you will need.  Generally, a custom-built framework can be smaller and cleaner, especially if you would use only 10 to 12 percent of an existing framework.</p>
+            <p>Start with well-formed and valid HTML5. Organize your CSS file (element) into sections. 1) imports and fonts first, 2) document layout, 3) specific areas, such as navigation, galleries, grids, buttons, ...</p>
+            <p>Practice building your own frameworks. It helps to select and determine when and how to use existing ones.</p>
+            
+        <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Use existing libraries</h5>
+            <p>Check out some of the frameworks and libraries below. Some may require rudimentary skills for programming with Javascript. All require solid knowledge of HTML and CSS to use professionally.</p>
+        
+        <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Combining multiple libraries</h5>
+        
+            <p>The challenge of combining is to eliminate duplicates and minimize amount of code to include. <q>Less code gives better performance.</q></p>
+        
+
+          <hr style="margin:15px 0;border:1px dotted teal;">
+
+        <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Google Fonts</h5> 
+        <p><a href="https://fonts.google.com/" target="_blank" class="bookmark source">Discover great typography and iconography.</a> Google Fonts makes it easy to bring personality and performance to your websites and products. Our robust catalog of open-source fonts and icons, makes it easy to integrate expressive type and icons seamlessly—no matter where you are in the world.</p>
+        <p><a href="https://www.w3schools.com/howto/howto_google_fonts.asp" target="_blank"><i class="fa fa-bookmark" aria-hidden="true"></i> Tutorial on w3schools</a></p>
+
+        <hr style="margin:15px 0;border:1px dotted teal;">
+
+        <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">CSS Icons</h5> 
+
+    <p>Explore CSS icons on
+      <a href="https://www.w3schools.com/css/css_icons.asp" target="_blank"><i class="fa fa-bookmark"></i> w3schools</a>  &hellip;how to add icons &mdash; font awesome, bootstrap, google.
+    </p>
+    <figure style="margin-left:50px">
+      <iframe style="border:1px solid teal;height:430px;width:500px;" src="https://web10049-examples.w3spaces.com/examples-css/google-icons.html"></iframe>
+      <figcaption>Google icons example</figcaption>
+    </figure>
+    
+    <hr style="margin:15px 0;border:1px dotted teal;">
+    <p><a href="https://fontawesome.com/" target="_blank" >Font Awesome icon library </a> The next generation of the web’s favorite icon library + toolkit. Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit.</p>
+   
+     
+<hr style="margin:15px 0;border:1px dotted teal;">
+
+        <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">W3.CSS framework</h5> 
+        <p><a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a>
+            is a modern, responsive, mobile first CSS framework, standard CSS only (No jQuery or JavaScript library). A Quality Alternative to Bootstrap W3.CSS is Smaller, Faster and Easier to Use.  
+        </p>
+  
+    
+    <p>To use, include the stylesheet on your pages: (contains some 230 CSS rules, file size 23.1 KB)<br> 
+    <code>&lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></code></p> 
+      
+<hr style="margin:15px 0;border:1px dotted teal;">
+
+        <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Bootstrap CSS framework</h5> 
+
+    <p><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" target="_blank"> Tutorial on w3schools</a><br>                 
+    Bootstrap is a free and popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites. (the base file contains over 1000 CSS rules, file size 161 KB, plus themes and other libraries)</p>  
+    <!-- https://www.bootstrapcdn.com/ -->
+    
+    <hr style="margin:15px 0;border:1px dotted teal;">
+
+        <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Hosted Libraries</h5> 
+    <p>                
+    Make sure you are comfortable with native CSS and rudimentary Javascript before delving into libraries.</p>
+    
+    
+      <figure class="fig-bookmark">
+      <a href="https://developers.google.com/speed/libraries/" target="_blank">Google Hosted Libraries</a> 
+          <p>The Google Hosted Libraries is a stable, reliable, high-speed, globally available content distribution network for the most popular, open-source JavaScript libraries. Google works directly with the key stakeholders for each library effort and accepts the latest versions as they are released.</p>
+ 
+    
+    
+    <h5>Google charts</h5>
+    <p><a href="https://developers.google.com/chart/" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> Guide at Google</a></p>
+			
+    <!--figure style="margin-left:50px">
+      <iframe style="border:1px solid teal;height:430px;width:500px;" src="../examples/google_chart_pie10049.html"></iframe>
+      <figcaption>Example using Google charts. <a href="https://www.w3schools.com/howto/howto_google_charts.asp">tutorial on w3schools</a> </figcaption>
+    </figure-->
+
+  
+  </div>
+</div>
+
+
+
+<!--  
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h5 class="text-2xl font-semibold sher-teal"></h5>
+    <p class="text-gray-700 text-base mb-4">
+
+    </p>  
+  </div>
+</div>
+ -->
+
+
+
+</section>
+</main>
+  
+
+  
+  <footer class="bg-dark-gray text-white"> 
+     <section class="max-w-screen-lg text-white container mx-auto py-2 px-12">  
+      <p id="version" class="leading-none mb-2 my-4">&copy;  This work is the intellectual property of Sheridan College. Any further copying and distribution outside of class must be within the copyright law. Posting to commercial sites for profit is prohibited.</p>
+         <p class="text-sm text-gray-100 md:mb-6">
+         <a class="text-white" href="">SYST10049 Web development | Sheridan College</a>
+      </p>     
+    </section> 
+    <div class="container max-w-screen-lg mx-auto  px-8">   
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+          <ul class="text-sm font-medium pb-14 sm:pb-20 grid grid-cols-1 sm:grid-cols-3 gap-y-10">
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Course Material</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Resources</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
+                <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Sheridan College</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
+                 <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                 <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                 <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>                  
+                <li>
+                  <a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a>
+                  <span style="color:gray"><br>Office hours (by appointment)</span>
+                </li>
+                <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>  
+                <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+  </div>
+</footer> 
+ 
+</body>
+
+<script>
+  // topnav
+  var topButton = document.getElementById("topnavButton");
+  var topnavList = document.getElementById("topnavList");
+  topButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    topnavList.classList.toggle("hidden");
+    document.getElementById("topnavOpen").classList.toggle("hidden");
+    document.getElementById("topnavClosed").classList.toggle("hidden");
+  });
+</script>
+<script src="../scripts/prism.js"></script>
+</body>
+</html>
