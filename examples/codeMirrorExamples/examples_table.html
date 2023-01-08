@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+      function drawTable() {
+
+	  
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Resource');
+data.addColumn('string', 'Url');
+data.addColumn('string', 'Tags');
+data.addColumn('number', 'unit');
+data.addRows([
+  ['example01_000', 'example01_000.html', 'minimal HTML5 document, <code>doctype, html, head, title, meta, body </code>', 1],
+  ['example01_001', 'example01_001.html','"Hello World!" content', 1],
+  ['example01_002', 'example01_002.html', 'commenting html code', 1],
+
+  ['example02_001', 'example02_001.html', '<code>&lt;dfn>, &lt;cite>, em, var, mark, ins, del, small, strong, samp, sub, sup, code</code>', 2],
+  ['example02_002', 'example02_002.html', '<code>header, hr, nav, main, article, aside, footer</code>', 2],
+  ['example02_003', 'example02_003.html', '<code>h1, h2, h3, h4, h5, h6, p</code>', 2],
+  ['example02_004', 'example02_004.html', '<code>pre</code>', 2],
+  ['example02_005', 'example02_005.html', '<code>p, pre</code>', 2],
+  ['example02_006', 'example02_006.html', ' ', 2],
+  ['example02_009', 'example02_009.html', 'global attributes, <code>title=, kbd</code>, &hellip;', 2], 
+  ['example02_010', 'example02_010.html', 'navigation, <code>nav, a, href=</code> ', 2],
+  ['example02_024', 'example02_024.html', 'navigation: absolute, relative, bookmarks, <code>id=</code> ', 2],
+  
+  ['example03_005', 'example03_005.html', 'media, youtube video, <code>iframe</code> ', 3],
+  ['example03_006', 'example03_006.html', 'media, spotify audio, <code>iframe</code> ', 3],
+  ['example03_010', 'example03_010.html', ' ', 3], 
+  ['example03_011', 'example03_011.html', ' ', 3],
+  ['example03_018', 'example03_018.html', ' ', 3],
+  ['example03_040', 'example03_040.html', ' ', 3],
+  ['example03_050', 'example03_050.html', ' ', 3],
+  
+  ['example04_004', 'example04_004.html', '<code>table, rowspan, colspan</code>', 4],
+  ['example04_008', 'example04_008.html', 'tic tac toe, 3x3 table', 4],
+  ['example04_017', 'example04_017.html', 'All About The Weather, <code>figure, figcaption</code>, table with images', 4],
+  ['example04_022', 'example04_022.html', 'Hangman, <code>ul, li, canvas</code>', 4],
+  ['example04_023', 'example04_023.html', '<img src="images/folder.png" alt="">', 4],
+  ['example04_024', 'example04_024.html', 'nested list ', 4],
+  ['example04_025', 'example04_025.html', 'nested list, type and start attributes ', 4],
+  ['example04_026', 'example04_026.html', 'definition list ', 4],
+  ['example04_031', 'example04_031.html', 'ordered lists, type and start attributes ', 4],
+  ['example04_032', 'example04_032.html', 'unordered (bulletted) lists, nested ', 4],
+  ['example04_033', 'example04_033.html', 'nested lists—combination of ordred and unordered lists ', 4],
+  ['example04_036', 'example04_036.html', 'definition list ', 4],
+  ['example04_102', 'example04_102.html', 'table, ten of clubs playing card ', 4],
+  ['example04_103', 'example04_103.html', 'table, tic tac toe board, ', 4],
+  
+  ['example05_003', 'example05_003.html', 'form, input, type=text, textarea ', 5],
+  ['example05_004', 'example05_004.html', 'form, input, type=color, file, date, month, week ', 5],
+  ['example05_005', 'example05_005.html', 'form, label, fieldset, legend, input, type=radio, checkbox ', 5],
+  ['example05_006', 'example05_006.html', 'form, select, option, optgroup (label=), disabled, selected, value=', 5],
+  ['example05_007', 'example05_007.html', 'form, datalist, input (list=), option (label=),  ', 5],
+  ['example05_009', 'example05_009.html', 'cryptograms, unordered list, input ', 5],
+  
+  ['example06_001', 'example06_001.html', 'background-color, color, class, id, inline css ', 6],
+  ['example06_002', 'example06_002.html', 'color, id, inline css ', 6],
+  ['example06_003', 'example06_003.html', ' ', 6],
+  ['example06_021', 'example06_021.html', 'border, padding, font, <code style="color:red">::first-letter</code>, ::first-line ', 6],
+  ['example06_045', 'example06_045.html', 'Hello World! position, top, left, transform, text-align, text-shadow, content, -webkit, z-index ', 6],
+  
+  ['example07_001', 'example07_001.html', 'inline css, background-image, background-size, background-repeat, background-position ', 7],
+  ['example07_002', 'example07_002.html', 'linking in font, :first-child, border-radius, text-align, vertical-align, rgb, rgba, #hex, hsl, hsla ', 7],
+  ['example07_003', 'example07_003.html', 'hsl colors ', 7],
+  ['example07_010', 'example07_010.html', 'outline, padding, margin ', 7],
+  ['example07_011', 'example07_011.html', 'layers, positioning ', 7],
+  ['example07_012', 'example07_012.html', 'layers, positioning, gradients, transforms ', 7],
+  ['example07_031', 'example07_031.html', 'explore position fixed, static, absolute, relative ', 7],
+  ['example07_032', 'example07_032.html', 'explore position, .parent-absolute, .child-fixed ', 7],
+  ['example07_033', 'example07_033.html', 'explore position, .parent-absolute, .child-absolute  ', 7],
+  ['example07_034', 'example07_034.html', 'explore position, .parent-static, .child-absolute ', 7],
+  ['example07_035', 'example07_035.html', '? ', 7],
+  ['example07_040', 'example07_040.html', 'dropdown image, display, position ', 7],
+  ['example07_050', 'example07_050.html', 'birdwatching (unstyled) ', 7],
+  ['example07_100', 'example07_100.html', 'complex table. style rowspans and colspans ', 7],
+  ['example07_101', 'example07_101.html', 'complex table, hover, style rows and columns ', 7],
+  ['example07_102', 'example07_102.html', 'styled playing card (ten of clubs) ', 7],
+  ['example07_103', 'example07_103.html', 'bingo card, external file css/bingo.css ', 7],
+  
+  ['example08_007', 'example08_007.html', 'illustration of containing blocks ', 8],
+  ['example08_008', 'example08_008.html', 'tic tac toe table, styled ', 8],
+  ['example08_009', 'example08_009.html', 'memory board, images, styled ', 8],
+  ['example08_043', 'example08_043.html', 'chessboard table, styled ', 8],
+  ['example08_046', 'example08_046.html', 'An+B Notation, CSS3 draft ', 8],
+  ['example08_047', 'example08_047.html', 'nth-of-type, first-of-type, last-of-type', 8],
+  ['example08_055', 'example08_055.html', 'definition list, agenda-style layout ', 8],
+  ['example08_056', 'example08_056.html', 'definition list, table-style layout ', 8],
+  ['example08_058', 'example08_058.html', 'nested list, directory structure with image bullets ', 8],
+  ['example08_061', 'example08_061.html', 'definition list, rock-paper-scissors layout ', 8],
+  
+  ['example09_010', 'example09_010.html', 'flex box, responsive design, standard content organization ', 9],
+  ['example09_014', 'example09_014.html', 'flex box, responsive design, navigation ', 9],
+  ['example09_015', 'example09_015.html', 'grid lines ', 9],
+  ['example09_016', 'example09_016.html', 'grid-area property, standard content organization', 9],
+  ['example09_018', 'example09_018.html', 'figure caption overlay ', 9],
+  ['example09_019', 'example09_019.html', 'responsive flex grid design (older)', 9],
+  ['example09_022', 'example09_022.html', 'hangman (unordered list - button-style) ', 9],
+  
+  ['example10_003', 'example10_003.html', 'simple form ', 10],
+  ['example10_004', 'example10_004.html', 'form, select, option, optgroup ', 10],
+  ['example10_005', 'example10_005.html', 'form, fieldset, legend, radio, checkbox ', 10],
+  ['example10_007', 'example10_007.html', 'form, range ', 10],
+  ['example10_010', 'example10_010.html', 'cryptogram (styled) ', 10],
+  ['example10_017', 'example10_017.html', 'form, select, option ', 10],
+  ['example10_021', 'example10_021.html', 'form, attribute selectors, :focus, :required ', 10],
+  ['example10_022', 'example10_022.html', 'form, :last-of-type, nth-last-of-type ', 10],
+  ['example10_050', 'example10_050.html', 'birdwatching (styled) ', 10],
+  ['example10_051', 'example10_051.html', 'form validation with CSS3 basic UI module pseudo-classes and HTML5 Form attributes ', 10],
+  ['example20_001', 'example20_001.html', 'how to create a textured text ', 10],
+  ['example20_002', 'example20_002.html', 'solve problems: programming and development process ', 10],
+  ['example20_022', 'example20_022.html', 'Google icons ', 10],
+  ['example40_001', 'example40_001.html', 'counters, numbered outline ', 10],
+  
+  ['example77_003', 'example77_003.html', 'canvas, lines ', 11],
+  ['example77_004', 'example77_004.html', 'canvas, stroke, fill', 11],
+  ['example77_005', 'example77_005.html', 'canvas, arrays and objects', 11],
+  ['example77_006', 'example77_006.html', 'canvas, compositing methods', 11],
+  ['example77_010', 'example77_010.html', 'canvas, quadratic curves', 11],
+  ['example77_012', 'example77_012.html', 'canvas, graphs', 11],
+  ['example77_013', 'example77_013.html', 'canvas, text along curve', 11],
+  ['example77_014', 'example77_014.html', 'canvas, animation snake', 11],
+  ['example77_015', 'example77_015.html', 'canvas, animation ball', 11],
+  ['example77_016', 'example77_016.html', 'canvas, graphic', 11],
+  ['example77_024', 'example77_024.html', 'canvas, sprites', 11],
+  ['example77_025', 'example77_025.html', 'canvas, same as 77_005', 11],
+  
+  ['example99_000', 'example99_000.html', ' ', 12],
+  ['example99_008', 'example99_008.html', '!important exception ', 12],
+  ['example99_009', 'example99_009.html', 'sticky position ', 12],
+  ['example99_010', 'example99_010.html', 'linking font, standard content organization ', 12],
+  ['example99_045', 'example99_045.html', 'Google pie chart ', 12],
+  ['example99_046', 'example99_046.html', 'Google hierarchy chart, minimial HTML5 document ', 12],
+  ['example99_047', 'example99_047.html', 'Google timeline chart ', 12],
+]);
+
+var table = new google.visualization.Table(document.getElementById('patternformat_div'));
+
+var formatter = new google.visualization.PatternFormat(
+    '<a style="font-size:14px" target="_blank" href="{1}">{0}</a>');
+// Apply formatter and set the formatted value of the first column.
+formatter.format(data, [0, 1]);
+
+var view = new google.visualization.DataView(data);
+//view.setRows(view.getFilteredRows([{column: 3, value: 12},]));
+view.setColumns([0, 3, 2]); // Create a view .
+table.draw(view, {allowHtml: true, showRowNumber: true, width: '100%', height: '100%'});	
+
+
+      }
+    </script>
+  </head>
+  <body>
+    <div style="width:700px;height:600px">
+     <div id="patternformat_div"></div>
+	</div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

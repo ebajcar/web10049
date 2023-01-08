@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Example07_002</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="css/codeMirror.css">
+<!--[if lt IE 8]>
+<style>
+#textareacontainer, #iframecontainer {width:48%;}
+#container {height:500px;}
+#textarea, #iframe {width:90%;height:450px;}
+#textareaCode, #iframeResult {height:450px;}
+.stack {display:none;}
+</style>
+<![endif]-->
+</head>
+<body>
+
+<div class="trytopnav">
+	<div class="w3-bar w3-light-grey" style="border-top:1px solid #f1f1f1;overflow:auto">
+	  <a href="javascript:void(0);" onclick="restack(currentStack)" title="Change Orientation" class="w3-button w3-bar-item topnav-icons  fas fa-sync" style="font-size:28px;color:#999999;margin-top:-2px"></a>
+	  <button class="w3-button w3-bar-item w3-indigo w3-hover-white w3-hover-text-indigo" onclick="submitTryit(1)">Run &raquo;</button>
+	  <span class="w3-right w3-hide-medium w3-hide-small" style="padding:8px 8px 8px 8px;display:block"></span>
+	  <span class="w3-right w3-hide-small" style="padding:8px 0;display:block;float:right;"><span id="framesize"></span></span>
+	</div>
+</div>
+<div id="shield"></div>
+<a href="javascript:void(0)" id="dragbar"></a>
+
+<div id="container">
+<div id="navbarDropMenu" class="w3-dropdown-content w3-bar-block w3-border" style="z-index:5">
+<span onclick="openMenu()" class="w3-button w3-display-topright w3-transparent w3-hover-dark-grey" title="Close Menu" style="font-weight:bold;padding-top:10px;padding-bottom:11px;">&times;</span>
+  <div class="w3-bar-block">
+    <a class="w3-bar-item w3-button" href='javascript:void(0);' title="Change Orientaton" onclick="openMenu();restack(currentStack)"><i class="fa fa-rotate" style="font-size:26px;margin-left:-4px;margin-right:8px"></i><span style="position:relative;top:-4px;left:2px;">Change Orientation</span></a>
+    <a class="w3-bar-item w3-button" href="javascript:void(0);" title="Save" onclick="openMenu();click_savebtn()"><i class="fa fa-save" style="font-size:26px;margin-right:10px;"></i><span style="position:relative;top:-4px;left:2px;">Save Code</span></a>
+    
+    <a class="w3-bar-item w3-button" href='javascript:void(0);' id="loadGDriveBtn" title="Load from Google Drive" onclick="openMenu();click_google_loadbtn()"><img src="" alt="Load from Google Drive" title="Load from Google Drive" style="margin-right:10px;width:24px;"><span style="position:relative;left:1px;">Load from Google Drive</span></a>
+  </div>
+  <footer class="w3-container w3-small w3-light-gray">
+  <p>Web Programming &copy; Sheridan College</p>
+  </footer>
+</div>
+<div id="menuOverlay" class="w3-overlay w3-transparent" style="cursor:pointer;z-index:4"></div>
+  <div id="textareacontainer">
+    <div id="textarea">
+      <div id="textareawrapper">
+	  
+<!--
+	code area 
+	starts here
+	
+--> 
+<textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example07_002</title>
+  <meta charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>	
+<style>
+p {
+  font-family: 'Allan';font-size: 18px;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+pre {
+  font-family: monospace;
+  width: 95%;
+  margin: 5px auto auto 10px;
+  padding-bottom: 5px;
+  border-bottom: thin dotted black;
+}
+table {
+  width: 100%
+}
+td:first-child {
+  width: 4em;
+  height: 4em;
+  color: white;
+  font-size: 1.5em;
+  border: 10px solid black;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: center;	
+}
+.p-red {
+  background-color: rgb(100%, 0%, 0%);
+}
+.d-red {
+  background-color: rgb(255, 0, 0);
+}
+.x-red {
+  background-color: #ff0000;
+}
+.h-red {
+  background-color: hsl(0, 100%, 80%);
+}
+.t-red {
+  background-color: rgba(255,0,0,0.65);
+}
+.th-red {
+  background-color: hsla(0, 100%, 30%, 0.5);
+}
+</style>
+</head>
+<body>
+  <table>
+	<tr> 
+	  <td class="p-red">p-red</td>
+	  <td>
+	    <p>A color can be specified as an RGB value, using this formula rgb(%red, %green, %blue).</p>
+	    <pre>.p-red { background-color: rgb(100%, 0%, 0%); }</pre>
+      </td>
+	</tr>
+	
+	<tr> 
+	  <td class="d-red">d-red</td>
+	  <td>
+	    <p>A color can be specified as an RGB value, using this formula rgb(decimal red, decimal green, decimal blue).</p>
+	    <pre>.d-red { background-color: rgb(255, 0, 0); }</pre>
+      </td>
+	</tr>
+	
+	<tr> 
+	  <td class="x-red">x-red</td>
+	  <td>
+	    <p>A color can be specified as an RGB value, using hexadecimal numbers.</p>
+	    <pre>.x-red { background-color: #ff0000; }</pre>
+      </td>
+	</tr>	
+  </table>
+
+	
+<table>
+  <tr> 
+	<td class="t-red">t-red</td>
+	<td>
+	  <p>A color can be specified as an RGBA value, using ...</p>
+	  <pre>.t-red { background-color: rgba(255,0,0,0.65); }</pre>
+	</td>
+  </tr>
+
+  <tr> 
+	<td class="h-red">h-red</td>
+	<td>
+	  <p>A color can be specified as HSL value .</p>
+	  <pre>.h-red { background-color: hsl(0, 100%, 80%); }</pre>
+	</td>
+  </tr>
+
+  <tr> 
+	<td class="th-red">th-red</td>
+	<td>
+	  <p>A color can be specified as HSLA value, using hsla(hue, saturation, lightness, alpha) The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+	  <pre>.th-red { background-color: hsla(0, 100%, 30%, 0.5); }</pre>
+	</td>
+  </tr>
+</table>	
+</body>
+</html>
+
+</textarea>
+<!--
+	end of code area here
+	end of code area here
+	end of code area here
+	
+--> 
+        <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
+          <input type="hidden" name="code" id="code" />
+        </form>
+       </div>
+    </div>
+  </div>
+  <div id="iframecontainer">
+    <div id="iframe">
+      <div id="iframewrapper"></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="my_w3editor.js"></script>
+
+</body>
+</html>
