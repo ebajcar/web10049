@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example09_016</title>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu   main   main   main   main   right'
+    'menu   footer footer footer footer right';
+  grid-gap: 3px;
+}
+.grid-container > div {
+ outline: 1px dotted red;
+}
+</style>  
+</head>
+<body>
+
+<h1><a href="https://www.w3schools.com/css/css_grid_item.asp" target="_blank">The grid-area Property</a></h1>
+
+<p>You can use the <em>grid-area</em> property to name grid items.</p>
+
+<p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2">Menu</div>
+  <div class="item3">Main</div>  
+  <div class="item4">Right</div>
+  <div class="item5">Footer</div>
+</div>
+
+</body>
+</html>
+
+
+

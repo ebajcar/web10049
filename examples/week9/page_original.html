@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example09_010</title>
+  <meta charset="utf-8"> 
+<!--
+Author: Instructor
+Date created: Mar. 9, 2016
+Date updated: Apr. 3, 2017
+Project: class exercises for Web Dev
+Dependencies: none
+Description: 
+  example of flex box and responsive design
+  extension to example on w3schools.com
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* 
+universal selector is known to be very slow;
+this time we will use it anyway because it is 
+a very small web page and we can examine the 
+relationships of the contains 
+TODO: Remove prior to publishing
+*/
+
+* {
+  /* 	
+  The box-sizing property is used to tell the browser 
+  what the sizing properties width and height) should include. 
+  cite: http://www.w3schools.com/cssref/css3_pr_box-sizing.asp 
+  */
+  box-sizing: border-box;
+  outline: 1px pink dotted;
+}
+
+html {
+  font-family: "Lucida Sans",sans-serif;
+}
+body, header, footer, main {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+header {
+  background-color: #93c;
+  color: #fff;
+  padding: 15px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+}
+nav li:hover {
+  background-color: #09c;
+}
+
+@media all and (max-width: 600px) and (min-width: 500px) {
+  ul li  {
+    font-style: italic;
+    color: #222;
+  }
+  aside {
+    display: none;
+  }
+}
+
+@media all and (min-width: 499px) {
+  main { 
+    /* main container allowing flex properties */
+    display: flex;  
+  }
+  main > article { order: 2; min-width: 12em; flex:1; }
+  main > nav     { order: 1; width: 20%; }
+  main > aside   { order: 3; width: 30%; }
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Page Heading</h1>
+  </header>
+
+  <main>
+    <nav>
+      <ul>
+        <li>Article One</li>
+        <li>Article Two</li>
+        <li>Article Three</li>
+        <li>Article Four</li>
+      </ul>
+    </nav>
+    <article>
+      <h1>Article Heading</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum nunc vel arcu tincidunt pharetra. Duis vulputate quis elit in ultrices. Phasellus sit amet leo nibh. In hac habitasse platea dictumst. Suspendisse est elit, fermentum a ornare bibendum, faucibus et eros. Vivamus sit amet sapien semper, congue felis id, posuere eros. Vestibulum vestibulum, lectus quis euismod egestas, libero mauris malesuada ante, vulputate aliquam velit tellus et quam.</p>
+      <p>Sed aliquam id ligula ac bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean auctor neque sed orci efficitur euismod. Maecenas facilisis imperdiet massa at pellentesque. Aliquam erat volutpat. Mauris maximus odio id erat vestibulum, quis consequat dolor eleifend. Integer fermentum et enim nec aliquet.</p>
+    </article>
+    <aside>
+      <h5>Aside Heading</h5>
+      <p>Vivamus in ex neque. Maecenas mauris nisl, consectetur a lacinia accumsan, suscipit vel urna. Praesent porta sem nec nulla auctor, sit amet fringilla justo auctor. Aliquam viverra dignissim orci a blandit. Sed quis ornare ante, non gravida lorem. Etiam id iaculis justo. Etiam id velit luctus, consectetur nunc vel, viverra nunc. Fusce dignissim varius lacus, vel euismod ante varius a. Mauris eu turpis a lacus accumsan pulvinar in sed elit.</p>
+    </aside>		
+  </main>
+    
+  <footer><address>SYST10049 Web Development © Sheridan College</address></footer>
+</body>
+</html>
+
+
+

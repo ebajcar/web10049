@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nav - final</title>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body {
+	width: 100%;
+	margin: auto;
+}
+nav { 
+  background: orange;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 15px 0;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+nav a:hover {
+  background: #ff7700;
+}
+
+nav a.active {
+  background: darkorange;
+}
+
+/* 
+ * mid-size devices such as a tablet 
+ */
+@media all and (max-width: 600px) {
+  nav {
+    justify-content: space-around;
+  }
+}
+
+/* 
+ *	small devices such as a phone 
+ */
+@media all and (max-width: 350px) {
+  nav {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  nav a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 2px solid rgba(255,255,255,0.3); 
+    border-bottom: 2px solid rgba(0,0,0,0.1); 
+  }
+  nav:last-of-type a {
+    border-bottom: none;
+  }
+}    
+	</style>
+</head>
+<body>
+  <header>
+    <h1>Main Title<h1>
+  </header> 
+  <nav>
+    <a class="active" href="#">home</a>
+    <a href="#">cognito</a>
+    <a href="#">ergo</a>
+    <a href="#">sum</a>
+    <a href="#">lorem</a>
+  </nav>
+  <main>
+    <h2>Main content</h2>
+  </main>
+  <footer>
+    <address>Web Development @ Sheridan College</address>
+  </footer>
+</body>
+</html>
+
+
+
