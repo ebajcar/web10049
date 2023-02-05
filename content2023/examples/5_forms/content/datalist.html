@@ -1,0 +1,88 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example05_007</title>
+  <meta charset="utf-8">
+
+</head>
+<body>
+  <form>
+    <h1>Datalist</h1>
+	
+	<h3>Example 1</h3>
+    <input list="browsers" placeholder="placeholder"> 
+    <datalist id="browsers"> 	
+      <option>Edge</option> 
+      <option>Firefox</option> 
+      <option>Chrome</option> 
+      <option>Opera</option> 
+      <option>Safari</option> 
+    </datalist> 			
+	
+    <h3>Example 2</h3>		
+    <input list="quotations" placeholder="start typing... or click on the down-arrow to select an item." size="60"> 
+    <datalist id="quotations"> 	
+      <option label="Dewey">
+	    Education is not preparation for life; 
+	    education is life itself. [John Dewey]
+      </option> 
+	  <option label="Franklin">
+	    An investment in knowledge pays the 
+		best interest. [Benjamin Franklin]
+	  </option> 
+	  <option label="Aristotle">
+	    The roots of education are bitter, 
+		but the fruit is sweet. [Aristotle]
+	  </option> 
+	  <option label="Aristotle">
+	    It is the mark of an educated mind to be 
+		able to entertain a thought without 
+		accepting it. [Aristotle]
+	  </option> 
+	  <option label="Einstein">
+	    Intellectual growth should commence at 
+		birth and cease only at death. [Albert Einstein]
+	  </option> 
+	  <option label="Rogers">
+	    The only person who is educated is the one 
+		who has learned how to learn and change. [Carl Rogers]
+	  </option> 
+	  <option label="Boorstin">
+	    Education is learning what you didn't 
+		even know you didn't know. [Daniel J. Boorstin]
+	  </option> 
+	  <option label="Maimonides">
+	    Give a man a fish and you feed him for a day; 
+		teach a man to fish and you feed him for a lifetime. 
+		[Maimonides]
+	  </option> 
+	</datalist> 			
+  </form>
+
+  <p>Compare to using datalist to using select
+    <a href="http://www.w3schools.com/tags/tag_datalist.asp">
+    datalist on
+    <img src="http://www.w3schools.com/images/w3schools88x31.gif" 
+	 alt="w3schools.com" 
+	 style="vertical-align: middle;">
+    </a>	
+  </p>
+  
+  <h3>Example 3</h3>
+  <p>Example from MDN https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email</p>
+	<input type="email" size="40" list="defaultEmails">
+
+	<datalist id="defaultEmails">
+	<option value="jbond007@mi6.defence.gov.uk" label="James Bond 007">
+	<option value="jbourne@unknown.net"  label="Jason Bourne">
+	<option value="nfury@shield.org"  label="Nick Fury">
+	<option value="tony@starkindustries.com" label="Tony Stark">
+	<option value="hulk@grrrrrrrr.arg" label="Bruce Banner">
+	</datalist>
+
+
+</body>
+</html>
+
+
