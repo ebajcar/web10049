@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Colour name and values</title>
+<style>
+body {
+  width: 80%;
+  margin: auto;
+  font-family: monospace;
+}
+header, footer, nav, button {
+  text-align: center;
+  color: navy;
+}
+header {
+  background-color: #eee; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, white, white, lightgray, white, white); /* Standard syntax (must be last)  */
+}
+
+/* https://www.w3schools.com/howto/howto_css_style_hr.asp */
+hr:last-of-type {
+margin-top: 20px;
+  height: 3px;
+  border: none;
+  width: 50%;
+  background-color: navy;
+  -ms-transform: rotate(-1deg); /* IE 9 */
+  -webkit-transform: rotate(-1deg); /* Safari 3-8 */
+  transform: rotate(-1deg);
+  box-shadow: 2px 2px 5px gray;
+}
+
+/* table */
+table {
+  margin: auto;
+}
+caption {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 15px;
+}
+td:first-child, td:nth-child(3) {
+  width:16px;
+  height:16px;
+}
+td:nth-child(2n) {
+  text-align:right;
+}
+td:nth-child(2) {
+  padding-right: 35px;
+}  
+
+/* dialogue and button to open it */
+nav button {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  background-color: #ddd;
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+}
+nav button:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+.dialog {
+  width: 80vw;
+  border: 0;
+  background-color: tomato;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 400px) {
+  .dialog {
+    width: 50vw;
+    border: 0;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  }
+} 
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header><h1>Class Example</h1></header>
+<nav><button id="modal-button">Comments</button></nav>
+
+
+<table>
+	<caption>Color names and RGB values</caption>
+
+	<tr>
+		<td style="background-color:black"></td>
+		<td>black = "#000000"</td>
+		<td style="background-color:green"></td>
+		<td>green = "#008000"</td>
+	</tr>
+
+	<tr>
+		<td style="background-color:#C0C0C0"></td>
+		<td>silver = "#C0C0C0"</td>
+		<td style="background-color:#00FF00"></td>
+		<td>lime = "#00FF00"</td>
+	</tr>
+
+	<tr>
+		<td style="background-color:#808080"></td>
+		<td>gray = "#808080"</td>
+		<td style="background-color:#808000"></td>
+		<td>olive = "#808000"</td>
+	</tr>
+
+	<tr>
+		<td style="background-color:white"></td>
+		<td>white = "#FFFFFF"</td>
+		<td style="background-color:yellow"></td>
+		<td>yellow = "#FFFF00"</td>
+	</tr>
+
+	<tr>
+		<td style="background-color:maroon"></td>
+		<td>maroon = "#800000"</td>
+		<td style="background-color:navy"></td>
+		<td>navy = "#000080"</td>
+	</tr>
+
+	<tr>
+		<td style="background-color:red"></td>
+		<td>red = "#FF0000"</td>
+		<td style="background-color:blue"></td>
+		<td>blue = "#0000FF"</td>
+	</tr>
+
+	<tr>
+		<td style="background-color:purple"></td>
+		<td>purple = "#800080"</td>
+		<td style="background-color:teal"></td>
+		<td>teal = "#008080"</td>
+	</tr>
+
+	<tr>
+		<td style="background-color:fuchsia"></td>
+		<td>fuchsia = "#FF00FF"</td>
+		<td style="background-color:aqua"></td>
+		<td>aqua = "#00FFFF"</td>
+	</tr>
+</table>
+
+<hr>
+<footer><address>SYST10049 Web Development &copy; Sheridan College</address></footer>
+
+  </div>
+  <dialog class="dialog" id="modal">
+    <h2>Comments</h2>
+	<h3>Explore HTML Elements</h3>
+	<p>Start with a four-column table and a caption.</p>
+	<h3>Explore CSS Properties and Values</h3>
+	<p>Use the <code>:nth-child(An+B)</code> to style different columns.</p>
+	<h3>Alternative Layouts</h3>
+	<p>CSS grid, CSS flexbox, &hellip;</p>
+    <button id="modal-close">Close</button>
+  </dialog>
+<!-- partial -->
+  <script>
+//-----------------------------------
+// Declare Variables
+//-----------------------------------
+
+// Modal
+var modalButton = document.getElementById('modal-button');
+var modal = document.getElementById('modal');
+var modalClose = document.getElementById('modal-close');
+
+//-----------------------------------
+// Button Actions
+//-----------------------------------
+
+// on click, show as a modal
+modalButton.addEventListener('click', function() {
+  modal.showModal();
+});
+
+// close modal on click
+modalClose.addEventListener('click', function() {
+  modal.close();
+});  
+  </script>
+
+</body>
+</html>

@@ -4,24 +4,12 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
 <title> SYST10049 learn CSS </title>
-<!--link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"-->
-<!-- https://tailwind-elements.com/quick-start/#cdn -->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
 <link rel="stylesheet" href="missing-css.css">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        fontFamily: {
-          sans: ['Inter', 'sans-serif'],
-        },
-      }
-    }
-  }
-</script>
+
 
 <link rel="stylesheet" href="../css/styles.css"/> 
 <link rel="stylesheet" href="../css/prism_coy_dev.css"  />
@@ -55,11 +43,10 @@ figcaption {
 </head>
 
 <body>
-  <nav id="navTop" class="w-full z-30 top-0 text-white bg-dark-gray ">
+  <nav id="navTop" class="text-white bg-dark-gray">
     <div class="w-full container max-w-screen-lg mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-0 py-2">
       <div class="md:pl-4">
-        <a class="text-white hover:text-white no-underline hover:no-underline
-        font-bold text-2xl lg:text-4xl rounded-lg hover:bg-nwoods-secondary " href="../">
+        <a  class="text-white bg-dark-gray" href="../">
           <h1 class="mb-0 p-1 ">SYST10049</h1>
         </a>
       </div>
@@ -75,8 +62,6 @@ figcaption {
           <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnweb/index.html">Web development</a></li>
           <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnhtml/index.html">Learn HTML5</a></li>
           <li class="p-1 sm:p-0"><a class="topnav-link" href="../learncss/index.html">Learn CSS3</a></li>
-          
-          <li class="p-1 sm:p-0"><a class="topnav-link" href="#">Class Q&amp;A</a></li>
         </ul>
       </div>
     </div>
@@ -144,18 +129,18 @@ figcaption {
 </ol>
 
 
-<ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mb-4 mx-48" id="pills-tabFill" role="tablist">
-  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-    <a href="#2" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0">Style rules</a>
+<ul role="tablist">
+  <li role="presentation">
+    <a href="#2" class="uppercase rounded px-6 py-3">Style rules</a>
   </li>
-  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-    <a href="#3" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0">Syntax and structure</a>
+  <li role="presentation">
+    <a href="#3" class="uppercase rounded px-6 py-3">Syntax and structure</a>
   </li>
-  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-    <a href="#4" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0">Specificity, Inheritance, and the Cascade</a>
+  <li role="presentation">
+    <a href="#4" class="uppercase rounded px-6 py-3">Specificity, Inheritance, and the Cascade</a>
   </li>
-  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-    <a href="#5" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0">Code location</a>
+  <li role="presentation">
+    <a href="#5" class="uppercase rounded px-6 py-3">Code location</a>
   </li>
 </ul>
 
@@ -163,20 +148,19 @@ figcaption {
 
 
 <!-- Style Rules  -->
-<div id="2" class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
-    <h5 class="text-2xl font-semibold sher-teal">Style Rules</h5>	
-	<p class="text-xl font-light leading-relaxed text-gray-800">A CSS document is a series of style rules, which are</p>
-	<ul class="list-disc list-inside">
+<section id="2">
+    <h2>Style Rules</h2>	
+	<p>A CSS document is a series of style rules, which are</p>
+	<ul>
 		<li><strong>qualified rules</strong> that apply styles to elements in a document, and</li>
 		<li><strong>at-rules</strong>, which define special processing rules or values for the CSS document.</li>
 	</ul>
 
-<div class="w-full mx-auto bg-white rounded-xl py-5">
-    <h5 class="font-medium leading-tight text-xl mt-0 mb-2  sher-teal">Qualified rules</h5>	
+
+    <h4>Qualified rules</h4>	
 	<p>A <strong>qualified</strong> rule starts with a prelude then has a {}-wrapped block containing a sequence of declarations. The meaning of the prelude varies based on the context that the rule appears in—for style rules, it’s a selector which specifies what elements the declarations will apply to. Each declaration has a name, followed by a colon and the declaration value. Declarations are separated by semicolons.</p>
 	<p>A <strong>style rule</strong> is a qualified rule that associates a <strong>selector list</strong> with a list of <strong>property declarations</strong>. They are also called rule sets in [CSS2]. CSS Cascading and Inheritance [CSS-CASCADE-3] defines how the declarations inside of style rules participate in the cascade.</p>
-</div>
+
        
 <div class="w-full mx-auto bg-white rounded-xl">
     <h5 class="font-medium leading-tight text-xl mt-0 mb-2  sher-teal">At-rules</h5>	       

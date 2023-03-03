@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Styling headings and paragraphs</title>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Allan:700);
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+body {
+	margin: 0 auto;
+	font-size: 16px;
+	width: 90%;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+header h1, header h2 {
+	color: orange;
+	font: bold 5em/1 Allan, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-shadow: 1px 1px 1px black, 4px 4px 6px lightgray;
+}	
+header h2 {
+	font-size: 2.5em;
+}		
+h3 {
+	font: bold 2em/1 'Ubuntu Condensed', sans-serif;
+	margin: 20px 0 0 0;
+	padding: 5px;
+	color: #003767;
+	background-color: #eee;
+	font-size: 1.2em;
+}
+p {
+	font-size: 1em;
+	margin: 12px 0; 
+}
+h3:hover {
+	background-color:#EEE8AA;
+}
+a:after {
+	content: " ( " attr(href) " ) ";
+	font-size: 0.7em;
+}
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <h1>Hello World!</h1>
+  <h2>Heading level 2</h2>
+  
+</header>
+<h3>Heading level 3</h3>
+<p>Aliquam eu mollis diam, molestie molestie tortor. Donec in molestie eros. Sed congue pharetra purus quis cursus. Sed et ligula iaculis, condimentum odio at, fermentum tellus. Nunc sollicitudin rhoncus egestas. Integer aliquam aliquet interdum. Fusce pulvinar ex eget odio convallis posuere. Phasellus sed sem sed metus pretium volutpat eu sit amet est. Vivamus fermentum elit et fringilla tincidunt.</p>
+<h3>Another Heading level 3</h3>
+<p>Quisque maximus eros sit amet ornare mattis. Etiam dictum justo eu eros rutrum tincidunt. Praesent et mattis felis. Phasellus iaculis, tortor a aliquam imperdiet, tellus tortor rhoncus nisl, a rhoncus turpis ex at est. Aliquam erat volutpat. Aliquam magna eros, pretium eget venenatis tempor, mattis nec tortor. Fusce eget augue sit amet libero commodo pellentesque et eget purus. Aliquam erat volutpat. Ut vitae porta dolor. Aliquam pretium ornare nisi id vestibulum. Donec feugiat dui sit amet faucibus vulputate.</p>
+<p><a href="https://www.w3.org/TR/selectors-3/">Level 3 selectors on W3C</a></p>
+<!-- partial -->
+  
+</body>
+</html>
