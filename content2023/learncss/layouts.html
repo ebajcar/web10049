@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-<title> SYST10049 learn CSS </title>
+<title> SYST10049 learn CSS layouts</title>
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css"/> 
 <link rel="stylesheet" href="../css/prism_coy_dev.css"  />
@@ -11,6 +11,7 @@
 dl, ol {
   margin-bottom: 16px;
 }
+dt {font-weight: bold;}
 h4, h3 {
   margin-top: 16px;
 }
@@ -208,14 +209,8 @@ figcaption {
 		<li>Positioned, for explicit position of an element</li>
 	</ol>	
 	<p>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. To start using the Flexbox model, you need to first define a flex container. The flex container becomes flexible by setting the <code>display</code> <em>property</em> to flex.</p>
-	<p>The flex container properties are:<br>
-<code>flex-direction<br>
-&nbsp;flex-wrap<br>
-&nbsp;flex-flow<br>
-&nbsp;justify-content<br>
-&nbsp;align-items<br>
-&nbsp;align-content</code>
-</p>
+	<p>The flex container properties are:</p>
+    <p>| <strong>flex-direction</strong> | <strong>flex-wrap</strong> | <strong>flex-flow</strong> | <strong>justify-content</strong> | <strong>align-items</strong> | <strong>align-content</strong> |</p>
 	<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
 		href="https://www.w3schools.com/css/css3_flexbox.asp">
 		Explore the examples @w3schools	 
@@ -247,19 +242,16 @@ figcaption {
 	  <dd class="col-sm-9">The lines between columns are called column lines.<br>The lines between rows are called row lines.</dd>	  
 	</dl>	
 	<p>To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid. Grid containers consist of grid items, placed inside columns and rows.</p>
-	<p>The grid property is a shorthand property for the following properties:<br>
-<code>grid-template-rows<br>
-&nbsp;grid-template-columns<br>
-&nbsp;grid-template-areas<br>
-&nbsp;grid-auto-rows<br>
-&nbsp;grid-auto-columns<br>
-&nbsp;grid-auto-flow</code>
-</p>
-
+	<p>The grid property is a shorthand property for the following properties:</p>
+    <p>| <strong>grid-template-rows</strong> | <strong>grid-template-columns</strong> | <strong>grid-template-areas</strong> | <strong>grid-auto-rows</strong> | <strong>grid-auto-columns</strong> | <strong>grid-auto-flow</strong> |</p>
 	<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
 		href="https://www.w3schools.com/css/css_grid.asp">
 		Explore the examples @w3schools	 
-	</a>  
+	</a>  <br>
+	<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3.org/TR/css-grid-1/">
+		Explore the specifications on @W3.org	 
+	</a>     
   </div>
 </div>
 
@@ -285,7 +277,7 @@ figcaption {
             <p>The challenge of combining is to eliminate duplicates and minimize amount of code to include. <q>Less code gives better performance.</q></p>
         
 
-          <hr style="margin:15px 0;border:1px dotted teal;">
+        <hr style="margin:15px 0;border:1px dotted teal;">
 
         <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Google Fonts</h5> 
         <p><a href="https://fonts.google.com/" target="_blank" class="bookmark source">Discover great typography and iconography.</a> Google Fonts makes it easy to bring personality and performance to your websites and products. Our robust catalog of open-source fonts and icons, makes it easy to integrate expressive type and icons seamlessly—no matter where you are in the world.</p>
@@ -298,10 +290,9 @@ figcaption {
     <p>Explore CSS icons on
       <a href="https://www.w3schools.com/css/css_icons.asp" target="_blank"><i class="fa fa-bookmark"></i> w3schools</a>  &hellip;how to add icons &mdash; font awesome, bootstrap, google.
     </p>
-    <figure style="margin-left:50px">
-      <iframe style="border:1px solid teal;height:430px;width:500px;" src="https://web10049-examples.w3spaces.com/examples-css/google-icons.html"></iframe>
-      <figcaption>Google icons example</figcaption>
-    </figure>
+    <p>
+      <a href="https://web10049-examples.w3spaces.com/css-examples/google-icons.html" target="_blank">Google Icons example</a>
+    </p>
     
     <hr style="margin:15px 0;border:1px dotted teal;">
     <p><a href="https://fontawesome.com/" target="_blank" >Font Awesome icon library </a> The next generation of the web’s favorite icon library + toolkit. Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit.</p>
@@ -317,6 +308,18 @@ figcaption {
     
     <p>To use, include the stylesheet on your pages: (contains some 230 CSS rules, file size 23.1 KB)<br> 
     <code>&lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></code></p> 
+    
+<hr style="margin:15px 0;border:1px dashed teal;">
+
+        <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">missing.css framework</h5> 
+        <p><a href="https://missing.style/" target="_blank">missing.css</a>
+            <q>is a notch on the complexity slider that's just right for small projects and personal sites where classless CSS is not enough, Tailwind is too much and Bootstrap just doesn't have the right vibe.</q> 
+        </p>
+  
+    
+    <p>To use, include the stylesheet on your pages: (contains some 230 CSS rules, file size 23.1 KB)<br> 
+    <code>&lt;link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.9/dist/missing.min.css"></code></p> 
+    
       
 <hr style="margin:15px 0;border:1px dotted teal;">
 
