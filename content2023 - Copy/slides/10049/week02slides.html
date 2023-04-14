@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Week 2 slides</title>
+		<link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/black.css">
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+	</head>
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+<!-- slide 1   
+        <section data-background="assets/week02.png">
+        </section> 
+-->
+<!-- slide 1 -->  
+    <section data-background="assets/week002.png">
+        <div style="position: absolute; width: 45%; right: -50px; background-color: rgba(0, 0, 0, 0); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+            <h1 style="color: #3CA3C8;">Week 2</h1>
+            <h2>Agenda</h2>
+            <ol>
+                <li>Prepare development environment</li>
+                <li>Prepare local storage</li>
+                <li>Complete Worksheet 1</li>
+                <li>Preview Worksheet 2</li>
+            </ol>
+        </div>        
+    </section>       
+        
+ <!-- slide 2 -->   
+        <section data-transition="slide" data-background="black" data-background-transition="zoom">
+            <h2>Learning Outcomes</h2>   
+            <ol style="font-size:0.7em;text-align:left;line-height:1.1;color:gray;">
+                <li style="color:orange;">Create a properly structured web page (HTML5)</li>
+                <li>Represent the Document Object Model (DOM)</li>
+                <li style="color:orange;">Recognize browser compatibility with standards.</li>
+                <li>Style a web page (CSS3)</li>
+                <li>Create page layouts using media queries.</li>   
+                <li>Publish a web page on the internet.</li> 
+                <li style="color:orange;">Explain how web servers display web pages.</li> 
+                <li>Secure a web page.</li> 
+                <li style="color:orange;">Logically layout a web space.</li> 
+                <li>Design forms that use major controls and form handling logic.</li>   
+                <li><del>Create</del> <ins>Use</ins> simple client-side scripts with JavaScript.</li>
+            </ol>
+            <p style="font-size:0.3em;margin-top:15px;color:gray">SYST10049 Web Development<br>@2021 Sheridan College</p>  
+        </section>
+
+        <section   data-visibility="hidden">
+            <h2>Quiz 1</h2>
+            <p>First attempt must be completed in class - now</p>
+            <p>Class will continue in 15 minutes.</p>
+            <p style="font-size:0.3em;margin-top:0;color:teal">SYST10949 Web Development<br>@2021 Sheridan College</p>                    
+        </section> 
+        
+        <!--
+
+				<section data-background-iframe="https://ebajcar.github.io/web10049/pages/ch01_web_development.html#page08" data-background-interactive>
+				</section> 
+                
+				<section data-background-iframe="https://ebajcar.github.io/web10049/pages/ch01_development_process.html" data-background-interactive>
+				</section> 
+
+                
+				<section data-background-iframe="https://ebajcar.github.io/web10049/pages/ch01_development_process.html#page03" data-background-interactive>
+				</section> 
+ 
+                
+				<section data-background-iframe="https://ebajcar.github.io/web10049/pages/ch02_html_basics.html" data-background-interactive>
+				</section>  
+                
+        -->
+        
+        <section>
+            <h2>Preparing development environment</h2>
+            <ol style="font-size:0.7em;text-align:left;line-height:1.1;color:gray;">
+            <li>Development machine: your laptop (working copy)</li>
+            <li>Production machine: <code style="color:orange;">dev.fast.sheridanc.on.ca</code> (server to which we publish)</li>
+            <li>To publish, we need a tool to transfer the files and directories to the server, using secure FTP protocol: <samp style="color:orange;">FileZilla Client.</samp></li>
+            <li>To maintain webspace on the server, we need a tool to access the server's resources, using SSH protocol: <samp style="color:orange;">cPanel</samp></li>
+            </ol>
+            <p style="font-size:0.3em;margin-top:0;color:teal">SYST10949 Web Development<br>@2021-2022 Sheridan College</p>                    
+        </section> 
+        
+        
+				<section data-background-iframe="https://padlet.com/ellen_bajcar/kpkm4mn9xa0t62t3" data-background-interactive>
+				</section> 
+ 
+        <section>
+            <h2>Prepare Local Storage</h2>
+            <p>Create your course root as <code style="color:orange;">C:\public_html\SYST10049</code></p>
+            <p>Dig deeper <a href="https://ebajcar.github.io/web10049/content/learnweb/files.html" target="_blank">File names and organization</a></p>
+            <p>Dig deeper <a href="https://ebajcar.github.io/web10049/content/learnweb/filesystem.html" target="_blank">File system, Namespace, and Pathnames</a></p>
+            <p style="font-size:0.3em;margin-top:0;color:teal">SYST10949 Web Development<br>@2021-2022 Sheridan College</p>                    
+        </section> 
+
+   
+
+        <section data-background="assets/html_worksheet1.png">   
+           	<div style="position: absolute; width: 100%; right: -50px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8); color: #fff; padding: 20px; font-size: 0.9em; text-align: left;">
+				<h2>Worksheet 1 </h2>
+                <p>Complete/review the worksheet. Discuss on class discussion board.</p>
+				<h2>Worksheet 2 </h2>
+                <p>Preview/complete the worksheet for next week. Discuss on class discussion board.</p>
+			</div>       
+        </section>  
+
+        <section data-transition="slide" data-background="black" data-background-transition="zoom">
+            <h2>Worksheet 1 review</h2>   
+            <ol style="font-size:0.7em;text-align:left;line-height:1.2;color:white;">
+            
+                <li>What is a minimal HTML5 document?</li>
+                <li>What is the purpose of the HEAD section?</li>
+                <li>What is the purpose of the BODY section?</li>
+                <li>What is the purpose of the TITLE element?</li>
+                <li>How do you incorporate comments into HTML code? what is the purpose of documenting code?</li>
+                <li>Describe elements: <br><code style="font-size:0.8em;color:orange;">HTML BODY TITLE META HEAD H1 H2 H3 H4 H5 H6 P BR HR LINK STYLE SCRIPT HEADER FOOTER MAIN ARTICLE SECTION ASIDE DIV ADDRESS</code></li>
+                
+            </ol>
+            <p style="font-size:0.3em;margin-top:15px;color:gray">SYST10049 Web Development<br>2021-2022 &copy;  Sheridan College</p>  
+        </section>    
+
+        
+ 
+        <section>
+            <p style="font-size:0.3em;margin-top:0;color:teal"><a href="week01slides.html">&laquo;previous</a> &mdash; <a href="week03slides.html">next&raquo;</a></p>
+            <p style="font-size:0.3em;margin-top:0;color:teal">SYST10949 Web Development<br>@2021-2022 Sheridan College</p>
+        </section>  
+<!-- last slide -->             
+        <section  data-visibility="hidden">
+            <h2>...</h2>
+            <p style="font-size:0.3em;margin-top:0;color:teal">SYST10949 Web Development<br>@2021-2022 Sheridan College</p>                    
+        </section>         
+
+			</div>
+		</div>
+
+<script src="../dist/reveal.js"></script>
+<script src="../plugin/highlight/highlight.js"></script>
+<script>
+  Reveal.initialize({
+    slideNumber: true,
+    plugins: [ RevealHighlight ]
+  });
+</script>
+</body>
+</html>

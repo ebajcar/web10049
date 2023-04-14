@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My HTML5 Cheetsheet</title>
+<meta charset="utf-8">
+<style>
+body {
+	font-family: Arial, sans-serif;
+	font-size: 8.5pt;
+}
+
+main {
+	margin: 0px; 
+	max-width: 1200px;
+	background-color: #fff;
+}
+
+header {
+	border-bottom: 1px solid #000;
+	margin: 10px 15px 10px 100px;
+}
+
+#contentbox {
+	margin-left: 105px;
+	margin-right: 15px;
+	top: 50px;
+}		
+@media screen and (min-width: 800px) {
+	#content1 {
+		float: left;
+		width:49%;
+	}
+
+	#content2 {
+		float: right;
+		width: 49%;
+	}
+}
+aside {
+		position: absolute;
+		left:10px;
+		width:95px;
+		top:50px;
+		text-align: right;
+}
+
+aside strong, aside code {
+	display: block;
+}
+
+aside section {
+	margin-bottom: 12px;
+}
+
+table {
+	border: 1px solid #000;
+	margin: 4px;
+	width: 100%;
+}
+
+table th {
+	border: 1px solid #000;
+	color: #fff;
+	background-color: #F16529;
+	font-size: 9.5pt;
+	
+}
+table td {
+	font-family: Arial, sans-serif;
+	font-size: 8.5pt;
+	vertical-align: top;
+	border: 0;
+}
+.subheading {
+	background-color: #b63300;
+}
+.subheading2 {
+	background-color: #c6e7ef;
+}
+.evenrow {
+	background-color: #eee;
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14pt;
+}
+
+h3 {
+	margin: 0px 0px 3px 0px;
+	padding: 0px;
+	font-size: 11pt;
+	border-bottom: 1px solid #000;
+}
+
+h4 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 10.5pt;
+}
+.exp {
+	font-family: Arial, sans-serif;
+	border-top: 1px solid #000;
+	font-size: 7.5pt;
+	clear: both;
+	
+}
+.values {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 7.75pt;
+	background-color: #ffdba1;
+	border: 1px solid #ccc;
+	padding: 1px;
+	margin: 1px;
+}
+.floatcontainer:after { 
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility:hidden; 
+}
+hr {
+	display: none;
+	}
+.col_3 tr td:last-child {
+	width: 50%;
+	}
+.col_3 tr td:first-child {
+	font-weight: bold;
+	}	
+.zebra tr:nth-child(odd) {
+	background-color: #ddd;
+}
+.html5badge::after {
+	content: " 𝒽5 ";
+	color: darkred;
+	font-size: 8px;
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>My Hypertext Markup Language (HTML) Checklist</h1>
+</header>
+
+<div id="contentbox">
+<div id="content1">
+
+	<!-- SYNTAX -->
+	<table class="section">
+		<tr><th>HTML5 SYNTAX</th></tr>
+		<tr><td><strong>Basic</strong></td></tr>
+		<tr>
+			<td><code style="color:darkblue;font-weight:bold;font-size:1.1em;">&lt;tagname attribute="value" attribute="value">CONTENT&lt;/tagname></code></td>		
+		</tr>
+    </table>
+
+
+	
+	<!-- WELL FORMED AND VALID -->  
+      <table class="zebra">
+        <tr>
+          <th colspan="2">WELL-FORMED AND VALID HTML5</th>
+        </tr>
+		<tr><td><strong>Basic Rules</strong></td></tr>
+        <tr>
+          <td>			
+			<ol style="margin-left:-20px;">
+				<li>
+					<strong>All elements are properly closed.</strong> <code>&lt;p> content &lt;/p></code>
+				</li>
+				<li>
+					<strong>Empty elements are never closed.</strong> <sup>[exception]</sup>  <code>&lt;br></code>
+				</li>
+				<li>
+					<strong>All elements are properly nested.</strong> <code>&lt;p>&lt;em>&lt;mark> content &lt;/mark>&lt;/em>&lt;/p></code>
+				</li>
+				<li>
+					<strong>All attributes have a quoted value assigned.</strong> <code>&lt;img src="image.png" alt="an image"> </code>
+				</li>
+				<li>
+					<strong>Single-valued attributes are minimized.</strong> <sup>[exception]</sup> 	<code>&lt;input autofocus selected> </code>
+				</li>
+			</ol>		  
+		  </td>
+        </tr>
+		<tr><td><strong>Semantic correctness</strong> all elements are chosen well.</td></tr>
+      </table>
+
+	<table class="section">
+		<tr><th>OVERVIEW</th></tr>
+		<tr><td><strong>Basic</strong></td></tr>
+		<tr>
+			<td style="padding: 0;text-align:center;"><img src="images/html-syntax.png" alt="" style="width:60%;"></td>		
+		</tr>
+    </table>	  
+
+	<!-- ROOT and META -->
+	<table class="zebra ">
+		<tr>
+			<th colspan="3">ROOT AND CHILDREN OF HEAD</th>
+		</tr>
+		<tr>
+			<td style="width:100px"><code>&lt;html&gt;</code></td>
+			<td>Defines the root of an HTML document</td>
+			<td><samp>lang</samp></td>
+		</tr>		
+		<tr>
+			<td><code>&lt;meta&gt;</code></td>
+			<td>Defines metadata about an HTML document</td>
+			<td><samp>charset</samp></td>
+		</tr>
+		<tr>
+			<td><code>&lt;link&gt;</code></td>
+			<td>Defines the relationship between a document and an external resource (most used to link to style sheets)</td>
+			<td><samp>type|rel|href</samp></td>
+		</tr>	
+		<tr>
+			<td><code>&lt;title&gt;</code></td>
+			<td>Defines a title for the document</td>
+			<td><samp></samp></td>
+		</tr>
+		<tr>
+			<td><code>&lt;style&gt;</code></td>
+			<td>Defines style information for a document</td>
+			<td><samp></samp></td>
+		</tr>			
+		<tr>
+			<td><code>&lt;noscript&gt;</code></td>
+			<td>Defines an alternate content for users that do not support client-side scripts</td>
+			<td><samp></samp></td>
+		</tr>	
+		<tr>
+			<td title="used to be a child of head; now best placed at the end of body for performance reasons"><code>&lt;script&gt;</code></td>
+			<td>Defines a client-side script</td>
+			<td><samp></samp></td>
+		</tr>			
+	</table>
+
+	
+	<!-- TEXTUAL EL -->
+	<table class="zebra ">
+		<tr>
+			<th colspan="3">TEXTUAL ELEMENTS</th>
+		</tr>
+
+		<tr>
+			<td style="width:100px"><code>&lt;p></code></</td>
+			<td>Defines a paragraph</td>
+			<td><samp></samp></td>
+		</tr>
+		<tr>
+			<td><code>&lt;pre></code></td>
+			<td>Defines preformatted text</td>
+			<td><samp></samp></td>
+		</tr>		
+		<tr>
+			<td><code>&lt;blockquote></code></td>
+			<td>Defines a section that is quoted from another source</td>
+			<td><samp></samp></td>
+		</tr>	
+		<tr>
+			<td><code>&lt;div></code></td>
+			<td>Defines a section in a document</td>
+			<td><samp></samp></td>
+		</tr>	
+		<tr>
+			<td><code>&lt;hr></code></td>
+			<td>Defines a thematic change in the content</td>
+			<td><samp></samp></td>
+		</tr>	
+		<tr>
+			<td><code>&lt;span></code></td>
+			<td>Defines a section in a document</td>
+			<td><samp></samp></td>
+		</tr>			
+	</table>
+	
+	
+	<!-- TEXT-LEVEL SEMANTICS -->
+	<table class="zebra">
+		<th colspan="3">TEXT-LEVEL SEMANTICS</th>
+           <tr>
+                <td style="width:80px"><code>&lt;a></code></td>
+                <td>Defines a hyperlink</td>
+				<td><samp>href|target</samp></td>
+            </tr>
+            <tr>
+                <td><code>&lt;abbr></code></td>
+                <td>Defines an abbreviation or an acronym</td>
+				<td><samp></samp></td>
+            </tr>
+            <tr>
+                <td class="html5badge"><code>&lt;bdi></code></td>
+                <td>Isolates a part of text that might be formatted in a different direction from other text outside it</td>
+				<td><samp></samp></td>
+            </tr>
+            <tr>
+                <td><code>&lt;bdo></code></td>
+                <td>Overrides the current text direction</td>
+				<td><samp></samp></td>
+            </tr>
+            <tr>
+                <td><code>&lt;br></code></td>
+                <td>Defines a single line break</td>
+				<td><samp></samp></td>
+            </tr>
+           <tr>
+                <td><code>&lt;cite></code></td>
+                <td>Defines the title of a work</td>
+				<td><samp></samp></td>
+            </tr>
+            <tr>
+                <td><code>&lt;code></code></td>
+                <td>Defines a piece of computer code</td>
+				<td><samp></samp></td>
+            </tr>
+            <tr>
+                <td><code>&lt;del></code></td>
+                <td>Defines text that has been deleted from a document</td>
+            </tr>
+            <tr>
+                <td><code>&lt;dfn></code></td>
+                <td>Represents the defining instance of a term</td>
+            </tr>
+            <tr>
+                <td><code>&lt;em></code></td>
+                <td>Defines emphasized text </td>
+            </tr>
+            <tr>
+                <td><code>&lt;i></code></td>
+                <td>Defines a part of text in an alternate voice or mood</td>
+            </tr>
+            <tr>
+                <td><code>&lt;ins></code></td>
+                <td>Defines a text that has been inserted into a document</td>
+            </tr>
+            <tr>
+                <td><code>&lt;kbd></code></td>
+                <td>Defines keyboard input</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><code>&lt;mark></code></td>
+                <td>Defines marked/highlighted text</td>
+            </tr>
+            <tr>
+                <td><code>&lt;q></code></td>
+                <td>Defines a short quotation</td>
+            </tr>
+            <!--tr>
+                <td class="html5badge"><code>&lt;rp></code></td>
+                <td>Defines what to show in browsers that do not support ruby annotations</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><code>&lt;rt></code></td>
+                <td>Defines an explanation/pronunciation of characters (for East Asian typography)</td>
+            </tr-->
+            <tr>
+                <td><code>&lt;s></code></td>
+                <td>Defines text that is no longer correct</td>
+            </tr>
+            <tr>
+                <td><code>&lt;samp></code></td>
+                <td>Defines sample output from a computer program</td>
+            </tr>
+            <tr>
+                <td><code>&lt;small></code></td>
+                <td>Defines smaller text</td>
+            </tr>
+            <tr>
+                <td><code>&lt;strong></code></td>
+                <td>Defines important text</td>
+            </tr>
+
+            <tr>
+                <td><code>&lt;sub></code></td>
+                <td>Defines subscripted text</td>
+            </tr>
+            <tr>
+                <td><code>&lt;sup></code></td>
+                <td>Defines superscripted text</td>
+            </tr>
+            <tr>
+                <td><code>&lt;u></code></td>
+                <td>Defines text that should be stylistically different from normal text</td>
+            </tr>
+            <tr>
+				<td><code>&lt;var></code></td>
+                <td>Defines a variable</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><code>&lt;wbr></code></td>
+                <td>Defines a possible line-break</td>
+            </tr>				
+    </table>
+
+	
+	
+	<!-- MEDIA AND GRAPHICS -->
+	<table class="zebra ">
+		<tr>
+			<th colspan="3">MEDIA AND GRAPHICS</th>
+		</tr>
+		<tr>
+			<td><code>&lt;img&gt;</code></td>
+			<td>Defines an image</td>
+			<td><samp></samp></td>
+		</tr>
+		<tr>
+			<td><code>&lt;map></code></td>
+			<td>Defines a client-side image-map</td>
+			<td><samp></samp></td>
+		</tr>			
+		<tr>
+			<td class="html5badge"><code title="http://www.w3.org/TR/html-markup/audio.html">&lt;audio&gt;</code></td>
+			<td>Defines sound content</td>
+			<td><samp></samp></td>
+		</tr>	
+		<tr>
+			<td><code>&lt;area></code></td>
+			<td>Defines an area inside an image-map</td>
+			<td><samp></samp></td>
+		</tr>	
+		<tr>
+			<td class="html5badge"><code>&lt;canvas></code></td>
+			<td>Used to draw graphics, on the fly, via scripting (usually JavaScript)</td>
+			<td><samp></samp></td>
+		</tr>	
+		<tr>
+			<td class="html5badge"><code>&lt;video></code></td>
+			<td>Defines a video or movie</td>
+		</tr>	
+		<tr>
+			<td class="html5badge"><code>&lt;source></code></td>
+			<td>Defines multiple media resources for media elements (&lt;video&gt; and &lt;audio&gt;)</td>
+		</tr>
+		<tr>
+			<td class="html5badge"><code>&lt;track></code></td>
+			<td>Defines text tracks for media elements (&lt;video&gt; and &lt;audio&gt;)</td>
+		</tr>	
+		<tr>
+			<td class="html5badge"><code>&lt;embed></code></td>
+			<td>Defines a container for an external (non-HTML) application</td>
+		</tr>	
+		<tr>
+			<td><code>&lt;object></code></td>
+			<td>Defines an embedded object</td>
+		</tr>	
+		<tr>
+			<td><code>&lt;param></code></td>
+			<td>Defines a parameter for an object</td>
+		</tr>			
+		<tr>
+			<td class="html5badge"><code>&lt;progress></code></td>
+			<td>Represents the progress of a task</td>
+		</tr>
+		<tr>
+			<td><code>&lt;iframe></code></td>
+			<td>Defines an inline frame</td>
+		</tr>			
+	</table>
+
+	<!-- TABLE -->
+	<table class="zebra">
+		<tr>
+			<th colspan="3">TABLE</th>
+		</tr>
+		<tr>
+			<td><code>&lt;table></code></td>
+			<td>Defines a table</td>
+			<td><samp>border</samp></td>
+		</tr>
+		<tr>
+			<td><code>&lt;tr></code></td>
+			<td>Defines a row in a table</td>
+			<td><samp></samp></td>
+		</tr>		
+		<tr>
+			<td><code>&lt;caption></code></td>
+			<td>Defines a table caption</td>
+			<td><samp></samp></td>
+		</tr>			
+		<tr>
+			<td><code>&lt;thead></code></td>
+			<td>Groups the header content in a table</td>
+			<td><samp></samp></td>
+		</tr>			
+		<tr>
+			<td><code>&lt;th></code></td>
+			<td>Defines a header cell in a table</td>
+			<td><samp>colspan|rowspan</samp></td>
+		</tr>
+		<tr>
+			<td><code>&lt;tbody></code></td>
+			<td>Groups the body content in a table</td>
+			<td><samp></samp></td>
+		</tr>			
+		<tr>
+			<td><code>&lt;td></code></td>
+			<td>Defines a cell in a table</td>
+			<td><samp>colspan|rowspan</samp></td>
+		</tr>
+	   <tr>
+			<td><code>&lt;tfoot></code></td>
+			<td>Groups the footer content in a table</td>
+			<td><samp></samp></td>
+		</tr>
+		<tr>
+			<td><code>&lt;col></code></td>
+			<td>Specifies column properties for each column within a &lt;colgroup&gt; element </td>
+			<td><samp></samp></td>
+		</tr>
+		<tr>
+			<td><code>&lt;colgroup></code></td>
+			<td>Specifies a group of one or more columns in a table for formatting</td>
+			<td><samp></samp></td>
+		</tr>			
+	</table>
+	
+</div> <!-- end of id=content1 -->
+<div id="content2">
+
+	<!-- MINIMAL HTML DOC -->
+	<table class="zebra">
+		<tr>
+			<th colspan="2">PURPOSE</th>
+		</tr>
+		<tr>
+			<td><strong>HTML or Hyper Text Markup Languages</strong></td>
+		</tr>
+		<tr>			
+			<td>
+				<p>First stage of PE (or input/output design) to 1. identify the characteristics and nature of content, based on which observations, 2. select the most appropriate container(s) to mark up the content. The objective is for the markup to best describe the characteristics of the content.</p>
+				<p>Semantics are front and center with HTML5, giving meaning to structure of web apps and dynamic web content.</p>
+			</td>
+		</tr>
+
+	</table>
+	<!-- MINIMAL HTML DOC -->
+	<table class="section">
+		<tr>
+			<th colspan="2">DOCUMENT STRUCTURE</th>
+		</tr>
+		<tr>
+			<td><strong>Minimal HTML5 Document</strong></td>
+			<td><strong>Standard Content Layout</strong></td>
+		</tr>
+		<tr>
+			<td>
+<pre>
+1 &lt;!doctype html>
+2 &lt;html>
+3    &lt;head>
+4       &lt;title>PAGE DESC&lt;title>
+5       &lt;meta charset="utf-8>
+6    &lt;/head>
+7    &lt;body>
+8    &lt;/body>
+9 &lt;/html></pre>
+			</td>
+			<td>
+<pre>
+&lt;body>
+   &lt;header> COMMON &lt;/header>
+   &lt;nav> MAIN &lt;/nav>
+   &lt;main> PAGE-UNIQUE &lt;/main>
+   &lt;footer> COMMON &lt;/footer>
+&lt;/body></pre>			
+			</td>
+		</tr>
+	</table>
+
+	
+	<!-- LIST OF ELEMENTS -->
+	<table class="section">
+		<tr><th>LIST OF ELEMENTS</th></tr>
+		<tr>
+			<td><iframe src="htmlTagList.html" style="width:100%;height:400px;margin:0;padding:0;border:0 white;"></iframe></td>		
+		</tr>
+    </table>
+
+	
+	<!-- SEMANTIC ELEMENTS -->
+	<table class="zebra">
+		<th colspan="2">SEMANTIC ELEMENTS</th>
+            <tr>
+                <td><code class="html5badge">&lt;address&gt;</code></td>
+                <td>Defines contact information for the author/owner of a document</td>
+				<td><samp></samp></td>
+            </tr>
+            <tr>
+                <td class="html5badge"><code>&lt;article&gt;</code></td>
+                <td>Defines an article</td>
+				<td><samp></samp></td>
+            </tr>
+            <tr>
+                <td class="html5badge"><code>&lt;aside&gt;</code></td>
+                <td>Defines content aside from the page content</td>
+				<td><samp></samp></td>
+            </tr>
+            <tr>
+                <td class="html5badge"><code>&lt;details&gt;</code></td>
+                <td>Defines additional details that the user can view or hide</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><code>&lt;summary&gt;</code></td>
+                <td>Defines a visible heading for a &lt;details&gt; element</td>
+            </tr>			
+			
+            <tr>
+                <td class="html5badge"><code>&lt;figure&gt;</code></td>
+                <td>Specifies self-contained content</td>
+            </tr>			
+           <tr>
+                <td class="html5badge"><code>&lt;figcaption&gt;</code></td>
+                <td>Defines a caption for a &lt;figure&gt; element</td>
+            </tr>
+			<tr>
+                <td class="html5badge"><code>&lt;nav&gt;</code></td>
+                <td>Defines navigation links</td>
+            </tr>
+             <tr>
+                <td class="html5badge"><code>&lt;section&gt;</code></td>
+                <td>Defines a section in a document</td>
+            </tr>
+           <tr>
+                <td class="html5badge"><code>&lt;footer&gt;</code></td>
+                <td>Defines a footer for a document or section</td>
+            </tr>	
+            <tr>
+                <td class="html5badge"><code>&lt;header&gt;</code></td>
+                <td>Defines a header for a document or section</td>
+            </tr>	
+            <tr>
+                <td class="html5badge"><code>&lt;dialog&gt;</code></td>
+                <td>Defines a dialog box or window</td>
+            </tr>
+            <tr>
+                <td class="html5badge"><code>&lt;time></code></td>
+                <td>Defines a date/time</td>
+            </tr>
+		<tr>
+			<td><code>&lt;h1>,&hellip;,&lt;h6></code></</td>
+			<td>Heading defines the header of a section.</td>
+			<td></td>
+		</tr>			
+            <tr>
+                <td class="html5badge"><code>&lt;main&gt;</code></td>
+                <td>Specifies the main content of a document</td>
+            </tr>
+           <tr>
+                <td><code>&lt;head&gt;</code></td>
+                <td>Defines information about the document</td>
+            </tr>			
+            <tr>
+                <td><code>&lt;body&gt;</code></td>
+                <td>Defines the document&#39;s body</td>
+            </tr>
+		<tr>
+			<td><code>&lt;h1>,&hellip;,&lt;h6></code></</td>
+			<td>Heading defines the header of a section.</td>
+			<td></td>
+		</tr>			
+    </table>	
+
+	
+	<!-- LISTS ELEMENTS -->
+	<table class="zebra">
+		<tr>
+			<th colspan="3">LISTS ELEMENTS</th>
+		</tr>			
+		<tr>
+			<td><code>&lt;ul></code></</td>
+			<td>Defines an unordered list</td>
+		</tr>		
+		<tr>
+			<td><code>&lt;ol></code></</td>
+			<td>Defines an ordered list</td>
+			<td><samp>type|start|reversed</samp></td>
+		</tr>		
+		<tr>
+			<td><code>&lt;li></code></</td>
+			<td>Defines a list item. Child of OL and UL.</td>
+		</tr>	
+		<tr>
+			<td><code>&lt;dd></code></td>
+			<td>Defines a description/value of a term in a description list</td>
+		</tr>	
+	   <tr>
+			<td><code>&lt;dl></code></td>
+			<td>Defines a description list</td>
+		</tr>
+		<tr>
+			<td><code>&lt;dt></code></td>
+			<td>Defines a term/name in a description list</td>
+		</tr>
+	</table>
+
+	
+	<!-- FORMS -->
+	<table class="zebra">
+		<tr>
+			<th colspan="3">FORMS</th>
+		</tr>
+		<tr>
+			<td><code>&lt;form&gt;</code></td>
+			<td>Defines an HTML form for user input</td>
+			<td><samp>method|action</samp></td>
+		</tr>
+		<tr>
+			<td title="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code></td>
+			<td>Defines an input control</td>
+			<td><small><em>** see aside</em></small></td>
+		</tr>
+		<tr>
+			<td><code>&lt;label></code></td>
+			<td>Defines a label for an &lt;input&gt; element</td>
+			<td><samp>for</samp></td>
+		</tr>
+		<tr>
+			<td><code>&lt;legend></code></td>
+			<td>Defines a caption for a &lt;fieldset&gt; element</td>
+			<td><samp></samp></td>
+		</tr>		
+		<tr>
+			<td class="html5badge"><code>&lt;datalist&gt;</code></td>
+			<td>Specifies a list of pre-defined options for input controls</td>
+			<td><samp>id</samp></td>
+		</tr>	
+	
+		<tr>
+			<td><code>&lt;textarea></code></td>
+			<td>Defines a multiline input control (text area)</td>
+			<td><samp></samp></td>
+		</tr>	
+		<tr>
+			<td><code>&lt;select></code></td>
+			<td>Defines a drop-down list</td>
+			<td><samp></samp></td>
+		</tr>	
+		<tr>
+			<td><code>&lt;optgroup></code></td>
+			<td>Defines a group of related options in a drop-down list</td>
+			<td><samp></samp></td>
+		</tr>
+		<tr>
+			<td><code>&lt;option></code></td>
+			<td>Defines an option in a drop-down list</td>
+			<td><samp></samp></td>
+		</tr>
+		<tr>
+			<td class="html5badge"><code>&lt;output></code></td>
+			<td>Defines the result of a calculation</td>
+			<td><samp></samp></td>
+		</tr>	
+		<tr>
+			<td><code>&lt;fieldset></code></td>
+			<td>Groups related elements in a form</td>
+			<td><samp></samp></td>
+		</tr>
+		<tr>
+			<td><code>&lt;button></code></td>
+			<td>Defines a clickable button</td>
+			<td><samp></samp></td>
+		</tr>
+		<tr>
+			<td class="html5badge"><code>&lt;keygen></code></td>
+			<td>Defines a key-pair generator field (for forms)</td>
+			<td><samp></samp></td>
+		</tr>			
+	</table>	
+	
+	
+	 
+	  
+
+</div> <!-- end of id=content2 -->
+
+	<div class="floatcontainer">
+		<p class="exp">SYST10049 Web Development @ Sheridan College</p>
+    </div>
+	
+</div> <!-- end of id=contentbox -->
+
+
+<aside>
+	<section>
+	<svg xmlns="http://www.w3.org/2000/svg" height="58px" width="64px" viewBox="0 0 512 512">
+			<title>HTML5 Logo</title>
+			<polygon fill="#E44D26" points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512"/>
+			<polygon fill="#F16529" points="256,480.523 376.03,447.246 404.27,130.894 256,130.894"/>
+			<polygon fill="#EBEBEB" points="256,268.217 195.91,268.217 191.76,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 143.219,188.488 154.38,313.627 256,313.627"/>
+			<polygon fill="#EBEBEB" points="256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399"/>
+			<path d="M108.382,0h23.077v22.8h21.11V0h23.078v69.044H152.57v-23.12h-21.11v23.12h-23.077V0z"/>
+			<path d="M205.994,22.896h-20.316V0h63.72v22.896h-20.325v46.148h-23.078V22.896z"/>
+			<path d="M259.511,0h24.063l14.802,24.26L313.163,0h24.072v69.044h-22.982V34.822l-15.877,24.549h-0.397l-15.888-24.549v34.222h-22.58V0z"/>
+			<path d="M348.72,0h23.084v46.222h32.453v22.822H348.72V0z"/>
+			<polygon fill="#FFFFFF" points="255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 349.162,268.217"/>
+			<polygon fill="#FFFFFF" points="255.843,176.305 255.843,204.509 255.843,221.605 255.843,221.716 365.385,221.716 365.385,221.716 365.531,221.716 366.442,211.509 368.511,188.488 369.597,176.305"/></svg>
+	</section>
+	
+	<section>
+		<strong>Elements</strong>
+		<strong>Attributes</strong>
+		<strong>&nbsp;</strong>	
+		<strong>Encoding</strong>
+		<strong>Entities</strong>
+		<strong>Whitespace</strong>
+		<strong>Accessibility</strong>
+	</section>
+	
+	<section>
+		<h3>Comments</h3>
+		&lt;!--  Comment --><br>
+		prologue
+	</section>	
+
+	<section>
+		<h3>Global Attributes</h3>
+		<code>title</code>
+		<code>id</code>
+		<code>class</code>
+		<code>style</code>			
+	</section>	
+
+	<section>
+		<h3>Content Categories</h3>
+		<code>flow</code>
+		<code>interactive</code>
+		<code>embedded</code>
+		<code>phrasing</code>
+		<code>meta-data</code>
+		<code>sectioning</code>
+		<code>heading</code>
+	</section>	
+
+	<section>
+		<h3>Input Types</h3>
+		<code>text</code>
+		<code>password</code>
+		<code>submit</code>
+		<code>reset</code>	
+		<code>radio</code>	
+		<code>checkbox</code>	
+		<code>button</code>	
+		<code>-</code>	
+		<code>color</code>	
+		<code>date</code>
+		<code>email</code>
+		<code>month</code>
+		<code>number</code>
+		<code>range</code>
+		<code>search</code>
+		<code>tel</code>
+		<code>time</code>
+		<code>url</code>
+		<code>week</code>
+	</section>	
+
+	<section>
+		<h3>Input Attributes</h3>
+		<code>disabled</code>
+		<code>maxlength</code>
+		<code>readonly</code>
+		<code>size</code>
+		<code>value</code>
+		<code>autofocus</code>
+		<code>height</code>
+		<code>list</code>
+		<code>min</code>
+		<code>max</code>
+		<code>multiple</code>
+		<code>pattern</code>
+		<code>placeholder</code>
+		<code>required</code>
+		<code>step</code>
+	</section>		
+</aside>
+</main>
+</body>
+</html>
+
