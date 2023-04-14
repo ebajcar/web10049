@@ -24,19 +24,22 @@ Instructions from
   /* Header styling */
   header {
     height: 150px;
+    z-index: 1;
   }
 
   header img {
     width: 100px;
-    position: absolute;
+    position: absolute; 
     right: 32.5px;
     top: 32.5px;
+    z-index: 2;
   }
 
   h1 {
     font-size: 50px;
     line-height: 140px;
     margin: 0 0 0 32.5px;
+    z-index: 3;
   }
 
 
