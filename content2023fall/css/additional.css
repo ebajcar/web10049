@@ -21,6 +21,9 @@ code {
 .sher-teal {
   color: #00b2ce;
 }
+.bg-sher-teal {
+  background-color: #00b2ce;
+}
 figcaption {
   color: #00b2ce;
   font-weight: 500;

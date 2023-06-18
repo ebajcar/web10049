@@ -84,65 +84,111 @@
 
 <ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mx-40" id="pills-tabFill" role="tablist">
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-     <a href="#hyperlinks" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">HTML5 document structure</a>
+     <a href="#hyperlinks" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Document root</a>
   </li> 
     <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Minimal HTML5 document code</a>
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">HEAD section</a>
   </li> 
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Document type</a>
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">BODY section</a>
   </li>  
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Character encoding</a>
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Document type declaration</a>
   </li> 
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Parsing whitespace</a>
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">code comments</a>
+  </li> 
+</ul> 
+<ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mx-40" id="pills-tabFill" role="tablist">
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Fundamental structure</a>
   </li> 
   <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
-     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Parsing entitities &amp; symbols</a>
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Whitespace</a>
   </li> 
-
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Entitities &amp; symbols</a>
+  </li> 
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Minimal HTML5 document code</a>
+  </li> 
 </ul>    
-  
-<section class="col-8 container">
 
 
 
 
+<!-- source "http://bajcar.dev.fast.sheridanc.on.ca/project_assets/pdf/HowtoDefineDocumentStructureinHTML5.pdf"  -->
 <div class="my-5">
   <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-    <div class="flex items-center justify-center px-4 bg-sher-teal">
+    <div class="flex items-center justify-center px-2 bg-sher-teal"></div>
+    <div class="block p-4 rounded-lg shadow-lg bg-white w-full">
+        <h4 class="text-2xl font-semibold sher-teal">HTML5 document structure</h4>
+    
 
-      
- <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="triangle-exclamation" class="w-6 h-6 text-white fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"></path></svg>     
-    </div>
-    <div class="px-4 py-2 -mx-3">
-      <div class="mx-3">
-        <span class="text-2xl font-semibold sher-teal">HTML5 document structure </span>
-        <p></p>
         
         <h5 class="text-lg font-semibold">Document Root</h5> 
         <p>Each HTML document has a single root element, <code>&lt;html></code>, and is divided into two sections: <code>&lt;head></code> and <code>&lt;body></code>.</p>
         
-	<h5 class="text-lg font-semibold">Head Section</h5> 	
-	<p>The purpose of the <code>&lt;head></code> section is to describe the document itself. The children of head element include <code>&lt;meta></code> to describe the document, <code>&lt;link></code> to include stylesheet files and other assets, <code>&lt;styles></code> to embed styles, <code>&lt;script></code> to include scripts, and <code>&lt;title></code> in window tab.</p>   
-	<h5 class="text-lg font-semibold">Body Section</h5> 	
-	<p>The purpose of the <code>&lt;body></code> section is to organize content for presentation by marking it up with HTML elements. The body element contains all marked up content that is presented to the user.</p>		
-	<p class="blockquote-footer">Read further  <cite title="[ How to define Document Structure in HTML5 (pdf) ]"><a href="http://bajcar.dev.fast.sheridanc.on.ca/project_assets/pdf/HowtoDefineDocumentStructureinHTML5.pdf" target="_blank"> How to define Document Structure in HTML5 (pdf)</a></cite></p>	
+        <h5 class="text-lg font-semibold">Head Section</h5> 	
+        <p>The purpose of the <code>&lt;head></code> section is to describe the document itself. The children of head element include <code>&lt;meta></code> to describe the document, <code>&lt;link></code> to include stylesheet files and other assets, <code>&lt;styles></code> to embed styles, <code>&lt;script></code> to include scripts, and <code>&lt;title></code> in window tab.</p>   
         
-      </div>
+        <h5 class="text-lg font-semibold">Body Section</h5> 	
+        <p>The purpose of the <code>&lt;body></code> section is to organize content for presentation by marking it up with HTML elements. The body element contains all marked up content that is presented to the user.</p>	
+        
+        <h5 class="text-lg font-semibold">Document type declaration </h5> 	
+        <p>Every HTML document we create should declare its document type (doctype).The doctype must appear at the start of the first line of every HTML5 document to ensure the web browser will "render"(display) the document in "Standards Mode" (following the HTML5 specifications). This identifies which specification of HTML is included so the browser knows how to interpret the code. Keep in mind that code examples you find online may contain older outdated or irrelevant approaches.</p>	
+        <pre class="language-html"><code>
+&lt;!-- The document type declaration tag for all HTML5 documents -->
+&lt;!DOCTYPE html>
+
+&lt;!-- 
+  HTML5 is not a case-sensitive language &mdash; so the document type declaration tag
+  may alternatively be written in any combination of uppercase and lowercase characters.  
+-->
+&lt;!doctype html>
+&lt;!Doctype Html>
+&lt;!DOCTYPE HTML></code></pre>    
+        <p>The choice of capitalization is yours. It is recommended that you follow best practices and adhere consistently to the style used by the project or organization.</p>
+        
+        <h5 class="text-lg font-semibold">Code comments</h5> 
+        <p>Comments can be added at any point within both the head and body sections between a pair of <code>&lt;!--</code> and <code>--></code> tags. Anything that appears between the comment tags is ignored by the browser. </p>
+        
+        <h5 class="text-lg font-semibold">Fundamental structure</h5> 
+        
+        <pre class="language-html"><code>
+&lt;!DOCTYPE html>
+&lt;html>
+    &lt;head>
+        &lt;!-- Data describing the document -->
+    &lt;/head>
+    &lt;/body>
+        &lt;!-- Data content to appear in the browser -->
+    &lt;body>
+&lt;/html></code></pre>  
+
+        <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2"></h4>
+        <h5 class="text-lg font-semibold">Whitespace</h5> 
+        <p class="text-gray-700 text-base mb-4">
+          <strong>Whitespace</strong> is any character or series of characters that represent horizontal or vertical space in typography...does not correspond to a visible mark, but typically does occupy an area on a page.</p>
+          
+        <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2"></h4>
+        <h5 class="text-lg font-semibold">Entities and symbols</h5> 
+        <p class="text-gray-700 text-base mb-4">
+          Some elements have attributes that are specific to the element. For example, the <code data-toggle="tooltip" data-placement="top" title="Ordered list" data-ref-link="https://www.w3schools.com/tags/tag_ol.asp">&lt;ol></code> element, by default starts with the natural number 1; you can change the starting value with the attribute <code>start</code> and the kind of marker to use with the attribute <code>type</code>. the code <code>&lt;ol start="3" type="a"></code> will produce a list with the first item numbered "c. First item", instead of the default "1. First item".</p>      
+
     </div>
   </div>
 </div>
 
  
 
-<div class="flex justify-center mt-6 ">
-  <div class="block p-6 rounded-lg shadow-lg bg-white w-full">
-    <h4 class="text-2xl font-semibold sher-teal">Minimal HTML5 document code</h4>
-    <p class="text-gray-700 text-base mb-4">The current standard includes the following nine (9) lines of code. If a project's requirements necessitate a deviation from the standard, proper documentation is included to describe and justify the non-compliance. A part of maintenance of a projects includes reviews of the current standards and plans to update (or modify)the code to keep it up to date.</p>
-          
-      <pre class="language-html"><code>
+<div class="my-5">
+  <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="flex items-center justify-center px-2 bg-sher-teal"></div>
+    <div class="block p-4 rounded-lg shadow-lg bg-white w-full">
+        <h4 class="text-2xl font-semibold sher-teal">Minimal HTML5 document code</h4>
+        <p class="text-gray-700 text-base mb-4">The current standard includes the following nine (9) lines of code. If a project's requirements necessitate a deviation from the standard, proper documentation is included to describe and justify the non-compliance. A part of maintenance of a projects includes reviews of the current standards and plans to update (or modify)the code to keep it up to date.</p>
+        <pre class="language-html"><code>
 &lt;!DOCTYPE html>
 &lt;html lang="en">
   &lt;head>
@@ -152,86 +198,15 @@
   &lt;body>
   &lt;/body>
 &lt;html></code></pre> 
-<p class="blockquote-footer">Read further  <cite title="[ Creating an HTML5 document (pdf) ]"><a href="http://bajcar.dev.fast.sheridanc.on.ca/project_assets/pdf/HowtoCreateanHTML5document.pdf" target="_blank"> Creating an HTML5 document (pdf)</a></cite></p>
-  </div>
-</div>
-   
-
-
-
-<div class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
-    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Document Type</h4>
-    <p>Every HTML document we create should declare its document type (doctype) in the first line. This will identify which specification of HTML is included so the browser knows how to interpret the markup. With HTML5, the general doctype declaration is
-      <pre class="language-html"><code>
-&lt;!DOCTYPE html></code></pre> 
-	This is the very first line of code in any HTML page you create. Keep in mind that code examples you find online may contain older outdated or irrelevant approaches.</p>
-  </div>
-</div>
-
-
-
- <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl mt-6">
-  <div class="flex">
-    <div class=" w-1/3 md:flex-shrink-0 hover:w-full">
-    <a href="../images/character_encoding.png" target="_blank">
-      <img class="h-full w-full object-cover" src="../images/character_encoding.png" alt="Character encoding">
-      </a>
-    </div>
-    <div class="p-8 w-2/3">
-    <!--
-      <div class="uppercase tracking-wide text-sm sher-teal font-semibold">Character encoding</div>
-      -->
-      <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Character encoding</h4>
-      <p class="mt-2 text-gray-500">character encoding …how symbols are stored.</p> 
-      
-          <ul class="bg-white rounded-lg border border-gray-200 text-gray-900  max-w-lg">
-        <li class="px-6 py-2 border-b border-gray-200 rounded-t-lg">
-            <strong>Start with <a href="https://www.w3.org/International/articles/definitions-characters/" target="_blank"> Character encodings: Essential concepts</a> on W3C.</strong></li>
-        <li class="px-6 py-2 border-b border-gray-200">
-            Read more about <a href="https://en.wikipedia.org/wiki/UTF-8" target="_blank"> UTF-8 on wikipedia</a>. There are some good references on the page.</li>
-        <li class="px-6 py-2 border-b border-gray-200">
-            Read more on <a href="https://www.w3schools.com/html/html_charset.asp" target="_blank"> HTML Encoding (Character Sets) on w3schools</a>.  </li>
-        <li class="px-6 py-2 w-full rounded-b-lg">
-            Read more on <a href="https://www.w3schools.com/charsets/ref_html_utf8.asp" target="_blank"> HTML Unicode (UTF-8) Reference on w3schools</a>. </li>
-    </ul>
-  
-       
+        <p class="blockquote-footer">Read further: <a href="head-section.html" target="_blank"> HEAD Section</a></cite></p>
     </div>
   </div>
 </div> 
 
-
-
-
-
-<div class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
-    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Parsing whitespace</h4>
-    <p class="text-gray-700 text-base mb-4">
-      <strong>Whitespace</strong> is any character or series of characters that represent horizontal or vertical space in typography...does not correspond to a visible mark, but typically does occupy an area on a page.</p>
-  </div>
-</div>
-
-
-<div class="flex justify-center mt-6">
-  <div class="block p-6 rounded-lg shadow-lg bg-white">
-    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Parsing entities and symbols</h4>
-    <p class="text-gray-700 text-base mb-4">
-      Some elements have attributes that are specific to the element. For example, the <code data-toggle="tooltip" data-placement="top" title="Ordered list" data-ref-link="https://www.w3schools.com/tags/tag_ol.asp">&lt;ol></code> element, by default starts with the natural number 1; you can change the starting value with the attribute <code>start</code> and the kind of marker to use with the attribute <code>type</code>. the code <code>&lt;ol start="3" type="a"></code> will produce a list with the first item numbered "c. First item", instead of the default "1. First item".</p>
-  </div>
-</div>
-
-
-
-
-
-
   
 </section>
-     
-    </section>
- </main>
+</section>
+</main>
   
 
   
