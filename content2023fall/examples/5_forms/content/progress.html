@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Progress bar</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <form  target="_blank">
+    <p>Progress (defaults): <progress></progress> <span> 73</span>%</p>  
+
+
+
+    
+    <hr>
+    <p>Progress: <progress id="prog" max="100"></progress> <span id="progv"> 73</span>%</p>   
+  </form>
+  <a href="https://www.w3schools.com/tags/tag_progress.asp" target="_blank">- more examples on w3schools </a><br>    
+    
+    
+<script>
+  var progressBar = document.getElementById('prog');
+  function updateProgress(newValue) {
+    progressBar.value = newValue;
+    document.getElementById('progv').textContent = newValue;
+  }
+  progressBar.onclick = updateProgress(38);
+</script>      
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+/* add own header */
+body {
+  /* note the relevant path from this file to the image file! */
+  background-image: url(../images/grid_18.jpg);
+  margin: 0 40px;
+}
+p {
+  font-size: 16px;
+  line-height: 18px;
+  margin: 36px 0;
+  font-family: sans-serif;
+}
+p:first-child {
+  color: blue;
+}
+p:last-child::first-line {
+  font-size: 24px;
+  font-variant: small-caps;
+  letter-spacing: 13px;
+}
