@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>DATA element</title>
+     <meta charset="utf-8">
+<style>
+data:hover::after {
+    content: ' (SOME TEXT HERE ' attr(value) ')';
+    font-size: .7em;
+    color: red;
+    font-weight: bold;
+}
+a[href$=".pdf"]{
+  color : pink;
+  }
+
+a[href$=".pdf"]:before{
+  content : " 📄";
+}
+</style>    
+<!--
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data
+
+    -->
+</head>
+<body>
+	<header>
+		<h1>Page Title</h1>
+	</header>
+	<nav>
+		<a href="#">Home</a> 
+		<a href="#">Link1</a>
+		<a href="#">Link2</a>
+	</nav>
+	<hr>	
+	<main>
+		<h3>Example</h3>
+		<a href="somefile.pdf">somefile.pdf</a>
+		<p>New Products:</p>
+		<ul>
+			<li><data value="398 whatever the value? how long can this be? will it wrap? yes it will.">Mini Ketchup</data> and if there is more here?</li>
+			<li><data value="399">Jumbo Ketchup</data></li>
+			<li><data value="400">Mega Jumbo Ketchup</data></li>
+		</ul>
+		<h3>CSS Rules code</h3>
+		<pre><code>
+data:hover::after {
+    content: ' (SOME TEXT HERE ' attr(value) ')';
+    font-size: .7em;
+    color: red;
+    font-weight: bold;
+}
+a[href$=".pdf"]{
+  color : pink;
+  }
+
+a[href$=".pdf"]:before{
+  content : " 📄";
+}</code></pre>		
+	</main>
+	<footer>
+		<hr>
+		<address>Web Development &copy; Sheridan College</address>
+	</footer>
+</body>
+</html>
+     
