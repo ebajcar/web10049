@@ -1,0 +1,162 @@
+body {
+  --color-undefined: #f0f;
+  --color-root-element: #3aa22f;
+  --color-document-metadata: #009bee;
+  --color-inline-text-semantics: #df037f;
+  --color-scripting: #a69452;
+  --color-text-content: #fff90e;
+  --color-forms: #9f358f;
+  --color-embedded-content: #4e6fc0;
+  --color-image-multimedia: #038c96;
+  --color-table-content: #e91734;
+  --color-interactive-elements: #7e8688;
+  --color-content-sectioning: #ee852a;
+  --color-obsolete-depricated: #77c7ac;
+  --hover-bgcolor-undefined: #303;
+  --hover-bgcolor-root-element: #0c2009;
+  --hover-bgcolor-document-metadata: #001f30;
+  --hover-bgcolor-inline-text-semantics: #2d0119;
+  --hover-bgcolor-scripting: #211e10;
+  --hover-bgcolor-text-content: #363400;
+  --hover-bgcolor-forms: #200b1d;
+  --hover-bgcolor-embedded-content: #0e1628;
+  --hover-bgcolor-image-multimedia: #011c1e;
+  --hover-bgcolor-table-content: #2f040a;
+  --hover-bgcolor-interactive-elements: #191b1b;
+  --hover-bgcolor-content-sectioning: #341a04;
+  --hover-bgcolor-obsolete-depricated: #132d24;
+  --hover-color-undefined: #fcf;
+  --hover-color-root-element: #d4f1d0;
+  --hover-color-document-metadata: #c9ecff;
+  --hover-color-inline-text-semantics: #fec7e6;
+  --hover-color-scripting: #eeeadc;
+  --hover-color-text-content: #fffecf;
+  --hover-color-forms: #f0d2ec;
+  --hover-color-embedded-content: #dce2f2;
+  --hover-color-image-multimedia: #b9f9fe;
+  --hover-color-table-content: #fbd1d6;
+  --hover-color-interactive-elements: #e5e7e7;
+  --hover-color-content-sectioning: #fce7d4;
+  --hover-color-obsolete-depricated: #e4f4ee;
+  counter-reset: elemNo;
+  background-color: #2F4F4F;
+}
+.period-table {
+  display: grid;
+  margin: 30px 0 0 50px;
+  padding: 0;
+  grid-template-columns: repeat(18, 76px);
+  grid-template-rows: repeat(6, 76px) 116px repeat(2, 76px);
+}
+.cell {
+  padding: 5px;
+  height: 66px;
+  list-style-type: none;
+  --element-color: #000;
+  --element-hover-color: #191970;
+}
+.cell--spacer-1 {
+  grid-column: span 1;
+}
+.cell--spacer-2 {
+  grid-column: span 2;
+}
+.cell--spacer-3 {
+  grid-column: span 3;
+}
+.cell--spacer-4 {
+  grid-column: span 4;
+}
+.cell--spacer-5 {
+  grid-column: span 5;
+}
+.cell--spacer-6 {
+  grid-column: span 6;
+}
+.cell--spacer-7 {
+  grid-column: span 7;
+}
+.cell--spacer-8 {
+  grid-column: span 8;
+}
+.cell--spacer-9 {
+  grid-column: span 9;
+}
+.cell--spacer-10 {
+  grid-column: span 10;
+}
+.cell--spacer-11 {
+  grid-column: span 11;
+}
+.cell--spacer-12 {
+  grid-column: span 12;
+}
+.cell--spacer-13 {
+  grid-column: span 13;
+}
+.cell--spacer-14 {
+  grid-column: span 14;
+}
+.cell--spacer-15 {
+  grid-column: span 15;
+}
+.cell--spacer-16 {
+  grid-column: span 16;
+}
+.cell--spacer-17 {
+  grid-column: span 17;
+}
+.cell--spacer-18 {
+  grid-column: span 18;
+}
+.cell--marked {
+  --element-hover-bgcolor: #f0f;
+  background-color: var(--element-hover-bgcolor);
+}
+.cell--marked > a {
+  color: #fff;
+}
+.element {
+  color: #FFF8DC;
+  display: block;
+  text-decoration: none;
+  counter-increment: elemNo;
+  height: 64px;
+  width: 64px;
+  border: 1px solid var(--element-color);
+  line-height: 64px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  font-family: Segoe UI;
+  font-size: 9pt;
+}
+.element:hover {
+  border: 1px solid var(--element-hover-color);
+}
+.element:hover:after {
+  background: var(--element-hover-color);
+}
+.element:before {
+  display: block;
+  content: counters(elemNo, ".", decimal-leading-zero);
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 12px;
+  font-family: Segoe UI;
+  font-style: oblique;
+  font-size: 7pt;
+  padding: 2px;
+}
+.element:after {
+  display: block;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: var(--element-color);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%) rotate(45deg);
+}
