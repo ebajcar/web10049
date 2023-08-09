@@ -218,11 +218,9 @@ iframe:focus-visible,
  * Add the correct display in Safari.
  */
 
-/*
 details > summary:first-of-type {
     display: list-item;
 }
-*/
 
 /* Accessibility
  * ========================================================================== */
@@ -1193,17 +1191,13 @@ fieldset {
  https://html.spec.whatwg.org/multipage/interactive-elements.html#interactive-elements
  ***/
 
-/* SEE components/box.css */
-/*
 details:not(specificity-hack) {
-    
+    /* SEE components/box.css */
 
 	padding-block-start: 0
 }
 
 details:not(specificity-hack):not([open]) { padding-block-end: 0; }
-
-
 
 summary {
 	margin: calc(0px - var(--gap));
@@ -1221,8 +1215,7 @@ summary:focus-visible, summary:active {
 		filter: brightness(.8);
 		outline: none;
 	}
-    
-    
+
 dialog {
     /* SEE components/box.css */
 	
@@ -1262,7 +1255,7 @@ dialog:not([open]) {
 .sidebar-layout > header,
 [role=tabpanel],
 figure,
-/* details, */
+details,
 dialog {
     margin: var(--gap) 0;
     padding: var(--gap);
@@ -1836,7 +1829,7 @@ button.iconbutton[aria-pressed=true] {
     .sidebar-layout > header,
     [role=tabpanel],
     figure,
- /*   details, */
+    details,
     dialog,
     aside,
     fieldset,
@@ -1851,7 +1844,7 @@ button.iconbutton[aria-pressed=true] {
     .sidebar-layout > header,
     [role=tabpanel],
     figure,
- /*   details, */
+    details,
     dialog,
     aside,
     fieldset,
@@ -1866,7 +1859,7 @@ button.iconbutton[aria-pressed=true] {
     .sidebar-layout > header,
     [role=tabpanel],
     figure,
- /*   details, */
+    details,
     dialog,
     aside,
     fieldset,
@@ -1881,7 +1874,7 @@ button.iconbutton[aria-pressed=true] {
     .sidebar-layout > header,
     [role=tabpanel],
     figure,
-  /*  details, */
+    details,
     dialog,
     aside,
     fieldset,
@@ -1897,7 +1890,7 @@ button.iconbutton[aria-pressed=true] {
     .sidebar-layout > header,
     [role=tabpanel],
     figure,
-  /*  details, */
+    details,
     dialog,
     aside,
     fieldset,
@@ -1912,7 +1905,7 @@ button.iconbutton[aria-pressed=true] {
     .sidebar-layout > header,
     [role=tabpanel],
     figure,
-  /*  details, */
+    details,
     dialog,
     aside,
     fieldset,
@@ -1927,7 +1920,7 @@ button.iconbutton[aria-pressed=true] {
     .sidebar-layout > header,
     [role=tabpanel],
     figure,
-   /* details, */
+    details,
     dialog,
     aside,
     fieldset,
@@ -1942,7 +1935,7 @@ button.iconbutton[aria-pressed=true] {
     .sidebar-layout > header,
     [role=tabpanel],
     figure,
-  /* details, */
+    details,
     dialog,
     aside,
     fieldset,

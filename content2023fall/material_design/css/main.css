@@ -1,0 +1,18 @@
+		:root {
+			--main-font: "Source Sans 3", -apple-system, system-ui, sans-serif;
+		}
+		dfn > code {
+			font-style: normal;
+			text-decoration: 1px dashed var(--muted-fg) underline;
+		}
+		code a {
+			font-family: inherit;
+		}
+        .thisone {
+          text-decoration: underline;
+          text-decoration-style: wavy;
+          text-decoration-color: orange;
+        }
+        footer ul {
+            list-style: none;
+        }
