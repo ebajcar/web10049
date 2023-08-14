@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>blog form example</title>
+	<meta charset="utf-8">
+<!--
+File name: blog01.html
+Author: Ellen Bajcar
+Date created: Winter 2017
+Date modified: Winter 2018
+Version: 1.0
+Description:
+	TODO: explore styling forms, how can you ensure that
+		  the user provides clean data; how can you help?
+	TODO: describe the purpose of this page
+	TODO: clean up and annotate css rules
+	TODO: what is the purpose of viewport?
+-->		
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url(http://fonts.googleapis.com/css?family=Allan:700);
+
+body {
+	margin: 0 auto;
+	padding: 0 8px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: #01001F;
+	width: 80%;
+}
+
+section {
+	border: 1px silver dotted;
+	background-color: white; 
+	opacity: 0.95;
+	border-radius: 5px;
+}
+
+iframe, video {
+	width: 100%;
+	min-height: 320px;
+	seamless: seamless;
+}
+
+header, footer {
+	position : relative;
+	margin: 0;
+	padding: 0;
+	font-family: Allan;
+	color: white;
+}
+	
+header h1 {
+	margin: 0;
+	color: black;
+	color: #386B94;;
+	text-align: center;
+	text-shadow: 2px 2px 2px white, 4px 4px 6px black;
+	font-weight: bold;
+}
+		
+.row {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+
+/* blog form */
+.blog {
+	float : left;
+	height : auto;
+	padding : 10px ;
+	width : 100%;
+	}
+
+.blog form {
+	border-radius: 4px;
+	background : #DDD;
+	margin : 5px;
+	padding : 10px;
+	}
+.blog label {
+	color : #666;
+	display : inline;
+	font-size : 1em;
+	font-weight : bold;
+	margin : 0 0 0 2px;
+}
+.blog fieldset {
+	background : white;
+	padding: 5px 10px;
+	border: none;
+	margin: 0;
+	width: 98%;
+	color: black;
+}
+.blog textarea {
+	height : 150px;
+}
+
+.blog input {
+	margin : 0 0 10px;
+}
+
+.blog input[type=text], .blog textarea {
+	border-radius: 4px;
+	border : 1px solid #CCC;
+	font-size : 1.1em;
+	padding : 4px 5px;
+	width : 99%;
+}
+
+.blog input[type=submit] {
+	background: #999;
+	border : 1px solid #888;
+	color: #FFF;
+	cursor : pointer;
+	font-weight : bold;
+	margin : 10px 0 0 0;
+	text-shadow : 0 -1px 1px rgba(0,0,0,0.25);
+	width : 100%;
+}
+</style>
+</head>
+<body>
+
+	<header>
+		<h1>Example Blog</h1>
+	</header> 
+		
+	<section class="blog">
+		<h3>Submit your comments...</h3>
+		<form>
+			<label>Name</label>
+			<input name="username" id="username" type="text" value="" placeholder="Your Name">
+			<label>Email</label>
+			<input name="email" type="text" value="" placeholder="Your Email">
+			<label>Select Tags</label>
+			<fieldset>
+				<input name="btags" type="checkbox" value="Food">  Food
+				<input name="btags" type="checkbox" value="Passion"> Passion
+				<input name="btags" type="checkbox" value="School"> School
+				<input name="btags" type="checkbox" value="Holidays"> Holidays
+				<input name="btags" type="checkbox" value="Technology"> Technology
+			</fieldset>
+			<label>Blog Heading</label>
+			<input name="bloghead" type="text" value="" placeholder="Your Blog Heading">                    
+			<label>Your Comments</label>
+			<textarea name="blogbody" id="blogbody" placeholder="Your comments here..."></textarea>
+			<br>
+			<input type="submit" value="submit">
+		</form> 
+	</section>
+
+
+
+
+</body>
+</html>

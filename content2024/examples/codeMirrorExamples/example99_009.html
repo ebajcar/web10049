@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Example99_009</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="css/codeMirror.css">
+
+<!--[if lt IE 8]>
+<style>
+#textareacontainer, #iframecontainer {width:48%;}
+#container {height:500px;}
+#textarea, #iframe {width:90%;height:450px;}
+#textareaCode, #iframeResult {height:450px;}
+.stack {display:none;}
+</style>
+<![endif]-->
+</head>
+<body>
+
+<div class="trytopnav">
+
+	<div class="w3-bar w3-light-grey" style="border-top:1px solid #f1f1f1;overflow:auto">
+    
+	  <a href="javascript:void(0);" onclick="restack(currentStack)" title="Change Orientation" class="w3-button w3-bar-item topnav-icons  fas fa-sync" style="font-size:28px;color:#999999;margin-top:-2px"></a>
+	  <button class="w3-button w3-bar-item w3-indigo w3-hover-white w3-hover-text-indigo" onclick="submitTryit(1)">Run &raquo;</button>
+	  <span class="w3-right w3-hide-medium w3-hide-small" style="padding:8px 8px 8px 8px;display:block"></span>
+	  <span class="w3-right w3-hide-small" style="padding:8px 0;display:block;float:right;"><span id="framesize"></span> <small>&mdash;<mark>Added: March 2019</mark></small></span>
+	</div>
+</div>
+<div id="shield"></div>
+<a href="javascript:void(0)" id="dragbar"></a>
+
+<div id="container">
+<div id="navbarDropMenu" class="w3-dropdown-content w3-bar-block w3-border" style="z-index:5">
+<span onclick="openMenu()" class="w3-button w3-display-topright w3-transparent w3-hover-dark-grey" title="Close Menu" style="font-weight:bold;padding-top:10px;padding-bottom:11px;">&times;</span>
+  <div class="w3-bar-block">
+    <a class="w3-bar-item w3-button" href='javascript:void(0);' title="Change Orientaton" onclick="openMenu();restack(currentStack)"><i class="fa fa-rotate" style="font-size:26px;margin-left:-4px;margin-right:8px"></i><span style="position:relative;top:-4px;left:2px;">Change Orientation</span></a>
+    <a class="w3-bar-item w3-button" href="javascript:void(0);" title="Save" onclick="openMenu();click_savebtn()"><i class="fa fa-save" style="font-size:26px;margin-right:10px;"></i><span style="position:relative;top:-4px;left:2px;">Save Code</span></a>
+    
+    <a class="w3-bar-item w3-button" href='javascript:void(0);' id="loadGDriveBtn" title="Load from Google Drive" onclick="openMenu();click_google_loadbtn()"><img src="" alt="Load from Google Drive" title="Load from Google Drive" style="margin-right:10px;width:24px;"><span style="position:relative;left:1px;">Load from Google Drive</span></a>
+  </div>
+  <footer class="w3-container w3-small w3-light-gray">
+  <p>Web Programming &copy; Sheridan College</p>
+  </footer>
+</div>
+<div id="menuOverlay" class="w3-overlay w3-transparent" style="cursor:pointer;z-index:4"></div>
+  <div id="textareacontainer">
+    <div id="textarea">
+      <div id="textareawrapper">
+	  
+<!--
+	code area 
+	starts here
+	
+--> 
+<textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <title>Example99_009</title>
+  <meta charset="utf-8">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #cae8ca;
+  border: 2px solid green;
+}
+.sticky-footer {
+  bottom: 0;
+}
+.sticky-header {
+  top: 0;
+}
+</style>
+</head>
+<body>
+<header class="sticky-header">
+<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+<p>Note: IE/Edge 15 and earlier versions do not support sticky position.</p>
+</header>
+
+<main>
+<h1>Position: sticky</h1>
+<h3>An element with position: sticky; is positioned based on the user's scroll position.</h3>
+
+<h4>A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). Learn more at <a href="https://www.w3schools.com/css/css_positioning.asp">w3schools</a></h4>
+
+<h4 title="source: https://github.com/mdn/learning-area/blob/master/css/css-layout/positioning/7_sticky-positioning.html">More about  <a href="https://mdn.github.io/learning-area/css/css-layout/positioning/7_sticky-positioning.html">sticky positioning on MDN</a></h4>
+
+  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisi felis, mollis sed tortor eget, blandit convallis nulla. Mauris fermentum mollis purus in imperdiet. Duis aliquam eu quam et blandit. Vestibulum sit amet aliquet eros, vitae condimentum lacus. Pellentesque sed sollicitudin justo. Praesent vehicula risus nec enim dictum, a porttitor augue malesuada. Fusce quis ullamcorper mauris. Ut tempor elementum lectus, ut semper odio varius eu. Mauris vel velit condimentum, consectetur leo eget, convallis massa. Curabitur a lacinia lectus. Fusce pellentesque odio id dignissim aliquet. Nulla eget lacus pretium, pharetra purus id, fringilla leo. Donec eu nibh cursus, volutpat sem non, ultricies est. Vivamus nisi nisl, pharetra at finibus non, tincidunt a risus.</p>
+<p>
+Integer venenatis lacinia lacus, a cursus magna tempor condimentum. Donec in sem tortor. In hac habitasse platea dictumst. Suspendisse auctor tellus ac eros accumsan lacinia. Aenean id lacinia leo. Sed ut rutrum tortor. Nunc sem eros, egestas sed mauris a, blandit mollis dolor. Proin sed mauris nec ligula bibendum fringilla. Vivamus vitae felis congue, pulvinar nisl in, varius massa. Suspendisse potenti.</p>
+<p>
+Curabitur pellentesque dolor finibus tortor dictum, in ullamcorper augue consequat. Vestibulum sit amet placerat quam. Integer ullamcorper molestie accumsan. Nunc id metus consectetur, convallis purus non, tristique nulla. Integer sed mollis justo, nec aliquam velit. Maecenas sit amet nunc quis lorem porta scelerisque. Maecenas finibus neque gravida finibus gravida. Mauris a blandit nunc. Fusce in sollicitudin lorem. Proin vitae urna ex. In vel est lorem. Ut vitae dolor vel lectus ultrices aliquam.</p>
+<p>
+Nullam risus augue, dignissim quis consequat sit amet, congue id mi. Nulla posuere quis quam vel iaculis. Vestibulum commodo feugiat mi, id condimentum lorem bibendum in. Nullam mauris erat, consectetur in diam nec, posuere faucibus lectus. Duis rutrum vitae mi a molestie. Praesent fringilla arcu et varius euismod. Nunc sed nunc viverra, feugiat nulla at, vulputate est. Donec quis nunc eu risus viverra auctor. Curabitur nec ultricies lacus. Sed et ante massa. Fusce eget vehicula ante, eget efficitur erat. Mauris id mollis purus. Nulla viverra vel odio quis tincidunt. Morbi vel elit sodales, condimentum turpis nec, iaculis ligula. Aliquam ac risus at tortor sollicitudin accumsan.</p>
+<p>
+Sed non lorem mollis, tincidunt elit in, efficitur tortor. Fusce molestie sapien id pulvinar consectetur. Praesent sed tempus est. Maecenas cursus consectetur viverra. Cras suscipit urna eu nisi mollis tempor. Quisque ut nunc vitae massa viverra ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vel fringilla mi, quis vehicula ante. Vivamus sit amet tellus interdum diam varius pretium a at dolor. Nunc dignissim libero vitae egestas ultrices. Maecenas eu ex vel est posuere condimentum eu sit amet magna. Nulla malesuada est in ultricies dictum.</p>
+</main>
+<footer class="sticky-footer">I am sticky!</footer> 
+</body>
+</html>
+
+
+
+</textarea>
+<!--
+	end of code area here
+	end of code area here
+	end of code area here
+	
+--> 
+        <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
+          <input type="hidden" name="code" id="code" />
+        </form>
+       </div>
+    </div>
+  </div>
+  <div id="iframecontainer">
+    <div id="iframe">
+      <div id="iframewrapper"></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="my_w3editor.js"></script>
+
+</body>
+</html>
