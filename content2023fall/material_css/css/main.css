@@ -1,0 +1,43 @@
+:root {
+    --main-font: "Source Sans 3", -apple-system, system-ui, sans-serif;
+}
+dfn > code {
+    font-style: normal;
+    text-decoration: 1px dashed var(--muted-fg) underline;
+}
+code a {
+    font-family: inherit;
+}
+.thisone {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: orange;
+}
+/*
+.thisone-wiggly {
+  border-left: 2px solid orange;
+}
+
+.thisone::before {
+    content: "!";
+    color: orange;
+}
+*/
+footer ul {
+    list-style: none;
+}
+nav ul li {
+    line-height: 0.8em;
+    & a {
+        font-size: 0.8em;
+        font-weight: normal;
+    }
+}        
+    .space {
+      margin-bottom: 20px !important;
+      border-bottom: 1px dashed lightgray;
+    }
+    .breadcrumbs ol {
+      border-bottom: 1px solid lightgray;
+      font-size: 1.1em;
+    }

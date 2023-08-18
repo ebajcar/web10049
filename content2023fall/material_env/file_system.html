@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Course Material</title>
+    <link rel="stylesheet" href="css/missing-css.css">
+	<link href="https://fonts.bunny.net/css?family=source-sans-3:400,700|m-plus-code-latin:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/prism-coy-23.css">
+    <script src="css/prism-coy-23.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+	<style>
+
+	</style>
+</head>
+<body>
+	<div class="sidebar-layout fullscreen">
+      <header>
+        <div class="<h1>">SYST10049</div>
+        <nav>
+            <ul role="list">
+                  
+                <li class="space"><a href="index.html">Web Environment</a></li> 
+                <li><a href="how_web_works.html">How the web works</a></li>
+                <li><a href="client_server.html">Client/server environment</a></li>
+                <li><a href="internet_backbone.html">Internet: backbone of the web</a></li>
+                <li class="space"><a href="request_response.html">HTTP request and response</a></li>     
+                
+                <li><a href="tcp_ip_protocol_suite.html">TCP/IP protocol suite</a></li>                
+                <li><a href="uniform_resource_locator.html">Uniform Resource Locator (URL)</a></li>
+                <li class="space"><a href="file_transfer_protocol.html">File transfer protocol (sFTP)</a></li>
+                
+                <li class="thisone"><a href="file_system.html">File System (FS)</a></li>
+                <li><a href="file_types.html">File types</a></li>
+                <li><a href="file_naming_conventions.html">File naming conventions</a></li>
+                <li><a href="file_organization.html">File organization</a></li> 
+                <li class="space"><a href="file_navigation.html">File navigation</a></li> 
+                
+                <li><a href="user_agents.html">User agents</a></li>
+                <li><a href="search_engine.html">Search engine</a></li>
+                <li><a href="web_browser.html">Web browser</a></li>
+                <li><a href="web_browser_performance.html">Web browser performance</a></li>
+                <li><a href="order_components_parsed.html">How browser parses files</a></li>
+                <li class="space"><a href="what_good_web_page_needs.html">What good web page needs</a></li>
+ 
+                <li><a href="standards_specifications.html">Standards and specifications</a></li>
+                <li class="space"><a href="progressive_enhancement.html">Progressive enhancement (PE)</a></li>
+                  
+            </ul>            
+        </nav>
+      </header>
+    
+
+      <div> <!-- body container for main and footer -->
+        <main>
+            <nav class="breadcrumbs" aria-label="Breadcrumbs">
+                <ol>
+                    <li><a href="index.html"  class="allcaps">Web Environment</a></li>
+                    <li><a href="#" aria-current="page">File system (FS)</a></li>
+                </ol>
+            </nav>        
+
+<section id=#e01">     
+    <h3>File system (FS)<sub-title>the most visible aspect of an operating system</sub-title></h3>
+    <ol class="text-base">
+        <li>provides the mechanism to store and access data and programs through
+            <ul>
+                <li>a collection of <strong>files</strong>, each storing related data, and</li>
+                <li>a <strong>directory</strong> structure, to organize and provide information about all the files in the system.</li>
+            </ul>
+        </li>
+        <li>live on <strong>storage devices</strong>.</li>
+        <li>is the method that the operating system uses for organizing and storing information on the system, including processes, serial ports, and inter-process communication channels (mapped into the file system namespace)</li>
+        <li>has four main components:
+            <ul>
+                <li>a <strong>namespace</strong>: a way of naming things and organizing them in a hierarchy;</li>
+                <li>an <strong title="application programming interface">API</strong>: a set of system calls for navigating and manipulating objects;</li>
+                <li>a <strong>security model</strong>: a scheme for protecting, hiding, and sharing things;</li>
+                <li>an <strong>implementation</strong>: software that ties the logical model to actual hardware.</li>
+            </ul>
+        </li>
+    </ol> 
+             
+
+      <h3>Namespace<sub-title>a way of naming things</sub-title></h3>
+        <ul>
+            <li>Namespace supports two-part file names, with the two parts separated by a period</li>
+            <li>file extension usually indicates something about the file</li>
+            <li>Note that space (blank) is used as delimiter to tokenize commands, therefore it is not used to name file and directory.</li>
+        </ul>
+       
+       <h3>Namespace<sub-title>a way of organizing things</sub-title></h3>
+        <p>The key to all operations is that the data has some kind of structure.</p>
+        <ul>
+            <li><strong>Directory</strong>: a file that acts as a holder for other files and directories.</li>
+            <li><strong>File</strong>: a collection of data that is stored on a disk and that can be manipulated as a single unit by its name.</li>
+            <li><strong>Directory tree</strong>: includes a directory and all of its contents and its sub-directories.</li>
+            <li><strong>Parent directory</strong>: a file that contains another directory. </li>
+        </ul>    
+
+    
+</section>
+            
+
+
+
+        </main>
+
+
+        <footer>
+            <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2023 &copy; Ellen Bajcar et al</a></address> 
+            <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+            <div style="margin: 0 0 10px 0">&mdash;</div>
+            <ul class="f-switch" role="list">
+                <li>
+                  <h2>Course Material</h2>
+                  <ul>
+                    <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                    <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                    <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                    <li><a href="https://code.visualstudio.com/download">Visual Studio Code editor</a></li>  
+                    <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                    <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                    <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+                  </ul>
+                </li>
+                <li>
+                  <h2>Resources</h2>
+                  <ul>
+                    <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                    <li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative (WAI)</a> </li>
+                    <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a> </li>  
+                    <li><a href="https://www.w3.org/TR/UAAG20/">UAAG 2.0</a> </li>                     
+                   
+                    <li><a href="https://www.webfx.com/blog/web-design/progressive-enhancement/">Progressive enhancement (PE)</a> </li>                     
+                  </ul>
+                </li>
+                <li>
+                  <h2>Sheridan College</h2>
+                  <ul>
+                    <li><a href="https://www.sheridancollege.ca/">Davis | HMC | Trafalgar</a></li>
+                    <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>
+                    <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                    <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                    <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>  
+                    <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </footer>
+     
+
+     
+      </div> <!-- body container for main and footer -->
+</div> <!-- sidebar -->
+
+	
+
+</body></html>
