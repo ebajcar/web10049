@@ -39,6 +39,7 @@ h4 {
 }
 ol {
   list-style-type: decimal;
+  list-style-position: outside;
 }
 </style>
 </head>
@@ -93,7 +94,9 @@ ol {
 
             <button class="bg-dark-gray sher-teal active:bg-purple-600 font-bold uppercase text-base px-8 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal(&quot;modal-example&quot;)">Test yourself!</button>
         -->    
-            <button class="bg-red sher-teal active:bg-purple-600 font-bold uppercase text-base px-4 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"><a href="" target="_blank" style="color:white;">Topical Outline and Evaluation</a></button>
+            <button class="bg-dark-gray sher-teal active:bg-purple-600 font-bold uppercase text-base px-4 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"><a href="" target="_blank" style="color:white;">Topical Outline</a></button>
+            
+            <button class="bg-red sher-teal active:bg-purple-600 font-bold uppercase text-base px-4 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"><a href="material_worksheets/index.html" target="_blank" style="color:white;">Weekly Worksheets</a></button>            
         
         <!--
             <button class="bg-red font-bold uppercase text-base px-4 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"><a href="https://bajcar.dev.fast.sheridanc.on.ca/syst10049/" target="_blank" style="color:white;">Examples published in class</a></button>     
@@ -111,13 +114,14 @@ ol {
                     <img class="h-full w-full object-cover md:w-48" src="images/html5.jpg" alt="Web development">
                 </div>
                 -->
-                <div class="p-4">
+                <div class="p-6">
                     <div class="uppercase tracking-wide text-sm sher-teal font-semibold">Course Overview</div>
                     <span class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">SYST10049 Web Development</span>
-                    <p style="text-align:justify;" class="mt-2 text-gray-500">Students learn how to use standards-based HTML5 and Cascading Style Sheets (CSS3) to create accessible websites that are laid out in a logical file structure. Students publish their websites to a dedicated student space with emphasis on website security and accessibility guidelines. Studies incorporate the latest web technologies and standards from the Web Accessibility Initiative (WAI).</p> 
+                    <p style="text-align:justify;" class="mt-2 font-medium leading-tight text-gray-500">Students learn how to use standards-based HTML5 and Cascading Style Sheets (CSS3) to create accessible websites that are laid out in a logical file structure. Students publish their websites to a dedicated student space with emphasis on website security and accessibility guidelines. Studies incorporate the latest web technologies and standards from the Web Accessibility Initiative (WAI).</p> 
                     <p>Read details in <a href="" target="_blank">Course Outline</a>.</p>
                 </div>
-                 <div class="md:flex-shrink-0">
+           
+           <div class="md:flex-shrink-0 p-6">
                     <div class="uppercase tracking-wide text-sm sher-teal font-semibold">Learning Outcomes</div>
                     <table class="table table-sm table-condensed table-hover">
                         <tr><th>1</th><td>Create a properly structured and accessible web page using (HTML).</td></tr>
@@ -144,23 +148,23 @@ ol {
         
             <h3 class="text-3xl tracking-tight text-gray-900"  style="margin:20px 0;">Course Content</h3>
   
-           <div class="grid grid-cols-4 gap-2">
+           <div class="grid lg:grid-cols-4 gap-2 md:grid-cols-1">
                <!-- column 1 -->
               <div class="bg-dark-gray shadow-lg mx-auto w-96 max-w-full pointer-events-auto bg-clip-padding rounded-lg block mb-3" id="static-example" role="alert" aria-live="assertive" aria-atomic="true" data-mdb-autohide="false">
                 <div class="bg-dark-gray flex justify-between items-center py-2 px-3 bg-clip-padding border-b border-blue-400 rounded-t-lg">
                   <div class="text-blue-400" style="text-align:center">
-                  <a href="learnweb/index.html" target="_blank" style="color:lightblue;font-size:1.9em;text-align:center;">Web Environment</a>
+                  <a href="material_env/index.html" target="_blank" style="color:lightblue;font-size:1.9em;text-align:center;">Web Environment</a>
                   </div>
                 </div>
                 
-                <div class="p-3 bg-dark-gray rounded-b-lg break-words text-white">
+                <div class="p-4 bg-dark-gray rounded-b-lg break-words text-white">
                   <ol>
-                    <li>How the web works</li>                   
-                    <li>Client/Server environment</li>                 
-                    <li>Protocols, Internet, &amp; URL</li>
-                    <li>Namespace &amp; File naming</li>
-                    <li>File organization &amp; Pathnames</li>
-                    <li>Protecting a website</li>
+                    <li>Client/Server environment</li>                                                      
+                    <li>Internet &amp; Protocols</li>
+                    <li>The Web</li>
+                    <li>Browsers &amp; other User Agents</li>
+                    <li>File systems &amp; Namespaces</li>
+                    <li>File organization &amp; navigation</li>
                   </ol>
                 </div>
                
@@ -171,17 +175,17 @@ ol {
  
                  <div class="bg-dark-gray flex justify-between items-center py-2 px-3 bg-clip-padding border-b border-blue-400 rounded-t-lg">
                   <div class="text-blue-400" style="text-align:center">
-                  <a href="learnweb/index.html" target="_blank" style="color:lightblue;font-size:1.9em;text-align:center;">Web Development</a>
+                  <a href="material_dev/index.html" target="_blank" style="color:lightblue;font-size:1.9em;text-align:center;">Web Development</a>
                   </div>
                 </div>
-                <div class="p-3 bg-dark-gray rounded-b-lg break-words text-white">
+                <div class="p-4 bg-dark-gray rounded-b-lg break-words text-white">
                   <ol>
-                    <li value="7">Standards, Specifications, Accessiblity</li>
-                    <li>Progressive enhancement (PE)</li>
+                    <li value="7">Standards and Specifications</li>
+                    <li>Guidelines and Compliance</li>
                     <li>Planning &amp; Designing</li>
                     <li>Documenting &amp; Code style</li>
                     <li>Debugging &amp; Testing</li>
-                    <li>Publishing your website</li>
+                    <li>Publishing and Protecting a website</li>
                   </ol>
                 </div>
               </div>             
@@ -190,18 +194,18 @@ ol {
               <div class="bg-dark-gray shadow-lg mx-auto w-96 max-w-full pointer-events-auto bg-clip-padding rounded-lg block mb-3" id="static-example" role="alert" aria-live="assertive" aria-atomic="true" data-mdb-autohide="false">
                 <div class="bg-dark-gray flex justify-between items-center py-2 px-3 bg-clip-padding border-b border-blue-400 rounded-t-lg">
                   <div class="text-blue-400" style="text-align:center">
-                  <a href="learnhtml/index.html" target="_blank" style="color:lightblue;font-size:1.9em;text-align:center;">Learn HTML</a>
+                  <a href="material_html/index.html" target="_blank" style="color:lightblue;font-size:1.9em;text-align:center;">Learn HTML</a>
                   </div>
                 </div>
-                <div class="p-3 bg-dark-gray rounded-b-lg break-words text-white">
+                <div class="p-4 bg-dark-gray rounded-b-lg break-words text-white">
                   <ol start="13" class="ul-outside">
-                    <li>HTML Markup</li>
+                    <li>HyperText Markup Language</li>
                     
                     <li>HTML Document</li>
-                    <li>Syntax, Elements &amp; Attributes</li>
+                    <li>Syntax, Elements, Attributes</li>
                     <li>Content models &amp; organization</li>
                     <li>Semantic correctness</li>
-                    <li>Document Object Model (DOM)</li>
+                    <li>Document Object Model</li>
                     
                     <!--
                     <li>Marking up textual content</li>
@@ -216,17 +220,17 @@ ol {
               <div class="bg-dark-gray shadow-lg mx-auto w-96 max-w-full pointer-events-auto bg-clip-padding rounded-lg block mb-3" id="static-example" role="alert" aria-live="assertive" aria-atomic="true" data-mdb-autohide="false">
                 <div class="bg-dark-gray flex justify-between items-center py-2 px-3 bg-clip-padding border-b border-blue-400 rounded-t-lg">
                   <div class="text-blue-400" style="text-align:center">
-                  <a href="learncss/index.html" target="_blank" style="color:lightblue;font-size:1.9em;text-align:center;">Learn CSS</a>
+                  <a href="material_css/index.html" target="_blank" style="color:lightblue;font-size:1.9em;text-align:center;">Learn CSS</a>
                   </div>
                 </div>
-                <div class="p-3 bg-dark-gray rounded-b-lg break-words text-white">
+                <div class="p-4 bg-dark-gray rounded-b-lg break-words text-white">
                   <ol start="19">
-                    <li>Cascading Style Sheets (CSS)</li>
-                    <li>Style rules, syntax &amp; structure</li>
+                    <li>Cascading Style Sheets</li>
+                    <li>CSS rules, syntax &amp; structure</li>
                     <li>Selectors</li>
                     <li>Properties</li>
-                    <li>Layouts</li>
-                    <li>User experience &amp; Responsive design</li>
+                    <li>Page Layouts</li>
+                    <li>Responsive design</li>
                   </ol>
                 </div>
               </div>             
