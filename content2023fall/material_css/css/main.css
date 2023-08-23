@@ -13,16 +13,6 @@ code a {
   text-decoration-style: wavy;
   text-decoration-color: orange;
 }
-/*
-.thisone-wiggly {
-  border-left: 2px solid orange;
-}
-
-.thisone::before {
-    content: "!";
-    color: orange;
-}
-*/
 footer ul {
     list-style: none;
 }
@@ -41,3 +31,18 @@ nav ul li {
       border-bottom: 1px solid lightgray;
       font-size: 1.1em;
     }
+    
+ /* sidebar menu */   
+.hellip-one {
+  overflow: hidden;
+  z-index: 9;
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin: 0 0 0 5px;
+  line-height: 0.5em;
+}
+.lead-title {
+  padding-top: 1.2em;
+}
