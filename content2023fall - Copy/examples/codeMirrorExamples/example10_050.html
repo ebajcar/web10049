@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Example10_050</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="css/codeMirror.css">
+<!--[if lt IE 8]>
+<style>
+#textareacontainer, #iframecontainer {width:48%;}
+#container {height:500px;}
+#textarea, #iframe {width:90%;height:450px;}
+#textareaCode, #iframeResult {height:450px;}
+.stack {display:none;}
+</style>
+<![endif]-->
+</head>
+<body>
+
+<div class="trytopnav">
+	<div class="w3-bar w3-light-grey" style="border-top:1px solid #f1f1f1;overflow:auto">
+	  <a href="javascript:void(0);" onclick="restack(currentStack)" title="Change Orientation" class="w3-button w3-bar-item topnav-icons  fas fa-sync" style="font-size:28px;color:#999999;margin-top:-2px"></a>
+	  <button class="w3-button w3-bar-item w3-indigo w3-hover-white w3-hover-text-indigo" onclick="submitTryit(1)">Run &raquo;</button>
+	  <span class="w3-right w3-hide-medium w3-hide-small" style="padding:8px 8px 8px 8px;display:block"></span>
+	  <span class="w3-right w3-hide-small" style="padding:8px 0;display:block;float:right;"><span id="framesize"></span></span>
+	</div>
+</div>
+<div id="shield"></div>
+<a href="javascript:void(0)" id="dragbar"></a>
+
+<div id="container">
+<div id="navbarDropMenu" class="w3-dropdown-content w3-bar-block w3-border" style="z-index:5">
+<span onclick="openMenu()" class="w3-button w3-display-topright w3-transparent w3-hover-dark-grey" title="Close Menu" style="font-weight:bold;padding-top:10px;padding-bottom:11px;">&times;</span>
+  <div class="w3-bar-block">
+    <a class="w3-bar-item w3-button" href='javascript:void(0);' title="Change Orientaton" onclick="openMenu();restack(currentStack)"><i class="fa fa-rotate" style="font-size:26px;margin-left:-4px;margin-right:8px"></i><span style="position:relative;top:-4px;left:2px;">Change Orientation</span></a>
+    <a class="w3-bar-item w3-button" href="javascript:void(0);" title="Save" onclick="openMenu();click_savebtn()"><i class="fa fa-save" style="font-size:26px;margin-right:10px;"></i><span style="position:relative;top:-4px;left:2px;">Save Code</span></a>
+    
+    <a class="w3-bar-item w3-button" href='javascript:void(0);' id="loadGDriveBtn" title="Load from Google Drive" onclick="openMenu();click_google_loadbtn()"><img src="" alt="Load from Google Drive" title="Load from Google Drive" style="margin-right:10px;width:24px;"><span style="position:relative;left:1px;">Load from Google Drive</span></a>
+  </div>
+  <footer class="w3-container w3-small w3-light-gray">
+  <p>Web Programming &copy; Sheridan College</p>
+  </footer>
+</div>
+<div id="menuOverlay" class="w3-overlay w3-transparent" style="cursor:pointer;z-index:4"></div>
+  <div id="textareacontainer">
+    <div id="textarea">
+      <div id="textareawrapper">
+	  
+<!--
+	code area 
+	starts here
+	
+--> 
+<textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Example10_050</title>
+<meta charset="utf-8">
+<link rel="icon" href="https://www.sheridancollege.ca/SheridanCollege/img/favicon.ico">
+<!--
+See example03_050 for html layout
+-->
+<style>
+/* || General setup */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+  background-color: #a9a9a9;
+}
+body {
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+/* || typography */
+h1, h2, h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #2a2a2a;
+}
+p, input, li {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #2a2a2a;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
+}
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+h3 {
+  font-size: 2.2rem;
+}
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* || header layout */
+header {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+body > * {
+  background-color: red;
+  padding: 1%;
+}
+main, header, nav, article, aside, footer, section {
+  background-color: rgba(0,255,0,0.5);
+  padding: 1%;
+}
+h1 {
+  flex: 5;
+  text-transform: uppercase;
+}
+header img {
+  display: block;
+  height: 60px;
+  padding-top: 20.15px;
+}
+
+nav {
+  height: 50px;
+  flex: 100%;
+  display: flex;
+}
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+nav a, nav span {
+  display: inline-block;
+  font-size: 2rem;
+  height: 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+
+}
+
+/* || main layout */
+main {
+  display: flex;
+}
+
+section {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  padding: 1%;
+}
+
+aside a {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+aside img {
+  max-width: 100%;
+}
+
+footer {
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Birdwatching</h1>
+    <img src="images/dove.png" alt="bird logo" width="50">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Get Started</a>
+      <a href="#">Photos</a>
+      <a href="#">Gear</a>
+      <a href="#">Forum</a>
+    </nav>
+  </header>	
+  <main>
+    <section>
+    <h2>Welcome</h2>
+    <p>Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place 
+       to come to learn more about birdwatching, whether you are a beginner looking to learn how to 
+       get into birding, or an expert wanting to share ideas, tips, and photos with other 
+       like-minded people.</p>
+    <p>So don't waste time! Get what you need, then turn off that computer and get out 
+       into the great outdoors! </p>
+    </section>
+    <aside>
+      <h2>Favourite Photos</h2>
+      <a href="images/fav01.jpg"><img src="images/fav01_th.jpg" alt="bird 1"></a>
+      <a href="images/fav02.jpg"><img src="images/fav02_th.jpg" alt="bird 2"></a>
+      <a href="images/fav03.jpg"><img src="images/fav03_th.jpg" alt="bird 3"></a>
+      <a href="images/fav04.jpg"><img src="images/fav04_th.jpg" alt="bird 4"></a>
+    </aside>
+  </main>
+  <footer>
+    <p>This fake website example is CC0 - any part of this code may be reused in any way you wish. 
+       Original exmaple written by <cite>Chris Mills, 2016.</cite></p>
+    <p><a href="#">Dove icon</a> by <cite>Lorc</cite>.</p>
+  </footer>
+</body>
+</html>
+
+</textarea>
+<!--
+	end of code area here
+	end of code area here
+	end of code area here
+	
+--> 
+        <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
+          <input type="hidden" name="code" id="code" />
+        </form>
+       </div>
+    </div>
+  </div>
+  <div id="iframecontainer">
+    <div id="iframe">
+      <div id="iframewrapper"></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="my_w3editor.js"></script>
+
+</body>
+</html>
