@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Web browser - 2. Fetching resources</title>
+    <link rel="stylesheet" href="css/missing-css.css">
+	<link href="https://fonts.bunny.net/css?family=source-sans-3:400,700|m-plus-code-latin:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/prism-coy-23.css">
+    <script src="css/prism-coy-23.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+	<style>
+  
+	</style>
+</head>
+<body>
+
+
+      <div> <!-- body container for main and footer -->
+        <main>
+        <header>
+            <nav  class="tool-bar">
+                <a href="browser_1_navigation.html">Navigation</a>
+                <a href="browser_2_fetch_resources.html">Fetching resources</a>
+                <a href="">Parsing HTML</a>
+                <a href="">Parsing CSS</a>
+                <a href="">Executing JS</a>
+                <a href="">Rendering</a>
+            </nav>            
+     </header>       
+            
+            <nav class="breadcrumbs" aria-label="Breadcrumbs">
+                <ol>
+                    <li><a href="index.html"  class="allcaps">How web browsers work&hellip;</a></li>
+                    <li><a href="#" aria-current="page">Fetching resources</a></li>
+                </ol>
+            </nav>                    
+            
+
+                <!-- DNS lookup - 3-way TCP handshake - TLS handshake -->
+
+                
+                <!-- Tokenization - DOM tree construction-->
+
+                <!--  JIT compilation-->
+
+                <!-- Render tree construction - Layout - Painting - Layering, compositing-->
+                
+                
+            </nav>
+<section id=#e01">   
+    <p>After the TCP connection is established, the browser can start fetching resources from the server.</p>
+
+            <figure>
+                <img style="width:80%;" src="../images/browser_requests.png" alt="browser_requests.png">
+            </figure>        
+
+    <dl>
+        <dt>1. HTTP Request</dt>
+        <dd>HTTP requests are used to fetch resources from the server. It requires a URL & the type of request (GET, POST, PUT, DELETE) to be processed. The browser also adds some additional headers to the request to provide additional context.</dd>
+        <dd>The first request sent to a server is usually a GET request to fetch an HTML file.</dd>
+  
+
+        
+        <dt style="padding-top:10px;" >3. HTTP Response</dt>
+        <dd>The server then responds with an appropriate HTTP response for the given request.</dd>
+        <dd>The response contains the status code, the headers & the body.</dd>
+
+
+
+        <footer>Source: https://dev.to/ruppysuppy/deep-dive-into-how-web-browsers-work-with-illustrations-249b</footer>
+</section>
+
+        </main>
+
+
+        <footer>
+            <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2023 &copy; Ellen Bajcar et al</a></address> 
+            <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+            <div style="margin: 0 0 10px 0">&mdash;</div>
+        </footer>
+      </div> <!-- body container for main and footer -->
+
+
+	
+
+</body></html>
