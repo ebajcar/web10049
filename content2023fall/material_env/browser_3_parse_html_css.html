@@ -9,43 +9,39 @@
     <script src="css/prism-coy-23.js"></script>
     <link rel="stylesheet" href="css/main.css">
 	<style>
+dd {
+  padding-top: 10px;
   
+}   
 	</style>
 </head>
 <body>
 
 
       <div> <!-- body container for main and footer -->
-        <main>
-        <header>
-            <nav  class="tool-bar">
-                <a href="browser_1_navigation.html">Navigation</a>
-                <a href="browser_2_fetch_resources.html">Fetching resources</a>
-                <a href="browser_3_parse_html.html">Parsing HTML and CSS</a>
-                <a href="">Executing JS</a>
-                <a href="">Rendering</a>
+         <header class="navbar" style="height:64px;" >
+            <nav class="contents">
+              <ul role="list">
+                <li><a href="browser_1_navigation.html">Navigation</a></li>
+                <li><a href="browser_2_fetch_resources.html">Fetching resources</a></li>
+                <li><a  aria-current="page" href="browser_3_parse_html_css.html">Parsing HTML and CSS</a></li>
+                <li><a href="browser_4_execute_javascript.html">Executing JS</a></li>
+                <li><a href="browser_5_rendering.html">Rendering</a></li>
+              </ul>
             </nav>            
-     </header>       
+        </header>       
+            
+                   
+         <main>      
             
             <nav class="breadcrumbs" aria-label="Breadcrumbs">
                 <ol>
-                    <li><a href="index.html"  class="allcaps">How web browsers work&hellip;</a></li>
-                    <li><a href="#" aria-current="page">Fetching resources</a></li>
+                    <li  class="allcaps">How web browsers work </li>
+                    <li><a href="#" aria-current="page">Parsing HTML and CSS</a></li>
                 </ol>
             </nav>                    
             
 
-                <!-- DNS lookup - 3-way TCP handshake - TLS handshake -->
-
-                
-                <!-- Tokenization - DOM tree construction-->
-
-                <!--  JIT compilation-->
-
-                <!-- Render tree construction - Layout - Painting - Layering, compositing-->
-                
-                
-            </nav>
 <section id=#e01">   
     <dl>
         <dt> After the browser has received the HTML file, it parses it to generate the DOM (Document Object Model) tree.</dt>
@@ -54,8 +50,8 @@
                 <figure>
                     <img src="../images/browser_rendering.png" alt="browser_rendering.png">
                 </figure>  
-                </dd>
-                <dd>NOTE: If the page requires any external resources it will be handled as follows:
+            </dd>
+            <dd>NOTE: If the page requires any external resources it will be handled as follows:
                 <ol>
                     <li><strong>Non-blocking resources</strong> are fetched in parallel. Eg: Images. </li>
                     <li><strong>Deferring resources </strong> are fetched in parallel but are executed after the DOM tree is constructed. Eg: script WITH defer attribute &amp; CSS files. </li>
@@ -75,22 +71,27 @@
         <dd>Tokens are the basic building blocks of the DOM tree.</dd>
         <dd>
             <figure>
-                <figcaption></figcaption>
                 <img style="width:80%;" src="img/dvpanc9oz4oke6xwlmt3.png" alt="dvpanc9oz4oke6xwlmt3.png">
             </figure>        
         </dd> 
 
         
         <dt style="padding-top:10px;">2. DOM Tree construction</dt>
-        <dd>Lexing is the process of converting a sequence of tokens into a tree structure called the DOM tree.</dd>
+        <dd><strong>Lexing</strong> is the process of converting a sequence of tokens into a tree structure called the DOM tree.</dd>
         <dd>The DOM tree is a tree data structure that represents the nodes in the HTML document.</dd>
         <dd>
             <figure>
-                <figcaption></figcaption>
                 <img  src="img/dom_minimal.png" alt="dom_minimal.png">
             </figure>        
+            <figure>
+                <figcaption>You can access the properties for each element in DOM using the Developer's tools. Example</figcaption>
+                <a href="img/dom-obj-properties.png" target="_blank"><img  src="img/dom-obj-properties.png" alt="dom-obj-properties.png"></a>
+            </figure>                    
+            
         </dd> 
 
+        <dt style="padding-top:10px;">3. Parsing CSS</dt>
+        <dd>After the DOM tree is constructed, the browser parses the CSS file to generate the CSSOM (CSS Object Model). This process is similar to the DOM tree construction using tokenization & generation of the CSSOM</dd>
 
 
 

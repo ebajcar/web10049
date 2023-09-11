@@ -9,10 +9,10 @@
     <script src="css/prism-coy-23.js"></script>
     <link rel="stylesheet" href="css/main.css">
 	<style>
- dd {
+dd {
   padding-top: 10px;
   
-}  
+}   
 	</style>
 </head>
 <body>
@@ -23,55 +23,48 @@
             <nav class="contents">
               <ul role="list">
                 <li><a href="browser_1_navigation.html">Navigation</a></li>
-                <li><a  aria-current="page" href="browser_2_fetch_resources.html">Fetching resources</a></li>
+                <li><a href="browser_2_fetch_resources.html">Fetching resources</a></li>
                 <li><a href="browser_3_parse_html_css.html">Parsing HTML and CSS</a></li>
-                <li><a href="browser_4_execute_javascript.html">Executing JS</a></li>
+                <li><a  aria-current="page" href="browser_4_execute_javascript.html">Executing JS</a></li>
                 <li><a href="browser_5_rendering.html">Rendering</a></li>
               </ul>
             </nav>            
         </header>       
             
                    
-         <main>      
+         <main>     
             
             <nav class="breadcrumbs" aria-label="Breadcrumbs">
                 <ol>
                     <li  class="allcaps">How web browsers work </li>
-                    <li><a href="#" aria-current="page">Fetching resources</a></li>
+                    <li><a href="#" aria-current="page">Executing Javascript</a></li>
                 </ol>
             </nav>                    
             
 
-                <!-- DNS lookup - 3-way TCP handshake - TLS handshake -->
-
-                
-                <!-- Tokenization - DOM tree construction-->
-
-                <!--  JIT compilation-->
-
-                <!-- Render tree construction - Layout - Painting - Layering, compositing-->
-                
-                
-            </nav>
 <section id=#e01">   
-    <p>After the TCP connection is established, the browser can start fetching resources from the server.</p>
-
-            <figure>
-                <img style="width:80%;" src="../images/browser_requests.png" alt="browser_requests.png">
-            </figure>        
-
     <dl>
-        <dt>1. HTTP Request</dt>
-        <dd>HTTP requests are used to fetch resources from the server. It requires a URL & the type of request (GET, POST, PUT, DELETE) to be processed. The browser also adds some additional headers to the request to provide additional context.</dd>
-        <dd>The first request sent to a server is usually a GET request to fetch an HTML file.</dd>
+        <dt>Executing Javascript</dt>
+        <dd>As mentioned previously, if the page requires a blocking script, it will be fetched and executed instantly, while the DOM tree construction is paused, else the script will be fetched & executed after the DOM tree construction is completed.</dd>
+        <dd>Regardless of when the script is executed, it will be handled by the JavaScript engine which, like the browser engine, varies from browser to browser.</dd>
+        <dd>
+            <figure>
+                <figcaption>Compilation </figcaption>
+                <img src="img/52efxaatjxv2kgmesrhv.png" alt="compilation">
+            </figure>  
+        </dd>
+        <dd>
+            <figure>
+                <figcaption>Interpretation</figcaption>
+                <img src="img/5xxvhkv8e6eq3bugo9x5.png" alt="interpretation">
+            </figure>                 
+        </dd>
+    
+    
+        <dt style="padding-top:10px;">JIT compilation</dt>
+        <dd>JavaScript engine uses a hybrid approach called JIT (Just in Time) compilation.</dd>
+        <dd>JIT stands for Just In Time, meaning, unlike with a compiled language, such as C, where the compilation is done ahead of time (in other words, before the actual execution of the code), with JavaScript, the compilation is done during execution</dd>
   
-
-        
-        <dt style="padding-top:10px;" >3. HTTP Response</dt>
-        <dd>The server then responds with an appropriate HTTP response for the given request.</dd>
-        <dd>The response contains the status code, the headers & the body.</dd>
-
-
 
         <footer>Source: https://dev.to/ruppysuppy/deep-dive-into-how-web-browsers-work-with-illustrations-249b</footer>
 </section>

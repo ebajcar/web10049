@@ -11,7 +11,17 @@
     <script src="css/prism-coy-23.js"></script>
     <link rel="stylesheet" href="css/main.css">
 	<style>
-
+.steps {
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+}    
+.steps li {
+    counter-increment: step-counter;
+}    
+.steps li::before {
+  content: "STEP " counter(step-counter) ": ";
+}
 	</style>
 </head>
 <body>
@@ -155,6 +165,16 @@
                 <li><a href="" target="_blank"></a></li>
 
             </ul>
+        </dd> 
+        
+         <dd>Take a closer look at how browser works           
+               <ol class="steps">
+                <li><a href="../material_env/browser_1_navigation.html">Navigation</a></li>
+                <li><a href="../material_env/browser_2_fetch_resources.html">Fetching resources</a></li>
+                <li><a href="../material_env/browser_3_parse_html_css.html">Parsing HTML and CSS</a></li>
+                <li><a href="../material_env/browser_4_execute_javascript.html">Executing JS</a></li>
+                <li><a href="../material_env/browser_5_rendering.html">Rendering</a></li>
+              </ol>           
         </dd>        
     </dl>     
 
