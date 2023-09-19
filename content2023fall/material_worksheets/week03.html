@@ -56,12 +56,57 @@
 <!-- 1. Review, connect, dig deeper -->
 <section id="p1">
     <h2>1. Review, connect, dig deeper</h2>
- 
+
     <dl>
-        <dt>1.1. </dt>
-        <dd>...
+        <dt>1.1. What will your website look like?</dt>
+        <dd>Did you complete and review material from previous worksheet, including...
             <ul>
-                <li><a href="" target="_blank"></a></li>
+                <li>Planning: What is your website about? What info are you presenting on the subject? What is it going look like?</li>
+                <li>Sketching out your design - wireframe diagrams.</li>
+                <li>Choosing your assets: text, color theme, images, font.</li>
+                <li>What's in the head? Metadata in HTML -- What is the HTML head? Adding a title. Metadata: the META element.  Applying CSS and JavaScript to HTML.  Setting the primary language of the document. </li>
+                <li>WCAG (accessible web design principles: perceivable, operable, understandable, robust)</li>
+<!--
+  PERCEIVABLE
+  means to sense or have an awareness something.  
+  A blind person can't perceive an input in a form field is incorrect because they can't see the red border around it. A person with memory issues can't perceive that they are clicking a link they've already visited because the designer didn't change the colours of visited links. A person who is Deaf/deaf can't hear the instructions in the instructional video because they are being given by a person speaking and there are no captions or transcript.
+  - how to provide text alternatives and captions/transcripts for non-text content and time-based content like images, audio/video (live streamed and pre-recored), CAPTCHA, etc.
+  - guidelines for the presentation of content (layout, sequence, colour, scale of items, contrast, text spacing, background audio, etc)
+  
+  OPERABLE
+  means able to be used
+  All navigation works, ability to use the site using only a keyboard, have enough time to read/hear and use content; easy to find and navigate; does not trigger seizures or physical reactions (flashing things, animation); path-based gestures - drag, pinkch,...
+  
+  UNDERSTANDABLE
+  meaning of the content should be ccomprehendable and understandable
+  ( use of abbreviations, reading level; interactive components don't cause drastic changes; consistent navigation, assistance with input errors, context-sensitive help
+  
+  ROBUST
+  able to withstand adverse conditions (hard to break, difficult to crash)
+  
+-->
+            </ul>
+        </dd> 
+
+    </dl>  
+    
+        <dt>1.2. Preparing server environment</dt>
+        <dd>
+            <ol style="list-style-type: upper-alpha;">
+                <li value="11">Did you download and install FileZilla client?</li>
+                <li>Did you request a password for dev.fast.sheridanc.on.ca server? Did you receive and read the email? Store your password in a safe place (see previous worksheet).</li>
+            </ol>
+        </dd>
+        
+    <dl>
+        <dt>1.3. Take a closer look</dt>
+        <dd>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Design_and_accessibility/What_is_accessibility" target="_blank">What is accessibility? (MDN docs)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Design_and_accessibility/What_is_accessibility" target="_blank">How can we design for all types of users? (MDN)</a> Color contrast. Font size. Why would I want to use proportional units?. Line width. Alternative content for images, audio, and video. </li>
+                <li><a href="" target="_blank">What HTML features promote accessibility? (MDN)</a> Link text. Skip Links. Alt attribute for image. ARIA role attribute. </li>
+
+                <li>Link to primary source <a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML Living Standard - Last updated Sept. 6, 2023</a></li>                
             </ul>
         </dd> 
     </dl> 
@@ -71,15 +116,86 @@
 <!-- 2. Read and explore more concepts -->
 <section id="p2">
     <h2>2. Read and explore more concepts</h2>
-    
+
     <dl>
-        <dt>2.1. </dt>
-        <dd>...
-            <ul>
-                <li><a href="" target="_blank"></a></li>
-            </ul>
+        <dt>2.1. Preparing server environment</dt>
+        <dd>
+            <ol style="list-style-type: upper-alpha;" start="13">
+
+                <li><strong>Protect assignments directory:</strong> All assignments must be published and password-protected.               
+                <br>Read through carefully: <a href="https://www-acad.sheridanc.on.ca/~jollymor/syst10049/setupProtect_cp.html" target="_blank">SYST10049 Setup Tasks: Protect Assignments with cPanel</a> <br>
+                in the public_html directory on the server, you will create the sub-tree
+        <pre>
+        syst10049
+            assignments
+                assignment1
+                assignment2
+                assignment3
+                assignment4
+            templates
+            week03       
+</pre>
+                
+                
+                </li>
+                
+                <li>Publishing process to dev.fast.sheridanc.on.ca
+                <figure><img src="img/publishing_process.png" alt="Publishing process to dev.fast.sheridanc.on.ca"></figure></li>
+                
+                
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/Upload_files_to_a_web_server" target="_blank">How do you upload your files to a web server? (MDN docs)</a></li>
+                              
+                 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/Checking_that_your_web_site_is_working_properly" target="_blank">How do you make sure your website works properly? (MDN docs)</a> Test in your browser. HTTP statuses. Frequent errors.  More things to check.</li>
+            </ol>
         </dd> 
     </dl>    
+    
+    <dl>
+        <dt>2.2. Plan, design, and construct website</dt>
+        <dd>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" target="_blank">Dealing with files</a>
+                <br>Where should your website live on your computer? An aside on casing and spacing. What structure should your website have? File paths. 
+                </li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools" target="_blank">What are browser developer tools?</a>
+                <br>How to open the devtools in your browser. The Inspector: DOM explorer and CSS editor. 
+                </li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_blank">Document and website structure (MDN docs)</a>  HTML for structuring content. HTML layout elements in more detail. (Information architecture: Information architecture, as applied to web design and development, is the practice of organizing the information, content, and functionality of a website so that it presents the best user experience it can, with information and services being easily usable and findable.) <br>Basic sections of a document (header, navigation bar, main content, sidebar, footer) <br><q>Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.</q> 
+                 <br><q>we need to respect semantics and use the right element for the right job.</q>
+                 <br>article, section, aside, header, nav, footer, body, article, section; span, div; br, hr, p</li>
+                
+                
+            </ul>
+        </dd>      
+
+    </dl>     
+    
+    <dl>
+        <dt>2.3. HTML Living Standard</dt>
+        <dd>
+            <ul>
+                <li><a href="https://html.spec.whatwg.org/multipage/semantics.html#document-metadata" target="_blank">4.2 Document metadata</a> HEAD, TITLE, BASE, LINK, META, STYLE </li>
+                <li><a href="https://html.spec.whatwg.org/multipage/sections.html#sections" target="_blank">4.3 Sections</a> body, article, section, nav, aside, h1 - h6, hgroup, header, footer, address</li>  
+                <li><a href="" target="_blank">4.4 Grouping content</a> p, hr, pre, blockquote, ol, ul, menu, li, dl, dt, dd, figure, figcaption, main serach, div</li>                
+                <li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html" target="_blank">4.5 Text-level semantics</a></li>
+                <li><a href="https://html.spec.whatwg.org/multipage/links.html" target="_blank">4.6 Links</a></li>                              
+            </ul>
+        </dd> 
+    </dl> 
+
+
+    <dl>
+        <dt>2.4. Testing for valid HTML</dt>
+        <dd>
+            <ul>  
+                <li><a href="https://validator.w3.org/" target="_blank">Testing for valid HTML</a> with https://validator.w3.org/</li>
+                <li><a href="https://wave.webaim.org/" target="_blank">Testing for accessibility</a> with WAVE Web Accessibility Evaluation Tools</li>                    
+                <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Accessibility_tree" target="_blank">Accessibility tree</a> Browser Accessibility Tree provides a representation of the document that is used by assistive devices like screen readers. Each node in the tree has the properties name, description, role and state.</li>               
+            </ul>
+        </dd> 
+    </dl> 
+
+    
 </section>
 
 
@@ -88,13 +204,35 @@
     <h2>3. Practice. Practice. Practice.</h2>
     
     <dl>
-        <dt>3.1. </dt>
-        <dd>...
-            <ul>
-                <li><a href="" target="_blank"></a></li>
-            </ul>
+        <dt>3.1. Create templates project</dt>
+        <dd>
+            <a href="https://sheridanc-fast-syst10049.notion.site/Exercise-3-1-24cc3b99bdc64592964de132ce6216fa?pvs=4" target="_blank">Complete all steps.</a>
         </dd> 
     </dl>
+    
+    <dl>
+        <dt>3.2. Create week03 project</dt>
+        <dd>
+            <ol>
+
+                <li>Copy the templates project. Rename the copy <code>week03</code></li>
+                <li>Rename the <code>template.html</code> to <code>index.html</code>. This will be the only page for this project.</li>
+                <li>Remove all markup in the BODY element. This page does not have a header and footer, main, and aside.</li>
+                <li>Add content to your HTML file (un-marked). Copy and paste the text within the BODY element:
+                <br>
+                <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/content.txt" target="_blank">Textual content of the letter</a></li>                     
+                
+                <li>Examine the image of the letter. Observe the content characteristics. <br>
+                <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/letter_original_styled.png" target="_blank">The final (original) rendering of the letter (including CSS in Phase II PE)</a></li>
+                
+                <li>Compare to image of the letter as rendered without any CSS. Remember CSS is added only after the content is marked up with HTML5, with the objective of achieving semantic correctness, accessibility, well-formedness, and validity.<br>
+                <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/letter_solution_nocss.png" target="_blank">The rendering of the letter at the end of Phase I PE (without CSS)</a></li> 
+                
+                <li>Here is a suggested list of requirements. You can incorporate the requirements list in your document and use the TODO and DONE notation to keep track of your progress:
+                <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/letter_start_here.html" target="_blank">Suggested documentation</a> You can also read the original project on <a href="" target="_blank">Marking up a letter on MDN</a> -- ignore all references to CSS -- Adressor's contact information WILL NOT BE aligned on the right! (that will come later in PE Phase 2)</li>                  
+            </ol>
+        </dd> 
+    </dl>    
 </section>
 
 
