@@ -11,7 +11,13 @@
     <script src="css/prism-coy-23.js"></script>
     <link rel="stylesheet" href="css/main.css">
 	<style>
-
+kbd {
+    font-family: monospace;
+    color: blue;
+    font-size: 1.2em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 	</style>
 </head>
 <body>
@@ -87,9 +93,9 @@
 -->
             </ul>
         </dd> 
-
-    </dl>  
+    </dl> 
     
+    <dl>
         <dt>1.2. Preparing server environment</dt>
         <dd>
             <ol style="list-style-type: upper-alpha;">
@@ -97,7 +103,8 @@
                 <li>Did you request a password for dev.fast.sheridanc.on.ca server? Did you receive and read the email? Store your password in a safe place (see previous worksheet).</li>
             </ol>
         </dd>
-        
+    </dl> 
+    
     <dl>
         <dt>1.3. Take a closer look</dt>
         <dd>
@@ -122,25 +129,50 @@
         <dd>
             <ol style="list-style-type: upper-alpha;" start="13">
 
-                <li><strong>Protect assignments directory:</strong> All assignments must be published and password-protected.               
-                <br>Read through carefully: <a href="https://www-acad.sheridanc.on.ca/~jollymor/syst10049/setupProtect_cp.html" target="_blank">SYST10049 Setup Tasks: Protect Assignments with cPanel</a> <br>
-                in the public_html directory on the server, you will create the sub-tree
-        <pre>
-        syst10049
-            assignments
-                assignment1
-                assignment2
-                assignment3
-                assignment4
-            templates
-            week03       
-</pre>
+                <li><chip class="warn">INSTRUCTIONS UPDATED</chip><br><strong>Protect assignments directory:</strong> All assignments must be published and password-protected.
+                    <ol style="list-style-type: none;" >
+                    
+                        <li><strong>STEP 1.</strong> Read through carefully: <a href="https://www-acad.sheridanc.on.ca/~jollymor/syst10049/setupProtect_cp.html" target="_blank">SYST10049 Setup Tasks: Protect Assignments with cPanel</a> </li>
+                        <li><strong>STEP 2.</strong> Using the File Manager in the cPanel, navigate to <kbd>public_html</kbd> directory, create the folder <kbd>syst10049</kbd> using the <kbd>+Folder</kbd> menu item (see FIGURE 1).
+                            <figure>
+                                <figcaption>FIGURE 1. <kbd>+Folder</kbd> is the second menu item from the left, in the top menu.</figcaption>
+                                <a href="img/cpanel_folder_menu.png" target="_blank"><img src="img/cpanel_folder_menu.png" alt="remove authorized users"></a>
+                            </figure>                          
+                        
+                        </li>
+                        <li><strong>STEP 3.</strong> Move to the syst10049 folder and create the <kbd>assignments</kbd> folder, the <kbd>templates</kbd> folder, and the <kbd>week03</kbd> folder.</li>
+                        <li><strong>STEP 4.</strong> Move to the assignments folder and create the assignment1, assignment2, assignment3, and assignment4 folders. Your sub-tree should look the same as illustrated in FIGURE 2.
+                        <figure>
+                            <figcaption>FIGURE 2. Sub-tree on the server</figcaption>
+                            <img src="img/assignments_subtree.png" alt="Sub-tree on the server">
+                        </figure>
+                        </li>
+                         <li><strong>STEP 5.</strong> Complete the steps in the "SYST10049 Setup Tasks: Protect Assignments with cPanel" in STEP 1.</li>
+                         <li><strong>STEP 6.</strong> <mark>If you make a mistake and protect the wrong folder:</mark>
+                            <ol style="margin-left:45px;margin-top:0;list-style-type: lower-alpha;">
+                                <li>Navigate to the folder that you have protected by mistake (remember: to navigate, you click on the icons)</li>
+                                <li>Click on the text (name of the folder) that you want to unprotect.</li>
+                                <li>Scroll down to the bottom of the page. Under the heading "Authorized Users", select (click on username) and then click the "Delete User" button underneath.</li>
+                            </ol>
+                            <figure>
+                                <figcaption>FIGURE 3. How to remove authorized users</figcaption>
+                                <a href="img/remove_authorized_users.png" target="_blank"><img src="img/remove_authorized_users.png" alt="remove authorized users"></a>
+                            </figure>                            
+                            
+                         </li>
+                    </ol>
+                
                 
                 
                 </li>
                 
                 <li>Publishing process to dev.fast.sheridanc.on.ca
-                <figure><img src="img/publishing_process.png" alt="Publishing process to dev.fast.sheridanc.on.ca"></figure></li>
+                <figure>
+                    <figcaption>FIGURE 4. Publishing process to dev.fast.sheridanc.on.ca</figcaption>
+                    <a href="img/publishing_process.png" target="_blank"><img src="img/publishing_process.png" alt="Publishing process to dev.fast.sheridanc.on.ca"></a>
+                </figure>
+                
+                </li>
                 
                 
                 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/Upload_files_to_a_web_server" target="_blank">How do you upload your files to a web server? (MDN docs)</a></li>
@@ -229,7 +261,7 @@
                 <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/letter_solution_nocss.png" target="_blank">The rendering of the letter at the end of Phase I PE (without CSS)</a></li> 
                 
                 <li>Here is a suggested list of requirements. You can incorporate the requirements list in your document and use the TODO and DONE notation to keep track of your progress:
-                <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/letter_start_here.html" target="_blank">Suggested documentation</a> You can also read the original project on <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter" target="_blank">Marking up a letter on MDN</a> <chip class="warn">LINK UPDATED</chip> -- ignore all references to CSS -- Adressor's contact information WILL NOT BE aligned on the right! (that will come later in PE Phase 2)</li>                  
+                <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/letter_start_here.html" target="_blank">Suggested documentation</a> You can also read the original project on <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter" target="_blank">Marking up a letter on MDN</a> <chip class="warn">LINK UPDATED</chip> -- ignore all references to CSS -- Addressor's contact information WILL NOT BE aligned on the right! (that will come later in PE Phase 2)</li>                  
             </ol>
         </dd> 
     </dl>    
