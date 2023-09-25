@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Course Material</title>
+	<title>Worksheet 4</title>
     <link rel="stylesheet" href="css/missing-css.css">
 	<!--link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.9/dist/missing.min.css"-->
 	<!--link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.9/dist/missing-prism.min.css"-->
@@ -12,20 +12,60 @@
     <script src="css/prism-coy-23.js"></script>
     <link rel="stylesheet" href="css/main.css">
 	<style>
-
+kbd {
+  color: darkorange;
+}
+mark {
+  background-color: lightblue;
+}
+li > ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 	</style>
 </head>
 <body>
-
-      <div> <!-- body container for main and footer -->
-        <header></header>
+<!-- body container for main and footer -->
+        <header>       
+            <h1><span class="allcaps">SYST<wbr>10049 Web Development<v-h>:</v-h></span><sub-title>Worksheet 4</sub-title></h1>
+        </header>
+        
         <main>
-            <nav class="breadcrumbs" aria-label="Breadcrumbs">
-                <ol>
-                    <li><a href="index.html"  class="allcaps">SYST10049</a></li>
-                    <li><a href="week01.html" aria-current="page">Worksheet 4</a></li>
-                </ol>
-            </nav> 
+            <div class="prev-next">
+                <p><a href="week03.html">Prev</a></p>
+                <nav class="breadcrumbs" aria-label="Breadcrumbs">
+                    <ol>
+                        <li><a href="../index.html"  class="allcaps">Home</a></li>
+                        <li><a href="index.html"  class="allcaps">Worksheets</a></li>
+                        <li><a href="week13.html" aria-current="page">Worksheet 4</a></li>
+                    </ol>               
+                </nav> 
+                <p><a href="week05.html">Next</a></p>
+            </div>
+
+            <!-- bookmarks -->            
+            <ul class="f-switch dense align-items:stretch" role="list">
+                <li class="img">  
+                    <a href="#p1">
+                        <div class="img-wrapper"><img src="img/layout-strip.png" alt=""></div>
+                        <h4 class="hellip-one">1. Familiarize yourself with Slate</h4>
+                    </a>
+                </li>
+                <li class="img">
+                    <a href="#p2">
+                        <div class="img-wrapper"><img src="img/css-strip.png" alt=""></div>
+                        <h4 class="hellip-one">2.  Read and explore more concepts</h4>
+                    </a>
+                </li>  
+                <li class="img">  
+                    <a href="#p3">
+                        <div class="img-wrapper"><img src="img/minimal-strip.png" alt=""></div>
+                        <h4 class="hellip-one">3. Practice. Practice. Practice.</h4>
+                    </a>
+                </li>
+            </ul>                 
+            
+
 
 
 <!-- 1. Review, connect, dig deeper -->
@@ -33,14 +73,19 @@
     <h2>1. Review, connect, dig deeper</h2>
 
     <dl>
-        <dt>1.1. Preparing server environment</dt>
+        <dt>1.1. Review, connect, dig deeper</dt>
         <dd>
             <ul>
-                <li></li>
+                <li style="margin-top:0"><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">HTML basics (MDN web docs) </a>
+                <li>So what is HTML? &bull; Anatomy of an HTML element &bull; Nesting elements &bull; Void (Empty) elements &bull; Anatomy of an HTML document &bull; Marking up text <span style="text-transform:uppercase;">(Headings, Paragraphs, Lists) &bull; Links</span>
+                </li>
+ <!--               <li></li>
                 <li><chip>ADDED</chip>Step 7 (Add viewport meta element right after the charset meta element.) has been added to Exercise 3.1. Please update your template.html in the site_template project.</li>
+-->
             </ul>
         </dd> 
     </dl> 
+</section>
 
 <!-- 2. Read and explore more concepts -->
 <section id="p2">
@@ -65,7 +110,8 @@
                 <li><a href="https://www.w3.org/TR/WCAG22/#conformance" target="_blank">Conformance</a> 
                 (read 5.2.1 Conformance Levels)
                 </li>
-
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Information_for_Web_authors" target="_blank">Accessibility information for web authors</a></li
+                <li><a href="https://accessibility.digital.gov/front-end/getting-started/" target="_blank">Accessibility for front-end developers</a></li>
             </ul>
         </dd> 
     </dl> 
@@ -90,14 +136,36 @@
 -->    
 
    <dl>
-        <dt>2.2. </dt>
+        <dt>2.2. Explore markup from different perspective</dt>
         <dd>
             <ul>
-                <li></li>
-                <li></li>
+                <li>Look up and read a definition of a term or concept you encountered previously: <a href="https://developer.mozilla.org/en-US/docs/Glossary" target="_blank">MDN Web Docs Glossary: Definitions of Web-related terms</a></li>
+                <li>Explore how an element fits and how it is related to other element: <a href="https://ebajcar.github.io/web10049/html5elements/dist/index.html" target="_blank">Periodic Table of HTML5 Elements</a></li>
+               <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML elements reference</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank">HTML attribute reference</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories" target="_blank">Content categories</a></li>   
             </ul>
         </dd> 
-    </dl> 
+    </dl>  
+    
+    
+   <dl>
+        <dt>2.3. Explore examples and dig deeper</dt>
+        <dd>
+            <ul>          
+<!--            
+                 <li><a href="https://ebajcar.github.io/web10049/content2023fall/learnhtml/content.html" target="_blank">Content structure</a> (page regions, headings, labeling regions, content structure)</li> 
+                 -->
+                  <li><a href="https://ebajcar.github.io/web10049/content2023fall/learnhtml/models.html" target="_blank">Content models</a> (block and inline flow, root element, document metadata, inline text semantics, text content, table conent, image and multimedia, interactive elements, content sectioning, obsolete and depricated elements)</li> 
+                   <li><a href="https://ebajcar.github.io/web10049/content2023fall/learnhtml/textual.html" target="_blank">Textual content</a> (headings and paragraphs, emphasis and importance, italic, bold, and underline, quotations and citations, abbreviation and definitions, contact details, superscript and subscript, computer code, time and date, demarcating edits, block quotes and preformatted text)</li> 
+                    <li><a href="https://ebajcar.github.io/web10049/content2023fall/learnhtml/semantics.html" target="_blank">Semantic content</a> (non-semantic wrappers, line breaks and horizontal rules, page regions, grouping content, articles and sections, figures and figure captions, ordered, unordered, and description lists, table data structures)</li> 
+                     <li><a href="" target="_blank">Content</a></li> 
+                     
+                 <li><a href="" target="_blank">Interactive content</a> (hyperlinks, navigation, image, image map, picture, video, audio, multimedia)</li>
+                 <li>Figure and figure caption <a href="" target="_blank"></a></li>
+            </ul>
+        </dd> 
+    </dl>     
 </section>
 
 <!-- 3.  Practice. Practice. Practice. -->
@@ -105,15 +173,41 @@
     <h2>3. Practice. Practice. Practice.</h2>
 
     <dl>
-        <dt>1.1. </dt>
+        <dt>3.1. Complete the "Structuring a page of content" (birdwatching) project </dt>
         <dd>
-            <ul>
-                <li></li>
-
-            </ul>
+            <ol>
+                <li>READ through the project <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content" target="_blank">Structuring a page of content</a> on MDN web docs site, including sections: Starting point, Project Brief, Hints and tips, and Example.</li>
+                <li>Create a new directory (folder) in your <kbd>C:/public_html/syst10049/</kbd> local directory, called <kbd>week04</kbd>.</li>
+                <li>Copy your <kbd>site_template</kbd> project (created in Week 3) to <kbd>week04</kbd>.</li>
+                <li>Rename the copied project to <kbd>birdwatching</kdb></li>
+                
+                <li>Download and unzip the file <a href="https://raw.githubusercontent.com/mdn/learning-area/main/html/introduction-to-html/structuring-a-page-of-content-start/assets.zip" target="_blank">assets.zip</a>.  NOTE: if this link does not work, use the "zip file containing all the starting assets" in the "Starting point" section of the MDN page! <br><mark>&nbsp;DO NOT STORE the ZIP file in your local webspace and never upload to the server webspace.</mark></li>
+                <li>Store the <kbd>index.html</kbd> file in the <kbd>C:/public_html/syst10049/week04/birdwatching/</kbd> directory.</li>
+                <li>Store the <kbd>style.css</kbd> file in the <kbd>C:/public_html/syst10049/birdwatching/css/</kbd> directory.</li>
+                <li>Store the remaining files (.jpg and .png image files) in the <kbd>C:/public_html/syst10049/birdwatching/images/</kbd> directory.</li>
+                <li>Using VS Code editor, modify the <kbd>index.html</kbd> 
+                    <ul>
+                        <li><strong>change all relative URLs to images</strong> by adding <kbd>images/</kbd> in front of the image name.  For example, <br>
+                        <code>&lt;img src="dove.png" alt="a simple dove logo"></code><br>
+                        will beocme <br>
+                        <code>&lt;img src="images/dove.png" alt="a simple dove logo"></code></li>
+                        <li>add structural elements as specified in the "Project brief"</li>
+                    </ul>
+                </li>                
+                <li>Complete the remaining tasks from the <kbd>site_template</kbd> exercise, including test, validate for valid HTML, validate for accessibility, and publish.</li>
+                <li>Reflect on what you have learned, identify area that you need to study further. </li>
+            </ol>
         </dd> 
     </dl>     
-    
+
+    <dl>
+        <dt>3.2. Complete the Recipes project </dt>
+        <dd>
+            <ol>
+                <li>Instructions will be provided in class.</li>
+            </ol>
+        </dd> 
+    </dl>      
 </section>
 
 
@@ -161,9 +255,8 @@
             </ul>
         </footer>
      
-     
-      </div> <!-- body container for main and footer -->
-</div> <!-- sidebar -->
+
+
 
 	
 

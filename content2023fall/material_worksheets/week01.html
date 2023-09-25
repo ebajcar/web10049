@@ -16,20 +16,24 @@
 	</style>
 </head>
 <body>
+<!-- body container for main and footer -->
+        <header>       
+            <h1><span class="allcaps">SYST<wbr>10049 Web Development<v-h>:</v-h></span><sub-title>Worksheet 1</sub-title></h1>
+        </header>
+        
+        <main>
+            <div class="prev-next">
+                <p style="color:lightgray;"><!--<a href="week01.html">Prev</a>-->Prev</p>
+                <nav class="breadcrumbs" aria-label="Breadcrumbs">
+                    <ol>
+                        <li><a href="../index.html"  class="allcaps">Home</a></li>
+                        <li><a href="index.html"  class="allcaps">Worksheets</a></li>
+                        <li><a href="week13.html" aria-current="page">Worksheet 1</a></li>
+                    </ol>               
+                </nav> 
+                <p><a href="week02.html">Next</a></p>
+            </div>
 
-    
-
-<div> <!-- body container for main and footer -->
-<header></header>
-<main>
-
-<!-- navigation -->
-<nav class="breadcrumbs" aria-label="Breadcrumbs">
-<ol>
-<li><a href="#"  class="allcaps">SYST10049</a></li>
-<li><a href="week01.html" aria-current="page">Worksheet 1</a></li>
-</ol>
-</nav>        
 
 
 <!-- intro -->
@@ -140,10 +144,12 @@
     <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools" target="_blank">What are browser developer tools? (MDN web docs)</a></li>
     
     <li><strong>HTML validator:</strong> 
-    <a href="https://validator.w3.org/">https://validator.w3.org/</a></li>
+    <a href="https://validator.w3.org/">https://validator.w3.org/</a><br>
+    <strong>CSS validator:</strong> <a href="https://jigsaw.w3.org/css-validator/">https://jigsaw.w3.org/css-validator/</a>
+    </li>
     
-    <li><strong>CSS validator:</strong> 
-    <a href="https://jigsaw.w3.org/css-validator/">https://jigsaw.w3.org/css-validator/</a></li>   
+    <li><strong>WAVE Web Accessibility Evaluation Tool:</strong> 
+    <a href="https://wave.webaim.org/">https://wave.webaim.org/</a> </li>   
     
     <li><strong> Lorem ipsum (dummy) text generators</strong> 
     <a href="https://lipsum.com/">https://lipsum.com/</a> "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,... making it look like readable English." This site also provides images that can be used as placeholders, for the same reason.</li>
@@ -196,46 +202,22 @@
                 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_software_do_I_need" target="_blank">What software do I need to build a website? (MDN web docs)</a></li>
                 
                 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL" target="_blank">What is a URL? (MDN web docs)</a>  • Basics: anatomy of a URL. • How to use URLs. • Absolute URLs vs. relative URLs • Semantic URLs  </li>
-                
-                <li>
-                    <a href="https://ebajcar.github.io/web10049/content2023fall/material_env/client_server_env.html" target="_blank">Client-server environment</a>
-                    &nbsp;&nbsp;&nbsp;• 
-                    <a href="https://ebajcar.github.io/web10049/content2023fall/material_env/internet_backbone.html" target="_blank">Internet: the backbone of the Web</a>
-                    &nbsp;&nbsp;&nbsp;• 
-                    <a href="https://ebajcar.github.io/web10049/content2023fall/material_env/how_web_works.html" target="_blank">How the web works</a>
-                    &nbsp;&nbsp;&nbsp;• 
-                    <a href="https://ebajcar.github.io/web10049/content2023fall/material_env/order_components_parsed.html" target="_blank">Order in which component files are parsed</a>
-                </li> 
 
-                        
-                
-                <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/tcp_ip_protocol_suite.html" target="_blank">TCP/IP Protocol Suite</a>
-                &nbsp;&nbsp;&nbsp;• <a href="https://ebajcar.github.io/web10049/content2023fall/material_env/uniform_resource_locator.html" target="_blank">Uniform Resource Locator (URL)</a></li>                
-               
-               <!--
-                <li><a href="" target="_blank">Debugging HTML (MDN web docs)</a>   • Debugging isn't scary.  • HTML and debugging.  • HTML validation.</li>
-                
                 <li>
-                    <a href="" target="_blank">Web browser</a>
-                    • 
-                    <a href="" target="_blank">Standards and Specifications</a>
-                    • 
-                    <a href="" target="_blank">Search Engine Optimization</a>
-                    • 
-                    <a href="" target="_blank">Order in which component files are parsed</a>
+                    <ul style="list-style-type:none;columns:2;margin-top:0;">
+                        <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/client_server_env.html" target="_blank">Client-server environment</a></li> 
+                        <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/internet_backbone.html" target="_blank">Internet: the backbone of the Web</a></li> 
+                        <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/how_web_works.html" target="_blank">How the web works</a></li> 
+                        <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/order_components_parsed.html" target="_blank">Order in which component files are parsed</a></li> 
+                        <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/tcp_ip_protocol_suite.html" target="_blank">TCP/IP Protocol Suite</a></li>
+                        <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/uniform_resource_locator.html" target="_blank">Uniform Resource Locator (URL)</a></li>
+                        <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_system.html" target="_blank">File system (FS)</a></li>
+                        <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_naming_conventions.html" target="_blank">File naming conventions</a></li>
+                        <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_types.html" target="_blank">File types</a></li>
+                        <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_organization.html" target="_blank">File organization</a></li>
+                        <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_navigation.html" target="_blank">File navigation</a></li> 
+                    </ul>
                 </li>
-                -->
-                
-                <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_system.html" target="_blank">File system (FS)</a>
-                &nbsp;&nbsp;&nbsp;• 
-                 <a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_naming_conventions.html" target="_blank">File naming conventions</a>
-                 &nbsp;&nbsp;&nbsp;• 
-                <a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_types.html" target="_blank">File types</a>
-                &nbsp;&nbsp;&nbsp;• 
-                <a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_organization.html" target="_blank">File organization</a>
-                &nbsp;&nbsp;&nbsp;•
-                 <a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_navigation.html" target="_blank">File navigation</a></li> 
-
             </ul>
         </dd> 
     </dl>    

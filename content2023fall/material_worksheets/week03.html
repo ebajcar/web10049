@@ -21,16 +21,24 @@ kbd {
 	</style>
 </head>
 <body>
-
-      <div> <!-- body container for main and footer -->
-        <header></header>
+<!-- body container for main and footer -->
+        <header>       
+            <h1><span class="allcaps">SYST<wbr>10049 Web Development<v-h>:</v-h></span><sub-title>Worksheet 3</sub-title></h1>
+        </header>
+        
         <main>
-            <nav class="breadcrumbs" aria-label="Breadcrumbs">
-                <ol>
-                    <li><a href="index.html"  class="allcaps">SYST10049</a></li>
-                    <li><a href="week01.html" aria-current="page">Worksheet 3</a></li>
-                </ol>
-            </nav> 
+            <div class="prev-next">
+                <p><a href="week02.html">Prev</a></p>
+                <nav class="breadcrumbs" aria-label="Breadcrumbs">
+                    <ol>
+                        <li><a href="../index.html"  class="allcaps">Home</a></li>
+                        <li><a href="index.html"  class="allcaps">Worksheets</a></li>
+                        <li><a href="week13.html" aria-current="page">Worksheet 3</a></li>
+                    </ol>               
+                </nav> 
+                <p><a href="week04.html">Next</a></p>
+            </div>
+
 
 <!-- navigation -->
 <section>
@@ -45,7 +53,7 @@ kbd {
         <li class="img">
             <div class="img-wrapper"><img src="img/content_banner.png" alt=""></div>
             <section>
-                <h4 class="hellip-one"><a href="#p2">2. Explore more concepts</a></h4>
+                <h4 class="hellip-one"><a href="#p2">2.  Read and explore more concepts</a></h4>
             </section> 
         </li>  
 
@@ -109,9 +117,9 @@ kbd {
         <dt>1.3. Take a closer look</dt>
         <dd>
             <ul>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Design_and_accessibility/What_is_accessibility" target="_blank">What is accessibility? (MDN docs)</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Design_and_accessibility/What_is_accessibility" target="_blank">How can we design for all types of users? (MDN)</a> Color contrast. Font size. Why would I want to use proportional units?. Line width. Alternative content for images, audio, and video. </li>
-                <li><a href="" target="_blank">What HTML features promote accessibility? (MDN)</a> Link text. Skip Links. Alt attribute for image. ARIA role attribute. </li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Design_and_accessibility/What_is_accessibility" target="_blank">What is accessibility? (MDN web docs)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Design_and_accessibility/What_is_accessibility" target="_blank">How can we design for all types of users?  (MDN web docs)</a> Color contrast. Font size. Why would I want to use proportional units?. Line width. Alternative content for images, audio, and video. </li>
+                <li><a href="" target="_blank">What HTML features promote accessibility?  (MDN web docs)</a> Link text. Skip Links. Alt attribute for image. ARIA role attribute. </li>
 
                 <li>Link to primary source <a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML Living Standard - Last updated Sept. 6, 2023</a></li>                
             </ul>
@@ -175,9 +183,9 @@ kbd {
                 </li>
                 
                 
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/Upload_files_to_a_web_server" target="_blank">How do you upload your files to a web server? (MDN docs)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/Upload_files_to_a_web_server" target="_blank">How do you upload your files to a web server? (MDN web docs)</a></li>
                               
-                 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/Checking_that_your_web_site_is_working_properly" target="_blank">How do you make sure your website works properly? (MDN docs)</a> Test in your browser. HTTP statuses. Frequent errors.  More things to check.</li>
+                 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/Checking_that_your_web_site_is_working_properly" target="_blank">How do you make sure your website works properly? (MDN web docs)</a> Test in your browser. HTTP statuses. Frequent errors.  More things to check.</li>
             </ol>
         </dd> 
     </dl>    
@@ -185,19 +193,26 @@ kbd {
     <dl>
         <dt>2.2. Plan, design, and construct website</dt>
         <dd>
-            <ul>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" target="_blank">Dealing with files</a>
+            <ol>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" target="_blank">Dealing with files (MDN web docs) </a>
                 <br>Where should your website live on your computer? An aside on casing and spacing. What structure should your website have? File paths. 
                 </li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools" target="_blank">What are browser developer tools?</a>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools" target="_blank">What are browser developer tools?(MDN web docs)</a>
                 <br>How to open the devtools in your browser. The Inspector: DOM explorer and CSS editor. 
                 </li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_blank">Document and website structure (MDN docs)</a>  HTML for structuring content. HTML layout elements in more detail. (Information architecture: Information architecture, as applied to web design and development, is the practice of organizing the information, content, and functionality of a website so that it presents the best user experience it can, with information and services being easily usable and findable.) <br>Basic sections of a document (header, navigation bar, main content, sidebar, footer) <br><q>Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.</q> 
-                 <br><q>we need to respect semantics and use the right element for the right job.</q>
-                 <br>article, section, aside, header, nav, footer, body, article, section; span, div; br, hr, p</li>
-                
-                
-            </ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_blank">Document and website structure (MDN web docs)</a>  
+                <ol style="margin-top:0; margin-bottom:0;margin-left:10px;list-style-type:lower-alpha;">
+                  <li>HTML for structuring content. HTML layout elements in more detail. (Information architecture: Information architecture, as applied to web design and development, is the practice of organizing the information, content, and functionality of a website so that it presents the best user experience it can, with information and services being easily usable and findable.)</li>
+                  <li>Basic sections of a document (<span style="text-transform:uppercase;">header, navigation bar, main content, sidebar, footer</span>)</li>
+                  <li><q>Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.</q></li>
+                 <li><q>we need to respect semantics and use the right element for the right job.</q></li>
+                 <li><span style="text-transform:uppercase;">article, section, aside, header, nav, footer, body, article, section; span, div; br, hr, p</span></li>
+                 </ol>
+                 </li>
+                <li style="margin-top:0"><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">HTML basics (MDN web docs) </a> <chip>ADDED</chip>
+                <br>So what is HTML? &bull; Anatomy of an HTML element &bull; Nesting elements &bull; Void (Empty) elements &bull; Anatomy of an HTML document &bull; Marking up text <span style="text-transform:uppercase;">(Headings, Paragraphs, Lists) &bull; Links</span></li>
+
+            </ol>
         </dd>      
 
     </dl>     
@@ -217,7 +232,7 @@ kbd {
 
 
     <dl>
-        <dt>2.4. Testing for valid HTML</dt>
+        <dt>2.4. Testing for valid HTML and accessibility</dt>
         <dd>
             <ul>  
                 <li><a href="https://validator.w3.org/" target="_blank">Testing for valid HTML</a> with https://validator.w3.org/</li>
@@ -321,9 +336,6 @@ kbd {
         </footer>
      
      
-      </div> <!-- body container for main and footer -->
-</div> <!-- sidebar -->
 
-	
 
 </body></html>

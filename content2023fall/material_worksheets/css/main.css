@@ -31,6 +31,27 @@ nav ul li {
       border-bottom: 1px solid lightgray;
       font-size: 1.1em;
     }
+ 
+/* prev-next navigation */ 
+.prev-next {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 0;
+    padding-top: 0;
+}
+.prev-next * {
+    margin-top: 0;
+    padding-top: 0;    
+}
+header, h1 {
+    padding-bottom: 0;
+    margin-bottom:0;
+}
+
+
+    
     
  /* sidebar menu */   
 .hellip-one {
@@ -40,8 +61,8 @@ nav ul li {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  margin: 0 0 0 5px;
-  line-height: 0.5em;
+  margin: 10px 0 0 5px;
+  line-height: 0.8em;
 }
 .lead-title {
   padding-top: 1.2em;
