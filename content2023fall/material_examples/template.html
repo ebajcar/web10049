@@ -3,15 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Worksheet Two Exercises</title>
+	<title>Examples</title>
  
     <link rel="stylesheet" href="css/missing-css.css"> 
     <link rel="stylesheet" href="css/prism_coy_dev.css">
-    <!--
-    <link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.9/dist/missing.min.css">
-    <link rel="stylesheet" href="../../css/prism-coy-23.css">
-    <script src="../../scripts/prism-coy-23.js" defer></script>
-    -->
+
 	<link href="https://fonts.bunny.net/css?family=source-sans-3:400,700|m-plus-code-latin:400,700" rel="stylesheet">
     <script src="css/prism-coy-23.js"></script>
     <link rel="stylesheet" href="css/main.css">
@@ -19,27 +15,70 @@
 </head>
 <body>
 
-	<header>
+	<header>  
         <h1><span class="allcaps">Web Development</span> <sub-title>Examples</sub-title></h1> 
     </header>
 
     <main>
        <div class="prev-next">
-            <p style="color:lightgray;"><!--<a href="week01.html">Prev</a>-->Prev</p>
+            <p  style="line-height: 1em;text-align:left;color:lightgray;"><!--<a href="week01.html">Prev</a>-->Prev<br><small>-</small></p>
             <nav class="breadcrumbs" aria-label="Breadcrumbs">
                 <ol>
-                    <li><a href="../index.html"  class="allcaps">Home</a></li>
-                    <li><a href="index.html"  class="allcaps">Examples</a></li>
-                    <li><a href="#" aria-current="page">This page</a></li>
+                    <li><a href="index.html"  class="allcaps">index</a></li>
+                    <li><a href="#" aria-current="page">Italic, bold, and underline</a></li>
                 </ol>               
             </nav> 
-            <p><a href="week02.html">Next</a></p>
+            <p  style="line-height:1em;text-align:right;"><a href="week02.html">Next</a><br><small>Name of the next page</small></p>
         </div>
 
+         <a class="chip ok" href="#el02">Italic, bold, underline</a>
          <a class="chip ok" href="#el01">Emphasis and importance</a>
-        
 
-        
+ 
+         <dl id="el02">            
+            <dt>Italic, bold, underline</dt>
+            <dd>The elements &lt;b>, &lt;i>, and &lt;u> came about so people could write bold, italics, and underlined text in an era when CSS was still supported poorly or not at all. These elements <strong>only affect presentation and not semantics</strong>, are known as <em>presentational elements</em> and should no longer be used (Read more MDN's <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#italic_bold_underline%E2%80%A6" target="_blank">HTML text fundamentals</a>, because semantics is so important to accessibility, SEO, etc. The concept of italics isn't very helpful to people using screen readers, or to people using a writing system other than the Latin alphabet.</dd>
+            <dd>
+                <ul>
+                    <li><strong>Output</strong>
+                    <div class="box">
+                            <!-- scientific names -->
+                            <p>
+                              The snow goose (<i>Anser caerulescens</i>),
+                              consisting of both a white morph and dark morph,
+                              is a North American species of goose. Its name
+                              derives from the typically white plumage.
+                            </p>
+                            <!-- foreign words -->
+                            <p>
+                              The menu was a sea of exotic words like
+                              <i lang="uk-latn">vatrushka</i>,
+                              <i lang="id">nasi goreng</i> and
+                              <i lang="fr">soupe à l'oignon</i>.
+                            </p>
+                    </div>
+                    </li>
+                    <li><strong>Code</strong>               
+                    <pre class="language-html" tabindex="0"><code class="language-html">&lt;!-- scientific names -->
+&lt;p>
+  The snow goose (&lt;i>Anser caerulescens&lt;/i>),
+  consisting of both a white morph and dark morph,
+  is a North American species of goose. Its name
+  derives from the typically white plumage.
+&lt;/p>
+&lt;!-- foreign words -->
+&lt;p>
+  The menu was a sea of exotic words like
+  &lt;i lang="uk-latn">vatrushka&lt;/i>,
+  &lt;i lang="id">nasi goreng&lt;/i> and
+  &lt;i lang="fr">soupe à l'oignon&lt;/i>.
+&lt;/p></code></pre>   
+                    </li>
+                    <li><a href="for-loop-v01.html">full code</a></li>
+                </ul>            
+            </dd> 
+        </dl>       
+                
         
         <dl id="el01">            
             <dt>Emphasis and importance</dt>
@@ -104,26 +143,7 @@
      </dl>
         
         
- 
-         <dl id="el01">            
-            <dt>CODE element</dt>
-            <dd>
-                <ul>
-                    <li><strong>Output</strong>
-                    <div class="box">
-                        
-                    </div>
-                    </li>
-                    <li><strong>Code</strong>               
-                    <pre class="language-html" tabindex="0"><code class="language-html">&lt;body>
 
-&lt;/body></code></pre>   
-                    </li>
-                    <li><a href="for-loop-v01.html">full code</a></li>
-                </ul>            
-            </dd> 
-        </dl>       
-        
     
 
  
