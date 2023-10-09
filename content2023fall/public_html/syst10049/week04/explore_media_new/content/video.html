@@ -16,20 +16,126 @@ Date:         [date file created]
 Updated:      [date last updated] 
 Version:      0.0 (format major.minor updates)
 Purpose:      short description what the page (site) is all about
-Description:  describe the solution in detail (usually correlates
-              with requirements and design specifications
-              (include algorithm if applicable)
-              - focus on the "why" -- try not to state the obvious
+Description:  describe...
+                
+                https://bajcar.dev.fast.sheridanc.on.ca/demo/explore_media/media/
+
+              starTrekReboot.jpg              https://3.bp.blogspot.com/-L294JYxow7U/WxCY6eu-luI/AAAAAAAAVKw/6o31OGLJIDcs6weyG6C8gTby74Rx67_QACEwYBhgL/s1600/Star%2BTrek%2B-%2BReboot.jpg
+              
+              Able player
+              https://ableplayer.github.io/ableplayer/#setup-step-1-use-html5-doctype
+              
+              Media Players
+              https://www.w3.org/WAI/media/av/player/
+              
+              
+              Fully accessible cross-browser HTML5 media player.
+              https://ableplayer.github.io/ableplayer/#setup-step-1-use-html5-doctype
+              Setup Step 1: Use HTML5 Doctype
+              Setup Step 2: Add JavaScript and CSS
+              Setup Step 3: Add HTML
+              
+                <audio id="audio1" data-able-player preload="auto">
+                    <source type="audio/ogg" src="path_to_audio_file.ogg"/>
+                    <source type="audio/mpeg" src="path_to_audio_file.mp3"/>
+                </audio>
+                
+                <video id="video1" data-able-player preload="auto" width="480" height="360" poster="path_to_image.jpg">
+                    <source type="video/webm" src="path_to_video.webm" data-desc-src="path_to_described_video.webm"/>
+                    <source type="video/mp4" src="path_to_video.mp4" data-desc-src="path_to_described_video.mp4"/>
+                    <track kind="captions" src="path_to_captions.vtt"/>
+                    <track kind="descriptions" src="path_to_descriptions.vtt"/>
+                </video>                
 -->
+<style>
+ul ul li {
+  display: inline;
+  margin-right: 10px;
+}
+video {
+  margin-top: 0;
+  padding-top: 0;
+}
+figcaption {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+</style>
 </head>
 <body>
     <header>
-        <h1>Page title</h1>
+        <h1>Explore media</h1>
+        <h2>VIDEO Element</h2>
     </header>
-    <nav></nav>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><strong>Images</strong>
+                <ul>
+                    <li><a href="image.html">Image</a></li>
+                    <li><a href="splitImage.html">SplitImage</a></li>
+                    <li><a href="image_informative.html">Informative images</a></li>
+                    <li><a href="image_decorative.html">Decorative images</a></li>
+                    <li><a href="image_functional.html">Functional images</a></li>
+                    <li><a href="image_of_text.html">Images of text</a></li>
+                    <li><a href="image_map.html">Image map</a></li>
+                    <li><a href="image_picture.html">Picture</a></li>
+                </ul>
+            </li>
+            <li><strong>Media</strong>
+                <ul>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="svg.html">SVG</a></li>
+                    <li><a href="canvas.html">Canvas</a></li>
+                    <li><a href="youtube.html">Youtube</a></li>
+                    <li><a href="textFile.html">TextFile</a></li>
+                    <li><a href="snippet.html">HtmlSnippet</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <hr>
     <main>
-
+		<h3>Example - <samp>&lt;video&gt;</samp> Element</h3>
+		<figure>
+            <figcaption>
+				<strong>FIGURE 1:</strong> .mp4 video filewith poster image and controls		
+			</figcaption>
+			<video width="320" 
+                   height="190" 
+                   controls
+                   poster="../images/starTrekReboot.jpg" 
+                   preload>
+				<source src="https://bajcar.dev.fast.sheridanc.on.ca/demo/explore_media/media/stid-ot.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</figure>
+        
+		<p>Using the following code. Look up all the attributes, their intended usage and what 
+		values you can assign.<br>
+			<code>   
+			&lt;video width="320" height="240" controls loop poster="image.jpg" preload><br>
+			&nbsp;&nbsp;&nbsp;&lt;source src="movie.mp4" type="video/mp4"><br>
+			&nbsp;&nbsp;&nbsp;Your browser does not support the video tag.<br>
+			&lt;/video>
+			</code>
+		</p>
+        
+        <hr>
+        <h3>Accessible Video</h3>
+        <p>Read about <a href="https://www.w3.org/WAI/media/av/" target="_target">Making Audio and Video Media Accessible</a> &mdash; providing description of visual information, captions/subtitles, transcripts, sign langauge; use media player that supports accesibility</p>
+        <p>Examples:</p>
+        <ul>
+            <li><a href="https://ableplayer.github.io/ableplayer/demos/video1.html" target="_blank">Video with closed captions in one language</a></li>
+            <li><a href="https://ableplayer.github.io/ableplayer/demos/video5.html" target="_blank">Video with sign language</a></li>
+            <li><a href="https://ableplayer.github.io/ableplayer/demos/video3.html" target="_blank">Video with captions, subtitles, chapters, and a transcript</a></li>
+        </ul>
+        <p>Note: <em>Using an existing media player developed for accessibility requires moderate HTML skills. Developing your own requires advanced HTML and JavaScript skills. (<a href="" target="_blank">Media Players</a>)</em>.</p>
     </main>
+    
     <hr>
     <footer>
         <address>Web Development &copy; Sheridan College</address>

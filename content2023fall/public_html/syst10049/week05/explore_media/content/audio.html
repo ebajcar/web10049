@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Meaningful page title</title>
+    <title>Explore media - AUDIO Element</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="Your Name">
@@ -10,25 +10,42 @@
                    and how it fits into the project (website or
                    web app. Be generous with your description.">   
 <!--
-Author:       Your Name
-Program:      pageName.html
+Author:       Ellen Bajcar
+Program:      audio.html
 Date:         [date file created]
 Updated:      [date last updated] 
 Version:      0.0 (format major.minor updates)
 Purpose:      short description what the page (site) is all about
-Description:  describe the solution in detail (usually correlates
-              with requirements and design specifications
-              (include algorithm if applicable)
-              - focus on the "why" -- try not to state the obvious
+Description:  describe...
 -->
 </head>
 <body>
     <header>
-        <h1>Page title</h1>
+        <h1>Explore media</h1>
+        <h2>AUDIO Element</h2>
     </header>
     <nav></nav>
     <main>
-
+        <h3>Example &mdash; <samp>&lt;audio&gt;</samp> Element</h3>
+        <figure>
+            <figcaption>
+                <strong>FIGURE 1:</strong> This example displays a sound file&hellip;
+            </figcaption>
+            <!-- 
+                The controls attribute is a boolean attribute. When present, it specifies that audio controls 
+                should be displayed. Audio controls should include: Play, Pause, Seeking, Volume 
+                
+                attribute minimization: note the attribute "controls" does not have a value assigned
+            -->		
+            <audio src="https://bajcar.dev.fast.sheridanc.on.ca/demo/explore_media/media/destiny.wav" 
+                   controls>
+            </audio>
+            <!-- 
+                The <q> tag defines a short quotation. Browsers normally insert 
+                quotation marks around the quotation. 
+            -->				
+            <p>Note: <q>The || (two pipes) symbol stops all of this.</q></p>				
+        </figure>
     </main>
     <hr>
     <footer>

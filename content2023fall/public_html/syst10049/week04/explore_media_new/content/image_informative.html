@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Meaningful page title</title>
+    <title>Explore Media - Images</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="Ellen Bajcar">
@@ -37,15 +37,63 @@ Description:
         
         
 -->
+<style>
+ul ul li {
+  display: inline;
+  margin-right: 10px;
+}
+</style>
 </head>
 <body>
     <header>
-        <h1>Images</h1>
-        <h2>Informative images</h2>
+        <h1>Explore Media</h1>
+        <h2>Images</h2>
     </header>
-    <nav></nav>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><strong>Images</strong>
+                <ul>
+                    <li><a href="image.html">Image</a></li>
+                    <li><a href="splitImage.html">SplitImage</a></li>
+                    <li><a href="image_informative.html">Informative images</a>
+                    <li><a href="image_decorative.html">Decorative images</a>
+                    <li><a href="image_functional.html">Functional images</a>
+                    <li><a href="image_of_text.html">Images of text</a>
+                    <li><a href="image_map.html">Image map</a>
+                    <li><a href="image_picture.html">Picture</a>
+                </ul>
+            </li>
+            <li><strong>Media</strong>
+                <ul>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="svg.html">SVG</a></li>
+                    <li><a href="canvas.html">Canvas</a></li>
+                    <li><a href="youtube.html">Youtube</a></li>
+                    <li><a href="textFile.html">TextFile</a></li>
+                    <li><a href="snippet.html">HtmlSnippet</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
     <hr>
+    
     <main>
+        <h3>On this page...</h3>
+        <nav>
+            <ul>
+                <li><a href="#1">Example 1: Images used to label other information</a></li>
+                <li><a href="#2">Example 2: Images used to supplement other information</a></li>
+                <li><a href="#3">Example 3: Images conveying succinct information</a></li>
+                <li><a href="#4">Example 4: Images conveying an impression or emotion</a></li>
+                <li><a href="#5">Example 5: Images conveying file format</a></li>
+            </ul>
+        </nav>
+        <hr>
+        
+        <section id="1">
             <h3>Example 1: Images used to label other information</h3>
             <p>For full tutorial, go to W3C WAI <a href="https://www.w3.org/WAI/tutorials/images/informative/#example-1-images-used-to-label-other-information" target="_blank">Informative Images</a>. This tutorial combines techniques G94 (Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content) and H37 (Using alt attributes on img elements).</p>
             
@@ -57,7 +105,11 @@ Description:
                 <img src="https://www.w3.org/WAI/content-images/wai-tutorials/images/fax.png" 
                      alt="Fax:"> 0123 456 7891
             </p>   
-
+        </section>
+        <hr>
+        
+        
+        <section id="2">
             <h3>Example 2: Images used to supplement other information</h3>
             <p>
                 <img src="https://www.w3.org/WAI/content-images/wai-tutorials/images/dog.jpg" alt="Dog with a bell attached to its collar.">
@@ -65,14 +117,25 @@ Description:
                 of the dog’s location
             </p>
             <p><strong>Note</strong> If the text included an explanation of how the dog wears a bell, the image might be considered redundant and therefore decorative. As this isn’t mentioned in the text, the image is deemed to be informative.</p>
-            
+        </section>
+        <hr>
+        
+        <section id="3">
             <h3>Example 3: Images conveying succinct information</h3>
             <img src="https://www.w3.org/WAI/content-images/wai-tutorials/images/counter-clockwise.jpg" 
                  alt="Push the cap down and turn it counter-clockwise (from right to left)">
-            
+        </section>
+        <hr>
+        
+        
+        <section id="4">
             <h3>Example 4: Images conveying an impression or emotion</h3>
             <img src="https://www.w3.org/WAI/content-images/wai-tutorials/images/family.jpg" alt="We’re family-friendly. ">
-            
+        </section>
+        <hr>
+        
+        
+        <section id="5">
             <h3>Example 5: Images conveying file format</h3>
             <p>
                 <a href="#">
@@ -91,6 +154,7 @@ Description:
                 </a>
                 format.
             </p>
+        </section>
     </main>
     <hr>
     <footer>
