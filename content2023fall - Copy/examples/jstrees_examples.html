@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JS trees</title>
+<meta charset="utf-8">
+<!-- for more info see https://www.jstree.com/ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+
+<style>
+
+</style>
+</head>
+<body>
+
+
+
+  <div id="jstree_demo_div">
+    <!-- in this example the tree is populated from inline HTML -->
+    <ul>
+      <li>Root node 1
+        <ul>
+          <li id="child_node_1">Child node 11</li>
+          <li>Child node 12</li>
+          <li>Child node 13</li>
+          <li>Child node 14</li>
+        </ul>
+      </li>
+      <li>Root node 2
+        <ul>
+          <li id="child_node_2">Child node 21</li>
+          <li>Child node 22</li>
+          <li>Child node 23</li>
+          <li>Child node 24</li>
+        </ul>      
+      </li>
+      <li>Root node 3</li>
+      <li>Root node 4</li>
+      <li>Root node 5</li>
+    </ul>
+  </div>
+
+  
+  </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+<script>
+$(function () { $('#jstree_demo_div').jstree(); });
+$('#jstree_demo_div').on("changed.jstree", function (e, data) {
+  console.log(data.selected);
+});
+$('button').on('click', function () {
+  $('#jstree').jstree(true).select_node('child_node_1');
+  $('#jstree').jstree('select_node', 'child_node_1');
+  $.jstree.reference('#jstree').select_node('child_node_1');
+});
+</script>
+</body>
+</html>

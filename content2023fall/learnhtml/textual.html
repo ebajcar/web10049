@@ -27,16 +27,7 @@
           <path id="topnavClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
         </svg>
       </button>      
-      <div id="topnavList" class="hidden sm:block items-center w-auto mt-0 text-white p-0 z-20">
-        <ul class="list-reset list-none font-semibold flex justify-end flex-wrap sm:flex-nowrap items-center px-0 pb-0">
-          <li class="p-1 sm:p-0"><a class="topnav-link" href="../index.html">Home</a></li>
-          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnweb/index.html">Web development</a></li>
-          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnhtml/index.html">Learn HTML5</a></li>
-          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learncss/index.html">Learn CSS3</a></li>
-          
-          <li class="p-1 sm:p-0"><a class="topnav-link" href="https://piazza.com/sheridan/winter2022/syst10049bajcar" target="_blank">Class Q&amp;A</a></li>
-        </ul>
-      </div>
+  
     </div>
     <hr class="border-b border-gray-600 opacity-50 my-0 py-0" />
   </nav>
@@ -68,9 +59,7 @@
           <a href="models.html">Content Models</a>     
           <a class="bg-gray-100 text-gray-900 border-menu" href="textual.html">Textual content</a>
           <a href="semantics.html">Semantic content</a>
-          <a href="interactive.html">Interactive content</a>
-         <!--a href="forms.html">Marking up forms</a-->  
-       
+          <a href="interactive.html">Interactive content</a>      
       </nav>
     </div>  
         
@@ -224,6 +213,7 @@ of Emeralds.
   <div class="block p-6 rounded-lg shadow-lg bg-white">
     <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2 sher-teal">Italic, bold, and underline</h4>
     <p>The elements &lt;b>, &lt;i>, and &lt;u> came about so people could write bold, italics, or underlined text in an era when CSS was still supported poorly or not at all. They only affect presentation and not semantics, are known as presentational elements and <strong>should no longer be used</strong> [<a href="https://mzl.la/35tLCHN" target="">MDN</a>], because semantics is so important to accessibility, SEO, etc.  The concept of italics isn't very helpful to people using screen readers, or to people using a writing system other than the Latin alphabet.</p>
+    <p>The elements &lt;b>, &lt;i>, and &lt;u> is <strong>presentational markup</strong> Presentational markup in general has been found to have problems: leads to poorer accessiblity, higher cost of maintenance, and larger document sizes.  [<a href="https://html.spec.whatwg.org/multipage/introduction.html#presentational-markup" target="">1.11.1 Presentational markup, HTML Living Standard</a>]</p>
     <h4>Example</h4>
      <div class="grid grid-cols-2">
         <div class="m-3"><h4>Output</h4>
@@ -245,10 +235,50 @@ of Emeralds.
   &lt;i lang="id">nasi goreng&lt;/i> and 
   &lt;i lang="fr">soupe à l'oignon&lt;/i>.
 &lt;/p></code></pre>  
+        
+        <p><a href="https://web10049-examples.w3spaces.com/content-textual/italic.html" target="_blank">italic.html</a> (full code)</p>
         </div>
     </div>
-    <p><a href="https://web10049-examples.w3spaces.com/content-textual/italic.html" target="_blank">italic.html</a> (full code)</p> 
-    <!-- <h4>More examples</h4> -->
+     
+    <h4>More examples (from HTML Living Standard)</h4>
+    <p><strong>4.5.21 The b element</strong> The b element represents a span of text to which attention is being drawn for utilitarian purposes without conveying any extra importance and with no implication of an alternate voice or mood, such as key words in a document abstract, product names in a review, actionable words in interactive text-driven software, or an article lede.</p>
+ <pre class="language-html"><code>
+&lt;!-- shows a use of the b element to highlight key words without marking them up as important: -->
+&lt;p>	
+  The &lt;b>frobonitor&lt;/b> and &lt;b>barbinator&lt;/b> components are fried.
+&lt;/p>
+&lt;!-- objects in a text adventure are highlighted as being special by use of the b element -->
+&lt;p>	
+  You enter a small room. Your &lt;b>sword&lt;/b> glows
+  brighter. A &lt;b>rat&lt;/b> scurries past the corner wall.
+  &lt;/p>
+&lt;!-- Another case where the b element is appropriate is in marking up the lede (or lead) sentence or paragraph. -->
+&lt;p>	
+&lt;article>
+ &lt;h2>Kittens 'adopted' by pet rabbit&lt;/h2>
+ &lt;p>&lt;b class="lede">Six abandoned kittens have found an
+ unexpected new mother figure — a pet rabbit.&lt;/b>&lt;/p>
+ &lt;p>Veterinary nurse Melanie Humble took the three-week-old
+ kittens to her Aberdeen home.  
+&lt;/p>
+[&hellip;]</code></pre>     
+
+    <p><strong>4.5.20 The i element</strong> The i element represents a span of text in an alternate voice or mood, or otherwise offset from the normal prose in a manner indicating a different quality of text, such as a taxonomic designation, a technical term, an idiomatic phrase from another language, transliteration, a thought, or a ship name in Western texts.</p>
+<pre class="language-html"><code>
+&lt;!-- taxonomy -->
+&lt;p>	
+  The &lt;i class="taxonomy">Felis silvestris catus&lt;/i> is cute.
+&lt;/p>
+&lt;!-- term -->
+&lt;p>	
+  The term &lt;i>prose content&lt;/i> is defined above.
+  &lt;/p>
+&lt;!-- language -->
+&lt;p>	
+  There is a certain &lt;i lang="fr"&gt;je ne sais quoi&lt;/i> in the air. 
+&lt;/p></code></pre>    
+
+    <p><strong>4.5.22 The u element</strong> The default rendering of the u element in visual presentations clashes with the conventional rendering of hyperlinks (underlining). Authors are encouraged to avoid using the u element where it could be confused for a hyperlink.</p>
   </div>
 </div>
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Search form</title>    
+</head>
+
+<body>
+   <form class="s" method="get" action="http://www.google.com/search"> 
+     <!-- type="search" defines a text field for entering a search string -->
+     <!-- name="q" specifies the name of the element -->
+     <!-- size="20" specifies the width, in characters of the element-->
+     <!-- maxlength="255"specifies the maximum number of characters allowed in the element-->
+     <!-- value="Enter pattern..." specifies the value of the element-->
+      <input type="search" 
+              name="q"    
+              size="20"   
+              maxlength="255" 
+              placeholder="&#127859; Enter pattern..." />             
+      <input type="radio"
+              class="rad"
+              name="sitesearch"
+              checked  
+              value="" />  
+      <label>Web</label>                 
+      <input type="radio"
+              class="rad"
+              name="sitesearch"
+              value="sheridanc.on.ca" />   
+      <label>Sheridan</label>                 
+      <input type="submit"
+              class="buttn"                  
+              value="Google Search" /> 
+    </form>
+</body>
+</html>

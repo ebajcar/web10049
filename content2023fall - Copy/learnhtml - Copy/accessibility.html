@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<title> SYST10049 learn HTML </title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css"/> 
+<link rel="stylesheet" href="../css/prism_coy_dev.css"  />
+<link rel="stylesheet" href="../css/additional.css"/> 
+<style>
+</style>
+</head>
+
+<body>
+  <nav id="navTop" class="w-full z-30 top-0 text-white bg-dark-gray ">
+    <div class="w-full container max-w-screen-lg mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-0 py-2">
+      <div class="md:pl-4">
+        <a class="text-white hover:text-white no-underline hover:no-underline
+        font-bold text-2xl lg:text-4xl rounded-lg hover:bg-nwoods-secondary " href="../">
+          <h1 class="mb-0 p-1 ">SYST10049</h1>
+        </a>
+      </div>
+      <button id="topnavButton" class="rounded-lg sm:hidden focus:outline-none focus:ring" aria-label="Navigation">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path id="topnavOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path id="topnavClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>      
+      <div id="topnavList" class="hidden sm:block items-center w-auto mt-0 text-white p-0 z-20">
+        <ul class="list-reset list-none font-semibold flex justify-end flex-wrap sm:flex-nowrap items-center px-0 pb-0">
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../index.html">Home</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnweb/index.html">Web development</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learnhtml/index.html">Learn HTML5</a></li>
+          <li class="p-1 sm:p-0"><a class="topnav-link" href="../learncss/index.html">Learn CSS3</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-b border-gray-600 opacity-50 my-0 py-0" />
+  </nav>
+    
+<main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+  
+<!-- main aside -->  
+<aside id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+  <div class="flex-shrink-0 px-8 py-4">
+    <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
+      <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+        <path id="navOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+        <path id="navClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+      </svg>   
+    </button>
+  </div>   
+  <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+
+      <a href="index.html">HTML Markup</a>
+      <a href="standards.html">Standards</a>
+      <a class="bg-gray-100 text-gray-900 border-menu" href="accessibility.html">Accessibility</a>
+      <a href="correctness.html">Semantics</a>
+      <a href="elements.html">Elements</a>
+      <a href="attributes.html">Attributes</a>
+      <a href="document.html">HTML Document</a>
+      <a href="head-section.html">HEAD section</a>
+      <a href="body-section.html">BODY section</a>
+      <a href="dom.html">DOM</a>
+      <a href="content.html">Content Structure</a> 
+      <a href="models.html">Content Models</a>     
+      <a href="textual.html">Textual content</a>
+      <a href="semantics.html">Semantic content</a>
+      <a href="interactive.html">Interactive content</a>
+     <!--a href="forms.html">Marking up forms</a--> 
+   
+  </nav>
+</aside>  
+        
+<!-- main section -->         
+<section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
+    <h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-black-600">Accessibility</h1>
+    <h6 class="text-lg font-light leading-relaxed mt-6 mb-4 text-gray-800" title="W3C WAI Accessiblity Standards">
+        W3C develops international Web standards: HTML, CSS, and many more. W3C’s Web standards are called W3C Recommendations. All W3C standards are reviewed for accessibility support and their guidelines show how web accessibility depends on several components of web development and interaction working together, and how the WAI guidelines apply.  
+        <small class="blockquote-footer">&mdash; 
+            <cite title="[ https://www.w3.org/WAI/standards-guidelines/ ]">
+                <a href="https://www.w3.org/WAI/standards-guidelines/" target="_blank">W3C WAI Accessiblity Standards</a>
+            </cite>
+        </small>
+    </h6>
+  
+<section class="col-8 container">
+  
+
+<!-- video -->
+<div class="my-5">
+  <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="flex items-center justify-center w-24 bg-green-500">
+      <span style="font-size:2em;">🎬</span>
+      <svg hidden class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM16.6667 28.3333L8.33337 20L10.6834 17.65L16.6667 23.6166L29.3167 10.9666L31.6667 13.3333L16.6667 28.3333Z"/>
+      </svg>
+    </div>
+    <div class="px-4 py-2 -mx-3">
+        <span class="text-2xl font-semibold text-green-500 dark:text-green-400">Introduction to Web Accessibility and W3C Standards</span>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/20SHvU2PKsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p hidden>
+            <a href="https://youtu.be/20SHvU2PKsM" target="_blank">🎬 Web Accessibility and W3C Standards (video)</a>
+        </p> 
+    </div>
+  </div>
+</div>
+
+ 
+<!-- Web Accessibility Initiative (WAI) -->           
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Web Accessibility Initiative (WAI)</h4>
+    <p class="text-gray-700 text-base mb-4">
+      WAI is an initiative of the W3C that leads the web to its full potential includes promoting a high degree of usability for people with disabilities. WAI develops its work through W3C’s consensus-based process, involving different stakeholders in web accessibility. These include industry, disability organizations, government, accessibility research organizations, and more. WAI, in partnership with organizations around the world, pursues accessibility of the web through these primary activities:</p>
+	<ul class="list-disc list-inside text-base">
+		<li>ensuring that W3C standards support accessibility</li>
+		<li>developing accessibility guidelines for web content and applications, browsers, and authoring tools</li>
+		<li>developing resources to improve web accessibility evaluation processes and tools</li>
+		<li>supporting education and outreach on web accessibility</li>
+		<li>coordinating with research and development that may impact future accessibility of the web</li>
+		<li>promoting harmonized international uptake of web accessibility standards</li>
+	</ul>
+	<p class="text-gray-700 text-base mt-4 mb-4">Read further  <cite title="[ about WHATWG standards ]"><a href="https://www.w3.org/WAI/" target="_blank"> about W3C Web Accessibility Initiaive.</a></cite></p>
+  </div>
+</div>
+    
+<!-- Accessibility principles -->
+<div class="my-5">
+  <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="px-4 py-2 -mx-3">
+      <div class="mx-3">
+        <span class="text-2xl font-semibold text-sky-500 dark:text-sky-400">Accessibility principles</span>
+        <p class="text-gray-700 text-lg">The top four principles that provide the foundation for web accissiblity are:</p>
+        <!-- https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility -->
+        <ul>
+            <li class="flex items-center h-7">
+              <svg class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="11" />
+                <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+              </svg>
+              <p class="ml-4 pt-3 text-lg"><strong>Perceivable</strong> information and user interface</p>
+            </li>
+            <li class="flex items-center h-7">
+              <svg class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="11" />
+                <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+              </svg>
+              <p class="ml-4 pt-3 text-lg"><strong>Operable</strong> user interface components and navigation</p>
+            </li>
+            <li class="flex items-center h-7">
+              <svg class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="11" />
+                <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+              </svg>
+              <p class="ml-4 pt-3 text-lg"><strong>Understandable</strong> information and operation of user interface</p>
+            </li>
+            <li class="flex items-center h-7">
+              <svg class="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="11" />
+                <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+              </svg>
+              <p class="ml-4 pt-3 text-lg"><strong>Robust</strong> content for reliable interpretation</p>
+            </li>             
+          </ul>
+          
+        <p class="text-gray-700 text-base mt-4 mb-4">Read further  <cite title="[ https://www.w3.org/WAI/fundamentals/accessibility-principles/ ]"><a href="https://www.w3.org/WAI/fundamentals/accessibility-principles/" target="_blank"> W3C WAI Accessiblity Principles</a></cite>  
+        
+        <br>Read further  <cite title="[ https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility ]"><a href="https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility" target="_blank"> W3C WAI Introduction to Understanding WCAG (WCAG 2.1 Understanding Docs)</a></cite></p>  
+      </div>
+    </div>
+  </div>
+</div>         
+
+ 
+<!-- MDN --> 
+<div class="flex justify-center mt-6">
+  <section class="block p-6 rounded-lg shadow-lg bg-white">
+        <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Accessibility &mdash; Make the web usable by everyone</h4>  
+        <p>A great deal of web content can be made accessible just by making sure the correct Hypertext Markup Language elements are used for the correct purpose at all times. This article looks in detail at how HTML can be used to ensure maximum accessibility.</p>
+        <p>Read further  <cite title="[ https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML]"><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML" target="_blank"> HTML: A good basis for accessibility [MDN]</a></cite></p>       
+    </section>        
+</div>
+
+<!-- MDN --> 
+<div class="flex justify-center mt-6">
+  <section class="block p-6 rounded-lg shadow-lg bg-white w-full">
+        <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2">Techniques for WCAG 2.1</h4>  
+       <table class="table-auto">
+        <thead>
+          <tr class="border-b-4">
+            <th class="pt-6">Number</th>
+            <th class="w-96 pt-6">Description</th>
+            <th class="w-96 pt-6">Section</th>
+            <th class="pt-6">Class-related</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">G140</a><br></td>
+            <td class="pb-2">Separating information and structure from presentation to enable different presentations</td>
+            <td class="pb-2 pl-6"></td>
+            <td class="pb-2 pl-6"></td>
+          </tr>
+           <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">G88</a></td>
+            <td class="pb-2">Providing descriptive titles for Web pages</td>
+            <td class="pb-2 pl-6"></td>
+            <td class="pb-2 pl-6"></td>
+          </tr>  
+          
+          <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">F71</a></td>
+            <td class="pb-2"></td>
+            <td class="pb-2 pl-6"></td>
+            <td class="pb-2 pl-6">(5) Text Content</td>
+          </tr>     
+          <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">H38</a></td>
+            <td class="pb-2"></td>
+            <td class="pb-2 pl-6">WCAG 3.2</td>
+            <td class="pb-2 pl-6">(5) Text Content</td>
+          </tr>
+          <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">G61</a></td>
+            <td class="pb-2">Presenting repeated components in the same relative order each time they appear</td>
+            <td class="pb-2 pl-6">Understanding SC 3.2.3: <br>Consistent Navigation (Level AA)</td>
+            <td class="pb-2 pl-6">(5) Text Content</td>
+          </tr> 
+           <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">F66</a></td>
+            <td class="pb-2">Failure of Success Criterion 3.2.3 due to presenting navigation links in a different relative order on different pages</td>
+            <td class="pb-2 pl-6">Understanding SC 3.2.3: <br>Consistent Navigation (Level AA)</td>
+            <td class="pb-2 pl-6">(5) Text Content</td>
+          </tr>                  
+           <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">H48</a></td>
+            <td class="pb-2">Using ol, ul and dl for lists or groups of links</td>
+            <td class="pb-2 pl-6">Understanding SC 1.3.1: <br>Info and Relationships (Level A)</td>
+            <td class="pb-2 pl-6">(6) Lists</td>
+          </tr>    
+
+           <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">H63</a></td>
+            <td class="pb-2">Using the scope attribute to associate header cells and data cells in data tables</td>
+            <td class="pb-2 pl-6">Understanding SC 1.3.1: <br>Info and Relationships (Level A)</td>
+            <td class="pb-2 pl-6">(6) Tables</td>
+          </tr>  
+           <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">H39</a></td>
+            <td class="pb-2">Using caption elements to associate data table captions with data tables</td>
+            <td class="pb-2 pl-6">Understanding SC 1.3.1:<br>Info and Relationships (Level A)</td>
+            <td class="pb-2 pl-6">(6) Tables</td>
+          </tr>     
+           <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">H51</a></td>
+            <td class="pb-2">Using table markup to present tabular information</td>
+            <td class="pb-2 pl-6">Understanding SC 1.3.1:<br>Info and Relationships (Level A)</td>
+            <td class="pb-2 pl-6">(6) Tables</td>
+          </tr>  
+
+           <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">G115</a></td>
+            <td class="pb-2"></td>
+            <td class="pb-2 pl-6">Understanding SC 1.3.1:<br>Info and Relationships (Level A)</td>
+            <td class="pb-2 pl-6">(4) Document Sectioning</td>
+          </tr> 
+            <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">H49</a></td>
+            <td class="pb-2">Using semantic markup to mark emphasized or special text</td>
+            <td class="pb-2 pl-6">Understanding SC 1.3.1:<br>Info and Relationships (Level A)</td>
+            <td class="pb-2 pl-6">(4) Document Sectioning<br>(4) Basic elements and images</td>
+          </tr> 
+ 
+          </tr> 
+            <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">G1</a></td>
+            <td class="pb-2"></td>
+            <td class="pb-2 pl-6">WCAG 2.4 - 2.4.1</td>
+            <td class="pb-2 pl-6">(4) Document Sectioning</td>
+          </tr>
+           </tr> 
+            <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">G123</a></td>
+            <td class="pb-2"></td>
+            <td class="pb-2 pl-6">WCAG 2.4 - 2.4.1</td>
+            <td class="pb-2 pl-6">(4) Document Sectioning</td>
+          </tr>    
+          </tr> 
+            <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">G124</a></td>
+            <td class="pb-2"></td>
+            <td class="pb-2 pl-6">WCAG 2.4 - 2.4.1</td>
+            <td class="pb-2 pl-6">(4) Document Sectioning</td>
+          </tr>  
+          </tr> 
+            <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">H69</a></td>
+            <td class="pb-2"></td>
+            <td class="pb-2 pl-6">WCAG 2.4 - 2.4.1</td>
+            <td class="pb-2 pl-6">(4) Document Sectioning</td>
+          </tr>
+          
+          </tr> 
+            <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">G130</a></td>
+            <td class="pb-2"></td>
+            <td class="pb-2 pl-6">WCAG 2.4 - 2.4.6,</td>
+            <td class="pb-2 pl-6">(4) Document Sectioning</td>
+          </tr>
+
+
+
+          
+          </tr> 
+            <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">H49</a></td>
+            <td class="pb-2">Using semantic markup to mark emphasized or special text</td>
+            <td class="pb-2 pl-6">Understanding SC 1.3.1:<br>Info and Relationships (Level A)</td>
+            <td class="pb-2 pl-6">(4) Basic elements and images</td>
+          </tr>          
+ 
+          </tr> 
+            <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">G91</a></td>
+            <td class="pb-2"></td>
+            <td class="pb-2 pl-6">WCAG 2.4 - 2.4.4</td>
+            <td class="pb-2 pl-6">(4) Basic elements and images</td>
+          </tr>  
+          </tr> 
+            <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">H30</a></td>
+            <td class="pb-2"></td>
+            <td class="pb-2 pl-6">WCAG 2.4 - 2.4.4</td>
+            <td class="pb-2 pl-6">(4) Basic elements and images</td>
+          </tr>  
+           </tr> 
+            <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">H37</a></td>
+            <td class="pb-2"></td>
+            <td class="pb-2 pl-6">WCAG 1.1 - 1.1.1</td>
+            <td class="pb-2 pl-6">(4) Basic elements and images</td>
+          </tr>         
+          </tr> 
+            <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">H2</a></td>
+            <td class="pb-2"></td>
+            <td class="pb-2 pl-6">WCAG 1.1 - 1.1.1</td>
+            <td class="pb-2 pl-6">(4) Basic elements and images</td>
+          </tr>  
+          </tr> 
+            <tr class="border-b-2">
+            <td class="pb-2 text-lg"><a href="" target="_blank">H67</a></td>
+            <td class="pb-2"></td>
+            <td class="pb-2 pl-6">WCAG 1.1 - 1.1.1,</td>
+            <td class="pb-2 pl-6">(4) Basic elements and images</td>
+          </tr> 
+          
+       </table>
+    </section>        
+</div>
+
+
+<nav id="nav" class="lg:text-sm lg:leading-6 relative">
+<div class="sticky top-0 -ml-0.5 pointer-events-none">
+<div class="h-10 bg-white dark:bg-slate-900"></div>
+<div class="bg-white dark:bg-slate-900 relative pointer-events-auto">
+<button type="button" class="hidden w-full lg:flex items-center text-sm leading-6 text-slate-400 rounded-md ring-1 ring-slate-900/10 shadow-sm py-1.5 pl-2 pr-3 hover:ring-slate-300 dark:bg-slate-800 dark:highlight-white/5 dark:hover:bg-slate-700"><svg width="24" height="24" fill="none" aria-hidden="true" class="mr-3 flex-none"><path d="m19 19-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle></svg>Quick search...<span class="ml-auto pl-3 flex-none text-xs font-semibold">Ctrl K</span></button>
+</div>
+
+<div class="h-8 bg-gradient-to-b from-white dark:from-slate-900"></div>
+</div>
+<ul>
+<!--
+<li><a class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-semibold text-sky-500 dark:text-sky-400" href="/docs/installation"><div class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-sky-200 dark:group-hover:bg-sky-500 dark:bg-sky-500 dark:highlight-white/10"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 7c1.093 0 2.117.27 3 .743V17a6.345 6.345 0 0 0-3-.743c-1.093 0-2.617.27-3.5.743V7.743C5.883 7.27 7.407 7 8.5 7Z" class="fill-sky-200 group-hover:fill-sky-500 dark:fill-sky-300 dark:group-hover:fill-sky-300"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 7c1.093 0 2.617.27 3.5.743V17c-.883-.473-2.407-.743-3.5-.743s-2.117.27-3 .743V7.743a6.344 6.344 0 0 1 3-.743Z" class="fill-sky-400 group-hover:fill-sky-500 dark:fill-sky-200 dark:group-hover:fill-sky-200"></path></svg></div>Documentation</a></li><li><a class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-medium text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="https://tailwindui.com/components?ref=sidebar"><div class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-indigo-200 dark:group-hover:bg-indigo-500 dark:bg-slate-800 dark:highlight-white/5"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="m6 9 6-3 6 3v6l-6 3-6-3V9Z" class="fill-indigo-100 group-hover:fill-indigo-200 dark:fill-slate-400"></path><path d="m6 9 6 3v7l-6-3V9Z" class="fill-indigo-300 group-hover:fill-indigo-400 dark:group-hover:fill-indigo-300 dark:fill-slate-500"></path><path d="m18 9-6 3v7l6-3V9Z" class="fill-indigo-400 group-hover:fill-indigo-500 dark:group-hover:fill-indigo-400 dark:fill-slate-600"></path></svg></div>Components</a></li><li><a class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-medium text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="https://tailwindui.com/templates?ref=sidebar"><div class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-fuchsia-200 dark:group-hover:bg-fuchsia-600 dark:bg-slate-800 dark:highlight-white/5"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 6C6.89543 6 6 6.89543 6 8V16C6 17.1046 6.89543 18 8 18H10.5C11.0523 18 11.5 17.5523 11.5 17V12C11.5 10.6193 12.6193 9.5 14 9.5H18V8C18 6.89543 17.1046 6 16 6H8ZM7.25 8C7.25 7.58579 7.58579 7.25 8 7.25H8.01C8.42421 7.25 8.76 7.58579 8.76 8C8.76 8.41421 8.42421 8.75 8.01 8.75H8C7.58579 8.75 7.25 8.41421 7.25 8ZM10 7.25C9.58579 7.25 9.25 7.58579 9.25 8C9.25 8.41421 9.58579 8.75 10 8.75H10.01C10.4242 8.75 10.76 8.41421 10.76 8C10.76 7.58579 10.4242 7.25 10.01 7.25H10Z" fill="#E879F9" class="fill-fuchsia-400 group-hover:fill-fuchsia-500 dark:group-hover:fill-fuchsia-300 dark:fill-slate-400"></path><path d="M13 12C13 11.4477 13.4477 11 14 11H17C17.5523 11 18 11.4477 18 12V17C18 17.5523 17.5523 18 17 18H14C13.4477 18 13 17.5523 13 17V12Z" fill="#F0ABFC" class="fill-fuchsia-300 group-hover:fill-fuchsia-400 dark:fill-slate-500"></path></svg></div>Templates</a></li><li><a class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-medium text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="https://www.youtube.com/tailwindlabs">
+<div class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-pink-200 dark:group-hover:bg-pink-500 dark:bg-slate-800 dark:highlight-white/5"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19 12a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" class="fill-pink-400 group-hover:fill-pink-500 dark:group-hover:fill-pink-300 dark:fill-slate-600"></path><path d="M11.082 9.107a.685.685 0 0 0-.72-.01.757.757 0 0 0-.362.653v4.5c0 .27.138.52.362.653.224.133.5.13.72-.01l3.571-2.25A.758.758 0 0 0 15 12a.758.758 0 0 0-.347-.643l-3.571-2.25Z" class="fill-pink-50 group-hover:fill-pink-100 dark:group-hover:fill-white dark:fill-slate-400"></path></svg></div>Screencasts</a></li><li><a class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-medium text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="https://play.tailwindcss.com"><div class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-blue-200 dark:group-hover:bg-blue-500 dark:bg-slate-800 dark:highlight-white/5"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M4 12a7 7 0 0 1 7-7h2a7 7 0 1 1 0 14h-2a7 7 0 0 1-7-7Z" class="fill-blue-400 group-hover:fill-blue-500 dark:group-hover:fill-blue-400 dark:fill-slate-600"></path><path d="M10.25 9.75 7.75 12l2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="stroke-blue-50 dark:stroke-slate-400 dark:group-hover:stroke-white dark:stroke-slate-400"></path><path d="m13.75 9.75 2.5 2.25-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="stroke-blue-200 dark:group-hover:stroke-white dark:stroke-slate-400"></path></svg></div>Playground</a></li><li><a class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-medium text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/resources"><div class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-purple-200 dark:group-hover:bg-purple-400 dark:bg-slate-800 dark:highlight-white/5"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path d="M6 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8ZM6 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1Z" class="fill-purple-400 group-hover:fill-purple-500 dark:group-hover:fill-purple-300 dark:fill-slate-600"></path><path d="M13 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2V8Z" class="fill-purple-200 group-hover:fill-purple-300 dark:group-hover:fill-white dark:fill-slate-400"></path><path d="M13 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-1Z" class="fill-purple-400 group-hover:fill-purple-500 dark:group-hover:fill-purple-300 dark:fill-slate-600"></path></svg></div><span class="">Resources</span></a></li><li><a class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-medium text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="https://github.com/tailwindlabs/tailwindcss/discussions">
+<div class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-violet-200 dark:group-hover:bg-violet-500 dark:bg-slate-800 dark:highlight-white/5"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 5a6 6 0 0 0-4.687 9.746c.215.27.315.62.231.954l-.514 2.058a1 1 0 0 0 1.485 1.1l2.848-1.71c.174-.104.374-.15.576-.148H13a6 6 0 0 0 0-12h-2Z" class="fill-violet-400 group-hover:fill-violet-500 dark:group-hover:fill-violet-300 dark:fill-slate-600"></path><circle cx="12" cy="11" r="1" class="fill-white dark:group-hover:fill-white dark:fill-slate-400"></circle><circle cx="9" cy="11" r="1" class="fill-violet-200 dark:group-hover:fill-white dark:fill-slate-400"></circle><circle cx="15" cy="11" r="1" class="fill-violet-200 dark:fill-slate-400 dark:group-hover:fill-white"></circle></svg></div>Community</a></li>
+-->
+
+
+<li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Getting Started</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/installation">Installation</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/editor-setup">Editor Setup</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/using-with-preprocessors">Using with Preprocessors</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/optimizing-for-production">Optimizing for Production</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/browser-support">Browser Support</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/upgrade-guide">Upgrade Guide</a></li></ul></li>
+<li class="mt-12 lg:mt-8">
+<h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Core Concepts</h5>
+<ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/utility-first">Utility-First Fundamentals</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/hover-focus-and-other-states">Hover, Focus, and Other States</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/responsive-design">Responsive Design</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/dark-mode">Dark Mode</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/reusing-styles">Reusing Styles</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/adding-custom-styles">Adding Custom Styles</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/functions-and-directives">Functions &amp; Directives</a></li></ul></li>
+
+<!--
+<li class="mt-12 lg:mt-8">
+<h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Customization</h5>
+<ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/configuration">Configuration</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/content-configuration">Content</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/theme">Theme</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/screens">Screens</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/customizing-colors">Colors</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/customizing-spacing">Spacing</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/plugins">Plugins</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/presets">Presets</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Base Styles</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/preflight">Preflight</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Layout</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/aspect-ratio">Aspect Ratio</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/container">Container</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/columns">Columns</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/break-after">Break After</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/break-before">Break Before</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/break-inside">Break Inside</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/box-decoration-break">Box Decoration Break</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/box-sizing">Box Sizing</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/display">Display</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/float">Floats</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/clear">Clear</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/isolation">Isolation</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/object-fit">Object Fit</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/object-position">Object Position</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/overflow">Overflow</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/overscroll-behavior">Overscroll Behavior</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/position">Position</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/top-right-bottom-left">Top / Right / Bottom / Left</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/visibility">Visibility</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/z-index">Z-Index</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Flexbox &amp; Grid</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/flex-basis">Flex Basis</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/flex-direction">Flex Direction</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/flex-wrap">Flex Wrap</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/flex">Flex</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/flex-grow">Flex Grow</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/flex-shrink">Flex Shrink</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/order">Order</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/grid-template-columns">Grid Template Columns</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/grid-column">Grid Column Start / End</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/grid-template-rows">Grid Template Rows</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/grid-row">Grid Row Start / End</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/grid-auto-flow">Grid Auto Flow</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/grid-auto-columns">Grid Auto Columns</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/grid-auto-rows">Grid Auto Rows</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/gap">Gap</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/justify-content">Justify Content</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/justify-items">Justify Items</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/justify-self">Justify Self</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/align-content">Align Content</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/align-items">Align Items</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/align-self">Align Self</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/place-content">Place Content</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/place-items">Place Items</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/place-self">Place Self</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Spacing</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/padding">Padding</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/margin">Margin</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/space">Space Between</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Sizing</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/width">Width</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/min-width">Min-Width</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/max-width">Max-Width</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/height">Height</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/min-height">Min-Height</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/max-height">Max-Height</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Typography</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/font-family">Font Family</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/font-size">Font Size</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/font-smoothing">Font Smoothing</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/font-style">Font Style</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/font-weight">Font Weight</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/font-variant-numeric">Font Variant Numeric</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/letter-spacing">Letter Spacing</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/line-clamp">Line Clamp</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/line-height">Line Height</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/list-style-image">List Style Image</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/list-style-position">List Style Position</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/list-style-type">List Style Type</a></li><li data-active="true"><a class="block border-l pl-4 -ml-px text-sky-500 border-current font-semibold dark:text-sky-400" href="/docs/text-align">Text Align</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/text-color">Text Color</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/text-decoration">Text Decoration</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/text-decoration-color">Text Decoration Color</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/text-decoration-style">Text Decoration Style</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/text-decoration-thickness">Text Decoration Thickness</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/text-underline-offset">Text Underline Offset</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/text-transform">Text Transform</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/text-overflow">Text Overflow</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/text-indent">Text Indent</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/vertical-align">Vertical Align</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/whitespace">Whitespace</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/word-break">Word Break</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/hyphens">Hyphens</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/content">Content</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Backgrounds</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/background-attachment">Background Attachment</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/background-clip">Background Clip</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/background-color">Background Color</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/background-origin">Background Origin</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/background-position">Background Position</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/background-repeat">Background Repeat</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/background-size">Background Size</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/background-image">Background Image</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/gradient-color-stops">Gradient Color Stops</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Borders</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/border-radius">Border Radius</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/border-width">Border Width</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/border-color">Border Color</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/border-style">Border Style</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/divide-width">Divide Width</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/divide-color">Divide Color</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/divide-style">Divide Style</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/outline-width">Outline Width</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/outline-color">Outline Color</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/outline-style">Outline Style</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/outline-offset">Outline Offset</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/ring-width">Ring Width</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/ring-color">Ring Color</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/ring-offset-width">Ring Offset Width</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/ring-offset-color">Ring Offset Color</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Effects</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/box-shadow">Box Shadow</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/box-shadow-color">Box Shadow Color</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/opacity">Opacity</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/mix-blend-mode">Mix Blend Mode</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/background-blend-mode">Background Blend Mode</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Filters</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/blur">Blur</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/brightness">Brightness</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/contrast">Contrast</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/drop-shadow">Drop Shadow</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/grayscale">Grayscale</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/hue-rotate">Hue Rotate</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/invert">Invert</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/saturate">Saturate</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/sepia">Sepia</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/backdrop-blur">Backdrop Blur</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/backdrop-brightness">Backdrop Brightness</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/backdrop-contrast">Backdrop Contrast</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/backdrop-grayscale">Backdrop Grayscale</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/backdrop-hue-rotate">Backdrop Hue Rotate</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/backdrop-invert">Backdrop Invert</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/backdrop-opacity">Backdrop Opacity</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/backdrop-saturate">Backdrop Saturate</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/backdrop-sepia">Backdrop Sepia</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Tables</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/border-collapse">Border Collapse</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/border-spacing">Border Spacing</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/table-layout">Table Layout</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/caption-side">Caption Side</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Transitions &amp; Animation</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/transition-property">Transition Property</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/transition-duration">Transition Duration</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/transition-timing-function">Transition Timing Function</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/transition-delay">Transition Delay</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/animation">Animation</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Transforms</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/scale">Scale</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/rotate">Rotate</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/translate">Translate</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/skew">Skew</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/transform-origin">Transform Origin</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Interactivity</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/accent-color">Accent Color</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/appearance">Appearance</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/cursor">Cursor</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/caret-color">Caret Color</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/pointer-events">Pointer Events</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/resize">Resize</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/scroll-behavior">Scroll Behavior</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/scroll-margin">Scroll Margin</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/scroll-padding">Scroll Padding</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/scroll-snap-align">Scroll Snap Align</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/scroll-snap-stop">Scroll Snap Stop</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/scroll-snap-type">Scroll Snap Type</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/touch-action">Touch Action</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/user-select">User Select</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/will-change">Will Change</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">SVG</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/fill">Fill</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/stroke">Stroke</a></li><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/stroke-width">Stroke Width</a></li></ul></li><li class="mt-12 lg:mt-8"><h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Accessibility</h5><ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"><li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/screen-readers">Screen Readers</a></li></ul></li>
+-->
+
+
+<li class="mt-12 lg:mt-8">
+
+
+<h5 class="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200">Official Plugins</h5>
+
+<ul class="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800">
+
+<li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="/docs/typography-plugin">Typography</a></li>
+
+<li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="https://github.com/tailwindlabs/tailwindcss-forms">Forms</a></li>
+
+<li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="https://github.com/tailwindlabs/tailwindcss-aspect-ratio">Aspect Ratio</a></li>
+
+<li><a class="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="https://github.com/tailwindlabs/tailwindcss-container-queries">Container Queries</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</section>
+</section>
+ </main>
+  
+
+  
+  <footer class="bg-dark-gray text-white"> 
+     <section class="max-w-screen-lg text-white container mx-auto py-2 px-12">  
+      <p id="version" class="leading-none mb-2 my-4">&copy;  This work is the intellectual property of Sheridan College. Any further copying and distribution outside of class must be within the copyright law. Posting to commercial sites for profit is prohibited.</p>
+         <p class="text-sm text-gray-100 md:mb-6">
+         <a class="text-white" href="">SYST10049 Web development | Sheridan College</a>
+      </p>     
+    </section> 
+    <div class="container max-w-screen-lg mx-auto  px-8">   
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+          <ul class="text-sm font-medium pb-14 sm:pb-20 grid grid-cols-1 sm:grid-cols-3 gap-y-10">
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Course Material</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Resources</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
+                <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Sheridan College</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
+                 <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                 <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                 <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>                  
+                <li>
+                  <a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a>
+                  <span style="color:gray"><br>Office hours (by appointment)</span>
+                </li>
+                <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>  
+                <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+  </div>
+</footer> 
+ 
+
+<script src="https://cdn.tailwindcss.com/"></script>
+<script>
+  // topnav
+  var topButton = document.getElementById("topnavButton");
+  var topnavList = document.getElementById("topnavList");
+  topButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    topnavList.classList.toggle("hidden");
+    document.getElementById("topnavOpen").classList.toggle("hidden");
+    document.getElementById("topnavClosed").classList.toggle("hidden");
+  });
+</script>
+<script src="../scripts/prism.js"></script>
+<!-- Required popper.js -->
+<script
+  src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+  charset="utf-8"
+></script>
+<script>
+  function openPopover(event, popoverID) {
+    let element = event.target;
+    while (element.nodeName !== "BUTTON") {
+      element = element.parentNode;
+    }
+    var popper = Popper.createPopper(
+      element,
+      document.getElementById(popoverID),
+      {
+        placement: "bottom",
+      }
+    );
+    document.getElementById(popoverID).classList.toggle("hidden");
+  }
+</script>
+</body>
+</html>
