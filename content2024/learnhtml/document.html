@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<title> SYST10049 learn HTML </title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css"/> 
+<link rel="stylesheet" href="../css/prism_coy_dev.css"  />
+<link rel="stylesheet" href="../css/additional.css"/> 
+<style>
+</style>
+</head>
+
+<body>
+  <nav id="navTop" class="w-full z-30 top-0 text-white bg-dark-gray ">
+    <div class="w-full container max-w-screen-lg mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between mt-0 py-2">
+      <div class="md:pl-4">
+        <a class="text-white hover:text-white no-underline hover:no-underline
+        font-bold text-2xl lg:text-4xl rounded-lg hover:bg-nwoods-secondary " href="../">
+          <h1 class="mb-0 p-1 ">SYST10049</h1>
+        </a>
+      </div>
+      <button id="topnavButton" class="rounded-lg sm:hidden focus:outline-none focus:ring" aria-label="Navigation">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path id="topnavOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path id="topnavClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>      
+  
+    </div>
+    <hr class="border-b border-gray-600 opacity-50 my-0 py-0" />
+  </nav>
+    
+  <main class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+      
+    <div id="navSide" class="flex flex-col w-full md:w-40 lg:w-48 text-gray-700 bg-white flex-shrink-0">
+      <div class="flex-shrink-0 px-8 py-4">
+        <button id="navButton" class="rounded-lg md:hidden focus:outline-none focus:ring" aria-label="Navigation">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path id="navOpen" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path id="navClosed" class="hidden" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>   
+        </button>
+      </div>   
+      <nav id="navList" class="min-h-screen hidden md:block sidebar-nav flex-grow px-1 lg:px-4 pb-4 md:pb-0 md:overflow-y-auto break-words">
+
+          <a href="index.html">HTML Markup</a>
+          <a href="standards.html">Standards</a>
+          <a href="accessibility.html">Accessibility</a>
+          <a href="correctness.html">Semantics</a>
+          <a href="elements.html">Elements</a>
+          <a href="attributes.html">Attributes</a>
+          <a class="bg-gray-100 text-gray-900 border-menu" href="document.html">HTML Document</a>
+          <a href="head-section.html">HEAD section</a>
+          <a href="body-section.html">BODY section</a>
+          <a href="dom.html">DOM</a>
+          <a href="content.html">Content Structure</a> 
+          <a href="models.html">Content Models</a>     
+          <a href="textual.html">Textual content</a>
+          <a href="semantics.html">Semantic content</a>
+          <a href="interactive.html">Interactive content</a>
+     
+       
+      </nav>
+    </div>  
+        
+    <section class="pt-4 px-2 md:px-0 lg:px-4 pb-16 w-full overflow-hidden">
+	<h1 class="text-4xl font-medium leading-tight mt-0 mb-2 text-black-600">HTML Document</h1>
+    <h6 class="text-lg font-light leading-relaxed mt-6 mb-4 text-gray-800" title="developer.mozilla.org">HTML Document is a text file containing hypertext markup language, which is interpreted and rendered on the screen by a browser. Various components and concepts are important to understand and keep in mind as you develop web applications. Both web sites and web applications use web pages, or more formally, HTML documents. </h6>
+
+ 
+  
+<section class="col-8 container">
+
+<ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mx-40" id="pills-tabFill" role="tablist">
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#hyperlinks" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Document root</a>
+  </li> 
+    <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">HEAD section</a>
+  </li> 
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">BODY section</a>
+  </li>  
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Document type declaration</a>
+  </li> 
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">code comments</a>
+  </li> 
+</ul> 
+<ul class="nav nav-pills flex flex-col md:flex-row list-none pl-0 mx-40" id="pills-tabFill" role="tablist">
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Fundamental structure</a>
+  </li> 
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Whitespace</a>
+  </li> 
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Entitities &amp; symbols</a>
+  </li> 
+  <li class="nav-item flex-auto text-center my-2 md:mr-2" role="presentation">
+     <a href="#navigation" class=" nav-link w-full block font-medium text-xs leading-tight uppercase rounded px-6 py-3 focus:outline-none focus:ring-0 active">Minimal HTML5 document code</a>
+  </li> 
+</ul>    
+
+
+
+
+<!-- source "http://bajcar.dev.fast.sheridanc.on.ca/project_assets/pdf/HowtoDefineDocumentStructureinHTML5.pdf"  -->
+<div class="my-5">
+  <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="flex items-center justify-center px-2 bg-sher-teal"></div>
+    <div class="block p-4 rounded-lg shadow-lg bg-white w-full">
+        <h4 class="text-2xl font-semibold sher-teal">HTML5 document structure</h4>
+    
+
+        
+        <h5 class="text-lg font-semibold">Document Root</h5> 
+        <p>Each HTML document has a single root element, <code>&lt;html></code>, and is divided into two sections: <code>&lt;head></code> and <code>&lt;body></code>.</p>
+        
+        <h5 class="text-lg font-semibold">Head Section</h5> 	
+        <p>The purpose of the <code>&lt;head></code> section is to describe the document itself. The children of head element include <code>&lt;meta></code> to describe the document, <code>&lt;link></code> to include stylesheet files and other assets, <code>&lt;styles></code> to embed styles, <code>&lt;script></code> to include scripts, and <code>&lt;title></code> in window tab.</p>   
+        
+        <h5 class="text-lg font-semibold">Body Section</h5> 	
+        <p>The purpose of the <code>&lt;body></code> section is to organize content for presentation by marking it up with HTML elements. The body element contains all marked up content that is presented to the user.</p>	
+        
+        <h5 class="text-lg font-semibold">Document type declaration </h5> 	
+        <p>Every HTML document we create should declare its document type (doctype).The doctype must appear at the start of the first line of every HTML5 document to ensure the web browser will "render"(display) the document in "Standards Mode" (following the HTML5 specifications). This identifies which specification of HTML is included so the browser knows how to interpret the code. Keep in mind that code examples you find online may contain older outdated or irrelevant approaches.</p>	
+        <pre class="language-html"><code>
+&lt;!-- The document type declaration tag for all HTML5 documents -->
+&lt;!DOCTYPE html>
+
+&lt;!-- 
+  HTML5 is not a case-sensitive language &mdash; so the document type declaration tag
+  may alternatively be written in any combination of uppercase and lowercase characters.  
+-->
+&lt;!doctype html>
+&lt;!Doctype Html>
+&lt;!DOCTYPE HTML></code></pre>    
+        <p>The choice of capitalization is yours. It is recommended that you follow best practices and adhere consistently to the style used by the project or organization.</p>
+        
+        <h5 class="text-lg font-semibold">Code comments</h5> 
+        <p>Comments can be added at any point within both the head and body sections between a pair of <code>&lt;!--</code> and <code>--></code> tags. Anything that appears between the comment tags is ignored by the browser. </p>
+        
+        <h5 class="text-lg font-semibold">Fundamental structure</h5> 
+        
+        <pre class="language-html"><code>
+&lt;!DOCTYPE html>
+&lt;html>
+    &lt;head>
+        &lt;!-- Data describing the document -->
+    &lt;/head>
+    &lt;/body>
+        &lt;!-- Data content to appear in the browser -->
+    &lt;body>
+&lt;/html></code></pre>  
+
+        <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2"></h4>
+        <h5 class="text-lg font-semibold">Whitespace</h5> 
+        <p class="text-gray-700 text-base mb-4">
+          <strong>Whitespace</strong> is any character or series of characters that represent horizontal or vertical space in typography...does not correspond to a visible mark, but typically does occupy an area on a page.</p>
+          
+        <h4 class="text-gray-900 text-2xl leading-tight font-medium mb-2"></h4>
+        <h5 class="text-lg font-semibold">Entities and symbols</h5> 
+        <p class="text-gray-700 text-base mb-4">
+          Some elements have attributes that are specific to the element. For example, the <code data-toggle="tooltip" data-placement="top" title="Ordered list" data-ref-link="https://www.w3schools.com/tags/tag_ol.asp">&lt;ol></code> element, by default starts with the natural number 1; you can change the starting value with the attribute <code>start</code> and the kind of marker to use with the attribute <code>type</code>. the code <code>&lt;ol start="3" type="a"></code> will produce a list with the first item numbered "c. First item", instead of the default "1. First item".</p>      
+
+    </div>
+  </div>
+</div>
+
+ 
+
+<div class="my-5">
+  <div class="flex w-full mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="flex items-center justify-center px-2 bg-sher-teal"></div>
+    <div class="block p-4 rounded-lg shadow-lg bg-white w-full">
+        <h4 class="text-2xl font-semibold sher-teal">Minimal HTML5 document code</h4>
+        <p class="text-gray-700 text-base mb-4">The current standard includes the following nine (9) lines of code. If a project's requirements necessitate a deviation from the standard, proper documentation is included to describe and justify the non-compliance. A part of maintenance of a projects includes reviews of the current standards and plans to update (or modify)the code to keep it up to date.</p>
+        <pre class="language-html"><code>
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+  &lt;head>
+    &lt;title>Meaningful title&lt;/title>
+    &lt;meta charset="UTF-8">
+  &lt;/head>
+  &lt;body>
+  &lt;/body>
+&lt;html></code></pre> 
+        <p class="blockquote-footer">Read further: <a href="head-section.html" target="_blank"> HEAD Section</a></cite></p>
+    </div>
+  </div>
+</div> 
+
+  
+</section>
+</section>
+</main>
+  
+
+  
+  <footer class="bg-dark-gray text-white"> 
+     <section class="max-w-screen-lg text-white container mx-auto py-2 px-12">  
+      <p id="version" class="leading-none mb-2 my-4">&copy;  This work is the intellectual property of Sheridan College. Any further copying and distribution outside of class must be within the copyright law. Posting to commercial sites for profit is prohibited.</p>
+         <p class="text-sm text-gray-100 md:mb-6">
+         <a class="text-white" href="">SYST10049 Web development | Sheridan College</a>
+      </p>     
+    </section> 
+    <div class="container max-w-screen-lg mx-auto  px-8">   
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
+          <ul class="text-sm font-medium pb-14 sm:pb-20 grid grid-cols-1 sm:grid-cols-3 gap-y-10">
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Course Material</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
+                <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Resources</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
+                <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
+              </ul>
+            </li>
+            <li class="list-none row-span-2">
+              <h2 class="text-base font-semibold tracking-wide">Sheridan College</h2>
+              <ul class="list-none space-y-4 md:space-y-1 px-0">
+                <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
+                 <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                 <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                 <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>                  
+                <li>
+                  <a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a>
+                  <span style="color:gray"><br>Office hours (by appointment)</span>
+                </li>
+                <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>  
+                <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+  </div>
+</footer> 
+ 
+</body>
+<script src="https://cdn.tailwindcss.com/"></script>
+<script type="text/javascript" src="../scripts/index.min.js"></script>
+<script>
+  // topnav
+  var topButton = document.getElementById("topnavButton");
+  var topnavList = document.getElementById("topnavList");
+  topButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    topnavList.classList.toggle("hidden");
+    document.getElementById("topnavOpen").classList.toggle("hidden");
+    document.getElementById("topnavClosed").classList.toggle("hidden");
+  });
+</script>
+<script src="../scripts/prism.js"></script>
+<!-- Required popper.js -->
+<script
+  src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+  charset="utf-8"
+></script>
+<script>
+  function openPopover(event, popoverID) {
+    let element = event.target;
+    while (element.nodeName !== "BUTTON") {
+      element = element.parentNode;
+    }
+    var popper = Popper.createPopper(
+      element,
+      document.getElementById(popoverID),
+      {
+        placement: "bottom",
+      }
+    );
+    document.getElementById(popoverID).classList.toggle("hidden");
+  }
+</body>
+</html>

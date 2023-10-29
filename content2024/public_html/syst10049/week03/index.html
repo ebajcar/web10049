@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Response letter to PhD student application</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- DONE. The author of the letter should be specified in an appropriate meta tag. -->
+    <meta name="author" content="Dr. Eleanor Gaye">
+    <meta name="description" 
+          content="The letter is a response from a research fellow 
+                   to a prospective PhD student concerning their 
+                   application to the university.">   
+<!--
+Author:       Ellen Bajcar
+Program:      index.html
+Date:         [date file created]
+Updated:      [date last updated] 
+Version:      0.0 (format major.minor updates)
+Purpose:      markup letter that needs to be hosted on a
+              university intranet. The letter is a response from a research fellow to a prospective PhD student concerning their application to the university.
+Citations:
+              https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter
+Description:  marking up a letter @ MDN
+
+Block/structural semantics:
+***************************
+DONE. You should structure the overall document with 
+      an appropriate structure including doctype, and 
+      <html>, <head> and <body> elements.
+
+TODO. The letter in general should be marked up with a structure of paragraphs and headings, 
+      with the exception of the below points. 
+
+TODO. There is one top level heading (the "Re:" line) 
+      and three second level headings.
+
+TODO. The semester start dates, study subjects and exotic 
+      dances should be marked up using an appropriate list type.
+
+TODO. The two addresses can just be put inside paragraphs. 
+      The <address> element is not appropriate for them — think about why. 
+      In addition, each line of the addresses should sit on a new line, but not be in 
+      a new paragraph. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address
+
+Inline semantics:
+*****************
+TODO. The names of the sender and receiver (and "Tel" and "Email") 
+      should be marked up with strong importance.
+
+TODO. The four dates in the document should be given appropriate 
+      elements containing machine-readable dates.
+
+TODO. The first address and first date in the letter should be given a class attribute value 
+      of "sender-column"; the CSS you'll add later will then cause these to be right aligned, 
+      as should be the case in a classic letter layout.
+
+TODO: The five acronyms/abbreviations in the main text 
+      of the letter should be marked up to provide expansions of each acronym/abbreviation.
+
+TODO. The six sub/superscripts should be marked up appropriately
+      — in the chemical formulae,  and the numbers 103 and 104 (they should be 10 to the power 
+      or 3 and 4, respectively).
+
+TODO: Try to mark up at least two appropriate words in the text with strong importance/emphasis.
+
+TODO: There are two places where a hyperlink should be added; add appropriate links with titles. 
+      For the location that the links point to, just use http://example.com.
+
+TODO. The university motto quote and citation should be marked up with appropriate elements.
+
+The head of the document:
+*************************
+
+DONE. The character set of the document should be specified 
+      as utf-8 using an appropriate meta tag.
+
+DONE. The author of the letter should be specified in an appropriate meta tag.
+
+IGNORE FOR NOW
+**************
+    The provided CSS should be included inside an appropriate tag.
+-->	
+</head>
+<body>
+    <!-- 
+    The two addresses are part of contact information; place all contact information inside ADDRESS element.
+    Each line of the addresses should sit on a new line, but not be in a new paragraph.
+    The names of the sender and receiver (and "Tel" and "Email") should be marked up with strong importance.
+    -->
+    <address class="sender-column">
+        <strong>Dr. Eleanor Gaye</strong><br>
+        Awesome Science faculty<br>
+        University of Awesome<br>
+        Bobtown, CA 99999,<br>
+        USA<br>
+        <strong>Tel</strong>: 123-456-7890<br>
+        <strong>Email</strong>: no_reply@example.com
+    </address>
+    <!--
+    The first address (above) and first date (below) in the letter should be given a class attribute value of "sender-column";
+    -->
+    <p class="sender-column"><time datetime="2016-01-20">20 January 2016</time></p>
+
+    <address>
+        <strong>Miss Eileen Dover</strong><br>
+        4321 Cliff Top Edge<br>
+        Dover, CT9 XXX<br>
+        UK
+    </address>
+
+    <!-- There is one top level heading (the "Re:" line) and three second level headings. -->
+    <h1>Re: Eileen Dover university application</h1>
+
+    <p>Dear Eileen,</p>
+
+    <p>Thank you for your recent application to join us at the University of Awesome's science faculty to study as part of your <abbr>PhD</abbr> next year. I will answer your questions one by one, in the following sections.</p>
+
+    <!-- There is one top level heading (the "Re:" line) and three second level headings. (1 of 3) -->
+    <h2>Starting dates</h2>
+
+    <p>We are happy to accommodate you starting your study with us at any time, however it would suit us better if you could start at the beginning of a semester; the start dates for each one are as follows:</p>
+
+    <!-- The semester start dates, study subjects and exotic dances should be marked up using an appropriate list type.
+    Citation: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#Marking_up_times_and_dates
+    <time datetime="2016-01-20">20 January 2016</time>
+    -->
+    <ul>
+        <li>First semester: <time datetime="2016-09-09">9 September 2016</time></li>
+        <li>Second semester: <time datetime="2017-01-15">15 January 2017</time></li>
+        <li>Third semester: <time datetime="2017-05-02">2 May 2017</time></li>
+    </ul>
+  
+    <p>Please let me know if this is ok, and if so which start date you would prefer.</p>
+
+    <p>You can find more information about important university dates on our website.</p>
+
+    <!-- There is one top level heading (the "Re:" line) and three second level headings. (2 of 3) -->
+    <h2>Subjects of study</h2>
+
+    <p>At the Awesome Science Faculty, we have a pretty open-minded research facility — as long as the subjects fall somewhere in the realm of science and technology. You seem like an intelligent, dedicated researcher, and just the kind of person we'd like to have on our team. Saying that, of the ideas you submitted we were most intrigued by are as follows, in order of priority:</p>
+
+    <!-- The semester start dates, study subjects and exotic dances should be marked up using an appropriate list type.
+    DONE: markup as ordered list (ol) to show priority 
+    
+    The six sub/superscripts should be marked up appropriately — in the chemical formulae,  and the numbers 103 and 104 (they should be 10 to the power of 3 and 4, respectively).
+    -->
+    <ol>
+        <li>Turning H<sub>2</sub>O into wine, and the health benefits of Resveratrol (C<sub>14</sub>H<sub>12</sub>O<sub>3</sub>.)</li>
+        
+        <li>Measuring the effect on performance of funk bassplayers at temperatures exceeding 30&deg;<abbr title="Celsius">C</abbr> (86&deg;<abbr title="Fahrenheit">F</abbr>), when the audience size exponentially increases (effect of 3 &times; 10<sup>3</sup> increasing to 3 &times; 10<sup>4</sup>.)</li>
+        
+        <li>
+            <abbr title="Hypertext Markup Language">HTML</abbr> and 
+            <abbr title="Cascading Style Sheets">CSS</abbr> 
+            constructs for representing musical scores.
+        </li>
+    </ol>
+    
+    <p>So please can you provide more information on each of these subjects, including how long you'd expect the research to take, required staff and other resources, and anything else you think we'd need to know? Thanks.</p>
+
+    <!-- There is one top level heading (the "Re:" line) and three second level headings. (3 of 3) -->
+    <h2>Exotic dance moves</h2>
+
+    <p>Yes, you are right! As part of my post-doctorate work, I did study exotic tribal dances. To answer your question, my favourite dances are as follows, with definitions:</p>
+
+    <!-- The semester start dates, study subjects and exotic dances should be marked up using an appropriate list type.
+    TODO: mark up as definition list (dl) with definition terms (dt) and definition description (dd)-->
+    <dl>
+        <dt>Polynesian chicken dance</dt>
+        <dd>A little known but very influential dance dating back as far as 300BC, a whole village would dance around in a circle like chickens, to encourage their livestock to be "fruitful".</dd>
+
+        <dt>Icelandic brownian shuffle</dt>
+        <dd>Before the Icelanders developed fire as a means of getting warm, they used to practice this dance, which involved huddling close together in a circle on the floor, and shuffling their bodies around in imperceptibly tiny, very rapid movements. One of my fellow students used to say that he thought this dance inspired modern styles such as Twerking.</dd>
+
+        <dt>Arctic robot dance</dt>
+        <dd>An interesting example of historic misinformation, English explorers in the 1960s believed to have discovered a new dance style characterized by "robotic", stilted movements, being practiced by inhabitants of Northern Alaska and Canada. Later on however it was discovered that they were just moving like this because they were really cold.</dd>
+    </dl>
+    <p>For more of my research, see my exotic dance research page.</p>
+
+    <p>Yours sincerely,</p>
+    <p>Dr Eleanor Gaye</p>
+    <!-- The five acronyms/abbreviations in the main text of the letter should be marked
+    up to provide expansions of each acronym/abbreviation. 
+    Citation:
+    https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#Abbreviations
+     <abbr> — this is used to wrap around an abbreviation or acronym, and provide a full expansion of the term (included inside a title attribute.)
+     
+     Note: There is another element, <acronym>, which basically does the same thing as <abbr>, and was intended specifically for acronyms rather than abbreviations. This however has fallen into disuse — it wasn't supported in browsers as well as <abbr>, and has such a similar function that it was considered pointless to have both. Just use <abbr> instead. 
+
+    Esq - suffix, abbreviation for Esquire 
+            (https://en.wikipedia.org/wiki/Esquire)
+    BC - acronym for Before Christ 
+            (https://acronyms.thefreedictionary.com/BC)
+    Re - abbreviation for Regarding
+            (https://preply.com/en/question/abbreviation-for-regarding)
+    HTML - acronym for HyperText Markup Language
+            (https://www.acronymfinder.com/HTML.html)
+            <abbr title="Hypertext Markup Language">HTML</abbr>
+    CSS - acronym for Cascading Style Sheets
+            (https://www.atinternet.com/en/glossary/css/)
+    PhD - acronym for Philosophiae Doctor (doctor of philosophy) 
+            (https://acronyms.thefreedictionary.com/PhD)
+    C - acronym for Celsius (can also stand for Carbon, and many others)
+    F - acronym for Fahrenheit (units of measurement)
+            (https://www.allacronyms.com/units_of_measurement/abbreviations)
+    
+    In the main body of the letter: BC, C, F, HTML, CSS.
+    -->
+    <p>University of Awesome motto: 
+       <q>Be awesome to each other.</q> 
+       --&nbsp;<cite>The memoirs of Bill S Preston,&nbsp;<abbr title="Esquire">Esq</abbr></cite>
+    </p>
+    <!--
+    Citation: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#Quotations
+     If a section of block level content (be it a paragraph, multiple paragraphs, a list, etc.) is quoted from somewhere else, you should wrap it inside a <blockquote> element to signify this, and include a URL pointing to the source of the quote inside a cite attribute.
+     Inline quotations work in exactly the same way, except that they use the <q> element. 
+     The content of the cite attribute sounds useful, but unfortunately browsers, screenreaders, etc. don't really do much with it. There is no way to get the browser to display the contents of cite, without writing your own solution using JavaScript or CSS. If you want to make the source of the quotation available on the page you need to make it available in the text via a link or some other appropriate way.
+     There is a <cite> element, but this is meant to contain the title of the resource being quoted, e.g. the name of the book. There is no reason however why you couldn't link the text inside <cite> to the quote source in some way:
+      <p>According to the 
+        <a href="#"><cite>MDN blockquote page</cite></a>:
+      </p>
+    -->
+</body>
+</html>
