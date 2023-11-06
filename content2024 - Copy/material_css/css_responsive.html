@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Course Material</title>
+    <link rel="stylesheet" href="css/missing-css.css">
+	<link href="https://fonts.bunny.net/css?family=source-sans-3:400,700|m-plus-code-latin:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/prism-coy-23.css">
+    <script src="css/prism-coy-23.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+	<style>
+	</style>
+</head>
+<body>
+	<div class="sidebar-layout fullscreen">
+      <header>
+        <div class="<h1>">SYST10049</div>
+        <nav>
+            <ul role="list">
+                                    
+                <li class="space thisone"><a href="index.html">Styling for presentation</a></li> 
+  
+  
+                
+                  
+            </ul>            
+        </nav>
+      </header>
+    
+
+      <div> <!-- body container for main and footer -->
+        <main>
+            <nav class="breadcrumbs" aria-label="Breadcrumbs">
+                <ol>
+                    <li><a href="index.html"  class="allcaps">Learn CSS</a></li>
+                    <li><a href="#" aria-current="page">Responsive design and user experiences</a></li>
+                </ol>
+            </nav>        
+
+ 
+            
+ 
+<!--  -->
+<section id="#e01">   
+<!--  
+<h6 title="Review HTML5 and web development">Review <br>Standards, Semantic Correctness, and Accessibility (Learn HTML5) and <br>Planning and designing, Progressive enhancement (Web development).</h6>
+-->
+
+<!-- Responsive design  -->
+
+    <h3>At-rules</h3>
+
+    <chip>| @import | <strong>@media</strong> | <del>@keyframes</del> | @font-face | @charset |</chip>
+    
+    <p>At-rules are all different, but they have a basic structure in common. They start with an "@" symbol, followed by their name as a CSS keyword. Some at-rules are simple statements, with their name followed by more CSS values to specify their behavior, and finally ended by a semicolon. Others are blocks; they can have CSS values following their name, but they end with a {}-wrapped block, similar to a qualified rule. Even the contents of these blocks are specific to the given at-rule: sometimes they contain a sequence of declarations, like a qualified rule; other times, they may contain additional blocks, or at-rules, or other structures altogether.</p>
+    <p>Read further  <a href="https://www.w3.org/TR/css-syntax-3/#syntax-description" target="_blank"> At-rules (W3C specification)	</a>
+    </p>
+
+	
+
+
+
+    <dl>
+      <dt>Media-specific style sheets: the @media rule</dt>
+        <dd>The <code>@media</code> at-rule begins with a media type and a list of optional media queries. Its block contains entire rules, which are only applied when the @media's conditions are fulfilled.
+        </dd>
+        <dd>
+        <pre class="language-css">
+        <code>@media print {
+    body {  
+        font-size: 10pt 
+    }
+}</code></pre>
+
+        <p>A media type is a broad category of user-agent devices on which a document may be displayed. The original set of media types were defined in HTML4, for the media attribute on &lt;link> elements.</p>
+
+        Read further <a href="https://www.w3.org/TR/mediaqueries-4/#media-type" target="_blank"> media types: all, print, speech, screen.</a>
+        </dd>
+    </dl>
+
+  
+
+    <dl>
+        <dt>Viewport</dt>
+        <dd>The viewport is the user's visible area of a web page. HTML5 introduced a method to let web designers take control over the viewport, through the &lt;meta> tag. You should include the following &lt;meta> viewport element in all your web pages:</dd>
+        <dd>
+            <pre class="language-html">
+            <code>&lt;meta name="viewport" content="width=device-width,initial-scale=1.0">
+            </code></pre>      
+
+            Read further  <a href="https://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank"> https://www.w3schools.com/css/css_rwd_viewport.asp	</a>    
+        </dd>
+    </dl>
+
+  
+ </section> 
+        
+
+        
+
+        </main>
+
+
+        <footer>
+            <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2023 &copy; Ellen Bajcar et al</a></address> 
+            <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+            <div style="margin: 0 0 10px 0">&mdash;</div>
+            <ul class="f-switch" role="list">
+                <li>
+                  <h2>Course Material</h2>
+                  <ul>
+                    <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                    <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                    <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                    <li><a href="https://code.visualstudio.com/download">Visual Studio Code editor</a></li>  
+                    <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                    <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                    <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+                  </ul>
+                </li>
+                <li>
+                  <h2>Resources</h2>
+                  <ul>
+                    <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                    <li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative (WAI)</a> </li>
+                    <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a> </li>  
+                    <li><a href="https://www.w3.org/TR/UAAG20/">UAAG 2.0</a> </li>                     
+                   
+                    <li><a href="https://www.webfx.com/blog/web-design/progressive-enhancement/">Progressive enhancement (PE)</a> </li>                     
+                  </ul>
+                </li>
+                <li>
+                  <h2>Sheridan College</h2>
+                  <ul>
+                    <li><a href="https://www.sheridancollege.ca/">Davis | HMC | Trafalgar</a></li>
+                    <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>
+                    <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                    <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                    <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>  
+                    <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </footer>
+     
+    
+      </div> <!-- body container for main and footer -->
+</div> <!-- sidebar -->
+
+	
+
+</body></html>

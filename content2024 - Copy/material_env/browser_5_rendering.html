@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Web browser - 2. Fetching resources</title>
+    <link rel="stylesheet" href="css/missing-css.css">
+	<link href="https://fonts.bunny.net/css?family=source-sans-3:400,700|m-plus-code-latin:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/prism-coy-23.css">
+    <script src="css/prism-coy-23.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+	<style>
+dd {
+  padding-top: 10px;
+  
+} 
+	</style>
+</head>
+<body>
+
+
+      <div> <!-- body container for main and footer -->
+
+        <header class="navbar" style="height:64px;" >
+            <nav class="contents">
+              <ul role="list">
+                <li><a href="browser_1_navigation.html">Navigation</a></li>
+                <li><a href="browser_2_fetch_resources.html">Fetching resources</a></li>
+                <li><a href="browser_3_parse_html_css.html">Parsing HTML and CSS</a></li>
+                <li><a href="browser_4_execute_javascript.html">Executing JS</a></li>
+                <li><a  aria-current="page" href="browser_5_rendering.html">Rendering</a></li>
+              </ul>
+            </nav>            
+        </header>       
+            
+                   
+         <main>           
+            <nav class="breadcrumbs" aria-label="Breadcrumbs">
+                <ol>
+                    <li  class="allcaps">How web browsers work </li>
+                    <li><a href="#" aria-current="page">Rendering</a></li>
+                </ol>
+            </nav> 
+<section id=#e01">   
+    <dl>
+        
+        <p>The browser uses the DOM tree and CSSOM to render the page.</p>
+
+        <dt style="padding-top:10px;">1. Render tree construction</dt>
+        <dd>The first step is to construct the render tree. The render tree is a subset of the DOM tree that contains only the elements that are visible on the page.</dd>
+    
+        <dt style="padding-top:10px;">2. Layout</dt>
+        <dd>The next step is to layout the render tree. This is done by calculating the exact size & position of each element in the render tree.</dd>
+        <dd>This step happens every time we change something in the DOM that affects the layout of the page, even partially.</dd>  
+        <dd>Examples of situations when the positions of the elements are recalculated are:
+             <ol>
+                <li>Adding or deleting elements from the DOM</li>
+                <li>Resizing the browser window</li>
+                <li>Changing the width, height, or the position of an element</li>      
+            </ol>          
+        </dd>   
+        <dd>
+            <figure>
+                <img src="img/f9cbipqg3fck4xkttvx7.jpg" alt="f9cbipqg3fck4xkttvx7.png">
+            </figure>  
+        </dd>
+        
+         <dt style="padding-top:10px;">3. Painting</dt>
+        <dd>Next, the browser decides which nodes need to be visible and calculates their position in the viewport, it's time to paint them (render the pixels) on the screen. This phase is also known as the rasterization phase, where the browser converts each element calculated in the layout phase to actual pixels on the screen.</dd>  
+        <dd>Just like the layout phase, this phase happens every time we change the appearance of an element in the DOM, even partially.</dd>
+        <dd>Examples of situations when the positions of the elements are recalculated are:
+             <ol>
+                <li>Changing the outline of an element</li>
+                <li>Changing the opacity or visibility of an element</li>
+                <li>Changing the background color of an element</li>      
+            </ol>          
+        </dd> 
+
+        <dt style="padding-top:10px;">4. Layering and Compositing</dt>
+        <dd>The final step is to composite the layers. This is done by the browser to optimize the rendering process.</dd>
+        <dd><blockquote><strong>Compositing</strong> is a technique to separate parts of a page into layers, painting them separately and compositing as a page in a separate thread called the compositor thread. When sections of the document are drawn in different layers, overlapping each other, compositing is necessary to ensure they are drawn to the screen in the right order and the content is rendered correctly</blockquote><dd>
+        </dl>
+        
+  <div class="box warn">
+    <strong class="block titlebar">Important!</strong>
+    <strong>DOM updates</strong>, specifically layout and paint, are extremely expensive operations, which can be noticed significantly on low-end devices. It is important to <strong>minimize the number of times it is triggered.</strong>
+  </div>        
+        
+ 
+        
+        <footer>Source: https://dev.to/ruppysuppy/deep-dive-into-how-web-browsers-work-with-illustrations-249b</footer>
+</section>
+
+        </main>
+
+
+        <footer>
+            <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2023 &copy; Ellen Bajcar et al</a></address> 
+            <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+            <div style="margin: 0 0 10px 0">&mdash;</div>
+        </footer>
+      </div> <!-- body container for main and footer -->
+
+
+	
+
+</body></html>
