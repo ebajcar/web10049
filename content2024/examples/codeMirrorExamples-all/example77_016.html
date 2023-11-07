@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Example77_016</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="css/codeMirror.css">
+<!--[if lt IE 8]>
+<style>
+#textareacontainer, #iframecontainer {width:48%;}
+#container {height:500px;}
+#textarea, #iframe {width:90%;height:450px;}
+#textareaCode, #iframeResult {height:450px;}
+.stack {display:none;}
+</style>
+<![endif]-->
+</head>
+<body>
+
+<div class="trytopnav">
+	<div class="w3-bar w3-light-grey" style="border-top:1px solid #f1f1f1;overflow:auto">
+	  <a href="javascript:void(0);" onclick="restack(currentStack)" title="Change Orientation" class="w3-button w3-bar-item topnav-icons  fas fa-sync" style="font-size:28px;color:#999999;margin-top:-2px"></a>
+	  <button class="w3-button w3-bar-item w3-indigo w3-hover-white w3-hover-text-indigo" onclick="submitTryit(1)">Run &raquo;</button>
+	  <span class="w3-right w3-hide-medium w3-hide-small" style="padding:8px 8px 8px 8px;display:block"></span>
+	  <span class="w3-right w3-hide-small" style="padding:8px 0;display:block;float:right;"><span id="framesize"></span></span>
+	</div>
+</div>
+<div id="shield"></div>
+<a href="javascript:void(0)" id="dragbar"></a>
+
+<div id="container">
+<div id="navbarDropMenu" class="w3-dropdown-content w3-bar-block w3-border" style="z-index:5">
+<span onclick="openMenu()" class="w3-button w3-display-topright w3-transparent w3-hover-dark-grey" title="Close Menu" style="font-weight:bold;padding-top:10px;padding-bottom:11px;">&times;</span>
+  <div class="w3-bar-block">
+    <a class="w3-bar-item w3-button" href='javascript:void(0);' title="Change Orientaton" onclick="openMenu();restack(currentStack)"><i class="fa fa-rotate" style="font-size:26px;margin-left:-4px;margin-right:8px"></i><span style="position:relative;top:-4px;left:2px;">Change Orientation</span></a>
+    <a class="w3-bar-item w3-button" href="javascript:void(0);" title="Save" onclick="openMenu();click_savebtn()"><i class="fa fa-save" style="font-size:26px;margin-right:10px;"></i><span style="position:relative;top:-4px;left:2px;">Save Code</span></a>
+    
+    <a class="w3-bar-item w3-button" href='javascript:void(0);' id="loadGDriveBtn" title="Load from Google Drive" onclick="openMenu();click_google_loadbtn()"><img src="" alt="Load from Google Drive" title="Load from Google Drive" style="margin-right:10px;width:24px;"><span style="position:relative;left:1px;">Load from Google Drive</span></a>
+  </div>
+  <footer class="w3-container w3-small w3-light-gray">
+  <p>Web Programming &copy; Sheridan College</p>
+  </footer>
+</div>
+<div id="menuOverlay" class="w3-overlay w3-transparent" style="cursor:pointer;z-index:4"></div>
+  <div id="textareacontainer">
+    <div id="textarea">
+      <div id="textareawrapper">
+	  
+<!--
+	code area 
+	starts here
+	
+--> 
+<textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example77_016</title>
+  <meta charset="utf-8">
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+ 		<canvas id='canvas' width='600' height='400'>canvas not supported</canvas>
+	<script>
+      var canvsc = document.getElementById('canvas');
+      var ctx = canvsc.getContext('2d');
+      var centerX = canvsc.width / 2;
+      var centerY = canvsc.height / 2;
+	  var h = centerY;
+      var radius = 90;
+      var startAngle = 1.1 * Math.PI;
+      var endAngle = 1.9 * Math.PI;
+	  
+	 // http://www.dbp-consulting.com/tutorials/canvas/CanvasArrow.html
+	 
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+      ctx.fillStyle = 'lightblue';
+      ctx.fill();
+
+	  
+	  ctx.beginPath();
+      ctx.arc(centerX, centerY, radius, startAngle, endAngle, false);	    
+      ctx.lineWidth = 15;
+      ctx.strokeStyle = 'black';
+      ctx.stroke();	  
+	  
+	ctx.beginPath();
+	ctx.moveTo(centerX-100,centerY);
+	ctx.lineTo(centerX+100,centerY);
+	ctx.lineWidth = 0.5;
+	ctx.strokeStyle = 'gray';
+	ctx.stroke();
+	
+	ctx.beginPath();
+	ctx.moveTo(centerX,centerY-100);
+	ctx.lineTo(centerX,centerY+100);
+	ctx.lineWidth = 0.5;
+	ctx.stroke();
+	
+	  ctx.beginPath();
+      ctx.arc(centerX, centerY, 5, 0, 2 * Math.PI, false);
+      ctx.fillStyle = 'black';
+      ctx.fill();
+	  
+	ctx.beginPath();
+
+	ctx.moveTo(centerX+50,centerY+65);
+	ctx.lineTo(centerX +10,centerY+10);
+	ctx.lineTo(centerX+20,centerY+16);
+	ctx.moveTo(centerX +10,centerY+10);
+	ctx.lineTo(centerX+12,centerY+23);
+	
+	//ctx.moveTo(150,220);  // starting angle
+	//ctx.lineTo(200,260);
+	//ctx.lineTo(190,258);
+	//ctx.moveTo(200,260);
+	//ctx.lineTo(197,250);
+	
+	ctx.moveTo(150,h-80);  // starting angle
+	ctx.lineTo(200,h-40);
+	ctx.lineTo(190,h-42);
+	ctx.moveTo(200,h-40);
+	ctx.lineTo(197,h-50);
+	
+	//ctx.moveTo(450,220);  // ending angle
+	//ctx.lineTo(400,260);
+	//ctx.lineTo(410,258);
+	//ctx.moveTo(400,260);
+	//ctx.lineTo(404,250);
+
+	ctx.moveTo(450,h-80);  // ending angle
+	ctx.lineTo(400,h-40);
+	ctx.lineTo(410,h-42);
+	ctx.moveTo(400,h-40);
+	ctx.lineTo(404,h-50);
+	
+	ctx.strokeStyle = "red"
+	ctx.lineWidth = 0.5;
+	ctx.stroke();  
+	
+	ctx.font = 'italic 12pt Calibri';
+    ctx.fillText('Center Point', 330, h+80);
+	ctx.fillText('Starting Angle', 100, h-90);
+	ctx.fillText('Ending Angle', 430, h-90);
+	ctx.font = 'normal 12pt Calibri';
+	ctx.fillText('0 PI', 405, h+6);
+	ctx.fillText('1 PI', 170, h+6);
+	ctx.fillText('1.5 PI', 280, h-105);
+	ctx.fillText('0.5 PI', 280, h+115);
+	ctx.translate(295,h-15);
+	ctx.rotate(-0.5*Math.PI);
+	ctx.fillText('radius' , 0, 0);
+	//ctx.restore();
+	
+	
+</script>
+ 
+	</body>
+</html>
+
+</textarea>
+<!--
+	end of code area here
+	end of code area here
+	end of code area here
+	
+--> 
+        <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
+          <input type="hidden" name="code" id="code" />
+        </form>
+       </div>
+    </div>
+  </div>
+  <div id="iframecontainer">
+    <div id="iframe">
+      <div id="iframewrapper"></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="my_w3editor.js"></script>
+
+</body>
+</html>
