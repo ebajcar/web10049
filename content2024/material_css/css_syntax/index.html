@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a aria-current="page" href="index.html">CSS Syntax</a></li>
+        <li><a href="css_rules.html">CSS Rules</a></li>
+        <li><a href="css_location.html">Location</a></li> 
+        <li><a href="css_cascade.html">The Cascade</a></li>       
+        <li><a href="css_specificity.html">Specificity</a></li>
+               
+      </ul>
+    </nav>            
+</header>       
+            
+                                   
+<main>  
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">Current Topic</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+
+    
+    
+    <section id=#e01">   
+        <h2>Page1 <small>How about a subtitle?</small></h2>
+<!-- Syntax and Structure  -->
+
+    <h3>Syntax and Structure</h3>
+    <p>CSS Level 3 delivers a wide range of styles and effects, enhancing a web app without sacrificing semantic structure or performance .
+    </p>  
+<pre class="language-css"><code>selectors {    /* declaration start (open brace) */
+   property:value;  /* each ends with a semi-colon */
+   property:value;  
+}    /* declaration end (close brace) */</code></pre>
+	<p><strong>Selector</strong> specifies the target of styling.<br>
+	   <strong>Declaration</strong> specifies the property and value to be applied to the selector.</p>
+       
+       
+
+    <h3>Selector</h3>      	
+	<p>A <strong>selector</strong> represents a particular pattern of element(s) in a <strong>tree structure</strong>. The term selector can refer to a <em>simple selector</em>, <em>compound selector</em>, <em>complex selector</em>, or <em>selector list</em>. The subject of a selector is any element that selector is defined to be about; that is, any element matching that selector. A list of simple/compound/complex selectors is a comma-separated list of simple, compound, or complex selectors. This is also called just a <strong>selector list</strong>.</p>	
+
+    Explore further <a href="https://www.w3.org/TR/selectors-4/#syntax" target="_blank"> Selector syntax and structure (W3C specification)	</a>
+
+       
+
+    <h3>Declaration</h3>  
+  <p>Declarations are of the form "property-name: values". There are many properties and associated concepts, including:</p>
+	<ul class="list-disc list-inside">
+		<li>Specificity, inheritance, and the Cascade</li>
+		<li>Box model and margin collapse</li>
+		<li>The containing block</li>
+		<li>Stacking and block-formatting contexts</li>
+		<li>Initial, computed, used, and actual values</li>
+		<li>CSS shorthand properties</li>	
+	</ul>      
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

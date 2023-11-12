@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">CSS Syntax</a></li>
+        <li><a href="css_rules.html">CSS Rules</a></li>
+        <li><a aria-current="page" href="css_location.html">Location</a></li> 
+        <li><a href="css_cascade.html">The Cascade</a></li>       
+        <li><a href="css_specificity.html">Specificity</a></li>
+      </ul>
+    </nav>            
+</header>         
+                              
+
+<main> 
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">Current Topic</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">  
+        <h2>CSS Location <small>Where do we place CSS rules?</small></h2>
+        <p>To connect a set of CSS rules to an HTML document, use one of the following: external, internal, or inline.</p>  
+
+        <dl>
+            <dt>External Style Sheets</dt>
+            <dd>
+                <figure>  
+                    <pre class="language-html"><code>
+        &lt;link rel="stylesheet" href="css/style.css">
+&lt;/head></code></pre>
+                    <figcaption class="text-black"><strong>Scope</strong> is web-app wide, can be used on multiple pages.</figcaption>
+                </figure>
+            </dd>
+        </dl>
+
+
+        <dl>
+            <dt>Internal (Embedded) Styles</dt>
+            <dd>
+                <figure>
+                    <pre class="language-html"><code>
+&lt;style> 
+selector {
+  property: value;
+  property: value;
+} 
+selectors {
+  property: value;
+} 
+&lt;/style> 
+&lt;/head></code></pre>
+                    <figcaption class="text-black"><strong>Scope</strong> is the HTML document, can be used on multiple times of the page.</figcaption>
+                </figure>
+            </dd>
+        </dl>
+
+
+        <dl>
+            <dt>Inline Styles</dt>
+            <dd>
+                <figure>
+                    <pre class="language-html"><code>
+                    &lt;tag style="property:value;property:value;"> content &lt;/tag></code></pre>
+                    <figcaption class="text-black"><strong>Scope</strong> is the element containing the attribute, cannot be reused, good only for that one element.</figcaption>
+                </figure>
+            </dd>
+            <dd>Using the inline method outside of JavaScript violates responsive design and separation of languages (duties!) Each declaration would have to be applied to every element that needs the property value changed within the page.</dd>
+        </dl>
+
+
+<dt>
+    <dt>Normal flow (defaults)</dt>
+    <dd>Each browser sets the properties to default values. Refer to individual vendor's documentation and to W3C specifications; vendor's conform to industry standards, but will have variations. It is important to understand how browser applications construct the DOM	and CSSOM to gain insight how CSS rules are applied.</dd>
+    <dd>
+        <a style="cursor:pointer;"  target="_blank" role="button" 
+            href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured">
+            Read more&mdash; How CSS is structured (MDN)
+        </a>
+    </dd>
+</dt>      
+        
+        
+ <!--  CSS Location -->
+
+    
+
+<details>
+    <summary>Moving from inline to internal stylesheets</summary>	
+
+  <p>Limit the use of inline style only to temporary usage during development and move to internal styles quickly. You can create a class for the element, replace the style attribute with the class attribute, and move all declarations to the newly-created class.</p>
+  
+<figure>
+<pre class="language-html"><code>&lt;!-- Let's say you developed the following 
+     somewhere in the body section of your document-->
+&lt;p style="color:yellow;background-color:navy;"> content &lt;/p>
+
+&lt;!-- to convert it to internal, add a new class in the style element 
+     inside the head section of the document -->
+&lt;style>
+.yellow-text {
+  color: yellow;
+  background-color: navy;
+}
+&lt;/style>
+&lt;/head>
+&lt;!-- now replace the style attribute with the class attribute -->
+&lt;p class="yellow-text"> content &lt;/p></code></pre>
+<figcaption>Convert inline styles to internal styles.</figcaption>
+</figure>
+</details>
+  
+
+<details>
+    <summary>Moving from internal to external stylesheets</summary>	
+  
+	<p>Using external stylesheets allows you to make all pages look the same and to reduce duplication of the same code from file to file. To move from internal (<em>scope</em> is the document) to external (<em>scope</em> is the web app), follow the guidelines:</p>
+  
+  <ul class="list-inside list-decimal">
+    <li>Create an empty external file with <code>.css</code> extension.</li>
+    <li>Cut and paste CSS rules from the <code>&lt;style></code> element to the newly created file.
+      <ul class="list-disc list-inside px-4">
+      <li>You can create multiple files to organize the CSS code.</li>
+      <li>The CSS file contains only CSS rules.</li>
+      <li>Include the same header (prologue) in each CSS file as the HTML document, with appropriate adjustements.</li>
+      </ul>
+    </li>
+    <li>Save the new file in the project's <code>css</code> sub-directory.
+      <ul class="list-disc list-inside px-4">
+      <li>All external stylesheets have the extension <code>.css</code>.</li>
+      <li>All external stylesheets are stored in the <code>css</code> sub-directory.</li>
+      </ul>
+    </li>
+    <li>To create the link to the external file, replace the <code>&lt;style></code> element with <code>&lt;link></code> element to link in the external style sheets.
+      <ul class="list-disc list-inside px-4">
+      <li>Create a link for each CSS file that you want to include.</li>
+      <li>The order of the links matters when <strong>re-defining property values</strong> for the same element/property combination.</li>
+      </ul>
+    </li>
+  </ol>
+</details>
+     
+        
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

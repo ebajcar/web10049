@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">HTML</a></li>
+        <li><a href="specifications.html">specifications</a></li>      
+        <li><a aria-current="page" href="elements.html">elements</a></li> 
+        <li><a href="attributes.html">attributes</a></li>    
+        <li><a href="valid_code.html">valid code</a></li> 
+        <li><a href="semantics.html">semantics</a></li>
+        <li><a href="accessibility.html">accessibility</a></li>
+        <li><a href="techniques.html">techniques</a></li>
+        
+        
+      </ul>
+    </nav>            
+</header>         
+                              
+
+<main> 
+    <div class="prev-next">
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">HTML Document</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">  
+        
+        <ol style="columns:3;list-style:none;">
+            <li><chip>Anatomy of an HTML Element</chip></li>
+            <li style="text-align:center"><chip>Empty elements</chip></li>
+            <li><chip>Nesting elements</chip></li>
+        </ol>
+        
+        <h2>Anatomy of an HTML Element</h2>
+            <figure>
+                <img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/htmlSyntax_diagram.png"
+                    alt="Anatomy of an HTML Element"/>
+                <figcaption>
+                    <dl>
+                        <dt>The opening tag</dt> 
+                        <dd>This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the paragraph begins.</dd>
+                        <dt>The closing tag</dt> 
+                        <dd>This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the paragraph ends. Failing to add a closing tag is one of the standard beginner errors and can lead to strange results.</dd>
+                        <dt>The content</dt> 
+                        <dd>This is the content of the element, which in this case, is just text.</dd>
+                        <dt>The element</dt> 
+                        <dd>The opening tag, the closing tag and the content together comprise the element.</dd>
+                    </dl>                
+                </figcaption>
+            </figure>    
+        
+        <h2>Empty elements</h2>
+        <p>Some elements <strong>never contain content</strong>; for example &lt;br>, &lt;hr>, &lt;img>, &lt;meta>. NOTE: not putting any content in an element does not make it empty<br>In HTML5 specifically, we do not close empty elements (no end tag). In other markup languages, including HTML5, you can use the shorthand form, combining the start tag and end tag; for example, &lt;br /> or &lt;hr /></p>
+      <pre class="language-html"><code class="language-html">&lt;!-- empty elements never take any content -->
+&lt;hr>
+&lt;br>
+&lt;img src="file.png" alt="image description">
+
+&lt;!-- not putting any content in does not make it an empty element -->
+&lt;p>&lt;/p></code></pre>
+        
+        <h2>Nesting elements</h2>
+        <p>You can put elements inside other elements too — this is called nesting. You do however need to make sure that your elements are properly nested. The elements have to open and close correctly so that they are clearly inside or outside one another. If they overlap, your web browser will try to make the best guess at what you were trying to say, which can lead to unexpected results. So don't do it!</p>
+        <p>Nesting represents the relations among objects in Document Object Model (DOM)</p>
+        
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

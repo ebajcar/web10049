@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>File Naming Conventions</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">File system</a></li>
+        <li><a href="file_types.html">File types</a></li>
+        <li><a href="file_navigation.html">File navigation</a></li>       
+        <li><a href="file_organization.html">File organization</a></li>
+        <li><a href="file_naming.html">Naming conventions</a></li>
+        <li><a aria-current="page" href="file_permissions.html">File permissions</a></li>
+      </ul>
+    </nav>            
+</header>         
+            
+                   
+<main>   
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="textual_italic_bold_underline.html">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">Current Topic</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="textual_quotations_citations.html">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">   
+        <h2>File Permissions</h2>
+   <h4>Check file and directory permissions</h4>
+  <p>Permissions for files and directories should NEVER be 777 (rwxrwxrwx)<br>
+    Set files to 644 (rw-r--r--) and directories to 755 or (rwxr-xr-x),  to allow web pages to be processed.</p>
+			<table class="table table-sm">
+		      <thead>
+		        <tr>
+		          <th>#</th>
+		          <th>Permissions</th>
+		          <th>Numeric<br>Equivalent</th>
+		          <th>Description</th>
+		        </tr>
+		      </thead>
+		      <tbody>
+		        <tr>
+		          <td>1</td>
+		          <td style="width:160px;"><code>-rw-------</code></td>
+		          <td>600</td>
+		          <td>Owner has read and write permissions. Set for most files.</td>
+		        </tr>
+		        <tr>
+		          <td>2</td>
+		          <td><code>-rw-r--r--</code></td>
+		          <td>644</td>
+		          <td>Owner hs read and write permissions; group and world have read only permission. Be sure you want to let other people read this file. Appropriate for most web-related files.</td>
+		        </tr>
+		        <tr>
+		          <td>3</td>
+		          <td><code>-rw-rw-rw-</code></td>
+		          <td>666</td>
+		          <td>Everyone has read and write permissions. Not recommended; this combination allows the file to be accessed and changed by anyone, anywhere on the system.</td>
+		        </tr>
+		        <tr>
+		          <td>4</td>
+		          <td><code>-rwx------</code></td>
+		          <td>700</td>
+		          <td>Owner has read, write, and execute permissions. Best combination for programs the owner wishes to run (files that result from compiling a C or Java program).</td>
+		        </tr>                
+		        <tr>
+		          <td>5</td>
+		          <td><code>-rwxr-xr-x</code></td>
+		          <td>755</td>
+		          <td>Owner has read, write, and execute permissions. Everyone else has read and execute permissions. Appropriate for web site directories.</td>
+		        </tr>     
+		        <tr>
+		          <td>6</td>
+		          <td><code>-rwxrwxrwx</code></td>
+		          <td>777</td>
+		          <td>Everyone has read, write, and execute privileges. Like the 666 setting, this combination should be avoided. 
+                  </td>
+		        </tr> 
+		        <tr>
+		          <td>7</td>
+		          <td><code>-rwx--x--x</code></td>
+		          <td>711</td>
+		          <td>Owner has read, write, and execute privileges. everyone else has execute only permissions. Useful for programs that you want to let others run but not copy. Unfortunately, this is not sufficient for web-related files because the users need to see the content of the files, otherwise your web pages will not render.
+                  </td>
+		        </tr> 
+ 		        <tr>
+		          <td>8</td>
+		          <td><code>drwx------</code></td>
+		          <td>700</td>
+		          <td>This is a directory created with the mkdir command. Only the owner has read, write, and execute privileges. Note that all directories must have the executable bit set.
+                  </td>
+		        </tr> 
+ 		        <tr>
+		          <td>9</td>
+		          <td><code>drwxr-xr-x</code></td>
+		          <td>755</td>
+		          <td>This directory can be changed only by the owner, but everyone else can view its contents.
+                  </td>
+		        </tr> 
+ 		        <tr>
+		          <td>10</td>
+		          <td><code>drwx--x--x</code></td>
+		          <td>711</td>
+		          <td>A handy combination for keeping a directory world-readable but restricted from access by the ls command. File can be read only by someone who knows the filename.
+                  </td>
+		        </tr>                
+		      </tbody>
+		    </table>         
+ 
+              
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

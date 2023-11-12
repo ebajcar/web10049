@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">Intro</a></li>
+        <li><a href="css_color_bg.html">Color/Background</a></li>
+        <li><a href="css_text_font.html">Font/Text</a></li>       
+        <li><a href="css_lists.html">Lists</a></li>
+        <li><a href="css_tables.html">Tables</a></li>
+        <li><a href="css_box_model.html">Box model</a></li>
+        <li><a href="css_contain_box.html">Containing block</a></li>
+        <li><a aria-current="page" href="css_shorthand.html">Shorthand</a></li>
+        <li><a href="css_units.html">Units</a></li>
+      </ul>
+    </nav>            
+</header>         
+            
+                   
+<main>   
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">CSS Properties</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">   
+        <h2>Shorthand Properties</h2>
+
+<!--  Shorthand properties -->
+
+    <h3>Apply to properties <code>margin</code> and <code>padding</code></h3>
+    <p class="text-gray-700 text-base mb-4">
+Use the sequence <em>TRBL (TRouBLe, clockwise)</em> to specify values for the block sides; .
+     
+	<br>property: top right bottom left;
+	<br>property: top right+left bottom;
+	<br>property: top+bottom right+left;
+	<br>property: all4same;</p>
+  
+  
+	<h3>Other important shorthand properties: <code>border</code>, <code>outline</code>, <code>font</code>, <code>background</code></h3>
+  
+  
+  <figure>
+  <img src="../../images/shorthand_background.png">
+  <figcaption>BACKGROUND property: the background-position property can have a wide variety of values. Check the references for a more indepth explanation of the various combinations.</figcaption>
+  </figure>
+  
+  
+
+
+  
+  <figure>
+  <img src="../../images/shorthand_border.png">
+  <figcaption>BORDER property:
+    <ul><li>Since the default border-style is none, omitting it will not render a border.</li><li>Border-width, border-style, and border-color are themselves shortcuts as they allow you to combine the four (top, right, bottom, and left) border statements into one. For example, border-width: 2px equals
+border-top-width:2px, border-right-width:2px, border-bottom-width:2px, border-left-width:2px.</li></ul></figcaption>
+  </figure>
+  
+  
+    <figure>
+  <img src="../../images/shorthand_font.png">
+  <figcaption>FONT property: Every element of the font shorthand has a default except the font-family which must be specified.</figcaption>
+  </figure>  
+  
+<iframe  style="height:442px;width: 100%;" scrolling="no" title="CSS Font-Shorthand" src="https://codepen.io/ebajcar/embed/XRgBZE?height=442&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/ebajcar/pen/XRgBZE'>CSS Font-Shorthand</a> by Ellen Bajcar
+  (<a href='https://codepen.io/ebajcar'>@ebajcar</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+
+     
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

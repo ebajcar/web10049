@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Parse HTML &amp; CSS</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">Parsing order</a></li>
+        <li><a href="1navigation.html">Navigation</a></li>
+        <li><a href="2fetch_resources.html">Fetch resources</a></li>       
+        <li><a aria-current="page" href="3parse_html_css.html">Parse HTML &amp; CSS</a></li>
+        <li><a href="4execute_js.html">Execute JS</a></li>
+        <li><a href="5rendering.html">Rendering</a></li>
+      </ul>
+    </nav>            
+</header>         
+                              
+
+<main> 
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">Current Topic</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">  
+        <h2>Page4</h2>
+   <dl>
+        <dt> After the browser has received the HTML file, it parses it to generate the DOM (Document Object Model) tree.</dt>
+            <dd>This is done by the browser engine which is the core of the browser (Eg: Gecko for Firefox, Webkit for Safari, Blink for Chrome, etc).</dd>
+            <dd>
+                <figure>
+                    <img src="../../images/browser_rendering.png" alt="browser_rendering.png">
+                </figure>  
+            </dd>
+            <dd>NOTE: If the page requires any external resources it will be handled as follows:
+                <ol>
+                    <li><strong>Non-blocking resources</strong> are fetched in parallel. Eg: Images. </li>
+                    <li><strong>Deferring resources </strong> are fetched in parallel but are executed after the DOM tree is constructed. Eg: script WITH defer attribute &amp; CSS files. </li>
+                    <li><strong>Blocking resources</strong> are fetched and executed sequentially. Eg: script WITHOUT defer attribute. </li>
+                </ol>                
+            </dd>
+        
+            <dd  style="padding-top:10px;">
+                <figure>
+                    <figcaption>Example of HTML file code (Minimal HTML5 Document)</figcaption>
+                    <img src="../../images/minimal-html5-code.png" alt="minimal-html5-code.png">
+                </figure>        
+            </dd>
+
+        <dt style="padding-top:10px;">1. Tokenization</dt>
+        <dd>The first step for displaying the web page is to tokenize the HTML file. Tokenization is the process of breaking up a string of characters into meaningful chunks for the browser, called tokens.</dd>
+        <dd>Tokens are the basic building blocks of the DOM tree.</dd>
+        <dd>
+            <figure>
+                <img style="width:80%;" src="../../images/dvpanc9oz4oke6xwlmt3.png" alt="dvpanc9oz4oke6xwlmt3.png">
+            </figure>        
+        </dd> 
+
+        
+        <dt style="padding-top:10px;">2. DOM Tree construction</dt>
+        <dd><strong>Lexing</strong> is the process of converting a sequence of tokens into a tree structure called the DOM tree.</dd>
+        <dd>The DOM tree is a tree data structure that represents the nodes in the HTML document.</dd>
+        <dd>
+            <figure>
+                <img  src="../../images/dom_minimal.png" alt="dom_minimal.png">
+            </figure>        
+            <figure>
+                <figcaption>You can access the properties for each element in DOM using the Developer's tools. Example</figcaption>
+                <a href="img/dom-obj-properties.png" target="_blank"><img  src="../../images/dom-obj-properties.png" alt="dom-obj-properties.png"></a>
+            </figure>                    
+            
+        </dd> 
+
+        <dt style="padding-top:10px;">3. Parsing CSS</dt>
+        <dd>After the DOM tree is constructed, the browser parses the CSS file to generate the CSSOM (CSS Object Model). This process is similar to the DOM tree construction using tokenization & generation of the CSSOM</dd>
+
+
+
+        <footer>Source: https://dev.to/ruppysuppy/deep-dive-into-how-web-browsers-work-with-illustrations-249b</footer>        
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

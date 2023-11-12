@@ -1,102 +1,114 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
+    <title>Home Class Material</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Course Material</title>
-    <link rel="stylesheet" href="css/missing-css.css">
-	<link href="https://fonts.bunny.net/css?family=source-sans-3:400,700|m-plus-code-latin:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/prism-coy-23.css">
-    <script src="css/prism-coy-23.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../css/missing-css.css">
+    <link rel="stylesheet" href="../css/prism_coy_dev.css">
+    <script src="../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/next-prev.css">
 	<style>
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+  pointer-events: none;
+}    
 	</style>
 </head>
 <body>
-	<div class="sidebar-layout fullscreen">
-      <header>
-        <div style="margin-bottom:0;padding-bottom:0;line-height:1;" class="<h1>">SYST10049</div>
-        <div style="margin-top:0;padding-top:0;font-size:1.07em;line-height:1;">WEB DEVELOPMENT</div>
-        <nav>
-            <ul role="list">
-                   
-                <li>Learn HTML</li> 
-                <li class="hellip-one thisone"><a href="document_markup.html">HTML markup</a></li> <!--   -->
-                
-                <li class="lead-title">Key concepts</li>  <!--   -->
-                <li class="hellip-one"><a href="document_oop.html">Object-oriented programming</a></li> <!--  -->
-                <li class="hellip-one"><a href="document_dom.html">Document Object Model (DOM)</a></li> <!--  -->
-                
-                <li class="lead-title">HyperText Markup Language (HTML)</li>  <!--   -->
-                <li class="hellip-one"><a href="document_syntax.html">HTML basic syntax</a></li>               
-                <li class="hellip-one"><a href="document_element_types.html">HTML elements</a></li>                
-                <li class="hellip-one"><a href="document_attributes.html">HTML attributes</a></li>
- 
-                <li class="lead-title">HTML Document (Web page)</li>  <!--   -->
-                <li><a href="document_structure.html">HTML document structure</a></li> 
-                <li><a href="document_minimal.html">Minimal HTML5 document</a></li>                
-                <li><a href="document_head_section.html">HEAD section (metadata)</a></li>
-                <li><a href="document_body_section.html">BODY section</a></li>
-                
-                <li class="lead-title">Marking up content</li>  <!--   -->
-                <li><a href="document_content_models.html">Content models</a></li>
-                <li><a href="document_element_categories.html">Element categories</a></li>
-                <li><a href="document_semantic_correctness.html">Semantic correctness</a></li>
-                
-                <li><a href="document_content_textual.html">Textual content</a></li>
-                <li><a href="document_content_semantics.html">Semantic content</a></li>
-                <li><a href="document_content_interactive.html">Interactive content</a></li>                
-                <li><a href="document_content_page_areas.html">Page areas content</a></li> <!-- standard layout - page areas -->
-                
-                
-               
-                
-                  
-            </ul>            
-        </nav>
-      </header>
+
+
+
+    <header>
+        <h1><span class="allcaps">SYST<wbr>10049<v-h>:</v-h></span> 
+            <sub-title>Web Development</sub-title>
+        </h1> 
+    </header>
+    <main>
+   <div class="prev-next">
+        <p style="color:lightgray;">Prev</p>  
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">Table of Contents</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="client_server/index.html">Next</a>
+            <br><small>Web Ecosystem</small>
+        </p>
+    </div>    
+
+
+
+             
+        <h3>Learn HTML</h3>
+        <dl>   
+
+             <dt><a href="html_markup/index.html"><strong>HyperText Markup Language (HTML)</strong></a></dt>
+             <dd>
+             &mdash; language specifications
+             &mdash; HTML elements
+             &mdash; HTML attributes             
+             &mdash; well-formed and valid code
+             &mdash; semantic correctness
+             &mdash; accessibility
+             &mdash; accessibility techniques
+             </dd> 
+             
+            <dt><a href="html_document/index.html"><strong>HTML Document</strong></a> </dt>
+            <dd>
+             &mdash; document structure
+             &mdash; minimal HTML document code
+             &mdash; DOCTYPE declaration
+             &mdash; HEAD section
+             &mdash; BODY section
+            </dd> 
+              
+             <dt><a href="html_content/index.html"><strong>Document Object Model (DOM)</strong></a>  </dt>            
+             <dd>
+             &mdash; terminology
+             &mdash; objects
+             &mdash; visual representation (hierarchy)
+             &mdash; DOM processing
+             &mdash; CSS Object Model (CSSOM)
+             </dd>             
+
+              <dt><a href="html_content/index.html"><strong>Content models</strong></a>  </dt>            
+             <dd>
+             &mdash; models
+             &mdash; semantics
+             &mdash; textual
+             &mdash; page areas
+             &mdash; interactive
+             </dd> 
+             
+        </dl>   
     
+              
+        <h3>Learn CSS</h3>
+        <ul role="list">
+            <li><a href="../material_css/css_selectors/index.html"><strong>CSS</strong></a>             
+            &mdash; ...
+            </li>
+      
+             <li><a href="../material_css/css_layouts/index.html"><strong>Layouts</strong></a>             
+            &mdash; ...
+            </li>             
+        </ul>   
 
-      <div> <!-- body container for main and footer -->
-        <main>
-            <nav class="breadcrumbs" aria-label="Breadcrumbs">
-                <ol>
-                    <li><a href="index.html"  class="allcaps">Learn HTML</a></li>
-                    <li><a href="#" aria-current="page">Introduction</a></li>
-                </ol>
-            </nav>        
-
- 
-            
- 
-<!-- file transfer protocol -->
-<section id="#e01">   
-    <dl>
-        <dt>Tools</dt>
-        <dd>text editors: Notepad++, VS code</dd>
-        <dd>browsers: Chrome</dd>
-        <dd>dummy text and images: lipsum.com</dd>
-        <dd>server information</dd>
- 
-        <dt>Elements and attributes</dt>
-        <dd>when you mark up text with the P element, you are creating the "paragraph object" with its properties, methods, and events. Some of the properties are fg and bg colours, size of individual letters, line height of the paragraph, space before and after the paragraph, etc.</dd>
-        <dd>when you mark up an image with the IMG element, you are creating the "image object" with its proeprties, methods, and events. Some of the properties are the size of the image (height and width). It does not have properties like size of individual letters or line height though.</dd>
-        <dd>there are also differences in behaviour. A paragraph will start on a new line and will take the entire last line regardless how much it needs. The following element will start on a new line. a paragraph has a "block" flow behaviour. On the other hand, an image will not create a new line and other elements will continue on the same row if there is room and they also do not break a line. An image has an "inline" flow behaviour.</dd>
-        <dd>Other block flow -</dd>
-        <dd>Other inline flow -</dd>
- 
-    </dl>
- </section> 
-        
-
-        
-
-        </main>
+       
+</main>
 
 
         <footer>
-            <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2023 &copy; Ellen Bajcar et al</a></address> 
+            <address><a href="">2021-2024 &copy; Ellen Bajcar et al</a></address> 
             <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
-            <div style="margin: 0 0 10px 0">&mdash;</div>
+            <hr style="margin: 10px 0">
             <ul class="f-switch" role="list">
                 <li>
                   <h2>Course Material</h2>
@@ -116,31 +128,26 @@
                     <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
                     <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
-                    <li><a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative (WAI)</a> </li>
-                    <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a> </li>  
-                    <li><a href="https://www.w3.org/TR/UAAG20/">UAAG 2.0</a> </li>                     
-                   
+                    <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a> </li>                     
+                    <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript specs</a></li>  
                     <li><a href="https://www.webfx.com/blog/web-design/progressive-enhancement/">Progressive enhancement (PE)</a> </li>                     
                   </ul>
                 </li>
                 <li>
                   <h2>Sheridan College</h2>
                   <ul>
-                    <li><a href="https://www.sheridancollege.ca/">Davis | HMC | Trafalgar</a></li>
+                    <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
                     <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>
                     <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
                     <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
                     <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>  
                     <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+                    <li><a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a></li>
                   </ul>
                 </li>
             </ul>
         </footer>
      
-    
-      </div> <!-- body container for main and footer -->
-</div> <!-- sidebar -->
 
-	
-
-</body></html>
+</body>
+</html>

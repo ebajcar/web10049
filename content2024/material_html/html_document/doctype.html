@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">Intro</a></li>
+        <li><a href="structure.html">Structure</a></li> 
+        <li><a href="minimal.html">Minimal code</a></li>
+        <li><a aria-current="page" href="doctype.html">&lt;!DOCTYPE></a></li>   
+        <li><a href="head.html">&lt;head></a></li> 
+        <li><a href="body.html">&lt;body></a></li>        
+      </ul>
+    </nav>            
+</header>         
+            
+                   
+<main>  
+    <div class="prev-next">
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">HTML Document</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">   
+        <h2>Document type declaration </h2>
+	
+        <p>Every HTML document we create should declare its document type (doctype).The doctype must appear at the start of the first line of every HTML5 document to ensure the web browser will "render"(display) the document in "Standards Mode" (following the HTML5 specifications). This identifies which specification of HTML is included so the browser knows how to interpret the code. Keep in mind that code examples you find online may contain older outdated or irrelevant approaches.</p>	
+        <pre class="language-html"><code class="language-html">&lt;!-- The document type declaration tag for all HTML5 documents -->
+&lt;!DOCTYPE html>
+
+&lt;!-- 
+  HTML5 is not a case-sensitive language &mdash; so 
+  the document type declaration tag may alternatively be written 
+  in any combination of uppercase and lowercase characters.  
+-->
+&lt;!doctype html>
+&lt;!Doctype Html>
+&lt;!DOCTYPE HTML></code></pre>    
+        <p>The choice of capitalization is yours. It is recommended that you follow best practices and adhere consistently to the style used by the project or organization.</p>
+        
+        <h5 class="text-lg font-semibold">Code comments</h5> 
+        <p>Comments can be added at any point within both the head and body sections between a pair of <code>&lt;!--</code> and <code>--></code> tags. Anything that appears between the comment tags is ignored by the browser. </p>
+        
+ 
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>
