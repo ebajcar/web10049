@@ -17,18 +17,19 @@
 <header class="navbar">
     <nav>
       <ul role="list">
-        <li><a aria-current="page" href="index.html">Intro</a></li>
-        <li><a href="css_color_bg.html">Color/Background</a></li>
-        <li><a href="css_text_font.html">Font/Text</a></li>       
-        <li><a href="css_lists.html">Lists</a></li>
-        <li><a href="css_tables.html">Tables</a></li>
-
+        <li><a href="index.html">Responsive design</a></li>
+        <li><a href="css_viewport.html">Viewport</a></li>
+        <li><a aria-current="page" href="css_media.html">@media</a></li>       
+        <li><a href="css_import.html">@import</a></li>
+        <li><a href="css_font_face.html">@font-face</a></li>
+        <li><a href="css_media_query.html">Media Queries</a></li>
+        <li><a href="css_frameworks.html">Frameworks</a></li>
       </ul>
     </nav>            
-</header>       
-            
-                                   
-<main>  
+</header>         
+                              
+
+<main> 
     <div class="prev-next">
         <!--   <p style="color:lightgray;">Prev</p>   -->
         <p style="line-height: 1em;text-align:left;">
@@ -38,7 +39,7 @@
         <nav class="breadcrumbs" aria-label="Breadcrumbs">
             <ol>
                 <li><a href="../index.html"  class="allcaps">Home</a></li>
-                <li><a href="#" aria-current="page">CSS Properties</a></li>
+                <li><a href="#" aria-current="page">Responsive design</a></li>
             </ol>               
         </nav> 
         <p style="line-height:1em;text-align:right;">
@@ -46,15 +47,35 @@
             <br><small>Next topic</small>
         </p>
     </div>
+    
+    
+    <section id=#e01">  
+        <h2>@media rule</h2>
 
-    
-    
-    <section id=#e01">   
-        <h2>Page1 <small>How about a subtitle?</small></h2>
-        <div class="box warn">
-            <strong class="block titlebar">Important!</strong>
-            <strong>Term</strong>...
-        </div>        
+
+
+
+    <dl>
+      <dt>Media-specific style sheets: the @media rule</dt>
+        <dd>The <code>@media</code> at-rule begins with a media type and a list of optional media queries. Its block contains entire rules, which are only applied when the @media's conditions are fulfilled.
+        </dd>
+        <dd>
+        <pre class="language-css">
+        <code>@media print {
+    body {  
+        font-size: 10pt 
+    }
+}</code></pre>
+
+        <p>A media type is a broad category of user-agent devices on which a document may be displayed. The original set of media types were defined in HTML4, for the media attribute on &lt;link> elements.</p>
+
+        Read further <a href="https://www.w3.org/TR/mediaqueries-4/#media-type" target="_blank"> media types: all, print, screen.</a>
+        </dd>
+    </dl>
+
+
+
+      
     </section>
 </main>
 

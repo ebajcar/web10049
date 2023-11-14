@@ -17,16 +17,18 @@
 <header class="navbar">
     <nav>
       <ul role="list">
-        <li><a href="index.html">Layouts</a></li>
-        <li><a href="css_table.html">HTML Tables</a></li>
-        <li><a href="css_float.html">Float</a></li>       
-        <li><a href="css_flex.html">Flex</a></li>
-        <li><a href="css_grid.html">Grid</a></li>
-
+        <li><a href="index.html">Responsive design</a></li>
+        <li><a aria-current="page" href="css_viewport.html">Viewport</a></li>
+        <li><a href="css_media.html">@media</a></li>       
+        <li><a href="css_import.html">@import</a></li>
+        <li><a href="css_font_face.html">@font-face</a></li>
+        <li><a href="css_media_query.html">Media Queries</a></li>
+        <li><a href="css_frameworks.html">Frameworks</a></li>
       </ul>
     </nav>            
 </header>         
             
+                   
                    
 <main>   
     <div class="prev-next">
@@ -38,7 +40,7 @@
         <nav class="breadcrumbs" aria-label="Breadcrumbs">
             <ol>
                 <li><a href="../index.html"  class="allcaps">Home</a></li>
-                <li><a href="#" aria-current="page">Webpage layouts</a></li>
+                <li><a href="#" aria-current="page">Responsive design</a></li>
             </ol>               
         </nav> 
         <p style="line-height:1em;text-align:right;">
@@ -49,43 +51,7 @@
     
     
     <section id=#e01">   
-        <h2>Responsive design</h2>
-<!--  
-<h6 title="Review HTML5 and web development">Review <br>Standards, Semantic Correctness, and Accessibility (Learn HTML5) and <br>Planning and designing, Progressive enhancement (Web development).</h6>
--->
-
-<!-- Responsive design  -->
-
-    <h3>At-rules</h3>
-
-    <chip>| @import | <strong>@media</strong> | <del>@keyframes</del> | @font-face | @charset |</chip>
-    
-    <p>At-rules are all different, but they have a basic structure in common. They start with an "@" symbol, followed by their name as a CSS keyword. Some at-rules are simple statements, with their name followed by more CSS values to specify their behavior, and finally ended by a semicolon. Others are blocks; they can have CSS values following their name, but they end with a {}-wrapped block, similar to a qualified rule. Even the contents of these blocks are specific to the given at-rule: sometimes they contain a sequence of declarations, like a qualified rule; other times, they may contain additional blocks, or at-rules, or other structures altogether.</p>
-    <p>Read further  <a href="https://www.w3.org/TR/css-syntax-3/#syntax-description" target="_blank"> At-rules (W3C specification)	</a>
-    </p>
-
-	
-
-
-
-    <dl>
-      <dt>Media-specific style sheets: the @media rule</dt>
-        <dd>The <code>@media</code> at-rule begins with a media type and a list of optional media queries. Its block contains entire rules, which are only applied when the @media's conditions are fulfilled.
-        </dd>
-        <dd>
-        <pre class="language-css">
-        <code>@media print {
-    body {  
-        font-size: 10pt 
-    }
-}</code></pre>
-
-        <p>A media type is a broad category of user-agent devices on which a document may be displayed. The original set of media types were defined in HTML4, for the media attribute on &lt;link> elements.</p>
-
-        Read further <a href="https://www.w3.org/TR/mediaqueries-4/#media-type" target="_blank"> media types: all, print, speech, screen.</a>
-        </dd>
-    </dl>
-
+        <h2>Viewport</h2>
   
 
     <dl>
@@ -100,7 +66,8 @@
         </dd>
     </dl>
 
-       
+
+      
     </section>
 </main>
 

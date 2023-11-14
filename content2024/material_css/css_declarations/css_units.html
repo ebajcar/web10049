@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">CSS Declarations</a></li>
+        <li><a href="css_box_model.html">Box model</a></li>
+        <li><a href="css_contain_box.html">Containing block</a></li>
+        <li><a href="css_shorthand.html">Shorthand properties</a></li>
+        <li><a aria-current="page" href="css_units.html">Values &amp; Units</a></li>
+      </ul>
+    </nav>            
+</header>         
+            
+                   
+<main>   
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">CSS Declarations</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">   
+        <h2>CSS Units</h2>
+<!-- Values and Units  -->
+
+    <blockquote>
+        The CSS module describes the common values and units that CSS properties accept and the syntax used for describing them in CSS property definitions.
+    </blockquote>  
+ 
+
+<div class="box">
+<h3>Distance Units: the &lt;length> type</h3>  
+<p><strong>Lengths</strong>  refer to distance measurements and are denoted by &lt;length> in the property definitions. <em>(more details at <a href="https://www.w3.org/TR/css3-values/#lengths" target="_blank">W3C</a>)</em></p>
+<p><strong>Relative length units</strong> specify a length relative to another length. Style sheets that use relative units can more easily scale from one output environment to another. em, ex, ch, rem, vw, vh, vmin, vmax</p>
+<pre class="language-js">
+<code>/* Font-relative Lengths:  em, ex, ch, rem  */
+h1 {line-height: 1.2em}  /* the line height will be 
+20% greater than the font size of h1 element */
+h1 {font-size: 1.2em}    /* font size will be 20% 
+greater than the computed font size inherited from h1 elements */
+</code></pre>
+<pre class="language-js">
+<code>/* Viewport-percentage Lengths:  vw, vh, vmin, vmax units  */
+h1 { font-size: 8vw } 
+/* the width of the viewport is 200mm, the font size will 
+be 16mm; i.e.(8x200mm)/100 */
+</code></pre>
+
+<p><strong>Absolute length units</strong>  are fixed in relation to each other and anchored to some physical measurement. They are mainly useful when the output environment is known. The absolute units consist of the physical units (in, cm, mm, pt, pc, Q) and the visual angle unit (px):</p>
+<pre class="language-js">
+<code>h1 { margin: 0.5in }      /* inches | 1in = 2.54cm = 96px */
+h2 { line-height: 3cm }   /* centimeters | 1cm = 96px/2.54 */
+h3 { word-spacing: 4mm }  /* millimeters | 1mm = 1/10th of 1cm */
+h3 { letter-spacing: 1Q } /* quarter-millimeters  | 1Q = 1/40th of 1cm*/
+h4 { font-size: 12pt }    /* points | 1pt = 1/72th of 1in */
+h4 { font-size: 1pc }     /* picas | 1pc = 1/6th of 1in */
+p  { font-size: 12px }    /* px | 1px = 1/96th of 1in */
+</code></pre>
+</div>
+
+
+
+<h3>Quoted Strings: the &lt;string> type</h3>  
+<p><strong></strong> <em>(more details at <a href="https://www.w3.org/TR/css3-values/#strings" target="_blank">W3C</a>)</em></p>
+<pre class="language-js"><code>content: "this is a 'string'.";
+content: "this is a \"string\".";
+content: 'this is a "string".';
+content: 'this is a \'string\'.'
+</code></pre>
+
+
+
+<h3>Resource Locators: the &lt;url> type</h3>  
+<p><strong></strong> <em>(more details at <a href="https://www.w3.org/TR/css3-values/#urls" target="_blank">W3C</a>)</em></p>
+<pre class="language-js"><code>background: url("http://www.example.com/pinkish.gif");
+background: url(http://www.example.com/pinkish.gif);
+</code></pre>
+
+
+
+
+<h3>CSS-wide keywords: initial, inherit and unset</h3>
+<p><strong></strong> <em>(more details at <a href="https://www.w3.org/TR/css3-values/#common-keywords" target="_blank">W3C</a>)</em></p>
+
+  
+<div class="box">
+<h3>Basic color keywords</h3> 
+<p><strong>The list of basic color keywords is:</strong>  aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow; plus many extended color keywords.  <em>(more details at <a href="https://www.w3.org/TR/css-color-3/#rgb-color" target="_blank">W3C</a>)</em></p>
+<pre class="language-js">
+<code>body {color: black; background: white }
+h1 { color: maroon }
+h2 { color: olive }
+</code></pre>	
+
+
+
+<strong>Numerical color values</strong> <strong>RGB color values</strong> <em>(more details at <a href="https://www.w3.org/TR/css-color-3/#rgb-color" target="_blank">W3C</a>)</em>
+<pre class="language-js">
+<code>em { color: #f00 }              /* (hexadecimal) #rgb */
+em { color: #ff0000 }           /* (hexadecimal) #rrggbb */
+em { color: rgb(255,0,0) }      /* (decimal) integer range 0 - 255 */
+em { color: rgb(100%, 0%, 0%) } /* float range 0.0% - 100.0% */
+</code></pre>	
+
+<strong>RGBA color values</strong> <em>(more details at <a href="https://www.w3.org/TR/css-color-3/#rgb-color" target="_blank">W3C</a>)</em>
+<pre class="language-js">
+<code>em { color: rgb(255,0,0) }      /* integer range 0 - 255 */
+em { color: rgba(255,0,0,1)     /* the same, with explicit opacity of 1 */
+em { color: rgb(100%,0%,0%) }   /* float range 0.0% - 100.0% */
+em { color: rgba(100%,0%,0%,1) } /* the same, with explicit opacity of 1 */
+</code></pre>
+
+<strong>HSL color values</strong> <em>(more details at <a href="https://www.w3.org/TR/css-color-3/#rgb-color" target="_blank">W3C</a>)</em><br>
+HSL colors are encoding as a triple (hue, saturation, lightness)
+<pre class="language-js">
+<code>* { color: hsl(0, 100%, 50%) }   /* red */
+* { color: hsl(120, 100%, 50%) } /* lime */
+* { color: hsl(120, 100%, 25%) } /* dark green */
+* { color: hsl(120, 100%, 75%) } /* light green */
+* { color: hsl(120, 75%, 75%) }  /* pastel green, and so on */
+</code></pre>
+
+<strong>HSLA color values</strong> More details at <a href="https://www.w3.org/TR/css-color-3/#rgb-color" target="_blank">W3C</a>
+<pre class="language-js">
+<code>em { color: hsl(120, 100%, 50%) }     /* green */
+em { color: hsla(120, 100%, 50%, 1) } /* the same, with explicit opacity of 1 */
+p { color: hsla(240, 100%, 50%, 0.5) } /* semi-transparent solid blue */
+p { color: hsla(30, 100%, 50%, 0.1) }  /* very transparent solid orange */
+</code></pre>
+</div>
+
+        
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

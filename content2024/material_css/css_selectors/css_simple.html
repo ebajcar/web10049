@@ -17,12 +17,12 @@
 <header class="navbar">
     <nav>
       <ul role="list">
-        <li><a aria-current="page" href="index.html">Intro</a></li>
-        <li><a href="css_color_bg.html">Color/Background</a></li>
-        <li><a href="css_text_font.html">Font/Text</a></li>       
-        <li><a href="css_lists.html">Lists</a></li>
-        <li><a href="css_tables.html">Tables</a></li>
-
+        <li><a href="index.html">Selectors</a></li>
+        <li><a href="css_invalid_selector.html">Invalid</a></li>
+        <li><a aria-current="page" href="css_simple.html">Simple</a></li>
+        <li><a href="css_combinators.html">Combinators</a></li>       
+        <li><a href="css_pseudo.html">Pseudo-</a></li>
+        <li><a href="css_attrib_selector.html">Attribute</a></li>
       </ul>
     </nav>            
 </header>       
@@ -38,7 +38,7 @@
         <nav class="breadcrumbs" aria-label="Breadcrumbs">
             <ol>
                 <li><a href="../index.html"  class="allcaps">Home</a></li>
-                <li><a href="#" aria-current="page">CSS Properties</a></li>
+                <li><a href="#" aria-current="page">CSS Selectors</a></li>
             </ol>               
         </nav> 
         <p style="line-height:1em;text-align:right;">
@@ -50,11 +50,39 @@
     
     
     <section id=#e01">   
-        <h2>Page1 <small>How about a subtitle?</small></h2>
-        <div class="box warn">
-            <strong class="block titlebar">Important!</strong>
-            <strong>Term</strong>...
-        </div>        
+        <h2>Simple selectors</h2>
+
+    <dl>
+        <dt><strong>Simple selectors</strong> (select elements based on name, id, class) Examples:</dt>
+        <dd>
+            <table class="table-fixed">
+              <tr>
+                  <td class="px-8">universal selector</td>
+                  <td><code>* {}</code></td>
+                  <td>every element on the page</td>
+              </tr>     
+              <tr>
+                  <td class="px-8">type (tag name) selector</td>
+                  <td><code>h1 {}</code></td>
+                  <td>all H1 elements on the page</td>
+              </tr>
+              <tr>
+                  <td class="px-8">class selector</td>
+                  <td><code>.my-class {}</code></td>
+                  <td>all elements with class attribute set <code>&lt;&hellip; class="my-class"></code></td>
+              </tr>
+              <tr>
+
+                  <td class="px-8">id selector</td>
+                  <td><code>#my-id {}</code></td>
+                  <td>all elements with id attribute set <code>&lt;&hellip; id="my-id"></code></td>
+              </tr>
+            </table>
+        
+        </dd>
+    </dl>
+
+    
     </section>
 </main>
 

@@ -38,7 +38,7 @@
         <nav class="breadcrumbs" aria-label="Breadcrumbs">
             <ol>
                 <li><a href="../index.html"  class="allcaps">Home</a></li>
-                <li><a href="#" aria-current="page">Current Topic</a></li>
+                <li><a href="#" aria-current="page">CSS Syntax and Structure</a></li>
             </ol>               
         </nav> 
         <p style="line-height:1em;text-align:right;">
@@ -50,11 +50,24 @@
     
     <section id=#e01">   
         <h2>The Cascade</h2>
+        
+<dt>
+    <dt>Normal flow (defaults)</dt>
+    <dd>Each browser sets the properties to default values. Refer to individual vendor's documentation and to W3C specifications; vendor's conform to industry standards, but will have variations. It is important to understand how browser applications construct the DOM	and CSSOM to gain insight how CSS rules are applied.</dd>
+    <dd>
+        <a style="cursor:pointer;"  target="_blank" role="button" 
+            href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured">
+            Read more&mdash; How CSS is structured (MDN)
+        </a>
+    </dd>
+</dt>           
 	<p>One of the fundamental design principles of CSS is <strong>cascading</strong>, which allows several style sheets to influence the presentation of a document. When different declarations try to set a value for the same element/property combination, the conflicts must somehow be resolved.</p>
     
-	<p>The opposite problem arises when no declarations try to set a value for an element/property combination. In this case, a value is found by way of <strong>inheritance</strong> or by looking at the property’s <strong>initial value</strong>.</p>
+	<p>The opposite problem arises when no declarations try to set a value for an element/property combination. In this case, a value is found by way of <strong>inheritance</strong> or by looking at the property’s <strong>initial value</strong>. The <strong>cascading</strong> and <strong>defaulting</strong> process takes a set of declarations as input, and outputs a <strong>specified value</strong> (<em>specificity</em>) for each property on each element.</p>	
     
-	<p>The <strong>cascading</strong> and <strong>defaulting</strong> process takes a set of declarations as input, and outputs a <strong>specified value</strong> for each property on each element.</p>	
+            <p>
+            Conflicting rules &mdash;cascade, specificity, inheritance&mdash; these three concepts together control which CSS applies to what element. <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank"> Understanding how the concepts work together (MDN)		</a>
+        </p> 
     
   <figure> 
   <img src="../../images/cascade0.jpg">

@@ -37,7 +37,7 @@
         <nav class="breadcrumbs" aria-label="Breadcrumbs">
             <ol>
                 <li><a href="../index.html"  class="allcaps">Home</a></li>
-                <li><a href="#" aria-current="page">Current Topic</a></li>
+                <li><a href="#" aria-current="page">CSS Syntax and Structure</a></li>
             </ol>               
         </nav> 
         <p style="line-height:1em;text-align:right;">
@@ -49,10 +49,20 @@
     
     <section id=#e01">   
         <h2>CSS Specificity</h2>
-		<blockquote>Specificity is a measure of how specific a selector is — how many elements it could match. Element selectors have low specificity. Class selectors have a higher specificity, so will win against element selectors. ID selectors have an even higher specificity, so will win against class selectors. The only way to win against an ID selector is to use !important.</blockquote>
-		Read further  
-        <a href="https://www.w3.org/TR/selectors-3/#specificity" target="_blank"> World Wide Web Consortium (W3C)</a>
+        <dl>
+		<dt>Specificity is a measure of how specific a selector is — how many elements it could match.</dt>
+        <dd>Element selectors have low specificity. </dd>
+        <dd>Class selectors have a higher specificity, so will win against element selectors. </dd>
+        <dd>ID selectors have an even higher specificity, so will win against class selectors. The only way to win against an ID selector is to use !important.</dd>
+		<dd>Read further  
+        <a href="https://www.w3.org/TR/selectors-3/#specificity" target="_blank"> World Wide Web Consortium (W3C)</a></dd>
+        <dl>
         
+        <p>
+            Conflicting rules &mdash;cascade, specificity, inheritance&mdash; these three concepts together control which CSS applies to what element.<br><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank"> Understanding how the concepts work together (MDN)		</a>
+        </p>  
+
+ 
         
 <figure>
 <figcaption></figcaption>
@@ -61,11 +71,6 @@
   (<a href='https://codepen.io/ebajcar'>@ebajcar</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 </figure>
-
-
-    <p class="text-gray-700 text-base mb-4">
-        Conflicting rules &mdash;cascade, specificity, inheritance&mdash; these three concepts together control which CSS applies to what element.<br><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank"> Understanding how the concepts work together (MDN)		</a>
-    </p>  
 
 
 
