@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
+    <title>Worksheet 3 SYST10049</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Worksheet 3</title>
-    <link rel="stylesheet" href="css/missing-css.css">
-	<!--link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.9/dist/missing.min.css"-->
-	<!--link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.9/dist/missing-prism.min.css"-->
-	<link href="https://fonts.bunny.net/css?family=source-sans-3:400,700|m-plus-code-latin:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/prism-coy-23.css">
-    <script src="css/prism-coy-23.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
 	<style>
-kbd {
-    font-family: monospace;
-    color: blue;
-    font-size: 1.2em;
-    padding-left: 5px;
-    padding-right: 5px;
+ dd {
+  margin-bottom: 7px;
+}
+dd:first-of-type ol{
+  list-style-type: lower-alpha;
+}
+
+.steps {
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+}    
+.steps li {
+    counter-increment: step-counter;
+}    
+.steps li::before {
+  content: "STEP " counter(step-counter) ": ";
+}
+details {
+  border: none;
 }
 	</style>
 </head>
@@ -33,47 +46,23 @@ kbd {
                     <ol>
                         <li><a href="../index.html"  class="allcaps">Home</a></li>
                         <li><a href="index.html"  class="allcaps">Worksheets</a></li>
-                        <li><a href="week13.html" aria-current="page">Worksheet 3</a></li>
+                        <li><a href="#" aria-current="page">Worksheet 3</a></li>
                     </ol>               
                 </nav> 
                 <p><a href="week04.html">Next</a></p>
             </div>
-
-
-<!-- navigation -->
-<section>
-    <ul class="f-switch dense align-items:stretch" role="list">
-        <li class="img">  
-            <div class="img-wrapper"><img src="img/layout-strip.png" alt=""></div>
-            <section>
-                <h4 class="hellip-one"><a href="#p1">1. Review, connect, dig deeper</a></h4>
-            </section>
-        </li>
-
-        <li class="img">
-            <div class="img-wrapper"><img src="img/content_banner.png" alt=""></div>
-            <section>
-                <h4 class="hellip-one"><a href="#p2">2.  Read and explore more concepts</a></h4>
-            </section> 
-        </li>  
-
-        <li class="img">  
-            <div class="img-wrapper"><img src="img/minimal-strip.png" alt=""></div>
-            <section>
-                <h4 class="hellip-one"><a href="#p3">3. Practice. Practice. Practice.</a></h4>
-        </section>
-        </li>
-    </ul>                 
-</section> 
+<p>The suggested activities will be started and discussed in class.  It is your responsibility to complete the activities by the next class and ask timely questions.  Check out information about formative vs. summative evaluation, how to study and how to learn,...</p>
 
 
 <!-- 1. Review, connect, dig deeper -->
 <section id="p1">
-    <h2>1. Review, connect, dig deeper</h2>
+    <h2>Activity 3.1. Review, connect, dig deeper</h2>
+    <details>
+        <summary>What tools will you need? Install or bookmark, read, and familiarize yourself with</summary>
 
     <dl>
-        <dt>1.1. What will your website look like?</dt>
-        <dd>Did you complete and review material from previous worksheet, including...
+        <dt>Did you complete and review material from previous worksheet, including...</dt>
+        <dd>
             <ul>
                 <li>Planning: What is your website about? What info are you presenting on the subject? What is it going look like?</li>
                 <li>Sketching out your design - wireframe diagrams.</li>
@@ -102,8 +91,48 @@ kbd {
             </ul>
         </dd> 
     </dl> 
-    
+    </details>
+</section>
+ 
+ 
+<!-- 2. Read and explore more concepts -->
+<section id="p2">
+
+    <h2>Activity 3.2. Prepare working environment (Part 3)</h2>
+    <details>
+        <summary>What tools will you need? Install or bookmark, read, and familiarize yourself with</summary>
+ 
     <dl>
+        <dt>2.1. Explore, bookmark, and familiarize yourself with</dt>
+        <dd>
+            <ol style="list-style-type: upper-alpha;" start="5">  
+                <li><strong>Local workspace:</strong> &bull; organize your project file storage in 
+                        <code>C:\public_html\syst10049</code>
+                        <br><chip>Instructions given in class</chip> (Exercise 3.3.1 Project environment)
+                </li>
+                   
+                <li><strong>Diagrams (hierarchy, wireframe):</strong>  
+                &bull; BOOKMARK <a href="https://app.diagrams.net/">https://app.diagrams.net/</a></li>
+                
+                <li><strong>HTML validator:</strong>  
+                &bull; BOOKMARK <a href="https://validator.w3.org/">https://validator.w3.org/</a></li>
+                
+                <li><strong>CSS validator:</strong> 
+                &bull; BOOKMARK <a href="https://jigsaw.w3.org/css-validator/">https://jigsaw.w3.org/css-validator/</a>
+                </li>
+                
+                <li><strong>WAVE Web Accessibility Evaluation Tool:</strong>  
+                &bull; BOOKMARK <a href="https://wave.webaim.org/">https://wave.webaim.org/</a> </li>   
+                
+                <li title="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,... making it look like readable English. This site also provides images that can be used as placeholders, for the same reason."><strong> Lorem ipsum (dummy) text generators</strong> 
+                 &bull; BOOKMARK <a href="https://lipsum.com/">https://lipsum.com/</a> 
+                 </li>
+                
+                <li><em>(Optional)</em> <strong>Photo editor:</strong> Adobe, Paint, <a href="https://photofiltre-studio.com/pf7-en.htm">Photofitre</a>, or one you may be familiar with.</li>  
+            </ol>     
+        </dd> 
+    </dl>    
+  <dl>
         <dt>1.2. Preparing server environment</dt>
         <dd>
             <ol style="list-style-type: upper-alpha;">
@@ -113,14 +142,7 @@ kbd {
         </dd>
     </dl> 
     
- 
-</section>
-
-
-<!-- 2. Read and explore more concepts -->
-<section id="p2">
-    <h2>2. Read and explore more concepts</h2>
-
+   
 <!-- 2. 2.1. Preparing server environment (continued from Week 1) -->
     <dl>
         <dt>2.1. Preparing server environment (continued from Week 1)</dt>
@@ -145,12 +167,22 @@ kbd {
             </ol>          
         </dd>
         
+    </dl>  
+        
+    </details>
+</section>
  
-    </dl>    
+
+<!-- 2. Read and explore more concepts -->
+<section id="p2">
+    <h2>Activity 3.3. Explore and study course material </h2>
+    <details>
+        <summary>Explore HTML document, website design</summary>  
+  
 
 <!-- 2.2. HTML document and website design and construction -->    
     <dl>
-        <dt>2.2. HTML document and website design and construction</dt>
+        <dt>HTML document and website design and construction</dt>
 
         <dd>
             <ol>
@@ -183,39 +215,39 @@ kbd {
 
         </dd> 
     </dl>     
-    
-
-                        <dl>
-                            <dt>2.3. Complete tutorials <a href="https://www.w3.org/WAI/tutorials/page-structure/" target="_blank">Page structure</a> (WCAG Success criteria: 1.3.1., 2.4.1, 2.4.6, 2.4.10)</dt>
-                            <dd>
-                                <ul>
-                                    <li>
-                                        <strong>
-                                            <a href="https://www.w3.org/WAI/tutorials/page-structure/regions/" target="_blank">Page Regions</a> 
-                                        </strong>
-                                        Page header, page footer, navigation, main content, complementary contant, using WAI-ARIA. (Techniques: ARIA11)
-                                    </li> 
-                                    <li>
-                                        <strong>
-                                            <a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" target="_blank">Headings</a> 
-                                        </strong>
-                                        Heading ranks, organize passages of text, headings that reflect the page organization.  (Techniques: ARIA12, G130, G141, H42, H69, H80, PDF9)
-                                    </li> 
-                                    <li>
-                                        <strong>
-                                            <a href="https://www.w3.org/WAI/tutorials/page-structure/labels/" target="_blank">Labeling Regions</a> 
-                                        </strong>
-                                        Using area-labelledby and aria-label. (Techniques: ARIA11, H69)
-                                    </li> 
-                                    <li>
-                                        <strong>
-                                            <a href="https://www.w3.org/WAI/tutorials/page-structure/content/" target="_blank">Content Structure</a> 
-                                        </strong>
-                                        Articles, sections, paragraphs, lists, quotes, figures, images, tables.  (Techniques: G62, H40, H48, H49)
-                                    </li>    
-                                </ul>
-                            </dd> 
-                        </dl>                       
+   
+<!-- 2.4. WCAG tutorials -->
+    <dl>
+        <dt>2.3. Complete tutorials <a href="https://www.w3.org/WAI/tutorials/page-structure/" target="_blank">Page structure</a> (WCAG Success criteria: 1.3.1., 2.4.1, 2.4.6, 2.4.10)</dt>
+        <dd>
+            <ul>
+                <li>
+                    <strong>
+                        <a href="https://www.w3.org/WAI/tutorials/page-structure/regions/" target="_blank">Page Regions</a> 
+                    </strong>
+                    Page header, page footer, navigation, main content, complementary contant, using WAI-ARIA. (Techniques: ARIA11)
+                </li> 
+                <li>
+                    <strong>
+                        <a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" target="_blank">Headings</a> 
+                    </strong>
+                    Heading ranks, organize passages of text, headings that reflect the page organization.  (Techniques: ARIA12, G130, G141, H42, H69, H80, PDF9)
+                </li> 
+                <li>
+                    <strong>
+                        <a href="https://www.w3.org/WAI/tutorials/page-structure/labels/" target="_blank">Labeling Regions</a> 
+                    </strong>
+                    Using area-labelledby and aria-label. (Techniques: ARIA11, H69)
+                </li> 
+                <li>
+                    <strong>
+                        <a href="https://www.w3.org/WAI/tutorials/page-structure/content/" target="_blank">Content Structure</a> 
+                    </strong>
+                    Articles, sections, paragraphs, lists, quotes, figures, images, tables.  (Techniques: G62, H40, H48, H49)
+                </li>    
+            </ul>
+        </dd> 
+    </dl>                       
   
 
 <!-- 2.4. Testing for valid HTML and accessibility -->
@@ -231,46 +263,16 @@ kbd {
         
     </dl> 
 
-   <dl>
-        <dt>2.5. Development process (Progressive Enhancement Phase I)</dt>
-        <dd><p><chip>Needs update</chip> <br>
-            <a href="https://sheridanc-fast-syst10049.notion.site/Exercise-3-1-24cc3b99bdc64592964de132ce6216fa?pvs=4" target="_blank">Complete all steps.</a></p><p></p>
-        </dd> 
-        <dd>
-               
-                  <details open>
-                    <summary>(RECAP)</summary>
-                    <ol>
-                        <li>Create project directory (folder) on local machine (client).</li>
-                        <li>Create <kbd>content</kbd> sub-directory.</li>
-                        <li>Create <kbd>images</kbd> sub-directory.</li>
-                        <li>Create <kbd>css</kbd> sub-directory.</li>
-                        <li>Create <kbd>index.html</kbd> in project directory.</li>
-                        <li>Start with minimal HTML5 document.</li>
-                        <li>Add viewport meta element.</li>
-                        <li>Add author and description meta elements.</li>
-                        <li>Add prologue (documentation header).</li>
-                        <li>Add your own comments. (Start with documentation: what needs to be done?)</li>
-                        <li>Validate at <kbd>validator.w3.org</kbd> and correct all warnings and errors.</li>  
-                        <li>Add standard content page areas.</li>
-                        <li>Test using browser.</li>
-                        <li>Validate and correct all warnings and errors.</li>
-                        <li>Keep adding code fragments, testing, and validating until all content is marked up.</li>
-                        <li>Repeat steps 6 to 15 for each secondary file (stored in <kbd>content</kbd> sub-directory.</li>
-                        <li>Publish project using Filezilla on <kbd>dev.fast.sheridanc.on.ca/syst10049</kbd>.</li>
-                        <li>Validate for accessiblitity using <kbd>wave.webaim.org</kbd>. Correct all errors. Test with browser.</li>
-                    </ol>
-                  </details>      
-
-       </dd> 
-    </dl>                            
+   
+        </details>
 </section>
 
 
 <!-- 3. 3. Practice. Practice. Practice. -->
 <section id="p3">
-    <h2>3. Practice. Practice. Practice.</h2>
-    
+    <h2>Activity 3.4. Practice. Practice. Practice.</h2>
+    <details>
+        <summary>???</summary>      
     <dl>
         <dt>3.1. Create the "Marking up a letter" (markup_letter) project</dt>
         <dd>
@@ -322,6 +324,8 @@ kbd {
             </ol>
         </dd> 
     </dl>     
+
+    </details>
 </section>
 
 
@@ -335,49 +339,14 @@ kbd {
 
         </main>
 
-        <footer>
-            <address><a href="">2021-2023 &copy; Ellen Bajcar et al</a></address> 
-            <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
-            <hr style="margin: 10px 0">
-            <ul class="f-switch" role="list">
-                <li>
-                  <h2>Course Material</h2>
-                  <ul>
-                    <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
-                    <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
-                    <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
-                    <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
-                    <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
-                    <li><a href="https://validator.w3.org/">HTML validator</a></li>   
-                    <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
-                  </ul>
-                </li>
-                <li>
-                  <h2>Resources</h2>
-                  <ul>
-                    <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
-                    <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
-                    <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
-                    <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
-                  </ul>
-                </li>
-                <li>
-                  <h2>Sheridan College</h2>
-                  <ul>
-                    <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
-                    <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>
-                    <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
-                    <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
-                    <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>  
-                    <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
-                    <li><a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a><span style="color:gray"><br>Office hours (by appointment)</span></li>
-                  </ul>
-                </li>
-            </ul>
-        </footer>
-     
-     
+
+<!-- footer area -->
+<footer>
+    <address><a href="">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    
+</footer>
 
 
-</body></html>
+</body>
+</html>

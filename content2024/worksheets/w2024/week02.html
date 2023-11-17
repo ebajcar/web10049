@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Form Elements</title>
+    <title>Worksheet 1 SYST10049</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">	
     <link rel="stylesheet" href="../../css/missing-css.css">
@@ -28,6 +28,9 @@ dd:first-of-type ol{
 .steps li::before {
   content: "STEP " counter(step-counter) ": ";
 }
+details {
+  border: none;
+}
 	</style>
 </head>
 <body>
@@ -43,20 +46,37 @@ dd:first-of-type ol{
                     <ol>
                         <li><a href="../index.html"  class="allcaps">Home</a></li>
                         <li><a href="index.html"  class="allcaps">Worksheets</a></li>
-                        <li><a href="week13.html" aria-current="page">Worksheet 2</a></li>
+                        <li><a href="#" aria-current="page">Worksheet 2</a></li>
                     </ol>               
                 </nav> 
                 <p><a href="week03.html">Next</a></p>
             </div>
 
+<p>The suggested activities will be started and discussed in class.  It is your responsibility to complete the activities by the next class and ask timely questions.  Check out information about formative vs. summative evaluation, how to study and how to learn,...</p>
 
 
+<!-- 1. Review, connect, dig deeper -->
+<section id="p1">
+    <h2>Activity 2.1. Review, connect, dig deeper</h2>
+    <details>
+        <summary>Review completed worksheets. </summary>
 
+    <dl>
+        <dt>Did you complete and review material from previous worksheet, including...</dt>
+        <dd>
+            <ul>
+                <li></li>
+
+            </ul>
+        </dd> 
+    </dl> 
+    </details>
+</section>
 
 
 <!-- Prepare working environment (Part 2 and 3) -->
 <section id="p2b">
-    <h2>Activity 2.1. Prepare working environment (Part 2)</h2>
+    <h2>Activity 2.2. Prepare working environment (Part 2)</h2>
     <details>
         <summary>(Complete in week 2) Explore, bookmark, and familiarize yourself with</summary>
 
@@ -93,55 +113,155 @@ dd:first-of-type ol{
     </details>     
 </section>
 
-
-
-
-<!-- 2. Read and explore more concepts -->
-<section id="p2">
-    <h2>2. Read and explore more concepts</h2>
  
-    <dl>
-        <dt>2.1. Explore, bookmark, and familiarize yourself with</dt>
-        <dd>
-            <ol style="list-style-type: upper-alpha;" start="5">  
-                <li><strong>Local workspace:</strong> &bull; organize your project file storage in 
-                        <code>C:\public_html\syst10049</code>
-                        <br><chip>Instructions given in class</chip> (Exercise 3.3.1 Project environment)
-                </li>
-                   
-                <li><strong>Diagrams (hierarchy, wireframe):</strong>  
-                &bull; BOOKMARK <a href="https://app.diagrams.net/">https://app.diagrams.net/</a></li>
-                
-                <li><strong>HTML validator:</strong>  
-                &bull; BOOKMARK <a href="https://validator.w3.org/">https://validator.w3.org/</a></li>
-                
-                <li><strong>CSS validator:</strong> 
-                &bull; BOOKMARK <a href="https://jigsaw.w3.org/css-validator/">https://jigsaw.w3.org/css-validator/</a>
-                </li>
-                
-                <li><strong>WAVE Web Accessibility Evaluation Tool:</strong>  
-                &bull; BOOKMARK <a href="https://wave.webaim.org/">https://wave.webaim.org/</a> </li>   
-                
-                <li title="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,... making it look like readable English. This site also provides images that can be used as placeholders, for the same reason."><strong> Lorem ipsum (dummy) text generators</strong> 
-                 &bull; BOOKMARK <a href="https://lipsum.com/">https://lipsum.com/</a> 
-                 </li>
-                
-                <li><em>(Optional)</em> <strong>Photo editor:</strong> Adobe, Paint, <a href="https://photofiltre-studio.com/pf7-en.htm">Photofitre</a>, or one you may be familiar with.</li>  
-            </ol>     
-        </dd> 
-    </dl>    
+ <!-- 2. Development process -->
+<section id="p44">
+    <h2>Activity 2.3. Explore and study course material</h2>
+    
+        
+    <details>
+        <summary>2.3.1. How the web works</summary>
+
+        <ol>               
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works" target="_blank">How the web works (MDN web docs)</a>  <!--• Clients and servers. • The other parts of the toolbox (internet connection, TCP/IP, DNS, HTTP, Component files, code files, assets) • So what happens, exactly? • Order in which component files are parsed. • DNS explained. --></li>
+            
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work" target="_blank">How does the Internet work? (MDN web docs)</a></li>
+
+            <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/client_server_env.html" target="_blank">Client-server environment</a></li> 
+            <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/internet_backbone.html" target="_blank">Internet: the backbone of the Web</a></li> 
+            
+            <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/order_components_parsed.html" target="_blank">Order in which component files are parsed</a></li> 
+            <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/tcp_ip_protocol_suite.html" target="_blank">TCP/IP Protocol Suite</a></li>
+<li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/how_web_works.html" target="_blank">How the web works</a></li>
+        </ol>
+    
+        <ol class="steps">
+            <li><a href="../material_env/browser_1_navigation.html">Navigation</a></li>
+            <li><a href="../material_env/browser_2_fetch_resources.html">Fetching resources</a></li>
+            <li><a href="../material_env/browser_3_parse_html_css.html">Parsing HTML and CSS</a></li>
+            <li><a href="../material_env/browser_4_execute_javascript.html">Executing JS</a></li>
+            <li><a href="../material_env/browser_5_rendering.html">Rendering</a></li>
+        </ol>           
+      
+        <p>Test yourself: formulate your own answers</p>
+        <ol>
+            <li>Describe the web ecosystem. What components comprise this ecosystem? What are the major computer components and how they work?</li>
+            <li>What is the purpose of a web browser? Describe what happens when a user requests a web page.</li>
+            <li>Describe how the browser processes an HTML document. Is there a difference in the process when the file is retrieved using FILE protocol and HTTP protocol?</li>
+            <li>Describe what happens when you enter "sheridancollege.ca" in the browser's address area. What is the name of the file that you are requesting?</li>
+        </ol>
+    </details> 
+
+    <details>
+        <summary>2.3.2. Learn about URLs</summary>
+            <ol>               
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL" target="_blank">What is a URL? (MDN web docs)</a></li>
+               <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/uniform_resource_locator.html" target="_blank">Uniform Resource Locator (URL)</a></li>
+            </ol>
+     
+        <span>Test yourself: formulate your own answers</span>
+        <ol>
+           <li>What is the basic anatomy of a URL? How do you use URLs? Compare absolute and relative URSs. What is a semantic URL?</li>
+           <li>Given the following URL , identify each part<br><code>https://www.testing.server:8080/projects/trees/index.html</code>
+                <ol style="margin-top:0;list-style-type:lower-alpha;columns:3;">
+                    <li>Name of file being requested</li>
+                    <li>first directory name in the path</li>
+                    <li>last directory name in the path</li>
+                    <li>Authority</li>
+                    <li>Protocol</li>
+                    <li>Port</li>
+                    <li>Server name</li>
+                    <li>Path to file</li>                      
+                </ol>
+            </li>
+        </ol>     
+    </details>    
+  
+   <details>
+        <summary>2.3.3. Learn about webpages and websites</summary>
+        <ol>        
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/Pages_sites_servers_and_search_engines" target="_blank">What is the difference between webpage, website, web server, and search engine? (MDN web docs)</a></li>             
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_software_do_I_need" target="_blank">What software do I need to build a website? (MDN web docs)</a></li>
+           
+        </ol>        
+        <p>Test yourself: formulate your own answers</p>
+        <ol>
+            <li>What is a web page? web site? web server? • search engine?</li>
+            <li>What technologies are you learning in this course? Why start with HTML and CSS? What other technologies are you likely to work with?</li>
+        </ol>      
+    </details>     
  
+    <details>
+        <summary>2.3.4. Learn about organizing web project files</summary>
+        <p>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" target="_blank">Dealing with files (MDN web docs) </a>
+                <br>Where should your website live on your computer? An aside on casing and spacing. What structure should your website have? File paths. 
+        </p>
+        <ol>               
+            <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_system.html" target="_blank">File system (FS)</a></li>
+            <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_naming_conventions.html" target="_blank">File naming conventions</a></li>
+            <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_types.html" target="_blank">File types</a></li>
+            <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_organization.html" target="_blank">File organization</a></li>
+            <li><a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_navigation.html" target="_blank">File navigation</a></li> 
+        </ol>
+        <p>Test yourself: formulate your own answers</p>
+            <ol>
+                <li>What is a directory? What is a file?</li>
+                <li>Describe how the files for a web project are organized.</li>
+                <li>How do you name files and directories? What are naming conventions?</li>
+            </ol>
+        
+    </details>  
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    <details>
+        <summary>Development process</summary>
       <dl>
-        <dt>2.2. Development process </dt>
-        <dd>Explore development lifecycle (analysis, design, construction/implementation, production, maintenance</dd>
+        <dt>Explore development lifecycle</dt>
+        <dd> (analysis, design, construction/implementation, production, maintenance</dd>
+        <dd>How to use wireframes and storyboards</dd>
         <dd>How to document using comments</dd>
         <dd>How to write code (code style)</dd>
-        
+         <dd><p><chip>Needs update</chip> <br>
+            <a href="https://sheridanc-fast-syst10049.notion.site/Exercise-3-1-24cc3b99bdc64592964de132ce6216fa?pvs=4" target="_blank">Complete all steps.</a></p><p></p>
+        </dd>        
     </dl>   
+                 <details open>
+                    <summary>(RECAP)</summary>
+                    <ol>
+                        <li>Create project directory (folder) on local machine (client).</li>
+                        <li>Create <kbd>content</kbd> sub-directory.</li>
+                        <li>Create <kbd>images</kbd> sub-directory.</li>
+                        <li>Create <kbd>css</kbd> sub-directory.</li>
+                        <li>Create <kbd>index.html</kbd> in project directory.</li>
+                        <li>Start with minimal HTML5 document.</li>
+                        <li>Add viewport meta element.</li>
+                        <li>Add author and description meta elements. (stays with the document)</li>
+                        <li>Add prologue (documentation header). (ignored by user agents)</li>
+                        <li>Add your own comments. (Start with documentation: what needs to be done?)</li>
+                        <li>Validate at <kbd>validator.w3.org</kbd> and correct all warnings and errors.</li>  
+                        <li>Add standard content page areas.</li>
+                        <li>Test using browser.</li>
+                        <li>Validate and correct all warnings and errors.</li>
+                        <li>Keep adding code fragments, testing, and validating until all content is marked up.</li>
+                        <li>Repeat steps 6 to 15 for each secondary file (stored in <kbd>content</kbd> sub-directory.</li>
+                        <li>Publish project using Filezilla on <kbd>dev.fast.sheridanc.on.ca/syst10049</kbd>.</li>
+                        <li>Validate for accessiblitity using <kbd>wave.webaim.org</kbd>. Correct all errors. Test with browser.</li>
+                    </ol>
+                  </details>    
+     </details>
 
- 
+    <details>
+        <summary>Progressive enhancement (PE)</summary>
    <dl>
-        <dt>2.3. Progressive Enhancement (PE)</dt>
+        <dt>Progressive enhancement </dt>
         <dd><q>Progressive enhancement is a design methodology that ensures a web site/application is accessible to everyone, regardless of what kind of device they're using.</q> Read <a href="https://terminallearning.com/devHtml/introPe.html" target="_blank">further here</a> and complete the Exercise:</dd>
         <dd class="box">Read the following articles and then answer the questions below. Write your answers down in your notes in your own words. Understanding these concepts is key to understanding how to develop web sites and applications that are accessible to all users.
             <ul  style="margin-bottom:0;padding-bottom:10px;">
@@ -166,8 +286,32 @@ dd:first-of-type ol{
         </dd> 
     </dl>   
     
+     </details>
+
+   <details>
+        <summary>HTML document (web page) &mdash; Progressive Enhancement Phase I</summary>    
+   
+           <ul>
+                <li style="margin-top:0">Start with the basics... <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" >HTML basics (MDN web docs) </a></li>
+                <li>So what is HTML? &bull; Anatomy of an HTML element &bull; Nesting elements &bull; Void (Empty) elements &bull; Anatomy of an HTML document &bull; Marking up text <span style="text-transform:uppercase;">(Headings, Paragraphs, Lists) &bull; Links</span>
+                </li>
+  
+            </ul>            
+
+            <ul>
+                <li>Describe an HTML document. Explain all of its components (parts).</li>
+                <li>What is a minimal HTML5 document? Write out the code for a minimal HTML5 document.</li>
+                <li>What are information artefacts? list several and describe some. When would you use textual markup? semantic markup? Give examples.</li>
+                <li>How does design of a page help with marking up its content?</li>
+                <li>What is the difference in behavior between inline and block elements? List some and compare.</li>
+            </ul>
+
+    
+    </details>
+   <details>
+        <summary>Accessible Web Design and Development</summary>
    <dl>
-        <dt>2.4. Accessible Web Design and Development</dt>
+        <dt>Explore</dt>
         <dd>Read about <a href="https://terminallearning.com/devHtml/introPe.html" target="_blank">Accessible Web Design and Development</a>. Explore standards and guidelines including, WCAG, WAI-ARIA, WCAG's POUR principles (Perceivable, Operable, Understandable, Robust). Try out the suggested activities - using Narrator, Accessing the Accessibility Tree in various browsers, and using WAVE.</dd>
         <dd>Standards and Guidelines
             <ul>
@@ -187,53 +331,15 @@ dd:first-of-type ol{
         </dd>         
     </dl>   
 
-
-
-    
-    
-    
-      <dl>
-        <dt>2.5. HTML document (web page) &mdash; Progressive Enhancement Phase I</dt>
-        <dd class="box">
-            Standards and references
-           <ul>
-                <li>Primary source (specifications) <a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML Living Standard</a></li>
-                <li>Look up a definition of a term or concept: <a href="https://developer.mozilla.org/en-US/docs/Glossary" target="_blank">MDN Web Docs Glossary: Definitions of Web-related terms</a></li>
-                <li>Explore how an elements fit together: <a href="https://ebajcar.github.io/web10049/html5elements/dist/index.html" target="_blank">Periodic Table of HTML5 Elements</a></li>
-               <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML elements reference (MDN)</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank">HTML attribute reference (MDN)</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories" target="_blank">Content categories (MDN)</a></li>   
-            </ul>
-        </dd> 
-
-
-       <dd>
-            Start with the basics...
-           <ul>
-                <li style="margin-top:0"><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" >HTML basics (MDN web docs) </a>
-                <li>So what is HTML? &bull; Anatomy of an HTML element &bull; Nesting elements &bull; Void (Empty) elements &bull; Anatomy of an HTML document &bull; Marking up text <span style="text-transform:uppercase;">(Headings, Paragraphs, Lists) &bull; Links</span>
-                </li>
-  
-            </ul>            
-        </dd>
-        <dd>
-            <ul>
-                <li>Describe an HTML document. Explain all of its components (parts).</li>
-                <li>What is a minimal HTML5 document? Write out the code for a minimal HTML5 document.</li>
-                <li>What are information artefacts? list several and describe some. When would you use textual markup? semantic markup? Give examples.</li>
-                <li>How does design of a page help with marking up its content?</li>
-                <li>What is the difference in behavior between inline and block elements? List some and compare.</li>
-            </ul>
-        </dd>                 
-    </dl>   
-    
+    </details>
 </section>
-
+ 
 
 <!-- 3. 3. Practice. Practice. Practice. -->
 <section id="p3">
-    <h2>3. Practice. Practice. Practice.</h2>
-    
+    <h2>Activity 2.4.  Practice. Practice. Practice.</h2>
+    <details>
+        <summary>Practice projects</summary>
     <dl>
         <dt>3.1. Project Site Template</dt>
         <dd>
@@ -263,61 +369,21 @@ dd:first-of-type ol{
         <dd>Duplicate your website template in C:\public_html\syst10049templates. Name the project <code>exploring</code>. Copy your page template to the exploring directory that you just created and name it index.html. As you read through the various tutorials, create the examples as secondary pages in the contents sub-directory. Update the head section and add your own commentary.</dd>
     </dl>   
 
-    
+    </details>
 
 </section>
 
 
+</main>
 
 
-
-        </main>
-
-        <footer>
-            <address><a href="">2021-2023 &copy; Ellen Bajcar et al</a></address> 
-            <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
-            <hr style="margin: 10px 0">
-            <ul class="f-switch" role="list">
-                <li>
-                  <h2>Course Material</h2>
-                  <ul>
-                    <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
-                    <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
-                    <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
-                    <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
-                    <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
-                    <li><a href="https://validator.w3.org/">HTML validator</a></li>   
-                    <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
-                  </ul>
-                </li>
-                <li>
-                  <h2>Resources</h2>
-                  <ul>
-                    <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
-                    <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
-                    <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
-                    <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
-                  </ul>
-                </li>
-                <li>
-                  <h2>Sheridan College</h2>
-                  <ul>
-                    <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
-                    <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>
-                    <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
-                    <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
-                    <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>  
-                    <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
-                    <li><a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a><span style="color:gray"><br>Office hours (by appointment)</span></li>
-                  </ul>
-                </li>
-            </ul>
-        </footer>
-     
-     
+<!-- footer area -->
+<footer>
+    <address><a href="">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    
+</footer>
 
 
-	
-
-</body></html>
+</body>
+</html>

@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Worksheet 4 SYST10049</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Worksheet 4</title>
-    <link rel="stylesheet" href="css/missing-css.css">
-	<!--link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.9/dist/missing.min.css"-->
-	<!--link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.9/dist/missing-prism.min.css"-->
-	<link href="https://fonts.bunny.net/css?family=source-sans-3:400,700|m-plus-code-latin:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/prism-coy-23.css">
-    <script src="css/prism-coy-23.js"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <base target="_blank">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
 	<style>
-kbd {
-  color: darkorange;
+ dd {
+  margin-bottom: 7px;
 }
-mark {
-  background-color: lightblue;
+dd:first-of-type ol{
+  list-style-type: lower-alpha;
 }
-li > ul {
-  margin-top: 0;
-  margin-bottom: 0;
+
+.steps {
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+}    
+.steps li {
+    counter-increment: step-counter;
+}    
+.steps li::before {
+  content: "STEP " counter(step-counter) ": ";
+}
+details {
+  border: none;
 }
 	</style>
 </head>
@@ -38,61 +46,48 @@ li > ul {
                     <ol>
                         <li><a href="../index.html"  class="allcaps">Home</a></li>
                         <li><a href="index.html"  class="allcaps">Worksheets</a></li>
-                        <li><a href="week13.html" aria-current="page">Worksheet 4</a></li>
+                        <li><a href="#" aria-current="page">Worksheet 4</a></li>
                     </ol>               
                 </nav> 
                 <p><a href="week05.html">Next</a></p>
             </div>
-
-            <!-- bookmarks -->            
-            <ul class="f-switch dense align-items:stretch" role="list">
-                <li class="img">  
-                    <a href="#p1">
-                        <div class="img-wrapper"><img src="img/layout-strip.png" alt=""></div>
-                        <h4 class="hellip-one">1. Familiarize yourself with Slate</h4>
-                    </a>
-                </li>
-                <li class="img">
-                    <a href="#p2">
-                        <div class="img-wrapper"><img src="img/css-strip.png" alt=""></div>
-                        <h4 class="hellip-one">2.  Read and explore more concepts</h4>
-                    </a>
-                </li>  
-                <li class="img">  
-                    <a href="#p3" target="_self">
-                        <div class="img-wrapper"><img src="img/minimal-strip.png" alt=""></div>
-                        <h4 class="hellip-one">3. Practice. Practice. Practice.</h4>
-                    </a>
-                </li>
-            </ul>                 
-            
-
+<p>The suggested activities will be started and discussed in class.  It is your responsibility to complete the activities by the next class and ask timely questions.  Check out information about formative vs. summative evaluation, how to study and how to learn,...</p>
 
 
 <!-- 1. Review, connect, dig deeper -->
 <section id="p1">
-    <h2>1. Review, connect, dig deeper</h2>
+    <h2>Activity 4.1. Review, connect, dig deeper</h2>
+    <details>
+        <summary>x</summary>
 
     <dl>
-        <dt>1.1. Review, connect, dig deeper</dt>
+        <dt>x</dt>
         <dd>
             <ul>
-                <li style="margin-top:0">
-                </li>
+                <li>x</li>
+
             </ul>
         </dd> 
     </dl> 
+    </details>
 </section>
+ 
+ 
+ 
 
 <!-- 2. Read and explore more concepts -->
 <section id="p2">
+
     <h2>2. Read and explore more concepts</h2> 
+    <details>
+        <summary>Web Content Accessibility Guidelines</summary>    
     <dl>
-    <dt>2.1. <a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines (WCAG) 2.2</a> </dt>
-    <dd>
-        defines how to make Web content more accessible to people with disabilities. Accessibility involves a wide range of disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities.
-        <br>In order to meet the varying needs of this audience, several layers of guidance are provided including overall principles, general guidelines, testable success criteria and a rich collection of sufficient techniques, advisory techniques, and documented common failures with examples.
-    </dd>
+        <dt>2.1. <a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines (WCAG) 2.2</a> </dt>
+        
+        <dd>
+            defines how to make Web content more accessible to people with disabilities. Accessibility involves a wide range of disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities.
+            <br>In order to meet the varying needs of this audience, several layers of guidance are provided including overall principles, general guidelines, testable success criteria and a rich collection of sufficient techniques, advisory techniques, and documented common failures with examples.
+        </dd>
 
         <dd>
             <ul>
@@ -107,45 +102,35 @@ li > ul {
                 <li><a href="https://www.w3.org/TR/WCAG22/#conformance" target="_blank">Conformance</a> 
                 (read 5.2.1 Conformance Levels)
                 </li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Information_for_Web_authors" target="_blank">Accessibility information for web authors</a></li
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Information_for_Web_authors" target="_blank">Accessibility information for web authors</a></li>
                 <li><a href="https://accessibility.digital.gov/front-end/getting-started/" target="_blank">Accessibility for front-end developers</a></li>
             </ul>
         </dd> 
+ 
     </dl> 
-<!--
-  PERCEIVABLE
-  means to sense or have an awareness of something.  
-  A blind person can't perceive an input in a form field is incorrect because they can't see the red border around it. A person with memory issues can't perceive that they are clicking a link they've already visited because the designer didn't change the colours of visited links. A person who is Deaf/deaf can't hear the instructions in the instructional video because they are being given by a person speaking and there are no captions or transcript.
-  - how to provide text alternatives and captions/transcripts for non-text content and time-based content like images, audio/video (live streamed and pre-recored), CAPTCHA, etc.
-  - guidelines for the presentation of content (layout, sequence, colour, scale of items, contrast, text spacing, background audio, etc)
-  
-  OPERABLE
-  means able to be used
-  All navigation works, ability to use the site using only a keyboard, have enough time to read/hear and use content; easy to find and navigate; does not trigger seizures or physical reactions (flashing things, animation); path-based gestures - drag, pinkch,...
-  
-  UNDERSTANDABLE
-  meaning of the content should be ccomprehendable and understandable
-  ( use of abbreviations, reading level; interactive components don't cause drastic changes; consistent navigation, assistance with input errors, context-sensitive help
-  
-  ROBUST
-  able to withstand adverse conditions (hard to break, difficult to crash)
-  
--->    
+    
+    </details>
+    
 
-   <dl>
-        <dt>2.2. Explore markup from different perspective</dt>
+    
+    
+    
+ <!-- Navigation, hyperlinks, and menus -->
+   
+    <details>
+        <summary>Navigation, hyperlinks, and menus</summary>
 
-    </dl>  
+ 
      <dl>
-        <dt>2.3. Hyperlinks and navigation</dt>
-        <dd>Resources
+        <dt>Hyperlinks</dt>
+        <dd>
             <ul>
                 
                 <li><a href="https://html.spec.whatwg.org/multipage/links.html" target="_blank">4.6 Links</a></li>
-                <li><a href="https://html.spec.whatwg.org/multipage/links.html#links">Hyperlinks</a> links to other resources that are generally exposed to the user by the user agent so that the user can cause the user agent to navigate to those resources, e.g. to visit them in a browser or download them.</a></li>                              
+                <li><a href="https://html.spec.whatwg.org/multipage/links.html#links">Hyperlinks</a> links to other resources that are generally exposed to the user by the user agent so that the user can cause the user agent to navigate to those resources, e.g. to visit them in a browser or download them.</li>                              
             </ul>
         </dd> 
-        <dd>Explore
+        <dd>
             <ul>
                 
                 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks" target="_blank">Creating hyperlinks</a>
@@ -156,31 +141,25 @@ li > ul {
             
         </dd> 
     </dl>    
-                        <dl>
-                            <dt>2.2. Complete tutorials <a href="https://www.w3.org/WAI/tutorials/menus/" target="_blank">Menus </a> (MCAG Success criteria: 2.4.1, 2.4.3, 3.4.5, 2.4.7, 2.4.8, 4.1.2)</dt>
-                            <dd>
-                                <ul>
-                                    <li><strong><a href="https://www.w3.org/WAI/tutorials/menus/structure/" target="_blank">Structure</a> </strong>Menu represenation, identify menus, label menus, indicate the current item. (ARIA6, ARIA11, G14, G63, G65, G127, G128, G161, G182, G183, H4, SCR26)</li> 
+        <dl>
+            <dt>2.2. Complete tutorials <a href="https://www.w3.org/WAI/tutorials/menus/" target="_blank">Menus </a> (MCAG Success criteria: 2.4.1, 2.4.3, 3.4.5, 2.4.7, 2.4.8, 4.1.2)</dt>
+            <dd>
+                <ul>
+                    <li><strong><a href="https://www.w3.org/WAI/tutorials/menus/structure/" target="_blank">Structure</a> </strong>Menu represenation, identify menus, label menus, indicate the current item. (ARIA6, ARIA11, G14, G63, G65, G127, G128, G161, G182, G183, H4, SCR26)</li> 
 
-                                </ul>
-                            </dd> 
-                        </dl> 
-     
-   <dl>
-        <dt>2.3. Explore embedded and interactive elements</dt>
-        <dd>
-            <ul>                           
-                 <li><a href="https://ebajcar.github.io/web10049/content2023fall/learnhtml/interactive.htm" target="_blank">Interactive content</a> (hyperlinks, navigation, image, image map, picture, video, audio, multimedia)</li>
-                 <li>Figure and figure caption <a href="" target="_blank"></a></li>
-            </ul>
-        </dd> 
-    </dl>     
+                </ul>
+            </dd> 
+        </dl> 
+    </details>                    
+                        
+
 </section>
 
 <!-- 3.  Practice. Practice. Practice. -->
 <section id="p3">
     <h2>3. Practice. Practice. Practice.</h2>
-
+   <details>
+        <summary>Practice projects</summary>
     
 
     <dl>
@@ -219,57 +198,20 @@ li > ul {
             </ol>
         </dd> 
     </dl>   
-    
+    </details>
 </section>
 
 
-        </main>
-
-        <footer>
-            <address><a href="">2021-2023 &copy; Ellen Bajcar et al</a></address> 
-            <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
-            <hr style="margin: 10px 0">
-            <ul class="f-switch" role="list">
-                <li>
-                  <h2>Course Material</h2>
-                  <ul>
-                    <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
-                    <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
-                    <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
-                    <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
-                    <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
-                    <li><a href="https://validator.w3.org/">HTML validator</a></li>   
-                    <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
-                  </ul>
-                </li>
-                <li>
-                  <h2>Resources</h2>
-                  <ul>
-                    <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
-                    <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
-                    <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
-                    <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
-                  </ul>
-                </li>
-                <li>
-                  <h2>Sheridan College</h2>
-                  <ul>
-                    <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
-                    <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>
-                    <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
-                    <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
-                    <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>  
-                    <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
-                    <li><a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a><span style="color:gray"><br>Office hours (by appointment)</span></li>
-                  </ul>
-                </li>
-            </ul>
-        </footer>
-     
+</main>
 
 
+<!-- footer area -->
+<footer>
+    <address><a href="">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    
+</footer>
 
-	
 
-</body></html>
+</body>
+</html>
