@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <meta name="author" content"Ellen Bajcar">
+    <meta name="description" content="Class examples for SYST10049">
+</head>
+<style>
+body {
+    width:80%;
+    margin: auto;
+}
+a[href$=".pdf"]{
+  color : pink;
+  }
+
+a[href$=".pdf"]:before {
+  content : " 📄";
+  vertical-align: text-bottom ;
+}
+
+a[href$=".html"] {
+  color: orange;
+}
+
+a[href$=".html"]:after{
+  content : " 🡭";
+}
+
+.external::after{
+/*
+background-color:green;
+content:" ";
+display:inline-flex;
+height:10px;
+margin-left:4px;
+-webkit-mask-size:cover;
+mask-size:cover;
+width:10px;
+*/
+-webkit-mask-image:url(https://developer.mozilla.org/static/media/deprecated.eda3b39bb2bd366d4b2b.svg);
+mask-image:url(https://developer.mozilla.org/static/media/deprecated.eda3b39bb2bd366d4b2b.svg);
+
+
+}
+
+
+</style>    
+<body>
+<!-- Class example -->
+    <h2><a href="somefile.pdf">somefile.pdf</a></h2>
+    <h2><a href="somefile.html">somefile.html</a></h2>
+    
+    <h2><a class="external" href="somefile.css">somefile.css</a></h2>
+ 
+<!--
+ https://webaim.org/techniques/keyboard/accesskey#spec
+
+ 
+ <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 3.5V14.5H12.5V10H14V15C14 15.5523 13.5523 16 13 16H1C0.447716 16 0 15.5523 0 15V3C0 2.44772 0.447715 2 1 2H6V3.5H1.5Z" fill="#FBFBFE"/>
+<path d="M15.9217 1.17828L7.01473 10.0853L5.95407 9.02462L14.8611 0.117624L15.9217 1.17828Z" fill="#FBFBFE"/>
+<path d="M7.5 0H16V1.5H7.5V0Z" fill="#FBFBFE"/>
+<path d="M16 0L16 8.5L14.5 8.5L14.5 -6.55671e-08L16 0Z" fill="#FBFBFE"/>
+</svg>
+
+ <img src="https://developer.mozilla.org/static/media/deprecated.eda3b39bb2bd366d4b2b.svg">
+ 
+  -->
+    <footer>
+        <hr>
+        <address>Ellen Bajcar &copy; Sheridan College</address>
+        <p>The materials provided in class and in SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>
+    </footer>
+</body>
+</html>

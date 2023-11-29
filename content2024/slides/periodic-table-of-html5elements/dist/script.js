@@ -1,4 +1,4 @@
-function Element(props) {
+ function Element(props) {
   props = props || {};
 
   let className = [

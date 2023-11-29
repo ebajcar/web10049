@@ -39,7 +39,7 @@ body {
   --hover-color-content-sectioning: #fce7d4;
   --hover-color-obsolete-depricated: #e4f4ee;
   counter-reset: elemNo;
-  background-color: #2F4F4F;
+  background-color: #161616; /* #2F4F4F; */
 }
 .period-table {
   display: grid;

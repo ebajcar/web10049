@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Numbering outline</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Ellen Bajcar">
+    <meta name="description" 
+          content="Purpose: automate numbering of sections in a document
+                   Program:     sections_numbering.html
+                   Date:        March 2017
+                   Updated:     October 2023 
+                   Version:     23.11
+                   Description: [TBD]
+          ">   
+<!--
+Code validated ✔️
+Description:  
+  Uses properties 
+    counter-increment   https://www.w3schools.com/cssref/pr_gen_counter-increment.php
+    content             https://www.w3schools.com/cssref/pr_gen_content.php
+    counter-reset       https://www.w3schools.com/cssref/pr_gen_counter-reset.php
+Sources:
+-->
+<style>
+body {
+	width: 90%;
+	margin: auto;
+}
+main {
+    border-block: solid purple;
+}
+section {
+	counter-increment: num 0;
+}
+h3 {
+	counter-increment: num 1;
+}
+h4 {
+	counter-increment: sub 1;
+}
+
+h3:before {
+	content: counter(num)". ";
+}
+h4:before {
+	content: counter(num)"."counter(sub)". ";
+}
+h4.restart {
+	counter-reset: sub 0;
+}
+</style>
+</head>
+<body>
+		<header>
+			<h1>Examples  <small>Numbering sections of a document</small></h1>
+		</header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+        
+		<main>
+	<section>
+	    <h2>Chapter (Article) </h2>
+		<h3>Topic</h3>
+        <p>Content 2&hellip;</p>
+		<h4>Subtopic</h4>
+        <p>Content 2.1&hellip;</p>
+		<h4>Subtopic</h4>
+        <p>Content 2.2&hellip;</p>
+		<h3>Topic</h3>
+        <p>Content 3&hellip;</p>
+		<h4 class="restart">Subtopic</h4>
+        <p>Content 3.1&hellip;</p>
+		<h4>Subtopic</h4>	
+        <p>Content 3.2&hellip;</p>        
+	</section>
+    
+	<section>
+	    <h2>Chapter (Article) </h2>
+		<h3>Topic</h3>
+		<h4>Subtopic</h4>
+		<h4>Subtopic</h4>
+		
+		<h3>Topic</h3>
+		<h4 class="restart">Subtopic</h4>
+		<h4>Subtopic</h4>		
+	</section>	
+    
+    
+	<section>
+	    <h2>Chapter (Article) </h2>
+		<h3>Topic</h3>
+		<h4>Subtopic</h4>
+		<h4>Subtopic</h4>
+		
+		<h3>Topic</h3>
+		<h4 class="restart">Subtopic</h4>
+		<h4>Subtopic</h4>		
+	</section>	
+		</main>
+        
+		<footer>
+			<address>2017-2024 @ Sheridan College, Web Development</address>
+		</footer>
+</body>
+</html>
