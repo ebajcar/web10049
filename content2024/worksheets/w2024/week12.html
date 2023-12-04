@@ -1,17 +1,44 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
+    <title>Worksheet 1 SYST10049</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Worksheet 12</title>
-    <link rel="stylesheet" href="css/missing-css.css">
-	<!--link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.9/dist/missing.min.css"-->
-	<!--link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.9/dist/missing-prism.min.css"-->
-	<link href="https://fonts.bunny.net/css?family=source-sans-3:400,700|m-plus-code-latin:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/prism-coy-23.css">
-    <script src="css/prism-coy-23.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
 	<style>
+dl dd dl dd li {
+  line-height: 1.1em;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+kbd {
+  color: darkorange;
+}
+div > a::after {
+  content: " (" attr(href) ")";
+}
 
+.external:after{
+    content: url('../images/external-link-alt.svg');
+    display: inline-block;
+    height:0.6em;
+    width:0.6em;
+    margin-left:3px;
+    margin-right:5px;
+    }
+details {
+  border: none;
+}
+input:valid {
+    border: solid green;
+}
+input:invalid {
+    border: solid red;
+}
 	</style>
 </head>
 <body>
@@ -61,6 +88,32 @@
             <section id="p1">
                 <h2>1. Review, connect, dig deeper</h2>
                 <p><chip>Coming soon</chip></p>
+                <dl>
+                    <dt>What are the last 4 characters of a file that contains nothing but statements like this?</dt>
+                    <dd>
+<pre><code>p {
+    font-family: "Times New Roman", Times, serif;    
+}</code></pre>
+                    </dd>
+                    <dd><input type="text" pattern='.css'></dd>                
+                </dl>
+
+                <dl>
+                    <dt>Type the first 3 characters of CSS code that specifies styling for paragraphs.</dt>
+                    <dd><input type="text" pattern='p \{'></dd>                
+                </dl>
+                
+                <dl>
+                    <dt>Type the first 4 characters of CSS code that specifies styling for paragraphs.</dt>
+                    <dd><input type="text" pattern="h6 \{"></dd>                
+                </dl>
+                
+                <dl>
+                    <dt>Fill in the blank</dt>
+                    <dd><pre><code>_______ "Trebuchet MS", Helvetica, sans-serif;</code></pre>
+                    </dd>
+                    <dd><input type="text" pattern='font-family:'></dd>                
+                </dl>
             </section> 
 
             <!-- 2. Read and explore more concepts -->

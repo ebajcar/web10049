@@ -10,7 +10,29 @@
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/next-prev.css">
 	<style>
+dl dd dl dd li {
+  line-height: 1.1em;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+kbd {
+  color: darkorange;
+}
+div > a::after {
+  content: " (" attr(href) ")";
+}
 
+.external:after{
+    content: url('../images/external-link-alt.svg');
+    display: inline-block;
+    height:0.6em;
+    width:0.6em;
+    margin-left:3px;
+    margin-right:5px;
+    }
+details {
+  border: none;
+}
 	</style>
 </head>
 <body>
