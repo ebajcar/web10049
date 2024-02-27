@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Worksheet 3 SYST10049</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+ dd {
+  margin-bottom: 7px;
+}
+dd:first-of-type ol{
+  list-style-type: upper-alpha;
+}
+
+.steps {
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+}    
+.steps li {
+    counter-increment: step-counter;
+}    
+.steps li::before {
+  content: "STEP " counter(step-counter) ": ";
+}
+details {
+  border: none;
+}
+	</style>
+</head>
+<body>
+<!-- body container for main and footer -->
+        <header>       
+            <h1><span class="allcaps">SYST<wbr>10049 Web Development<v-h>:</v-h></span><sub-title>Worksheet 3</sub-title></h1>
+        </header>
+        
+        <main>
+
+
+<p>The suggested activities will be started and discussed in class.  It is your responsibility to complete the activities by the next class and ask timely questions.  Check out information about formative vs. summative evaluation, how to study and how to learn,...</p>
+
+
+
+<!-- Prepare working environment (Part 2 and 3) -->
+<section id="p2b">
+    <h2>Activity 1. Prepare working environment (Part 3)</h2>
+    <details open>
+        <summary>Set up the server</summary>
+ <dl>
+        <dt>1. Preparing server environment</dt>
+        <dd>
+            <ol>
+                <li value="11">Download the FileZilla Client <strong>SFTP is a protocol to transfer files between client and server</strong> <a href="https://filezilla-project.org/" target="_blank">link to download FileZilla Client</a></li>
+                <li>Obtain <strong>cPanel access to dev.fast.sheridanc.on.ca</strong>  To request/reset password 
+                    <a href="https://tech.fast.sheridanc.on.ca/">tech.fast.sheridanc.on.ca/</a> (Services > LAMP/Git). Information for Hostname, Web URL, cPanel URL, FileZilla setup, WinSCP setup, username and password info.</li>
+
+            </ol>
+        </dd> 
+    </dl>   
+    
+
+    <dl>
+        <dt>2. Once you have access to the server, </dt>
+        <dd>
+            <ol style="list-style-type: upper-alpha;" start="13">
+                <li>use FileZilla to access your home directory on the server (will be demonstrated in the classroom). Navigate to the <code>public_html</code> directory and create the sub-tree in FIGURE 2 below.</li>
+                <li>use the cPanel (accessible through tech.fast.sheridanc.on.ca, where you requested your account above) to complete STEP 1 to STEP 5. <strong>READ through all the steps before you do any of the steps!</strong> This will help you anticipate any problems.</li>
+
+                <li><strong>Protect assignments directory:</strong> All assignments must be published and password-protected.
+                    <ol style="list-style-type: none;" >
+                    
+                        <li><strong>STEP 1.</strong> Read through carefully: <a href="https://www-acad.sheridanc.on.ca/~jollymor/syst10049/setupProtect_cp.html" target="_blank">SYST10049 Setup Tasks: Protect Assignments with cPanel</a> </li>
+                        <li><strong>STEP 2.</strong> Using the File Manager in the cPanel, navigate to <kbd>public_html</kbd> directory, create the folder <kbd>syst10049</kbd> using the <kbd>+Folder</kbd> menu item (see FIGURE 1).
+                            <figure>
+                                <figcaption>FIGURE 1. <kbd>+Folder</kbd> is the second menu item from the left, in the top menu.</figcaption>
+                                <a href="img/cpanel_folder_menu.png" target="_blank"><img src="img/cpanel_folder_menu.png" alt="remove authorized users"></a>
+                            </figure>                          
+                        
+                        </li>
+                        <li><strong>STEP 3.</strong> Navidate to the <kbd>syst10049/assignments</kbd> folder.</li>
+                        <figure>
+                            <figcaption>FIGURE 2. Sub-tree on the server</figcaption>
+                            <img src="img/assignments_subtree.png" alt="Sub-tree on the server">
+                        </figure>
+                        </li>
+                         <li><strong>STEP 4.</strong> Complete the steps in the "SYST10049 Setup Tasks: Protect Assignments with cPanel" in STEP 1.</li>
+                         <li><strong>STEP 5.</strong> <mark>If you make a mistake and protect the wrong folder:</mark>
+                            <ol style="margin-left:45px;margin-top:0;list-style-type: lower-alpha;">
+                                <li>Navigate to the folder that you have protected by mistake (remember: to navigate, you click on the icons)</li>
+                                <li>Click on the text (name of the folder) that you want to unprotect.</li>
+                                <li>Scroll down to the bottom of the page. Under the heading "Authorized Users", select (click on username) and then click the "Delete User" button underneath.</li>
+                            </ol>
+                            <figure>
+                                <figcaption>FIGURE 3. How to remove authorized users</figcaption>
+                                <a href="img/remove_authorized_users.png" target="_blank"><img src="img/remove_authorized_users.png" alt="remove authorized users"></a>
+                            </figure>                            
+                            
+                         </li>
+                    </ol>
+                
+                
+                
+                </li>
+                
+                <li>Publishing process to dev.fast.sheridanc.on.ca
+                <figure>
+                    <figcaption>FIGURE 4. Publishing process to dev.fast.sheridanc.on.ca</figcaption>
+                    <a href="img/publishing_process.png" target="_blank"><img src="img/publishing_process.png" alt="Publishing process to dev.fast.sheridanc.on.ca"></a>
+                </figure>
+                
+                </li>
+                
+                
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/Upload_files_to_a_web_server" target="_blank">How do you upload your files to a web server? (MDN web docs)</a></li>
+                              
+                 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/Checking_that_your_web_site_is_working_properly" target="_blank">How do you make sure your website works properly? (MDN web docs)</a> Test in your browser. HTTP statuses. Frequent errors.  More things to check.</li>
+            </ol>
+        </dd> 
+    </dl>    
+
+</section>
+ 
+<!-- 2. Plan and design -->
+<section id="p3">
+    <h2>Activity 2. Explore and study course material</h2>
+    <details open>
+        <summary>Plan, design, and construct website</summary>
+    <dl>
+        <dt>Explore the tutorials. Create your own version of the examples you encounter.</dt>
+        <dd>
+            <ol>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" target="_blank">Dealing with files (MDN web docs) </a>
+                <br>Where should your website live on your computer? An aside on casing and spacing. What structure should your website have? File paths. 
+                </li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools" target="_blank">What are browser developer tools?(MDN web docs)</a>
+                <br>How to open the devtools in your browser. The Inspector: DOM explorer and CSS editor. 
+                </li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_blank">Document and website structure (MDN web docs)</a>  
+                <ol style="margin-top:0; margin-bottom:0;margin-left:10px;list-style-type:lower-alpha;">
+                  <li>HTML for structuring content. HTML layout elements in more detail. (Information architecture: Information architecture, as applied to web design and development, is the practice of organizing the information, content, and functionality of a website so that it presents the best user experience it can, with information and services being easily usable and findable.)</li>
+                  <li>Basic sections of a document (<span style="text-transform:uppercase;">header, navigation bar, main content, sidebar, footer</span>)</li>
+                  <li><q>Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.</q></li>
+                 <li><q>we need to respect semantics and use the right element for the right job.</q></li>
+                 <li><span style="text-transform:uppercase;">article, section, aside, header, nav, footer, body, article, section; span, div; br, hr, p</span></li>
+                 </ol>
+                 </li>
+                <li style="margin-top:0"><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">HTML basics (MDN web docs) </a> 
+                <br>So what is HTML? &bull; Anatomy of an HTML element &bull; Nesting elements &bull; Void (Empty) elements &bull; Anatomy of an HTML document &bull; Marking up text <span style="text-transform:uppercase;">(Headings, Paragraphs, Lists) &bull; Links</span></li>
+
+            </ol>
+        </dd>      
+
+    </dl>     
+    
+    <dl>
+        <dt>2.3. HTML Living Standard</dt>
+        <dd>
+            <ul>
+                <li><a href="https://html.spec.whatwg.org/multipage/semantics.html#document-metadata" target="_blank">4.2 Document metadata</a> HEAD, TITLE, BASE, LINK, META, STYLE </li>
+                <li><a href="https://html.spec.whatwg.org/multipage/sections.html#sections" target="_blank">4.3 Sections</a> body, article, section, nav, aside, h1 - h6, hgroup, header, footer, address</li>  
+                <li><a href="" target="_blank">4.4 Grouping content</a> p, hr, pre, blockquote, ol, ul, menu, li, dl, dt, dd, figure, figcaption, main serach, div</li>                
+                <li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html" target="_blank">4.5 Text-level semantics</a></li>
+                <li><a href="https://html.spec.whatwg.org/multipage/links.html" target="_blank">4.6 Links</a></li>                              
+            </ul>
+        </dd> 
+    </dl> 
+
+
+    <dl>
+        <dt>2.4. Testing for valid HTML and accessibility</dt>
+        <dd>
+            <ul>  
+                <li><a href="https://validator.w3.org/" target="_blank">Testing for valid HTML</a> with https://validator.w3.org/</li>
+                <li><a href="https://wave.webaim.org/" target="_blank">Testing for accessibility</a> with WAVE Web Accessibility Evaluation Tools</li>                    
+                <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Accessibility_tree" target="_blank">Accessibility tree</a> Browser Accessibility Tree provides a representation of the document that is used by assistive devices like screen readers. Each node in the tree has the properties name, description, role and state.</li>               
+            </ul>
+        </dd> 
+    </dl>  
+    </details>
+
+</section>
+
+
+<!-- 3. 3. Practice. Practice. Practice. -->
+<section id="p3">
+    <h2>3. Practice. Practice. Practice.</h2>
+    
+    <dl>
+        <dt>3.1. Create templates project</dt>
+        <dd>
+            <a href="https://sheridanc-fast-syst10049.notion.site/Exercise-3-1-24cc3b99bdc64592964de132ce6216fa?pvs=4" target="_blank">Complete all steps.</a>
+        </dd> 
+    </dl>
+    
+    <dl>
+        <dt>3.2. Create week03 project</dt>
+        <dd>
+            <ol>
+
+                <li>Copy the templates project. Rename the copy <code>week03</code></li>
+                <li>Rename the <code>template.html</code> to <code>index.html</code>. This will be the only page for this project.</li>
+                <li>Remove all markup in the BODY element. This page does not have a header and footer, main, and aside.</li>
+                <li>Add content to your HTML file (un-marked). Copy and paste the text within the BODY element:
+                <br>
+                <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/content.txt" target="_blank">Textual content of the letter</a></li>                     
+                
+                <li>Examine the image of the letter. Observe the content characteristics. <br>
+                <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/letter_original_styled.png" target="_blank">The final (original) rendering of the letter (including CSS in Phase II PE)</a></li>
+                
+                <li>Compare to image of the letter as rendered without any CSS. Remember CSS is added only after the content is marked up with HTML5, with the objective of achieving semantic correctness, accessibility, well-formedness, and validity.<br>
+                <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/letter_solution_nocss.png" target="_blank">The rendering of the letter at the end of Phase I PE (without CSS)</a></li> 
+                
+                <li>Here is a suggested list of requirements. You can incorporate the requirements list in your document and use the TODO and DONE notation to keep track of your progress:
+                <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/letter_start_here.html" target="_blank">Suggested documentation</a> You can also read the original project on <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter" target="_blank">Marking up a letter on MDN</a>  -- ignore all references to CSS -- Addressor's contact information WILL NOT BE aligned on the right! (that will come later in PE Phase 2)</li>                  
+            </ol>
+        </dd> 
+    </dl>    
+</section>
+
+
+
+</main>
+
+
+<!-- footer area -->
+<footer>
+    <address><a href="">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    
+</footer>
+
+
+</body>
+</html>

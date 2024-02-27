@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a aria-current="page" href="index.html">Selectors</a></li>
+        <li><a href="css_invalid_selector.html">Invalid</a></li>
+        <li><a href="css_simple.html">Simple</a></li>
+        <li><a href="css_combinators.html">Combinators</a></li>       
+        <li><a href="css_pseudo.html">Pseudo-</a></li>
+        <li><a href="css_attrib_selector.html">Attribute</a></li>
+      </ul>
+    </nav>            
+</header>       
+            
+                                   
+<main>  
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">CSS Selectors</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+
+    
+    
+    <section id=#e01">   
+        <h2>Selectors <small>a way to target specific elements</small></h2>
+
+    
+    <dl>
+    <dt>We can divide CSS selectors into five categories:</dt>
+    <dd>
+    <ul>
+        <li><strong>Simple selectors</strong> (select elements based on name, id, class) Examples:</li>
+        <li><strong>Combinator selectors</strong> (select elements based on a specific relationship between them)</li>
+        <li><strong><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">Pseudo-class</a> selectors</strong> (select elements based on a certain state) </li>
+        <li><strong><a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudo-element</a> selectors</strong> (select and style a part of an element) </li>
+        <li><strong>Attribute selectors</strong> (select elements based on an attribute or attribute value) </li>
+    </ul>
+    </dd>
+    <dt>Selector list</dt>
+    <dd>There is a variety of ways to combine selectors. The most common is the <em>selector list, a comma-separated list of selectors</em>. When several selectors share the same declarations, they may be grouped into a comma-separated list.
+
+     <pre class="language-css"><code>/* example of selector list to target
+all H1, all P, all LI, all A elements, and all elements classified as "red"
+on a page */
+h1, p, li, a, .red {
+  /* declarations */
+}</code></pre>	
+ 
+    </dd>
+</dl> 
+	<p>Explore selectors, the different ways you can target (select) which element or elements you want to style, to change the values for some of the properties.</p>    
+	  <p>For a full list, explore <a href="" target="_blank">2. Selectors Overview &mdash;W3C</p>   
+    
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

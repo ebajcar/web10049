@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav> 
+      <ul role="list">
+        <li><a href="index.html">DOM</a></li>
+        <li><a href="terminology.html">Terminology</a></li>
+        <li><a href="objects.html">Objects</a></li>       
+        <li><a href="visual.html">Visual DOM</a></li>
+        <li><a aria-current="page" href="page5.html">Processing</a></li>
+        <li><a href="cssom.html">CSSOM</a></li>
+      </ul>
+    </nav>            
+</header>         
+            
+                   
+<main>   
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">Document Object Model (DOM)</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">   
+        <h2>DOM processing</h2>
+    <p class="text-gray-700 text-base mb-2">Every time the browser processes HTML markup, it goes through the process. This process can take some time, especially if we have a large amount of HTML to process.
+      </p>
+      <dl>
+        <dt>STEP 1: Conversion &mdash; convert bytes to characters</dt> 
+            <dd>The browser reads the raw bytes of HTML off the disk or network, and translates them to individual characters based on specified encoding of the file (for example, UTF-8).</dd>
+
+            <dt>STEP 2: Tokenizing &mdash; identify tokens</dt> 
+            <dd>The browser converts strings of characters into distinct tokens—as specified by the W3C HTML5 standard for example, "&lt;html>", "&lt;body>" —and other strings within angle brackets. Each token has a special meaning and its own set of rules.</dd>
+
+            <dt>STEP 3: Lexing &mdash; convert tokens to nodes</dt> 
+            <dd>The emitted tokens are converted into "objects," which define their properties and rules.</dd>
+
+            <dt>STEP 4: DOM construction &mdash; build the DOM tree</dt> 
+            <dd>Finally, because the HTML markup defines relationships among different tags (some tags are contained within other tags) the created objects are linked in a tree data structure that also captures the parent-child relationships defined in the original markup: the HTML object is a parent of the body object, the body is a parent of the paragraph object, and so on.</dd>
+        </li>
+    </dl>
+      <img src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/full-process.png" alt="browser process" style="width:80%;text-align:center;margin:auto;">	
+
+    <p class="blockquote-footer">Read further  <cite title="[ Constructing the Object Model (Google)]"><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model" target="_blank"> Constructing the Object Model</a></cite></p>        
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

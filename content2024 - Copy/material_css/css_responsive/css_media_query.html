@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">Responsive design</a></li>
+        <li><a href="css_viewport.html">Viewport</a></li>
+        <li><a href="css_media.html">@media</a></li>       
+        <li><a href="css_import.html">@import</a></li>
+        <li><a href="css_font_face.html">@font-face</a></li>
+        <li><a aria-current="page" href="css_media_query.html">Media Queries</a></li>
+        <li><a href="css_frameworks.html">Frameworks</a></li>
+      </ul>
+    </nav>            
+</header>         
+            
+                   
+<main>   
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">Responsive design</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">   
+        <h2>Media queries</h2>
+
+
+
+    <dl>
+      <dt>Media query</dt>
+        <dd>A media query is a method of testing certain aspects of the user agent or device that the document is being displayed in. Media queries are (almost) always independent of the contents of the document, its styling, or any other internal aspect; they’re only dependent on “external” information unless another feature explicitly specifies that it affects the resolution of Media Queries.
+        </dd>
+        <dd>A media query is a logical expression that is either true or false. A media query is true if:
+        <ul>
+            <li>the media type, if specified, matches the media type of the device where the user agent is running, and</li>
+            <li>the media condition is true.</li>
+        </ul>
+        <dd>Example written in HTML:
+        
+        <pre class="language-html"><code>&lt;!--
+This example expresses that a certain style sheet (example.css) 
+applies to devices of a certain media type (screen) with certain 
+feature (it must be a color screen).
+-->
+&lt;link rel="stylesheet" media="screen and (color)" href="example.css"></code></pre>
+        </dd>
+        
+        <dd>Example of the same media query written in an @import-rule in CSS:
+        
+        <pre class="language-css"><code>/*
+This example expresses that a certain style sheet (example.css) 
+applies to devices of a certain media type (screen) with certain 
+feature (it must be a color screen).
+*/
+@import url(example.css) screen and (color);</code></pre>
+        </dd>
+        </dl>
+        
+        
+        
+        
+<dl>
+        <dt>Media type</dt>
+        <dd>A media type is a broad category of user-agent devices on which a document may be displayed. The original set of media types were defined in HTML4, for the media attribute on &lt;link> elements.</dd>
+
+        <dd>Read further <a href="https://www.w3.org/TR/mediaqueries-4/#media" target="_blank"> media types: all, print, screen.</a>
+        </dd>
+    </dl>
+<dl>
+        <dt>Media feature</dt>
+        <dd>A media feature is a more fine-grained test than media types, testing a single, specific feature of the user agent or display device.</dd>
+
+        <dd>Read further <a href="https://www.w3.org/TR/mediaqueries-4/#mq-features" target="_blank"> media features.</a>
+        </dd>
+    </dl>
+
+
+       
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

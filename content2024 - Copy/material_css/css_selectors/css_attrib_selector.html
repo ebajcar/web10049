@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">Selectors</a></li>
+        <li><a href="css_invalid_selector.html">Invalid</a></li>
+        <li><a href="css_simple.html">Simple</a></li>
+        <li><a href="css_combinators.html">Combinators</a></li>       
+        <li><a href="css_pseudo.html">Pseudo-</a></li>
+        <li><a aria-current="page" href="css_attrib_selector.html">Attribute</a></li>
+    </nav>            
+</header>         
+            
+                   
+<main>   
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">CSS Selectors</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">   
+        <h2>Attribute selectors</h2>
+
+    <ul>
+      
+        <li><strong>Attribute selectors</strong> (select elements based on an attribute or attribute value)
+            <table>
+              <tr>
+                  <td style="width:180px">attribute  presence</td>
+                  <td><code>[placeholder]&nbsp;{}</code></td>
+                  <td>represents an element with the placeholder attribute, whatever the value of the attribute</td>
+              </tr>
+              <tr>
+                  <td class="px-8" rowspan="3">Substring matching</td>
+                  <td><code>[placeholder^="Enter"]&nbsp;{}</code></td>
+                  <td>
+                  represents an element with the placeholder attribute, whose value begins with "Enter"</td>
+              </tr>
+              <tr>
+
+                  <td><code>[placeholder$=".html"]&nbsp;{}</code></td>
+                  <td>
+                  represents an element with the placeholder attribute, whose value ends with ".html"</td>
+              </tr>
+              <tr>
+
+                  <td><code>[placeholder*="banana"]&nbsp;{}</code></td>
+                  <td>
+                  represents an element with the placeholder attribute, whose value contains the substring "banana"</td>
+              </tr>
+            </table>
+        </li>
+    </ul>
+ 
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

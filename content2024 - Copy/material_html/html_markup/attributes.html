@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">HTML</a></li>
+        <li><a href="specifications.html">specifications</a></li>      
+        <li><a href="elements.html">elements</a></li> 
+        <li><a aria-current="page" href="attributes.html">attributes</a></li>    
+        <li><a href="valid_code.html">valid code</a></li> 
+        <li><a href="semantics.html">semantics</a></li>
+        <li><a href="accessibility.html">accessibility</a></li>
+        <li><a href="techniques.html">techniques</a></li>
+        
+      </ul>
+    </nav>            
+</header>         
+            
+                   
+<main>   
+    <div class="prev-next">
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">HTML Document</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">   
+        <h2>HTML Attributes</h2>
+        <h3>Global attributes</h3>
+       <p>Global attributes are common to and may be specified on all HTML elements:</p>
+          <ul style="columns:3">
+            <li><code>accesskey</code></li>
+            <li><code>contenteditable</code></li>
+            <li><code>dir</code></li>
+            <li><code>draggable</code></li>
+            <li><code>hidden</code></li>
+            
+            <li><a href="https://html.spec.whatwg.org/multipage/dom.html#attr-lang" target="_blank"><code>lang</code></a></li>
+            
+            <li><code>spellcheck</code></li>
+            <li><code>style</code></li>
+            <li><code>tabindex</code></li>
+            <li><a href="https://html.spec.whatwg.org/multipage/dom.html#attr-title" target="_blank"><code>title</code></a></li>
+            <li><code>translate</code></li>
+            <li>...and others.</li>
+         </ul>
+         
+                <p>DOM defines the user agent requirements for the class and id attributes for any element.</p>
+        <ul style="columns:3">
+            <li><a href="" target="_blank"><code>id</code></a></li>
+            <li><a href="" target="_blank"><code>class</code></a></li>
+        </ul>  
+        
+        <p>For full list and more details on each, refer to</p> 
+            <ul>
+                <li><cite title="[ https://html.spec.whatwg.org/multipage/dom.html#global-attributes ]"><a href="https://html.spec.whatwg.org/multipage/dom.html#global-attributes" target="_blank"> 3.2.6 Global attributes section of the HTML Living Standard</a></cite></li>  
+                <li><cite title="[ html.spec.whatwg.org/multipage/dom.html#global-attributes ]"><a href="https://html.spec.whatwg.org/multipage/dom.html#global-attributes" target="_blank"> Global attributes (W3C)</a></cite></li>    
+            </ul>            
+  
+        
+        <h3>Attribute minimization</h3>
+        <div class="box warn">
+            <strong class="block titlebar">Rules:</strong>
+            The term <strong>attribute minimization </strong> refers to an exception of HTML5 rule that single-valued attributes are minimized. The rules states that ALL attributes must have a quoted value assigned. In some cases, there is only one value that can be assigned to the attribute, such as &lt;video controls="controls"> which in HTML5 only, is minimized to &lt;video controls>
+        </div>  
+        
+        <h3>Element-specific attributes</h3>
+        <p class="text-gray-700 text-base mb-4">
+          Some elements have attributes that are specific to the element. For example, the <code data-toggle="tooltip" data-placement="top" title="Ordered list" data-ref-link="https://www.w3schools.com/tags/tag_ol.asp">&lt;ol></code> element, by default starts with the natural number 1; you can change the starting value with the attribute <code>start</code> and the kind of marker to use with the attribute <code>type</code>. the code <code>&lt;ol start="3" type="a"></code> will produce a list with the first item numbered "c. First item", instead of the default "1. First item".</p>
+      </div>       
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

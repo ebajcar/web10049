@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <meta name="author" content"Ellen Bajcar">
+    <meta name="description" content="Class examples for SYST10049">
+<style>
+      :popover-open {
+        position: absolute;
+        inset: unset;
+        bottom: 5px;
+        right: 5px;
+      }
+
+      @media all and (max-width: 600px) {
+        :popover-open {
+          left: 5px;
+        }
+      }
+</style>
+</head>
+<body>
+<!-- Class example -->
+<button popovertarget="my-popover">Open Popover</button>
+
+<div popover id="my-popover">Greetings, one and all!</div>
+
+
+<!-- https://mdn.github.io/dom-examples/popover-api/ -->
+    <button id="toggleBtn">Toggle popover help UI</button>
+
+    <p id="keyboard-help-para">Click the above button or press "h" to get help with using our awesome app.</p>
+
+    <div id="mypopover">
+      <h2>Help!</h2>
+
+      <p>You can use the following commands to control the app</p>
+
+      <ul>
+        <li>Press <ins>C</ins> to order cheese</li>
+        <li>Press <ins>T</ins> to order tofu</li>
+        <li>Press <ins>B</ins> to order bacon</li>
+        <hr />
+        <li>Say "Service" to summon the robot waiter to take your order</li>
+        <li>Say "Escape" to engage the ejector seat</li>
+      </ul>
+    </div>
+    <footer>
+        <address>Ellen Bajcar &copy; Sheridan College</address>
+        <p>The materials provided in class and in SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>
+    </footer>
+    
+    
+<script>
+function supportsPopover() {
+  return HTMLElement.prototype.hasOwnProperty("popover");
+}
+
+const popover = document.getElementById("mypopover");
+const toggleBtn = document.getElementById("toggleBtn");
+
+const keyboardHelpPara = document.getElementById("keyboard-help-para");
+
+const popoverSupported = supportsPopover();
+
+if (popoverSupported) {
+  popover.popover = "auto";
+  toggleBtn.popoverTargetElement = popover;
+  toggleBtn.popoverTargetAction = "toggle";
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "h") {
+      popover.togglePopover();
+    }
+  });
+} else {
+  toggleBtn.style.display = "none";
+  keyboardHelpPara.style.display = "none";
+}  
+</script>
+</body>
+</html>

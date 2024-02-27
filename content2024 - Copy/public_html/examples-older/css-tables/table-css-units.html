@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Units</title>
+  <meta charset="utf-8">
+<!--
+Author: 		Ellen Bajcar, et al
+Version: 		2023.3.22
+Purpose: 		class examples for learning web development 
+Copyright: 
+    This work is the intellectual property of Sheridan College. 
+    Any further copying and distribution outside of class must be within 
+    the copyright law. Posting to commercial sites for profit is prohibited.
+Description:
+    explore tables, styling tables, figure and figure captions, 
+    accessibility for table caption and summary, using counters, styling HR
+-->
+<style>
+/* 
+minimal table.css 
+https://github.com/mdn/learning-area/blob/main/html/tables/advanced/minimal-table.css 
+*/
+html {
+  font-family: sans-serif;
+}
+body {  /* added */
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  width:80%;
+  margin: auto;
+}
+table {
+  /* 
+    https://www.w3schools.com/cssref/pr_border-collapse.php
+    border-collapse: separate|collapse|initial|inherit; 
+  */
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+/* 
+    https://www.w3schools.com/cssref/pr_text_letter-spacing.php
+    property increases or decreases the space between characters in a text
+    letter-spacing: normal|length|initial|inherit; 
+  */
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+
+/* 
+additional rules
+*/
+caption {
+  padding: 10px;
+}
+
+td:last-child {
+  text-align: left;
+}
+tbody {
+  font-size: 95%;
+}
+tfoot {
+  font-style: italic;
+}
+/*
+  Using CSS counters
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters
+*/
+body {
+  counter-reset: figure; /* Set a counter named 'section', and its initial value is 0. */
+}
+figcaption:before {
+  counter-increment: figure; /* Increment the value of figure counter by 1 */
+  content: "FIGURE " counter(figure) ": "; /* Display the word 'FIGURE ', the value of section counter, 
+                                                and a colon before the content of each figcaption */
+}
+/* Rounded border https://www.w3schools.com/howto/howto_css_dividers.asp */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+/* Dashed border */
+hr.dashed {
+  border-top: 5px dashed #bbb;
+  margin: 10px 0;
+}
+header small {
+  font-size: 0.7em;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-weight: normal;
+  }
+</style>
+<body>
+<header>
+  <h1>Tables of CSS Units<br>
+  <small>Accessibility, styling tables (caption, summary, figure, figcaption), using counters, styling &lt;hr></small>
+  </h1>
+</header>
+<hr class="dashed">
+  
+<!--
+https://www.w3.org/WAI/tutorials/tables/caption-summary/
+Captions and summaries provide information that can help users find, navigate, and understand tables. While they are not required in every case to meet WCAG, captions and summaries are fairly straightforward ways to provide such information that is often needed.
+Using the <figure> element to mark up a table summary
+Screen reader users navigating in “Tables Mode” are usually unable to identify a table by a caption applied like this. The caption part of the <figcaption> element can be explicitly associated to the table by using the aria-labelledby attribute and the summary part by using the aria-describedby attributes. Note that this could lead to the caption and summary being read out multiple times.
+
+HTML basics https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables
+
+validator.w3.org (March 2023)
+When a table element is the only content in a figure element other than the figcaption, the caption element should be omitted in favor of the figcaption.
+-->
+
+<p><strong>Always refer to tables and figures</strong> in a nearby paragraph&hellip; for example, <strong>FIGURE 1</strong> lists all the relative units that can be used to express length in CSS values&hellip; Nam nisi est, gravida quis pretium nec, elementum nec tortor. Pellentesque eu posuere sem, ac maximus metus. Sed finibus, dui ut molestie tristique, nisi eros aliquet risus, eget feugiat nulla ligula non elit. Pellentesque at risus in quam blandit ultricies dignissim sit amet nisl. Duis ac ornare felis, vitae cursus urna. Nunc vel faucibus nibh, quis laoreet ligula. Suspendisse id diam venenatis, fringilla velit eget, viverra velit. Donec dolor massa, volutpat aliquet est nec, venenatis tristique nisl. Praesent accumsan vel sem finibus pharetra. Pellentesque tempus tortor nisl, sit amet faucibus sem sagittis non.</p>
+<figure>
+  <table aria-labelledby="cssunits-caption" aria-describedby="cssunits-summary">
+    <thead>
+        <tr><th>Unit</th>	<th>Description</th></tr>    
+    </thead>
+    <tbody>
+        <tr><td>em</td>		<td>Relative to the font-size of the element (2em means 2 times the size of the current font)</td>	</tr>
+        <tr><td>ex</td> 	<td>Relative to the x-height of the current font (rarely used)</td></tr>
+        <tr><td>ch</td>		<td>Relative to the width of the "0" (zero)</td></tr>
+        <tr><td>rem</td>	<td>Relative to font-size of the root element</td></tr>
+        <tr><td>vw</td>		<td>Relative to 1% of the width of the viewport*</td>	</tr>
+        <tr><td>vh</td>		<td>Relative to 1% of the height of the viewport*</td></tr>	
+        <tr><td>vmin</td>	<td>Relative to 1% of viewport's* smaller dimension</td></tr>	
+        <tr><td>vmax</td>	<td>Relative to 1% of viewport's* larger dimension</td>	</tr>
+        <tr><td>%</td>		<td>Relative to the parent element</td></tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">Tip: The em and rem units are practical in creating perfectly scalable layout!
+            <br>* Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.</td>
+        </tr>
+    </tfoot>
+  </table>
+  <figcaption>
+    <strong id="cssunits-caption">CSS relative units with descriptions</strong>
+    <br><span id="cssunits-summary">Column one has the name of the unit, the other column show the description of the unit.</span>
+    <br><small>See more <a href="https://www.w3schools.com/cssref/css_units.php">https://www.w3schools.com/cssref/css_units.php</a></small>
+  </figcaption>  
+</figure>
+
+<p>Other content of the document&hellip; Don't forget to talk about <strong>FIGURE 2</strong> near the table placement&hellip; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet ex et sem ullamcorper hendrerit id eget tellus. Proin vehicula mattis ante, nec ultricies nisi gravida non. Suspendisse euismod id augue at varius. Integer ut placerat dui. Curabitur interdum, dui nec aliquet efficitur, dolor tortor fermentum sapien, sit amet ultricies sapien orci in erat. Nulla facilisi. Donec at orci varius, feugiat nulla vitae, dictum arcu. Sed et aliquet libero. Nam in arcu mauris. Sed vitae tincidunt metus. Phasellus sit amet commodo sapien. Quisque in sapien in felis mollis euismod interdum quis dui. From <a href="https://lipsum.com/">lipsum.com</a>.</p>
+
+<figure>
+  <table aria-labelledby="abslength-caption" aria-describedby="abslength-summary">
+    <thead>
+        <tr><th>Unit</th>	<th>Description</th></tr>    
+    </thead>
+    <tbody>
+        <tr><td>cm</td>		<td>centimeters</td></tr>
+        <tr><td>mm</td> 	<td>millimeters</td></tr>
+        <tr><td>in</td>		<td>inches (1in = 96px = 2.54cm)</td></tr>
+        <tr><td>px &#182;</td>	<td>pixels (1px = 1/96th of 1in)</td></tr>
+        <tr><td>pt</td>		<td>points (1pt = 1/72 of 1in)</td>	</tr>
+        <tr><td>pc</td>		<td>picas (1pc = 12 pt)</td></tr>	
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&#182; Pixels (px) are relative to the viewing device. For low-dpi devices, 1px is one device pixel <br>(dot) of the display. For printers and high resolution screens 1px implies multiple device pixels.</td>
+        </tr>
+    </tfoot>
+  </table>
+  <figcaption>
+    <strong id="abslength-caption">CSS absolute lengths with descriptions</strong>
+    <br><span id="abslength-summary">Column one has the name of the unit, the other column show the description of the unit.</span>
+    <br><small>See more <a href="https://www.w3schools.com/cssref/css_units.php">https://www.w3schools.com/cssref/css_units.php</a></small>
+  </figcaption>  
+</figure>
+
+<footer>
+  <hr class="rounded">
+  <address><strong>2021-2023 &copy; Ellen Bajcar et al, FAST, Sheridan College</strong>
+  <p>The materials provided in class and in SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>
+  </address>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">Intro</a></li>
+        <li><a href="index.html">Selectors</a></li>
+        <li><a href="css_invalid_selector.html">Invalid</a></li>
+        <li><a href="css_simple.html">Simple</a></li>
+        <li><a aria-current="page" href="css_combinators.html">Combinators</a></li>       
+        <li><a href="css_pseudo.html">Pseudo-</a></li>
+        <li><a href="css_attrib_selector.html">Attribute</a></li>
+      </ul>
+    </nav>            
+</header>         
+            
+                   
+                   
+<main>   
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">CSS Selectors</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">   
+        <h2>Combinator selectors</h2>
+        <dl>
+            <dt>Combinator selectors select elements based on a specific relationship between them</dt>
+            <dd>
+                <table>
+                  <tr>
+                  <td style="width:180px">descendant selector</td>
+                  <td style="width:200px"><code>article p {}</code></td>	
+                  <td class="px-8">all P that are descendants of ARTICLE</td>
+                  </tr>
+                  <tr>
+                  <td class="px-8">child selector</td>
+                  <td><code>article > p {}</code></td>
+                  <td class="px-8">all P that are children of ARTICLE</td>
+                  </tr>
+                  <tr>
+                  <td class="px-8">adjacent sibling</td>
+                  <td><code>.agenda dt + dd {}</code></td>
+                  <td class="px-8">DD immediately after DT (that are descendants of class agenda)</td>
+                  </tr>
+                  <tr>
+                  <td class="px-8">general sibling</td>
+                  <td><code>.agenda dt ~ dd {}</code></td>
+                  <td class="px-8">all DD after DT (that are descendants of class agenda)</td>
+                  </tr>
+                </table> 
+            </dd>
+        </dl>
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

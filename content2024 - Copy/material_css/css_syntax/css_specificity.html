@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">CSS Syntax</a></li>
+        <li><a href="css_rules.html">CSS Rules</a></li>
+        <li><a href="css_location.html">Location</a></li> 
+        <li><a href="css_cascade.html">The Cascade</a></li>       
+        <li><a aria-current="page" href="css_specificity.html">Specificity</a></li>
+      </ul>
+    </nav>            
+</header>         
+            
+                   
+<main>   
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">CSS Syntax and Structure</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">   
+        <h2>CSS Specificity</h2>
+        <dl>
+		<dt>Specificity is a measure of how specific a selector is — how many elements it could match.</dt>
+        <dd>Element selectors have low specificity. </dd>
+        <dd>Class selectors have a higher specificity, so will win against element selectors. </dd>
+        <dd>ID selectors have an even higher specificity, so will win against class selectors. The only way to win against an ID selector is to use !important.</dd>
+		<dd>Read further  
+        <a href="https://www.w3.org/TR/selectors-3/#specificity" target="_blank"> World Wide Web Consortium (W3C)</a></dd>
+        <dl>
+        
+        <p>
+            Conflicting rules &mdash;cascade, specificity, inheritance&mdash; these three concepts together control which CSS applies to what element.<br><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank"> Understanding how the concepts work together (MDN)		</a>
+        </p>  
+
+ 
+        
+<figure>
+<figcaption></figcaption>
+<iframe style="height: 400px; width: 100%;margin:auto" scrolling="no" title="Specificity calculator" src="https://codepen.io/ebajcar/embed/yQLmmm?height=349&theme-id=light&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/ebajcar/pen/yQLmmm'>Specificity calculator</a> by Ellen Bajcar
+  (<a href='https://codepen.io/ebajcar'>@ebajcar</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+</figure>
+
+
+
+       
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

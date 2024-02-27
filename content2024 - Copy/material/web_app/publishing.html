@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Elements</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">Development</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="testing.html">Testing</a></li>       
+        <li><a href="validating.html">Validating</a></li>
+        <li><a href="debugging.html">Debugging</a></li>
+        <li><a aria-current="page" href="publishing.html">Publishing</a></li>
+      </ul>
+    </nav>            
+</header>         
+                              
+
+<main> 
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">Development Lifecycle</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">  
+        <h2>Work with sftp protocol</h2>
+	<p>If you don't already have it installed on your machine, you can download FileZilla Client from<code>
+  https://filezilla-project.org/download.php?type=client</code>. Make sure the type is client for your machine.</p>
+  
+<figure>
+<iframe style="width:300px;height:200px;" src="https://docs.google.com/presentation/d/e/2PACX-1vTJtn5Pn6NcID_WZVm8mjLxgjpRJDCnmes6GHuM4jXruquONl1JTRxROVOZqHNXoLc8P-UzAOoUjVzh/embed?start=false&loop=false&delayms=3000" frameborder="0"  allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+ <figcaption>Installing FileZilla Client. The tool uses the FTP protocol. (Make sure you always use the "secure" versions.</figcaption>
+</figure>
+
+<!-- src="https://padlet.com/ellen_bajcar/kpkm4mn9xa0t62t3"  -->
+
+  <h2>Publishing using FileZilla</h2>
+	<dl>
+	  <dt>STEP 1:</dt>
+	  <dd>Start filezilla application. Log in with your credentials onto dev.fast.sheridanc.on.ca</dd>	  
+	  <dt>STEP 2:</dt>
+	  <dd>Navigate to the appropriate location on the server (right panel)
+	  /home/userid/public_html/syst10049</dd>	
+	  <dt>STEP 3:</dt>
+	  <dd>Navigate to the appropriate location on the client (left panel)
+c:/public_html/syst10049</dd>
+	  <dt >STEP 4:</dt>
+	  <dd>Drag and drop the objects from one location (local machine) to the other (server machine).</dd>	  
+	</dl>
+	
+			<h2>Publishing a project using sftp:</h2>
+			<ul class="w3-ul">
+			<li>STEP 1:&nbsp;&nbsp;Start the psftp application. Log in with your credentials onto <code>dev.fast.sheridanc.on.ca</code>
+			</li>
+			<li>STEP 2:&nbsp;&nbsp;On server, position yourself in /home/userid/public_html:<br>
+			<code>cd public_html/syst10049</code>
+			</li>
+			<li>STEP 3:&nbsp;&nbsp;On your laptop, position yourself in c:/public_html directory<br> 
+			<code>lcd c:/public_html/syst10049</code>
+			</li>
+			<li>STEP 4:&nbsp;&nbsp;Upload the entire project:<br>
+			<code>mput -r projectName</code>
+			</li>
+			</ul>
+            
+            <figure>
+			<iframe style="width:300px;height:200px;" src="https://docs.google.com/presentation/d/e/2PACX-1vSArTWRhxe7g_nLMvQ-DIKwDqINMuzOM3s4npsMReM983PZWxS5L2w51dJnsLOKX4Q6GnjBeHix4WWq/embed?start=false&loop=false&delayms=3000" frameborder="0" width="300" height="197" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <figcaption>
+			Note: The steps are exactly the same, instead of giving commands, you use the graphical interface. Both tools use FTP protocol. (Make sure you always use the "secure" versions.</figcaption>
+		</figure>  
+          
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

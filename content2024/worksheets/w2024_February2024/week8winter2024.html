@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Worksheet 8 SYST10049</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+dl dd dl dd li {
+  line-height: 1.1em;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+li {
+  padding-bottom: 9px;
+}
+dd p {
+  margin: 0;
+  padding: 0;
+}
+kbd {
+  color: darkorange;
+}
+div > a::after {
+  content: " (" attr(href) ")";
+}
+
+.external:after{
+    content: url('../images/external-link-alt.svg');
+    display: inline-block;
+    height:0.6em;
+    width:0.6em;
+    margin-left:3px;
+    margin-right:5px;
+    }
+details {
+  border: none;
+}
+	</style>
+</head>
+<body>
+<!-- body container for main and footer -->
+        <header>       
+            <h1><span class="allcaps">SYST<wbr>10049 Web Development<v-h>:</v-h></span><sub-title>Worksheet 8</sub-title></h1>
+        </header>
+        
+        <main>
+            <div class="prev-next">
+                <p><a href="week7winter2024.html">Prev</a></p>
+                <nav class="breadcrumbs" aria-label="Breadcrumbs">
+                    <ol>
+                        <li><a href="../../index.html"  class="allcaps">Home</a></li>
+                        <li><a href="week13.html" aria-current="page">Worksheet 8</a></li>
+                    </ol>               
+                </nav> 
+                <p><a href="week9winter2024.html">Next</a></p>
+            </div>
+
+            <p>The concepts are discussed in class.  It is your responsibility to complete the activities by the next class and ask timely questions.  Check out  <a href="https://comm13729-sheridancollege.notion.site/Class-Plan-Information-c86adbe0453243a280fd72d003447ae0?pvs=4" target="_blank">Class Plan Information</a> (Classroom and Evaluation Policies; How evaluation works; Formative & Summative Evaluation; Getting the most out of your education; How do I get an A in (any) course?; Active learning; Learning course content; Learning for mastery, not grades). If you are struggling, consider <a href="https://www.sheridancollege.ca/student-life/student-services/tutoring" target="_blank">Tutoring services</a>.</p>
+ 
+            <!-- 1. Review, connect, dig deeper -->
+            <section id="p1">
+                <h2>Activity 8.1. Review, connect, dig deeper</h2>
+                <dl>
+                    <dt>Keep practicing HTML5. Keep working with HTML. Create your own projects. Apply all standards, rules, and guidelines covered.</dt>
+                    <dd>
+                        <a href="https://sheridanc-fast-syst10049.notion.site/Exercise-3-1-24cc3b99bdc64592964de132ce6216fa?pvs=4" target="_blank">Step-by-step process.</a> The remainder of the course focuses and digs deeper on <em>STEP 5: Style HTML pages</em>. It is essential to keep working and mastering HTML5.
+                    </dd> 
+                    <dd>Quick links:
+                        <ul>  
+                            <li><strong>HTML validator:</strong>  
+                            &bull;  <a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a></li>
+                            
+                            <li><strong>CSS validator:</strong> 
+                            &bull;  <a href="https://jigsaw.w3.org/css-validator/" target="_blank">https://jigsaw.w3.org/css-validator/</a>
+                            </li>
+                            
+                            <li><strong>WAVE Web Accessibility Evaluation Tool:</strong>  
+                            &bull;  <a href="https://wave.webaim.org/" target="_blank">https://wave.webaim.org/</a> </li>   
+                            
+                            <li><strong>Period table of HTML5 elements:</strong> 
+                            &bull;  <a href="https://ebajcar.github.io/web10049/content2024/slides/periodic-table-of-html5elements/dist/" target="_blank">link</a>
+                            </li>            
+                         </ul>
+                    </dd> 
+                    <dt>Review, dig deeper, and make connections &mdash; Worksheets 1 to 7</dt>
+                </dl>
+            </section> 
+
+            <!-- 2. Read and explore more concepts -->
+            <section id="p2">
+                <h2>Activity 8.2. Study, dig deeper, explore more concepts</h2> 
+                 <dl>
+                    <dt>Moving to Phase 2 of Progressive Enhancement.</dt>
+                    <dd>To focus on the new Learning Outcomes (red), we need to <strong>start with a well-formed, valid, semantically correct, and accessible HTML5 code</strong> (gray) </dd>
+                    <dd>
+                       <ol style="text-align:left;line-height:1.1;color:gray;">
+                            <li style="color:gray;">Create a properly structured and accessible web page using (HTML).</li>
+                            <li style="color:gray;">Represent the Document Object Model (DOM) in a hierarchical diagram.</li>
+                            <li style="color:gray;">Recognize the importance of browser compatibility with HTML and CSS standards.</li>
+                            <li style="color:red;font-weight:bold;">Style an accessible web page using Cascading Style Sheets (CSS) techniques.</li>
+                            <li style="color:red;font-weight:bold;">Create page layouts that adapt to suit the constraints of the display using media queries.</li>   
+                            <li style="color:gray;">Use internet protocols to publish a web site.</li> 
+
+                            <li style="color:gray;">Explain how web servers display web pages.</li> 
+                            <li style="color:gray;">Describe how to secure a web site.</li>   
+                            <li style="color:red;font-weight:bold;">Use design techniques to lay out a user-friendly website.</li>
+                        </ol>
+                    </dd> 
+                </dl>                 
+                <dl>
+                    <dt>Prerequisites</dt>
+                    <dd>Review <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" target="_blank">Dealing with files</a> and <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">HTML basics</a></dd>   
+                <dl>    
+                    <dt>Introduction to CSS (Course material) &mdash; Study, make connections, and keep notes: </dt>
+                    <dd>
+                        <ul>
+                            <li><a href="https://ebajcar.github.io/web10049/content2024/material_css/index.html" target="_blank">Mastering styles</a></li>
+                            <li><a href="https://ebajcar.github.io/web10049/content2024/material_css/css_guidelines.html" target="_blank">Follow CSS Guidelines</a></li>
+                            <li><a href="https://ebajcar.github.io/web10049/content2024/css_syntax/css_rules.html" target="_blank">Style rules</a></li>
+                            <li><a href="https://ebajcar.github.io/web10049/content2024/css_syntax/css_syntax.html" target="_blank">CSS syntax</a></li>
+                            <li><a href="https://ebajcar.github.io/web10049/content2024/css_syntax/css_location.html" target="_blank">CSS location</a></li>
+                            <li><a href="https://ebajcar.github.io/web10049/content2024/css_syntax/css_cascade.html" target="_blank">The Cascade</a></li>
+                            <li><a href="https://ebajcar.github.io/web10049/content2024/css_syntax/css_specificity.html" target="_blank">Specificity</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Complete the following tutorials. Make your own notes. When you come to an example, implement it as part of your practice project</dt>
+                    <dd>
+                        <!-- CSS first steps overview: What is CSS? Getting started with CSS, How CSS is structured, How CSS works -->
+                        <ul>   
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" 
+                                   target="_blank">What is CSS? (MDN web docs)</a>  
+                                   • What is CSS for? • CSS syntax • CSS modules • CSS specifications • Browser support information</li>
+                                   
+                             <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started" 
+                                    target="_blank">Getting started with CSS (MDN web docs)</a>  
+                                    • Starting with some HTML • Adding CSS to our document • Styling HTML elements • Changing the default behavior of elements 
+                                    • Adding a class • Styling things based on their location in a document • Styling things based on state 
+                                    • Combining selectors and combinators </li>
+                                   
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works" 
+                                   target="_blank">How CSS works (MDN web docs)</a>  
+                                   • How does CSS actually work? • About the DOM • A real DOM representation • Applying CSS to the DOM 
+                                   • What happens if a browser encounters CSS it doesn't understand?</li>
+                                   
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured" 
+                                    target="_blank">How CSS is structured (MDN web docs)</a>  
+                                    • Applying CSS to HTML • Selectors • Specificity • Properties and values • @rules • Shorthands • Comments 
+                                    • White space</li>
+                        </ul>
+                    </dd>
+                    <dd>
+                         <ul>   
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps" 
+                                   target="_blank">CSS first steps overview (MDN web docs)</a>  •  •  • </li>
+                                     
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" 
+                                   target="_blank">CSS basics(MDN web docs)</a>  
+                                   • What is CSS? • Anatomy of a CSS ruleset (selector, declaration, properties, property values) 
+                                   • Selecting multple elements • Different types of selectors • Fonts and text • CSS: all about boxes 
+                                   • Changing the page colour • Styling the body • Positioning and styling the main page title • Centering the image </li>    
+                        </ul>
+                    </dd>
+                    
+                    <dt>Explore CSS modules</dt>
+                    <dd>
+                         <ul>  <!-- 8 modules -->                                   
+                               <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders" target="_blank">CSS backgrounds and borders(MDN)</a>  •  •  • </li>  <!--  specs https://drafts.csswg.org/css-backgrounds/ -->
+                               <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade" target="_blank">CSS cascade and inheritance (MDN)</a>  •  •  • </li>
+                               <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors" target="_blank">CSS colors (MDN)</a>  •  •  • </li>
+                               <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors" target="_blank">CSS selectors (MDN)</a>  •  •  • </li>
+                               <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_syntax" target="_blank">CSS syntax (MDN)</a>  •  •  • </li>
+                        </ul>
+                    </dd>
+
+
+
+ <!-- empty -->           
+                    <dd>
+                         <ul hidden>   
+                               <li><a href="" target="_blank">(MDN)</a>  •  •  • </li>
+                               <li><a href="" target="_blank">(MDN)</a>  •  •  • </li>     
+                               <li><a href="" target="_blank">(MDN)</a>  •  •  • </li>
+                               <li><a href="" target="_blank">(MDN)</a>  •  •  • </li>
+                               <li><a href="" target="_blank">(MDN)</a>  •  •  • </li>
+                               <li><a href="" target="_blank">(MDN)</a>  •  •  • </li>
+                               <li><a href="" target="_blank">(MDN)</a>  •  •  • </li>                                  
+                        </ul>                          
+                    </dd>
+                 </dl>               
+            </section>
+
+            <!-- 3.  Practice. Practice. Practice. -->
+            <section id="p3">
+                <h2>Activity 8.3. Practice. Practice. Practice.</h2>
+                <p><chip>Coming soon</chip></p>
+                 <dl hidden>
+                    <dt>What are the last 4 characters of a file that contains nothing but statements like this?</dt>
+                    <dd>
+<pre><code>p {
+    font-family: "Times New Roman", Times, serif;    
+}</code></pre>
+                    </dd>
+                    <dd><input type="text" pattern='.css'></dd>                
+                </dl>
+
+                <dl hidden>
+                    <dt>Type the first 3 characters of CSS code that specifies styling for paragraphs.</dt>
+                    <dd><input type="text" pattern='p \{'></dd>                
+
+                    <dt>Type the first 4 characters of CSS code that specifies styling for paragraphs.</dt>
+                    <dd><input type="text" pattern="h6 \{"></dd>                
+
+                    <dt>Fill in the blank</dt>
+                    <dd><pre><code>_______ "Trebuchet MS", Helvetica, sans-serif;</code></pre>
+                    </dd>
+                    <dd><input type="text" pattern='font-family:'></dd>                
+                </dl>               
+            </section>
+
+        </main>
+
+
+<!-- footer area -->
+<footer>
+    <address><a href="">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    
+</footer>
+     
+     
+      </div> <!-- body container for main and footer -->
+</div> <!-- sidebar -->
+
+	
+
+</body></html>

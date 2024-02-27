@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <meta name="author" content"Ellen Bajcar">
+    <meta name="description" content="Class examples for SYST10049">
+</head>
+<body>
+<!-- Class example -->
+    <h3>Examples from HTML Living Standard)</h3>
+    <p><strong>4.5.21 The b element</strong> represents a span of text to which attention is being drawn for utilitarian purposes without conveying any extra importance and with no implication of an alternate voice or mood, such as key words in a document abstract, product names in a review, actionable words in interactive text-driven software, or an article lede.</p>
+    
+ <pre class="language-html"><code>
+    &lt;!-- shows a use of the b element to highlight key words without marking them up as important: -->
+    &lt;p>The &lt;b>frobonitor&lt;/b> and &lt;b>barbinator&lt;/b> components are fried.&lt;/p>
+    
+    &lt;!-- objects in a text adventure are highlighted as being special by use of the b element -->
+    &lt;p>	
+        You enter a small room. Your &lt;b>sword&lt;/b> glows
+        brighter. A &lt;b>rat&lt;/b> scurries past the corner wall.
+    &lt;/p>
+    
+    &lt;!-- Another case where the b element is appropriate is in marking up the lede (or lead) sentence or paragraph. -->
+    &lt;article>
+        &lt;h2>Kittens 'adopted' by pet rabbit&lt;/h2>
+        &lt;p>&lt;b class="lede">Six abandoned kittens have found an
+        unexpected new mother figure — a pet rabbit.&lt;/b>&lt;/p>
+        &lt;p>Veterinary nurse Melanie Humble took the three-week-old
+        kittens to her Aberdeen home.  
+        &lt;/p>
+        [&hellip;]
+    &lt;/article></code></pre>  
+    
+    <hr>
+    <p>The <b>frobonitor</b> and <b>barbinator</b> components are fried.</p>
+
+    <p>	
+        You enter a small room. Your <b>sword</b> glows
+        brighter. A <b>rat</b> scurries past the corner wall.
+    </p>
+
+     <article>
+        <h2>Kittens 'adopted' by pet rabbit</h2>
+        <p><b class="lede">Six abandoned kittens have found an
+        unexpected new mother figure — a pet rabbit.</b></p>
+        <p>Veterinary nurse Melanie Humble took the three-week-old
+        kittens to her Aberdeen home.  
+        </p>
+        [&hellip;]
+    </article> 
+<!--
+The elements <b>, <i>, and <u> came about so people could write bold, italics, or underlined text 
+    in an era when CSS was still supported poorly or not at all. They only affect presentation 
+    and not semantics, are known as presentational elements and should no longer be used 
+    [MDN https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals], 
+    because semantics is so important to accessibility, SEO, etc. The concept of italics isn't 
+    very helpful to people using screen readers, or to people using a writing system other than 
+    the Latin alphabet.
+-->
+
+
+    <footer>
+        <hr>
+        <address>Ellen Bajcar &copy; Sheridan College</address>
+        <p>The materials provided in class and in SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>
+    </footer>
+</body>
+</html>

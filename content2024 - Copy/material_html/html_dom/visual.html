@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">DOM</a></li>
+        <li><a href="terminology.html">Terminology</a></li>
+        <li><a href="objects.html">Objects</a></li>       
+        <li><a aria-current="page" href="visual.html">Visual DOM</a></li>
+        <li><a href="processing.html">Processing</a></li>
+        <li><a href="cssom.html">CSSOM</a></li>
+      </ul>
+    </nav>            
+</header>         
+                              
+
+<main> 
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">Document Object Model (DOM)</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">  
+        <h2>Visual representation of DOM</h2>
+        
+            <p class="text-gray-700 text-base">DOM is a collection of nodes arranged in a tree. All nodes are related to each other - a family tree of children, parents, siblings, grandparents, etc. In the HTML DOM, everything is a node:</p>
+            <ul>
+                <li>The document itself is a document node.</li>
+                <li>All HTML elements are element nodes.</li>
+                <li>All HTML attributes are attribute nodes.</li>
+                <li>Text inside HTML elements are text nodes.</li>
+                <li>Comments are comment nodes.</li>
+            </ul>
+            <p>Each element in this tree has exactly one parent, with the exception of the root element, which has none.</p>    
+
+
+
+            <figure>
+              <figcaption>Hierarchical representation &mdash; a tree of elements encoded in the source document</figcaption>
+              <img style="width:50%;border:none;margin:auto;" 
+                  src="http://bajcar.dev.fast.sheridanc.on.ca/web_assets/images/min_html_chart.png">	 
+            </figure>   
+
+        
+        <p>Try the  <cite title="[ software.hixie.ch/utilities/js/live-dom-viewer/? ]"><a href="https://software.hixie.ch/utilities/js/live-dom-viewer/?" target="_blank"> Live DOM viewer</a></cite></p> 
+        
+
+        <figure>
+        <img style="width:50%" src="https://docs.google.com/drawings/d/e/2PACX-1vQPDoQTKS83x8csQVwz9P-qhDtqWRxMiE7LyAXo7_JBPGkQ1158lQkId7tX76Vld-_7bAlnEUpk7vkc/pub?w=480&amp;h=360"  style="width:100%;cursor:zoom-in" onclick="document.getElementById('dom0').style.display='block'" alt="...">
+
+        <figcaption>Minimal HTML document starts with the root element...
+<pre class="language-html"><code class="language-html">&lt;html>
+  &lt;head>
+	&lt;meta charset="utf-8">
+	&lt;title>DOM&lt;/title>	
+  &lt;/head>
+  &lt;body>
+  &lt;/body>
+&lt;/html></code></pre>	
+</figcaption>
+        </figure>
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>
