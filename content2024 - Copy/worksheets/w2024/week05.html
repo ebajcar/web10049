@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Worksheet 1 SYST10049</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+dl dd dl dd li {
+  line-height: 1.1em;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+kbd {
+  color: darkorange;
+}
+div > a::after {
+  content: " (" attr(href) ")";
+}
+
+.external:after{
+    content: url('../images/external-link-alt.svg');
+    display: inline-block;
+    height:0.6em;
+    width:0.6em;
+    margin-left:3px;
+    margin-right:5px;
+    }
+details {
+  border: none;
+}
+	</style>
+</head>
+<body>
+<!-- body container for main and footer -->
+        <header>       
+            <h1><span class="allcaps">SYST<wbr>10049 Web Development<v-h>:</v-h></span><sub-title>Worksheet 5</sub-title></h1>
+        </header>
+        
+        <main>
+            <div class="prev-next">
+                <p><a href="week04.html">Prev</a></p>
+                <nav class="breadcrumbs" aria-label="Breadcrumbs">
+                    <ol>
+                        <li><a href="../index.html"  class="allcaps">Home</a></li>
+                        <li><a href="index.html"  class="allcaps">Worksheets</a></li>
+                        <li><a href="week13.html" aria-current="page">Worksheet 5</a></li>
+                    </ol>               
+                </nav> 
+                <p><a href="week06.html">Next</a></p>
+            </div>
+
+
+
+            
+<!-- 1. Review, connect, dig deeper -->
+<section id="p1">
+    <h3>5.1. Explore Course Material</h3>
+    <details open>
+        <summary>HTML Language and Progressive Enhancement Phase I</summary>
+        <ul>
+            <li>image-multimedia (img)</li>
+            <li>Semantic elements
+                <ul>
+                    <li>text-content (blockquote, hr, pre)</li>
+                    <li>inline-text-semantics </li>
+                    <li>character and symbol entities</li>
+                </ul>
+            </li>
+        </ul>
+    </details>
+    <details>
+        <summary>Review</summary>          
+               <dl>
+                    <dt>1.1. Review and complete exercises from previous exercises:</(dt>
+                    <dd>
+                        <ul>
+                            <li>Review Exercise 3.3.1 (template project) &mdash; List the development steps. (What is the procedure?)                           
+                            </li>
+
+                            <li>Review Excerise 3.3.2 (mark up a letter project) &mdash; compare your version to  
+                            <a href="https://sheridanc-fast-syst10049.notion.site/Exercise-3-3-2-Addendum-notes-02767ba7bf8142baac6a3f5268272a98?pvs=4" target="_blank">solution</a>. Revisit related examples and dig deeper:
+                            <ul style="margin-top:0;">
+                                <li><a href="https://bajcar.dev.fast.sheridanc.on.ca/10049/codeMirrorExamples/example02_001.html" target="_blank">Elements MAIN, P, H1, H2, H3, EM, KBD, MARK, INS, DEL, STRONG, SUP, DFN, CITE, VAR, DEL, SMALL, SAMP, CODE</a></li>
+                                <li><a href="https://ebajcar.github.io/web10049/content2023fall/learnhtml/textual.html" target="_blank">Emphasis and importance (EM, STRONG)</a></li>
+                                 <li><a href="https://ebajcar.github.io/web10049/content2023fall/learnhtml/textual.html" target="_blank">Italic, bold, and underline </a> "The elements &lt;b>, &lt;i>, and &lt;u>...are known as presentational elements and should no longer be used"</li>
+                                  <li><a href="https://ebajcar.github.io/web10049/content2023fall/learnhtml/textual.html" target="_blank">Abbreviation and definitions</a></li>
+                            </ul>
+                            </li>   
+                            
+                            <li>Review Exercise 4.3.1 (structuring a page of content project) &mdash; What page areas are common to all project pages? On paper, draw the DOM diagram for the marked up content, starting with the BODY node (element) as the root (top) of the diagram. </li>
+                            
+                            <li>Review Exercise 4.3.2 (blog articles - single page project) &mdash; What page areas are common to all project pages? Is there a main navigation? Are you using only relative pathnames? </li>
+                            
+                            <li>Review Exercise 4.3.3 (blog articles - multi-page project) &mdash; What page areas are common to all project pages? Is there a main navigation? Are you using only relative pathnames? Review entire Section 3.2. of Worksheet 1, especially, What is a URL? File organization. and <a href="https://ebajcar.github.io/web10049/content2023fall/material_env/file_navigation.html" target="_blank">File navigation</a>.</li>
+                            
+                            <li>Review Exercise 4.3.4 (explore medi - multi page project) &mdash; What page areas are common to all project pages? Is there a main navigation? Are you using only relative pathnames? Related example: <a href="https://bajcar.dev.fast.sheridanc.on.ca/10049/codeMirrorExamples/example03_010.html" target="_blank">IMG element with SRC, WIDTH, HEIGHT, ALT, and TITLE attributes</a></li>
+                        </ul>
+                    </dd> 
+                </dl>  
+                
+               <dl>
+                    
+              
+                    <dt>Keep working with references:</dt>
+                    <dd>
+                        <ul>
+                            <li>Look up and read a definition of a term or concept you encountered previously: <a href="https://developer.mozilla.org/en-US/docs/Glossary" target="_blank">MDN Web Docs Glossary: Definitions of Web-related terms</a></li>
+                            <li>Explore how an element fits and how it is related to other element: <a href="https://ebajcar.github.io/web10049/html5elements/dist/index.html" target="_blank">Periodic Table of HTML5 Elements</a></li>
+                           <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML elements reference</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank">HTML attribute reference</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories" target="_blank">Content categories</a></li>   
+                        </ul>
+                    </dd> 
+                
+                </dl> 
+ 
+
+    </details>
+</section> 
+
+            <!-- 2. Read and explore more concepts -->
+            <section id="p2">
+                <h2>2.  Read and explore more concepts</h2> 
+     <details>
+        <summary>Explore embedded and interactive elements</summary>                        
+     
+        <dl>
+            <dt>Interactive elements</dt>
+            <dd>
+                <ul>                           
+                     <li><a href="https://ebajcar.github.io/web10049/content2023fall/learnhtml/interactive.htm" target="_blank">Interactive content</a> (hyperlinks, navigation, image, image map, picture, video, audio, multimedia)</li>
+                     <li>Figure and figure caption <a href="" target="_blank"></a></li>
+                </ul>
+            </dd> 
+        </dl>     
+        
+    </details>               
+                
+                 <dl>
+                    <dt>2.3. Accessible images</dt>
+                    <dd>
+                        <dl>
+                            <dt>Complete tutorials <a href="https://www.w3.org/WAI/tutorials/images/" target="_blank">Images</a></dt>
+                            <dd>
+                                <ul>
+                                    <li><strong><a class="external" href="https://www.w3.org/WAI/tutorials/images/informative/" target="_blank">Informative Images</a> </strong>
+                                    Examples 1, 2, 3, 4, and 5.
+                                    WCAG techniques: G94, H37.</li>
+                                    <li><strong><a  class="external" href="https://www.w3.org/WAI/tutorials/images/decorative/" target="_blank">Decorative Images</a> </strong>
+                                    Examples 1, 2, 3, and 4.
+                                    WCAG techniques: H2, H67.</li> 
+                                    <li><strong><a  class="external" href="https://www.w3.org/WAI/tutorials/images/functional/" target="_blank">Functional Images</a> </strong>
+                                    Examples 1, 2, 3, 4, and 5.
+                                    WCAG techniques: H36, H37.</li> 
+                                    <li><strong><a href="https://www.w3.org/WAI/tutorials/images/textual/" target="_blank">Images of Text</a> </strong>
+                                    Example 1: Styled text with decorative effect Using an image; Example 2: Image of text used as an unlinked logo; Example 3: Mathematical expressions Using images.
+                                    WCAG techniques: C22, G94.</li>
+                                    <li><strong><a href="https://www.w3.org/WAI/tutorials/images/complex/" target="_blank">Complex Images</a> </strong>
+                                    Long descriptions. Examples 1 and 2.
+                                    WCAG techniques: C22, G94.</li>
+                                    <li><strong><a href="https://www.w3.org/WAI/tutorials/images/groups/" target="_blank">Groups of Images</a> </strong>
+                                    Examples 1 and 2.
+                                    WCAG techniques: ARIA13, G196, H67.</li>
+                                    <li><strong><a href="https://www.w3.org/WAI/tutorials/images/imagemap/" target="_blank">Image Maps</a></strong>
+                                    Example 1.
+                                    WCAG techniques: ARIA13, G196, H67.</li>
+                                    <li><strong><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/" target="_blank">An alt Decision Tree</a> </strong>
+                                    </li>
+                                    <li><strong><a href="https://www.w3.org/WAI/tutorials/images/tips/" target="_blank">Tips and Tricks</a> </strong>
+                                    </li>
+                                </ul>
+                            </dd> 
+                        </dl>                     
+                    
+                         <dl>
+                            <dt>MDN tutorials<a href="" target="_blank">images</a></dt>
+                            <dd>
+                                <ul>
+                                    <li><strong><a href="" target="_blank">xx</a> </strong>
+                                    xx.</li>
+               
+                                </ul>
+                            </dd> 
+                        </dl>                     
+
+                    </dd> 
+                </dl>  
+
+      
+ 
+  
+
+       
+              
+            </section>
+
+            <!-- 3.  Practice. Practice. Practice. -->
+            <section id="p3">
+                <h2>3. Practice. Practice. Practice.</h2>
+              
+                <!-- explore media - focus on accessibility -->
+               <details>
+                    <summary>3.1 Explore images - multi-page project</summary>
+
+                        <dl>
+                            <dt>Project Brief</dt>
+                            
+                            <dd>
+                                <ol>
+                                    <li>Read all instructions before you start.</li>
+                                    <li>Complete tutorial 2.3. Images above</li>
+                                    <li>Start with a copy of the <kbd>site_template</kbd> project. 
+                                    <li>Name of the project: <kbd>explore_images</kbd>
+                                    <li><mark>Important:</mark> Create all pages from the template first. Make sure that the HEADER and FOOTER areas are the same. Include the unique H2 header in the MAIN page area, so that when you test the navigation, you will see to which page you have navigated. Then build and test the navigation, before you add the content to the individual pages. Make sure you test all possible link (from every page to every other page).</li>
+                                    <li>Home page (index.html) introduces the secondary pages and information (summarize, include key points and interesting observations, <em>in your own words</em>) from the tutorial pages, including "An alt Decision Tree" and "Tips and Tricks"</li>
+                                    <li>Secondary pages:<kbd>informative.html, decorative.html, functional.html, textual.html, complex.html, groups.html,</kbd> and <kbd>imageMaps.html</kbd> (stored in content sub-directory)</li>
+                                    <li>all pages have a common HEADER, NAV, and FOOTER. Use H1 in the header, H2 for MAIN element heading. There is no ASIDE used in this project. The navigation includes a link to the home page and the seven secondary pages. Use relative pathnames.</li>
+                                    <li>there are no images on the index page</li>
+                                    <li>implement the listed examples in Section <em>2.3. Images</em> above for each secondary page</li>
+                                    <li>you do not need to download the images, copy and use the absolute URL (right-click on their image, select "Copy image address", then paste to your IMG element's SRC attribute) Note: if you are downloading any images, always include citation in your file's prologue, as well as a comment just above the element where the image is used.
+                                    </li>
+                                    <li>Make sure to validate every pages, both for HTML validity and Accessibility.</li>
+                                    <li>Publish to <kbd>assignments/assignment2</kbd> directory on the <kbd>dev.fast.sheridanc.on.ca</kbd> server.</li>
+                                    <li>Submit your <kbd>Web URL</kbd> to the project, together with the appropriate credentials (username and password) in the SLATE dropbox when it becomes available. Once the dropbox becomes available, it will state the due dates.</li>
+                                    <!--li>Read actively <a href="" target="_blank">information about the project</a></li-->   
+                                </ol>
+                            </dd> 
+                        </dl>                  
+                    </dd> 
+                </dl>  
+                </details>
+              
+ 
+                <!-- 3.4 recipes -->
+               <details>
+                    <summary>3.2. Explore recipes</summary>
+
+                        <dl>
+                            <dt>Project Brief</dt>
+                            <dd>
+                                <ol>
+                                    <li>Start with a copy of the <kbd>site_template</kbd> project.</li>
+                                    <li>Project name is <kbd>my_recipes</kbd>.</li>
+                                    <li>Read actively <a href="" target="_blank">information about the project</a></li>   
+                                </ol>
+                            </dd> 
+                        </dl>                        
+
+                </details>   
+
+                
+            </section>
+
+</main>
+
+
+
+<!-- footer area -->
+<footer>
+    <address><a href="">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    
+</footer>
+
+
+</body>
+</html>

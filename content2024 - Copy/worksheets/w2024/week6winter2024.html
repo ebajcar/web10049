@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Worksheet 6 SYST10049</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+dl dd dl dd li {
+  line-height: 1.1em;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+kbd {
+  color: darkorange;
+}
+div > a::after {
+  content: " (" attr(href) ")";
+}
+
+.external:after{
+    content: url('../images/external-link-alt.svg');
+    display: inline-block;
+    height:0.6em;
+    width:0.6em;
+    margin-left:3px;
+    margin-right:5px;
+    }
+details {
+  border: none;
+}
+	</style>
+</head>
+<body>
+<!-- body container for main and footer -->
+        <header>       
+            <h1><span class="allcaps">SYST<wbr>10049 Web Development<v-h>:</v-h></span><sub-title>Worksheet 6</sub-title></h1>
+        </header>
+        
+        <main>
+            <div class="prev-next">
+                <p><a href="week5winter2024.html">Prev</a></p>
+                <nav class="breadcrumbs" aria-label="Breadcrumbs">
+                    <ol>
+                        <li><a href="../../index.html"  class="allcaps">Home</a></li>
+                        <li><a href="#" aria-current="page">Worksheet 6</a></li>
+                    </ol>               
+                </nav> 
+                <p><a href="week6winter2024.html">Next</a></p>
+            </div>
+
+
+<!-- 1. Review, connect, dig deeper -->
+<section id="p1">
+    <h2>1. Review</h2>
+    <p>Review and keep working with material from previous worksheets (1 to 5).
+</section>
+
+
+<!-- 2. Read and explore more concepts -->
+<section id="p2">
+
+    <h2>2. Read and explore more concepts</h2>    
+
+                        <dl>
+                            <dt>MDN tutorials<a href="" target="_blank">Tables</a></dt>
+                            <dd>
+                                <ul>
+                                    <li><strong><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" target="_blank">HTML tables</a> </strong>
+                                    </li>
+                                    <li><strong><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics" target="_blank">HTML table basics</a> </strong>
+                                    </li>
+                                    <li><strong><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced" target="_blank">HTML table advanced features and accessibility
+</a> </strong>
+                                    </li>
+                                </ul>
+                            </dd> 
+                        </dl> 
+    
+                         
+                        <dl>
+                            <dt>Complete tutorials <a href="https://www.w3.org/WAI/tutorials/tables/" target="_blank">Tables</a></dt>
+                            <dd>
+                                <ul>
+                                    <li><strong><a href="https://www.w3.org/WAI/tutorials/tables/one-header/" target="_blank">Tables with One Header</a> </strong>
+                                    WCAG techniques: H51, H63.</li>
+                                    <li><strong><a href="https://www.w3.org/WAI/tutorials/tables/two-headers/" target="_blank">Tables with Two Headers</a> </strong>
+                                    WCAG techniques: H51, H63.</li> 
+                                    <li><strong><a href="https://www.w3.org/WAI/tutorials/tables/irregular/" target="_blank">Tables with Irregular Headers</a> </strong>
+                                    WCAG techniques: H63.</li> 
+                                    <li><strong><a href="https://www.w3.org/WAI/tutorials/tables/multi-level/" target="_blank">Tables with Multi-Level Headers</a> </strong>
+                                    WCAG techniques: H63.</li>
+                                    <li><strong><a href="https://www.w3.org/WAI/tutorials/tables/caption-summary/" target="_blank">Caption & Summary</a> </strong>
+                                    WCAG techniques: H39.</li>
+                                    <li><strong><a href="https://www.w3.org/WAI/tutorials/tables/tips/" target="_blank">Tips and Tricks</a></strong> Keep it simple. Table separation. Data separation. Alignment. Tables for layout.</li>
+               
+                                </ul>
+                            </dd> 
+                        </dl>  
+
+                         
+ 
+</section> 
+
+
+ <!-- 3.  Practice. Practice. Practice. -->
+<section id="p3">
+    <h2>3. Practice. Practice. Practice.</h2>
+    
+
+               <details open>
+                    <summary>3.1 Create the following tables <a href="https://padlet.com/ellen_bajcar/html-tables-bbpo9guhtfxs" target="_blank">link to HTML tables padlet</a></summary>
+                      
+
+                </details>  
+    
+               <details open>
+                    <summary>3.2. Planets data table</summary>
+  <!--  <p>Planets
+    <a href="https://github.com/mdn/learning-area/blob/main/html/tables/assessment-start/planets-data.txt">raw data</a></p> -->
+                        <dl>
+                            <dt>Project Brief</dt>
+                            <dd>
+                                <ol>
+                                    <li>Read these instructions in its entirety. You are expected to follow these instructions where they vary from the MDN instructions.</li>
+                                    <li>Read actively and make notes information about the project and related HTML elements <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Structuring_planet_data" target="_blank">Structuring planet data (MDN)</a></li>
+                                    <li>Create a new project file structure (check previous Worksheets) in <kbd>projects</kbd> subdirectory. The project name is <kbd>my_planets</kbd>. .</li>
+                                    <li>The home page has no content in the MAIN element.</li>
+                                    <li>The <kbd>planets.html</kbd> is a secondary page that contains the data table in the MAIN element.</li>
+                                    <li>The navigation, header, and footer are common to all pages on this site. For now we just have Home (index0.html) and Planets (content/planets.html) links.</li>
+                                    <li>Start with a copy of the standard <kbd>site_template</kbd> project from previous weeks. (MDN's  blank-template.html is missing several items that our site template uses!)</li>
+                                    <li>Download the <kbd>minimal-table.css</kbd> file to your <kbd>css</kbd> folder.</li>
+                                    <li>Add the link <br><code>&lt;link href="minimal-table.css" rel="stylesheet" type="text/css"></code><br> to the bottom of the HEAD section, just before the &lt;/head></li>                                   
+                                    <li>Add raw data to the MAIN element from the <kbd>planets-data.txt</kbd> file.
+                                     
+                                   
+                                    <li>Mark up the raw data. The given css rules will format your table when you choose the correct elements. Don't forget to validate regularly.</li>
+                                </ol>
+                            </dd> 
+                        </dl>                        
+
+                </details>   
+               
+</section>
+
+</main>
+
+
+
+<!-- footer area -->
+<footer>
+    <address><a href="">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    
+</footer>
+
+
+</body>
+</html>

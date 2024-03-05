@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Elements</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">Writing code</a></li>
+        <li><a href="coding_html.html">Coding HTML</a></li>
+        <li><a aria-current="page" href="comment_html.html">Commenting HTML</a></li>       
+        <li><a href="coding_css.html">Coding CSS</a></li>
+        <li><a href="comments_css.html">Commenting CSS</a></li>
+      </ul>
+    </nav>            
+</header>         
+            
+                   
+                   
+<main>   
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="textual_italic_bold_underline.html">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">Current Topic</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="textual_quotations_citations.html">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">   
+        <h2>Documenting code</h2>
+                
+                <p>Every code file (regardless of language) must have inline documentation, whether or not there is external or more formal documentation (specs, design, guides,...) being prepared. At minimum, include  header (sometimes called prologue) at the top of each file; specify the author(s), date file created, date last modified, original file name, short description (purpose), optionally pseudo-code when appropriate.</P>
+				
+                <h3>Provide important information</h3>
+                <p>Add appropriate header. Always include header (prologue) after the &lt;meta charset=...> element in HTML (in other languages you included at the beginning of the file or after any directives)</p>
+			
+<pre class="language-html" tabindex="0"><code class="language-html">&lt;!-- 
+Author:       Your Name
+Program:      pageName.html
+Date:         [date created]
+Updated:      [date last updated] 
+Version:      0.0
+Purpose:      short description what the page (site) is all about
+Description:  describe the solution in detail 
+              (include algorithm if applicable)
+              - focus on the "why"
+--&gt;
+&lt;h1>Heading&lt;/h1>
+</code></pre>	
+                <p>Use comments to describe the code precisely and completely. <br>
+                <code>&lt;!-- HTML comments go between opening and closing tags like this --></code> <br>
+                Use comments <strong>in addition to</strong> the meta element for describing the document.</p>
+                
+                <p>DO NOT PUT comments before the DOCTYPE declaration. Place comments inside the head and body sections only.</p>
+                
+                <h3>Make comments useful</h3>
+  				<p>Include meaningful observations and specifications throughout the document.</p>
+			
+<pre class="language-html" tabindex="0"><code class="language-html">
+&lt;!-- Browsers automatically add some white space (a margin)
+ before and after a paragraph, but ignore whitespace 
+ inside the paragraph.--&gt;
+&lt;p>
+This paragraph
+	contains a lot of lines
+		in the source code,
+but 	the					 browser 
+ignores it.
+&lt;/p>
+</code></pre>	
+
+	         
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

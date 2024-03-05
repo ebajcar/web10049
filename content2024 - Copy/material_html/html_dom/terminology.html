@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">DOM</a></li>
+        <li><a aria-current="page" href="terminology.html">Terminology</a></li>
+        <li><a href="objects.html">Objects</a></li>       
+        <li><a href="visual.html">Visual DOM</a></li>
+        <li><a href="processing.html">Processing</a></li>
+        <li><a href="cssom.html">CSSOM</a></li>
+      </ul>
+    </nav>            
+</header>         
+            
+                   
+<main>  
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">Document Object Model (DOM)</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">   
+        <h2>DOM terminology</h2>
+               <ul>
+                    <li>A <strong>tree</strong> is a finite hierarchical tree structure. In <strong>tree order</strong> is preorder, depth-first traversal of a tree.
+                    </li>
+                    <li>An object that participates in a tree has a <strong> parent</strong>, which is either another object or null, and an ordered list of zero or more <strong>child</strong> objects. An object A whose parent is object B is a child of B.
+                    </li>
+                    <li>The <strong>root</strong> of an object is itself, if its parent is null, or else it is the root of its parent.
+                    </li>
+                    <li>An object A is called a <strong>descendant</strong> of an object B, if either A is a child of B or A is a child of an object C that is a descendant of B.
+                    </li>
+                    <li>An <strong>inclusive descendant</strong> is an object or one of its descendants.
+                    </li>             
+                    <li>An object A is called an <strong>ancestor</strong> of an object B if and only if B is a descendant of A.
+                    </li>                     
+                    <li>An object A is called a <strong>sibling</strong> of an object B, if and only if B and A share the same non-null parent.
+                    </li> 
+                    <li>An object A is preceding an object B if A and B are in the same tree and A comes before B in tree order.
+                    </li>  
+                    <li>An object A is following an object B if A and B are in the same tree and A comes after B in tree order.
+                    </li> 
+                    <li>The <strong>first child</strong> of an object is its first child or null if it has no children.
+                    </li> 
+                    <li>The <strong>last child</strong> of an object is its last child or null if it has no children.
+                    </li>                     
+                    <li>The <strong>previous sibling</strong> of an object is its first preceding sibling or null if it has no preceding sibling.
+                    </li> 
+                    <li>The <strong>next sibling</strong> of an object is its first following sibling or null if it has no following sibling.
+                    </li> 
+                    <liThe <strong>index</strong> of an object is its number of preceding siblings.
+                    </li>                    
+
+ </ul>
+                  <p class="blockquote-footer">Explore further  <cite title="[ www.w3.org/TR/dom/ ]"><a href="https://www.w3.org/TR/dom/" target="_blank"> www.w3.org/TR/dom/</a></cite></p>        
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

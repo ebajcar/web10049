@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">Intro</a></li>
+        <li><a href="structure.html">Structure</a></li> 
+        <li><a href="minimal.html">Minimal code</a></li>
+        <li><a href="doctype.html">&lt;!DOCTYPE></a></li>   
+        <li><a aria-current="page" href="head.html">&lt;head></a></li>   
+        <li><a href="head.html">&lt;body></a></li>              
+      </ul>
+    </nav>            
+</header>         
+            
+                   
+<main>  
+    <div class="prev-next">
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">HTML Document</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">   
+        <h2>Children of the HEAD element</h2>
+        <p>The purpose of the <code>&lt;head></code> section is to describe the document itself. The children of head element include <code>&lt;meta></code> to describe the document, <code>&lt;link></code> to include stylesheet files and other assets, <code>&lt;styles></code> to embed styles, <code>&lt;script></code> to include scripts, and <code>&lt;title></code> in window tab.</p>
+
+        <p class="blockquote-footer">Read further  <cite title="[ about Document metadta at W3C ]"><a href="https://www.w3.org/TR/html52/document-metadata.html#document-metadata" target="_blank"> about Document metadata at W3C</a></cite></p> 
+    
+        <dl>
+            <dt>META element</dt>
+            <dd>
+                The &lt;meta> element is typically used to specify character set, page description, keywords, author of the document, and viewport settings.
+                <ul>
+                    <li><strong>name</strong> attribute specifies a name for the metadata and can have values: application-name, author, description, generator, keywords, viewport.
+                    <pre class="language-html"><code class="language-html">&lt;meta name="viewport" content="width=device-width,initial-scale=1.0"></code></pre>
+                    </li>
+                    <li><strong>content</strong> attribute gives the value associated with the http-equiv or name attribute. 
+                    <pre class="language-html"><code class="language-html">&lt;meta name="Author" content="Author's Name"></code></pre>
+                    </li>
+                    <li><strong>charset</strong> attribute specifies the character encoding for the HTML document
+                    <pre class="language-html"><code class="language-html">&lt;meta charset="utf-8"></code></pre>
+                    </li>
+                    <li hidden><strong>http-equiv</strong> attribute provides an HTTP header for the information/value of the content attribute</li>
+                </ul>
+            </dd>
+        </dl>
+        
+        <details>
+            <summary>Create good META Element descriptions</summary>
+            <span hidden>data-ref-link="https://support.google.com/webmasters/answer/35624"</span>
+            <p>Make sure that every page on your site has a meta description. Differentiate the descriptions for different pages. Identical or similar descriptions on every page are not helpful.</p>
+            <p>Include clearly tagged facts in the description. The meta description doesn't just have to be in sentence format; it's also a great place to include information about the page. For example, news or blog postings can list the author, date of publication, or byline information.</p>    
+            <p>Use quality descriptions. Finally, make sure your descriptions are truly descriptive. Because the meta descriptions aren't displayed in the pages the user sees, it's easy to let this content slide. But high-quality descriptions can be displayed in Google's search results, and can go a long way to improving the quality and quantity of your search traffic. </p>	   
+             
+            <figure>
+            <pre class="language-html"><code class="language-html">&lt;head>
+  &lt;!-- meta element is used to describe prologue info -->
+  &lt;meta name="Author" content="name of author(s)">
+  &lt;meta name="Description" content="Page created to satisfy 
+        requirements of a project...
+        The purpose of this page is...
+        Date created: MMM DD, 20XX. 
+        Date updated: MMM DD, 20XX."> 
+&lt;/head></code></pre>
+                        <figcaption> example of meta element used to describe the page's purpose.</figcaption>
+                    </figure> 
+                     <p hidden>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    This will set the viewport of your page, which will give the browser instructions on how to control the page's dimensions and scaling. Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones).    &#12296; left-angle bracket </p>	  
+        </details>
+            
+              
+        <details>
+            <summary>Character encoding <small>&hellip;how symbols are stored.</small></summary>      
+            <a href="../../images/character_encoding.png" target="_blank">
+                <img style="width:100%" src="../../images/character_encoding.png" alt="Character encoding">
+            </a>     
+            <ul>
+                <li><strong>Start with <a href="https://www.w3.org/International/articles/definitions-characters/" target="_blank"> Character encodings: Essential concepts</a> on W3C.</strong></li>
+                <li>Read more about <a href="https://en.wikipedia.org/wiki/UTF-8" target="_blank"> UTF-8 on wikipedia</a>. There are some good references on the page.</li>
+                <li>Read more on <a href="https://www.w3schools.com/html/html_charset.asp" target="_blank"> HTML Encoding (Character Sets) on w3schools</a>.  </li>
+                <li>Read more on <a href="https://www.w3schools.com/charsets/ref_html_utf8.asp" target="_blank"> HTML Unicode (UTF-8) Reference on w3schools</a>. </li>
+            </ul>
+        </details>
+
+        <dl>
+            <dt>TITLE element</dt>
+            <dd>The title element represents the document’s title or name. Authors should use titles that identify their documents even when they are used out of context, for example in a user’s history or bookmarks, or in search results. The document’s title is often different from its first heading, since the first heading does not have to stand alone when taken out of context. There must be no more than one title element per document.</dd>
+        </dl>
+        
+        <dl>
+            <dt>STYLE element</dt>
+            <dd>The style element allows authors to embed style information in their documents. The style element is one of several inputs to the styling processing model. The element does not represent content for the user. The type attribute gives the styling language. If the attribute is present, its value must be a valid mime type that designates a styling language. The charset parameter must not be specified. The default value for the type attribute, which is used if the attribute is absent, is "text/css".</dd>
+        </dl>
+        
+        <dl>
+            <dt>LINK element</dt>
+            <dd>The link element allows authors to link their document to other resources. The destination of the link(s) is given by the href attribute, which must be present and must contain a valid non-empty URL potentially surrounded by spaces. If the href attribute is absent, then the element does not define a link. A link element must have a rel attribute. The rel's supported tokens are the keywords defined in HTML link types which are allowed on link elements, impact the processing model, and are supported by the user agent. The possible supported tokens are alternate, dns-prefetch, icon, next, pingback, preconnect, prefetch, preload, prerender, search, serviceworker, and stylesheet.</dd>
+        </dl>
+        
+         <dl>
+            <dt>BASE element</dt>
+            <dd>allows authors to specify the document base URL for the purposes of parsing URLs, and the name of the default browsing context for the purposes of following hyperlinks. The element does not represent any content beyond this information. There must be no more than one base element per document. It must have either an href attribute, a target attribute, or both.</dd>
+        </dl>       
+    
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

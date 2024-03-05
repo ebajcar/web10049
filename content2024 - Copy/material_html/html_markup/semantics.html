@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">HTML</a></li>
+        <li><a href="specifications.html">specifications</a></li>
+                <li><a href="elements.html">elements</a></li> 
+        <li><a href="attributes.html">attributes</a></li>  
+        <li><a href="valid_code.html">valid code</a></li>       
+        <li><a aria-current="page" href="semantics.html">semantics</a></li>
+        <li><a href="accessibility.html">accessibility</a></li>
+        <li><a href="techniques.html">techniques</a></li>
+      </ul>
+    </nav>            
+</header>         
+                              
+
+<main> 
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">HyperText Markup Language (HTML)</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">  
+        <h2>Semantic correctness</h2>
+        <blockquote>Semantic correctness means that all elements are chosen well. <strong>Semantics are front and center with HTML5</strong>, giving meaning to structure of web apps and dynamic web content. This semantic information is critical to assistive technologies. In some cases assistive technologies use semantic information to provide additional functionality. A speech recognition tool might provide a voice command for moving focus to the start of the main element for example. When the appropriate HTML element or attribute is not used, it deprives HTML processors of valuable semantic information. <a href="https://www.w3.org/TR/html52/dom.html#elements">W3C</a> </blockquote>
+
+        <h3>Why do we need semantics?</h3>
+           <p title="from HTML text fundamentals (MDN)">Semantics are relied on everywhere around us — we rely on previous experience to tell us what the function of an everyday object is; when we see something, we know what its function will be. So, for example, we expect a red traffic light to mean "stop", and a green traffic light to mean "go". Things can get tricky very quickly if the wrong semantics are applied (Do any countries use red to mean "go"? I hope not.) Read more at <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals" target="_target">HTML text fundamentals (MDN)</a>.</p>	
+                <p title="from Document and website structure (MDN)">In your HTML code, you can mark up sections of content based on their functionality — you can use elements that represent the sections of content  unambiguously. Assistive technologies like screenreaders can recognise those elements and help with tasks like "find the main navigation", or "find the main content." </p>
+                <p>The consequences of not using the right element structure and semantics for the right job fails to give the content structure, so the browser does not know what is a heading and what is a paragraph. </p>
+                <ul>
+                    <li>Users looking at a web page tend to scan quickly to find relevant content, often just reading the headings to begin with (we usually spend a very short time on a web page). If they can't see anything useful within a few seconds, they'll likely get frustrated and go somewhere else.</li>
+                    <li>Search engines indexing your page consider the contents of headings as important keywords for influencing the page's search rankings. Without headings, your page will perform poorly in terms of SEO (Search Engine Optimization).</li>
+                    <li>Severely visually impaired people often don't read web pages; they listen to them instead. This is done with software called a screen reader. This software provides ways to get fast access to given text content. Among the various techniques used, they provide an outline of the document by reading out the headings, allowing their users to find the information they need quickly. If headings are not available, they will be forced to listen to the whole document read out loud.</li>
+                    <li>To style content with CSS, or make it do interesting things with JavaScript, you need to have elements wrapping the relevant content, so CSS/JavaScript can effectively target it.</li>
+                </ul>
+                <p>We therefore need to give our content structural markup. Read more at <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_target">Document and website structure (MDN)</a>.</p> 
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

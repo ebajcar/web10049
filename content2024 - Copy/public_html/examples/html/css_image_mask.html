@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <meta name="author" content"Ellen Bajcar">
+    <meta name="description" content="Class examples for SYST10049">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body, html {
+    height: 100%;
+}
+main, header, footer {
+    margin: auto;
+    padding: 10px;
+    font-family: "Raleway", sans-serif
+}
+main {
+    padding-bottom: 200px;
+}
+header {
+    border-bottom: 1px dashed gray;
+    background-image: linear-gradient(white,#efefef);
+}
+footer {
+    border-top: 1px dashed gray;
+    background-image: linear-gradient(#efefef,white);
+    position: fixed;
+    bottom: 10px;
+}
+.balanced {
+    text-wrap: balance; 
+}
+
+/* https://www.w3schools.com/cssref/tryit.php?filename=trycss3_mask-image1 */
+.mask1 {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+
+.mask2 {
+  width: 600px;
+  -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+
+.mask3 {
+  width: 600px;
+  -webkit-mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+</style> 
+</head>
+<body>
+<!-- Class example -->
+    <header>
+        <h1>Class examples</h1>
+        <h2>The mask-image Property</h2>
+    </header>
+    
+    <main>
+ <h3>An image with a mask layer (from top to bottom):</h3>
+<div class="mask1">
+<img src="../images/forestpath.png" alt="Forest path" width="600" height="400">
+</div>
+
+<h3>An image with a mask layer (a circle):</h3>
+<div class="mask2">
+<img src="../images/forestpath.png" alt="Forest path" width="600" height="400">
+</div>
+
+<h3>An image with a mask layer (an ellipse):</h3>
+<div class="mask3">
+<img src="../images/forestpath.png" alt="Forest path" width="600" height="400">
+</div>
+
+<h3>An SVG mask layer (formed as a triangle):</h3>
+<svg width="600" height="400">
+  <mask id="svgmask1">
+    <polygon fill="#ffffff" points="200 0, 600 400, 0 400"></polygon>
+  </mask>
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../images/forestpath.png" mask="url(#svgmask1)"></image>
+</svg>
+
+
+<h3>Original image:</h3>
+<img src="../images/forestpath.png" alt="Forest path" width="600" height="400">
+ 
+    </main>
+
+    <footer>
+        <address>Ellen Bajcar &copy; Sheridan College</address>
+        <p class="balanced">The materials provided in class and in SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>
+    </footer>
+</body>
+</html>

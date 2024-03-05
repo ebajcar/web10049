@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover">
+<title>Grouping related rules</title>
+
+<style>
+body {
+    width: 40%;
+    margin: auto;
+}
+footer {
+    height: 50px;
+    margin-top: 50px;
+    border-top: 1px dashed gray;
+}
+table {
+    width: 600px;
+    border: 1px dotted gray;
+    font-size: 2em;
+}
+/*
+    3. Nesting Selector: the & selector
+    When using a nested style rule, one must be able to refer to the elements matched by the parent rule; that is, after all, the entire point of nesting.   
+    https://www.w3.org/TR/css-nesting-1/#nest-selector
+    
+    Besides removing duplication, the grouping of related rules improves the readability and maintainability of the resulting CSS.
+    https://www.w3.org/TR/css-nesting-1/
+*/
+table.colortable {
+  margin-top: 1em;
+  & td { /* all td in the table (classified colortable) */
+    text-align:center;
+    &.c { text-transform:uppercase; } /* any td classified as 'c' */
+    &:first-child { border:1px solid blue; } /* any td that is first child in a row */
+    &:first-child ~ td { border:2px solid red; } /* any td that a sibling of the td that is first child of a row */ 
+    &:first-child + td { background-color: pink; } /* td that is adjacent td that is first child of a row */
+  }
+  & th { * all th in the table (classified colortable) */
+    text-align:center !important;
+    font-weight: initial;
+    background-color: yellow;
+    color: green;
+  }
+}
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Class Examples</h1>
+        <h2>CSS Nesting rules <small>www.w3.org/TR/css-nesting-1/</small></h2>
+    </header>
+    <main>
+        <h3>Table classified as 'colortable'</h3>
+        <table class="colortable">
+            <tr>
+                <th>one</th>
+                <td class="c">two</td>
+                <td>three</td>
+                <td>very long one</td>
+            </tr>
+            <tr>
+                <td>four</td>
+                <td>five</td>
+                <td class="c">six</td>
+                <td>last 2</td>
+            </tr>     
+            <tr>
+                <td>seven</td>
+                <td class="c">eight</td>
+                <th>nine</th>
+                <td>last 3</td>
+            </tr>
+        </table>
+        
+        <h3>Same Table without classification</h3>
+        <table>
+            <tr>
+                <th>one</th>
+                <td class="c">two</td>
+                <td>three</td>
+                <td>very long one</td>
+            </tr>
+            <tr>
+                <td>four</td>
+                <td>five</td>
+                <td class="c">six</td>
+                <td>last 2</td>
+            </tr>     
+            <tr>
+                <td>seven</td>
+                <td class="c">eight</td>
+                <th>nine</th>
+                <td>last 3</td>
+            </tr>
+        </table>       
+    </main>
+<footer>
+    <address>Web Development. 2022-2024 &copy; Sheridan College</address>
+</footer>
+</body>
+</html>

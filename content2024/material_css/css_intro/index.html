@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Learn CSS</title>
+    <title>Mastering styles</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">	
     <link rel="stylesheet" href="../../css/missing-css.css">
@@ -9,90 +9,67 @@
     <script src="../../scripts/prism.js"></script>
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/next-prev.css">
-	<style> 
-	</style>
+<style> 
+dd {
+  margin-bottom: 18px;
+}
+</style>
 </head>
 <body>
 
-<header class="navbar">
-    <nav>
-      <ul role="list">
-        <li><a aria-current="page" href="index.html">Intro</a></li>
-        <li><a href="css_guidelines.html">Guidelines</a></li>
-        <li><a href="css_code_style.html">Code style</a></li>       
-        <li><a href="css_comments.html">Comments</a></li>
-        <li><a href="css_defaults.html">Defaults/Reset</a></li>
-        <li><a href="css_template.html">Custom framework</a></li>
-      </ul>
-    </nav>            
+<header>
+        <h1><span class="allcaps">SYST<wbr>10049<v-h>:</v-h></span> 
+            <sub-title>Web Development</sub-title>
+        </h1>          
 </header>       
-            
+ 
                                    
 <main>  
-    <div class="prev-next">
-        <!--   <p style="color:lightgray;">Prev</p>   -->
-        <p style="line-height: 1em;text-align:left;">
-            <a href="#">Prev</a>
-            <br><small>Previous topic</small>
-        </p>
-        <nav class="breadcrumbs" aria-label="Breadcrumbs">
-            <ol>
-                <li><a href="../index.html"  class="allcaps">Home</a></li>
-                <li><a href="#" aria-current="page">Cascading Style Sheets (CSS)</a></li>
-            </ol>               
-        </nav> 
-        <p style="line-height:1em;text-align:right;">
-            <a href="#">Next</a>
-            <br><small>Next topic</small>
-        </p>
-    </div>
-
-    
-    
-    <section id=#e01">   
-        <h2>CSS <small>Master styling</small></h2>
-        
-     <blockquote>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the separation of structure (or: content) from presentation.   
-      <br>
-      <small>Explore further <a href="http://www.w3.org/standards/webdesign/htmlcss#whatcss" target="_blank"> World Wide Web Consortium (W3C)</a></small>
-      </blockquote> 
-     
-
-
-
- 	  <ol class="box warn">
-		<li>Learn about selectors: how they work? what is available? when to use each?</li>
-		<li>Learn about properties: how they work? what is available? when to use each?</li>
-		<li>Practice! practice a lot!
-			<ol style="list-style-type: lower-alpha;padding-top:0;margin-top:0;padding-bottom:0;margin-bottom:5px;">
-				<li>Start with valid HTML5 code. (<a href="http://bajcar.dev.fast.sheridanc.on.ca/www10049/checklists_pre2018/htmlSheet.html" target="_blank">Review HTML5 regularly</a>)</li>
-				<li>Identify and evaluate how each component of the content is to be presented. (<a href="http://bajcar.dev.fast.sheridanc.on.ca/www10049/checklists_pre2018/cssSheet2019.html" target="_blank">Overview of CSS3</a>)</li>		
-				<li>Create each CSS rule, starting with the general, start with the top of DOM, to achieve the desired presentation.</li>
-				<li>Test, experiment, make observations. Look for improvements. </li>
-				<li>Follow guidelines, document your code well, and keep your CSS tidy.</li>				
-			</ol>
-		</li>
-		<li>Repeat. Commit to 30-45 minutes a day for a month. Always push the boundaries to learn more. Practice to achieve higher level of mastery.</li>
-	</ol>   
-
- 
- <blockquote>Cascading Style Sheets(CSS) delivers a wide range of stylization and effects, enhancing the web app without sacrificing semantic structure or performance .</blockquote> 
+    <h2>Cascading Style Sheets (CSS)</h2>
  
     <dl>
+        <dt>Mastering styles</dt>   
+        <dd>CSS delivers a wide range of stylization and effects, enhancing the web app without sacrificing semantic structure or performance .</dd> 
+        <dd>
+         <blockquote>
+             CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the separation of structure (or: content) from presentation.   
+              <br>
+              <small>Explore further <a href="http://www.w3.org/standards/webdesign/htmlcss#whatcss" target="_blank"> World Wide Web Consortium (W3C)</a></small>
+          </blockquote> 
+        </dd>
+
+        <dd>
+          <ol class="box warn">
+            <li>Learn about selectors: how they work? what is available? when to use each?</li>
+            <li>Learn about properties: how they work? what is available? when to use each?</li>
+            <li>Practice! practice a lot!
+                <ol style="list-style-type: lower-alpha;padding-top:0;margin-top:0;padding-bottom:0;margin-bottom:5px;">
+                    <li>Start with valid HTML5 code. <!--(<a href="http://bajcar.dev.fast.sheridanc.on.ca/www10049/checklists_pre2018/htmlSheet.html" target="_blank">Review HTML5 regularly</a>)--> Review HTML5 regularly. </li>
+                    <li>Identify and evaluate how each component of the content is to be presented. <!--(<a href="http://bajcar.dev.fast.sheridanc.on.ca/www10049/checklists_pre2018/cssSheet2019.html" target="_blank">Overview of CSS3</a>)--></li>		
+                    <li>Create each CSS rule, starting with the general, start with the top of DOM, to achieve the desired presentation.</li>
+                    <li>Test, experiment, make observations. Look for improvements. </li>
+                    <li>Follow guidelines, document your code well, and keep your CSS tidy.</li>				
+                </ol>
+            </li>
+            <li>Repeat. Commit to 30-45 minutes a day for a month. Always push the boundaries to learn more. Practice to achieve higher level of mastery.</li>
+          </ol>   
+        </dd>
+ 
+
         <dt>Web Accessibility</dt>
-        <dd>All W3C standards are reviewed for accessibility support and their guidelines show how web accessibility depends on several components of web development and interaction working together.  Review&nbsp;<a href="#">&hellip;</a></dd>
-         <dd class="box"><strong>Follow Accessibility guidelines</strong> to make styled pages accessible..</dd>
+        <dd>All W3C standards are reviewed for accessibility support and their guidelines show how web accessibility depends on several components of web development and interaction working together.
+         <p class="box"><strong>Follow Accessibility guidelines</strong> to make styled pages accessible..</p></dd>
 
         <dt>Document Object Model (DOM)</dt>
-        <dd>The DOM is a document model loaded in the browser and representing the document as a node tree, where each node represents part of the document. Review&nbsp;<a href="#">&hellip;</a></dd>
-         <dd class="box"><strong>Use DOM</strong> to select nodes to modify properties.</dd>
+        <dd>The DOM is a document model loaded in the browser and representing the document as a node tree, where each node represents part of the document. 
+         <p class="box"><strong>Use DOM</strong> to select nodes to modify properties.</p></dd>
 
         <dt>Progressive Enhancement (PE)</dt>
-        <dd>A strategy for web design that emphasizes core web page content first. It emphasizes accessiblity, semantic HTML markup, and external stylesheet and scripting technologies.   Review&nbsp;<a href="#">&hellip;</a></dd>
-        <dd class="box"><strong>Phase II of Progressive enhance</strong> style completed well-form and valid HTML for presentation</dd>
+        <dd>A strategy for web design that emphasizes core web page content first. It emphasizes accessiblity, semantic HTML markup, and external stylesheet and scripting technologies. 
+        <p class="box"><strong>Phase II of Progressive enhancement:</strong> style complete well-formed and valid HTML for presentation</p></dd>
     </dl>
     
-
+<!--
     <dl>
         <dt>References</dt>
         <dd>
@@ -106,20 +83,13 @@
         </dd>
        
     </dl>
+-->
 
-    <dl>
-        <dt>Tools</dt>
-        <dd>text editors: Notepad++, VS code</dd>
-        <dd>browsers: Chrome</dd>
-        <dd>dummy text and images: lipsum.com</dd>
-        <dd>server information</dd>        
-    </dl>       
-    </section>
 </main>
 
 
 <footer>
-    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <address>2021-2024 &copy; Ellen Bajcar et al</address> 
     <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
     <div style="margin: 0 0 10px 0">&mdash;</div>
 </footer>

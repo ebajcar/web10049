@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <meta name="author" content"Ellen Bajcar">
+    <meta name="description" content="Class examples for SYST10049">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body, html {
+    height: 100%;
+}
+main, header, footer {
+    margin: auto;
+    padding: 10px;
+    font-family: "Raleway", sans-serif
+}
+header {
+    border-bottom: 1px dashed gray;
+    background-image: linear-gradient(white,#efefef);
+}
+footer {
+    border-top: 1px dashed gray;
+    background-image: linear-gradient(#efefef,white);
+    position: fixed;
+    bottom: 10px;
+}
+.balanced {
+    text-wrap: balance; 
+}
+
+/* tag cloud rules */
+.tag-cloud > li { display: inline; }
+.tag-cloud-1 { font-size: 0.7em; }
+.tag-cloud-2 { font-size: 1.0em; }
+.tag-cloud-3 { font-size: 1.3em; }
+.tag-cloud-4 { font-size: 1.6em; }
+.tag-cloud-5 { font-size: 1.9em; }
+
+
+a:hover::after {
+    content: ' (' attr(data-value) ')';
+    font-size: .7em;
+    color: red;
+    font-weight: bold;
+}
+</style> 
+</head>
+<body>
+<!-- Class example -->
+    <header>
+        <h1>Class examples</h1>
+        <h2>Tag cloud</h2>
+    </header>
+    
+    <main>
+        <!--
+        Tag clouds https://html.spec.whatwg.org/multipage/semantics-other.html#tag-clouds
+
+        -->
+        <p>Hover over the items to see the data-values</p>
+        <ul class="tag-cloud">
+            <li class="tag-cloud-3">
+                <a title="28 instances" data-value="popular" href="/t/apple">apple</a> 
+            </li>
+            <li class="tag-cloud-2">
+                <a title="6 instances"  data-value="rare" href="/t/kiwi">kiwi</a> 
+            </li>
+            <li class="tag-cloud-5">
+                <a title="41 instances" data-value="very popular" href="/t/pear">pear</a> 
+            </li>
+            <li class="tag-cloud-2">
+                <a title="5 instances" data-value="rare" href="/t/gooseberries">gooseberries</a> 
+            </li> 
+            <li class="tag-cloud-1">
+                <a title="0 instances" data-value="none" href="/t/broccoli">broccoli</a> 
+            </li>            
+        </ul>
+    </main>
+
+    <footer>
+        <address>Ellen Bajcar &copy; Sheridan College</address>
+        <p class="balanced">The materials provided in class and in SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">Selectors</a></li>
+        <li><a href="css_invalid_selector.html">Invalid</a></li>
+        <li><a href="css_simple.html">Simple</a></li>
+        <li><a href="css_combinators.html">Combinators</a></li>       
+        <li><a aria-current="page" href="css_pseudo.html">Pseudo-</a></li>
+        <li><a href="css_attrib_selector.html">Attribute</a></li>
+      </ul>
+    </nav>            
+</header>         
+                              
+
+<main> 
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">CSS Selectors</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">  
+        <h2>Pseudo-class and pseudo-element selectors</h2>
+    <dl>
+        <dt><strong><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">Pseudo-class</a> selectors</strong> (select elements based on a certain state) </dt>
+        <dd>
+    <table class="table-fixed">
+      <tr>
+          <td class="px-8">linguistic</td>
+          <td class="px-8">directionality  <code>:dir()</code>, <br>language <code>:lang()</code></td>
+      </tr>
+      <tr>
+          <td class="px-8">user action</td>
+          <td class="px-8">pointer hover  <code>:hover</code>, <br>activation <code>:active</code>, <br>inputfocus <code>:focus</code></td>
+      </tr>
+      <tr>
+          <td class="px-8">input</td>
+          <td class="px-8">input control states  <code>:enabled</code>, <code>:disabled</code>,<br>
+                       input value states <code>:checked</code>,<br>
+                       input value-checking <code>:valid</code>, <code>:invalid</code>, <code>:required</code>, 
+                       <code>:in-range</code>, <code>:out-of-range</code>
+                       </td>
+      </tr>
+      <tr>
+          <td class="px-8">tree-structural</td>
+          <td class="px-8"><code>:root</code>, <br><code>:empty</code>,<br>
+                       child-indexed <code>:nth-child()</code>, <code>:first-child()</code>,&hellip;<br>
+                       typed child-indexed <code>:nth-of-type()</code>, <code>:first-of-type()</code>,&hellip;
+                       </td>
+      </tr>
+	</table>
+        </dd>
+    </dl>
+    <dl>
+        <dt><strong><a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudo-element</a> selectors</strong> (select and style a part of an element)</dt>
+        <dd>      
+        <table style="width:99%">
+             <caption>Pseudo-elements represent abstract elements of the document beyond those elements explicitly created by the document language. Explore further: <a target="_blank" href="https://www.w3.org/TR/selectors-4/#invalid">
+		CSS Pseudo-Elements Module &mdash;W3C.</a></caption> 
+            <tr>
+                <td><code>::first-letter</code></td>
+                <td></td>
+            </tr>  
+            <tr>
+                <td><code>::first-line</code></td>
+                <td></td>
+            </tr>  
+            <tr>
+                <td><code>::before</code></td>
+                <td></td>
+            </tr>  
+            <tr>
+                <td><code>::after</code></td>
+                <td></td>
+            </tr>  
+
+        </table>
+        </dd>
+    </dl>
+        
+
+     
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

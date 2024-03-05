@@ -1,0 +1,12 @@
+/*
+  Add prologue here
+  
+  <!-- all comments have been left out to keep example short -->
+  <!-- it is up to you, as a student, to practice adding meaningful comments -->
+*/
+
+p {
+ background-color: lightgray;
+ color: blue; 
+ padding: 10px 20px 60px 100px;
+}

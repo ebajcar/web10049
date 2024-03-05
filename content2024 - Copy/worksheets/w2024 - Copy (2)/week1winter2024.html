@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Worksheet 1 SYST10049</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+ dd {
+  margin-bottom: 7px;
+}
+dd:first-of-type ol{
+  list-style-type: lower-alpha;
+}
+
+.steps {
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+}    
+.steps li {
+    counter-increment: step-counter;
+}    
+.steps li::before {
+  content: "STEP " counter(step-counter) ": ";
+}
+details {
+  border: none;
+}
+	</style>
+</head>
+
+
+<body>
+
+<!-- header area-->
+<header>       
+    <h1><span class="allcaps">SYST<wbr>10049 Web Development<v-h>:</v-h></span><sub-title>Worksheet 1  <span style="font-size:0.6em;color:gray;">Updated Jan. 15, 2024</span></sub-title></h1>
+</header>
+
+
+<main>
+    <div class="prev-next">
+        <p style="color:lightgray;"><!--<a href="week01.html">Prev</a>-->Prev</p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+                <ol>
+                    <li><a href="../../index.html"  class="allcaps">Home</a></li>
+                    <li><a href="#" aria-current="page">Worksheet 1</a></li>
+                </ol>               
+            </nav> 
+            <p><a href="week2winter2024.html">Next</a></p>
+        </div>
+
+    <p>The suggested activities will be started and discussed in class.  It is your responsibility to complete the activities by the next class and ask timely questions.  Check out information about formative vs. summative evaluation, how to study and how to learn,...</p>
+
+
+
+<!-- 1. Familiarize yourself with Slate -->
+<section id="p1">
+    <h3>Activity 1.1. Familiarize yourself with Slate </h3>
+    <details open>
+        <Summary style="">SLATE: Course Outline. Course Material. Class Plan. Contact information. Evaluation. Important Dates. IT Help Desk.</summary>
+        
+       <p>1.1.1. <a href="https://slate.sheridancollege.ca/d2l/home"  target="_blank">SLATE</a> &mdash;provides links to all material. Explore and familiarize yourself with the various menus (SLATE Help, Course Outline, Content, Assessments ( check out this link: <a href="https://sheridanc-fast-syst10049.notion.site/Formative-Summative-Evaluation-282bc3dd2d514509bd5688db40beef93" target="_blank">Formative &amp; Summative Evaluation</a>), Communication, Management, Resources, IT Services, Library Services).</p>
+        
+        <p>1.1.2. <a href="">Sheridan Course Outline SYST10049 Web Development</a> &mdash;read through... what are the Course Critical Performance and Learning Outcomes? What is the Evaluation Plan? what are  the School of Applied Computing's <a href="https://tech.fast.sheridanc.on.ca/r/ac_academic_procedures_for_evaluations.pdf"  target="_blank">Academic Procedures for Evaluations</a>? </p>
+        
+        <p>1.1.3. <a href="https://ebajcar.github.io/web10049/content2023fall/" target="_blank">Course Material</a> &mdash;provides links to course information, course content, topical outline, worksheets, and activities.</p>
+                        
+        <p>1.1.4. <a href="https://comm13729-sheridancollege.notion.site/Class-Plan-Information-c86adbe0453243a280fd72d003447ae0?pvs=4" target="_blank">Class Plan Information</a> &mdash; Classroom and Evaluation Policies &mdash; How evaluation works &mdash; Formative & Summative Evaluation &mdash; Getting the most out of your education &mdash; How do I get an A in (any) course? &mdash; Active learning &mdash; Learning course content &mdash; Learning for mastery, not grades</p>
+
+        <p>1.1.5. <a href="https://sheridanc-fast-syst10049.notion.site/Contact-information-0b7071349f1b40e3a4b3f0b451d01276?pvs=4" target="_blank">Contact information (Prof. Ellen Bajcar)</a></p>
+
+        <!-- academic calendar -->
+        <table>
+            <caption style="font-style:normal;">1.1.6. Important Dates</caption>
+            <thead>
+                <tr>
+                    <th>Jan. 8 - Apr. 19</th>
+                    <th>Winter Term. See full calendar:  
+                    <a href="https://www.sheridancollege.ca/admissions/academic-calendar">Academic calendar</a>
+                    </</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="color:red">Feb. 19</td>
+                    <td style="color:red">Statutory Holiday – Family Day (College Closed)</td>
+                </tr>
+
+                <tr>
+                    <td>Feb. 26 - Mar. 1</td>
+                    <td>Reading Week - No Scheduled Classes for Most Programs</td>
+                </tr>
+                <tr>
+                    <td>Mar. 29</td>
+                    <td>Statutory Holiday – Good Friday (College Closed)</td>
+                </tr>
+                <tr>
+                    <td>Apr. 1</td>
+                    <td>Last Day to Drop a Class without academic penalty</td>
+                </tr>
+                <tr>
+                    <td>Apr. 19</td>
+                    <td>End of Fall Term</td>
+                </tr>
+            </tbody>
+        </table>                
+
+        <p>1.1.7. <a href="#" target="_blank"></a> ✔ IT Help Desk is able to assist you. They are available by phone at 905-845-9430.</p>
+     </details>
+</section>
+
+
+<!-- 2. Prepare working environment -->
+<section id="p2">
+
+    <h3>Activity 1.2. Prepare working environment (Part 1)</h3>
+    <details open>
+        <summary>What tools will you need? Install or bookmark, read, and familiarize yourself with</summary>
+        <ol style="list-style-type: upper-alpha;">
+
+            <li><strong>Laptop environment:</strong> Windows 
+                <br>&bull; READ <a href="https://sheridancollege.service-now.com/sp?id=kb_article_view&sysparm_article=KB0010561" target="_blank">Computing Requirements for Laptop Learning Programs</a>
+            </li>
+            
+            <li><strong>Text Editor</strong> VS Code (or Notepad++) 
+                <br>&bull; READ <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/Available_text_editors" target="_blank">What text editors are available? (MDN web docs)</a> 
+            </li>
+            
+            <li><strong>Web browser:</strong> Google Chrome (or Mozilla Firefox)  
+                <br>&bull; READ <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_software_do_I_need#browsing_websites" target="_blank">Browsing websites (MDN web docs)</a>
+            </li>
+
+            <li><strong>Developer's tools:</strong> Chrome > Right-click > Inspect (or F12) 
+                <br>&bull; READ <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools" target="_blank">What are browser developer tools? (MDN web docs)</a>
+                <br>How to open the devtools in your browser. The Inspector: DOM explorer and CSS editor. 
+            </li>
+            
+            <li><strong>Local workspace:</strong> &bull; organize your project file storage in 
+                <br><code>C:\public_html\syst10049</code>
+            </li>   
+            
+            <li><strong>Diagrams (hierarchy, wireframe):</strong>  
+                <br>&bull; BOOKMARK <a href="https://app.diagrams.net/">https://app.diagrams.net/</a>
+            </li> 
+            
+            <li title="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,... making it look like readable English. This site also provides images that can be used as placeholders, for the same reason."><strong> Lorem ipsum (dummy) text generators</strong> 
+                <br>&bull; BOOKMARK <a href="https://lipsum.com/">https://lipsum.com/</a> 
+             </li>    
+            
+           <li>
+                <em>(Optional)</em> <strong>Photo editor:</strong> Adobe, Paint, <a href="https://photofiltre-studio.com/pf7-en.htm">Photofitre</a>, or one you may be familiar with.
+           </li>    
+        </ol>
+    </details>
+
+</section>
+
+
+<!-- 3. Read and explore course material -->
+<section id="p3">
+    <h3>Activity 1.3. Review what you should already know.</h3>
+
+    <details open>
+        <summary>Know your computing environment</summary>
+ 
+    </details>
+    <details open>
+        <summary>Review (or catch up) concepts of directories and files.</summary>
+ 
+        <span>Helpful video series "Computer Skills Course: File Management" by Dane Hartman</span> 
+            <ul style="margin-top:0">
+                <li><a href="https://youtu.be/k-EID5_2D9U" target="_blank">Part 1</a>
+                 &nbsp;&nbsp;&nbsp;• <a href="https://youtu.be/DGd48PGbnBs" target="_blank">Part 2</a>
+                 &nbsp;&nbsp;&nbsp;• <a href="https://youtu.be/F7mAoa0fOts" target="_blank">Part 3</a>
+                 &nbsp;&nbsp;&nbsp;• <a href="https://youtu.be/G9NMjmPNqh4" target="_blank">Part 4</a></li>
+            </ul> 
+    </details>    
+
+</section>
+
+
+<!-- 4. Read and explore course material -->
+<section id="p3">
+    <h3>Activity 1.4. Start learning about web development</h3>
+        <details open id="p3">
+        <summary>Read and study the following articles (web pages)</summary>
+            <ul>
+                
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works" target="_blank">How the web works (MDN web docs)</a>  • Clients and servers. • The other parts of the toolbox. • So what happens, exactly? • Order in which component files are parsed. • DNS explained.</li>
+                
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work" target="_blank">How does the Internet work? (MDN web docs)</a></li>
+                
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/Pages_sites_servers_and_search_engines" target="_blank">What is the difference between webpage, website, web server, and search engine? (MDN web docs)</a>  • Web page. • Web site. • Web server • Search engine  </li>
+                
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_software_do_I_need" target="_blank">What software do I need to build a website? (MDN web docs)</a></li>
+                
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL" target="_blank">What is a URL? (MDN web docs)</a>  • Basics: anatomy of a URL. • How to use URLs. • Absolute URLs vs. relative URLs • Semantic URLs  </li>
+        </ul>
+    </details>
+ 
+
+</section>
+
+
+</main>
+
+
+<!-- footer area -->
+<footer>
+    <address><a href="">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    
+</footer>
+
+
+</body>
+</html>

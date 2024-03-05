@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="author" content"Ellen Bajcar">
+    <meta name="description" content="Class example for SYST10049">
+    <title>Class examples</title>
+<style>
+.example-paragraphs {
+  background-color: white;
+  overflow: hidden;
+  resize: horizontal;
+  width: 9rem;
+  border: 2px dashed #999;
+  margin-left: 200px;
+}
+span {
+  color: red;
+}
+</style>
+</head>
+<body>
+    <!-- Class example 
+           https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr
+            The <wbr> HTML element represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location.
+
+            -->
+
+    <main class="example-paragraphs">
+        <p>Fernstraßenbauprivatfinanzierungsgesetz</p>
+        <p>Fernstraßen<wbr />bau<wbr />privat<wbr />finanzierungs<wbr />gesetz</p>
+        
+        <!-- the <wbr> element does not introduce a hyphen at the line break point. To make a hyphen appear only at the end of a line, use the soft hyphen character entity (&shy;) instead. -->
+        <p>Fernstraßen&shy;bau&shy;privat&shy;finanzierungs&shy;gesetz</p>
+    </main>
+    <aside>
+        <h4>Code</h4>
+        <pre><code>
+        &lt;p>Fernstraßenbauprivatfinanzierungsgesetz&lt;/p>
+        &lt;p>Fernstraßen<span>&lt;wbr></span>bau<span>&lt;wbr></span>privat<span>&lt;wbr></span>finanzierungs<span>&lt;wbr></span>gesetz&lt;/p>
+        
+        &lt;!-- the &lt;wbr> element does not introduce a hyphen at the line break point. To make a hyphen appear only at the end of a line, use the soft hyphen character entity (&shy;) instead. -->
+        &lt;p>Fernstraßen<span>&amp;shy;</span>bau<span>&amp;shy;</span>privat<span>&amp;shy;</span>finanzierungs<span>&amp;shy;</span>gesetz&lt;/p>       
+        </code></pre>
+    </aside>
+</body>
+</html>

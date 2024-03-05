@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">Layouts</a></li>
+        <li><a aria-current="page" href="css_table.html">HTML Tables</a></li>
+        <li><a href="css_float.html">Float</a></li>       
+        <li><a href="css_flex.html">Flex</a></li>
+        <li><a href="css_grid.html">Grid</a></li>
+
+      </ul>
+    </nav>            
+</header>         
+            
+                   
+<main>  
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">Webpage layouts</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p> 
+    </div>
+    
+    
+    <section id=#e01">   
+        <h2>CSS tables</h2>
+        <div class="box warn">
+            <strong class="block titlebar">Important!</strong>
+            <strong>Page layouts are NOT</strong> organized using TABLE markup.  Only data tables are suitable,...</strong>
+        </div>    
+
+<!-- Styling tables  -->
+<dt>Table properties</dt>
+<dd>
+	<ul>
+		<li>To specify table borders in CSS, use the <code>border</code> <em>property</em>.</li>
+		<li>The <code>border-collapse</code> <em>property</em> sets whether the table borders should be collapsed into a single border</li>
+		<li>Width and height of a table are defined by the <code>width</code> and <code>height</code> <em>properties</em>.</li>
+		<li>The <code>text-align</code> <em>property</em> sets the horizontal alignment (like left, right, or center) of the content in &lt;th> or &lt;td>.</li>
+		<li>The <code>vertical-align</code> <em>property</em> sets the vertical alignment (like top, bottom, or middle) of the content in &lt;th> or &lt;td>.</li>
+		<li>To control the space between the border and the content in a table, use the <code>padding</code> <em>property</em> on &lt;td> and &lt;th> elements.</li>
+		<li>Add the <code>border-bottom</code> <em>property</em> to &lt;th> and &lt;td> for horizontal dividers</li>
+    </ul>
+</dd>
+<dd>
+    <ul>
+		<li>Use the <code>:hover</code> <em>selector</em> on &lt;tr> to highlight table rows on mouse over</li>
+		<li>For zebra-striped tables, use the <code>nth-child()</code> <em>selector</em> and add a <code>background-color</code> <em>property</em> to all even (or odd) table rows</li>
+
+	
+		<li style="list-style:none;text-decoration:underline;cursor:pointer;"> <a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3schools.com/css/css_table.asp">
+		Explore the examples @w3schools	</a> </li>
+</ul>
+  </dd>
+
+
+    <p class="text-gray-700 text-base mb-4">
+ 		<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3schools.com/css/css_table.asp">
+		Explore the examples @w3schools	</a> 
+        <br>   
+        <a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3schools.com/css/css_table.asp">
+		Explore the Tables Tutorial on @w3.org 	Web Accessibility Initiative</a>
+    </p>  
+          
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

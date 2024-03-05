@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example03_006</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>Embed spotify media</h1>
+  <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A1IM8x4lxZVOOP9gpQD6c5s" 
+      width="400" height="80" frameborder="0" allowtransparency="true"></iframe>
+</body>
+</html>

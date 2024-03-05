@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">	
+    <link rel="stylesheet" href="../../css/missing-css.css">
+    <link rel="stylesheet" href="../../css/prism_coy_dev.css">
+    <script src="../../scripts/prism.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/next-prev.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+      <ul role="list">
+        <li><a href="index.html">Responsive design</a></li>
+        <li><a href="css_viewport.html">Viewport</a></li>
+        <li><a aria-current="page" href="css_media.html">@media</a></li>       
+        <li><a href="css_import.html">@import</a></li>
+        <li><a href="css_font_face.html">@font-face</a></li>
+        <li><a href="css_media_query.html">Media Queries</a></li>
+        <li><a href="css_frameworks.html">Frameworks</a></li>
+      </ul>
+    </nav>            
+</header>         
+                              
+
+<main> 
+    <div class="prev-next">
+        <!--   <p style="color:lightgray;">Prev</p>   -->
+        <p style="line-height: 1em;text-align:left;">
+            <a href="#">Prev</a>
+            <br><small>Previous topic</small>
+        </p>
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="../index.html"  class="allcaps">Home</a></li>
+                <li><a href="#" aria-current="page">Responsive design</a></li>
+            </ol>               
+        </nav> 
+        <p style="line-height:1em;text-align:right;">
+            <a href="#">Next</a>
+            <br><small>Next topic</small>
+        </p>
+    </div>
+    
+    
+    <section id=#e01">  
+        <h2>@media rule</h2>
+
+
+
+
+    <dl>
+      <dt>Media-specific style sheets: the @media rule</dt>
+        <dd>The <code>@media</code> at-rule begins with a media type and a list of optional media queries. Its block contains entire rules, which are only applied when the @media's conditions are fulfilled.
+        </dd>
+        <dd>
+        <pre class="language-css">
+        <code>@media print {
+    body {  
+        font-size: 10pt 
+    }
+}</code></pre>
+
+        <p>A media type is a broad category of user-agent devices on which a document may be displayed. The original set of media types were defined in HTML4, for the media attribute on &lt;link> elements.</p>
+
+        Read further <a href="https://www.w3.org/TR/mediaqueries-4/#media-type" target="_blank"> media types: all, print, screen.</a>
+        </dd>
+    </dl>
+
+
+
+      
+    </section>
+</main>
+
+
+<footer>
+    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+    <div style="margin: 0 0 10px 0">&mdash;</div>
+</footer>
+
+
+</body>
+</html>

@@ -14,41 +14,16 @@
 </head>
 <body>
 
-<header class="navbar">
-    <nav>
-      <ul role="list">
-        <li><a href="index.html">CSS Syntax</a></li>
-        <li><a href="css_rules.html">CSS Rules</a></li>
-        <li><a href="css_location.html">Location</a></li> 
-        <li><a aria-current="page" href="css_cascade.html">The Cascade</a></li>       
-        <li><a href="css_specificity.html">Specificity</a></li>
-      </ul>
-    </nav>            
-</header>         
+
+<header>
+        <h1><span class="allcaps">SYST<wbr>10049<v-h>:</v-h></span> 
+            <sub-title>Web Development</sub-title>
+        </h1>          
+</header>        
             
                    
                    
-<main>   
-    <div class="prev-next">
-        <!--   <p style="color:lightgray;">Prev</p>   -->
-        <p style="line-height: 1em;text-align:left;">
-            <a href="#">Prev</a>
-            <br><small>Previous topic</small>
-        </p>
-        <nav class="breadcrumbs" aria-label="Breadcrumbs">
-            <ol>
-                <li><a href="../index.html"  class="allcaps">Home</a></li>
-                <li><a href="#" aria-current="page">CSS Syntax and Structure</a></li>
-            </ol>               
-        </nav> 
-        <p style="line-height:1em;text-align:right;">
-            <a href="#">Next</a>
-            <br><small>Next topic</small>
-        </p>
-    </div>
-    
-    
-    <section id=#e01">   
+<main>    
         <h2>The Cascade</h2>
         
 <dt>
@@ -66,20 +41,45 @@
 	<p>The opposite problem arises when no declarations try to set a value for an element/property combination. In this case, a value is found by way of <strong>inheritance</strong> or by looking at the property’s <strong>initial value</strong>. The <strong>cascading</strong> and <strong>defaulting</strong> process takes a set of declarations as input, and outputs a <strong>specified value</strong> (<em>specificity</em>) for each property on each element.</p>	
     
             <p>
-            Conflicting rules &mdash;cascade, specificity, inheritance&mdash; these three concepts together control which CSS applies to what element. <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank"> Understanding how the concepts work together (MDN)		</a>
+            Conflicting rules &mdash;cascade, specificity, inheritance&mdash; these three concepts together control which CSS applies to what element. <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank"> Understanding how the concepts work together (MDN)</a>
         </p> 
     
   <figure> 
   <img src="../../images/cascade0.jpg">
     <figcaption> Read further <a href="https://www.w3.org/TR/css-cascade-3/" target="_blank"> Cascading and defaulting (W3C specification)	</a> 
  </figcaption>
-  </figure>         
-    </section>
+  </figure>    
+
+<h3>Factors browsers use to determine what CSS to apply </h3>
+<dl>
+    <dt>Source order</dt>
+    <dd>(least imporant)  If you have more than one rule, all of which have exactly the same weight, then the one that comes last in the CSS will win. Source order only matters when the specificity weight of the rules is the same.</dd>
+    <dt>Specificity</dt>
+    <dd>A rule with a higher specificity — it is more specific — is chosen by the browser as the one that should style the element.</dd>
+    <dt>Importance</dt>
+    <dd>(most imporant) the <code>!important</code> flag overrules everything. It changes the way the cascade normally works. <br><em style="color:darkorange">Do not use, unless you absolutely have to when working with other people's code.</em></dd>
+</dl>
+
+<figure>
+<h3>Order of overriding declarations</h3>
+<ol>
+    <li>Declarations in user agent style sheets (e.g., the browser's default styles, used when no other styling is set).</li>
+    <li>Normal declarations in user style sheets (custom styles set by a user).</li>
+    <li>Normal declarations in author style sheets (these are the styles set by us, the web developers).</li>
+    <li>Important declarations in author style sheets.</li>
+    <li>Important declarations in user style sheets.</li>
+    <li>Important declarations in user agent style sheets.</li>
+</ol>
+<figcaption>Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance" target="_blank">The effect of CSS location (MDN)</a>
+</figcaption>
+</figure>
+
+
 </main>
 
 
 <footer>
-    <address><a href="http://bajcar.dev.fast.sheridanc.on.ca/">2021-2024 &copy; Ellen Bajcar et al</a></address> 
+    <address>2021-2024 &copy; Ellen Bajcar et al</address> 
     <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
     <div style="margin: 0 0 10px 0">&mdash;</div>
 </footer>

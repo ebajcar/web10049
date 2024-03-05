@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Worksheet 3</title>
+    <link rel="stylesheet" href="css/missing-css.css">
+	<!--link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.9/dist/missing.min.css"-->
+	<!--link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.9/dist/missing-prism.min.css"-->
+	<link href="https://fonts.bunny.net/css?family=source-sans-3:400,700|m-plus-code-latin:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/prism-coy-23.css">
+    <script src="css/prism-coy-23.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+	<style>
+kbd {
+    font-family: monospace;
+    color: blue;
+    font-size: 1.2em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+	</style>
+</head>
+<body>
+<!-- body container for main and footer -->
+        <header>       
+            <h1><span class="allcaps">SYST<wbr>10049 Web Development<v-h>:</v-h></span><sub-title>Worksheet 3</sub-title></h1>
+        </header>
+        
+        <main>
+            <div class="prev-next">
+                <p><a href="week02.html">Prev</a></p>
+                <nav class="breadcrumbs" aria-label="Breadcrumbs">
+                    <ol>
+                        <li><a href="../index.html"  class="allcaps">Home</a></li>
+                        <li><a href="index.html"  class="allcaps">Worksheets</a></li>
+                        <li><a href="week13.html" aria-current="page">Worksheet 3</a></li>
+                    </ol>               
+                </nav> 
+                <p><a href="week04.html">Next</a></p>
+            </div>
+
+
+<!-- navigation -->
+<section>
+    <ul class="f-switch dense align-items:stretch" role="list">
+        <li class="img">  
+            <div class="img-wrapper"><img src="img/layout-strip.png" alt=""></div>
+            <section>
+                <h4 class="hellip-one"><a href="#p1">1. Review, connect, dig deeper</a></h4>
+            </section>
+        </li>
+
+        <li class="img">
+            <div class="img-wrapper"><img src="img/content_banner.png" alt=""></div>
+            <section>
+                <h4 class="hellip-one"><a href="#p2">2.  Read and explore more concepts</a></h4>
+            </section> 
+        </li>  
+
+        <li class="img">  
+            <div class="img-wrapper"><img src="img/minimal-strip.png" alt=""></div>
+            <section>
+                <h4 class="hellip-one"><a href="#p3">3. Practice. Practice. Practice.</a></h4>
+        </section>
+        </li>
+    </ul>                 
+</section> 
+
+
+<!-- 1. Review, connect, dig deeper -->
+<section id="p1">
+    <h2>1. Review, connect, dig deeper</h2>
+
+    <dl>
+        <dt>1.1. What will your website look like?</dt>
+        <dd>Did you complete and review material from previous worksheet, including...
+            <ul>
+                <li>Planning: What is your website about? What info are you presenting on the subject? What is it going look like?</li>
+                <li>Sketching out your design - wireframe diagrams.</li>
+                <li>Choosing your assets: text, color theme, images, font.</li>
+                <li>What's in the head? Metadata in HTML -- What is the HTML head? Adding a title. Metadata: the META element.  Applying CSS and JavaScript to HTML.  Setting the primary language of the document. </li>
+                <li>WCAG (accessible web design principles: perceivable, operable, understandable, robust)</li>
+<!--
+  PERCEIVABLE
+  means to sense or have an awareness something.  
+  A blind person can't perceive an input in a form field is incorrect because they can't see the red border around it. A person with memory issues can't perceive that they are clicking a link they've already visited because the designer didn't change the colours of visited links. A person who is Deaf/deaf can't hear the instructions in the instructional video because they are being given by a person speaking and there are no captions or transcript.
+  - how to provide text alternatives and captions/transcripts for non-text content and time-based content like images, audio/video (live streamed and pre-recored), CAPTCHA, etc.
+  - guidelines for the presentation of content (layout, sequence, colour, scale of items, contrast, text spacing, background audio, etc)
+  
+  OPERABLE
+  means able to be used
+  All navigation works, ability to use the site using only a keyboard, have enough time to read/hear and use content; easy to find and navigate; does not trigger seizures or physical reactions (flashing things, animation); path-based gestures - drag, pinkch,...
+  
+  UNDERSTANDABLE
+  meaning of the content should be ccomprehendable and understandable
+  ( use of abbreviations, reading level; interactive components don't cause drastic changes; consistent navigation, assistance with input errors, context-sensitive help
+  
+  ROBUST
+  able to withstand adverse conditions (hard to break, difficult to crash)
+  
+-->
+            </ul>
+        </dd> 
+    </dl> 
+    
+    <dl>
+        <dt>1.2. Preparing server environment</dt>
+        <dd>
+            <ol style="list-style-type: upper-alpha;">
+                <li value="11">Did you download and install FileZilla client?</li>
+                <li>Did you request a password for dev.fast.sheridanc.on.ca server? Did you receive and read the email? Store your password in a safe place (see previous worksheet).</li>
+            </ol>
+        </dd>
+    </dl> 
+    
+ 
+</section>
+
+
+<!-- 2. Read and explore more concepts -->
+<section id="p2">
+    <h2>2. Read and explore more concepts</h2>
+
+<!-- 2. 2.1. Preparing server environment (continued from Week 1) -->
+    <dl>
+        <dt>2.1. Preparing server environment (continued from Week 1)</dt>
+        <dd>
+            <ol style="list-style-type: upper-alpha;">
+                <li value="12"><strong>SFTP to transfer files between client and server</strong>  FileZilla client (or WinSCP client)
+                    <ul style="margin-top:0; margin-bottom:0">
+                        <li>To request/reset password, read and complete <a href="" target="_blank">Requesting account credentials</a></li>
+                        <li>Familiarize yourself with <a href="" target="_blank">FileZilla client documentation</a></li>
+                        <li>Download and install <a href="" target="_blank">FileZilla client</a> (download link)</li>
+                        <li>When ready to publish, follow instructions <a href="" target="_blank">Publishing your project</a></li>
+                    </ul>                
+                </li>  
+                <li style="margin-bottom:0"><strong>cPanel access to dev.fast.sheridanc.on.ca</strong>  To request/reset password 
+                    <ul style="margin-top:0; margin-bottom:0">
+                        <li>To request/reset password, read and complete <a href="" target="_blank">Requesting account credentials</a></li>
+                        <li>To familiarize yourself with cPanel, read <a href="" target="_blank">[link missing]</a></li>
+                    </ul>
+                </li>
+
+                <li style="margin-top:0"><strong>Protect assignments directory:</strong> Read through carefully: <a href="protect_directory.html" target="_blank">Protect assignments directory</a>, then complete all steps.</li>
+            </ol>          
+        </dd>
+        
+ 
+    </dl>    
+
+<!-- 2.2. HTML document and website design and construction -->    
+    <dl>
+        <dt>2.2. HTML document and website design and construction</dt>
+
+        <dd>
+            <ol>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_blank">Document and website structure (MDN web docs)</a>  
+                <ol style="margin-top:0; margin-bottom:0;margin-left:10px;list-style-type:lower-alpha;">
+                  <li>HTML for structuring content. HTML layout elements in more detail. (Information architecture: Information architecture, as applied to web design and development, is the practice of organizing the information, content, and functionality of a website so that it presents the best user experience it can, with information and services being easily usable and findable.)</li>
+                  <li>Basic sections of a document (<span style="text-transform:uppercase;">header, navigation bar, main content, sidebar, footer</span>)</li>
+                  <li><q>Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.</q></li>
+                 <li><q>we need to respect semantics and use the right element for the right job.</q></li>
+                 <li><span style="text-transform:uppercase;">article, section, aside, header, nav, footer, body, article, section; span, div; br, hr, p</span></li>
+                 </ol>
+                 </li>
+            </ol>
+
+
+                <dd class="box">Resources
+                    <ul style="list-style-type:none">
+                        <li><a href="https://html.spec.whatwg.org/multipage/semantics.html#document-metadata" target="_blank">4.2 Document metadata</a> HEAD, TITLE, BASE, LINK, META, STYLE </li>
+                        <li><a href="https://html.spec.whatwg.org/multipage/sections.html#sections" target="_blank">4.3 Sections</a> body, article, section, nav, aside, h1 - h6, hgroup, header, footer, address</li>  
+                        <li><a href="" target="_blank">4.4 Grouping content</a> p, hr, pre, blockquote, ol, ul, menu, li, dl, dt, dd, figure, figcaption, main serach, div</li>                
+                        <li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html" target="_blank">4.5 Text-level semantics</a></li>
+                        <li><a href="https://html.spec.whatwg.org/multipage/links.html" target="_blank">4.6 Links</a></li> 
+                        <li>-</li>
+                 <li><a href="https://ebajcar.github.io/web10049/content2023fall/learnhtml/models.html" target="_blank">Content models</a> (block and inline flow, root element, document metadata, inline text semantics, text content, table conent, image and multimedia, interactive elements, content sectioning, obsolete and depricated elements)</li> 
+                  
+                   <li><a href="https://ebajcar.github.io/web10049/content2023fall/learnhtml/textual.html" target="_blank">Textual content</a> (headings and paragraphs, emphasis and importance, italic, bold, and underline, quotations and citations, abbreviation and definitions, contact details, superscript and subscript, computer code, time and date, demarcating edits, block quotes and preformatted text)</li> 
+                    <li><a href="https://ebajcar.github.io/web10049/content2023fall/learnhtml/semantics.html" target="_blank">Semantic content</a> (non-semantic wrappers, line breaks and horizontal rules, page regions, grouping content, articles and sections, figures and figure captions, ordered, unordered, and description lists, table data structures)</li>                         
+                    </ul>
+                </dd>
+
+        </dd> 
+    </dl>     
+    
+
+                        <dl>
+                            <dt>2.3. Complete tutorials <a href="https://www.w3.org/WAI/tutorials/page-structure/" target="_blank">Page structure</a> (WCAG Success criteria: 1.3.1., 2.4.1, 2.4.6, 2.4.10)</dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            <a href="https://www.w3.org/WAI/tutorials/page-structure/regions/" target="_blank">Page Regions</a> 
+                                        </strong>
+                                        Page header, page footer, navigation, main content, complementary contant, using WAI-ARIA. (Techniques: ARIA11)
+                                    </li> 
+                                    <li>
+                                        <strong>
+                                            <a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" target="_blank">Headings</a> 
+                                        </strong>
+                                        Heading ranks, organize passages of text, headings that reflect the page organization.  (Techniques: ARIA12, G130, G141, H42, H69, H80, PDF9)
+                                    </li> 
+                                    <li>
+                                        <strong>
+                                            <a href="https://www.w3.org/WAI/tutorials/page-structure/labels/" target="_blank">Labeling Regions</a> 
+                                        </strong>
+                                        Using area-labelledby and aria-label. (Techniques: ARIA11, H69)
+                                    </li> 
+                                    <li>
+                                        <strong>
+                                            <a href="https://www.w3.org/WAI/tutorials/page-structure/content/" target="_blank">Content Structure</a> 
+                                        </strong>
+                                        Articles, sections, paragraphs, lists, quotes, figures, images, tables.  (Techniques: G62, H40, H48, H49)
+                                    </li>    
+                                </ul>
+                            </dd> 
+                        </dl>                       
+  
+
+<!-- 2.4. Testing for valid HTML and accessibility -->
+    <dl>
+        <dt>2.4. Testing for valid HTML and accessibility</dt>
+        <dd>
+            <ul>  
+                <li><a href="https://validator.w3.org/" target="_blank">Testing for valid HTML</a> with https://validator.w3.org/</li>
+                <li><a href="https://wave.webaim.org/" target="_blank">Testing for accessibility</a> with WAVE Web Accessibility Evaluation Tools</li>                    
+                <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Accessibility_tree" target="_blank">Accessibility tree</a> Browser Accessibility Tree provides a representation of the document that is used by assistive devices like screen readers. Each node in the tree has the properties name, description, role and state.</li>               
+            </ul>
+        </dd> 
+        
+    </dl> 
+
+   <dl>
+        <dt>2.5. Development process (Progressive Enhancement Phase I)</dt>
+        <dd><p><chip>Needs update</chip> <br>
+            <a href="https://sheridanc-fast-syst10049.notion.site/Exercise-3-1-24cc3b99bdc64592964de132ce6216fa?pvs=4" target="_blank">Complete all steps.</a></p><p></p>
+        </dd> 
+        <dd>
+               
+                  <details open>
+                    <summary>(RECAP)</summary>
+                    <ol>
+                        <li>Create project directory (folder) on local machine (client).</li>
+                        <li>Create <kbd>content</kbd> sub-directory.</li>
+                        <li>Create <kbd>images</kbd> sub-directory.</li>
+                        <li>Create <kbd>css</kbd> sub-directory.</li>
+                        <li>Create <kbd>index.html</kbd> in project directory.</li>
+                        <li>Start with minimal HTML5 document.</li>
+                        <li>Add viewport meta element.</li>
+                        <li>Add author and description meta elements.</li>
+                        <li>Add prologue (documentation header).</li>
+                        <li>Add your own comments. (Start with documentation: what needs to be done?)</li>
+                        <li>Validate at <kbd>validator.w3.org</kbd> and correct all warnings and errors.</li>  
+                        <li>Add standard content page areas.</li>
+                        <li>Test using browser.</li>
+                        <li>Validate and correct all warnings and errors.</li>
+                        <li>Keep adding code fragments, testing, and validating until all content is marked up.</li>
+                        <li>Repeat steps 6 to 15 for each secondary file (stored in <kbd>content</kbd> sub-directory.</li>
+                        <li>Publish project using Filezilla on <kbd>dev.fast.sheridanc.on.ca/syst10049</kbd>.</li>
+                        <li>Validate for accessiblitity using <kbd>wave.webaim.org</kbd>. Correct all errors. Test with browser.</li>
+                    </ol>
+                  </details>      
+
+       </dd> 
+    </dl>                            
+</section>
+
+
+<!-- 3. 3. Practice. Practice. Practice. -->
+<section id="p3">
+    <h2>3. Practice. Practice. Practice.</h2>
+    
+    <dl>
+        <dt>3.1. Create the "Marking up a letter" (markup_letter) project</dt>
+        <dd>
+            <ol>
+
+                <li>Copy the templates project. Rename the copy <code>week03</code></li>
+                <li>Rename the <code>template.html</code> to <code>index.html</code>. This will be the only page for this project.</li>
+                <li>Remove all markup in the BODY element. This page does not have a header and footer, main, and aside.</li>
+                <li>Add content to your HTML file (un-marked). Copy and paste the text within the BODY element:
+                <br>
+                <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/content.txt" target="_blank">Textual content of the letter</a></li>                     
+                
+                <li>Examine the image of the letter. Observe the content characteristics. <br>
+                <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/letter_original_styled.png" target="_blank">The final (original) rendering of the letter (including CSS in Phase II PE)</a></li>
+                
+                <li>Compare to image of the letter as rendered without any CSS. Remember CSS is added only after the content is marked up with HTML5, with the objective of achieving semantic correctness, accessibility, well-formedness, and validity.<br>
+                <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/letter_solution_nocss.png" target="_blank">The rendering of the letter at the end of Phase I PE (without CSS)</a></li> 
+                
+                <li>Here is a suggested list of requirements. You can incorporate the requirements list in your document and use the TODO and DONE notation to keep track of your progress:
+                <a href="https://github.com/ebajcar/modules_syst10049/blob/main/resources_letter/letter_start_here.html" target="_blank">Suggested documentation</a> You can also read the original project on <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter" target="_blank">Marking up a letter on MDN</a> <chip class="warn">LINK UPDATED</chip> -- ignore all references to CSS -- Addressor's contact information WILL NOT BE aligned on the right! (that will come later in PE Phase 2)</li>                  
+            </ol>
+        </dd> 
+    </dl>   
+
+    <dl>
+        <dt>3.2. Complete the "Structuring a page of content" (birdwatching) project </dt>
+        <dd>
+            <ol>
+                <li>READ through the project <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content" target="_blank">Structuring a page of content</a> on MDN web docs site, including sections: Starting point, Project Brief, Hints and tips, and Example.</li>
+                <li>Create a new directory (folder) in your <kbd>C:/public_html/syst10049/</kbd> local directory, called <kbd>week04</kbd>.</li>
+                <li>Copy your <kbd>site_template</kbd> project (created in Week 3) to <kbd>week04</kbd>.</li>
+                <li>Rename the copied project to <kbd>birdwatching</kdb></li>
+                
+                <li>Download and unzip the file <a href="https://raw.githubusercontent.com/mdn/learning-area/main/html/introduction-to-html/structuring-a-page-of-content-start/assets.zip" target="_blank">assets.zip</a>.  NOTE: if this link does not work, use the "zip file containing all the starting assets" in the "Starting point" section of the MDN page! <br><mark>&nbsp;DO NOT STORE the ZIP file in your local webspace and never upload to the server webspace.</mark></li>
+                <li>Store the <kbd>index.html</kbd> file in the <kbd>C:/public_html/syst10049/week04/birdwatching/</kbd> directory.</li>
+                <li>Store the <kbd>style.css</kbd> file in the <kbd>C:/public_html/syst10049/week04/birdwatching/css/</kbd> directory.</li>
+                <li>Store the remaining files (.jpg and .png image files) in the <kbd>C:/public_html/syst10049/week04/birdwatching/images/</kbd> directory.</li>
+                <li>Using VS Code editor, modify the <kbd>index.html</kbd> 
+                    <ul>
+                        <li><strong>change all relative URLs to images</strong> by adding <kbd>images/</kbd> in front of the image name.  For example, <br>
+                        <code>&lt;img src="dove.png" alt="a simple dove logo"></code><br>
+                        will beocme <br>
+                        <code>&lt;img src="images/dove.png" alt="a simple dove logo"></code></li>
+                        <li>add structural elements as specified in the "Project brief"</li>
+                    </ul>
+                </li>                
+                <li>Complete the remaining tasks from the <kbd>site_template</kbd> exercise, including test, validate for valid HTML, validate for accessibility, and publish.</li>
+                <li>Reflect on what you have learned, identify area that you need to study further. </li>
+            </ol>
+        </dd> 
+    </dl>     
+</section>
+
+
+
+
+
+
+
+
+
+
+        </main>
+
+        <footer>
+            <address><a href="">2021-2023 &copy; Ellen Bajcar et al</a></address> 
+            <p>The materials provided in class and through SLATE are protected by copyright. They are intended for the personal, educational uses of students in this course and should not be shared externally or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright infringement and violation of Sheridan policies.</p>  
+            <hr style="margin: 10px 0">
+            <ul class="f-switch" role="list">
+                <li>
+                  <h2>Course Material</h2>
+                  <ul>
+                    <li><a href="https://ulysses.sheridanc.on.ca/coutline/coutlineview_sal.jsp?appver=sal&subjectCode=SYST&courseCode=10199&version=2021011800&sec=0&reload=true">Course Outline</a></li>      
+                    <li><a href="https://notepad-plus-plus.org/">Notepad++ Text Editor</a></li>  
+                    <li><a href="https://www.filezilla-project.net/">FileZilla Client</a></li>  
+                    <li><a href="https://www.w3schools.com/tryit/trycompiler.asp?filename=demo_php">Online Backend editor (PHP)</a></li>  
+                    <li><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello">Online Frontend editor (HTML/CSS/JS)</a></li>
+                    <li><a href="https://validator.w3.org/">HTML validator</a></li>   
+                    <li><a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></li>                  
+                  </ul>
+                </li>
+                <li>
+                  <h2>Resources</h2>
+                  <ul>
+                    <li><a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/">w3schools</a> </li>  
+                    <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>   
+                    <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">ECMAScript language specification</a></li>                 
+                  </ul>
+                </li>
+                <li>
+                  <h2>Sheridan College</h2>
+                  <ul>
+                    <li><a href="https://www.sheridancollege.ca/">Davis &mdash; HMC &mdash; Trafalgar</a></li>
+                    <li><a href="https://slate.sheridancollege.ca/d2l/home">SLATE</a></li>
+                    <li><a href="https://central.sheridancollege.ca/counselling-services">Wellness &amp; Counselling Services</a></li>   
+                    <li><a href="https://central.sheridancollege.ca/library-services">Library Services</a></li>  
+                    <li><a href="https://it.sheridancollege.ca/service-catalogue/tech-essentials/index.html">Tech Essentials</a></li>  
+                    <li><a href="http://tech.fast.sheridanc.on.ca/">Fast Tech (web server access)</a></li>
+                    <li><a href="http://bajcar.dev.fast.sheridanc.on.ca/">Prof. Ellen Bajcar</a><span style="color:gray"><br>Office hours (by appointment)</span></li>
+                  </ul>
+                </li>
+            </ul>
+        </footer>
+     
+     
+
+
+</body></html>
