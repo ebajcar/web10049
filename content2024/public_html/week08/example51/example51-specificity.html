@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example 51 font</title>
+  <meta charset="utf-8">
+
+<style>
+p { /* specificity 001 */
+  color: green;
+}
+/* 
+   Font properties
+   font • font-family • font-size • font-style • font-variant • font-weight 
+*/
+p:first-of-type { /* specificity 011 */
+  color: red;
+  /* https://www.w3schools.com/cssref/pr_font_font-family.asp */
+  font-family: Book Antiqua; 
+  
+  /* font-size:medium|xx-small|x-small|small|large|x-large|xx-large|smaller|larger|length|initial|inherit; */
+  font-size: 2em;  /*  property sets the size of a font. */
+  
+  /* font-style: normal|italic|oblique|initial|inherit; */
+  font-style: italic;
+  
+  /* font-variant: normal|small-caps|initial|inherit; */
+  font-variant: small-caps;
+  
+  /* font-weight: normal|bold|bolder|lighter|number|initial|inherit; */
+  font-weight: lighter;
+  
+  /* line-height: normal|number|length|initial|inherit; */
+  line-height: 1.2em;
+}
+p:nth-child(3) {
+/* font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit; */
+  font: italic small-caps lighter 2em/1.2em  "Book Antiqua";
+}
+#two { /* specificity 100 */
+  color: blue;
+}
+.two { /* specificity 010 */
+  color: orange;
+}
+</style>
+</head>
+<body>
+  <header><h1 class="two">Main Heading</h1></header>
+
+  <p id="two" class="two">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare convallis dolor at blandit. <strong>Donec volutpat massa in vestibulum accumsan.</strong> Vestibulum tristique gravida erat, sit amet semper ipsum tempus at. </p>
+
+  <p class="two">Donec vitae convallis erat, a sollicitudin lorem. Donec lacinia facilisis lorem sit amet dictum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut venenatis neque et cursus hendrerit.</p>
+
+  <p>Nulla facilisi. Nam sed hendrerit risus, non tincidunt quam. Maecenas sodales est molestie elementum pulvinar. Integer gravida sagittis sem ut aliquam. Suspendisse potenti. Vivamus pellentesque ex massa, in aliquam nisl cursus ut. Morbi at volutpat nulla, non facilisis mauris. Nullam tempor vel lectus et molestie.</p>
+
+  <p>Mauris lacinia lacus vitae lacinia iaculis. Donec sodales neque sit amet sagittis interdum. Nam eget enim in massa vulputate pulvinar. Fusce tincidunt quis erat eu semper. Curabitur eu felis at ante euismod consequat et eu sapien. Pellentesque nisi mauris, sollicitudin nec ante non, viverra gravida massa.</p>
+
+  <footer  class="two">2016-2024 © Sheridan College</footer>
+</body>
+</html>
+
