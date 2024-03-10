@@ -31,6 +31,10 @@ dd:first-of-type ol{
 details {
   border: none;
 }
+.current {
+  font-weight: bold;
+  font-size: 1.3em;
+}
 	</style>
 </head>
 
@@ -39,19 +43,37 @@ details {
 
 <!-- header area-->
 <header>       
-    <h1><span class="allcaps">SYST<wbr>10049 Web Development<v-h>:</v-h></span><sub-title>Worksheet 1  <span style="font-size:0.6em;color:gray;">Updated Jan. 15, 2024</span></sub-title></h1>
+    <h1><span class="allcaps">SYST<wbr>10049 Web Development<v-h>:</v-h></span><sub-title>Worksheet 1  <!--span style="font-size:0.6em;color:gray;">Updated Jan. 15, 2024</span></sub-title--></h1>
 </header>
 
 
 <main>
     <div class="prev-next">
-        <p style="color:lightgray;"><!--<a href="week01.html">Prev</a>-->Prev</p>
+        <p><a href="../../index.html">Class Plan</a></p>
+       <nav class="tool-bar">| 
+            <a href="week1winter2024.html"  class="current"> 1 </a> | 
+            <a href="week2winter2024.html"> 2 </a> | 
+            <a href="week3winter2024.html"> 3 </a> | 
+            <a href="week4winter2024.html"> 4 </a> | 
+            <a href="week5winter2024.html"> 5 </a> | 
+            <a href="week6winter2024.html"> 6 </a> | 
+            <a href="week7winter2024.html"> 7 </a> | 
+            <a href="week8winter2024.html"> 8 </a> | 
+            <a href="week9winter2024.html"> 9 </a> | 
+            <a href="weekAwinter2024.html"> 10 </a> | 
+            <a href="weekBwinter2024.html"> 11 </a> | 
+            <a href="weekCwinter2024.html"> 12 </a> | 
+            <a href="weekDwinter2024.html"> 13 </a> | 
+
+        </nav>
+<!--          
         <nav class="breadcrumbs" aria-label="Breadcrumbs">
                 <ol>
                     <li><a href="../../index.html"  class="allcaps">Home</a></li>
                     <li><a href="#" aria-current="page">Worksheet 1</a></li>
                 </ol>               
             </nav> 
+            -->
             <p><a href="week2winter2024.html">Next</a></p>
         </div>
 
@@ -207,7 +229,14 @@ details {
 
 </section>
 
-
+    <footer class="f-row flex-wrap:wrap justify-content:space-between">       
+        <div><!--Previous ←-->
+            <strong>&nbsp;</strong>
+        </div>        
+        <div>Next →
+            <strong><a href="week2winter2024.html">Worksheet 2</a></strong>
+        </div>       
+    </footer>
 </main>
 
 
