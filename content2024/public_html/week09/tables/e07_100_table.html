@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example07_100</title>
+  <meta charset="utf-8">
+<style>
+/* Start with generic selectors and properties */
+body {
+  background-color: lightgray;
+}
+table {
+  border: thin solid black;
+  width: 100%;
+  min-width: 400px;  
+  max-width: 500px;
+}
+caption {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20pt;
+}
+td {
+  border: thin solid green;
+}
+.special {
+  font: italic bold 12pt/18pt Times, serif;
+  text-decoration:underline;
+  text-transform: uppercase;
+  color: blue;
+  text-align: right;
+  border-color: green;
+}
+.row3 {
+  background-color: pink;
+  text-indent: 2em;
+}
+.col3 {
+  background-color:lightblue
+}
+</style>
+</head>
+<body>
+  <figure>
+    <table>
+      <caption>Table Caption</caption>
+      <tr>
+        <th colspan="3">
+          Row 1 --- [[[ Heading element --- Row spans three columns  ]]] 
+          accumsan eget, pellentesque et nulla.
+        </th>
+      </tr>
+      <tr>
+        <td class="special">row 2 column 1</td>
+        <td>row 2 column 2</td>
+        <td>row 2 column 3</td>
+      </tr>
+      <tr>
+        <td>row 3 column 1</td>
+        <td colspan="2" class="row3">
+          Row 3 - spans two columns
+        </td>
+      </tr>
+      <tr>
+        <td>row 4 column 1</td>
+        <td class="special">row 4 column 2</td>
+        <td rowspan="2" class="col3">
+          column 3 spans rows 4 and 5
+        </td>
+      </tr>
+      <tr>
+        <td>row 5 column 1</td>
+        <td>row 5 column 2</td>
+      </tr>
+    </table>
+    <figcaption>
+      FIGURE 1.1. This is figure caption to describe 
+      the figure within the context of the content.
+    </figcaption>
+  </figure>
+
+</body>
+</html>
+
+
+
+
+

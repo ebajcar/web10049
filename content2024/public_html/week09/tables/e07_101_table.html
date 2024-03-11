@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example07_101</title>
+  <meta charset="utf-8">
+<style>
+table {
+  width: 100%;
+  border: 1px solid navy;
+  caption-side: top;
+  margin: 0 0 20px;
+  text-align: center;
+}
+caption {
+  border: 1px solid navy;
+  border-bottom: none;
+  background: lightblue;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+.four tr {
+  /*border: 1px red solid;*/
+  background: lightgreen; 
+}	
+.four td {
+  border: 1px blue dotted;
+}	
+.four thead th {
+  background: none; 
+}
+.four tfoot td {
+  color: green;
+  background: lightgreen;
+}
+.four tbody tr {
+  background: none; 
+}
+.four tbody tr:nth-child(even) {
+  background: lightgray;
+}
+.four tbody tr:hover {
+  background-color: yellow;
+}
+tbody td:nth-child(3n+0) {
+  font-weight: bold;
+  color: blue;
+}
+tbody td:nth-child(4n+0) {
+  font-weight: bold;
+  color: maroon;
+}	
+</style>
+</head>
+<body>
+  <table class="four">
+    <caption>Table 4: this is a caption</caption>
+    <thead>
+      <tr>
+        <th> </th>
+        <th>column heading 1</th>
+        <th>column heading 2</th>
+        <th>column heading 3</th>
+        <th>column heading 4</th>
+      </tr>	
+    </thead>
+    <tfoot>
+      <tr>
+        <th colspan="5">table footer</th>
+      </tr>		
+    </tfoot>
+    <tbody>
+      <tr>
+        <th>row heading 1</th>
+        <td>one 1</td>
+        <td>two 1</td>
+        <td>three 1</td>
+        <td>four 1</td>
+      </tr>
+      <tr>
+      <th>row heading 2</th>
+        <td>one 2</td>
+        <td>two 2</td>
+        <td>three 2</td>
+        <td>four 2</td>
+      </tr>
+      <tr>
+        <th>row heading 3</th>
+        <td>one 3</td>
+        <td>two 3</td>
+        <td>three 3</td>
+        <td>four 3</td>
+      </tr>	
+      <tr>
+        <th>row heading 4</th>
+        <td>one 4</td>
+        <td>two 4</td>
+        <td>three 4</td>
+        <td>four 4</td>
+      </tr>
+      <tr>
+        <th>row heading 5</th>
+        <td>one 5</td>
+        <td>two 5</td>
+        <td>three 5</td>
+        <td>four 5</td>
+      </tr>			
+    </tbody>
+  </table>
+</body>
+</html>
+
+
+
+
+

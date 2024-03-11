@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example08_047</title>
+  <meta charset="utf-8">
+<style>  
+li:nth-of-type(n+2):nth-last-of-type(n+2) {
+  color: red;
+} 
+/*
+https://www.w3.org/TR/selectors-4/#the-nth-last-of-type-pseudo
+In this case, one could also use :not(), 
+although the selector ends up being just as long: 
+*/
+
+li:not(:first-of-type):not(:last-of-type) {
+  font-style: italic;
+}
+</style>
+</head>
+<body>
+  <h1>nth-of-type, first-of-type, last-of-type</h1>
+  <ol>
+    <li>Fusce et libero vel nibh varius venenatis quis feugiat nisi.</li>
+    <li>Donec at mattis risus. Cras ac suscipit elit..</li>
+    <li>Etiam feugiat felis non eros euismod dignissim.</li>
+    <li>Vivamus commodo feugiat arcu, sed vehicula lorem eleifend lobortis.</li>	
+    <li>Aenean imperdiet vitae ante sit amet mollis..</li>
+    <li>Vivamus finibus imperdiet lorem, ut sollicitudin massa convallis a. </li>
+    <li>Feugiat felis non eros euismod dignissim.</li>
+    <li>Etiam hendrerit ligula non ipsum pellentesque, nec ornare libero posuere. </li>
+    <li>Etiam feugiat felis non eros euismod dignissim.</li>
+    <li>Ut eu purus hendrerit, maximus lectus quis, dignissim orci. </li>
+    <li>Mauris eget diam id nisl pulvinar tristique vitae ut sem.</li>
+    <li>Fusce finibus orci mi, sed tincidunt eros lacinia ut. </li>
+    <li>Etiam feugiat felis non eros euismod dignissim.</li>
+    <li>In ultricies ligula id mauris eleifend pretium.</li>			
+  </ol>
+
+</body>
+</html>
+

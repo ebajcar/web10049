@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example08_007</title>
+  <meta charset="utf-8">
+<!-- 
+  Illustration of containing blocks
+  https://www.w3.org/TR/CSS22/visudet.html#containing-block-details 
+-->
+<style>
+html {
+  border:1px dotted blue;
+}
+body {
+  border:1px dotted red;
+}
+div {
+  position:absolute;
+  left:50px;
+  top:50px;
+  outline:1px solid green;
+}
+em {
+  position:absolute;
+  left:100px;
+  top:100px;
+  outline:1px solid maroon;
+}	  
+</style>
+</head>
+<body id="body">
+  <div id="div1">
+    <p id="p1">
+        This is text in the first paragraph...
+    </p>
+    <p id="p2">
+      This is text 
+      <em id="em1"> 
+        in the 
+        <strong id="strong1">second</strong> 
+        paragraph.
+      </em>
+    </p>
+  </div>
+
+</body>
+</html>
+
+
