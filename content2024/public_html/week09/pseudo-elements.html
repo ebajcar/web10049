@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example06_021</title>
+  <meta charset="utf-8">
+<style>
+/* Use id when you want to identify an element uniquely - use it only once in your document
+Use class when you want to classify = apply the same ruleset to many elements */
+body {
+  width: 96%;
+}
+.para1 {
+  font-family: Georgia;
+  padding: 10px 45px;
+  border: thin dashed blue;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 50px;
+  /* horizontal offset, vertical offset, blur, color */
+  text-shadow: 2px 2px 3px red;
+}
+.para1::first-letter {
+  font-size: 25pt;
+  font-weight: bold;
+}
+.para2 {
+  font-family: Georgia;
+  padding: 40px;
+  border: thick dotted blue;
+  /*
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  */
+  border-radius: 150px 150px 50px 50px;
+}
+.para2::first-letter {
+  font-size: 25pt;
+  font-weight: bold;
+  float: left;
+}
+.para3 {
+  font-family: Georgia;
+  width: 70%;
+}
+.para3::first-line {
+  font-size: 20pt;
+  font-weight: bold;
+}
+.para4 {
+  font-family: Georgia;
+}
+.para4::selection {
+  font-weight: bolder;
+  color: red;
+}
+</style>
+</head>
+<body>
+<p class="para1"> First letter changed based on pseudo-element / height of first line is same as first letter:  
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae
+    enim justo. Mauris eget augue id lorem consequat laoreet. Cras ut ante a
+    nunc rutrum iaculis.</p>
+
+<p class="para2"> First letter changed based on pseudo-element / float creates a 
+    <strong>"drop-cap"</strong> which 
+    causes the rist letter is enlarged and drops below the first line of text:
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae
+    enim justo. Mauris eget augue id lorem consequat laoreet. Cras ut ante a
+    nunc rutrum iaculis.</p>
+
+<p class="para3"> First line changed based on pseudo-element: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae
+    enim justo. Mauris eget augue id lorem consequat laoreet. Cras ut ante a
+    nunc rutrum iaculis.
+</p>
+
+<p class="para4"> <strong>Style content based on pseudo-element for user selection...Select a word/phrase:</strong>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae
+    enim justo. Mauris eget augue id lorem consequat laoreet. Cras ut ante a
+    nunc rutrum iaculis.
+</p>
+</body>
+</html>
+
+
