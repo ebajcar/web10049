@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example06_021</title>
+  <meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Schoolbell&display=swap')
+/* Use id when you want to identify an element uniquely - use it only once in your document
+Use class when you want to classify = apply the same ruleset to many elements */
+body {
+  width: 96%;
+}
+h1, h2 {
+  background-color: lightgray;
+  color: #0000ff;
+}
+h1  {
+-webkit-text-stroke-color: purple;
+-webkit-text-fill-color: pink;
+-webkit-text-stroke-width: 3px;
+font-size: 5em;
+}
+h2 {
+  text-align: center;
+  font-family: "Schoolbell", cursive;
+  font-weight: 400;
+  font-style: normal;  
+}
+p {
+  /* background-color: yellow; */
+  margin: 50px 20px;
+  /* clockwise T R o u B L e*/
+  padding: 15px 10px 10px 5px;
+}
+p:first-of-type {
+  border: 10px double #0000ff;
+}
+.para1 {
+  font-family: "Times New Roman", Georgia, Garamond;
+  padding: 10px 45px;
+  border: thin dashed blue;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 50px;
+  /* border-radius: 150px 50px 150px 50px; /*
+  /* horizontal offset, vertical offset, blur, color */
+  background-color: lightgray;
+  /* applying two or more shadows */
+  text-shadow: 1px 1px 2px white, 2px 2px 2px black ;
+}
+.para1::first-letter {
+  font-size: 25pt;
+  font-weight: bold;
+}
+.para2 {
+  font-family: Georgia;
+  padding: 40px;
+  border: thick dotted blue;
+  /*
+  border-top-left-radius: 180px;
+  border-top-right-radius: 130px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 30px;
+  */
+  border-radius: 180px 130px 80px 30px;
+}
+.para2::first-letter {
+  font-size: 25pt;
+  font-weight: bold;
+  float: left;
+  border: 1px solid red;
+}
+.para3 {
+  font-family: Georgia;
+  width: 100%;
+}
+.para3::first-line {
+  font-size: 20pt;
+  font-weight: bold;
+}
+.para4 {
+  font-family: Georgia;
+  font-size: 2em;
+}
+.para4::selection {
+/*
+only some properties are available, see:
+https://developer.mozilla.org/en-US/docs/Web/CSS/::selection
+
+color, background-color, text-decoration, text-shadow
+-webkit-text-stroke-color, -webkit-text-fill-color, -webkit-text-stroke-width
+*/
+-webkit-text-stroke-color: purple;
+-webkit-text-fill-color: white;
+-webkit-text-stroke-width: 2px;
+text-decoration: wavy dotted lime;
+}
+
+</style>
+</head>
+<body>
+<h1>Main title</h1>
+<h2>Subtitle</h2>
+<p> First letter changed based on pseudo-element / height of first line is same as first letter:  
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae
+    enim justo. Mauris eget augue id lorem consequat laoreet. Cras ut ante a
+    nunc rutrum iaculis.</p>
+<p class="para1"> First letter changed based on pseudo-element / height of first line is same as first letter:  
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae
+    enim justo. Mauris eget augue id lorem consequat laoreet. Cras ut ante a
+    nunc rutrum iaculis.</p>
+
+<p class="para2"> First letter changed based on pseudo-element / float creates a 
+    <strong>"drop-cap"</strong> which 
+    causes the rist letter is enlarged and drops below the first line of text:
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae
+    enim justo. Mauris eget augue id lorem consequat laoreet. Cras ut ante a
+    nunc rutrum iaculis.</p>
+
+<p class="para3"> First line changed based on pseudo-element: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae
+    enim justo. Mauris eget augue id lorem consequat laoreet. Cras ut ante a
+    nunc rutrum iaculis.
+</p>
+
+<p class="para4"> <strong>Style content based on pseudo-element for user selection...Select a word/phrase:</strong>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae
+    enim justo. Mauris eget augue id lorem consequat laoreet. Cras ut ante a
+    nunc rutrum iaculis.
+</p>
+</body>
+</html>
+
+
+
