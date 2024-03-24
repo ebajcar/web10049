@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My CSS Cheetsheet</title>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href="css/cssSheet.css"
+      rel="stylesheet">	  
+<style>
+<!--
+
+-->
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>My Cascading Style Sheet (CSS) Checklist</h1>
+</header>
+
+<div id="contentbox">
+<div id="content1">
+
+	<!-- SYNTAX -->
+	<table>
+		<tr><th colspan="2">CSS SYNTAX</th></tr>
+		<tr>
+			<td colspan="2">			
+				<p>CSS3 delivers a wide range of stylization and effects, enhancing the web app without sacrificing <mark> <strong>semantic structure</strong> </mark> or <mark> <strong>performance</strong> </mark>.</p>
+			</td>			
+		</tr>		
+		<tr><td colspan="2"><strong>CSS Rule</strong></td></tr>
+		<tr>
+			<td>
+				<code style="color:red;font-weight:bold;font-size:1.1em;">selectors {<br>&nbsp;&nbsp;&nbsp;property:value; <br>&nbsp;&nbsp;&nbsp;&hellip; <br>&nbsp;&nbsp;&nbsp;property:value;<br>}</code>
+			</td>
+			<td title="values are NOT quoted; last semi-colon can be omitted but unwise to do so;">
+				<small>declaration start (open brace)<br>each declaration ends with a semi-colon<br><br><br>declaration end (close brace)</small>
+			</td>		
+		</tr>
+		<tr>
+			<td colspan="2">
+				<p><strong>Selector</strong> specifies the target of styling.</p>
+				<p><strong>Declaration</strong> specifies the property and value to be applied to the selector.</p>			
+			</td>			
+		</tr>
+    </table>
+	
+	<!-- LOCATION -->
+	<table>
+		<tr><th>LOCATION</th></tr>
+		<tr><td><strong>External Style Sheets</strong></td></tr>
+		<tr><td><code>&lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;</code></td></tr>
+		<tr><td><strong>Internal (Embedded) Styles</strong></td></tr>
+		<!-- type="text/css" is no longer required in HTML5 -->
+		<tr><td><code>&lt;style&gt;<br />&nbsp;&nbsp;&nbsp;selector {property: value;}<br />&lt;/style&gt;<br />&lt;/head&gt;</code></td></tr>
+		<tr><td><strong>Inline Styles</strong></td></tr>
+		<tr><td><code>&lt;tag style=&quot;property:value;property:value;&quot;&gt;content&lt;/tag></code></td></tr>
+		<tr><td><strong>Browser</strong></td></tr>
+		<tr><td>Normal flow (defaults), DOM hierarchy</td></tr>
+    </table>	
+	
+	<!-- SELECTORS -->
+	<table class="col_3">
+		<tr>
+			<th colspan="3">SELECTORS</th>
+		</tr>
+		<tr>
+			<td> Universal</td>       
+			<td><code>* { }</code></td>
+			<td>Any element</td>
+		</tr>
+		<tr>
+			<td> Type</td>        
+			<td><code>h1 { }</code></td>
+			<td>Any element of that type</td>
+		</tr>
+		<tr>
+			<td> Grouping</td>        
+			<td><code>h1, h2, h3 { }</code></td>
+			<td>Multiple elements of different types</td>
+		</tr>
+		<tr>
+			<td> Class</td>        
+			<td><code>.namedClass { }</code></td>
+			<td>Multiple elements of different types when you don't want to affect all occurances of that type</td>
+		</tr>
+		<tr>
+			<td> Id</td>      
+			<td><code>#uniqueName { }</code></td>
+			<td>A single element type when you want to affect only one unique occurance of an element</td>		
+		</tr>
+		<tr>
+			<td> Descendant</td>        
+			<td><code>article p { }</code></td>
+			<td>Elements that are below (in the document tree) another element, no matter how many levels (generations)</td>
+		</tr>
+		<tr>
+			<td> Child</td>  
+			<td><code>article > p { }</code></td>
+			<td>Elements that are below (in the document tree) another element</td>
+		</tr>
+		<tr>
+			<td> Adjacent Sibling</td>       
+			<td><code>article + p { }</code></td>
+			<td>All elements that share the same parent and elements are in the same immediate sequence.</td>
+		</tr>
+		<tr>
+			<td> General Sibling</td>       
+			<td><code>article ~ p { }</code></td>
+			<td>All elements that share same parent and elements are in the same sequence, not necessarily immediate</td>
+		</tr>
+		<tr>
+			<td> Attribute</td>       
+			<td><code>input[selected] { }<br>input[type="radio"] { }</code></td>
+			<td>An element that matches the attribute listed.<br><small>&hellip;<a href="#">more</a></small></td>
+		</tr>	  
+	</table>
+	
+	<!-- FONT PROPETIES -->
+      <table class="zebra">
+        <tr>
+          <th colspan="2">FONT PROPERTIES</th>
+        </tr>
+        <tr>
+          <td style="min-width:100px"><code>font-style</code></td>
+          <td><samp>normal|italic|oblique|inherit</samp></td>
+        </tr>
+        <tr>
+          <td><code>font-variant</code></td>
+          <td><samp>normal|small-caps|inherit</samp></td>
+        </tr>
+        <tr>
+          <td><code>font-weight</code></td>
+          <td><samp>normal|bold|bolder|lighter|100|200|&hellip;|900|inherit</samp></td>
+        </tr>
+        <tr>
+          <td><code>font-size</code></td>
+          <td>Size of the font<br><samp>inherit|length|%|xx-small|x-small|small|medium|large|x-large|xx-large|smaller|larger</samp></td>
+        </tr>
+        <tr>
+          <td><code>font-family</code></td>
+          <td>Specific font(s) to be used<br><samp>family-name|generic-name|initial|inherit</samp></td>
+        </tr>
+        <tr>
+          <td><code>font-stretch</code></td>
+          <td><samp>condensed|normal|expanded|initial|inherit</samp></td>
+        </tr>		
+      </table>
+	  
+	<!-- TEXT PROPETIES -->  
+      <table class="zebra">
+        <tr>
+          <th colspan="2">TEXT PROPERTIES</th>
+        </tr>
+
+        <tr>
+          <td><code>letter-spacing</code></td>
+          <td>Space between letters</td>
+        </tr>
+        <tr>
+          <td><code>line-height</code> <i title="See also background shorthand property" class="material-icons md-18">note</i></td>
+          <td>Vertical distance between baselines</td>
+        </tr>
+        <tr>
+          <td><code>text-align</code></td>
+          <td>Horizontal alignment</td>
+        </tr>
+        <tr>
+          <td><code>text-decoration</code></td>
+          <td><samp>blink|line-through|none|overline|underline</samp></td>
+        </tr>
+        <tr>
+          <td><code>text-indent</code></td>
+          <td>First line indentation </td>
+        </tr>
+        <tr>
+          <td><code>text-transform</code></td>
+		  <td><samp>capitalize|lowercase|uppercase</samp></td>
+        </tr>
+        <tr>
+          <td><code>vertical-align</code></td>
+          <td>Vertical alignment</td>
+        </tr>
+        <tr>
+          <td><code>word-spacing</code></td>
+          <td>Spacing between words</td>
+        </tr>
+
+      </table>
+
+	  	  <!-- LIST -->
+      <table class="zebra">
+        <tr>
+          <th colspan="2">LIST, NAVIGATION, TABLE, FORM PROPERTIES</th>
+        </tr>
+		
+        <tr>
+          <td style="min-width:120px"><code>list-style-type</code></td>
+          <td>Type of bullet or numbering in the list
+            <br><samp>disc|circle|square|decimal|lower-roman|upper-roman|lower-alpha|upper-alpha|none</samp></td>
+        </tr>
+        <tr>
+          <td><code>list-style-position</code></td>
+          <td>Position of the bullet or number in a list<br><samp>inside|outside</samp></td>
+        </tr>
+        <tr>
+          <td><code>list-style-image</code></td>
+          <td>Image to be used as the bullet in a list</td>
+        </tr>
+        <tr>
+			<td colspan="2">
+				<svg class="speechbubble icon" width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="m1.496 11.8c-.272 0-.496-.223-.496-.496v-9.109c0-.274.222-.496.496-.496h13.01c.272 0 .496.223.496.496v9.109c0 .274-.222.496-.496.496h-2c-.276 0-.5.224-.5.5v4l.856-.351-3.935-4c-.094-.096-.222-.149-.356-.149h-7.07m6.713.751l3.935 4c.314.319.856.097.856-.351v-4l-.5.5h2c.826 0 1.496-.669 1.496-1.496v-8.909c0-.825-.672-1.496-1.496-1.496h-13.01c-.826 0-1.496.669-1.496 1.496v8.909c0 .825.672 1.496 1.496 1.496h7.07l-.356-.149" transform="translate(0-.75)" fill="#08a6f3"/></g></svg> more to come&hellip;	
+			</td>
+        </tr>
+      </table>
+	  
+	  <!-- BACKGROUND -->
+      <table class="zebra">
+        <tr>
+          <th colspan="2">COLOUR AND BACKGROUND PROPERTIES</th>
+        </tr>
+      <tr>
+        <td style="min-width:140px"><code>color</code></td>
+        <td>Foreground color</td>
+      </tr>	
+        <tr>
+          <td><code>background-color</code></td>
+          <td>Background color</td>
+        </tr>	  
+        <tr>
+          <td><code>background-image</code></td>
+          <td>Background image</td>
+        </tr>
+        <tr>
+          <td><code>background-repeat</code></td>
+          <td><samp>repeat|no-repeat|repeat-x|repeat-y</samp></td>
+        </tr>
+        <tr>
+          <td><code>background-attachment</code></td>
+          <td>Background image scrolls with the element?
+              <samp>scroll|fixed</samp></td>
+        </tr>
+        <tr>
+          <td><code>background-position</code></td>
+          <td><samp>x-% y-%|x-pos y-pos|top left|bottom center|center right|&hellip; </samp></td>
+        </tr>
+        <tr>
+          <td><code>background-origin</code></td>
+          <td><samp>border-box|padding-box|content-box</samp></td>
+        </tr>	
+        <tr>
+          <td><code>background-size</code></td>
+          <td><samp>length|%|auto|cover|contain</samp></td>
+        </tr>
+        <tr>
+          <td><code>background</code></td>
+          <td title="Note: If one of the properties in the shorthand declaration is the bg-size property, you must use a / (slash) to separate it from the bg-position property, e.g. background:url(smiley.gif) 10px 20px/50px 50px; will result in a background image, positioned 10 pixels from the left, 20 pixels from the top, and the size of the image will be 50 pixels wide and 50 pixels high">*shorthand property<br><small><samp>background: color image position/size repeat origin clip attachment initial|inherit;</samp></small></td>
+        </tr>		
+      </table>
+	  
+	<!-- FRAMEWORKS, EXTENSIONS, ADD-INS -->	 
+	<table class="zebra">
+		<tr>
+			<th colspan="2">FRAMEWORKS, EXTENSIONS, ADD-INS AND TOOLS</th>
+		</tr>
+		<tr>
+			<td>Inspect</td>
+			<td>Tool&mdash;  Chrome add-in</td>
+		</tr>		
+		<tr>
+			<td style="min-width: 100px">font awesome<code> </code></td>
+			<td>The iconic font and CSS toolkit&mdash; http://fontawesome.io/</td>
+		</tr>
+		<tr>
+			<td>Google fonts<code> </code></td>
+			<td>Making the web more beautiful, fast, and open through great typography&mdash; https://fonts.google.com/</td>
+		</tr>
+		<tr>
+			<td>W3.CSS<code> </code></td>
+			<td>W3.CSS is a modern CSS framework with built-in responsiveness. Smaller and faster than other CSS frameworks&mdash; https://www.w3schools.com/w3css/</td>
+		</tr>	
+		<tr>
+			<td>bootstrap<code> </code></td>
+			<td>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web&mdash;  http://getbootstrap.com/</td>
+		</tr>
+		<tr>
+			<td>CSS minifier<code> </code></td>
+			<td>Removes whitespace and comments from css code&mdash;  https://cssminifier.com/</td>
+		</tr>	
+		<tr>
+			<td>Image Resizer</td>
+			<td>Resize images&mdash;  http://img-resize.com/</td>
+		</tr>		
+	</table>
+
+
+</div> <!-- end of id=content1 -->
+
+<div id="content2">
+
+	<!-- BOX MODEL -->
+	<table class="section">
+		<tr>
+			<th colspan="2">BOX MODEL</th>
+		</tr>
+		<tr>
+			<td>
+				<ul style="list-style:none;margin-left:-20px;">
+					<li>CONTENT&mdash;<small>The content of the box, where text and images appear</small></li>
+					<li>PADDING&mdash;<small>Clears an area around the content. The padding is transparent</small></li>
+					<li>BORDER&mdash;<small>A border that goes around the padding and content</small></li>
+					<li>MARGIN&mdash;<small>Clears an area outside the border. The margin is transparent</small></li>
+					<li>TRBL (TRouBLe, clockwise)<br>
+						<small><code>property: <i>top</i> <i>right</i> <i>bottom</i> <i>left</i>;</code><br>
+						<code>property: <i>top</i> <i>right+left</i> <i>bottom</i>;</code><br>
+						<code>property: <i>top+bottom</i> <i>right+left</i>;</code><br>
+						<code>property: <i>all4same</i>;</code>
+						</small>
+					</li>
+				</ul>
+			</td>
+		
+			<td>
+				<svg width="300px" height="190px" viewBox="0 0 600 380" >
+					<title>box-model</title>
+					<description>Created with </description>
+					<defs>
+						<marker id="startarrow" markerWidth="10" markerHeight="7" 
+						refX="10" refY="3.5" orient="auto">
+						  <polygon points="10 0, 10 7, 0 3.5" fill="red" />
+						</marker>
+						<marker id="endarrow" markerWidth="10" markerHeight="7" 
+						refX="0" refY="3.5" orient="auto" markerUnits="strokeWidth">
+							<polygon points="0 0, 10 3.5, 0 7" fill="red" />
+						</marker>					
+					</defs>
+					<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+						<g id="Group" sketch:type="MSLayerGroup" transform="translate(50.000000, 40.000000)">
+							<rect id="Rectangle-1" stroke="#4E4E4E" stroke-width="2" stroke-dasharray="26,5" x="0" y="0" width="500" height="300"></rect>
+							<rect id="Rectangle-1" stroke="#4E4EEE" stroke-width="2" stroke-dasharray="17,6" x="100" y="80" width="300" height="140"></rect>
+							<rect id="Rectangle-1" fill="#dddddd"  stroke="#111111" stroke-width="2"  x="150" y="120" width="200" height="60"></rect>
+							<rect id="Rectangle-1" stroke="#EE4E4E" stroke-width="2" stroke-dasharray="20,10,5,5,5,10"  x="50" y="40" width="400" height="220"></rect>
+							<line x1="158" y1="188" x2="342" y2="188" style="stroke:rgb(255,0,0);stroke-width:1" marker-end="url(#endarrow)" marker-start="url(#startarrow)"/>
+							<line x1="358" y1="126" x2="358" y2="174" style="stroke:rgb(255,0,0);stroke-width:1" marker-end="url(#endarrow)" marker-start="url(#startarrow)"/>
+						
+							<text id="content" fill="#4E4E4E" sketch:type="MSTextLayer" font-family="Arial" font-size="40" font-weight="normal">
+								<tspan x="153" y="163" fill="#000000">CONTENT</tspan>
+							</text>
+							<text id="margin" fill="#4E4E4E" sketch:type="MSTextLayer" font-family="Arial" font-size="20" font-weight="normal">
+								<tspan x="208" y="29" fill="#000000">MARGIN</tspan>
+							</text>
+							<text id="padding" fill="#4E4E4E" sketch:type="MSTextLayer" font-family="Arial" font-size="20" font-weight="normal">
+								<tspan x="208" y="108" fill="#000000">PADDING</tspan>
+							</text>
+							<text id="border" fill="#4E4E4E"  font-family="Arial" font-size="20" font-weight="normal">
+								<tspan x="208" y="69" fill="#000000">BORDER</tspan>
+							</text>
+						</g>
+					</g>
+		
+					  <g font-size="16" font-family="sans-serif" fill="red" stroke="none" 
+					  text-anchor="middle">
+						<text x="300" y="246" font-family="Arial" dx="2">width</text>
+						<text x="442" y="200" font-family="Arial" dx="-8" transform="rotate(-90 424 200)">height</text>
+					  </g>  
+				</svg>
+			</td>
+		</tr>
+      		
+	</table>
+	
+	<!-- BORDER, MARGIN, PADDING, OUTLINE, AND DIMENSION PROPERTIES -->
+	<table class="zebra">
+		<tr> 
+			<th colspan="3">BORDER, MARGIN, PADDING, OUTLINE, AND DIMENSION PROPERTIES</th>
+		</tr>
+		<tr>
+			<td style="min-width:90px"><code>border-width</code></td>
+			<td style="min-width:140px">Width of the border</td>
+			<td> </td>
+		</tr>
+		<tr class="evenrow">
+			<td><code>border-style</code></td>
+			<td> </td>
+			<td><samp>dashed | dotted | double | groove | inset | outset | ridge | solid | none</samp></td>
+		</tr>
+		<tr>
+			<td><code>border-color</code></td>
+			<td>Color of the border</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td><code>border</code></td>
+			<td></td>
+			<td> </td>
+		</tr>	
+		<tr>
+			<td><code>margin</code></td>
+			<td></td>
+			<td> </td>
+		</tr>	
+		<tr>
+			<td><code>padding</code></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><code>outline</code></td>
+			<td></td>
+			<td></td>
+		</tr>		
+	</table>
+ 
+	<!-- POSITION PROPERTIES -->
+	<table class="zebra">
+		<tr>
+			<th colspan="3">POSITIONING PROPERTIES</th>
+		</tr>
+		<tr>
+			<td style="min-width:70px;"><code>clear</code></td>
+			<td>Any floating elements around the element?</td>
+			<td><samp>both | left | right | none</samp> </td>
+		</tr>
+		<tr>
+			<td><code>float</code></td>
+			<td>Floats to a specified side</td>
+			<td><samp>left | right | none</samp> </td>
+		</tr>
+		<tr>
+			<td><code>bottom</code></td>
+			<td>Sets the bottom margin edge for a positioned box</td>
+			<td><samp>auto | length</samp> values (pt, in, cm, px)</td>
+		</tr>	
+		<tr>
+			<td><code>right</code></td>
+			<td>Sets the right margin edge for a positioned box</td>
+			<td><samp>auto | length</samp> values (pt, in, cm, px)</td>
+		</tr>		
+		<tr>
+			<td><code>left</code></td>
+			<td>Sets the left margin edge for a positioned box</td>
+			<td><samp>auto | length</samp> values (pt, in, cm, px)</td>
+		</tr>
+		<tr>
+			<td><code>top</code></td>
+			<td>Sets the top margin edge for a positioned box</td>
+			<td><samp>auto | length</samp> values (pt, in, cm, px)</td>
+		</tr>
+		<tr>
+			<td><code>position</code></td>
+			<td>Specifies the type of positioning for an element</td>
+			<td><samp>static | relative | absolute | fixed</samp></td>
+		</tr>
+		<tr>
+			<td><code>clip</code></td>
+			<td>Clips an absolutely positioned element</td>
+			<td> </td>
+		</tr>
+        <tr>
+			<td><code>z-index</code></td>
+			<td>Sets the stack order of an element</td>
+			<td><samp>auto | integer</samp> (higher numbers on top) </td>
+        </tr>
+	</table>
+
+
+	
+	<!-- LAYOUT PROPERTIES  -->	 
+	<table class="zebra">
+		<tr>
+			<th colspan="3">LAYOUT PROPERTIES</th>
+		</tr>
+		<tr>
+			<td style="min-width:70px;"><code>cursor</code></td>
+			<td>Specifies the type of cursor to be displayed</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td><code>overflow</code></td>
+			<td>Specifies what happens if content overflows an element's box</td>
+			<td><samp>visible | hidden | scroll | auto</samp></td>
+		</tr>		
+		<tr>
+			<td><code>overflow-x</code></td>
+			<td>Specifies what to do with the left/right edges of the content if it overflows the element's content area</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td><code>overflow-y</code></td>
+			<td>Specifies what to do with the top/bottom edges of the content if it overflows the element's content area</td>
+			<td> </td>
+		</tr>				
+		<tr>
+			<td><code>display</code></td>
+			<td> </td>
+			<td><samp> block | inline | list-item | none</samp></td>
+		</tr>
+		<tr>
+			<td><code>visibility</code></td>
+			<td> </td>
+			<td><samp>visible | hidden</samp></td>
+		</tr>
+	</table>	  
+
+		<!-- FLEXBOX -->	 
+		<table  class="zebra">
+			<tr>
+				<th colspan="3">FLEXBOX</th>
+			</tr>
+			<tr>
+
+				<td colspan="4"><strong style="background-color:lightblue;">The flex container (parent element) becomes flexible by setting the display property to flex. The flex container properties are flex-direction, flex-wrap, flex-flow, justify-content, align-items, align-content.</strong></td>
+
+			</tr>			
+			<tr>
+				<td><code>display</code></td>
+				<td>Specifies the type of box used for an HTML element</td>
+				<td><samp>flex</samp></td>
+			</tr>	
+
+			<tr>
+				<td style="min-width:100px"><code>justify-content</code></td>
+				<td colspan="2">Horizontally aligns the flex items when the items do not use all available space on the main-axis</td>
+				<td> </td>
+			</tr>			
+			<tr>
+				<td></td>
+				<td>
+					<ul class="values" style="list-style:none;padding:0;margin:0;font-size:0.9em;">
+						<li><samp>flex-start</samp> Default value. Items are positioned at the beginning of the container</li>
+						<li><samp>flex-end</samp> Items are positioned at the end of the container</li>
+						<li><samp>center</samp> Items are positioned at the center of the container</li>
+						<li><samp>space-between</samp> Items are positioned with space between the lines</li>
+						<li><samp>space-around</samp> Items are positioned with space before, between, and after the lines</li>
+					</ul>
+				</td>
+				<td><img src="images/flex-justify.png" height="90" alt="flex-justify"></td>
+			</tr> 			
+			<tr>
+				<td><code>flex-direction</code> </td>
+				<td colspan="2">Specifies the direction of the flexible items inside a flex container </td>
+				<td> </td>
+			</tr>	
+			<tr>
+				<td><code>flex-wrap</code></td>
+				<td colspan="2">Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line </td>
+				<td> </td>
+			</tr>	
+			<tr>
+				<td><code>flex-flow</code></td>
+				<td colspan="2">A shorthand property for flex-direction and flex-wrap </td>
+				<td> </td>
+			</tr>			
+			<tr>
+				<td><code>align-items</code></td>
+				<td colspan="2">Vertically aligns the flex items when the items do not use all available space on the cross-axis </td>
+				<td> </td>
+			</tr>
+
+			<tr>
+				<td><code>align-content</code></td>
+				<td colspan="2">Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines </td>
+				<td> </td>
+			</tr>
+			<tr>
+
+				<td colspan="4"><strong style="background-color:lightblue;">The direct child elements of a flex container automatically becomes flexible (flex) items. The flex item properties are order, flex-grow, flex-shrink, flex-basis, flex, align-self.</strong></td>
+
+			</tr>
+			<tr>
+				<td><code>order</code></td>
+				<td colspan="2">Specifies the order of a flexible item relative to the rest of the flex items inside the same container </td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><code>flex-grow</code></td>
+				<td colspan="2">The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items. </td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><code>flex-shrink</code></td>
+				<td colspan="2">The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items. </td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><code>flex-basis</code></td>
+				<td colspan="2">The flex-basis property specifies the initial length of a flex item. </td>
+				<td> </td>
+			</tr>			
+			<tr>
+				<td><code>flex</code></td>
+				<td colspan="2">Specifies the length of a flex item, relative to the rest of the flex items inside the same container </td>
+				<td> </td>
+			</tr>			
+			<tr>
+				<td><code>align-self</code></td>
+				<td colspan="2">Used on flex items. Overrides the container's align-items property </td>
+				<td> </td>
+			</tr>
+			
+	  
+ 
+			</table>
+
+	  <!-- grid -->
+      <table  class="zebra">
+        <tr>
+          <th colspan="2">CSS Grid</th>
+        </tr>				
+        <tr >
+          <td style="width:25%"><code>grid</code></td>
+          <td>A grid container contains grid items. By default, a container has one grid item for each column, in each row, but you can style the grid items so that they will span multiple columns and/or rows. 
+		  <a href="" target="_blank">example</a></td>
+        </tr>	
+        <tr>
+          <td>grid-area</td>
+          <td>specifies a grid item's size and location in a grid layout;a shorthand property for 
+			<samp class="values"><wbr>grid-row-start</samp>
+			<samp class="values"><wbr>grid-column-start</samp>
+			<samp class="values"><wbr>grid-row-end</samp>
+			<samp class="values"><wbr>grid-column-end</samp>
+			</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>The grid-area property can also be used to assign a name to a grid item. Named grid items can then be referenced to by the <samp class="values">grid-template-areas</samp> property of the grid container.
+				Each row is defined by apostrophes (' ')
+				The columns in each row is defined inside the apostrophes, separated by a space.
+				Note: A period sign represents a grid item with no name.</td>
+        </tr>		
+        <tr >
+          <td><code>grid-column</code></td>
+          <td>Specifies a grid item's size and location in a grid layout; shorthand property for  <samp class="values">grid-column-start</samp> <samp class="values">grid-column-end</samp></td>
+        </tr>
+         <tr>
+          <td><code>grid-column-gap</code></td>
+          <td>defines the size of the gap between the columns in a grid layout.</td>
+        </tr>
+         <tr>
+          <td><code>grid-gap</code></td>
+          <td>defines the size of the gap between the rows and columns in a grid layout; a shorthand property for 
+			<samp class="values">grid-column-gap</samp>
+			<samp class="values">grid-row-gap</samp></td>
+        </tr>		
+         <tr>
+          <td><code>grid-row</code></td>
+          <td>specifies a grid item's size and location in a grid layout; a shorthand property for 
+			<samp class="values">grid-row-start</samp>
+			<samp class="values">grid-row-end</samp></td>
+        </tr>		
+         <tr>
+          <td><code>grid-template</code></td>
+          <td>is a shorthand property for 
+			<samp class="values">grid-template-rows</samp>
+			<samp class="values">grid-template-columns</samp>
+			<samp class="values">grid-template-areas</samp></td>
+        </tr>		
+         <tr>
+          <td><code>justify-content</code></td>
+          <td>is used to align the whole grid inside the container.</td>
+        </tr>
+         <tr>
+          <td><code>align-content</code></td>
+          <td>is used to vertically align the whole grid inside the container.</td>
+        </tr>		
+      </table>	  
+
+	  
+	  <!-- Box-sizing, resize, outline-offset -->
+      <table  class="zebra">
+        <tr>
+          <th colspan="2">CSS3 User Interface Properties</th>
+        </tr>				
+        <tr >
+          <td style="width:25%"><code>box-sizing</code></td>
+          <td>Allows you to include the padding and border in an element's total width and height. 
+		  <a href="http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-sizing" target="_blank">example</a></td>
+        </tr>	
+        <tr>
+          <td></td>
+          <td><samp class="values">box-sizing: <wbr>content-box|border-box|initial|inherit;</samp></td>
+        </tr>
+		
+        <tr >
+          <td><code>resize</code></td>
+          <td>Specifies whether or not an element is resizable by the user</td>
+        </tr>
+        <tr >
+		  <td></td>
+          <td colspan="2"><samp class="values">resize: none|both|horizontal|vertical|initial|inherit;</samp></td>
+        </tr>		
+        <tr >
+          <td><code>outline-offset</code></td>
+          <td>Adds space between an outline and the edge or border of an element.  
+		  <a href="http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_outline-offset" target="_blank">example</a></td>
+        </tr>		
+        <tr >
+          <td></td>
+          <td><samp class="values">outline-offset: length|initial|inherit;</samp></td>
+        </tr>		
+      </table>	  
+
+
+</div> <!-- end of id=content2 -->
+
+	<div class="floatcontainer">
+		<p class="exp">SYST10049 Web Development @ Sheridan College</p>
+    </div>
+	
+	
+
+</div> <!-- end of id=contentbox -->
+
+
+<aside> 
+	<svg width="58px" height="60px" viewBox="0 0 298 420" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Slice 1</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Layer_1">
+            <path d="M233.164,15.681 L208.476,15.681 L234.15,43.54 L234.15,56.801 L181.268,56.801 L181.268,41.275 L206.937,41.275 L181.268,13.415 L181.268,0.135 L233.164,0.135 L233.164,15.681 L233.164,15.681 Z M170.786,15.681 L146.098,15.681 L171.771,43.54 L171.771,56.801 L118.889,56.801 L118.889,41.275 L144.561,41.275 L118.889,13.415 L118.889,0.135 L170.786,0.135 L170.786,15.681 L170.786,15.681 Z M109.018,16.312 L82.378,16.312 L82.378,40.625 L109.018,40.625 L109.018,56.801 L63.444,56.801 L63.444,0.135 L109.018,0.135 L109.018,16.312 L109.018,16.312 Z M109.018,16.312" id="Shape" fill="#131313"></path>
+            <path d="M27.142,386.29 L0.071,82.67 L297.521,82.67 L270.425,386.241 L148.614,420.011 L27.142,386.29 Z M27.142,386.29" id="Shape" fill="#1572B6"></path>
+            <path d="M148.798,394.199 L247.225,366.911 L270.382,107.496 L148.798,107.496 L148.798,394.199 Z M148.798,394.199" id="Shape" fill="#33A9DC"></path>
+            <g id="Group" transform="translate(55.000000, 142.000000)">
+                <path d="M93.797,75.496 L143.072,75.496 L146.475,37.364 L93.797,37.364 L93.797,0.125 L93.926,0.125 L187.172,0.125 L186.279,10.116 L177.127,112.732 L93.797,112.732 L93.797,75.496 Z M93.797,75.496" id="Shape" fill="#FFFFFF"></path>
+                <path d="M94.02,172.204 L93.857,172.25 L52.385,161.051 L49.733,131.353 L29.582,131.353 L12.354,131.353 L17.57,189.82 L93.848,210.996 L94.02,210.948 L94.02,172.204 Z M94.02,172.204" id="Shape" fill="#EBEBEB"></path>
+                <path d="M139.907,111.156 L135.423,161.026 L93.891,172.236 L93.891,210.978 L170.23,189.82 L170.79,183.53 L177.268,111.156 L139.907,111.156 Z M139.907,111.156" id="Shape" fill="#FFFFFF"></path>
+                <path d="M93.926,0.125 L93.926,23.253 L93.926,37.272 L93.926,37.364 L4.098,37.364 L3.979,37.364 L3.232,28.994 L1.535,10.116 L0.645,0.125 L93.926,0.125 Z M93.926,0.125" id="Shape" fill="#EBEBEB"></path>
+                <path d="M93.797,75.5 L93.797,98.629 L93.797,112.646 L93.797,112.738 L52.969,112.738 L52.85,112.738 L52.104,104.369 L50.406,85.491 L49.516,75.5 L93.797,75.5 Z M93.797,75.5" id="Shape" fill="#EBEBEB"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+	<strong>Selectors</strong>
+	<strong>Properties</strong>
+	<strong>Performance</strong>
+	<strong>Accessibility</strong> <!-- http://thenewcode.com/858/Web-Development-Reading-List-Accessibility -->
+	<strong>Maintainability</strong>
+	<small><a href="https://www.wikiwand.com/en/User_agent" target="_blank">User Agent</a></small><br />
+	<br />
+
+	<section>
+		<h3 title="CSS is an acronym of Cascading Style Sheets, which indicates that the notion of the cascade is important. At its most basic level it indicates that the order of CSS rules matter, but it's more complex than that. What selectors win out in the cascade depends on three factors">Cascade</h3>
+		<span title="!important">1.Importance</span>	
+		<span title="Specificity is basically a measure of how specific a selector is — how many elements it could match. As shown in the example seen above, element selectors have low specificity. Class selectors have a higher specificity, so will win against element selectors. ID selectors have an even higher specificity, so will win against class selectors. The only way to win against an ID selector is to use !important.">2.Specificity</span>	
+		<span title="if multiple competing selectors have the same importance and specificity, the third factor that comes into play to help decide which rule wins is source order — later rules will win over earlier rules. all this happens at the property level — properties override other properties, but you don't get entire rules overriding other rules.">3.Source order</span>
+	</section>
+
+	<section>	
+		<h3 title="some property values applied to an element will be inherited by that element's children, and some won't.">Inheritance</h3>
+		<code title="This value sets the property value applied to a selected element to be the same as that of its parent element.">inherit</code>
+		<code title="This value sets the property value applied to a selected element to be the same as the value set for that element in the browser's default style sheet. If no value is set by the browser's default style sheet and the property is naturally inherited, then the property value is set to inherit instead.">initial</code>
+		<code title="This value resets the property to its natural value, which means that if the property is naturally inherited it acts like inherit, otherwise it acts like initial.">unset</code>
+	</section>
+	
+	<section>
+		<h3>Debugging</h3>
+		<small>&hellip;<a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator</a></small>
+		Inspector <small>(right-click and select Inspect)</small>
+	</section>
+
+	<section>
+		<h3>Comments</h3>
+		/*  Comment */
+		<small>&hellip;<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Syntax#Comments" target="_blank">make CSS readable</a></small>
+	</section>
+
+	<section>
+		<h3>White space</h3>
+		<small>&hellip;<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Syntax#White_space" target="_blank">space,tab,newline</a></small>
+	</section>
+	
+	<section>
+		<h3>Values &amp; Units</h3>
+		<strong>Numeric</strong>
+		<code>%</code>
+		<code>em</code>
+		<code> pt</code>
+		<code>px</code>
+		<strong>Unitless</strong>
+		<code>0</code>
+		<strong>Colors</strong>
+		keywords<br />
+		hexadecimal<br />
+		RGB<br /> RGBA<br />
+		HSL<br /> HSLA<br />
+		Opacity<br />
+	</section>	  
+	 
+	<section> 
+		<h3>Pseudo- Elements</h3>
+		<code>::after</code>
+		<code>::before</code>
+		<code>::first-letter</code>
+		<code>::first-line</code>
+		<code>::selection</code>
+	</section>
+	
+	<section>
+		<h3>Pseudo- Classes</h3>
+		<code>:hover</code>
+		<code>:focus</code>
+		<code>:link</code>
+		<code>:visited</code>
+		<code>:first-child</code>
+		<code>:valid</code>
+		<code>:in-range</code>
+		<code>:nth-child(n)</code>
+		<small>&hellip;<a href="#">more</a></small>
+	</section>
+	   
+	<section>   
+		<h3>at Rules</h3>
+		<code>@media</code>
+		<code>@import</code>
+		<code>@font-face</code>
+		<a href="https://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank">viewport</a>
+	</section>	   
+
+	<section>
+		<h3>Shorthand*</h3>
+		<small>&hellip;<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Syntax#Shorthand" target="_blank">keep it short</a></small>
+		background<br />
+		border<br />
+		font<br />
+		list-style<br />
+		margin<br />
+		padding
+	</section>	 
+</aside>
+</main>
+</body>
+</html>
+

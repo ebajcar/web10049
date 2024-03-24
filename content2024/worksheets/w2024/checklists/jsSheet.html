@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Javascript Cheetsheet</title>
+<meta charset="utf-8">
+<style>
+body {
+	font-family: Arial, sans-serif;
+	font-size: 8.5pt;
+}
+
+main {
+	margin: 0px; 
+	max-width: 1200px;
+	background-color: #fff;
+}
+
+header {
+	border-bottom: 1px solid #000;
+	margin: 10px 15px 10px 100px;
+}
+
+#contentbox {
+	margin-left: 105px;
+	margin-right: 15px;
+	top: 50px;
+}		
+@media screen and (min-width: 800px) {
+	#content1 {
+		float: left;
+		width:49%;
+	}
+
+	#content2 {
+		float: right;
+		width: 49%;
+	}
+}
+aside {
+		position: absolute;
+		left:10px;
+		width:95px;
+		top:50px;
+		text-align: right;
+}
+
+aside strong, aside code {
+	display: block;
+}
+
+aside section {
+	margin-bottom: 12px;
+}
+
+table {
+	border: 1px solid lightgray;
+	margin: 4px;
+	width: 100%;
+}
+
+table th {
+	border: 1px solid lightgray;
+	color: #000;
+	background-color: #F7DF1E;
+	font-size: 9.5pt;
+	
+}
+table td {
+	font-family: Arial, sans-serif;
+	font-size: 8.5pt;
+	vertical-align: top;
+	border: 0;
+}
+.subheading {
+	background-color: #b63300;
+}
+.subheading2 {
+	background-color: #c6e7ef;
+}
+.evenrow {
+	background-color: #eee;
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14pt;
+}
+
+h3 {
+	margin: 0px 0px 3px 0px;
+	padding: 0px;
+	font-size: 11pt;
+	border-bottom: 1px solid #000;
+}
+
+h4 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 10.5pt;
+}
+.exp {
+	font-family: Arial, sans-serif;
+	border-top: 1px solid #000;
+	font-size: 7.5pt;
+	clear: both;
+	
+}
+.values {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 7.75pt;
+	background-color: #ffdba1;
+	border: 1px solid #ccc;
+	padding: 1px;
+	margin: 1px;
+}
+.floatcontainer:after { 
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility:hidden; 
+}
+hr {
+	display: none;
+	}
+.col_3 tr td:last-child {
+	width: 50%;
+	}
+.col_3 tr td:first-child {
+	font-weight: bold;
+	}	
+.zebra tr:nth-child(odd) {
+	background-color: #ddd;
+}
+.html5badge::after {
+	content: " 𝒽5 ";
+	color: darkred;
+	font-size: 8px;
+	font-weight: bold;
+}
+.fixed-width {
+    display:inline-block;
+    width:150px;
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>My Javascript (JS) Checklist [INCOMPLETE]</h1>
+<h3>(For demonstration purpose only.  Create your own!)
+</header>
+
+<div id="contentbox">
+<div id="content1">
+
+	<!-- section 1 -->
+	<table class="section">
+		<tr><th>Javascript Basics</th></tr>
+		<tr><td><strong>JavaScript Statements</strong></td></tr>
+        <tr><td>
+			<ol style="margin-left:-10px;">
+                <li>A computer program is a list of instructions to be executed by a computer.</li>
+                <li>In a programming language, these programming instructions are called statements.</li>
+                <li>A JavaScript program is a list of programming statements.</li>
+                <li>In HTML, JavaScript programs are executed by the web browser.</li>
+                <li>JavaScript statements are composed of: Values, Operators, Expressions, Keywords, and Comments.</li>
+			</ol>        
+        
+        </td></tr>
+    </table>
+	
+	<!-- Variables -->  
+    <table class="section">
+        <tr>
+          <th colspan="2">Javascript Variables</th>
+        </tr>
+ 		<tr><td colspan="2">				
+            <ul class="checked">
+							<li>Javascript is weakly typed, will dynamically change type based on assigned values</li>
+							<li>always use the keyword var to ensure that you don't encroach on the browser environment</li>
+							<li>to name variables and functions, stay away from keywords <a href="http://www.w3schools.com/js/js_reserved.asp" target="_blank">JavaScript Reserved Words</a></li>
+						</ul>   
+        </td>                        
+        </tr>
+      </table>
+
+      
+    <!-- scope -->   
+	<table class="section">
+		<tr><th colspan="2">Javascript Scope</th></tr>
+		<tr>
+			<td style="width:100px"><em>Global scope</em></td>
+			<td>variables declared globally, outside any function, can be used anywhere</td>
+		</tr>
+		<tr>
+			<td><em>Function scope</em></td>
+			<td>variables declared locally, within a function, can be used only within that function</td>
+		</tr> 
+		<tr>
+			<td><em>Block scope</em></td>
+			<td>variables declared inside a block {} with the <b>var</b> keyword, can be accessed from outside the block</td>
+		</tr>  
+		<tr>
+			<td></td>
+			<td>variables declared inside a block {} with the <b>let</b> keyword, cannot be accessed from outside the block</td>
+		</tr>        
+    </table>
+    
+    <!-- Data Types -->   
+	<table class="section">
+		<tr><th colspan="3">Javascript Data Types</th></tr>
+		<tr>
+            <td style="width:50px"><strong>String</strong></td>	
+            <td>A sequence of text known as a string. To signify that the value is a string, you must enclose it in quote marks.</td>	
+            <td style="width:150px;font-weight:bold;padding-left:5px;"><code>var myVariable = 'Bob';</code></td>
+        </tr>
+		<tr>
+            <td style="width:50px"><strong>Number</strong></td>	
+            <td>A number. Numbers don't have quotes around them.</td>	
+            <td style="width:150px;font-weight:bold;padding-left:5px;"><code>var myVariable = 10;</code></td>
+        </tr>        
+		<tr>
+            <td style="width:50px"><strong>Boolean</strong></td>	
+            <td>A True/False value. The words true and false are special keywords in JS, and don't need quotes.</td>	
+            <td style="width:150px;font-weight:bold;padding-left:5px;"><code>var myVariable = true;</code></td>
+        </tr>		
+		<tr>
+            <td style="width:50px"><strong>Array</strong></td>	
+            <td>A structure that allows you to store multiple values in one single reference.</td>	
+            <td style="width:150px;font-weight:bold;padding-left:5px;"><code>var myVariable = [1,'Bob','Steve',10];</code></td>
+        </tr>		
+		<tr>
+            <td style="width:50px"></td>	
+            <td>Refer to each member of the array like this:</td>	
+            <td style="width:150px;font-weight:bold;padding-left:5px;"><code>myVariable[0], myVariable[1]</code>, etc.</td>
+        </tr>			
+		<tr>
+            <td style="width:50px"><strong>Object</strong></td>	
+            <td>Basically, anything. Everything in JavaScript is an object, and can be stored in a variable. Keep this in mind as you learn.</td>	
+            <td style="width:150px;font-weight:bold;padding-left:5px;"><code>var myVariable = document.querySelector('h1');</code></td>
+        </tr>
+    </table>	  
+
+    
+     <!-- Array methods -->   
+	<table class="section">
+		<tr><th>Javascript Array Methods</th></tr>
+		<tr><td>
+<a href="http://www.w3schools.com/jsref/jsref_obj_array.asp" target="_blank">Array reference</a>
+						<pre style="width:100%;font-size:0.8em">Method          Description
+concat()        Joins two or more arrays, and returns a copy of the joined arrays
+copyWithin()    Copies array elements within the array, to and from specified positions
+every()         Checks if every element in an array pass a test
+fill()          Fill the elements in an array with a static value
+filter()        Creates a new array with every element in an array that pass a test
+find()          Returns the value of the first element in an array that pass a test
+findIndex()     Returns the index of the first element in an array that pass a test
+forEach()       Calls a function for each array element
+indexOf()       Search the array for an element and returns its position
+isArray()       Checks whether an object is an array
+join()          Joins all elements of an array into a string
+lastIndexOf()   Search the array for an element, starting at the end, and returns its position
+map()           Creates a new array with the result of calling a function for each array element
+pop()           Removes the last element of an array, and returns that element
+push()          Adds new elements to the end of an array, and returns the new length
+reduce()        Reduce the values of an array to a single value (going left-to-right)
+reduceRight()   Reduce the values of an array to a single value (going right-to-left)
+reverse()       Reverses the order of the elements in an array
+shift()         Removes the first element of an array, and returns that element
+slice()         Selects a part of an array, and returns the new array
+some()          Checks if any of the elements in an array pass a test
+sort()          Sorts the elements of an array
+splice()        Adds/Removes elements from an array
+toString()      Converts an array to a string, and returns the result
+unshift()       Adds new elements to the beginning of an array, and returns the new length
+valueOf()       Returns the primitive value of an array</pre>        
+        </td></tr>
+    </table>   
+         
+    <!-- Math -->   
+	<table class="section">
+		<tr><th>Javascript Math Object</th></tr>
+		<tr><td><strong>provides 8 mathematical constants, such as Math.PI</strong></td></tr>
+        <tr><td><pre style="width:100%;font-size:0.8em">
+Method	            Description
+abs(x)	    Returns the absolute value of x
+acos(x)	    Returns the arccosine of x, in radians
+asin(x)	    Returns the arcsine of x, in radians
+atan(x)	    Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+atan2(y, x)	Returns the arctangent of the quotient of its arguments
+ceil(x)	    Returns the value of x rounded up to its nearest integer
+cos(x)	    Returns the cosine of x (x is in radians)
+exp(x)	    Returns the value of Ex
+floor(x)	Returns the value of x rounded down to its nearest integer
+log(x)	Returns the natural logarithm (base E) of x
+max(x, y, z, ..., n)	Returns the number with the highest value
+min(x, y, z, ..., n)	Returns the number with the lowest value
+pow(x, y)	Returns the value of x to the power of y
+random()	Returns a random number between 0 and 1
+round(x)	Returns the value of x rounded to its nearest integer
+sin(x)	    Returns the sine of x (x is in radians)
+sqrt(x)	    Returns the square root of x
+tan(x)	    Returns the tangent of an angle</pre>          
+        </td></tr>
+    </table>	  
+
+        
+    <!-- Date -->   
+	<table class="section">
+		<tr><th>Javascript Date Object</th></tr>
+		<tr><td><strong>3 types of JavaScript date input formats; </strong>Set Date methods let you set date values (years, months, days, hours, minutes, seconds, milliseconds) for a Date Object. Get methods:</td></tr>
+        <tr><td>
+ <pre style="width:100%;font-size:0.8em">
+Method	            Description
+getFullYear()	    Get the year as a four digit number (yyyy)
+getMonth()	        Get the month as a number (0-11)
+getDate()	        Get the day as a number (1-31)
+getHours()	        Get the hour (0-23)
+getMinutes()	    Get the minute (0-59)
+getSeconds()	    Get the second (0-59)
+getMilliseconds()	Get the millisecond (0-999)
+getTime()	        Get the time (milliseconds since January 1, 1970)
+getDay()	        Get the weekday as a number (0-6)
+Date.now()	        Get the time. ECMAScript 5.  </pre>         
+        </td></tr>
+    </table>	    
+    
+</div><div id="content2">   
+
+      
+    <!-- Operators -->   
+	<table class="zebra">
+		<tr><th colspan="4">Javascript Operators</th></tr>
+        <tr><td colspan="4"> <strong>Operator priorities</strong>  are mostly like Java and C languages. For example, multiply, divide, modulus have priority over add and subtract; boolean and has priority over boolean or. Brackets force priority. </td></tr>
+        
+       
+		<tr>
+            <td style="width:50px"><em>Addition</em></td>	
+            <td>Used to add two numbers together or glue (concatenate) two strings together.</td>
+            <td style="width:30px;font-weight:bold;padding-left:5px;color:blue"><code>+</code></td>            
+            <td style="width:150px;padding-left:5px;"><code>6 + 9;<br>"Hello " + "world!"</code></td>
+        </tr>        
+		<tr>
+            <td style="width:50px"><em>Subtraction, Multiplication, Division</em></td>	
+            <td>These do what you'd expect them to do in basic math.</td>
+            <td style="width:50px;font-weight:bold;padding-left:5px;color:blue"><code>-, *, /</code></td>            
+            <td style="width:150px;padding-left:5px;"><code>6 + 9;<br>9 - 3; 8 * 2; 9 / 3;</code></td>
+        </tr> 
+		<tr>
+            <td style="width:50px"><em>Assignment</em></td>	
+            <td>It assigns a value to a variable.</td>
+            <td style="width:50px;font-weight:bold;padding-left:5px;color:blue"><code>=</code></td>            
+            <td style="width:150px;padding-left:5px;"><code>var myVariable = 'Bob';</code></td>
+        </tr> 
+		<tr>
+            <td style="width:50px"><em>Equality</em></td>	
+            <td>Does a test to see if two values are equal to one another and returns a true/false (Boolean) result.</td>
+            <td style="width:50px;font-weight:bold;padding-left:5px;color:blue"><code>===</code></td>            
+            <td style="width:150px;padding-left:5px;"><code>var myVariable = 3; <br>myVariable === 4;</code></td>
+        </tr> 
+		<tr>
+            <td style="width:50px"><em>Not, Does-not-equal</em></td>	
+            <td>Returns the logically opposite value of what it precedes; it turns a true into a false, etc. When it is used alongside the Equality operator, the negation operator tests whether two values are not equal.</td>
+            <td style="width:50px;font-weight:bold;padding-left:5px;color:blue"><code>!, !==</code></td>            
+            <td style="width:150px;padding-left:5px;"><code></code></td>
+        </tr> 			
+		<tr>
+            <td style="width:50px"><em></em></td>	
+            <td>For "Not", the basic expression is true, but the comparison returns false because we negate it:</td>
+            <td style="width:50px;font-weight:bold;padding-left:5px;color:blue"><code> </code></td>            
+            <td style="width:150px;padding-left:5px;"><code>var myVariable = 3; <br>!(myVariable === 3);</code></td>
+        </tr>			
+		<tr>
+            <td style="width:50px"><em></em></td>	
+            <td>"Does-not-equal" gives basically the same result with different syntax. Here we are testing "is myVariable NOT equal to 3". This returns false because myVariable IS equal to 3:</td>
+            <td style="width:50px;font-weight:bold;padding-left:5px;color:blue"><code> </code></td>            
+            <td style="width:150px;padding-left:5px;"><code>var myVariable = 3;<br>myVariable !== 3;</code></td>
+        </tr>	
+    </table>	
+    
+	<!-- Statements -->
+	<table class="zebra ">
+		<tr><th colspan="2">Javascript Statements</th></tr> 
+		<tr>
+			<td style="width:100px"><code>break</code></td>
+			<td>Terminates a switch or a loop</td>
+		</tr>	
+		<tr>
+			<td style="width:100px"><code>continue</code></td>
+			<td>Jumps out of a loop and starts at the top</td>
+		</tr>
+		<tr>
+			<td style="width:100px"><code>debugger</code></td>
+			<td>Stops the execution of JavaScript, and calls (if available) the debugging function</td>
+		</tr>	
+		<tr>
+			<td style="width:100px"><code>do ... while</code></td>
+			<td>Executes a block of statements, and repeats the block, while a condition is true</td>
+		</tr>	
+		<tr>
+			<td style="width:100px"><code>for</code></td>
+			<td>Marks a block of statements to be executed, as long as a condition is true</td>
+		</tr>	
+		<tr>
+			<td style="width:100px"><code>function</code></td>
+			<td>Declares a function</td>
+		</tr>	
+		<tr>
+			<td style="width:100px"><code>if ... else</code></td>
+			<td>Marks a block of statements to be executed, depending on a condition</td>
+		</tr>	
+		<tr>
+			<td style="width:100px"><code>return</code></td>
+			<td>Exits a function</td>
+		</tr>	
+		<tr>
+			<td style="width:100px"><code>switch</code></td>
+			<td>Marks a block of statements to be executed, depending on different cases</td>
+		</tr>		
+		<tr>
+			<td style="width:100px"><code>try ... catch</code></td>
+			<td>Implements error handling to a block of statements</td>
+		</tr>	
+		<tr>
+			<td style="width:100px"><code>var</code></td>
+			<td>Declares a variable </td>
+		</tr>	       
+	</table>
+
+	
+	<!-- Functions -->
+	<table class="section ">
+		<tr><th colspan="2">Javascript Functions</th></tr>
+        <tr><td colspan="2"><mark>Function Declaration</mark><br><code><strong>function</strong> <em>name</em>([<em>param</em>[, <em>param</em>], ... <em>param</em>]]]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;<em>statements</em><br>}</code> 
+
+        </td></tr>
+        <tr><td colspan="2"><mark>Function Expression (function name can be omitted to become anonymous)</mark><br><code>var myFunction = <strong>function</strong> [<em>name</em>]([<em>param</em>[, <em>param</em>], ... <em>param</em>]]]) {<br>&nbsp;&nbsp;&nbsp;&nbsp;<em>statements</em><br>}</code> 
+
+        </td></tr>                   
+		<tr>
+			<td style="min-width:200px"><code>function abs(x) {</code></</td>
+			<td>// A function to compute absolute value </td>
+		</tr>
+		<tr>
+			<td style="width:100px"><code>&nbsp;&nbsp;if (x >= 0) {</code></</td>
+			<td>// The if statement</td>
+		</tr>
+		<tr>
+			<td style="width:100px"><code>&nbsp;&nbsp;&nbsp;&nbsp;return x;</code></</td>
+			<td>// &nbsp;&nbsp;&nbsp;&nbsp;execute this code if condition is true</td>
+		</tr>    
+		<tr>
+			<td style="width:100px"><code>&nbsp;&nbsp;}</code></</td>
+			<td>// the end of the if statement</td>
+		</tr> 
+		<tr>
+			<td style="width:100px"><code>&nbsp;&nbsp;else {</code></</td>
+			<td>// optional else clause</td>
+		</tr> 
+		<tr>
+			<td style="width:100px"><code>&nbsp;&nbsp;&nbsp;&nbsp;return -x;</code></</td>
+			<td>// &nbsp;&nbsp;&nbsp;&nbsp;executes if the condition is false</td>
+		</tr>    
+		<tr>
+			<td style="width:100px"><code>&nbsp;&nbsp;}</code></</td>
+			<td>// curly braces are optional if single statement per clause</td>
+		</tr>  
+		<tr>
+			<td style="width:100px"><code>}</code></</td>
+			<td>// note return statements nested inside if...else statements </td>
+		</tr>   
+        <tr><td colspan="2"><strong> JavaScript functions are first-class objects, which means they can be:</strong> 
+            <ul style="margin-top:0;"><li>stored in a variable, object, or array.</li>
+            <li>passed as an argument to a function.</li>
+            <li>returned from a function.</li></ul></td></tr>
+		<tr>        
+    </table>
+
+		
+	<!-- Events -->
+	<table class="zebra ">
+		<tr>
+			<th colspan="3">Javascript Events</th>
+		</tr>
+		<tr>
+			<td><code>&lt;img <b>onclick</b>="jsCode();" id="one"></code></td>
+			<td><strong>event attributes</strong></td>
+			<td>obtrusive</td>
+		</tr>
+		<tr>
+			<td><code>one.<b>onclick</b> = jsCode;</code></td>
+			<td><strong>event methods</strong></td>
+			<td>unobtrusive</td>
+		</tr>
+		<tr>
+			<td><code>one.<b>addEventListener</b>("<b>click</b>", jsCode");</code></td>
+			<td><strong>event listeners</strong></td>
+			<td>unobtrusive</td>
+		</tr>        
+	</table>
+
+    		
+	<!-- Events -->
+	<table class="zebra ">
+		<tr>
+			<th>Javascript DOM</th>
+		</tr>
+		<tr>
+			<td>[add DOM information...]</td>
+		</tr>
+        
+	</table>
+	<!-- Code -->
+	<table class="zebra ">
+		<tr>
+			<th colspan="3">Javascript Code</th>
+		</tr>
+		<tr>
+			<td colspan="3">
+                <a href="http://www.w3schools.com/js/js_mistakes.asp" target="_blank">JavaScript Common Mistakes</a>
+						<br><samp>&bull; Accidentally Using the Assignment Operator</samp>, <samp>&bull; Expecting Loose Comparison</samp>, <samp>&bull; Confusing Addition & Concatenation</samp>, <samp>&bull; Breaking a JavaScript String</samp>, <samp>&bull; Misplacing Semicolon</samp>, <samp>&bull; Breaking a Return Statement</samp>, <samp>&bull; Accessing Arrays with Named Indexes</samp>, <samp>&bull; Ending an Array Definition with a Comma</samp>, <samp>&bull; Ending an Object Definition with a Comma</samp>, <samp>&bull; Undefined is Not Null</samp>, <samp>&bull; Expecting Block Level Scope</samp>.          
+            </td>
+		</tr>
+		<tr>
+			<td colspan="3">
+               <a href="http://www.w3schools.com/js/js_performance.asp" target="_blank">JavaScript Performance</a><br>
+                        <samp> &bull; Reduce Activity in Loops</samp><samp> &bull; Reduce DOM Access</samp><samp> &bull; Reduce DOM Size</samp><samp> &bull; Avoid Unnecessary Variables</samp><samp> &bull; Delay JavaScript Loading</samp><samp> &bull; Avoid Using with</samp>
+            </td>
+		</tr>           
+	</table>	
+	 
+	<!-- Debugging -->
+	<table class="zebra ">
+		<tr>
+			<th colspan="3">Debugging Code</th>
+		</tr>  
+		<tr>
+			<td colspan="3">
+                <ul class="checked">
+                    <li>Use the console to trace values of variables</li>
+                    <li>Use the console.log() method to trace values of variables and to send messages to the console at critical places in the code</li>
+                    <li>It takes practice to understand the code. Use comments to explain, in your own words, what the code does and why</li>
+                    <li class="w3-hover-khaki">Use tools such as <a href="http://jshint.com/" target="_blank">jshint.com</a> to clean up Javascript code.</li>
+                    <li>Review <a href="http://javascript.crockford.com/code.html" target="_blank">http://javascript.crockford.com/code.html</a></li>
+                    <li>Here is a list of related suggestions covered in  <a href="https://www.evernote.com/shard/s687/sh/08e73a4c-06e0-4938-a3f4-e3e04108222d/138d63da448e70aed82a3ed545b3a95b" target="_blank">class</a></li>
+                    <li>Compare <code>console.log</code> and <code>document.write</code>.</li>							
+                </ul>
+            </td>
+		</tr>        
+	</table>		  
+
+</div> <!-- end of id=content2 -->
+
+	<div class="floatcontainer">
+		<p class="exp">SYST10199 Web Programming @ Sheridan College</p>
+    </div>
+	
+</div> <!-- end of id=contentbox -->
+
+
+<aside>
+	<section>
+           
+<svg width="64px" height="64px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+    <g>
+        <path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" fill="#F7DF1E"></path>
+        <path d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026" fill="#000000"></path>
+        <path d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413" fill="#000000"></path>
+    </g>
+</svg>            
+	</section>
+	
+	<section>
+		<strong>JS Versions</strong>
+	</section>
+	
+	<section>
+		<h3>Comments</h3>
+        <code style="text-align: left">
+		// single line<br><br>
+		/* <br>
+        &nbsp;&nbsp;multi-line<br>
+        */</code>
+	</section>	
+
+	<section>
+		<h3>Developing with JS</h3>
+		<code>errors</code>
+        <code>debugging</code>
+        <code>hosting</code>
+        <code>strict mode</code>
+        <code>mistakes</code>
+        <code>performance</code>
+	</section>	
+
+	<section>
+		<h3>Best Practices</h3>
+		<code>style guide</code>
+        <code>Progr.Enhanc.</code>
+        <code>documentation</code>
+	</section>
+
+	<section>
+		<h3>Resources</h3>
+        <code>ECMAScript</code>
+        <img alt="link to w3,org" height="14" src="https://www.w3.org/2008/site/images/favicon.ico" title="w3c">
+        <code>MDN</code>
+        <code>w3schools</code>
+	</section>    
+</aside>
+</main>
+</body>
+</html>
+
