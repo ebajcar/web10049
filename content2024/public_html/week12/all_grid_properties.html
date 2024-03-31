@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSS Grid starting point</title>
+    <meta name="author" content="Ellen Bajcar">
+    <meta name="description" content="Class examples for SYST10049">   
+    <base href="https://www.w3schools.com/" target="_blank">
+<!--
+Author:       Ellen Bajcar
+Program:      content/all_grid_properties.html
+Date:         April 1, 2024
+Updated:      
+Version:      0.1
+Purpose:      learn grid layout
+Copyright:    
+    The materials provided in class and through SLATE are protected by copyright. They are intended 
+    for the personal, educational uses of students in this course and should not be shared externally 
+    or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright 
+    infringement and violation of Sheridan policies.
+Citations:    
+    original source material can be found (subject to w3schools' copyrights):
+    https://www.w3schools.com/css/css_grid.asp
+
+Description:  
+    - grid is a collection of horizontal and vertical lines creating a pattern against which we can line up our design elements
+    - grid will typically have columns, rows, and then gaps between each row and column. The gaps are commonly referred to as gutters.
+    - this example contains an UL classified as "grid-container" which is a parent to 44 LI children 
+    
+-->
+
+<style>
+body {
+  width: 90%;
+  margin: auto;
+  font-size: 18px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-gap: 2px;
+  background-color: darkorange;
+  padding: 5px;
+}
+
+.grid-container > li {
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 30px;
+  list-style: none;
+  overflow: auto;
+  padding: 8px;
+}
+
+li:first-child, li:nth-child(2){
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+li:nth-child(4n+5), li:nth-child(4n+6) {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+</style>
+</head>
+
+<body>
+  <header>
+    <h1>Grid layouts</h1>
+  </header>
+
+  <main>
+ 
+ <h2>All CSS Grid Properties</h2>
+ <p>An example of using the grid layout to style an unordered list to render as a zebra-striped table. Click on the property name to take you to w3schools' reference page about the property.</p>
+
+  <ul class="grid-container">
+    <li>Property</li>
+    <li>Description</li>
+
+    <li><a href="/cssref/css3_pr_column-gap.asp">column-gap</a></li>
+    <li>Specifies the gap between the columns</li>
+
+    <li><a href="/cssref/css3_pr_gap.asp">gap</a></li>
+    <li>A shorthand property for the <em>row-gap</em> and the <em>column-gap</em> properties</li>
+
+    <li><a href="/cssref/pr_grid.asp">grid</a></li>
+    <li>A shorthand property for the <em>grid-template-rows, 
+    grid-template-columns, grid-template-areas, grid-auto-rows, 
+    grid-auto-columns</em>, and the <em>grid-auto-flow</em> properties</li>
+
+    <li><a href="/cssref/pr_grid-area.asp">grid-area</a></li>
+    <li>Either specifies a name for the grid item, or this property is a shorthand property for the <em>grid-row-start</em>, <em>grid-column-start</em>, <em>grid-row-end</em>, and <em>grid-column-end</em> properties</li>
+
+    <li><a href="/cssref/pr_grid-auto-columns.asp">grid-auto-columns</a></li>
+    <li>Specifies a default column size</li>
+
+    <li><a href="/cssref/pr_grid-auto-flow.asp">grid-auto-flow</a></li>
+    <li>Specifies how auto-placed items are inserted in the grid</li>
+
+    <li><a href="/cssref/pr_grid-auto-rows.asp">grid-auto-rows</a></li>
+    <li>Specifies a default row size</li>
+
+    <li><a href="/cssref/pr_grid-column.asp">grid-column</a></li>
+    <li>A shorthand property for the <em>grid-column-start</em> and the <em>grid-column-end</em> properties</li>
+
+    <li><a href="/cssref/pr_grid-column-end.asp">grid-column-end</a></li>
+    <li>Specifies where to end the grid item</li>
+
+    <li><a href="/cssref/pr_grid-column-gap.asp">grid-column-gap</a></li>
+    <li>Specifies the size of the gap between columns</li>
+
+    <li><a href="/cssref/pr_grid-column-start.asp">grid-column-start</a></li>
+    <li>Specifies where to start the grid item</li>
+
+    <li><a href="/cssref/pr_grid-gap.asp">grid-gap</a></li>
+    <li>A shorthand property for the <em>grid-row-gap</em> and <em>grid-column-gap</em> properties</li>
+ 
+    <li><a href="/cssref/pr_grid-row.asp">grid-row</a></li>
+    <li>A shorthand property for the <em>grid-row-start</em> and the <em>grid-row-end</em> properties</li>
+
+    <li><a href="/cssref/pr_grid-row-end.asp">grid-row-end</a></li>
+    <li>Specifies where to end the grid item</li>
+
+    <li><a href="/cssref/pr_grid-row-gap.asp">grid-row-gap</a></li>
+    <li>Specifies the size of the gap between rows</li>
+
+    <li><a href="/cssref/pr_grid-row-start.asp">grid-row-start</a></li>
+    <li>Specifies where to start the grid item</li>
+
+    <li><a href="/cssref/pr_grid-template.asp">grid-template</a></li>
+    <li>A shorthand property for the <em>grid-template-rows</em>, <em>grid-template-columns</em> 
+    and <em>grid-areas</em> properties</li>
+
+    <li><a href="/cssref/pr_grid-template-areas.asp">grid-template-areas</a></li>
+    <li>Specifies how to display columns and rows, using named grid items</li>
+
+    <li><a href="/cssref/pr_grid-template-columns.asp">grid-template-columns</a></li>
+    <li>Specifies the size of the columns, and how many columns in a grid layout</li>
+
+    <li><a href="/cssref/pr_grid-template-rows.asp">grid-template-rows</a></li>
+    <li>Specifies the size of the rows in a grid layout</li>
+
+    <li><a href="/cssref/css3_pr_row-gap.asp">row-gap</a></li>
+    <li>Specifies the gap between the grid rows</li>
+  </ul>
+
+<pre><code>
+
+</code></pre>
+  </main>
+
+  <footer>
+    <address>Web Development &copy; Sheridan College</address>
+  </footer>
+</body>
+
+</html>

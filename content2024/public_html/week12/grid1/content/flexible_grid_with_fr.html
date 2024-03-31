@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Flexible grids with the fr unit</title>
+    <meta name="author" content="Ellen Bajcar">
+    <meta name="description" content="Assignment 3 example">   
+<!--
+Author:       Ellen Bajcar
+Program:      content/mdn_grid_start.html
+Date:         April 1, 2024
+Updated:      
+Version:      0.1
+Purpose:      learn grid layout
+Copyright:    
+    The materials provided in class and through SLATE are protected by copyright. They are intended 
+    for the personal, educational uses of students in this course and should not be shared externally 
+    or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright 
+    infringement and violation of Sheridan policies.
+Citations:    
+    original source material can be found (subject to MDN's copyrights):
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#defining_a_grid
+    https://github.com/mdn/learning-area/blob/main/css/css-layout/grids/0-starting-point.html
+Description:  
+    - grid is a collection of horizontal and vertical lines creating a pattern against which we can line up our design elements
+    - grid will typically have columns, rows, and then gaps between each row and column. The gaps are commonly referred to as gutters.
+    - this example contains a DIV classified as "container" which is a parent to seven (7) children DIVs
+    
+    Defining a grid
+    - display: grid property transforms all the direct children of the container into grid items.
+    - grid-template-columns: 200px 200px 200px adds three 200-pixel wide columns.
+    
+    Flexible grids with the fr unit
+    - fr unit represents one fraction of the available space in the grid container to flexibly size grid rows and columns.
+    - grid-template-columns: 1fr 1fr 1fr;
+    - grid-template-columns: 2fr 1fr 1fr;
+    
+    Gaps between tracks
+    - column-gap for gaps between columns
+    - row-gap for gaps between rows
+    - gap as a shorthand for both
+    
+    Repeating track listings
+    - grid-template-columns: repeat(3, 1fr);
+    
+    Implicit and explicit grids
+    - Explicit grid is created using grid-template-columns or grid-template-rows.
+    - tracks created in the implicit grid are auto sized, which in general means that they're large enough to contain their content
+    - grid-auto-rows: 100px; makes all cells the same height; if content does not fit, it overflow the cell (overflow:auto; can be 
+      added to the children rule)
+      
+    The minmax() function
+    -  set a minimum and maximum size for a track, for example, minmax(100px, auto). The minimum size is 100 pixels, but the maximum 
+       is auto, which will expand to accommodate more content. 
+    
+    As many columns as will fit
+    -  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+-->
+
+    <link href="../css/nav.css" rel="stylesheet">    
+    <style>
+/* temporary
+.container2 > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: pink;
+    border: 2px solid purple;
+}  */
+
+/* https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#flexible_grids_with_the_fr_unit */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  /* added */
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;  /* added */
+}
+    </style>
+  </head>
+
+<body>
+  <header>
+    <h1>Learning grid layout</h1>
+  </header>
+  <nav>
+    <a href="../index0.html">Home</a>
+    <a href="defining_a_grid.html">Defining a grid</a>
+    <a class="active" href="flexible_grid_with_fr.html">Flexible grids with the fr unit</a>
+    <a href="gaps_between_tracks.html">Gaps between tracks</a>
+    <a href="repeating_tracks.html">Repeating track listings</a>
+    <a href="implicit_explicit_grids.html">Implicit and explicit grids</a>
+    <a href="minmax_function.html">minmax function</a>
+    <a href="as_many_ax_will_fit.html">As many columns as will fit</a>
+  </nav>
+  <main>
+    <h2>grid-template-columns: 1fr 1fr 1fr;</h2>
+    <div class="container">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three </div>
+        <div>Four </div>
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+    </div>
+    <h2>grid-template-columns: 2fr 1fr 1fr;</h2>
+    <div class="container2">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three </div>
+        <div>Four </div>
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+    </div>    
+  </main>
+
+  <footer>
+    <address>Web Development &copy; Sheridan College</address>
+  </footer>
+</body>
+
+</html>
