@@ -67,6 +67,15 @@ Description:
   grid-auto-rows: minmax(100px, auto);
   gap: 20px;
 }
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  gap: 20px;
+}
+.container2 > div {
+  overflow: auto;
+}
     </style>
   </head>
 
@@ -86,7 +95,7 @@ Description:
   </nav>
   <main>
     <h2>The minmax() function</h2>
-    <p><code>grid-auto-rows: minmax(100px, auto);</code></p>
+    <p>On parent: <code>grid-auto-rows: minmax(100px, auto);</code></p>
     <div class="container">
         <div>One</div>
         <div>Two</div>
@@ -96,6 +105,18 @@ Description:
         <div>Six</div>
         <div>Seven</div>
     </div>
+    
+   <h2>Using <code>.container2 > div { overflow: auto; }</code></h2>
+    <p>On parent: <code>grid-auto-rows: 100px;</code></p>
+    <div class="container2">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three </div>
+        <div>Our 100-pixel tall tracks won't be very useful if we add content into those tracks that is taller than 100 pixels, in which case it would cause an overflow. It might be better to have tracks that are at least 100 pixels tall and can still expand if more content becomes added.  </div>
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+    </div>    
   </main>
 
   <footer>

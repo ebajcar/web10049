@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Deifining a grid</title>
+    <title>flexbox</title>
     <meta name="author" content="Ellen Bajcar">
     <meta name="description" content="Assignment 3 example">   
 <!--
@@ -58,17 +58,48 @@ Description:
     -  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 -->
 
-    * {
-  box-sizing: border-box;
-}  
     <link href="../css/nav.css" rel="stylesheet">    
     <style>
-  
-    
-/*  added to create a grid https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#defining_a_grid */
-.container {
-  display: grid;
+
+/* */
+* {
+  box-sizing: border-box;
 }
+
+.container3 > div, .container4 > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+
+.container {
+  display: flex;
+  justify-content: right;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+}
+
+.container2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.container2 > :first-child {
+  width: 100%;
+}
+.container2 > :last-child {
+  width: 100%;
+}
+.container2 > div {
+  width: 19%;
+  margin: 5px 0.2%;
+}
+
     </style>
   </head>
 
@@ -78,16 +109,18 @@ Description:
   </header>
   <nav>
     <a href="../index0.html">Home</a>
-    <a class="active" href="defining_a_grid.html">Defining a grid</a>
+    <a href="defining_a_grid.html">Defining a grid</a>
     <a href="flexible_grid_with_fr.html">Flexible grids with the fr unit</a>
     <a href="gaps_between_tracks.html">Gaps between tracks</a>
     <a href="repeating_tracks.html">Repeating track listings</a>
     <a href="implicit_explicit_grids.html">Implicit and explicit grids</a>
     <a href="minmax_function.html">minmax function</a>
     <a href="as_many_ax_will_fit.html">As many columns as will fit</a>
+     <a class="active" href="flexbox.html">Compare to flexbox</a>
   </nav>
   <main>
-    <h2><code> .container {display: grid;} added and parent DIV is classified <code>&lt;div class="container"></h2>
+    <h2><code>justify-content: right;</code></h2>
+    
     <div class="container">
         <div>One</div>
         <div>Two</div>
@@ -97,6 +130,29 @@ Description:
         <div>Six</div>
         <div>Seven</div>
     </div>
+    <h2><code>justify-content: center;</code></h2>
+    
+    <div class="container3">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three </div>
+        <div>Four </div>
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+    </div>
+    
+    <h2><code>flex-flow: row wrap; justify-content: space-between;</code></h2>
+
+    <div class="container2">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three </div>
+        <div>Four </div>
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+    </div>    
   </main>
 
   <footer>

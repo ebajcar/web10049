@@ -15,13 +15,45 @@ Citations:
 Description:  
     - styling for navigation and other common elements
  */
+ 
+ 
+ /* 
+    general and basic styles
+    
+    Sometimes, we start with removing all default styling first.
+    
+    (start at the top of the DOM tree)
+    - page areas (html, body, footer, header)
+    - section, article, main, aside {when used or anticipate being used)
+    - h1 - h6, p, ul, ol, table, div, span, ....
+    - general classes, pseudo-selectors, ...
+    
+    - ul, ol, dl, table, grids, flexboxes, ... generally are grouped with associated
+      type selectors (span classes and psedo-selectors
+
+ */
 body {
     width: 90%;
     max-width: 900px;
     margin: 2em auto;
     font: .9em/1.2 Arial, Helvetica, sans-serif;
 }
+header, footer {
+    /*  add styling here */
+}
+h1, h2 {
+    
+}
 
+
+/* 
+    navigation-specific section 
+    a section like this could be placed in a separate file, 
+    if this file gets too big
+    or if you anticipate replacing it with another set
+    or if it is not used on every page, only on 
+    a specific topic or sub-set of pages
+*/
 nav {
     line-height: 2.5em;
     text-align: center;
@@ -42,6 +74,8 @@ nav a {
     color: white;
 }
 
+
+/* grid-specific section */
 .container > div, .container2 > div {
     border-radius: 5px;
     padding: 10px;
