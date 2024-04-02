@@ -1,0 +1,84 @@
+/*  
+Author:       Ellen Bajcar
+Program:      css/nav.css
+Date:         April 1, 2024
+Updated:      
+Version:      0.1
+Purpose:      learning grid layout project (grid1)
+Copyright:    
+    The materials provided in class and through SLATE are protected by copyright. They are intended 
+    for the personal, educational uses of students in this course and should not be shared externally 
+    or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright 
+    infringement and violation of Sheridan policies.
+Citations:    
+
+Description:  
+    - styling for navigation and other common elements
+ */
+ 
+ 
+ /* 
+    general and basic styles
+    
+    Sometimes, we start with removing all default styling first.
+    
+    (start at the top of the DOM tree)
+    - page areas (html, body, footer, header)
+    - section, article, main, aside {when used or anticipate being used)
+    - h1 - h6, p, ul, ol, table, div, span, ....
+    - general classes, pseudo-selectors, ...
+    
+    - ul, ol, dl, table, grids, flexboxes, ... generally are grouped with associated
+      type selectors (span classes and psedo-selectors
+
+ */
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+    font: .9em/1.2 Arial, Helvetica, sans-serif;
+}
+header, footer {
+    /*  add styling here */
+}
+h1, h2 {
+    
+}
+
+
+/* 
+    navigation-specific section 
+    a section like this could be placed in a separate file, 
+    if this file gets too big
+    or if you anticipate replacing it with another set
+    or if it is not used on every page, only on 
+    a specific topic or sub-set of pages
+*/
+nav {
+    line-height: 2.5em;
+    text-align: center;
+}
+
+nav a {
+    border: 1px dotted rgb(0, 119, 230);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    background-color: rgb(204, 230, 255);
+    white-space: nowrap;
+}
+
+.active {
+    background-color: rgb(0, 66, 128);
+    color: white;
+}
+
+
+/* grid-specific section */
+.container > div, .container2 > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}  

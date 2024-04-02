@@ -39,6 +39,10 @@ input:valid {
 input:invalid {
     border: solid red;
 }
+.current {
+  font-weight: bold;
+  font-size: 1.3em;
+}
 	</style>
 </head>
 <body>
@@ -50,13 +54,23 @@ input:invalid {
         <main>
             <div class="prev-next">
                 <p><a href="weekCwinter2024.html">Prev</a></p>
-                <nav class="breadcrumbs" aria-label="Breadcrumbs">
-                    <ol>
-                        <li><a href="../index.html"  class="allcaps">Home</a></li>
-                        <li><a href="week13.html" aria-current="page">Worksheet 13</a></li>
-                    </ol>               
-                </nav> 
-                <p><!--<a href="weekDwinter2024.html">Next</a>--></p>
+        <nav class="tool-bar">| 
+            <a href="week1winter2024.html"> 1 </a> | 
+            <a href="week2winter2024.html"> 2 </a> | 
+            <a href="week3winter2024.html"> 3 </a> | 
+            <a href="week4winter2024.html"> 4 </a> | 
+            <a href="week5winter2024.html"> 5 </a> | 
+            <a href="week6winter2024.html"> 6 </a> | 
+            <a href="week7winter2024.html"> 7 </a> | 
+            <a href="week8winter2024.html"> 8 </a> | 
+            <a href="week9winter2024.html"> 9 </a> | 
+            <a href="weekAwinter2024.html"> 10 </a> | 
+            <a href="weekBwinter2024.html"> 11 </a> | 
+            <a href="weekCwinter2024.html"> 12 </a> | 
+            <a href="weekDwinter2024.html" class="current"> 13 </a> | 
+            <a href="weekEwinter2024.html"> 14 </a> | 
+        </nav>
+                <p><a href="weekEwinter2024.html">Next</a></p>
             </div>
 
                 
@@ -94,31 +108,144 @@ input:invalid {
 
             </section> 
 
+       
+   
             <!-- 2. Read and explore more concepts -->
-            <section id="p2">
-                <h2>2. Read and explore more concepts</h2> 
-                <dl hidden>
-                    <dt>Introduction to CSS</dt>
-                    <dd><a href="https://ebajcar.github.io/web10049/content2024/material_css/" target="_blank">Overview</a></dd>
-                    <dd>Complete the following tutorials. Make your own notes. When you come to an example, implement it as part of your practice project
+            <section  id="p2">
+                <h2>2. Read and explore more concepts</h2>  
+                <h3>Responsive design</h3>
+<!-- at-rules -->
+                <dl>
+                    <dt>At-rules</dt>
 
-                        <ul>   
-                            <li><a href="" target="_blank">? (MDN web docs)</a>  •  •  • </li>
-                            <li><a href="" target="_blank">? (MDN web docs)</a>  •  •  • </li>
-                            <li><a href="" target="_blank">? (MDN web docs)</a>  •  •  • </li>
-                        </ul>
+                    <dd><chip>| @import | <strong>@media</strong> | <del>@keyframes</del> | @font-face | @charset |</chip>
                     </dd>
-                 </dl>  
+                    <dd>
+                        <p>At-rules are all different, but they have a basic structure in common. They start with an "@" symbol, followed by their name as a CSS keyword. Some at-rules are simple statements, with their name followed by more CSS values to specify their behavior, and finally ended by a semicolon. Others are blocks; they can have CSS values following their name, but they end with a {}-wrapped block, similar to a qualified rule. Even the contents of these blocks are specific to the given at-rule: sometimes they contain a sequence of declarations, like a qualified rule; other times, they may contain additional blocks, or at-rules, or other structures altogether.</p>
+                        <p>Read further  <a href="https://www.w3.org/TR/css-syntax-3/#syntax-description" target="_blank"> At-rules (W3C specification)	</a></p>
+                    </dd>
+                </dl>
+	
+
+
+<!-- Media-specific -->
+                <dl>
+                  <dt>Media-specific style sheets: the @media rule</dt>
+                    <dd>The <code>@media</code> at-rule begins with a media type and a list of optional media queries. Its block contains entire rules, which are only applied when the @media's conditions are fulfilled.
+                    </dd>
+                    <dd>
+                    <pre class="language-css">
+                    <code>@media print {
+                body {  
+                    font-size: 10pt 
+                }
+            }</code></pre>
+
+                    <p>A media type is a broad category of user-agent devices on which a document may be displayed. The original set of media types were defined in HTML4, for the media attribute on &lt;link> elements.</p>
+
+                    Read further <a href="https://www.w3.org/TR/mediaqueries-4/#media-type" target="_blank"> media types: all, print, speech, screen.</a>
+                    </dd>
+                </dl>
+
+  
+<!-- viewport -->
+                <dl>
+                    <dt>Viewport</dt>
+                    <dd>The viewport is the user's visible area of a web page. HTML5 introduced a method to let web designers take control over the viewport, through the &lt;meta> tag. You should include the following &lt;meta> viewport element in all your web pages:</dd>
+                    <dd>
+                        <pre class="language-html">
+                        <code>&lt;meta name="viewport" content="width=device-width,initial-scale=1.0">
+                        </code></pre>      
+
+                        Read further  <a href="https://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank"> https://www.w3schools.com/css/css_rwd_viewport.asp	</a>    
+                    </dd>
+                </dl>
+
+                 <dl>
+                    <dt>Using frameworks and libraries</dt>
+                    <dd>
+                        <dl>
+                        <dt style="color:gray">Creating your own framework</dt> 
+                        <dd><ol>
+                        <li>To plan your design, start with no styles. Identify what CSS rules you will need.  Generally, a custom-built framework can be smaller and cleaner, especially if you only use 10 to 12 percent of an existing framework.</li>
+                        <li>To construct your design, start with well-formed and valid HTML5. Organize your CSS file into sections. <br>a) imports and fonts first, <br>b) document layout, <br>c) specific areas, such as navigation, galleries, grids, buttons, ...</li>
+                        <li>Practice building your own frameworks. It helps in selecting and determining when and how to use existing ones.</li>
+                        </ol></dd>
+                        <dt style="color:gray">Choosing existing libraries</dt>
+                        <dd>Check out some of the frameworks and libraries in Worksheet 14. Some require rudimentary skills for programming with Javascript. All require solid knowledge of HTML and CSS to use professionally.</dd>
+
+                        <dt style="color:gray">Combining multiple libraries (including your own)</dt>
+
+                        <dd>The challenge of combining is to eliminate duplicates and minimize amount of code to include. <q>Less code gives better performance.</q></dd> 
+                        </dl>
+                    </dd>
+                </dl>    
+            
+                        <!-- thirteen modules -->
+                        <dl>
+                        <dt>Explore CSS modules (13)</dt>
+                            <ul>                                                                                                  
+                                   <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment" target="_blank">CSS containment (MDN)</a>  •  •  • </li>
+                                   <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_conditional_rules" target="_blank">CSS conditional rules (MDN)</a>  •  •  • </li>
+                                   <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries" target="_blank">CSS media queries (MDN)</a>  •  •  • </li>
+                                   <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_paged_media" target="_blank">CSS paged media (MDN)</a>  •  •  • </li>
+                            </ul>            
+                        </dl>                     
+                             
             </section>
+            
 
             <!-- 3.  Practice. Practice. Practice. -->
             <section id="p3">
                 <h2>3. Practice. Practice. Practice.</h2>
                 <p><chip>Coming soon</chip></p>
+                
+                
+                
+                
+                <dl hidden>
+                    <dt>What are the last 4 characters of a file that contains nothing but statements like this?</dt>
+                    <dd>
+<pre><code>p {
+    font-family: "Times New Roman", Times, serif;    
+}</code></pre>
+                    </dd>
+                    <dd><input type="text" pattern='.css'></dd>                
+
+
+
+
+                    <dt>Type the first 3 characters of CSS code that specifies styling for paragraphs.</dt>
+                    <dd><input type="text" pattern='p \{'></dd>                
+
+
+                    <dt>Type the first 4 characters of CSS code that specifies styling for paragraphs.</dt>
+                    <dd><input type="text" pattern="h6 \{"></dd>                
+
+
+                    <dt>Fill in the blank</dt>
+                    <dd><pre><code>_______ "Trebuchet MS", Helvetica, sans-serif;</code></pre>
+https://images.ctfassets.net/mcrjleamkqxs/5uThCcQreI18jZS5sRlnRO/a5c6aa07dcb486633cd605b8da66bee7/How_to_Talk_to_Anyone_cover_upload_2400px?fm=avif&w=640&q=75                    </dd>
+                    <dd><input type="text" pattern='font-family:'></dd>                
+                </dl>                    
+                
+                
+                
+                
+                
+                
+                
             </section>
 
-        </main>
-
+    <footer class="f-row flex-wrap:wrap justify-content:space-between">       
+        <div>Previous ←
+            <strong><a href="weekCwinter2024.html">Worksheet 12</a></strong>
+        </div>        
+        <div>Next →
+            <strong><a href="weekEwinter2024.html">Worksheet 14</a></strong>
+        </div>       
+    </footer>
+</main>
 
 
  <!-- footer area -->

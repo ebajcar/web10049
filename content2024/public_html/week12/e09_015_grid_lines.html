@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example09_015</title>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: darkorange;
+  padding: 10px;
+}
+
+.grid-container > li {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+  font-size: 30px;
+  list-style: none;
+  overflow: auto;
+}
+li:first-child {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+li:nth-child(5)  {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.item7 {
+  background-color: blue !important;
+  font-size: 3em !important;
+}
+.grid-container .item5 {
+  background-color: lightblue;
+  font-size: 6em;
+}
+</style>
+</head>
+<body>
+  <h1>Grid Lines</h1>
+  <ul class="grid-container">
+    <li class="item1">1</li>
+    <li class="item2">2</li>
+    <li class="item3">3</li>  
+    <li class="item4">4</li>
+    <li class="item5">5</li>
+    <li class="item6">6</li>
+    <li class="item7">7</li>
+    <li class="item8">8</li>
+    <li class="item9">9</li>
+    <li class="item10">10</li>
+  </ul>
+  <p>Learn more about CSS grid at 
+    <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">w3schools</a>.
+  </p>
+</body>
+</html>
+
+
+

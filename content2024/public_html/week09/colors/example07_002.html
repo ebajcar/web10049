@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example07_002</title>
+  <meta charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>	
+<style>
+p {
+  font-family: 'Allan';font-size: 18px;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+pre {
+  font-family: monospace;
+  width: 95%;
+  margin: 5px auto auto 10px;
+  padding-bottom: 5px;
+  border-bottom: thin dotted black;
+}
+table {
+  width: 100%
+}
+td:first-child {
+  width: 4em;
+  height: 4em;
+  color: white;
+  font-size: 1.5em;
+  border: 10px solid black;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: center;	
+}
+.p-red {
+  background-color: rgb(100%, 0%, 0%);
+}
+.d-red {
+  background-color: rgb(255, 0, 0);
+}
+.x-red {
+  background-color: #ff0000;
+}
+.h-red {
+  background-color: hsl(0, 100%, 80%);
+}
+.t-red {
+  background-color: rgba(255,0,0,0.65);
+}
+.th-red {
+  background-color: hsla(0, 100%, 30%, 0.5);
+}
+</style>
+</head>
+<body>
+  <table>
+	<tr> 
+	  <td class="p-red">p-red</td>
+	  <td>
+	    <p>A color can be specified as an RGB value, using this formula rgb(%red, %green, %blue).</p>
+	    <pre>.p-red { background-color: rgb(100%, 0%, 0%); }</pre>
+      </td>
+	</tr>
+	
+	<tr> 
+	  <td class="d-red">d-red</td>
+	  <td>
+	    <p>A color can be specified as an RGB value, using this formula rgb(decimal red, decimal green, decimal blue).</p>
+	    <pre>.d-red { background-color: rgb(255, 0, 0); }</pre>
+      </td>
+	</tr>
+	
+	<tr> 
+	  <td class="x-red">x-red</td>
+	  <td>
+	    <p>A color can be specified as an RGB value, using hexadecimal numbers.</p>
+	    <pre>.x-red { background-color: #ff0000; }</pre>
+      </td>
+	</tr>	
+  </table>
+
+	
+<table>
+  <tr> 
+	<td class="t-red">t-red</td>
+	<td>
+	  <p>A color can be specified as an RGBA value, using ...</p>
+	  <pre>.t-red { background-color: rgba(255,0,0,0.65); }</pre>
+	</td>
+  </tr>
+
+  <tr> 
+	<td class="h-red">h-red</td>
+	<td>
+	  <p>A color can be specified as HSL value .</p>
+	  <pre>.h-red { background-color: hsl(0, 100%, 80%); }</pre>
+	</td>
+  </tr>
+
+  <tr> 
+	<td class="th-red">th-red</td>
+	<td>
+	  <p>A color can be specified as HSLA value, using hsla(hue, saturation, lightness, alpha) The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+	  <pre>.th-red { background-color: hsla(0, 100%, 30%, 0.5); }</pre>
+	</td>
+  </tr>
+</table>	
+</body>
+</html>
+

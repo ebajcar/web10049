@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example07_033</title>
+  <meta charset="utf-8">
+<style>
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    border: 1px dotted cyan;
+}
+h1, h2, h3, h4 {
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+p { 
+    text-align: center; 
+}
+h1, h2, h3, h4, p, img {
+    position: absolute;			
+}
+img {			
+    bottom: 0px;
+    right: 0px;
+}		
+h1 {right: 25px;}
+h2 {left: 25px;}
+h3 {bottom: 25px;}
+h4 {top: 25px;}		
+.parent-absolute {
+    color: blue; 
+    position: absolute;
+    bottom: 200px;
+    outline: double orange;
+    height: 180px; 
+    width: 200px;
+}
+</style>
+</head>
+<body>
+  <section class="parent-absolute">
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <p>absolute parent-child absolute<br>
+       The element is positioned relative to its first 
+       positioned (not static) ancestor element
+    </p>
+    <img src="a.gif" alt="parent a">
+  </section>
+</body>
+</html>
+
+

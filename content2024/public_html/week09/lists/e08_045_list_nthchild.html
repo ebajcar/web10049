@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8" />
+<title>nth-child, text-decoration</title>
+<!-- 
+Author: 	Ellen Bajcar
+Program: 	example08_045.html
+Date: 		Winter 2017
+Updated: 	FALL 2019 
+Version: 	1.0
+Purpose: 	explore css selectors and properties
+Copyright: 
+			This work is the intellectual property of Sheridan College. 
+			Any further copying and distribution outside of class must be within 
+			the copyright law. Posting to commercial sites for profit is prohibited.
+Description:
+			The text-decoration-style property sets the style of the text decoration 
+			(solid, wavy, dotted, dashed, double, ...)
+CSS Syntax:
+text-decoration: text-decoration-line text-decoration-color text-decoration-style|initial|inherit;
+-->
+<style> 
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+li, h1 {
+	font-family: 'Pacifico', cursive;	
+} 
+li::first-letter {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+/* 
+	since we are redefining the same property, 
+	try switching the order of the next two rules 
+*/
+li:nth-child(-1n+6) {
+	color: lightgray;
+	text-decoration: line-through orange dashed;
+}
+li:nth-child(4n+1) {
+	text-decoration: overline underline;
+	text-decoration-color: red;
+	text-decoration-style: wavy;
+}
+</style>
+</head>
+<body>
+<header>
+	<h1>An+B Notation, li:nth-child(even)</h1>
+</header>
+<main>
+  <ol>
+	<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at lobortis nisi. </li>
+	<li>Integer felis tellus, varius sed risus ut, condimentum maximus dui. In hac habitasse platea dictumst.</li>
+	<li>Etiam feugiat felis non eros euismod dignissim.</li>
+	<li>Cras ac suscipit elit.Etiam hendrerit ligula non ipsum pellentesque, nec ornare libero posuere. </li>
+	<li>Fusce et libero vel nibh varius venenatis quis feugiat nisi.</li>
+	<li>Donec at mattis risus. Cras ac suscipit elit..</li>
+	<li>Etiam feugiat felis non eros euismod dignissim.</li>
+	<li>Vivamus commodo feugiat arcu, sed vehicula lorem eleifend lobortis.</li>	
+	<li>Aenean imperdiet vitae ante sit amet mollis..</li>
+	<li>Vivamus finibus imperdiet lorem, ut sollicitudin massa convallis a. </li>
+	<li>Feugiat felis non eros euismod dignissim.</li>
+	<li>Etiam hendrerit ligula non ipsum pellentesque, nec ornare libero posuere. </li>
+	<li>Quisque congue, ipsum at eleifend accumsan, odio mauris vehicula libero, vel mollis erat elit at nisi. </li>
+	<li>Integer felis tellus, varius sed risus ut, condimentum maximus dui. In hac habitasse platea dictumst.</li>
+	<li>Etiam feugiat felis non eros euismod dignissim.</li>
+	<li>Vestibulum vehicula ante ultricies, aliquam tortor eget, elementum dui. Morbi id erat eros.</li>
+	<li>Nunc vel sapien neque. Etiam eget nisi semper, gravida ante eget, aliquet nibh.</li>
+	<li>Integer felis tellus, varius sed risus ut, condimentum maximus dui. In hac habitasse platea dictumst.</li>
+	<li>Etiam feugiat felis non eros euismod dignissim.</li>
+	<li>Ut eu purus hendrerit, maximus lectus quis, dignissim orci. </li>
+	<li>Mauris eget diam id nisl pulvinar tristique vitae ut sem.</li>
+	<li>Fusce finibus orci mi, sed tincidunt eros lacinia ut. </li>
+	<li>Etiam feugiat felis non eros euismod dignissim.</li>
+	<li>In ultricies ligula id mauris eleifend pretium.</li>			
+  </ol>
+</main>
+<footer>
+	<address>Web Development @ Sheridan College</address>
+</footer>
+</body>
+</html>
+

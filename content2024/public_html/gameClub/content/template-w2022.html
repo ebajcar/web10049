@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width">    
+	<title>Template</title>
+<!-- 
+Author: Ellen Bajcar
+Date: Winter 2018
+Update: Fall 2021
+Version: 21.12
+Purpose: learning Javascript programming
+Copyright: 
+	This work is the intellectual property of Sheridan College. 
+	Any further copying and distribution outside of class must be within 
+	the copyright law. Posting to commercial sites for profit is prohibited.
+Description:
+	template for winter 2022
+    
+-->	
+<style>
+/* 2021 summer */
+@import url('https://fonts.googleapis.com/css?family=Akronim|Asap+Condensed|Barrio|Frijole|Luckiest+Guy|Princess+Sofia');
+:root {
+    --bgwhite: #fff;	
+    --fontcolor: #003767;
+    --sherblue: #003767;
+    --sherteal: #00b2ce;
+    --sherorange: #00CCCC;
+    --lightblue: #00b2ce;
+    --darkblue: #0081a1;
+    --darkgray: #333940;
+    --lightgray: #d5d5d5;    
+    --fontfam: 'Luckiest Guy', cursive;
+    --fontbody: 'Asap Condensed', sans-serif;
+    --fonttitle: 'Akronim', cursive; 
+    --body-bg-color: #a2a2a2;
+}
+body {
+    background: var(--darkgray);
+    font-family: var(--fontfam);
+    margin: 0 auto;
+    text-align: center;
+}
+main {
+	width: 100%;
+	margin: auto;
+	padding-top: 15px;
+	background-color: var(--lightgray);
+	min-height: 600px;
+    font-family: var(--fontbody);
+}
+header h1 {
+    color: var(--sherteal);   
+    text-shadow: 1px 1px var(--bgwhite);
+    font-size: 60px;
+    font-weight: 400;
+    margin: 16px 0 0;
+    text-align: center;
+}
+header h2 {
+    color:  var(--lightgray);
+    font-family: var(--fontbody);
+}
+footer {
+	clear: both;
+	color: var(--sherteal);
+    font-family:  var(--fontbody);
+	margin: auto;
+	margin-top: 10px;    
+	padding-top: 2px;
+	text-align: center;   
+}
+input {
+    margin-left: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33.33% auto 33.33%;
+  grid-gap: 3px;
+  padding: 5px;
+  width:90%;
+  margin: auto;
+}
+.grid-container > dd {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px;
+  font-size: 1em;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s; 
+  height: 400px;
+  text-align: left;
+  position: relative;
+}
+.grid-container > dd:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.grid-container > dd footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+.grid-container > dd div {
+  max-height: 70%;
+  overflow-y: auto;
+}
+
+.grid-container > dd h3 {
+  overflow: hidden;
+  z-index: 9;
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.item1 {
+  grid-column: 1 / span 3;
+}
+
+
+/* 
+ *	main navigation 
+ *
+ */
+nav {
+  margin: 20px auto;
+  width: 450px;
+	text-align: center;
+}
+nav a, nav span {
+  background-color: var(--lightgray);
+	color: var(--darkgray);
+  display: inline-block;
+	font-family: Lato, sans-serif;
+  font-size: 15px;
+  padding: 7px;
+  text-decoration: none;
+}
+nav a.active, nav a:hover, nav span:hover {
+  background: var(--sherteal);
+  color: var(--darkgray);
+  cursor: pointer;
+}
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 160px;
+  z-index: 1;
+}
+nav .dropdown-content > a {
+  display: block;
+  
+}
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+</head>
+<body>
+    <header>
+		<h1>Class Practice</h1>
+		<h2>[ Which worksheet? ]</h2>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#">Become A Member</a>
+			<a href="#">Login</a>
+			<a href="#">About</a>
+		</nav>
+	</header>
+    <main>
+		<dl class="grid-container">
+			<dt class="item1">
+				<p>Description (introduction)</p>
+			</dt>
+			<dd class="item2">
+				<h3>Heading  &mdash; any Very Long Very  Long Very Long description Long Very Long description</h3>
+				<div>
+					<p>Description of this item&hellip; 
+						Nunc odio justo, interdum ut egestas eget, mollis nec lectus. Nam commodo viverra viverra. 
+						Morbi sed nisl sit amet ex scelerisque suscipit bibendum sit amet nulla. 
+						Etiam nec eros viverra urna tempus vulputate. Donec pharetra aliquet ex, ac vestibulum 
+						augue vehicula quis. </p> <p>Proin tristique lectus sit amet purus dignissim, vitae suscipit 
+						lectus semper. Aliquam ut maximus risus. Duis eget faucibus arcu, nec varius lorem. 
+						Ut sapien massa, hendrerit nec tempus sit amet, finibus et lacus. Nunc elementum 
+						condimentum varius. Nulla facilisi. In malesuada ornare mauris.
+					</p>
+				</div>
+				<footer>link to solution</footer>
+			</dd>
+			<dd class="item3">
+				<h3>Long Heading and Very Long Very  Long Very Long description Long Very Long description</h3>
+				<div>
+					<p>Description of this item&hellip; 
+						Donec suscipit, lacus sit amet ultrices pretium, nulla mi malesuada leo, 
+						quis lacinia ligula dui sit amet leo.</p> 
+					<p>Cras quam purus, pretium eu volutpat eu, 
+						tincidunt eget nisl. Cras venenatis posuere nunc, sit amet semper nisi tincidunt vel. 
+						Nam non lorem in neque sagittis euismod nec vel urna. Mauris lacinia, metus at 
+						facilisis porttitor, urna felis sagittis mi, cursus tincidunt nibh purus nec orci. 
+						Fusce mattis tortor sed vestibulum imperdiet. Ut id rutrum leo. Duis ut elementum elit. 
+						Maecenas eu dictum neque.
+						Sed vitae sodales erat, a congue orci. Aenean luctus erat et condimentum faucibus. 
+						Phasellus condimentum finibus porttitor. Sed placerat vestibulum purus et auctor. 
+						Nunc odio justo, interdum ut egestas eget, mollis nec lectus. Nam commodo viverra viverra. 
+						Morbi sed nisl sit amet ex scelerisque suscipit bibendum sit amet nulla. 
+						Etiam nec eros viverra urna tempus vulputate. Donec pharetra aliquet ex, ac vestibulum 
+						augue vehicula quis. Proin tristique lectus sit amet purus dignissim, vitae suscipit 
+						lectus semper. Aliquam ut maximus risus. Duis eget faucibus arcu, nec varius lorem. 
+						Ut sapien massa, hendrerit nec tempus sit amet, finibus et lacus. Nunc elementum 
+						condimentum varius. Nulla facilisi. In malesuada ornare mauris.
+					</p>
+				</div>
+				<footer>link to solution</footer>
+				</div>  
+			<dd class="item4">
+				<h3>Heading</h3>
+				<div>
+				<p>Description of this item&hellip; 
+					Etiam nec eros viverra urna tempus vulputate. Donec pharetra aliquet ex, ac vestibulum 
+					augue vehicula quis. Proin tristique lectus sit amet purus dignissim, vitae suscipit 
+					lectus semper. Aliquam ut maximus risus. Duis eget faucibus arcu, nec varius lorem.</p> <p> 
+					Ut sapien massa, hendrerit nec tempus sit amet, finibus et lacus. Nunc elementum 
+					condimentum varius. Nulla facilisi. In malesuada ornare mauris.
+				</p>
+				</div>
+				<footer>link to solution</footer>
+			</div>
+		</dl>
+    </main>
+	<footer>
+		<address>SYST10199 Web Programming, Winter 2022 &copy; Sheridan College</address>
+	</footer>
+<script>
+// code here
+</script>
+</body>
+</html>

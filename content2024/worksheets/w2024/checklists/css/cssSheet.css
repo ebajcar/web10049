@@ -1,0 +1,128 @@
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 8.5pt;
+}
+
+main {
+	margin: 0px; 
+	max-width: 1200px;
+	background-color: #fff;
+}
+
+header {
+	border-bottom: 1px solid #000;
+	margin: 10px 15px 10px 100px;
+}
+
+#contentbox {
+	margin-left: 105px;
+	margin-right: 15px;
+	top: 50px;
+}
+@media screen and (min-width: 800px) {
+	#content1 {
+		float: left;
+		width:49%;
+	}
+
+	#content2 {
+		float: right;
+		width: 49%;
+	}
+}
+aside {
+		position: absolute;
+		left:10px;
+		width:95px;
+		top:50px;
+		text-align: right;
+}
+
+aside strong, aside code {
+	display: block;
+}
+
+aside section {
+	margin-bottom: 12px;
+}
+
+table {
+	border: 1px solid #000;
+	margin: 4px;
+	width: 100%;
+}
+
+th {
+	border: 1px solid #000;
+	color: #fff;
+	background-color: darkblue;
+	font-size: 9.5pt;
+	
+}
+td {
+	font-family: Arial, sans-serif;
+	font-size: 8.5pt;
+	vertical-align: top;
+	border: 0;
+}
+.subheading {
+	background-color: #b63300;
+}
+.subheading2 {
+	background-color: #c6e7ef;
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14pt;
+}
+
+h3 {
+	margin: 0px 0px 3px 0px;
+	padding: 0px;
+	font-size: 11pt;
+	border-bottom: 1px solid #000;
+}
+
+h4 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 10.5pt;
+}
+.exp {
+	font-family: Arial, sans-serif;
+	border-top: 1px solid #000;
+	font-size: 7.5pt;
+	clear: both;
+	
+}
+samp {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 7.75pt;
+	background-color: #ffdba1;
+	border: 1px solid #ccc;
+	padding: 1px;
+	margin: 1px;
+}
+.floatcontainer:after { 
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility:hidden; 
+}
+hr {
+	display: none;
+}
+.col_3 tr td:last-child {
+	width: 50%;
+}
+.col_3 tr td:first-child {
+	font-weight: bold;
+}
+
+.zebra tr:nth-child(odd) {
+	background-color: #ddd;
+}	

@@ -1,0 +1,122 @@
+/*  CSS3 Flexbox Layout
+
+	Flexbox is a new layout introduced in CSS3. The flexbox layout makes it simpler to arrange elements on a page in a way that behaves predictably across different screen sizes, resolutions, and devices. It is therefore particularly useful in the context of responsive web design.
+
+	Key features include:
+	- Positioning child elements is much easier and complex layouts can be achieved more simply and with cleaner code.
+	- Child elements can be laid out in any direction and can have flexible dimensions to adapt to the display space.
+	- Child elements automatically expand contract to adapt to available free space.
+	- Flexbox introduces its own unique set of terms and concepts. A few of these include:
+
+	Flex container. 
+		An element with its display property set to flex or inline-flex which serves as the container element for flex items.
+		
+	Flex item. 
+		Any element within a flex container. (Note: Text directly contained in a flex container is wrapped in an anonymous flex item.)
+		
+	Axes. 
+		Every flexbox layout has a flex-direction that designates the main axis along which the flex items are laid out. The cross axis is then the axis perpendicular to the main axis.
+		
+	Lines. 
+		Flex items can be laid out on either a single line or on several lines according to the flex-wrap property.
+		
+	Dimensions. 
+		The flexbox equivalents of height and width are main size and cross size, which specify the sizes of the main axis and cross axis of the flex container, respectively.
+		
+	Markup we can use if we’re using a flexbox layout:
+		<body class="layout-flexbox">
+		  <header></header>
+		  <div class="content-area">
+			  <nav></nav>
+			  <aside class="subnav"></aside>
+			  <main></main>
+		  </div>
+		  <footer></footer>
+		</body>
+		
+	The main layout (header, content, footer) is vertical, set flexbox to use a column layout:
+*/
+.layout-flexbox {
+  display: flex;
+  flex-direction: column;  
+}
+/*
+Although our main layout is vertical, the elements in our content area (nav, subnav, main) are laid out horizontally. Each flex container can define only one direction (i.e., its layout must either be horizontal or vertical). Therefore, when the layout requires more than this (a common case being for an app layout), we can nest multiple containers one inside the other, each with a different directional layout.
+
+That’s why we’ve added an extra container (that I’ve called the content-area) wrapping #nav, #subnav, and #main. This way, the overall layout can be vertical, while the content area’s contents can be laid out horizontally.
+
+Now in order to position our flex items we are going to use the property flex that is a shorthand for flex: <flex-grow> <flex-shrink> <flex-basis>;. Those three flex properties are the ones that determine how our flex items distribute any free space remaining between them in the flow direction, as follows:
+
+flex-grow: specifies how much an item can grow relative to the rest of the flexible items inside the same container
+flex-shrink: specifies how an item can shrink relative to the rest of the flexible items inside the same container
+flex-basis: specifies the initial size of an item (i.e., before it shrinks or grows)
+
+Setting flex-grow and flex-shrink both to zero means that the size of the item is fixed and it will not grow or shrink to accommodate there being more or less free space available. This is what we do for our header and footer since they have a fixed size:
+*/
+
+header {
+  flex: 0 0 5em;
+}
+
+footer {
+  flex: 0 0 3em;
+}
+/*
+To have an item take all available free space, set its flex-grow and flex-shrink values both to 1 and set its flex-basis value to auto. This is what we do for the content area since we want it to take up all available free space.
+
+And as we stated before, we want the items inside content-area to lay out in row direction, so we’ll add display: flex; and flex-direction: row;. This makes content-area a new flex container for #nav, #subnav and `#main.
+
+So here’s what we end up with for the CSS for content-area:
+*/
+.content-area {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto; /* take up all available space */
+    margin: 1em 0;
+    min-height: 0; /* fixes FF issue with minimum height */
+}
+
+nav {
+  flex: 0 0 5em;
+  margin-right: 1em;
+  overflow-y: auto; 
+}
+
+.subnav {
+  flex: 0 0 13em;
+  overflow-y: auto; 
+  margin-right: 1em;
+}
+/*Note that I’ve added overflow-y: hidden to these CSS specifications to overcome content exceeding and overflowing the container height. Chrome actually does not need this but FireFox does.)*/
+
+main {
+  flex: 1 1 auto;
+  overflow-y: auto; 
+}
+/* dynamic behavior to this and see how that goes.
+
+The JavaScript is identical to what we had before (except here, the CSS element container class we’re specifying is layout-flexbox whereas before it was layout-classic):
+$('.layout-flexbox #nav’).on('click', 'li.nav-toggle', function() {
+  $('#nav').toggleClass('expanded');
+});
+*/
+
+/* add the expanded class*/
+
+nav {
+  flex: 0 0 5em; /* collapsed size */
+  margin-right: 1em;
+  overflow-y: auto; 
+  &.expanded {
+    flex: 0 0 10em; /* expanded size */
+  }
+}
+
+/*
+
+Note that this time we don’t need to let other items know about the width change, since the flexbox layout handles all of that for us.
+
+The only thing left then is hiding the sub nav. And guess what? That “just works” too, without any additional changes, using the same JavaScript code as before. Flexbox knows about free space and it automatically makes our layout work with no extra code. Pretty cool.
+
+Flexbox also provides some interesting ways of centering both vertical and horizontal elements. We realize here how important it is for a presentational language to include the notion of free space and how scalable our code can become using these sorts of techniques. On the other hand, the concepts and notation here can take a bit more to master than classic CSS.
+*/

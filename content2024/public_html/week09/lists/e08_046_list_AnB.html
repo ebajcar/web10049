@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example08_046</title>
+  <meta charset="utf-8">
+<style>  
+/*
+  The An+B notation also accepts the even and odd keywords,
+  which have the same meaning as 2n and 2n+1, respectively.
+  Examples:
+  2n+0    /* represents all of the even elements in the list */
+  even    /* same */
+  4n+1    /* represents the 1st, 5th, 9th, 13th, etc. elements in the list */
+
+  The values of A and B can be negative, but only the positive results of An+B, 
+  for n ≥ 0, are used.
+  Example:
+  -1n+6   /* represents the first 6 elements of the list */
+  -4n+10  /* represents the 2nd, 6th, and 10th elements of the list */
+
+  If both A and B are 0, the pseudo-class represents no element in the list.	
+*/
+li, h1 {
+  font-family: Tahoma, Geneva, sans-serif;
+} 
+li::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+}
+li:nth-child(even) {
+  color: red;
+}
+li:nth-child(2n+0) {
+  font-style: italic;
+}
+
+li:nth-child(4n+1) {
+  text-decoration: underline;
+}
+li:nth-child(4n+1)::after {
+  content: ">> 4n+1";
+  background-color: pink;
+  color: white;  
+}
+
+li:nth-child(-1n+6) {
+  text-decoration: overline;
+}
+li:nth-child(-1n+6)::after {
+  content: ">> -1n+6";
+  background-color: blue;
+  color: white;
+}
+
+li:nth-child(-4n+10) {
+  font-variant: small-caps;
+  background-color: lightgray;
+}
+li:nth-child(10n-7) {
+  background-color: yellow;
+}
+li:nth-child(10n-7)::before {
+  content: "(( 10n-7 ))";
+  font-size:1.5em;
+  color: blue;
+  background-color: lightgreen;  
+}
+</style>
+</head>
+<body>
+  <h1>An+B Notation, CSS3 draft</h1>
+  <ol>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at lobortis nisi. </li>
+    <li>Integer felis tellus, varius sed risus ut, condimentum maximus dui. In hac habitasse platea dictumst.</li>
+    <li>Etiam feugiat felis non eros euismod dignissim.</li>
+    <li>Cras ac suscipit elit.Etiam hendrerit ligula non ipsum pellentesque, nec ornare libero posuere. </li>
+    <li>Fusce et libero vel nibh varius venenatis quis feugiat nisi.</li>
+    <li>Donec at mattis risus. Cras ac suscipit elit..</li>
+    <li>Etiam feugiat felis non eros euismod dignissim.</li>
+    <li>Vivamus commodo feugiat arcu, sed vehicula lorem eleifend lobortis.</li>	
+    <li>Aenean imperdiet vitae ante sit amet mollis..</li>
+    <li>Vivamus finibus imperdiet lorem, ut sollicitudin massa convallis a. </li>
+    <li>Feugiat felis non eros euismod dignissim.</li>
+    <li>Etiam hendrerit ligula non ipsum pellentesque, nec ornare libero posuere. </li>
+    <li>Quisque congue, ipsum at eleifend accumsan, odio mauris vehicula libero, vel mollis erat elit at nisi. </li>
+    <li>Integer felis tellus, varius sed risus ut, condimentum maximus dui. In hac habitasse platea dictumst.</li>
+    <li>Etiam feugiat felis non eros euismod dignissim.</li>
+    <li>Vestibulum vehicula ante ultricies, aliquam tortor eget, elementum dui. Morbi id erat eros.</li>
+    <li>Nunc vel sapien neque. Etiam eget nisi semper, gravida ante eget, aliquet nibh.</li>
+    <li>Integer felis tellus, varius sed risus ut, condimentum maximus dui. In hac habitasse platea dictumst.</li>
+    <li>Etiam feugiat felis non eros euismod dignissim.</li>
+    <li>Ut eu purus hendrerit, maximus lectus quis, dignissim orci. </li>
+    <li>Mauris eget diam id nisl pulvinar tristique vitae ut sem.</li>
+    <li>Fusce finibus orci mi, sed tincidunt eros lacinia ut. </li>
+    <li>Etiam feugiat felis non eros euismod dignissim.</li>
+    <li>In ultricies ligula id mauris eleifend pretium.</li>			
+  </ol>
+
+</body>
+</html>
+

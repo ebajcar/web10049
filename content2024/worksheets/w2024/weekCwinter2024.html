@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Worksheet 1 SYST10049</title>
+    <title>Worksheet 12 SYST10049</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">	
     <link rel="stylesheet" href="../../css/missing-css.css">
@@ -39,6 +39,10 @@ input:valid {
 input:invalid {
     border: solid red;
 }
+.current {
+  font-weight: bold;
+  font-size: 1.3em;
+}
 	</style>
 </head>
 <body>
@@ -50,12 +54,22 @@ input:invalid {
         <main>
             <div class="prev-next">
                 <p><a href="weekBwinter2024.html">Prev</a></p>
-                <nav class="breadcrumbs" aria-label="Breadcrumbs">
-                    <ol>
-                        <li><a href="../index.html"  class="allcaps">Home</a></li>
-                        <li><a href="week13.html" aria-current="page">Worksheet 12</a></li>
-                    </ol>               
-                </nav> 
+       <nav class="tool-bar">| 
+            <a href="week1winter2024.html"> 1 </a> | 
+            <a href="week2winter2024.html"> 2 </a> | 
+            <a href="week3winter2024.html"> 3 </a> | 
+            <a href="week4winter2024.html"> 4 </a> | 
+            <a href="week5winter2024.html"> 5 </a> | 
+            <a href="week6winter2024.html"> 6 </a> | 
+            <a href="week7winter2024.html"> 7 </a> | 
+            <a href="week8winter2024.html"> 8 </a> | 
+            <a href="week9winter2024.html"> 9 </a> | 
+            <a href="weekAwinter2024.html"> 10 </a> | 
+            <a href="weekBwinter2024.html"> 11 </a> | 
+            <a href="weekCwinter2024.html" class="current"> 12 </a> | 
+            <a href="weekDwinter2024.html"> 13 </a> |
+            <a href="weekEwinter2024.html"> 14 </a> | 
+        </nav>
                 <p><a href="weekDwinter2024.html">Next</a></p>
             </div>
 
@@ -97,52 +111,176 @@ input:invalid {
             <!-- 2. Read and explore more concepts -->
             <section id="p2">
                 <h2>Activity 12.2. Study, dig deeper, explore more concepts</h2> 
-                <dl hidden>
-                    <dt>Introduction to CSS</dt>
-                    <dd><a href="https://ebajcar.github.io/web10049/content2024/material_css/" target="_blank">Overview</a></dd>
-                    <dd>Complete the following tutorials. Make your own notes. When you come to an example, implement it as part of your practice project
 
-                        <ul>   
-                            <li><a href="" target="_blank">? (MDN web docs)</a>  •  •  • </li>
-                            <li><a href="" target="_blank">? (MDN web docs)</a>  •  •  • </li>
-                            <li><a href="" target="_blank">? (MDN web docs)</a>  •  •  • </li>
-                        </ul>
-                    </dd>
-                 </dl>  
+
+
+<!--  CSS Grid Layout -->
+<div class="flex justify-center mt-6">
+  <div class="block p-6 rounded-lg shadow-lg bg-white">
+    <h5 class="text-2xl font-semibold sher-teal">CSS Grid Layout</h5>
+    
+
+    
+	<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+	<table>
+      <tr>
+	  <th style="width: 160px">Grid Elements</th>
+	  <td>A grid layout consists of a parent element, with one or more child elements.</td>
+      </tr><tr>
+	  <th class="col-sm-3">Display Property</th>
+	  <td class="col-sm-9">An HTML element becomes a grid container when its display property is set to grid or inline-grid</td>
+      </tr><tr>
+	  <th class="col-sm-3">Grid Columns</th>
+	  <td class="col-sm-9">The vertical lines of grid items are called columns.</td>
+	  </tr><tr>
+	  <th class="col-sm-3">Grid Rows</th>
+	  <td class="col-sm-9">The horizontal lines of grid items are called rows.</td>
+      </tr><tr>
+	  <th class="col-sm-3">Grid Gaps</th>
+	  <td class="col-sm-9">The spaces between each column/row are called gaps.</td>
+      </tr><tr>
+	  <th>Grid Lines</th>
+	  <td class="col-sm-9">The lines between columns are called column lines.<br>The lines between rows are called row lines.</td>	
+      </tr>
+	</table>	
+	<p>To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid. Grid containers consist of grid items, placed inside columns and rows.</p>
+	<p>The grid property is a shorthand property for the following properties:</p>
+    <p>| <strong>grid-template-rows</strong> | <strong>grid-template-columns</strong> | <strong>grid-template-areas</strong> | <strong>grid-auto-rows</strong> | <strong>grid-auto-columns</strong> | <strong>grid-auto-flow</strong> |</p>
+    <p class="text-gray-700 text-base mb-4">
+	<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3schools.com/css/css_grid.asp">
+		Explore the examples @w3schools	 
+	</a>  <br>
+	<a class="btn btn-outline-secondary btn-block" style="cursor:pointer;"  target="_blank" role="button" 
+		href="https://www.w3.org/TR/css-grid-1/">
+		Explore the specifications on @W3.org	 
+	</a>  
+    </p>      
+  </div>
+</div>
+
+
+
             </section>
 
             <!-- 3.  Practice. Practice. Practice. -->
             <section id="p3">
                 <h2>Activity 12.3. Practice. Practice. Practice.</h2>
-                <p><chip>Coming soon</chip></p>
+                <p hidden><chip>Coming soon</chip></p>
+ 
+<dl>                
+ <dt>A. Creating your grid in CSS</dt>
+<dd>
+    Complete the tutorial <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids" target="_blank">Creating your grid in CSS</a> which includes sub-sections <em>Defining a grid</em>, <em>Flexible grids with the fr unit</em>, <em>Gaps between tracks</em>, <em>Repeating track listings</em>, <em>Implicit and explicit grids</em>, <em>The minmax() function</em>, and <em>As many columns as will fit</em>.
+</dd>
+<dd>    
+    Read through the slides for <a href="https://ebajcar.github.io/web10049/content2024/slides/10049/assignment3_w2024.html" target="_blank">Assignment 3 instructions</a>. Complete the assignment.
+</dd>
+</dl> 
+
+
+<dl>                
+ <dt>B. Line-based placement</dt>
+<dd>
+    Complete the tutorial <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#line-based_placement" target="_blank">Line-based placement</a> (of the same tutorial) to learn about properties grid-column-start, grid-column-end, grid-row-start, and grid-row-end. Implement the blog page as a home page of a new project.
+</dd>
+<dd>    
+    Implement the same blog example using flexbox as a home for another project.
+</dd>
+<dd>    
+    Compare the two solutions.
+</dd>
+</dl> 
+
+<dl>                
+ <dt>C. Positioning with grid-template-areas</dt>
+<dd>
+    Complete the tutorial <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#positioning_with_grid-template-areas" target="_blank">Positioning with grid-template-areas</a>.
+</dd>
+<dd>    
+    Examine and implement the following example <a href="../../public_html/week12/e09_016_grid_area.html" target="_blank">The grid-area Property</a>. 
+</dd>
+<dd>    
+    Compare the two example.
+</dd>
+</dl> 
+ 
+<dl>                
+ <dt>D. Using grid layout with semantic elements</dt>
+<dd>
+    Examine and implement the following example <a href="../../public_html/week12/e09_015_grid_lines.html" target="_blank">Grid Lines using unordered list as the parent container and list items as the children grid items</a>. 
+</dd>
+<dd>    
+    Examine and implement the following example <a href="../../public_html/week12/all_grid_properties.html" target="_blank">A table of all the grid properties</a> (a look-alike table, it is a list really). 
+</dd>
+<dd>    
+    Explore. The links for the properties take you to w3schools and many more examples.
+</dd>
+</dl> 
+            <!--
+            e09_015_grid_lines.html  
+e09_016_grid_area.html
+e09_019_responsive_row_cells_sections.html
+all_grid_properties.html
+-->            
                 
-                <dl hidden>
-                    <dt>What are the last 4 characters of a file that contains nothing but statements like this?</dt>
-                    <dd>
-<pre><code>p {
-    font-family: "Times New Roman", Times, serif;    
-}</code></pre>
-                    </dd>
-                    <dd><input type="text" pattern='.css'></dd>                
+<dl hidden>                
+ <dt>Add HTML structure</dt>
+<dd>
+The display: grid property transforms all the direct children of the container into grid items. Add the following CSS to your file:
+<pre class="language-css">
+<code>.container {
+  display: grid;
+}
+</code></pre> 
+Copy and paste in your index0.html file <a href="https://github.com/mdn/learning-area/blob/main/css/css-layout/grids/0-starting-point.html" target="_blank">link</a>
+</dd>
+</dl> 
 
 
+                
+<dl hidden>                
+ <dt>Defining a grid</dt>
+<dd>
+The display: grid property transforms all the direct children of the container into grid items. Add the following CSS to your file:
+<pre class="language-css">
+<code>.container {
+  display: grid;
+}
+</code></pre> 
+Read more and make notes <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#defining_a_grid" target="_blank">MDN web docs</a>
+</dd>
+</dl> 
+
+<dl>                
+ <dt></dt>
+<dd></dd>
+</dl>
 
 
-                    <dt>Type the first 3 characters of CSS code that specifies styling for paragraphs.</dt>
-                    <dd><input type="text" pattern='p \{'></dd>                
-
-
-                    <dt>Type the first 4 characters of CSS code that specifies styling for paragraphs.</dt>
-                    <dd><input type="text" pattern="h6 \{"></dd>                
-
-
-                    <dt>Fill in the blank</dt>
-                    <dd><pre><code>_______ "Trebuchet MS", Helvetica, sans-serif;</code></pre>
-                    </dd>
-                    <dd><input type="text" pattern='font-family:'></dd>                
-                </dl>               
             </section>
 
+    <!-- 12 modules -->
+    <dl hidden>
+        <dt>Explore CSS modules (12)</dt>
+        <ul>  
+               <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout" target="_blank">CSS grid layout (MDN)</a>  •  •  • </li>                         
+        </ul> 
+    </dl>                        
+
+
+                 
+                 
+                 
+
+    <footer class="f-row flex-wrap:wrap justify-content:space-between">       
+        <div>Previous ←
+            <strong><a href="weekBwinter2024.html">Worksheet 11</a></strong>
+        </div>        
+        <div>Next →
+            <strong><a href="weekDwinter2024.html">Worksheet 13</a></strong>
+        </div>       
+    </footer>
         </main>
 
 

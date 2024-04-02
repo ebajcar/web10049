@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example07_040</title>
+  <meta charset="utf-8">
+<style>
+body {
+  width: 90%;
+  margin: auto;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content h1 {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <h1>Dropdown Image</h1>
+  <p>Move the mouse over the image below to open the dropdown content.</p>
+
+  <div class="dropdown">
+    <img src="optical1.gif" alt="perception" width="60">
+    <div class="dropdown-content">
+      <img src="optical1.gif" alt="perception: do you see an old women or a young woman or both?" width="300">
+      <h1>What do you see?</h1>
+    </div>
+  </div>
+</body>
+</html>
+
+

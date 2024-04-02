@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Example08_058</title>
+  <meta charset="utf-8">
+<style>
+body, ul, li, h1, p {
+  font: bold 14px/18px "Lucida Console";
+}
+h1, p {
+  color: midnightblue;
+}
+.folder {
+  color: maroon;
+  list-style-image: url('../images/folder.png');
+}
+.file {
+  color: steelblue;
+  list-style-image: url('../images/file.png');
+} 
+.comment {
+  color: gray;
+  font-size: 0.8em;
+  font-style: italic;
+  padding-left: 20px;
+}
+.special {
+  color: #FF7000;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li class="folder">public_html/
+  <ul>
+   <li class="folder">website1		
+    <span class="comment">Project's root directory for website1.</span>
+    <ul>
+      <li class="file">index.html		
+        <span class="comment">Create and leave empty.</span></li>		
+        <li class="folder special">css/
+          <ul class="file">
+            <li>main.css	
+            <span class="comment">Create and leave empty.</span></li>
+            <li>mobile.css	
+            <span class="comment">Create and leave empty.</span></li>
+            <li>tablet.css	
+            <span class="comment">Create and leave empty.</span></li>
+          </ul>
+        </li>
+        <li class="folder special">images/	
+          <span class="comment">Place all image files here.</span>
+          <ul class="file">
+            <li>file.png	
+            <span class="comment">Download.</span></li>
+            <li>folder.png	
+            <span class="comment">Download.</span></li>
+          </ul>			
+        </li>
+        <li class="folder">media/	
+        <span class="comment">Place audio and video files here.</span>			
+          <ul class="file">
+            <li>clip.ogg</li>
+            <li>hello.wav</li>
+          </ul>	
+        </li>
+        <li class="folder">content/	
+        <span class="comment">Arrange all html files in this directory.</span></li>
+        <li class="folder">scripts/	
+        <span class="comment">Leave empty.</span></li>			
+        <li class="folder">sources/			
+          <ul class="file">
+            <li>article1.pdf</li>
+            <li>unused.png</li>
+            <li class="folder">junk/</li>
+          </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<ul>
+<li class="folder">website2  
+<span class="comment">Project's root directory for website2.</span></li>
+</ul>
+</li>		
+</ul>
+</body>
+</html>
+
+

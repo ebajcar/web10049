@@ -1,0 +1,58 @@
+CSS Grid Container
+To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid.
+
+Grid containers consist of grid items, placed inside columns and rows.
+
+The grid property is a shorthand property for the following properties:
+
+grid-template-rows
+grid-template-columns
+grid-template-areas
+grid-auto-rows
+grid-auto-columns
+grid-auto-flow
+
+Default value:	none none none auto auto row
+grid: none|grid-template-rows / grid-template-columns|grid-template-areas|grid-template-rows / [grid-auto-flow] grid-auto-columns|[grid-auto-flow] grid-auto-rows / grid-template-columns|initial|inherit;
+
+
+
+
+The grid-template-columns Property
+The grid-template-columns property defines the number of columns in your grid layout, and it can define the width of each column.
+
+The value is a space-separated-list, where each value defines the length of the respective column.
+
+The grid-template-rows Property
+The grid-template-rows property defines the height of each row.
+
+The justify-content Property
+The justify-content property is used to align the whole grid inside the container.
+
+The align-content Property
+The align-content property is used to vertically align the whole grid inside the container.
+
+CSS Grid Item
+Child Elements (Items)
+A grid container contains grid items.
+
+By default, a container has one grid item for each column, in each row, but you can style the grid items so that they will span multiple columns and/or rows.
+
+The grid-column Property:
+The grid-column property defines on which column(s) to place an item.
+
+The grid-row Property:
+The grid-row property defines on which row to place an item.
+
+The grid-area Property
+The grid-area property can be used as a shorthand property for the grid-row-start, grid-column-start, grid-row-end and the grid-column-end properties.
+
+Naming Grid Items
+The grid-area property can also be used to assign names to grid items.
+Each row is defined by apostrophes (' ')
+The columns in each row is defined inside the apostrophes, separated by a space.
+Note: A period sign represents a grid item with no name.
+
+The Order of the Items
+The Grid Layout allows us to position the items anywhere we like.
+

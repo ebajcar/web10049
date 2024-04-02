@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Deifining a grid</title>
+    <meta name="author" content="Ellen Bajcar">
+    <meta name="description" content="Assignment 3 example">   
+<!--
+Author:       Ellen Bajcar
+Program:      content/mdn_grid_start.html
+Date:         April 1, 2024
+Updated:      
+Version:      0.1
+Purpose:      learn grid layout
+Copyright:    
+    The materials provided in class and through SLATE are protected by copyright. They are intended 
+    for the personal, educational uses of students in this course and should not be shared externally 
+    or on websites such as Course Hero or OneClass. Unauthorized distribution may result in copyright 
+    infringement and violation of Sheridan policies.
+Citations:    
+    original source material can be found (subject to MDN's copyrights):
+
+Description:  
+    https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp
+    
+-->
+ 
+    <link href="../css/main.css" rel="stylesheet">    
+    <style>
+    
+/* 
+https://mgearon.com/css/css-style-external-links/ 
+https://www.w3docs.com/learn-css/line-clamp.html
+
+http://codepen.io/sergdenisov/pen/ZGOEdz
+https://codepen.io/vsync/pen/QNxeVQ
+https://jsfiddle.net/6nb0wwc3/
+https://github.com/josephschmitt/Clamp.js
+https://codepen.io/geoffgraham/pen/BxyEqP
+
+*/    
+nav {
+  margin: 15px;
+}   
+ /* external link styles, use :before or :after if you want! */    
+ a[href*="//"]:not([href*="codepen.io"]){
+ background-color: #3FA09D;
+}
+
+nav a{
+  background-color: #F26522;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 4px;
+}   
+    
+  
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+    font: .9em/1.2 Arial, Helvetica, sans-serif;
+}    
+
+p {
+  min-width: 300px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3 ;
+  line-clamp: 3;  /* "… (continued on next page)" */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+p::after {
+  content: "[more]";
+}
+p:hover {
+  -webkit-line-clamp: normal ;
+  line-clamp: normal;
+  overflow: visible;
+  background-color: white;
+}
+
+/* grid-specific section */
+.container > article, .container > aside, .container > header, .container > footer {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+} 
+
+.container {
+  display: grid;
+ grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+
+header {
+  grid-area: header;
+}
+
+article {
+  grid-area: content;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
+   
+
+
+    </style>
+  </head>
+
+<body>
+
+  <nav>
+    <a href="../index0.html">Home</a>
+    <a class="active" href="webkit_line_clamp.html">webkit-line-clamp</a>
+   </nav>
+  <main> 
+    <div class="container">
+      <header><h1>This is my lovely blog</h1></header>
+      <article>
+        <h2>My article</h2>
+        <p>
+          Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras
+          porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed
+          auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet
+          orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac
+          ornare ex malesuada et. In vitae convallis lacus. Aliquam erat
+          volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin
+          eros pharetra congue. Duis ornare egestas augue ut luctus. Proin
+          blandit quam nec lacus varius commodo et a urna. Ut id ornare felis,
+          eget fermentum sapien.
+        </p>
+
+        <p>
+          Nam vulputate diam nec tempor bibendum. Donec luctus augue eget
+          malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut,
+          facilisis sed est. Nam id risus quis ante semper consectetur eget
+          aliquam lorem. Vivamus tristique elit dolor, sed pretium metus
+          suscipit vel. Mauris ultricies lectus sed lobortis finibus. Vivamus eu
+          urna eget velit cursus viverra quis vestibulum sem. Aliquam tincidunt
+          eget purus in interdum. Cum sociis natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus.
+        </p>
+      </article>
+      <aside>
+        <h3>Other things</h3>
+        <p>
+          Nam vulputate diam nec tempor bibendum. Donec luctus augue eget
+          malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut,
+          facilisis sed est. 
+        </p> <a href="#">more</a>
+      </aside>
+      <footer>Contact me@mysite.com</footer>
+    </div>
+  </main>
+
+  <footer>
+    <address>Web Development &copy; Sheridan College</address>
+  </footer>
+</body>
+
+</html>
