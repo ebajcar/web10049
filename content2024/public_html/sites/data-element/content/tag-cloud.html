@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Tag clouds</title>
+     <meta charset="utf-8">
+<style>
+.tag-cloud > li { display: inline; }
+.tag-cloud-1 { font-size: 0.7em; }
+.tag-cloud-2 { font-size: 1.0em; }
+.tag-cloud-3 { font-size: 1.3em; }
+.tag-cloud-4 { font-size: 1.6em; }
+.tag-cloud-5 { font-size: 1.9em; }
+
+a:hover::after {
+    content: ' (' attr(data-value) ')';
+    font-size: .7em;
+    color: red;
+    font-weight: bold;
+}
+</style>    
+<!--
+Tag clouds https://html.spec.whatwg.org/multipage/semantics-other.html#tag-clouds
+
+    -->
+</head>
+<body>
+<ul class="tag-cloud">
+  <li class="tag-cloud-3">
+    <a title="28 instances" data-value="popular" href="/t/apple">apple</a> 
+  </li>
+  <li class="tag-cloud-2">
+    <a title="6 instances"  data-value="rare" href="/t/kiwi">kiwi</a> 
+  </li>
+  <li class="tag-cloud-5">
+    <a title="41 instances" data-value="very popular" href="/t/pear">pear</a> 
+  </li>
+</ul>
+
+
+</body>
+</html>
