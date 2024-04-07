@@ -70,18 +70,16 @@ p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3 ;
-  line-clamp: 3;  /* "… (continued on next page)" */
+  line-clamp: 3 discard;  /* "… (continued on next page)" */
   overflow: hidden;
+  continue: discard;
   text-overflow: ellipsis;
 }
-p::after {
-  content: "[more]";
-}
+
 p:hover {
-  -webkit-line-clamp: normal ;
-  line-clamp: normal;
-  overflow: visible;
-  background-color: white;
+  display: block;
+  -webkit-line-clamp: none ;
+  line-clamp: none; 
 }
 
 /* grid-specific section */
@@ -121,6 +119,22 @@ footer {
 
 
     </style>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("hover", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
   </head>
 
 <body>
@@ -146,7 +160,7 @@ footer {
           eget fermentum sapien.
         </p>
 
-        <p>
+        <p class="collapsible">
           Nam vulputate diam nec tempor bibendum. Donec luctus augue eget
           malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut,
           facilisis sed est. Nam id risus quis ante semper consectetur eget
@@ -159,11 +173,11 @@ footer {
       </article>
       <aside>
         <h3>Other things</h3>
-        <p>
+        <p><a href="#">
           Nam vulputate diam nec tempor bibendum. Donec luctus augue eget
           malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut,
-          facilisis sed est. 
-        </p> <a href="#">more</a>
+          facilisis sed est. </a>
+        </p> 
       </aside>
       <footer>Contact me@mysite.com</footer>
     </div>
