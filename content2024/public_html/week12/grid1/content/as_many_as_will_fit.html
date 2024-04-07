@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Home: Learning grid layout</title>
+    <title>As many columns as will fit</title>
     <meta name="author" content="Ellen Bajcar">
     <meta name="description" content="Assignment 3 example">   
 <!--
 Author:       Ellen Bajcar
-Program:      content/index0.html
+Program:      content/as_many_as_will_fit.html
 Date:         April 1, 2024
 Updated:      April 2, 2024
-Version:      0.2
-Purpose:      learn grid layout project (grid1)
+Version:      0.1
+Purpose:      learn grid layout
 Copyright:    
     The materials provided in class and through SLATE are protected by copyright. They are intended 
     for the personal, educational uses of students in this course and should not be shared externally 
@@ -58,8 +58,23 @@ Description:
     -  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 -->
 
-    <link href="css/nav.css" rel="stylesheet">
+    <link href="../css/nav.css" rel="stylesheet">    
     <style>
+
+/* https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#as_many_columns_as_will_fit */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+}
 
     </style>
   </head>
@@ -69,18 +84,19 @@ Description:
     <h1>Learning grid layout</h1>
   </header>
   <nav>
-    <a class="active" href="index0.html">Home</a>
-    <a href="content/defining_a_grid.html">Defining a grid</a>
-    <a href="content/flexible_grid_with_fr.html">Flexible grids with the fr unit</a>
-    <a href="content/gaps_between_tracks.html">Gaps between tracks</a>
-    <a href="content/repeating_tracks.html">Repeating track listings</a>
-    <a href="content/implicit_explicit_grids.html">Implicit and explicit grids</a>
-    <a href="content/minmax_function.html">minmax function</a>
-    <a href="content/as_many_as_will_fit.html">As many columns as will fit</a>
+    <a href="../index0.html">Home</a>
+    <a href="defining_a_grid.html">Defining a grid</a>
+    <a href="flexible_grid_with_fr.html">Flexible grids with the fr unit</a>
+    <a href="gaps_between_tracks.html">Gaps between tracks</a>
+    <a href="repeating_tracks.html">Repeating track listings</a>
+    <a href="implicit_explicit_grids.html">Implicit and explicit grids</a>
+    <a href="minmax_function.html">minmax function</a>
+    <a class="active" href="as_many_as_will_fit.html">As many columns as will fit</a>
   </nav>
   <main>
-    <h2>Grid Layout</h2>
-    <div>
+    <h2><code>grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));</code></h2>
+    
+    <div class="container">
         <div>One</div>
         <div>Two</div>
         <div>Three </div>
@@ -89,6 +105,17 @@ Description:
         <div>Six</div>
         <div>Seven</div>
     </div>
+    <h2><code>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</code></h2>
+
+    <div class="container2">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three </div>
+        <div>Four </div>
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+    </div>    
   </main>
 
   <footer>

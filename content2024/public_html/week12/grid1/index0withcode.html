@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>As many columns as will fit</title>
+    <title>Home: Learning grid layout</title>
     <meta name="author" content="Ellen Bajcar">
     <meta name="description" content="Assignment 3 example">   
 <!--
 Author:       Ellen Bajcar
-Program:      content/mdn_grid_start.html
-Date:         April 1, 2024
+Program:      content/index0withcode.html
+Date:         April 2, 2024
 Updated:      
 Version:      0.1
-Purpose:      learn grid layout
+Purpose:      learn grid layout project (grid1)
 Copyright:    
     The materials provided in class and through SLATE are protected by copyright. They are intended 
     for the personal, educational uses of students in this course and should not be shared externally 
@@ -58,24 +58,22 @@ Description:
     -  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 -->
 
-    <link href="../css/nav.css" rel="stylesheet">    
+    <link href="css/nav.css" rel="stylesheet">
     <style>
-
-/* https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids#as_many_columns_as_will_fit */
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  grid-auto-rows: minmax(100px, auto);
-  gap: 20px;
+/* home page only to display HTML and CSS code side-by-side */
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
-
-.container2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-rows: minmax(100px, auto);
-  gap: 20px;
+code {
+  font-weight: bold;
+  font-size: 1.5em;
 }
-
+section:nth-child(1) {
+  border-right: 1px solid;
+  padding-right: 10px;
+}
     </style>
   </head>
 
@@ -83,20 +81,20 @@ Description:
   <header>
     <h1>Learning grid layout</h1>
   </header>
+<!--
   <nav>
-    <a href="../index0.html">Home</a>
-    <a href="defining_a_grid.html">Defining a grid</a>
-    <a href="flexible_grid_with_fr.html">Flexible grids with the fr unit</a>
-    <a href="gaps_between_tracks.html">Gaps between tracks</a>
-    <a href="repeating_tracks.html">Repeating track listings</a>
-    <a href="implicit_explicit_grids.html">Implicit and explicit grids</a>
-    <a href="minmax_function.html">minmax function</a>
-    <a class="active" href="as_many_ax_will_fit.html">As many columns as will fit</a>
+    <a class="active" href="index0.html">Home</a>
+    <a href="content/defining_a_grid.html">Defining a grid</a>
+    <a href="content/flexible_grid_with_fr.html">Flexible grids with the fr unit</a>
+    <a href="content/gaps_between_tracks.html">Gaps between tracks</a>
+    <a href="content/repeating_tracks.html">Repeating track listings</a>
+    <a href="content/implicit_explicit_grids.html">Implicit and explicit grids</a>
+    <a href="content/minmax_function.html">minmax function</a>
+    <a href="content/as_many_ax_will_fit.html">As many columns as will fit</a>
   </nav>
   <main>
-    <h2><code>grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));</code></h2>
-    
-    <div class="container">
+    <h2>Grid Layout</h2>
+    <div>
         <div>One</div>
         <div>Two</div>
         <div>Three </div>
@@ -105,19 +103,69 @@ Description:
         <div>Six</div>
         <div>Seven</div>
     </div>
-    <h2><code>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</code></h2>
-
-    <div class="container2">
-        <div>One</div>
-        <div>Two</div>
-        <div>Three </div>
-        <div>Four </div>
-        <div>Five</div>
-        <div>Six</div>
-        <div>Seven</div>
-    </div>    
   </main>
+  <hr>
+-->  
+  <aside class="section-container">
+    <section>
+        <h2>Starting HTML code</h2>
+        <pre><code>
+&lt;main>
+    &lt;h2>Grid Layout&lt;/h2>
+    &lt;div>
+        &lt;div>One&lt;/div>
+        &lt;div>Two&lt;/div>
+        &lt;div>Three&lt;/div>
+        &lt;div>Four&lt;/div>
+        &lt;div>Five&lt;/div>
+        &lt;div>Six&lt;div>
+        &lt;div>Seven&lt;/div>
+    &lt;/div>
+&lt;/main>
+        </code></pre>
+    </section>
+    <section>
+        <h2>Starting CSS code</h2>
+        <p>The common rules to all pages are stored in <code>css/main.css</code> file</p>
+        <pre><code>
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+    font: .9em/1.2 Arial, Helvetica, sans-serif;
+}
+nav {
+    line-height: 2.5em;
+    text-align: center;
+}
+nav a {
+    border: 1px dotted blue;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    background-color: lightblue;
+    white-space: nowrap;
+} 
+</code></pre>
+</section>
+<section>
+    <h2>&hellip;con't</h2>
 
+    <pre><code>
+.active {
+    background-color: rgb(0, 66, 128);
+    color: white;
+}
+.container > div, container2 > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}  
+         </code></pre>
+    </section>
+</aside>
   <footer>
     <address>Web Development &copy; Sheridan College</address>
   </footer>
