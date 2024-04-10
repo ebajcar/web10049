@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>id vs. getElementById</title>
+</head>
+<body>
+    <h3>Convert Temperature Version 7</h3>
+  	<main>
+
+          <p id="fahren">90</p>
+          <p id="cels"></p>
+
+    </main>
+    <!-- start with completed valid HTML5 and CSS3/4 -->
+    
+<script>
+let fahrenheit = 90;
+let celsius =  (fahrenheit - 32) * 5 / 9 ;
+
+const p1 = document.getElementById("fahr");
+const p2 = document.getElementById("cels");
+console.log("p1 is an ", typeof(p1), p1);
+console.log("p2 is an ", typeof(p2), p2);
+console.log("global id is ", p2.id);
+
+p2.innerText = "Temparature in Celsius is " + celsius.toFixed(5) + " °C.";
+
+// When getElementById can’t find the element, it gives you null instead.
+(p1 !== null) 
+    ? fahren.innerText = "Temperature in Fahrenheit is " + 
+                      fahrenheit.toPrecision(5) + " °F."
+    : fahren.innerText = "p1 is null";
+ 
+
+// Uncaught ReferenceError: fahren is not defined
+// fahren.innerText = "Temperature in Fahrenheit is " + fahrenheit.toPrecision(5) + " °F.";
+console.log("fahr is an ", typeof(fahr), fahr);  
+
+
+/*
+see article - https://www.sitepoint.com/community/t/should-we-use-getelementbyid/279268
+- getElementById informs where the variable was first defined
+- getElementById returns null if id not found
+- getElementById prevents uncaught errors if id not found
+- Variables block access to global id
+- getElementById allows access to hyphenated identifiers
+*/
+</script>
+</body>
+</html>
