@@ -1,0 +1,107 @@
+<!DOCTYPE hml>
+<html lang="en">
+<head>
+    <title>Meaningful title</title>
+    <meta charset="utf-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+<style>
+/* https://www.w3schools.com/tags/tag_body.asp */
+body { 
+  display: block;
+  margin: 8px;
+}
+
+body:focus { 
+  outline: none;
+}    
+</style>
+</head>
+<body>
+	<header>
+		<h1 title="use title attribute to add more information">
+			Exploring Articles 
+			<small> And Other Semantic Elements</small>
+		</h1>
+	</header>
+	<hr> 
+	<nav>
+		<!-- 
+			MAIN NAVIGATION is common to all pages of a web site or web app. 
+			all other navigations are considered sub-navigation and tend to be 
+			unique for a topic or sub-topic -->
+	</nav>
+	<main>
+		<article>
+			<h3>The <code>&lt;article></code> Element (using &lt;h2> heading for the article)</h3>
+			<h5>From w3schools, Winter 2017 (using &lt;h5> heading for the byline)</h5>
+			<p>The <code>&lt;article></code> tag specifies independent, self-contained content.</p>
+			<p>An article should make sense on its own and it should be possible to distribute it independently 
+					from the rest of the site. Potential sources for the <code>&lt;article></code> element:</p>
+			<ul>
+				<li>Forum post</li>
+				<li>Blog post</li>
+				<li>News story</li>
+				<li>Comment</li>
+			</ul>
+		</article>
+		<aside>
+			<p>The &lt;aside> tag defines some content aside from the content it is placed in. 
+					The aside content should be related to the surrounding content.</p>			
+		</aside>
+		
+		<article>
+			<h1>The <code>&lt;article></code> Element (using &lt;h1> heading for the article)</h1>
+			<p>Using &lt;h1> heading generated a validation error. Warning: Consider using the h1 element 
+					as a top-level heading only (all h1 elements are treated as top-level headings by many 
+					screen readers and other tools)</p>
+			<section>
+				<h4>Section Heading</h4>
+				<p>An article can have zero or more sections.  A section can contain zero or more articles.  
+						So, <strong>what is the difference?</strong></p>
+			</section>
+			<section>
+				<h4>Progressive Enhancement</h4>
+				<p>Progressive enhancement (PE) is a strategy for web design that emphasizes 
+				<mark title="Define what is accessibility">accessibility</mark>, semantic HTML markup, and 
+				external stylesheet and scripting technologies. PE consists of a set of core principles:</p>
+				<ol>
+					<li>basic content should be accessible to all web browsers</li>
+					<li>basic functionality should be accessible to all web browsers</li>
+					<li>sparse, semantic markup contains all content</li>
+					<li>enhanced layout is provided by externally linked CSS</li>
+					<li>enhanced behavior is provided by unobtrusive, externally linked JavaScript</li>
+					<li>end-user web browser preferences are respected</li>
+				</ol>				
+			</section>			
+		</article>		
+		<article>
+			<h3>Article 2</h3>
+			<h5>By:Joe Smith, Jan.2011</h5>
+			<p>Use the same heading levels across all articles on a page to give all articles the same
+					look and feel - consistency.</p>
+			<!-- TODO: define meaning and usage of figure, figcaption, byline, jumpline -->
+			<figure>
+				<img src="https://lipsum.com/images/banners/grey_468x60.gif" alt="news article artefact demonstrating bylines and jumplines" width="200">
+				<figcaption>FIGCAPTION: What is a byline? What is a jumpline?  Where do these terms come from?</figcaption>
+			</figure>
+		<section>
+			<h4>Subheading</h4>
+			<p>Paragraphs.</p>			
+		</section>
+		<section>
+			<h4>Using Lorem Ipsum During Development</h4>
+			<p>You can generate Latin text from sites such as the lipsum.com site.  Why is it better than using the current language, such as English?  Here are a couple of paragraphs generated on <a href="#" target="_blank">lipsum.com</a> and an image too!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper mattis leo, at fermentum risus commodo sit amet. Maecenas arcu metus, bibendum at mi vel, aliquam vestibulum nunc. Phasellus ut rhoncus augue, eget lobortis velit. Aliquam viverra enim et nulla suscipit, non feugiat leo rutrum. Vestibulum pulvinar rhoncus tortor, ac ullamcorper magna aliquam at. </p>
+			<img src="https://lipsum.com/images/banners/grey_468x60.gif" alt="468 x 60 - Full Banner from lipsum.com">
+			<p>Nullam nec lorem ultrices massa ullamcorper malesuada. Vestibulum mattis quis tellus auctor blandit. Quisque eget neque lacus. Aliquam pellentesque, est consequat euismod feugiat, massa lorem rhoncus eros, nec iaculis erat augue id est. Nulla facilisi. Aliquam cursus velit at ipsum gravida, vel laoreet orci condimentum.</p>
+		</section>		
+		</article>	
+	</main>
+	<hr>
+	<footer title="licensing and contact information">
+		<address>
+			SYST10049 Web Development &copy; Sheridan College
+		</address>
+	</footer>
+</body>
+</html>
