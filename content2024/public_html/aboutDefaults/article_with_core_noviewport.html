@@ -1,12 +1,49 @@
-<!DOCTYPE hml>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>core.min.css no viewport</title>
+    <title>core.min.css without viewport</title>
     <meta charset="utf-8">
-	<!--
-	<meta name="viewport" content="width=device-width">	
-	  -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/core.css/3.0.0/css/core.min.css" rel="stylesheet">
+    <!--
+    <meta name="viewport" content="width=device-width">
+    -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/core.css/3.0.0/css/core.min.css" rel="stylesheet">
+    <meta name="author" content="Ellen Bajcar">
+    <meta name="description" 
+          content="Explore defaults, effects of resets, use of viewport">   
+<!--
+Author:       Ellen Bajcar
+Program:      article_with_core_noviewport.html
+Date:         April 2020
+Updated:      April 2024
+Version:      1.0
+Copyright:    The materials provided in class and in SLATE are protected by copyright. 
+              They are intended for the personal, educational uses of students in this course 
+              and should not be shared externally or on websites such as Course Hero or OneClass. 
+              Unauthorized distribution may result in copyright infringement and violation of 
+              Sheridan policies.
+Resources:    https://developer.mozilla.org/en-US/docs/Web/CSS/Tutorials
+              https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS#css_specifications
+              https://moderncss.dev/              
+Purpose:      demonstrate resetting default style and impact of viewport
+Description:  A series of pages using different reset styles
+              article_with_core
+              article_with_core_noviewport
+              article_with_defaults
+              article_with meyer
+              article_with_modern_normalize
+              
+              This file contains well-formed and valid HTML5 code. Content includes a variety of 
+              different elements and structures (article_with_defaults.html).
+              
+              Added a link to core.css
+              https://cdnjs.cloudflare.com/ajax/libs/core.css/3.0.0/css/core.min.css
+              See https://cdnjs.com/libraries/core.css for more info
+              
+              Compare to article_with_core.html
+              viewport meta has been removed (commented out) to be able to observe
+              the differences and effects (Use the Inspect tools to display the results
+              on various devices)
+-->    
 </head>
 <body>
 	<header>
@@ -42,7 +79,7 @@
 		</aside>
 		
 		<article>
-			<h1>The <code>&lt;article></code> Element (using &lt;h1> heading for the article)</h1>
+			<h2>The <code>&lt;article></code> Element (using &lt;h1> heading for the article)</h2>
 			<p>Using &lt;h1> heading generated a validation error. Warning: Consider using the h1 element 
 					as a top-level heading only (all h1 elements are treated as top-level headings by many 
 					screen readers and other tools)</p>
@@ -50,6 +87,13 @@
 				<h4>Section Heading</h4>
 				<p>An article can have zero or more sections.  A section can contain zero or more articles.  
 						So, <strong>what is the difference?</strong></p>
+                        
+                <h4>A small 3x3 table</h4>
+                <table>
+                    <tr><td>a</td><td>b</td><td>c</td></tr>
+                    <tr><td>d</td><td>e</td><td>f</td></tr>
+                    <tr><td>g</td><td>h</td><td>i</td></tr>
+                </table>
 			</section>
 			<section>
 				<h4>Progressive Enhancement</h4>
@@ -86,6 +130,14 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper mattis leo, at fermentum risus commodo sit amet. Maecenas arcu metus, bibendum at mi vel, aliquam vestibulum nunc. Phasellus ut rhoncus augue, eget lobortis velit. Aliquam viverra enim et nulla suscipit, non feugiat leo rutrum. Vestibulum pulvinar rhoncus tortor, ac ullamcorper magna aliquam at. </p>
 			<img src="https://lipsum.com/images/banners/grey_468x60.gif" alt="468 x 60 - Full Banner from lipsum.com">
 			<p>Nullam nec lorem ultrices massa ullamcorper malesuada. Vestibulum mattis quis tellus auctor blandit. Quisque eget neque lacus. Aliquam pellentesque, est consequat euismod feugiat, massa lorem rhoncus eros, nec iaculis erat augue id est. Nulla facilisi. Aliquam cursus velit at ipsum gravida, vel laoreet orci condimentum.</p>
+            <dl>
+                <dt>Term</dt>
+                <dd>Descrition</dd>
+                <dt>Aliquam pellentesque</dt>
+                <dd>Aliquam pellentesque, est consequat euismod feugiat, massa lorem rhoncus eros, nec iaculis erat augue id est. Nulla facilisi.</dd>
+                <dt>Lorem ipsum dolor sit amet</dt>
+                <dd>Maecenas arcu metus, bibendum at mi vel, aliquam vestibulum nunc. Phasellus ut rhoncus augue, eget lobortis velit. Aliquam viverra enim et nulla suscipit, non feugiat leo rutrum.</dd>
+            </dl>
 		</section>		
 		</article>	
 	</main>
