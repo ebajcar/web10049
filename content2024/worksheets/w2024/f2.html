@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* HTML and BODY elements have a width of 100% and margins set to auto */
+
+
+
+
+
+
+
+/*&nbsp; Children of the MAIN element have a border of 1px dotted blue, a width of 30%,
+&nbsp; &nbsp; &nbsp;minimum height of 200 pixels and padding all around of 7 pixels */
+
+
+
+
+
+
+
+/* The MAIN element is the flexbox parent with content justified set to space-between */
+
+
+
+
+
+
+
+/* The flexbox is responsive for all media types having a maximum width of 500 pixels
+&nbsp; &nbsp; then the MAIN element has flex flow changed to column wrap and its children
+&nbsp; &nbsp; have a width of 100% */
+
+
+
+
+
+
+body {
+	width: 100%;
+    margin: auto;
+}
+main > aside, 
+main > section {
+	border: 1px dotted blue;
+    width: 30%;
+    min-height: 200px;
+    padding: 7px;
+}
+main {
+	display: flex;
+    justify-content: space-between;
+}
+
+@media all and (max-width: 500px) {
+	main {
+      display: flex;
+      flex-flow: column wrap;
+    }
+      main > aside, 
+      main > section {
+          width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+  <header><h1>Page title</h1></header>
+  <main>
+    <aside>Aside (first)</aside>
+    <section>Section</section>
+    <aside>Aside (last)</aside>
+  </main>
+</body>
+
+</html>
